@@ -1,0 +1,51 @@
+{
+    "type": "ConfirmationModal", "name": "ConfirmationModal",
+    "fields": { 
+        "anchor": { "x": 0.5, "y": 0.5 },
+    },
+    "children": [
+        {
+            "type": "GridImageWidget", "name": "Frame",
+            "fields": {
+                "rect": { "x": -132, "y": -88 },
+                "filename": "FrontEnd\\PopUpOKCancel",
+                "frames": 2,
+                "rows": 1,
+            },
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "Prompt",
+                    "fields": {
+                        "rect": { "x": 12, "y": 6, "width": 243, "height": 110 },
+                        "fontType": "8pt",
+                        "style": { 
+                            "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 }, 
+                            "alignment": { "h": "center" },
+                            "options": { "lineWrap": true, "newlineHandling": "standard" },
+                        }
+                    }
+                },
+                {
+                    "type": "ButtonWidget", "name": "Confirm",
+                    "fields": { 
+                        "rect": { "x": 10, "y": 134 },
+                        "filename": "FrontEnd\\OkCancelButtonBlank",
+                        "onClickMessage": "ModalMessage:Confirm",
+                        "fontType": "8ptE",
+                        "textColor": { "r": 255, "g": 255, "b": 255, "a": -1 },
+                    }
+                },
+                {
+                    "type": "ButtonWidget", "name": "Dismiss",
+                    "fields": { 
+                        "rect": { "x": 158, "y": 134 },
+                        "filename": "FrontEnd\\OkCancelButtonBlank",
+                        "onClickMessage": "ModalMessage:Dismiss",
+                        "fontType": "8ptE",
+                        "textColor": { "r": 255, "g": 255, "b": 255, "a": -1 },
+                    }
+                },
+            ]
+        },
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    // Base (parent) profile.
+    // TODO: consider rebasing to ConsoleHD.
+    "basedOn": "ControllerLV",
+
+    "MediumLargeFontSize": 34,
+    "SmallFontSize": 30,
+    "TooltipFontSize": 42,
+
+    // Scale applied to console panels
+    "ConsoleUIScale": 1.16,
+
+    // Console resized stuff
+    "ConsoleLeftPanelRect": { "x": -1584, "y": -618, "width": 1305, "height": 1421, "scale": "$ConsoleUIScale" },
+    "ConsoleRightPanelRect": { "x": -8, "y": -648, "width": 1408, "height": 1486, "scale": "$ConsoleUIScale" },
+    "ConsoleCenterPanelRect": { "x": -1039, "y": -615, "width": 1793, "height": 1416, "scale": "$ConsoleUIScale" },
+
+    "ControllerOverlayRect": { "x": -1670, "y": 40, "width": 2880, "height": 1763, "scale": "$ConsoleUIScale" },
+    "QuestLogPanelOriginalRect": { "x": -1032, "y": -613, "width": 1795, "height": 1415, "scale": "$ConsoleUIScale" },
+    "CharacterStatsPanelRect": { "x": -1591, "y": -616, "width": 2740, "height": 1416, "scale": "$ConsoleUIScale" },
+    "PauseLayoutRect": { "x": -1039, "y":243, "scale": "$ConsoleUIScale" },
+    "QuestLogSpeechPanelRect": { "x": 180, "y": 1151, "width": 1442, "height": 378, "scale": "$ConsoleUIScale" },
+    "SettingsPanelRect": { "y": -72, "scale": "$ConsoleUIScale" },
+    "OptionsPanelRect": { "x": -1007, "y": 390, "width": 1730, "height": 1284, "scale": "$ConsoleUIScale" },
+    "MessageLogPanelRect": { "x": -1032, "y": 243, "width": 1771, "height": 1400, "scale": "$ConsoleUIScale" },
+    "UISwitcherRect": { "x": -1671, "y": 40, "width": 2800, "height": 1600, "scale": "$ConsoleUIScale" },
+    "AdvancedStatsPanelRect": { "x": -1604, "y": -214, "scale": "$ConsoleUIScale" },
+
+    "SettingsPanelAnchorRect": { "x": -1130, "y": -1006, "width": 1950, "height": 1763, "scale": "$ConsoleUIScale" },
+    "SettingsPanelBackgroundRect": { "x": -1041, "y": 240, "width": "$OptionsPanelWidth", "height": "$OptionsPanelHeight", "scale": "$ConsoleUIScale" },
+    "SettingsPanelTabsRect": { "x": -998, "y": 256, "width": "$OptionsPanelWidth", "height": 121, "scale": "$ConsoleUIScale" },
+}

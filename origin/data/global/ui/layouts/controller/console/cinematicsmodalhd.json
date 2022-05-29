@@ -1,0 +1,50 @@
+{
+    "basedOn": "Controller/CinematicsModalHD.json",
+    "type": "CinematicsModal", "name": "CinematicsModal",
+    "fields": {
+        "anchor": { "x": 0.45, "y": 0.15 },
+    },
+    "children": [
+        {
+            "type": "GridImageWidget", "name": "Background",
+            "fields": {
+                "filename": "Controller\\FrontEnd\\Cinematics\\Cinematics_Console_BG"
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "Title",
+        },
+        {
+            "type": "ButtonWidget", "name": "Option0",
+        },
+        {
+            "type": "ButtonWidget", "name": "Option1",
+        },
+        {
+            "type": "ButtonWidget", "name": "Option2",
+        },
+        {
+            "type": "ButtonWidget", "name": "Option3",
+        },
+        {
+            "type": "ButtonWidget", "name": "Option4",
+        },
+        {
+            "type": "ButtonWidget", "name": "Option5",
+        },
+        {
+            "type": "ButtonWidget", "name": "Option6",
+        },
+        {
+            "type": "RectangleWidget", "name": "LegendBackground",
+            "fields": {
+                "rect": { "x": -310, "y": 1598, "width": 1776, "height": 130 },
+            },
+            "children": [
+                {
+                    "type": "ButtonLegendWidget", "name": "MainMenuLegend",
+                }
+            ]
+        },
+    ]
+}

@@ -1,0 +1,33 @@
+{
+    "type": "DismissibleTooltipPanel", "name": "DismissibleTooltipPanel",
+    "fields": {
+        "drawTint": false,
+        "screenEdgePadding": 5,
+        "tooltipPadding": 10,
+    },
+    "children": [
+        {
+            "type": "ClickCatcherWidget", "name": "ClickCatcher",
+        },
+        {
+            "type": "NineTileImageWidget", "name": "TooltipBackground",
+            "fields": {
+                "filename": "MENU/boxpieces",
+                "backgroundColor": [ 0.0, 0.0, 0.0, 0.5 ],
+                "tileFrames": "$NineTileBoxPiecesFrames",
+            },
+        },
+        {
+            "type": "TextBoxWidget", "name": "TooltipText",
+            "fields": {
+                "fitToText": true,
+                "style": {
+                    "fontColor": "$FontColorWhite",
+                    "pointSize": 36,
+                    "alignment": { "h": "center", "v": "center" },
+                    "options": { "pipeCharacterBehavior": "handle", "newlineHandling": "reversed" },
+                }
+            }
+        },
+    ]
+}

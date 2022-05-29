@@ -1,0 +1,56 @@
+{
+    "type": "HUDMessagePanel", "name": "HUDMessagePanel",
+    "fields": { "priority": -2 },
+    "children": [
+        {
+            "type": "ChatListWidget", "name": "GlobalChatListContainer",
+            "fields": {
+                "rect": { "x": 40, "y": 910, "width": 1200, "height": 770 },
+                "isHoverList": false,
+                "direction": "vertical",
+                "chatDataSource": "ChatNotificationMessages",
+                "growsBottomUp": true,
+                "scrollControllerName": "GlobalChatScrollBar",
+            },
+            "children": [
+                {
+                    "type": "ListItemWidget", "name": "ChatEntryTemplate",
+                    "fields": {
+                        "rect": { "x": 10, "y": 0, "width": 1100, "height": 50 },
+                        "consumeMouseClicks": false,
+                    },
+                    "children": [
+                        {
+                            "type": "TextBoxWithLinksWidget", "name": "MessageText",
+                            "fields": {
+                                "fitToParent": true,
+                                "text/fontType": "Chat",
+                                "text/style": {
+                                    "alignment": { "h": "left", "v": "center" },
+                                    "options": { "pipeCharacterBehavior" : "handle", "newlineHandling": "standard", "lineWrap": true },
+                                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                                    "fontFace": "BlizzardGlobal",
+                                    "pointSize": "$MediumFontSize",
+                                },
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "RectangleWidget", "name": "MessageBackground",
+                    "fields": {
+                        "color": [ 0.0, 0.0, 0.0, 0.7 ],
+                    },
+                },
+            ]
+        },
+        {
+            "type": "ScrollControllerWidget", "name": "GlobalChatScrollBar",
+            "fields": { 
+                "rect": { "x": 0, "y": 0, "width": 0, "height": 0 },
+                "viewName": "GlobalChatListContainer",
+                "consumeScrollEvents": false,
+            }
+        },
+    ]
+}

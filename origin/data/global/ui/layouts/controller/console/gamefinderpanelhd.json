@@ -1,0 +1,1051 @@
+{
+    "type": "GameFinderPanel", "name": "GameFinderPanel",
+    "fields": {
+        "anchor": {"x": 0.5},
+        "rect": {"x": 0, "y": -60, "scale": "$ConsoleUIScale"},
+        "defaultWidget": "Act1Button",
+        "priority": 3,
+        "actToggleStrings": ["Act1Button", "Act2Button", "Act3Button", "Act4Button", "Act5Button", "BossesButton", "ZonesButton", "OtherButton"],
+        "selectedActFontColor": "$FontColorWhite",
+        "unselectedActFontColor": "$FontColorGold",
+        "questButtonFocusIndicatorFilename": "Controller/HoverImages/Quest_Hover",
+        "questButtonFocusIndicatorOffset": {"x": 0, "y": -30}
+    },
+    "children": [
+        {
+            "type": "ImageWidget", "name": "Background",
+            "fields": {
+                "rect": {"x": -1367, "y": 270},
+                "filename": "Controller\\Lobby\\Play\\ConsoleMatchmaking_BG"
+            },
+        },
+        {
+            "type": "TextBoxWidget", "name": "PartyFinderTitle",
+            "fields": { 
+                "rect": { "x": -1300, "y": 332, "width": 670, "height": 75 }, 
+                "text": "@PartyFinder",
+                "style": {
+                    "fontColor": "$FontColorGold", 
+                    "pointSize": "$LargeFontSize",
+                    "options": { "newlineHandling": "standard"},
+                    "alignment": { "h": "left", "v": "center" },
+                },
+            },
+        },
+        // Act Selectors - Left section
+        {
+            "type": "ToggleButtonWidget", "name": "Act1Button",
+            "fields": {
+                 "rect": { "x": -1304, "y": 450 },
+                 "filename": "Controller\\Lobby\\Play\\ConsoleMatchmaking_ListButton",
+                 "onClickMessage": "GameFinder:SelectAct:0",
+                 "textString": "@act1",
+                 "text/style": "$StyleFEButtonText",
+                 "textColor": "$LightButtonTextColor",
+                 "focusIndicatorFilename": "Controller/HoverImages/MatchmakingAct_Hover",
+                 "navigation": {
+                    "down": { "name": "Act2Button" },
+                    "right": { "name": "Quest0" },
+                 }
+            },
+            "children": [
+                {
+                    "type": "Widget", "name": "Container",
+                    "fields": {
+                        "rect": {"x": 575}
+                    },
+                    "children": [
+                        {
+                            "type": "ToggleButtonWidget", "name": "Quest0",
+                            "fields": {
+                                "rect": { "x": 204, "y": 110 },
+                                "filename": "QuestIcons\\a1q1",
+                                "navigation": {
+                                    "down": { "name": "Quest4" },
+                                    "left": { "name": "Act1Button" },
+                                    "right": { "name": "Quest1" },
+                                },
+                                "toggledFrame": 0,
+                                "untoggledFrame": 25,
+                                "untoggledDisabledFrame": 26
+                            },
+                        },
+                        {
+                            "type": "ToggleButtonWidget", "name": "Quest1",
+                            "fields": {
+                                 "rect": { "x": 610, "y": 110 },
+                                "filename": "QuestIcons\\a1q2",
+                                "navigation": {
+                                    "down": { "name": "Quest2" },
+                                    "left": { "name": "Quest0" },
+                                    "right": { "name": "Quest3" },
+                                },
+                                "toggledFrame": 0,
+                                "untoggledFrame": 25,
+                                "untoggledDisabledFrame": 26
+                            },
+                        },
+                        {
+                            "type": "ToggleButtonWidget", "name": "Quest3",
+                            "fields": {
+                                 "rect": { "x": 1020, "y": 110 },
+                                "filename": "QuestIcons\\a1q3",
+                                "navigation": {
+                                    "down": { "name": "Quest5" },
+                                    "left": { "name": "Quest1" },
+                                    "right": { "name": "NormalDifficulty" },
+                                },
+                                "toggledFrame": 0,
+                                "untoggledFrame": 25,
+                                "untoggledDisabledFrame": 26
+                            },
+                        },
+                        {
+                            "type": "ToggleButtonWidget", "name": "Quest4",
+                            "fields": {
+                                "rect": { "x": 204, "y": 414 },
+                                "filename": "QuestIcons\\a1q4",
+                                "navigation": {
+                                    "up": { "name": "Quest0" },
+                                    "left": { "name": "Act1Button" },
+                                    "right": { "name": "Quest2" },
+                                },
+                                "toggledFrame": 0,
+                                "untoggledFrame": 25,
+                                "untoggledDisabledFrame": 26
+                            },
+                        },
+                        {
+                            "type": "ToggleButtonWidget", "name": "Quest2",
+                            "fields": {
+                                "rect": { "x": 610, "y": 414 },
+                                "filename": "QuestIcons\\a1q5",
+                                "navigation": {
+                                    "up": { "name": "Quest1" },
+                                    "left": { "name": "Quest4" },
+                                    "right": { "name": "Quest5" },
+                                },
+                                "toggledFrame": 0,
+                                "untoggledFrame": 25,
+                                "untoggledDisabledFrame": 26
+                            },
+                        },
+                        {
+                            "type": "ToggleButtonWidget", "name": "Quest5",
+                            "fields": {
+                                "rect": { "x": 1020, "y": 414 },
+                                "filename": "QuestIcons\\a1q6",
+                                "navigation": {
+                                    "up": { "name": "Quest3" },
+                                    "left": { "name": "Quest2" },
+                                    "right": { "name": "NormalDifficulty" },
+                                },
+                                "toggledFrame": 0,
+                                "untoggledFrame": 25,
+                                "untoggledDisabledFrame": 26
+                            },
+                        },
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "ToggleButtonWidget", "name": "Act2Button",
+            "fields": {
+                "rect": { "x": -1304, "y": 545 },
+                "filename": "Controller\\Lobby\\Play\\ConsoleMatchmaking_ListButton",
+                "focusIndicatorFilename": "Controller/HoverImages/MatchmakingAct_Hover",
+                "onClickMessage": "GameFinder:SelectAct:1",
+                "textString": "@act2",
+                "text/style": "$StyleFEButtonText",
+                "textColor": "$LightButtonTextColor",
+                "navigation": {
+                    "up": { "name": "Act1Button" },
+                    "down": { "name": "Act3Button" },
+                    "right": { "name": "NormalDifficulty" },
+                }
+            },
+            "children": [
+                {
+                    "type": "Widget", "name": "Container",
+                    "fields": {
+                        "rect": {"x": 575, "y": -95}
+                    },
+                    "children": [
+                        {
+                            "type": "ToggleButtonWidget", "name": "Quest6",
+                            "fields": {
+                                "rect": { "x": 204, "y": 110 },
+                                "filename": "QuestIcons\\a2q1",
+                                "navigation": {
+                                    "down": { "name": "Quest9" },
+                                    "left": { "name": "Act2Button" },
+                                    "right": { "name": "Quest7" },
+                                },
+                                "toggledFrame": 0,
+                                "untoggledFrame": 25,
+                                "untoggledDisabledFrame": 26
+                            },
+                        },
+                        {
+                            "type": "ToggleButtonWidget", "name": "Quest7",
+                            "fields": {
+                                 "rect": { "x": 610, "y": 110 },
+                                "filename": "QuestIcons\\a2q2",
+                                 "navigation": {
+                                    "down": { "name": "Quest10" },
+                                    "left": { "name": "Quest6" },
+                                    "right": { "name": "Quest8" },
+                                },
+                                "toggledFrame": 0,
+                                "untoggledFrame": 25,
+                                "untoggledDisabledFrame": 26
+                            },
+                        },
+                        {
+                            "type": "ToggleButtonWidget", "name": "Quest8",
+                            "fields": {
+                                "rect": { "x": 1020, "y": 110 },
+                                "filename": "QuestIcons\\a2q3",
+                                "navigation": {
+                                    "down": { "name": "Quest11" },
+                                    "left": { "name": "Quest7" },
+                                    "right": { "name": "NormalDifficulty" },
+                                },
+                                "toggledFrame": 0,
+                                "untoggledFrame": 25,
+                                "untoggledDisabledFrame": 26
+                            },
+                        },
+                        {
+                            "type": "ToggleButtonWidget", "name": "Quest9",
+                            "fields": {
+                                "rect": { "x": 204, "y": 414 },
+                                "filename": "QuestIcons\\a2q4",
+                                "navigation": {
+                                    "up": { "name": "Quest6" },
+                                    "left": { "name": "Act2Button" },
+                                    "right": { "name": "Quest10" },
+                                },
+                                "toggledFrame": 0,
+                                "untoggledFrame": 25,
+                                "untoggledDisabledFrame": 26
+                            },
+                        },
+                        {
+                            "type": "ToggleButtonWidget", "name": "Quest10",
+                            "fields": {
+                                "rect": { "x": 610, "y": 414 },
+                                "filename": "QuestIcons\\a2q5",
+                                "navigation": {
+                                    "up": { "name": "Quest7" },
+                                    "left": { "name": "Quest9" },
+                                    "right": { "name": "Quest11" },
+                                },
+                                "toggledFrame": 0,
+                                "untoggledFrame": 25,
+                                "untoggledDisabledFrame": 26
+                            },
+                        },
+                        {
+                            "type": "ToggleButtonWidget", "name": "Quest11",
+                            "fields": {
+                                "rect": { "x": 1020, "y": 414 },
+                                "filename": "QuestIcons\\a2q6",
+                                "navigation": {
+                                    "up": { "name": "Quest8" },
+                                    "left": { "name": "Quest10" },
+                                    "right": { "name": "NormalDifficulty" },
+                                },
+                                "toggledFrame": 0,
+                                "untoggledFrame": 25,
+                                "untoggledDisabledFrame": 26
+                            },
+                        },
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "ToggleButtonWidget", "name": "Act3Button",
+            "fields": {
+                "rect": { "x": -1304, "y": 640 },
+                "filename": "Controller\\Lobby\\Play\\ConsoleMatchmaking_ListButton",
+                "focusIndicatorFilename": "Controller/HoverImages/MatchmakingAct_Hover",
+                "onClickMessage": "GameFinder:SelectAct:2",
+                "textString": "@act3",
+                "text/style": "$StyleFEButtonText",
+                "textColor": "$LightButtonTextColor",
+                "navigation": {
+                    "up": { "name": "Act2Button" },
+                    "down": { "name": "Act4Button" },
+                    "right": { "name": "NormalDifficulty" },
+                }
+            },
+            "children": [
+                {
+                    "type": "Widget", "name": "Container",
+                    "fields": {
+                       "rect": {"x": 575, "y": -190}
+                    },
+                    "children": [
+                        {
+                            "type": "ToggleButtonWidget", "name": "Quest15",
+                            "fields": {
+                                "rect": { "x": 204, "y": 110 },
+                                "filename": "QuestIcons\\a3q1",
+                                "navigation": {
+                                    "down": { "name": "Quest12" },
+                                    "left": { "name": "Act3Button" },
+                                    "right": { "name": "Quest14" },
+                                },
+                                "toggledFrame": 0,
+                                "untoggledFrame": 25,
+                                "untoggledDisabledFrame": 26
+                            },
+                        },
+                        {
+                            "type": "ToggleButtonWidget", "name": "Quest14",
+                            "fields": {
+                                "rect": { "x": 610, "y": 110 },
+                                "filename": "QuestIcons\\a3q2",
+                                "navigation": {
+                                    "down": { "name": "Quest16" },
+                                    "left": { "name": "Quest15" },
+                                    "right": { "name": "Quest13" },
+                                },
+                                "toggledFrame": 0,
+                                "untoggledFrame": 25,
+                                "untoggledDisabledFrame": 26
+                            },
+                        },
+                        {
+                            "type": "ToggleButtonWidget", "name": "Quest13",
+                            "fields": {
+                                "rect": { "x": 1020, "y": 110 },
+                                "filename": "QuestIcons\\a3q3",
+                                "navigation": {
+                                    "down": { "name": "Quest17" },
+                                    "left": { "name": "Quest14" },
+                                    "right": { "name": "NormalDifficulty" },
+                                },
+                                "toggledFrame": 0,
+                                "untoggledFrame": 25,
+                                "untoggledDisabledFrame": 26
+                            },
+                        },
+                        {
+                            "type": "ToggleButtonWidget", "name": "Quest12",
+                            "fields": {
+                                "rect": { "x": 204, "y": 414 },
+                                "filename": "QuestIcons\\a3q4",
+                                "navigation": {
+                                    "up": { "name": "Quest15" },
+                                    "left": { "name": "Act3Button" },
+                                    "right": { "name": "Quest16" },
+                                },
+                                "toggledFrame": 0,
+                                "untoggledFrame": 25,
+                                "untoggledDisabledFrame": 26
+                            },
+                        },
+                        {
+                            "type": "ToggleButtonWidget", "name": "Quest16",
+                            "fields": {
+                                "rect": { "x": 610, "y": 414 },
+                                "filename": "QuestIcons\\a3q5",
+                                "navigation": {
+                                    "up": { "name": "Quest14" },
+                                    "left": { "name": "Quest12" },
+                                    "right": { "name": "Quest17" },
+                                },
+                                "toggledFrame": 0,
+                                "untoggledFrame": 25,
+                                "untoggledDisabledFrame": 26
+                            },
+                        },
+                        {
+                            "type": "ToggleButtonWidget", "name": "Quest17",
+                            "fields": {
+                                "rect": { "x": 1020, "y": 414 },
+                                "filename": "QuestIcons\\a3q6",
+                                "navigation": {
+                                    "up": { "name": "Quest13" },
+                                    "left": { "name": "Quest16" },
+                                    "right": { "name": "NormalDifficulty" },
+                                },
+                                "toggledFrame": 0,
+                                "untoggledFrame": 25,
+                                "untoggledDisabledFrame": 26
+                            },
+                        },
+                    ]
+                }
+            ]
+            
+        },
+        {
+            "type": "ToggleButtonWidget", "name": "Act4Button",
+            "fields": {
+                "rect": { "x": -1304, "y": 735 },
+                "filename": "Controller\\Lobby\\Play\\ConsoleMatchmaking_ListButton",
+                "focusIndicatorFilename": "Controller/HoverImages/MatchmakingAct_Hover",
+                "onClickMessage": "GameFinder:SelectAct:3",
+                "textString": "@act4",
+                "text/style": "$StyleFEButtonText",
+                "textColor": "$LightButtonTextColor",
+                "navigation": {
+                    "up": { "name": "Act3Button" },
+                    "down": { "name": "Act5Button" },
+                    "right": { "name": "NormalDifficulty" },
+                }
+            },
+            "children": [
+                {
+                    "type": "Widget", "name": "Container",
+                    "fields": {
+                       "rect": {"x": 575,"y": -285}
+                    },
+                    "children": [
+                        {
+                            "type": "ToggleButtonWidget", "name": "Quest18",
+                            "fields": {
+                                "rect": { "x": 204, "y": 110 },
+                                "filename": "QuestIcons\\a4q1",
+                                "navigation": {
+                                    "left": { "name": "Act4Button" },
+                                    "right": { "name": "Quest19" },
+                                },
+                                "toggledFrame": 0,
+                                "untoggledFrame": 25,
+                                "untoggledDisabledFrame": 26
+                            },
+                        },
+                        {
+                            "type": "ToggleButtonWidget", "name": "Quest19",
+                            "fields": {
+                                "rect": { "x": 610, "y": 110 },
+                                "filename": "QuestIcons\\a4q2",
+                                "navigation": {
+                                    "left": { "name": "Quest18" },
+                                    "right": { "name": "Quest20" },
+                                },
+                                "toggledFrame": 0,
+                                "untoggledFrame": 25,
+                                "untoggledDisabledFrame": 26
+                            },
+                        },
+                        {
+                            "type": "ToggleButtonWidget", "name": "Quest20",
+                            "fields": {
+                                "rect": { "x": 1020, "y": 110 },
+                                "filename": "QuestIcons\\a4q3",
+                                "navigation": {
+                                    "left": { "name": "Quest19" },
+                                    "right": { "name": "NormalDifficulty" },
+                                },
+                                "toggledFrame": 0,
+                                "untoggledFrame": 25,
+                                "untoggledDisabledFrame": 26
+                            },
+                        },
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "ToggleButtonWidget", "name": "Act5Button",
+            "fields": {
+                "rect": { "x": -1304, "y": 830 },
+                "filename": "Controller\\Lobby\\Play\\ConsoleMatchmaking_ListButton",
+                "focusIndicatorFilename": "Controller/HoverImages/MatchmakingAct_Hover",
+                "onClickMessage": "GameFinder:SelectAct:4",
+                "textString": "@act5",
+                "text/style": "$StyleFEButtonText",
+                "textColor": "$LightButtonTextColor",
+                "navigation": {
+                    "up": { "name": "Act4Button" },
+                    "down": { "name": "BossesButton" },
+                    "right": { "name": "NormalDifficulty" },
+                }
+            },
+            "children": [
+                {
+                    "type": "Widget", "name": "Container",
+                    "fields": {
+                        "rect": {"x": 575, "y": -380}
+                    },
+                    "children": [
+                        {
+                            "type": "ToggleButtonWidget", "name": "Quest21",
+                            "fields": {
+                                 "rect": { "x": 204, "y": 110 },
+                                "filename": "QuestIcons\\a5q1",
+                                "navigation": {
+                                    "down": { "name": "Quest24" },
+                                    "left": { "name": "Act5Button" },
+                                    "right": { "name": "Quest22" },
+                                },
+                                "toggledFrame": 0,
+                                "untoggledFrame": 25,
+                                "untoggledDisabledFrame": 26
+                            },
+                        },
+                        {
+                            "type": "ToggleButtonWidget", "name": "Quest22",
+                            "fields": {
+                                 "rect": { "x": 610, "y": 110 },
+                                "filename": "QuestIcons\\a5q2",
+                                "navigation": {
+                                    "down": { "name": "Quest25" },
+                                    "left": { "name": "Quest21" },
+                                    "right": { "name": "Quest23" },
+                                },
+                                "toggledFrame": 0,
+                                "untoggledFrame": 25,
+                                "untoggledDisabledFrame": 26
+                            },
+                        },
+                        {
+                            "type": "ToggleButtonWidget", "name": "Quest23",
+                            "fields": {
+                                 "rect": { "x": 1020, "y": 110 },
+                                "filename": "QuestIcons\\a5q3",
+                                "navigation": {
+                                    "down": { "name": "Quest26" },
+                                    "left": { "name": "Quest22" },
+                                    "right": { "name": "NormalDifficulty" },
+                                },
+                                "toggledFrame": 0,
+                                "untoggledFrame": 25,
+                                "untoggledDisabledFrame": 26
+                            },
+                        },
+                        {
+                            "type": "ToggleButtonWidget", "name": "Quest24",
+                            "fields": {
+                                 "rect": { "x": 204, "y": 414 },
+                                "filename": "QuestIcons\\a5q4",
+                                "navigation": {
+                                    "up": { "name": "Quest21" },
+                                    "left": { "name": "Act5Button" },
+                                    "right": { "name": "Quest25" },
+                                },
+                                "toggledFrame": 0,
+                                "untoggledFrame": 25,
+                                "untoggledDisabledFrame": 26
+                            },
+                        },
+                        {
+                            "type": "ToggleButtonWidget", "name": "Quest25",
+                            "fields": {
+                                 "rect": { "x": 610, "y": 414 },
+                                "filename": "QuestIcons\\a5q5",
+                                "navigation": {
+                                    "up": { "name": "Quest22" },
+                                    "left": { "name": "Quest24" },
+                                    "right": { "name": "Quest26" },
+                                },
+                                "toggledFrame": 0,
+                                "untoggledFrame": 25,
+                                "untoggledDisabledFrame": 26
+                            },
+                        },
+                        {
+                            "type": "ToggleButtonWidget", "name": "Quest26",
+                            "fields": {
+                                "rect": { "x": 1020, "y": 414 },
+                                "filename": "QuestIcons\\a5q6",
+                                "navigation": {
+                                    "up": { "name": "Quest23" },
+                                    "left": { "name": "Quest25" },
+                                    "right": { "name": "NormalDifficulty" },
+                                },
+                                "toggledFrame": 0,
+                                "untoggledFrame": 25,
+                                "untoggledDisabledFrame": 26
+                            },
+                        },
+                    ]
+                }
+            ]
+        },
+		{
+            "type": "ToggleButtonWidget", "name": "BossesButton",
+            "fields": {
+                "rect": { "x": -1304, "y": 925 },
+                "filename": "Controller\\Lobby\\Play\\ConsoleMatchmaking_ListButton",
+                "focusIndicatorFilename": "Controller/HoverImages/MatchmakingAct_Hover",
+                "onClickMessage": "GameFinder:SelectAct:5",
+                "textString": "@Bosses",
+                "text/style": "$StyleFEButtonText",
+                "textColor": "$LightButtonTextColor",
+                "navigation": {
+                    "up": { "name": "Act5Button" },
+					"down": {"name": "ZonesButton" },
+                    "right": { "name": "NormalDifficulty" },
+                }
+            },
+            "children": [
+                {
+                    "type": "Widget", "name": "Container",
+                    "fields": {
+                        "rect": {"x": 575, "y": -475}
+                    },
+                    "children": [
+                        {
+                            "type": "ToggleButtonWidget", "name": "Quest27",
+                            "fields": {
+                                "rect": { "x": 204, "y": 110 },
+                                "filename": "QuestIcons\\a1q6",
+                                "navigation": {
+                                    "down": { "name": "Quest30" },
+                                    "left": { "name": "BossesButton" },
+                                    "right": { "name": "Quest28" },
+                                },
+                                "toggledFrame": 0,
+                                "untoggledFrame": 25,
+                                "untoggledDisabledFrame": 26
+                            },
+                        },
+                        {
+                            "type": "ToggleButtonWidget", "name": "Quest28",
+                            "fields": {
+                                 "rect": { "x": 610, "y": 110 },
+                                "filename": "QuestIcons\\a2q6",
+                                "navigation": {
+                                    "down": { "name": "Quest31" },
+                                    "left": { "name": "Quest27" },
+                                    "right": { "name": "Quest29" },
+                                },
+                                "toggledFrame": 0,
+                                "untoggledFrame": 25,
+                                "untoggledDisabledFrame": 26
+                            },
+                        },
+						{
+                            "type": "ToggleButtonWidget", "name": "Quest29",
+                            "fields": {
+                                "rect": { "x": 1020, "y": 110 },
+                                "filename": "QuestIcons\\a3q6",
+                                "navigation": {
+                                    "down": { "name": "Quest32" },
+                                    "left": { "name": "Quest28" },
+                                    "right": { "name": "NormalDifficulty" },
+                                },
+                                "toggledFrame": 0,
+                                "untoggledFrame": 25,
+                                "untoggledDisabledFrame": 26
+                            },
+                        },
+                        {
+                            "type": "ToggleButtonWidget", "name": "Quest30",
+                            "fields": {
+                                 "rect": { "x": 204, "y": 414 },
+                                "filename": "QuestIcons\\a4q3",
+                                "navigation": {
+                                    "up": { "name": "Quest27" },
+                                    "left": { "name": "BossesButton" },
+                                    "right": { "name": "Quest31" },
+                                },
+                                "toggledFrame": 0,
+                                "untoggledFrame": 25,
+                                "untoggledDisabledFrame": 26
+                            },
+                        },
+                        {
+                            "type": "ToggleButtonWidget", "name": "Quest31",
+                            "fields": {
+                                "rect": { "x": 610, "y": 414 },
+                                "filename": "QuestIcons\\a5q6",
+                                "navigation": {
+                                    "up": { "name": "Quest28" },
+                                    "left": { "name": "Quest30" },
+                                    "right": { "name": "Quest32" },
+                                },
+                                "toggledFrame": 0,
+                                "untoggledFrame": 25,
+                                "untoggledDisabledFrame": 26
+                            },
+                        },
+                        {
+                            "type": "ToggleButtonWidget", "name": "Quest32",
+                            "fields": {
+                                "rect": { "x": 1020, "y": 414 },
+                                "filename": "QuestIcons\\Misc\\CowKing",
+                                "navigation": {
+                                    "up": { "name": "Quest29" },
+                                    "left": { "name": "Quest31" },
+                                    "right": { "name": "NormalDifficulty" },
+                                },
+                                "toggledFrame": 0,
+                                "untoggledFrame": 1,
+                                "untoggledDisabledFrame": 2
+                            },
+                        },
+                    ]
+                }
+            ]
+        },
+		{
+            "type": "ToggleButtonWidget", "name": "ZonesButton",
+            "fields": {
+                "rect": { "x": -1304, "y": 1020 },
+                "filename": "Controller\\Lobby\\Play\\ConsoleMatchmaking_ListButton",
+                "focusIndicatorFilename": "Controller/HoverImages/MatchmakingAct_Hover",
+                "onClickMessage": "GameFinder:SelectAct:6",
+                "textString": "@Zones",
+                "text/style": "$StyleFEButtonText",
+                "textColor": "$LightButtonTextColor",
+                "navigation": {
+                    "up": { "name": "BossesButton" },
+					"down": { "name": "OtherButton" },
+                    "right": { "name": "NormalDifficulty" },
+                }
+            },
+            "children": [
+                {
+                    "type": "Widget", "name": "Container",
+                    "fields": {
+                        "rect": {"x": 575, "y": -570}
+                    },
+                    "children": [
+                        {
+                            "type": "ToggleButtonWidget", "name": "Quest33",
+                            "fields": {
+                                 "rect": { "x": 204, "y": 110 },
+                                "filename": "QuestIcons\\Misc\\FreeRoam",
+                                "navigation": {
+                                    "down": { "name": "Quest36" },
+                                    "left": { "name": "ZonesButton" },
+                                    "right": { "name": "Quest34" },
+                                },
+                                "toggledFrame": 0,
+                                "untoggledFrame": 1,
+                                "untoggledDisabledFrame": 2
+                            },
+                        },
+                        {
+                            "type": "ToggleButtonWidget", "name": "Quest34",
+                            "fields": {
+                                 "rect": { "x": 610, "y": 110 },
+                                "filename": "QuestIcons\\a1q3",
+                                "navigation": {
+                                    "down": { "name": "Quest37" },
+                                    "left": { "name": "Quest33" },
+                                    "right": { "name": "Quest35" },
+                                },
+                                "toggledFrame": 0,
+                                "untoggledFrame": 25,
+                                "untoggledDisabledFrame": 26
+                            },
+                        },
+                        {
+                            "type": "ToggleButtonWidget", "name": "Quest35",
+                            "fields": {
+                                 "rect": { "x": 1020, "y": 110 },
+                                "filename": "QuestIcons\\a4q3",
+                                "navigation": {
+									"down": { "name": "Quest38" },
+                                    "left": { "name": "Quest34" },
+                                    "right": { "name": "NormalDifficulty" },
+                                },
+                                "toggledFrame": 0,
+                                "untoggledFrame": 25,
+                                "untoggledDisabledFrame": 26
+                            },
+                        },
+                        {
+                            "type": "ToggleButtonWidget", "name": "Quest36",
+                            "fields": {
+                                 "rect": { "x": 204, "y": 414 },
+                                "filename": "QuestIcons\\a4q3",
+                                "navigation": {
+                                    "up": { "name": "Quest33" },
+                                    "left": { "name": "ZonesButton" },
+                                    "right": { "name": "Quest37" },
+                                },
+                                "toggledFrame": 0,
+                                "untoggledFrame": 25,
+                                "untoggledDisabledFrame": 26
+                            },
+                        },
+                        {
+                            "type": "ToggleButtonWidget", "name": "Quest37",
+                            "fields": {
+                                 "rect": { "x": 610, "y": 414 },
+                                "filename": "QuestIcons\\a4q3",
+                                "navigation": {
+                                    "up": { "name": "Quest34" },
+                                    "left": { "name": "Quest36" },
+									"right": { "name": "Quest38" },
+                                },
+                                "toggledFrame": 0,
+                                "untoggledFrame": 25,
+                                "untoggledDisabledFrame": 26
+                            },
+                        },
+						{
+                            "type": "ToggleButtonWidget", "name": "Quest38",
+                            "fields": {
+                                 "rect": { "x": 1020, "y": 414 },
+                                "filename": "QuestIcons\\a4q3",
+                                "navigation": {
+                                    "up": { "name": "Quest35" },
+                                    "left": { "name": "Quest37" },
+									"right": { "name": "NormalDifficulty" },
+                                },
+                                "toggledFrame": 0,
+                                "untoggledFrame": 25,
+                                "untoggledDisabledFrame": 26
+                            },
+                        },
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "ToggleButtonWidget", "name": "OtherButton",
+            "fields": {
+                "rect": { "x": -1304, "y": 1115 },
+                "filename": "Controller\\Lobby\\Play\\ConsoleMatchmaking_ListButton",
+                "focusIndicatorFilename": "Controller/HoverImages/MatchmakingAct_Hover",
+                "onClickMessage": "GameFinder:SelectAct:7",
+                "textString": "@other",
+                "text/style": "$StyleFEButtonText",
+                "textColor": "$LightButtonTextColor",
+                "navigation": {
+                    "up": { "name": "ZonesButton" },
+                    "right": { "name": "NormalDifficulty" },
+                }
+            },
+            "children": [
+                {
+                    "type": "Widget", "name": "Container",
+                    "fields": {
+                        "rect": {"x": 575, "y": -665}
+                    },
+                    "children": [
+                        {
+                            "type": "ToggleButtonWidget", "name": "Quest39",
+                            "fields": {
+                                 "rect": { "x": 204, "y": 110 },
+                                "filename": "QuestIcons\\Misc\\PandemoniumEvent",
+                                "navigation": {
+                                    "left": { "name": "OtherButton" },
+                                    "right": { "name": "Quest40" },
+                                },
+                                "toggledFrame": 0,
+                                "untoggledFrame": 1,
+                                "untoggledDisabledFrame": 2
+                            },
+                        },
+                        {
+                            "type": "ToggleButtonWidget", "name": "Quest40",
+                            "fields": {
+                                 "rect": { "x": 610, "y": 110 },
+                                "filename": "QuestIcons\\Misc\\UberDiablo",
+                                "navigation": {
+                                    "left": { "name": "Quest39" },
+                                    "right": { "name": "Quest41" },
+                                },
+                                "toggledFrame": 0,
+                                "untoggledFrame": 1,
+                                "untoggledDisabledFrame": 2
+                            },
+                        },
+                        {
+                            "type": "ToggleButtonWidget", "name": "Quest41",
+                            "fields": {
+                                 "rect": { "x": 1020, "y": 110 },
+                                "filename": "QuestIcons\\Misc\\PVP",
+                                "navigation": {
+                                    "left": { "name": "Quest40" },
+                                    "right": { "name": "NormalDifficulty" },
+                                },
+                                "toggledFrame": 0,
+                                "untoggledFrame": 1,
+                                "untoggledDisabledFrame": 2
+                            },
+                        },
+                    ]
+                }
+            ]
+        },
+        // Difficulty Buttons - Right Section
+        {
+            "type": "TextBoxWidget", "name": "DifficultyTitle",
+            "fields": { 
+                "rect": { "x": 720, "y": 465, "width": 550, "height": 75 }, 
+                "text": "@OptionsMenuGameDifficulty",
+                "style": {
+                    "fontColor": "$FontColorGold", 
+                    "pointSize": "$XMediumFontSize",
+                    "options": { "newlineHandling": "standard"},
+                    "alignment": { "h": "center", "v": "center" },
+                },
+            },
+        },
+        {
+            "type": "ToggleButtonWidget", "name": "NormalDifficulty",
+            "fields": {
+                "rect": { "x": 710, "y": 560 },
+                "filename": "Controller\\Lobby\\Play\\ConsoleMatchmaking_DifficultyButton",
+                "onClickMessage": "GameFinder:SelectDifficulty:0",
+                "focusIndicatorFilename": "Controller/HoverImages/MatchmakingDifficulty_Hover",
+                "textString": "@strCreateGameNormalText",
+                "text/style": "$StyleFEButtonText",
+                "textColor": "$LightButtonTextColor",
+                // Untoggled Frames
+                "untoggledFrame": 0,
+                "untoggledPressedFrame": 1,
+                "untoggledDisabledFrame": 2,
+                "untoggledHoveredFrame": 3,
+                // Toggled Frames
+                "toggledFrame": 5,
+                "toggledPressedFrame": 6,
+                "toggledHoveredFrame": 7,
+                "toggledDisabledFrame": 2,
+                "navigation": {
+                    "down": { "name": "NightmareDifficulty" },
+                    "left": { "name": "Act1Button" },
+                }
+            }
+        },
+        {
+            "type": "ToggleButtonWidget", "name": "NightmareDifficulty",
+            "fields": {
+                "rect": { "x": 710, "y": 650 },
+                "filename": "Controller\\Lobby\\Play\\ConsoleMatchmaking_DifficultyButton",
+                "onClickMessage": "GameFinder:SelectDifficulty:1",
+                "focusIndicatorFilename": "Controller/HoverImages/MatchmakingDifficulty_Hover",
+                "textString": "@strCreateGameNightmareText",
+                "text/style": "$StyleFEButtonText",
+                "textColor": "$LightButtonTextColor",
+                // Untoggled Frames
+                "untoggledFrame": 0,
+                "untoggledPressedFrame": 1,
+                "untoggledDisabledFrame": 2,
+                "untoggledHoveredFrame": 3,
+                // Toggled Frames
+                "toggledFrame": 5,
+                "toggledPressedFrame": 6,
+                "toggledHoveredFrame": 7,
+                "toggledDisabledFrame": 2,
+                "navigation": {
+                    "up": { "name": "NormalDifficulty" },
+                    "down": { "name": "HellDifficulty" },
+                    "left": { "name": "Act1Button" },
+                }
+            }
+        },
+        {
+            "type": "ToggleButtonWidget", "name": "HellDifficulty",
+            "fields": {
+                "rect": { "x": 710, "y": 740 },
+                "filename": "Controller\\Lobby\\Play\\ConsoleMatchmaking_DifficultyButton",
+                "onClickMessage": "GameFinder:SelectDifficulty:2",
+                "focusIndicatorFilename": "Controller/HoverImages/MatchmakingDifficulty_Hover",
+                "textString": "@strCreateGameHellText",
+                "text/style": "$StyleFEButtonText",
+                "textColor": "$LightButtonTextColor",
+                // Untoggled Frames
+                "untoggledFrame": 0,
+                "untoggledPressedFrame": 1,
+                "untoggledDisabledFrame": 2,
+                "untoggledHoveredFrame": 3,
+                // Toggled Frames
+                "toggledFrame": 5,
+                "toggledPressedFrame": 6,
+                "toggledHoveredFrame": 7,
+                "toggledDisabledFrame": 2,
+                "navigation": {
+                    "up": { "name": "NightmareDifficulty" },
+                    "down": { "name": "DesiredPlayerCountInput" },
+                    "left": { "name": "Act1Button" },
+                }
+            }
+        },
+        // Additional options - Right/Bottom Section
+        {
+            "type": "TextBoxWidget", "name": "DesiredPlayerCountLabel",
+            "fields": {
+                "rect": { "x": 710, "y": 887, "width": 430, "height": 120 },
+                "fontType": "16pt",
+                "text": "@OptionsMenuMaxPlayers",
+                "style": {
+                    "fontColor": "$FontColorGoldYellow",
+                    "pointSize": "$SmallFontSize",
+                    "spacing" : "$ReducedSpacing",
+                    "dropShadow": "$DefaultDropShadow",
+                    "alignment": { "h": "left", "v": "center" },
+                    "options": { "lineWrap": true },
+                },
+            },
+        },
+        {
+            "type": "ImageWidget", "name": "DesiredPlayerCountInputBackground",
+            "fields": {
+                "rect": { "x": 1158, "y": 919 },
+                "filename": "$SettingsNumericBackgroundImage",
+            },
+        },
+        {
+            "type": "NumericInputTextBoxWidget", "name": "DesiredPlayerCountInput",
+            "fields": {
+                "rect": { "x": 1185, "y": 922, "width": 48, "height": 56 },
+                "focusIndicatorPadding": "$OptionsToggleFocusIndicatorPadding",
+                "focusIndicatorOffset": "$OptionsNumInputFocusIndicatorOffset",
+                "focusIndicatorFilename": "$OptionsNumInputFocusIndicatorFilename",
+                "backgroundColor": "$FontColorTransparent",
+                "minValue": 2,
+                "maxValue": 8,
+                "fontType": "8ptE",
+                "fontStyle": "$StyleSettingsNumeric",
+                "scrollUpButton": "$SettingsNumericUpButtonFields",
+                "scrollUpButton/rect": { "x": 63, "y": 1 },
+                "scrollDownButton": "$SettingsNumericDownButtonFields",
+                "scrollDownButton/rect": { "x": 63, "y": 29 },
+                "tooltipString": "@OptionsMenuMaxPlayerCountTooltip",
+                "tooltipStyle": {
+                    "fontStyle": {
+                        "options": { "newlineHandling": "standard" },
+                    },
+                    "showAfterDelay": true,
+                },
+                "navigation": {
+                    "up": { "name": "HellDifficulty" },
+                    "left": { "name": "Act1Button" },
+                },
+            }
+        },
+        // Title/Description Text Boxes - Center/Bottom Section
+        {
+            "type": "TextBoxWidget", "name": "ShortDescription",
+            "fields": {
+                "rect": { "x": -580, "y": 1157, "width": 1110, "height": 83 },
+                "style": {
+                    "pointSize": "$LargeFontSize",
+                    "alignment": { "h": "center", "v": "center" },
+                    "spacing" : "$MinimumSpacing",
+                    "fontColor": "$DescriptionTitleColor"
+                }
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "LongDescription",
+            "fields": {
+                "rect": { "x": -679, "y": 1312, "width": 1306, "height": 273 },
+                "style": {
+                    "fontFace": "Formal",
+                    "fontColor": "$DescriptionTextColor",
+                    "pointSize": "$MediumFontSize",
+                    "alignment": { "h": "center", "v": "top" },
+                    "options": { "lineWrap": true },
+                    "spacing":"$ReducedSpacing"
+                }
+            }
+        },
+    ]
+}
+

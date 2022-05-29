@@ -1,0 +1,30 @@
+{
+    "type": "KoreaComplianceSplashPanel", "name": "KoreaComplianceSplashPanel",
+    "fields": {
+        "fitToParent": true,
+    },
+    "children": [
+        {
+            "type": "RectangleWidget", "name": "Background",
+            "fields": {
+                "fitToParent": true,
+                "color": [ 0.0, 0.0, 0.0, 1.0 ]
+            }
+        },
+        {
+            "type": "ImageWidget", "name": "ComplianceSplashScreen",
+            "fields": {
+                "filename": "SplashScreen//KR-compliance-splash-3840",
+                "anchor": { "x": 0.5, "y": 0.5 },
+                "rect": { "x": -458, "y": -400 },
+            },
+        },
+        {
+            "type": "TimerWidget", "name": "SplashScreenTimer",
+            "fields": {
+                "time": 3,
+                "message": "PanelManager:UnloadPanel:KoreaComplianceSplashPanel",
+            },
+        },
+    ]
+}

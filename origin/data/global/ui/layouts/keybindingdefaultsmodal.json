@@ -1,0 +1,95 @@
+{
+    "type": "Modal", "name": "KeyBindingDefaultsModal",
+    "fields": { 
+        "anchor": { "x": 0.5, "y": 0.5 },
+    },
+    "children": [
+        {
+            "type": "GridImageWidget", "name": "Frame",
+            "fields": {
+                "rect": { "x": -162, "y": -120 },
+                "filename": "CharSelect\\DifficultyLevels",
+                "frames": 2,
+                "rows": 1
+            },
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "Title",
+                    "fields": {
+                        "rect": { "y": 16, "width": 327, "height": 50 },
+                        "text": "@KeyBindingDefaultsModalDescription",
+                        "fontType": "24pt",
+                        "style": { 
+                            "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 }, 
+                            "alignment": { "h": "center" },
+                            "options": { "lineWrap": true, "newlineHandling": "standard" },
+                        }
+                    }
+                },
+                {
+                    "type": "TableWidget", "name": "ButtonsTable",
+                    "fields": {
+                        "rect": { "x": -100, "y": 53 },
+                        "anchor": { "x": 0.5 },
+                        "columns": [ { "width": 272, "alignment": { "h": "fit", "v": "fit" } } ],
+                        "rowHeight": 45,
+                        "cellPadding": { "top": 5, "bottom": 5 },
+                    },
+                    "children": [
+                        {
+                            "type": "TableRowWidget", "name": "Row Classic",
+                            "children": [
+                                {
+                                    "type": "ButtonWidget", "name": "Classic",
+                                    "fields": { 
+                                        "filename": "FrontEnd\\WideButtonBlank",
+                                        "multiFrame": true,
+                                        "pressedFrame": 2,
+                                        "textString": "@KeyBindingTypeClassic",
+                                        "onClickMessage": "KeyBindingPanelMessage:ResetToClassicDefaults",
+                                        "fontType": "10ptE",
+                                        "textColor": { "r": 255, "g": 255, "b": 255, "a": -1 },
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row Resurrected",
+                            "children": [
+                                {
+                                    "type": "ButtonWidget", "name": "Resurrected",
+                                    "fields": { 
+                                        "filename": "FrontEnd\\WideButtonBlank",
+                                        "multiFrame": true,
+                                        "pressedFrame": 2,
+                                        "textString": "@KeyBindingTypeResurrected",
+                                        "onClickMessage": "KeyBindingPanelMessage:ResetToResurrectedDefaults",
+                                        "fontType": "10ptE",
+                                        "textColor": { "r": 255, "g": 255, "b": 255, "a": -1 },
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row Custom",
+                            "children": [
+                                {
+                                    "type": "ButtonWidget", "name": "Custom",
+                                    "fields": { 
+                                        "filename": "FrontEnd\\WideButtonBlank",
+                                        "multiFrame": true,
+                                        "pressedFrame": 2,
+                                        "textString": "@KeyBindingTypeCustom",
+                                        "onClickMessage": "KeyBindingPanelMessage:ResetToCustomDefaults",
+                                        "fontType": "10ptE",
+                                        "textColor": { "r": 255, "g": 255, "b": 255, "a": -1 },
+                                    }
+                                },
+                            ]
+                        },
+                    ]
+                },
+            ]
+        },
+    ]
+}

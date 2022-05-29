@@ -1,0 +1,29 @@
+{
+    "basedOn": "ConfirmationModal.json",
+    "type": "DeleteCharacterModal", "name": "DeleteCharacterModal",
+    "children": [
+        {
+            "type": "GridImageWidget", "name": "Frame",
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "Prompt",
+                    "fields": {
+                        "text": "@strdeletecharmessage"
+                    }
+                },
+                {
+                    "type": "ButtonWidget", "name": "Confirm",
+                    "fields": {
+                        "textString": "@strdeletecharok"
+                    }
+                },
+                {
+                    "type": "ButtonWidget", "name": "Dismiss",
+                    "fields": {
+                        "textString": "@strdeletecharnot"
+                    }
+                },
+            ]
+        },
+    ]
+}

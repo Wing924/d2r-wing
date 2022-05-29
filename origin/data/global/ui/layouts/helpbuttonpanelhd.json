@@ -1,0 +1,36 @@
+{
+    "type": "HelpButtonPanel", "name": "HelpButtonPanel",
+    "fields": {
+        "priority": -1, // Lower than all right panels
+        "anchor": { "x": 0.5, "y": 1 },
+        "rect": { "x": -1454, "y": -412 },
+        "skillUpActiveHelpPanelPosition": { "x": -1454, "y": -622 },
+    },
+    "children": [
+        {
+            "type": "ButtonWidget", "name": "Help",
+            "fields": {
+                "rect": { "x": 2368, "y": -164 },
+                "filename": "PANEL/HUD_02/quest_button",
+                "onClickMessage": "HelpButtonPanelMessage:OpenHelp"
+            },
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "Label",
+                    "fields": {
+                        "anchor": { "x": 0.5 },
+                        "rect": { "y": -3 },
+                        "fontType": "16pt",
+                        "text": "@minipanelHelp@minipanelspecial",
+                        "style": {
+                            "pointSize": "$XMediumLargeFontSize",
+                            "alignment": { "v": "bottom", "h": "center" },
+                            "spacing" : "$MinimumSpacing",
+                            "dropShadow": "$DefaultDropShadow",
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

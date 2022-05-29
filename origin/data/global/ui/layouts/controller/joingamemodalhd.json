@@ -1,0 +1,70 @@
+{
+    "basedOn": "JoinGameModalHD.json",
+    "type": "JoinGameModal", "name": "JoinGameModal",
+    "fields": {
+        "defaultWidget": "Ok",
+    },
+    "children": [
+        {
+            "type": "GridImageWidget", "name": "Background",
+            
+        },
+        {
+            "type": "TextBoxWidget", "name": "OptionsText",
+        },
+        {
+            "type": "Widget", "name": "JoinGameInputScreen",
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "Title",
+                },
+                {
+                    "type": "ImageWidget", "name": "InputBackground",
+                },
+                {
+                    "type": "InputTextBoxWidget", "name": "InputText",
+                },
+                {
+                    "type": "ButtonWidget", "name": "Ok",
+                    "fields": {
+                        "navigation": {
+                            "down": { "name": "Cancel" },
+                        }
+                    }        
+                   
+                },
+                {
+                    "type": "ButtonWidget", "name": "Cancel",
+                    "fields": {
+                        "navigation": {
+                            "up": { "name": "Ok" },
+                        }
+                    }   
+                    
+                },
+            ]
+        },
+        {
+            "type": "Widget", "name": "WaitModal",
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "WaitMessage",
+                },
+                {
+                    "type": "ButtonWidget", "name": "CancelButton",
+                },
+            ]
+        },
+        {
+            "type": "Widget", "name": "CannotConnectModal",
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "FailMessage",
+                },
+                {
+                    "type": "ButtonWidget", "name": "OkButton",
+                }
+            ]
+        }
+    ]
+}

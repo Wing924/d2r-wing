@@ -1,0 +1,105 @@
+{
+    "type": "EndScreenPanel", "name": "EndScreenPanel",
+    "fields": {
+        "fitToParent": true,
+        "defaultWidget": "Ok",
+    },
+    "children": [
+        {
+            "type": "RectangleWidget", "name": "Background",
+            "fields": {
+                "fitToScreen": true,
+                "color": [ 0.0, 0.0, 0.0, 1.0 ]
+            },
+            "children": [
+                {
+                    "type": "ClickCatcherWidget", "name": "ClickCatcher",
+                    "fields": {
+                        "fitToParent": true,
+                    }
+                },
+            ]
+        },
+        {
+            "type": "ImageWidget", "name": "BackgroundImage",
+            "fields": {
+                "anchor": { "x": 0.5 },
+                "rect": { "x": -1920 },
+                "filename": "SplashScreen/EndGame_HD",
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "Congratulations",
+            "fields": {
+                "anchor": { "x": 0.5 },
+                "rect": { "x": -600, "y": 166, "width": 1200, "height": 27 },
+                "text": "@Killdiablo1",
+                "style": "$StyleVictoryText"
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "Vanquished",
+            "fields": {
+                "anchor": { "x": 0.5 },
+                "rect": { "x": -600, "y": 380, "width": 1200, "height": 27 },
+                "text": "@KillDiablo2",
+                "style": "$StyleVictoryText"
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "Name",
+            "fields": {
+                "anchor": { "x": 0.5 },
+                "rect": { "x": -600, "y": 746, "width": 1200 },
+                "style": "$StyleVictoryText"
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "Henceforth",
+            "fields": {
+                "anchor": { "x": 0.5 },
+                "rect": { "x": -600, "y": 940, "width": 1200, "height": 27 },
+                "text": "@KillDiablo3",
+                "style": "$StyleVictoryText"
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "Title",
+            "fields": {
+                "anchor": { "x": 0.5 },
+                "rect": { "x": -600, "y": 1146, "width": 1200, "height": 27 },
+                "style": "$StyleVictoryText"
+            }
+        },
+        {
+            "type": "ButtonWidget", "name": "Ok",
+            "fields": {
+                "anchor": { "x": 0.5 },
+                "rect": { "x": -265, "y": 1676 },
+                "filename": "PANEL\\Modals\\ModalButton",
+                "focusIndicatorFilename": "Controller/HoverImages/ModalButton_Hover",
+                "textString": "@strOk",
+                "pointSize": "$MediumFontSize",
+                "onClickMessage": "FrontEndNavigation:ToMainMenu",
+                "textColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                "pressedFrame": 1,
+                "disabledFrame": 2,
+                "hoveredFrame": 3,
+            },
+            "children": [
+                {
+                    "type": "ButtonLegendWidget", "name": "ConfirmLegend",
+                    "fields": {
+                        "anchor": { "x": 0.5, "y": 1.0 },
+                        "text": { "style": "$StyleButtonLegend" },
+                        "presets": [
+                            {
+                                "action": "select",
+                            },
+                        ],
+                    }
+                },
+            ]
+        }
+    ]
+}

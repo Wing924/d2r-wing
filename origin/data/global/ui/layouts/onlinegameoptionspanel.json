@@ -1,0 +1,212 @@
+{
+    "type": "OnlineGameOptionsPanel", "name": "OnlineGameOptionsPanel",
+    "fields": {
+        "priority": 9003,
+        "defaultWidget": "GameDifficulty",
+        "rect": [ -400, -300, 800, 600 ],
+        "anchor": [ 0.5, 0.5 ]
+    },
+    "children": [
+        {
+            "type": "ClickCatcherWidget", "name": "catcher",
+            "fields": {
+                "fitToParent": true,
+            }
+        },
+        {
+            "type": "AnimatedImageWidget", "name": "LeftPentagram",
+            "fields": {
+                "rect": { "x": 100, "y": 250 },
+                "filename": "CURSOR/Pentspin",
+                "fps": -16,
+            }
+        },
+        {
+            "type": "AnimatedImageWidget", "name": "RightPentagram",
+            "fields": {
+                "rect": { "x": 650, "y": 250 },
+                "filename": "CURSOR/Pentspin",
+                "fps": 16,
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "Game Settings",
+            "fields": {
+                "rect": { "x": 0, "y": 120, "width": 800, "height": 44 },
+                "text": "@OnlineGameSettingsSD",
+                "fontType": "42pt",
+                "style": "$StyleSettingsTitle",
+            }
+        },
+        {
+            "type": "TableWidget", "name": "OptionsTable",
+            "fields": {
+                "rect": { "x": 0, "y": 170 },
+                "columns": [ "$OptionsTableColumn1", "$OptionsTableColumn2" ],
+                "rowHeight": "$OptionsTableRowHeight",
+                "cellPadding": "$OptionsTableCellPadding",
+                "generateFocusLinks": true,
+            },
+            "children": [
+                {
+                    "type": "TableRowWidget", "name": "Row MaxPlayers",
+                    "children": [
+                        {
+                            "type": "TextBoxWidget", "name": "MaxPlayersText",
+                            "fields": {
+                                "text": "@strMaxPlayersSD",
+                                "fontType": "30pt",
+                                "style": "$StyleSettingsText",
+                            },
+                        },
+                        {
+                            "type": "Widget", "name": "MaxPlayersContainer",
+                            "fields": {
+                                "rect": "$OptionsNumericContainerRect",
+                            },
+                            "children": [
+                                {
+                                    "type": "ImageWidget", "name": "Background",
+                                    "fields": {
+                                        "filename": "$OptionsNumericBackgroundImage",
+                                    },
+                                },
+                                {
+                                    "type": "NumericInputTextBoxWidget", "name": "MaxPlayers",
+                                    "fields": { 
+                                        "rect": "$OptionsNumericRect",
+                                        "hitMargin": "$OptionsNumericHitMargin",
+                                        "backgroundColor": "$FontColorTransparent",
+                                        "minValue": 1,
+                                        "maxValue": 8,
+                                        "fontType": "30pt",
+                                        "fontStyle": "$StyleSettingsNumeric",
+                                        "focusOnMouseOver": true,
+                                        "onUpdateMessage": "OptionsPanelMessage:SetMaxPlayers",
+                                    },
+                                },
+                            ]
+                        },
+                    ]
+                },
+                {
+                    "type": "TableRowWidget", "name": "Row LevelDifferenceEnabled",
+                    "children": [
+                        {
+                            "type": "TextBoxWidget", "name": "LevelDifferenceEnabledText",
+                            "fields": {
+                                "text": "@strLevelDifferenceEnabledSD",
+                                "fontType": "30pt",
+                                "style": "$StyleSettingsText",
+                            },
+                        },
+                        {
+                            "type": "CarouselWidget", "name": "LevelDifferenceEnabled",
+                            "fields": {
+                                "rect": "$OptionsCarouselRect",
+                                "hitMargin": "$OptionsCarouselHitMargin",
+                                "states": [ "No", "Yes" ],
+                                "onUpdateMessage": "OptionsPanelMessage:SetLevelDifferenceEnabled",
+                                "fontType": "30pt",
+                                "textClickedChangesState": true,
+                                "sound": "select",
+                                "enabledColor": "$FontColorWhite",
+                                "style": "$StyleSettingsCarousel",
+                                "focusOnMouseOver": true,
+                            }
+                        },
+                    ]
+                },
+                {
+                    "type": "TableRowWidget", "name": "Row MaxLevelDifference",
+                    "children": [
+                        {
+                            "type": "TextBoxWidget", "name": "LevelDifferenceText",
+                            "fields": {
+                                "text": "@strMaxLevelDifferenceSD",
+                                "fontType": "30pt",
+                                "style": "$StyleSettingsText",
+                            },
+                        },
+                        {
+                            "type": "Widget", "name": "MaxLevelDifferenceContainer",
+                            "fields": {
+                                "rect": "$OptionsNumericContainerRect",
+                            },
+                            "children": [
+                                {
+                                    "type": "ImageWidget", "name": "Background",
+                                    "fields": {
+                                        "filename": "$OptionsNumericBackgroundImage",
+                                    },
+                                },
+                                {
+                                    "type": "NumericInputTextBoxWidget", "name": "MaxLevelDifference",
+                                    "fields": { 
+                                        "rect": "$OptionsNumericRect",
+                                        "hitMargin": "$OptionsNumericHitMargin",
+                                        "backgroundColor": "$FontColorTransparent",
+                                        "minValue": 0,
+                                        "maxValue": 99,
+                                        "fontType": "30pt",
+                                        "fontStyle": "$StyleSettingsNumeric",
+                                        "focusOnMouseOver": true,
+                                        "onUpdateMessage": "OptionsPanelMessage:SetMaxLevelDifference",
+                                    },
+                                },
+                            ]
+                        },
+                    ]
+                },
+				{
+                    "type": "TableRowWidget", "name": "Row AllowBnetFriendsJoin",
+                    "children": [
+                        {
+                            "type": "TextBoxWidget", "name": "AllowBnetFriendsJoinText",
+                            "fields": {
+                                "text": "@CreateSettingAllowBnetFriendsJoinSD",
+                                "fontType": "30pt",
+                                "style": "$StyleSettingsText",
+                            },
+                        },
+                        {
+                            "type": "CarouselWidget", "name": "AllowBnetFriendsJoin",
+                            "fields": {
+                                "rect": "$OptionsCarouselRect",
+                                "hitMargin": "$OptionsCarouselHitMargin",
+                                "states": [ "No", "Yes" ],
+                                "onUpdateMessage": "OptionsPanelMessage:SetAllowBnetFriendsJoin",
+                                "fontType": "30pt",
+                                "textClickedChangesState": true,
+                                "sound": "select",
+                                "enabledColor": "$FontColorWhite",
+                                "style": "$StyleSettingsCarousel",
+                                "focusOnMouseOver": true,
+                            }
+                        },
+                    ]
+                },
+                {
+                    "type": "TableRowWidget", "name": "Row Previous Menu",
+                    "children": [
+                        {
+                            "type": "ButtonWidget", "name": "Previous Menu",
+                            "fields": {
+                                "rect": "$OptionsButtonRect",
+                                "hitMargin": "$OptionsButtonHitMargin",
+                                "textString": "@PreviousMenuSD",
+                                "onClickMessage": "SettingsPanelMessage:ToggleChildPanel:OnlineGameOptionsPanel",
+                                "sound": "select",
+                                "fontType": "30pt",
+                                "pressLabelOffset": [ 0, 0 ],
+                                "textColor": "$FontColorWhite",
+                                "acceptsReturnKey": true,
+                                "focusOnMouseOver": true,
+                            }
+                        },
+                    ]
+                },
+            ]
+        },
+    ]
+}

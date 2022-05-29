@@ -1,0 +1,163 @@
+{
+    "type": "TradePanel", "name": "TradeLayout",
+    "fields": {
+        "priority": 5,
+        "rect": "$LeftPanelRect",
+        "anchor": "$LeftPanelAnchor",
+    },
+    "children": [
+        {
+            "type": "ClickCatcherWidget", "name": "click_catcher",
+            "fields": {
+                "rect": "$PanelClickCatcherRect"
+            },
+        },
+        {
+            "type": "ImageWidget", "name": "background",
+            "fields": {
+                "filename": "PANEL\\Trade\\MultiplayerTrade_BG",
+            },
+        },
+        {
+            "type": "ImageWidget", "name": "LeftHinge",
+            "fields": {
+                "rect": "$LeftHingeRect",
+                "filename": "$LeftHingeSprite"
+            },
+        },
+        {
+            "type": "TextBoxWidget", "name": "Title",
+            "fields": {
+                "rect": "$InGamePanelTitleRect",
+                "style": "$StyleTitleBlock",
+                "text": "@NPCMenuTrade",
+            },
+        },
+        {
+            "type": "TextBoxWidget", "name": "name_them",
+            "fields": {
+                "useAltStyleIfDoesntFit": true,
+                "rect": { "x": 224, "y": 207, "width": 430, "height": 52 },
+                "style": {
+                    "pointSize": "$XMediumPanelFontSize",
+                    "spacing": "$MinimumSpacing",
+                    "alignment": { "h": "left", "v": "center" }
+                },
+                "altStyle": {
+                    "pointSize": "$SmallPanelFontSize",
+                    "spacing": "$MinimumSpacing",
+                    "alignment": { "h": "left", "v": "center" }
+                },
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "gold_amount_them",
+            "fields": {
+                "rect": { "x": 733, "y": 208, "width": 309, "height": 53 },
+                "style": "$StyleGoldAmount",
+            },
+            "children": [
+                {
+                    "type": "FocusableWidget", "name": "Tooltip",
+                    "fields": {
+                        "fitToParent": true,
+                        "tooltipString": "@gld",
+                        "tooltipStyle": "$TooltipStyle"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "InventoryGridWidget", "name": "grid_them",
+            "fields": {
+                "rect": { "x": 92, "y": 320 },
+                "cellCount": { "x": 10, "y": 4 },
+                "cellSize": "$ItemCellSize",
+                "gemSocketFilename": "PANEL\\gemsocket",
+            },
+        },
+        {
+            "type": "TextBoxWidget", "name": "name_us",
+            "fields": {
+                "useAltStyleIfDoesntFit": true,
+                "rect": { "x": 224, "y": 1277, "width": 430, "height": 52 },
+                "style": {
+                    "pointSize": "$XMediumPanelFontSize",
+                    "spacing": "$MinimumSpacing",
+                    "alignment": { "h": "left", "v": "center" }
+                },
+                "altStyle": {
+                    "pointSize": "$SmallPanelFontSize",
+                    "spacing": "$MinimumSpacing",
+                    "alignment": { "h": "left", "v": "center" }
+                },
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "gold_amount_us",
+            "fields": {
+                "rect": { "x": 733, "y": 1278, "width": 309, "height": 53 },
+                "style": "$StyleGoldAmount",
+            },
+            "children": [
+                {
+                    "type": "FocusableWidget", "name": "Tooltip",
+                    "fields": {
+                        "fitToParent": true,
+                        "tooltipString": "@gld",
+                        "tooltipStyle": "$TooltipStyle"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "InventoryGridWidget", "name": "grid_us",
+            "fields": {
+                "rect": { "x": 92, "y": 814 },
+                "cellCount": { "x": 10, "y": 4 },
+                "cellSize": "$ItemCellSize",
+                "gemSocketFilename": "PANEL\\gemsocket",
+            },
+        },
+        {
+            "type": "ButtonWidget", "name": "ready_them",
+            "fields": {
+                "rect": { "x": 103, "y": 198, },
+                "filename": "PANEL\\Trade\\AcceptButton",
+                "focusIndicatorFilename": "Controller/HoverImages/AcceptTrade_Hover",
+                "focusIndicatorOffset": { "x": 1, "y": 0 },
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "tooltipOffset": { "x": 0, "y": -3 },
+            },
+        },
+        {
+            "type": "ButtonWidget", "name": "ready_us",
+            "fields": {
+                "rect": { "x": 103, "y": 1267 },
+                "filename": "PANEL\\Trade\\AcceptButton",
+                "focusIndicatorFilename": "Controller/HoverImages/AcceptTrade_Hover",
+                "focusIndicatorOffset": { "x": 1, "y": 0 },
+                "hoveredFrame": 3,
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "tooltipString": "@strAcceptTrade",
+                "tooltipOffset": { "x": 0, "y": -3 },
+                "onClickMessage": "TradePanelMessage:Confirm",
+            },
+        },
+        {
+            "type": "ButtonWidget", "name": "close",
+            "fields": {
+                "rect": { "x": 1075, "y": 9 },
+                "filename": "PANEL\\closebtn_4x",
+                "hoveredFrame": 3,
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "tooltipString": "@strClose",
+                "sound": "cursor_close_window_hd",
+                "onClickMessage": "TradePanelMessage:Close",
+            },
+        },
+    ]
+}

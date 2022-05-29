@@ -1,0 +1,116 @@
+{
+    "type": "TCPIPPanel", "name": "TCPIPPanel",
+    "fields": {
+        "anchor": {"x": 0.5, "y": 0.1},
+        "rect": {"x": -581, "width": 1162, "height": 1507}
+    },
+    "children": [
+        {
+            "type": "GridImageWidget", "name": "Background",
+            "fields": {
+                "filename": "PANEL\\TCP_IP\\TCP_IP_PanelBG"
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "OptionsText",
+            "fields": {
+                "rect": "$InGamePanelTitleRect",
+                "text": "@strTCPIPOptions",
+                "style": "$StyleTitleBlock",
+            }
+        },
+        {
+            "type": "ImageWidget", "name": "TextBox",
+            "fields": {
+                "rect": { "x": 294, "y": 491 },
+                "filename": "PANEL\\TCP_IP\\TCP_IP_AddressBox",
+            },
+        },
+        {
+            "type": "TextBoxWidget", "name": "IPText",
+            "fields": {
+                "rect": { "x": 237, "y": 377, "width": 689, "height": 100 },
+                "text": "@stryourIPAddress",
+                "style": {
+                    "fontColor": "$FontColorLightGold",
+                    "pointSize": "$XMediumFontSize",
+                    "spacing": "$MinimumSpacing",
+                    "alignment": { "h": "center", "v": "center" },
+                    "options": { "newlineHandling": "standard" },
+                },
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "IPAddressText",
+            "fields": {
+                "rect": { "x": 237, "y": 485, "width": 689, "height": 100 },
+                "text": "@strnotcpipaddress",
+                "style": {
+                    "fontColor": "$FontColorLightGold",
+                    "pointSize": "$LargeFontSize",
+                    "alignment": { "h": "center", "v": "center" },
+                    "options": { "newlineHandling": "standard" },
+                    "spacing": "$MinimumSpacing"
+                },
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "HostServerLecture",
+            "fields": {
+                "rect": { "x": 220, "y": 1084, "width": 721, "height": 171 },
+                "text": "@strCreateServerLecture",
+                "style": {
+                    "alignment": { "h": "center", "v": "top" },
+                    "options": { "newlineHandling": "standard", "lineWrap": true },
+                    "fontColor": "$FontColorLightGold",
+                    "pointSize": "$SmallFontSize",
+                },
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "JoinServerLecture",
+            "fields": {
+                "rect": { "x": 220, "y": 1115, "width": 721, "height": 110 },
+                "text": "@strJoinServerLecture",
+                "style": {
+                    "alignment": { "h": "center", "v": "top" },
+                    "options": { "newlineHandling": "standard", "lineWrap": true },
+                    "fontColor": "$FontColorLightGold",
+                    "pointSize": "$SmallFontSize",
+                },
+            }
+        },
+        {
+            "type": "ButtonWidget", "name": "HostGame",
+            "fields": {
+                "rect": { "x": 348, "y": 648, },
+                "filename": "FrontEnd\\HD\\Final\\FrontEnd_ButtonMed",
+                "textString": "@strCreateServer",
+                "onClickMessage": "FrontEndNavigation:ToCharacterSelect",
+                "text/style": "$StyleFEButtonText",
+                "textColor": "$LightButtonTextColor",
+            }
+        },
+        {
+            "type": "ButtonWidget", "name": "JoinGame",
+            "fields": {
+                "rect": { "x": 348, "y": 793, },
+                "filename": "FrontEnd\\HD\\Final\\FrontEnd_ButtonMed",
+                "textString": "@strMultiMenu2",
+                "onClickMessage": "FrontEndNavigation:ToJoinGame",
+                "text/style": "$StyleFEButtonText",
+                "textColor": "$LightButtonTextColor",
+            }
+        },
+        {
+            "type": "ButtonWidget", "name": "Cancel",
+            "fields": {
+                "rect": { "x": 1075, "y": 9 },
+                "filename": "PANEL\\closebtn_4x",
+                "hoveredFrame": 3,
+                "onClickMessage": "FrontEndNavigation:ToOtherMultiplayer",
+                "acceptsEscKeyEverywhere": true
+            }
+        }
+    ]
+}

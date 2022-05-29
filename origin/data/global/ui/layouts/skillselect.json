@@ -1,0 +1,81 @@
+{
+    "type": "SkillSelectPanel", "name": "SkillSelect",
+    "fields": {
+        "anchor": { "x": 0.5, "y": 1 },
+        "rect": { "y": -86, },
+        "defaultWidget": "ButtonTemplate0",
+        "displayGroups": [
+            {
+                "name": "@SkillCategoryMisc",
+                "skillCategories": [ "otherClass", "charged", "scroll" ]
+            },
+            {
+                "classNames": [
+                    "@SkillCategoryAm1",
+                    "@SkillCategorySo1",
+                    "@SkillCategoryNe1",
+                    "@SkillCategoryPa1",
+                    "@SkillCategoryBa1",
+                    "@SkillCategoryDr1",
+                    "@SkillCategoryAs1",
+                ],
+                "skillCategories": "class1"
+            },
+            {
+                "classNames": [
+                    "@SkillCategoryAm2",
+                    "@SkillCategorySo2",
+                    "@SkillCategoryNe2",
+                    "@SkillCategoryPa2",
+                    "@SkillCategoryBa2",
+                    "@SkillCategoryDr2",
+                    "@SkillCategoryAs2",
+                ],
+                "skillCategories": "class2"
+            },
+            {
+                "classNames": [
+                    "@SkillCategoryAm3",
+                    "@SkillCategorySo3",
+                    "@SkillCategoryNe3",
+                    "@SkillCategoryPa3",
+                    "@SkillCategoryBa3",
+                    "@SkillCategoryDr3",
+                    "@SkillCategoryAs3",
+                ],
+                "skillCategories": "class3"
+            },
+            {
+                "skillCategories": "common"
+            }
+        ],
+        "forceTrayMargin": 80,
+    },
+    "children": [
+        {
+            "type": "Widget", "name": "SelectionTray"
+        },
+        {
+            "type": "SkillSelectButtonWidget", "name": "ButtonTemplate",
+            "fields": {
+                "skillIconFilenames": "$SkillIconFilenames"
+            },
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "HotkeyText",
+                    "fields": {
+                        "rect": "$SkillHotkeyTextRect",
+                        "style": "$SkillHotkeyTextStyle",
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "QuantityText",
+                    "fields": {
+                        "rect": "$SkillQuantityTextRect",
+                        "style": "$SkillQuantityTextStyle",
+                    }
+                },
+            ]
+        },
+    ]
+}

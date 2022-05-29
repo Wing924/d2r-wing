@@ -1,0 +1,26 @@
+{
+    "basedOn": "UKComplianceMaturedModalHD.json",
+    "type": "UKComplianceModal", "name": "UKComplianceMaturedModal",
+    "fields": {
+        "defaultWidget": "Close"
+    },
+    "children": [
+        {
+            "type": "NineTileImageWidget", "name": "TooltipTile",
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "Title",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "PromptParagraph1",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "PromptParagraph2",
+                },
+                {
+                    "type": "ButtonWidget", "name": "Close",
+                },
+            ]
+        },
+    ]
+}

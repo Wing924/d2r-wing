@@ -1,0 +1,70 @@
+{
+    "type": "LoadScreenPanel", "name": "LoadScreenPanel",
+    "fields": {
+        "fitToParent": true,
+        "englishFilename": "Loading/loadingscreen_blank",
+        "nonEnglishFilename": "Loading/loadingscreen_blank",
+    },
+    "children": [
+        {
+            "type": "RectangleWidget", "name": "LoadBackground",
+            "fields": {
+                "fitToScreen": true,
+            },
+        },
+        {
+            "type": "ImageWidget", "name": "LoadingScreenImage",
+            "fields": {
+                "rect": { "x": -800, "y": -540},
+                "anchor": { "x": 0.5, "y": 0.5 },
+            }
+        },
+        {
+            "type": "RectangleWidget", "name": "LoadingBarBorder",
+            "fields": {
+                "rect": { "x": -797, "y": -465, "width": 1594, "height": 81 },
+                "anchor": { "x": 0.5, "y": 1.0},
+            },
+            "children": [
+                {
+                    "type": "ImageWidget", "name": "LoadingBarBorder",
+                    "fields": {
+                        "rect": { "x": 0, "y": 0, "width": 1594, "height": 81 },
+                        "filename": "\\Loading\\loadingBar_border",
+                        "anchor": { "x": 0, "y":0},
+                    },
+                }
+            ]
+        },
+        {
+            "type": "ProgressBarWidget", "name": "LoadingBar",
+            "fields": {
+                "rect": { "x": -797, "y": -465, "width": 1594, "height": 81 },
+                "anchor": { "x": 0.5, "y": 1.0},
+                "filename": "\\Loading\\loadingBar",
+                "color": { "r": 255, "g": 255, "b": 255, "a": 255 },
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "Loading",
+            "fields": {
+                "rect": { "x": -155, "y": 441, "width": 320, "height": 80 },
+                "anchor": { "x": 0.5, "y": 0.5},
+                "text": "@LoadingUIText",
+                "style": {
+                    "alignment": {"h": "center", "v": "center"},
+                    "fontColor": "$FontColorGoldYellow",
+                    "pointSize": "$ExtraLargeFontSize",
+                    "spacing": "$MinimumSpacing",
+                },
+                "useAltStyleIfDoesntFit": true,
+                "altStyle": {
+                    "alignment": {"h": "center", "v": "center"},
+                    "fontColor": "$FontColorGoldYellow",
+                    "pointSize": "$XMediumLargeFontSize",
+                    "spacing": "$MinimumSpacing",
+                },
+            }
+        },
+    ]
+}

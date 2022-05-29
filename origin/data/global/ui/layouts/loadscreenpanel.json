@@ -1,0 +1,39 @@
+{
+    "type": "LoadScreenPanel", "name": "LoadScreenPanel",
+    "fields": {
+        "fitToParent": true,
+        "englishFilename": "Loading/loadingscreen_eng",
+        "nonEnglishFilename": "Loading/loadingscreen_blank",
+    },
+    "children": [
+        {
+            "type": "RectangleWidget", "name": "LoadBackground",
+            "fields": {
+                "fitToScreen": true,
+            },
+        },
+        {
+            "type": "ImageWidget", "name": "LoadingScreenImage",
+            "fields": {
+                "rect": { "x": -128, "y": -128},
+                "anchor": { "x": 0.5, "y": 0.5 },
+            }
+        },
+        {
+            "type": "RectangleWidget", "name": "LoadingBarBorder",
+            "fields": {
+                "rect": { "x": -128, "y": -145, "width": 256, "height": 10 },
+                "anchor": { "x": 0.5, "y": 1.0},
+                "borderColor": { "r": 255, "g": 255, "b": 0, "a": 255 },
+            }
+        },
+        {
+            "type": "ProgressBarWidget", "name": "LoadingBar",
+            "fields": {
+                "rect": { "x": -126, "y": -144, "width": 253, "height": 7 },
+                "anchor": { "x": 0.5, "y": 1},
+                "color": { "r": 96, "g": 0, "b": 0, "a": 255 },
+            }
+        },
+    ]
+}

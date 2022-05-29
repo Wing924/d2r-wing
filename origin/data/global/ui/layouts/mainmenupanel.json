@@ -1,0 +1,4 @@
+{
+    // This is needed for Exit from SD CharacterCreatePanel to work.
+    "type": "Panel", "name": "MainMenuPanel",
+}

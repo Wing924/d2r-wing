@@ -1,0 +1,44 @@
+{
+    "basedOn": "EndScreenPanel.json",
+    "type": "EndScreenPanel", "name": "EndScreenPanelExpansion",
+    "children": [
+        {
+            "type": "GridImageWidget", "name": "Background",
+            "fields": {
+                "filename": "MENU/EndGame2",
+                "frames": 12,
+                "rows": 3
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "Congratulations",
+            "fields": {
+                "rect": { "x": 0, "y": 62, "width": 800, "height": 27 },
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "Name",
+            "fields": {
+                "rect": { "x": 1, "y": 149, "width": 800, "height": 27 },
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "Henceforth",
+            "fields": {
+                "rect": { "x": 1, "y": 233, "width": 800, "height": 27 },
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "Title",
+            "fields": {
+                "rect": { "x": 1, "y": 319, "width": 800, "height": 27 },
+            }
+        },
+        {
+            "type": "ButtonWidget", "name": "Ok",
+            "fields": {
+                "rect": { "x": 352, "y": 488, "width": 96 },
+            }
+        }
+    ]
+}

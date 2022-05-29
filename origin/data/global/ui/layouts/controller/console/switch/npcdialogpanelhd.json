@@ -1,0 +1,42 @@
+{
+    "type": "NpcDialogPanel", "name": "NpcDialogPanel",
+    "basedOn": "NpcDialogPanelHD.json",
+    "children": [
+        {
+            "type": "ClickCatcherWidget", "name": "ClickCatcher"
+        },
+        {
+            "type": "NineTileImageWidget", "name": "DialogBorder",
+        },
+        {
+            "type": "Widget", "name": "Templates",
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "TextTemplate",
+                },
+                {
+                    "type": "ButtonWidget", "name": "ButtonTemplate",
+                },
+                {
+                    "type": "ListWidget", "name": "ListTemplate",
+                    "fields": {
+                        "isHoverList": false,
+                    },
+                    "children": [
+                        {
+                            "type": "HoverListItemWidget", "name": "ItemTemplate",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "TextBox",
+                                },
+                            ]
+                        },
+                        {
+                            "type": "Widget", "name": "Selector",
+                        },
+                    ]
+                },
+            ]
+        }
+    ]
+}

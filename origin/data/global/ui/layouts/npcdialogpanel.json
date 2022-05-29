@@ -1,0 +1,77 @@
+{
+    "type": "NpcDialogPanel", "name": "NpcDialogPanel",
+    "fields": {
+        "verticalOffset": 20,
+        "rect": { "x": 100, "y": 100, "width": 0, "height": 0 },
+        "padding": { "left": 8, "top": 8, "right": 8, "bottom": 8 },
+        "priority": 20,
+        "listStyle": {
+            "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+            "pointSize": 24,
+            "alignment": { "h": "center" },
+            "options": { "lineWrap": false, "newlineHandling": "standard" }
+        }
+    },
+    "children": [
+        {
+            "type": "ClickCatcherWidget", "name": "ClickCatcher"
+        },
+        {
+            "type": "NineTileImageWidget", "name": "DialogBorder",
+            "fields": {
+                "filename": "MENU/boxpieces",
+                "tileFrames": "$NineTileBoxPiecesFrames",
+                "backgroundColor": [ 0.0, 0.0, 0.0, 0.5 ]
+            }
+        },
+        {
+            "type": "Widget", "name": "Templates",
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "TextTemplate",
+                    "fields": { 
+                        "style": {
+                            "fontColor": { "r": 199, "g": 179, "b": 119, "a": 255 },
+                            "pointSize": 24,
+                            "alignment": { "h": "center" },
+                        }
+                    }
+                },
+                {
+                    "type": "ListWidget", "name": "ListTemplate",
+                    "fields": {
+                        "isHoverList": true,
+                        "direction": "vertical",
+                        "itemSelectionMessage": "DialogMessage:ListItemClicked",
+                        "selectorName": "Selector",
+                        "selectionChangedSound": "cursor_pass",
+                    },
+                    "children": [
+                        {
+                            "type": "HoverListItemWidget", "name": "ItemTemplate",
+                            "fields": {
+                                "focusOnMouseOver": true,
+                                "baseColor": "$FontColorWhite",
+                                "hoveredColor": "$FontColorBlue"
+                            },
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "TextBox",
+                                    "fields": {
+                                        "style": {
+                                            "pointSize": 24,
+                                            "alignment": { "h": "center" },
+                                        },
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "Widget", "name": "Selector",
+                        },
+                    ]
+                }
+            ]
+        }
+    ]
+}

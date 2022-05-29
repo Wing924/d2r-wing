@@ -1,0 +1,107 @@
+{
+    "type": "EndScreenPanel", "name": "EndScreenPanel",
+    "fields": {
+        "fitToParent": true,
+    },
+    "children": [
+        {
+            "type": "GridImageWidget", "name": "Background",
+            "fields": {
+                "filename": "MENU/EndGame",
+                "frames": 4,
+                "rows": 2
+            }
+        },
+        {
+            "type": "GridImageWidget", "name": "Background2",
+            "fields": {
+                "rect": {"x": 320, "y": 0 },
+                "filename": "MENU/EndGame",
+                "frame": 4,
+                "frames": 4,
+                "rows": 2
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "Congratulations",
+            "fields": {
+                "rect": { "x": 1, "y": 24, "width": 640, "height": 27 },
+                "text": "@Killdiablo1",
+                "style": {
+                    "fontColor": { "r": 195, "g": 175, "b": 113, "a": 255 },
+                    "alignment": { "h": "center", "v": "center" },
+                    "options": { "newlineHandling": "standard" },
+                    "spacing": { "leading": 1.12 }
+                },
+                "fontType": "42pt"
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "Vanquished",
+            "fields": {
+                "rect": { "x": 0, "y": 69, "width": 640, "height": 27 },
+                "text": "@KillDiablo2",
+                "style": {
+                    "fontColor": { "r": 195, "g": 175, "b": 113, "a": 255 },
+                    "alignment": { "h": "center", "v": "center" },
+                    "options": { "newlineHandling": "standard" },
+                    "spacing": { "leading": 1.12 }
+                },
+                "fontType": "42pt"
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "Name",
+            "fields": {
+                "rect": { "x": 1, "y": 149, "width": 640, "height": 27 },
+                "style": {
+                    "fontColor": { "r": 195, "g": 175, "b": 113, "a": 255 },
+                    "alignment": { "h": "center", "v": "center" },
+                    "options": { "newlineHandling": "standard" },
+                    "spacing": { "leading": 1.12 }
+                },
+                "fontType": "42pt"
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "Henceforth",
+            "fields": {
+                "rect": { "x": 1, "y": 194, "width": 640, "height": 27 },
+                "text": "@KillDiablo3",
+                "style": {
+                    "fontColor": { "r": 195, "g": 175, "b": 113, "a": 255 },
+                    "alignment": { "h": "center", "v": "center" },
+                    "options": { "newlineHandling": "standard" },
+                    "spacing": { "leading": 1.12 }
+                },
+                "fontType": "42pt"
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "Title",
+            "fields": {
+                "rect": { "x": 1, "y": 239, "width": 640, "height": 27 },
+                "style": {
+                    "fontColor": { "r": 195, "g": 175, "b": 113, "a": 255 },
+                    "alignment": { "h": "center", "v": "center" },
+                    "options": { "newlineHandling": "standard" },
+                    "spacing": { "leading": 1.12 }
+                },
+                "fontType": "42pt"
+            }
+        },
+        {
+            "type": "ButtonWidget", "name": "Ok",
+            "fields": {
+                "rect": { "x": 272, "y": 368, "width": 96 },
+                "filename": "MENU/endgameok",
+                "textString": "@strOk",
+                "onClickMessage": "FrontEndNavigation:ToMainMenu",
+                "multiFrame": true,
+                "fontType": "10ptE",
+                "textColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                "acceptsEscKeyEverywhere": true
+            }
+        }
+    ]
+}

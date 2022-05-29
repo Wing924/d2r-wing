@@ -1,0 +1,126 @@
+{
+    "type": "AccountLinkingModal", "name": "AccountLinkingModal",
+    "fields": {
+        "fitToParent": true,
+    },
+    "children": [
+        {
+            "type": "ClickCatcherWidget", "name": "ClickCatcher",
+            "fields": {
+                "fitToParent": true,
+            }
+        },
+        {
+            "type": "RectangleWidget", "name": "backgroundShading",
+            "fields": {
+                "fitToParent": true,
+                "color": [ 0.0, 0.0, 0.0, 0.5 ]
+            }
+        },
+        {
+            "type": "NineTileImageWidget", "name": "Title",
+            "fields": {
+                "rect": { "x": -875, "y": 512, "width": 1750, "height": 0 },
+                "anchor": { "x": 0.5 },
+                "filename": "PANEL/TooltipBorder/TooltipBorder",
+                "backgroundColor": [ 0.0, 0.0, 0.0, 0.80 ],
+                "tileScale": 1.0,
+            },
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "TitleText",
+                    "fields": {
+                        "anchor": { "x": 0.5 },
+                        "text": "@AccountLinkingRequestTitle",
+                        "style": {
+                            "pointSize": "$MediumLargeFontSize",
+                            "alignment": { "v": "center", "h": "center" },
+                            "fontColor": "$FontColorGoldYellow",
+                        }
+                    }
+                },
+            ]
+        },
+        {
+            "type": "NineTileImageWidget", "name": "TextTile",
+            "fields": {
+                "rect": "$AccountLinkingTileRect",
+                "anchor": { "x": 0.5 },
+                "filename": "PANEL/TooltipBorder/TooltipBorder",
+                "backgroundColor": [ 0.0, 0.0, 0.0, 0.80 ],
+                "tileScale": 1.0,
+            },
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "ActiveUserName",
+                    "fields": {
+                        "rect": "$AccountLinkingActiveUserRect",
+                        "text": "",
+                        "style": {
+                            "fontFace": "BlizzardGlobal",
+                            "pointSize": "$LargeFontSize",
+                            "alignment": { "v": "center", "h": "center" },
+                            "options": { "newlineHandling": "standard", "lineWrap": true },
+                        },
+                    },
+                },
+                {
+                    "type": "TextBoxWidget", "name": "Description",
+                    "fields": {
+                        "rect": "$AccountLinkingDescriptionRect",
+                        "text": "@AccountLinkingRequest",
+                        "style": {
+                            "fontFace": "BlizzardGlobal",
+                            "pointSize": "$MediumFontSize",
+                            "alignment": { "v": "center", "h": "center" },
+                            "options": { "newlineHandling": "standard", "lineWrap": true },
+                        },
+                    },
+                },
+                {
+                    "type": "TextBoxWidget", "name": "UserCode",
+                    "fields": {
+                        "rect": "$AccountLinkingUserCodeRect",
+                        "style": {
+                            "fontFace": "BlizzardGlobal",
+                            "pointSize": "$XExtraLargeFontSize",
+                            "alignment": { "v":  "center", "h": "center" },
+                            "fontColor": "$FontColorGoldYellow",
+                            "dropShadow": "$DefaultDropShadow",
+                            "spacing": { "leading": 0.9, "kerning":  2.0 },
+                            "options": { "pipeCharacterBehavior" : "handle", "newlineHandling": "standard", "lineWrap": true },
+                        },
+                    },
+                },
+                {
+                    "type": "TextBoxWidget", "name": "Url",
+                    "fields": {
+                        "rect": "$AccountLinkingUrlRect",
+                        "style": {
+                            "fontFace": "BlizzardGlobal",
+                            "pointSize": "$XMediumLargeFontSize",
+                            "alignment": { "v": "center", "h": "center" },
+                            "fontColor": "$FontColorGoldYellow",
+                            "spacing": { "leading": 0.9 },
+                            "options": { "pipeCharacterBehavior" : "handle", "newlineHandling": "standard", "lineWrap": true },
+                        },
+                    },
+                },
+            ]
+        },
+        {
+            "type": "ButtonWidget", "name": "Cancel",
+            "fields": {
+                "rect": "$AccountLinkingOkButtonRect",
+                "anchor": { "x": 0.5 },
+                "filename": "PANEL\\Modals\\ModalButton",
+                "pressedFrame": 1,
+                "disabledFrame": 2,
+                "hoveredFrame": 3,
+                "textString": "@strOk",
+                "pointSize": "$MediumFontSize",
+                "textColor": "$FontColorWhite"
+            }
+        }
+    ]
+}

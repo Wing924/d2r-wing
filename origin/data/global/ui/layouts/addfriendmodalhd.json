@@ -1,0 +1,102 @@
+{
+    "type": "ConfirmationModal", "name": "AddFriendModal",
+    "fields": {
+        "rect": { "x": -627, "y": -275, "width": 1248, "height": 456 },
+        "anchor": {"x": 0.5, "y": 0.5 },
+        "confirmMessage": "FriendsListMessage:AddFriend",
+        "drawTint": true,
+        "inputWidgetName": "InputText"
+    },
+    "children": [
+        {
+            "type": "ClickCatcherWidget", "name": "ClickCatcher",
+            "fields": {
+               "fitToParent": true,
+            },
+        },
+        // Background image/border
+        {
+            "type": "ImageWidget", "name": "Background",
+            "fields": {
+                "filename": "PANEL\\Modals\\Modal_BG_XL"
+            }
+        },
+        // Localized text
+        {
+            "type": "TextBoxWidget", "name": "Title",
+            "fields": {
+                "rect": { "x": 70, "y": 35, "width": 1096, "height": 60 },
+                "text": "@AddFriend",
+                "style": {
+                    "fontColor": "$FontColorWhite",
+                    "pointSize": "$LargeFontSize",
+                    "alignment": { "h": "center", "v": "center" },
+                },
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "Info",
+            "fields": {
+                "rect": { "x": 36, "y": 127, "width": 1173, "height": 60 },
+                "text": "@AddFriendInfo",
+                "style": {
+                    "fontColor": "$FontColorGoldYellow",
+                    "pointSize": "$MediumFontSize",
+                    "alignment": { "h": "center", "v": "center" },
+                },
+            }
+        },
+        // Input Box
+        {
+            "type": "ImageWidget", "name": "BackgroundBox",
+            "fields": {
+                "rect": { "x": 260, "y": 207 },
+                "filename": "PANEL\\Modals\\InputSlot"
+            }
+        },
+        {
+            "type": "InputTextBoxWidget", "name": "InputText",
+            "fields": {
+                "rect": { "x": 296, "y": 233, "width": 672, "height": 69 },
+                "backgroundColor":  { "r": 0, "g": 0, "b": 0, "a": 0 },
+                "alwaysAcceptsKeyInput": true,
+                "maxStringLength": 256,
+                "fontStyle": {
+                    "alignment": { "v": "top" },
+                    "pointSize": "$AddFriendModalFontSize",
+                    "fontFace": "BlizzardGlobal",
+                },
+                "fontType": "8pt",
+                "imeEnabled": true,
+                "leftCursorPadding": 60
+            }
+        },
+        // Confirm/Cancel buttons
+        {
+            "type": "ButtonWidget", "name": "Confirm",
+            "fields": {
+                "rect": { "x": 79, "y": 365 },
+                "filename": "PANEL/Modals/ModalButton",
+                "onClickMessage": "ModalMessage:Confirm",
+                "textString": "@ok",
+                "pointSize": "$LargeFontSize",
+                "textColor": "$FontColorWhite",
+                "hoveredFrame": 3,
+                "disabledFrame": 2
+            },
+        },
+        {
+            "type": "ButtonWidget", "name": "Cancel",
+            "fields": {
+                "rect": { "x": 628, "y": 365 },
+                "filename": "PANEL/Modals/ModalButton",
+                "onClickMessage": "ModalMessage:Dismiss",
+                "textString": "@Back",
+                "pointSize": "$LargeFontSize",
+                "textColor": "$FontColorWhite",
+                "hoveredFrame": 3,
+                "disabledFrame": 2
+            },
+        },
+    ]
+}

@@ -1,0 +1,151 @@
+{
+    "type": "JoinGameModal", "name": "JoinGameModal",
+    "fields": {
+        "anchor": { "x": 0.5 , "y": 0.1 },
+        "rect": {"x": -581, "width": 1162, "height": 1507},
+        "isDismissable": false,
+        "drawTint": false
+    },
+    "children": [
+
+        {
+            "type": "GridImageWidget", "name": "Background",
+            "fields": {
+                "filename": "PANEL\\TCP_IP\\TCP_IP_PanelBG"
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "OptionsText",
+            "fields": {
+                "rect": "$InGamePanelTitleRect",
+                "text": "@strTCPIPOptions",
+                "style": "$StyleTitleBlock",
+            }
+        },
+        {
+            "type": "Widget", "name": "JoinGameInputScreen",
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "Title",
+                    "fields": {
+                        "rect": { "x": 320, "y": 342, "width": 512, "height": 121 },
+                        "text": "@strIPAddressPatch",
+                         "style": {
+                            "fontColor": "$FontColorLightGold",
+                            "pointSize": "$XMediumFontSize",
+                            "alignment": { "h": "center", "v": "center" },
+                            "options": { "newlineHandling": "standard", "lineWrap": true },
+                        },
+                    }
+                },
+                {
+                    "type": "ImageWidget", "name": "InputBackground",
+                    "fields": {
+                        "rect": { "x": 276, "y": 473 },
+               		"filename": "PANEL\\TCP_IP\\TCP_IP_TextEntry"
+                    },
+                },
+                {
+                    "type": "InputTextBoxWidget", "name": "InputText",
+                    "fields":  {
+                        "rect": { "x": 320, "y": 511, "width": 514, "height": 60 },
+                        "backgroundColor": {"r": 0, "g": 0, "b": 0, "a": 0 },
+                        "alwaysAcceptsKeyInput": true,
+                        "virtualKeyboardType" : "NumberInput",
+                        "fontStyle": {
+                            "alignment": { "h": "center", "v": "top" },
+                            "spacing": { "leading": 0.68 },
+                            "pointSize": "$LargeFontSize",
+                            "fontColor": "$FontColorLightGold",
+                        },
+                        "fontType": "16pt"
+                    }
+                },
+                {
+                    "type": "ButtonWidget", "name": "Ok",
+                    "fields": {
+                        "rect": { "x": 348, "y": 648, },
+                        "filename": "FrontEnd\\HD\\Final\\FrontEnd_ButtonMed",
+                        "textString":  "@ok",
+                	"text/style": "$StyleFEButtonText",
+                	"textColor": "$LightButtonTextColor",
+                        "onClickMessage": "FrontEndNavigation:ToJoinCharacterSelect"
+                    }
+                },
+                {
+                    "type": "ButtonWidget", "name": "Cancel",
+                    "fields": {
+                        "rect": { "x": 348, "y": 793,},
+                        "filename": "FrontEnd\\HD\\Final\\FrontEnd_ButtonMed",
+                        "textString":  "@cancel",
+                	"text/style": "$StyleFEButtonText",
+                	"textColor": "$LightButtonTextColor",
+                        "onClickMessage": "FrontEndNavigation:ToTCPIP",
+                        "acceptsEscKeyEverywhere": true
+                    }
+                },
+            ]
+        },
+        {
+            "type": "Widget", "name": "WaitModal",
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "WaitMessage",
+                    "fields": {
+                        "rect": { "x": 165, "y": 200, "width": 832, "height": 300 },
+                        "text": "@strBNPleaseWait",
+                         "style": {
+                            "alignment": { "h": "center", "v": "center" },
+                            "options": { "newlineHandling": "standard", "lineWrap": true },
+                            "spacing": { "leading": 0.8 },
+                            "pointSize": "$LargeFontSize",
+                            "fontColor": "$FontColorLightGold",
+                        },
+                    },
+                },
+                {
+                    "type": "ButtonWidget", "name": "CancelButton",
+                    "fields": {
+                        "rect": { "x": 335, "y": 600, },
+                        "filename": "FrontEnd\\HD\\Final\\FrontEnd_ButtonMed",
+                        "textString":  "@cancel",
+                        "pointSize": "$MediumFontSize",
+                        "textColor": "$FontColorLightGold",
+                        "onClickMessage": "FrontEndNavigation:ToTCPIP"
+                    }
+                },
+            ]
+        },
+        {
+            "type": "Widget", "name": "CannotConnectModal",
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "FailMessage",
+                    "fields": {
+                        "rect": { "x": 165, "y": 200, "width": 832, "height": 300 },
+                        "text": "@strcantconnectserver",
+                        "fontType": "24pt",
+                         "style": {
+                            "pointSize": "$LargeFontSize",
+                            "fontColor": "$FontColorLightGold",
+                            "alignment": { "h": "center", "v": "center" },
+                            "options": { "newlineHandling": "standard", "lineWrap": true },
+                            "spacing": { "leading": 0.8 },
+                        },
+                    }
+                },
+                {
+                    "type": "ButtonWidget", "name": "OkButton",
+                    "fields": {
+                        "rect": { "x": 335, "y": 600, },
+                        "filename": "FrontEnd\\HD\\Final\\FrontEnd_ButtonMed",
+                        "textString":  "@ok",
+                        "pointSize": "$MediumFontSize",
+                        "textColor": "$FontColorLightGold",
+                        "onClickMessage": "FrontEndNavigation:ToTCPIP"
+                    }
+                }
+            ]
+        }
+    ]
+}

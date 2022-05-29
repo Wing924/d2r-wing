@@ -1,0 +1,48 @@
+{
+    "type": "Modal", "name": "DismissableModal",
+    "fields": { 
+        "anchor": { "x": 0.5, "y": 0.5 },
+        "isDismissable": true,
+    },
+    "children": [
+        {
+            "type": "GridImageWidget", "name": "Frame",
+            "fields": {
+                "rect": { "x": -132, "y": -88 },
+                "filename": "FrontEnd\\PopUpOKCancel",
+                "frames": 2,
+                "rows": 1,
+            },
+            "children": [
+                {
+                    "type": "ClickCatcherWidget", "name": "ModalClickCatcher",
+                    "fields": {
+                        "fitToParent": true
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "Prompt",
+                    "fields": {
+                        "rect": { "x": 12, "y": 6, "width": 243, "height": 110 },
+                        "fontType": "8pt",
+                        "style": { 
+                            "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 }, 
+                            "alignment": { "h": "center" },
+                            "options": { "lineWrap": true, "newlineHandling": "standard" },
+                        }
+                    }
+                },
+                {
+                    "type": "ButtonWidget", "name": "Dismiss",
+                    "fields": { 
+                        "rect": { "x": 84, "y": 134 },
+                        "filename": "FrontEnd\\OkCancelButtonBlank",
+                        "onClickMessage": "PanelManager:ClosePanel:DismissableModal",
+                        "fontType": "8ptE",
+                        "textColor": { "r": 255, "g": 255, "b": 255, "a": -1 },
+                    }
+                },
+            ]
+        },
+    ]
+}

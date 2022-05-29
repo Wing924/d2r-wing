@@ -1,0 +1,52 @@
+{
+    "basedOn":  "TCPIPPanelHD.json",
+    "type": "TCPIPPanel", "name": "TCPIPPanel",
+    "fields": {
+        "defaultWidget": "HostGame",
+    },
+    "children": [
+        {
+            "type": "GridImageWidget", "name": "Background",
+        },
+        {
+            "type": "TextBoxWidget", "name": "OptionsText",
+        },
+        {
+            "type": "TextBoxWidget", "name": "IPText",
+        },
+        {
+            "type": "TextBoxWidget", "name": "IPAddressText",
+        },
+        {
+            "type": "TextBoxWidget", "name": "HostServerLecture",
+        },
+        {
+            "type": "TextBoxWidget", "name": "JoinServerLecture",
+        },
+        {
+            "type": "ButtonWidget", "name": "HostGame",
+            "fields": {
+                "navigation": {
+                    "down": { "name": "JoinGame" },
+                }
+            }
+        },
+        {
+            "type": "ButtonWidget", "name": "JoinGame",
+            "fields": {
+                "navigation": {
+                    "up": {"name": "HostGame"},
+                    "down": { "name": "Cancel" },
+                }
+            }
+        },
+        {
+            "type": "ButtonWidget", "name": "Cancel",
+            "fields": {
+                "navigation": {
+                    "up": { "name": "JoinGame" },
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,55 @@
+{
+    "basedOn": "EndScreenPanelHD.json",
+    "type": "EndScreenPanel", "name": "EndScreenPanelExpansion",
+    "children": [
+        {
+            "type": "RectangleWidget", "name": "Background",
+            "children": [
+                {
+                    "type": "ClickCatcherWidget", "name": "ClickCatcher",
+                },
+            ]
+        },
+        {
+            "type": "ImageWidget", "name": "BackgroundImage",
+            "fields": {
+                "filename": "SplashScreen/EndGame2_HD",
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "Congratulations",
+            "fields": {
+                "rect": { "x": -600, "y": 274, "width": 1200, "height": 27 },
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "Name",
+            "fields": {
+                "rect": { "x": -600, "y": 592, "width": 1200, "height": 27 },
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "Henceforth",
+            "fields": {
+                "rect": { "x": -600, "y": 888, "width": 1200, "height": 27 },
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "Title",
+            "fields": {
+                "rect": { "x": -600, "y": 1196, "width": 1200, "height": 27 },
+            }
+        },
+        {
+            "type": "ButtonWidget", "name": "Ok",
+            "fields": {
+                "rect": { "x": -265, "y": 1764 },
+            },
+            "children": [
+                {
+                    "type": "ButtonLegendWidget", "name": "ConfirmLegend",
+                },
+            ]
+        }
+    ]
+}

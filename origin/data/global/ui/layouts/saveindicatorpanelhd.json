@@ -1,0 +1,18 @@
+{
+    "type": "SaveIndicatorPanel", "name": "SaveIndicatorPanel",
+    "fields": {
+        "anchor": { "x": 1.0, "y": 1.0},
+        "rect": { "x": 0, "y": 150},
+        "priority": 2147483647,
+    },
+    "children": [
+        {
+            "type": "AnimatedImageWidget", "name": "SaveIndicator",
+            "fields": {
+                "rect": { "x": -300, "y": -350},
+                "filename": "Controller/AutosaveIcon/d2r_saveIcon_linear_red",
+                "fps": 20,
+            },
+        },
+    ]
+}

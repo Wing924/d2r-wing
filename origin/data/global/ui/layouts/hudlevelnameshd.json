@@ -1,0 +1,22 @@
+{
+    "type": "LevelNamePanel", "name": "HUDLevelNames",
+    "fields": {
+        "priority": -100,
+        "anchor": { "x": 0.5, "y": 0.25 },
+        "displaySeconds": 2.5,
+        "denOfEvilQuestHack": "@EnteringTheDenOfEvilInQuest"
+    },
+    "children": [
+        {
+            "type": "TextBoxWidget", "name": "NameText",
+            "fields": {
+                "style": {
+                    "pointSize": 54,
+                    "fontColor": { "r": 200, "g": 20, "b": 0 },
+                    "alignment": { "h": "center", "v": "bottom" },
+                    "dropShadow":  "$DefaultDropShadow"
+                }
+            }
+        }
+    ]
+}

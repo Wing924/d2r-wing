@@ -1,0 +1,263 @@
+{
+    "type": "KeyBindingPanel", "name": "KeyBindingMenu",
+    "fields": { 
+        "anchor": { "x": 0.5, "y": 0.5 },
+        "rect": { "x": -310, "y": -230, "width": 620, "height": 369 },
+        "priority": 9003,
+        "primaryChangedSound": "pass",
+        "startBindingKeySound": "select",
+        "changeBindingSound": "select",
+        "cancelBindingSound": "pass",
+        "clearBindingSound": "select",
+        "exitMenuKeySound": "select",
+        "errorMessageSeconds": 2.0,
+    },
+    "children": [
+        {
+            "type": "ClickCatcherWidget", "name": "ClickCatcher",
+            "fields": {
+                "rect": { "x": -999, "y": -999, "width": 99999, "height": 99999 }
+            }
+        },
+        {
+            "type": "NineTileImageWidget", "name": "Frame",
+            "fields": {
+                "rect": { "y": 3, "width": 620, "height": 365 },
+                "filename": "MENU/boxpieces",
+                "tileFrames": "$NineTileBoxPiecesFrames",
+                "backgroundColor": [ 0, 0, 0, 0.5 ],
+            }
+        },
+        {
+            "type": "NineTileImageWidget", "name": "ButtonSepHR",
+            "fields": {
+                "rect": { "y": 327, "width": 620 },
+                "filename": "MENU/boxpieces",
+                "tileFrames": "$NineTileBoxPiecesFrames",
+                "tileFrames": {
+                    "left": [],
+                    "right": [],
+                    "bottomLeft": [],
+                    "bottom": [],
+                    "bottomRight": [],
+                }
+            }
+        },
+        {
+            "type": "Widget", "name": "ColumnTitles",
+            "fields": {
+                "rect": { "x": 18, "y": 30 }
+            },
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "BindingNameTitle",
+                    "fields": {
+                        "rect": { "x": 0 },
+                        "text": "@CfgFunction",
+                        "fontType": "Chat",
+                        "style": {
+                            "alignment": { "v": "bottom" },
+                            "fontColor": "$FontColorGold",
+                        },
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "PrimaryKeyTitle",
+                    "fields": {
+                        "rect": { "x": 190 },
+                        "text": "@CfgPrimaryKey",
+                        "fontType": "Chat",
+                        "style": {
+                            "alignment": { "v": "bottom" },
+                            "fontColor": "$FontColorGold",
+                        },
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "SecondaryKeyTitle",
+                    "fields": {
+                        "rect": { "x": 380 },
+                        "text": "@CfgSecondaryKey",
+                        "fontType": "Chat",
+                        "style": {
+                            "alignment": { "v": "bottom" },
+                            "fontColor": "$FontColorGold",
+                        },
+                    }
+                },
+            ]
+        },
+        {
+            "type": "ListWidget", "name": "BindingsList",
+            "fields": {
+                "rect": { "x": 18, "y": 35, "width": 570, "height": 270 },
+                "direction": "vertical",
+                "selectorName": "BindingSelector",
+                "selectionChangedSound": "cursor_pass",
+            },
+            "children": [
+                {
+                    "type": "ListItemWidget", "name": "Template",
+                    "fields": {
+                        "rect": { "width": 570, "height": 18 }
+                    },
+                    "children": [
+                        {
+                            "type": "KeyBindingItemWidget", "name": "Binding",
+                            "fields": {
+                                "rect": { "width": 570, "height": 18 },
+                                "selectedColor": "$FontColorBlue",
+                                "boundColor": "$FontColorGold",
+                                "unboundColor": "$FontColorGray",
+                                "allUnboundColor": "$FontColorRed",
+                                "blinkOnSeconds": 0.3,
+                                "blinkOffSeconds": 0.2,
+                            },
+                            "children": [
+                                {
+                                    "type": "ButtonWidget", "name": "PrimaryKeyButton",
+                                    "fields": {
+                                        "rect": { "x": 0, "y": 0, "width": 380, "height": 18 },
+                                        "sound": "select",
+                                    },
+                                    "children": [
+                                        {
+                                            "type": "TextBoxWidget", "name": "BindingName",
+                                            "fields": {
+                                                "rect": { "x": 12, "y": 17 },
+                                                "fontType": "Chat",
+                                                "style": {
+                                                    "alignment": { "v": "bottom" }
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "type": "TextBoxWidget", "name": "PrimaryKeyName",
+                                            "fields": {
+                                                "rect": { "x": 202, "y": 17 },
+                                                "fontType": "Chat",
+                                                "style": {
+                                                    "alignment": { "v": "bottom" }
+                                                }
+                                            }
+                                        },
+                                    ]
+                                },
+                                {
+                                    "type": "ButtonWidget", "name": "SecondaryKeyButton",
+                                    "fields": {
+                                        "rect": { "x": 380, "y": 0, "width": 190, "height": 18 },
+                                        "sound": "select",
+                                    },
+                                    "children": [
+                                        {
+                                            "type": "TextBoxWidget", "name": "SecondaryKeyName",
+                                            "fields": {
+                                                "rect": { "x": 12, "y": 17 },
+                                                "fontType": "Chat",
+                                                "style": {
+                                                    "alignment": { "v": "bottom" }
+                                                }
+                                            }
+                                        },
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Widget", "name": "BindingSelector",
+                    "fields": {
+                        "rect": { "width": 570, "height": 18 }
+                    }
+                }
+            ]
+        },
+        {
+            "type": "NineTileImageWidget", "name": "ScrollBarBackground",
+            "fields": {
+                "rect": { "x": 589, "y": 47, "width": 12, "height": 246 },
+                "filename": "MENU/slider_background",
+                "tileFrames": "$NineTileNoFrames",
+                "tileFrames": { "center": 0 }
+            },
+            "children": [
+                {
+                    "type": "ScrollControllerWidget", "name": "ScrollBar",
+                    "fields": { 
+                        "rect": { "width": 12, "height": 246 },
+                        "wheelScrollAmount": 36,
+                        "buttonScrollAmount": 18,
+                        "buttonScrollDelayMS": 100,
+                        "wheelScrollSound": "pass",
+                        "buttonScrollSound": "none",
+                        "upArrowFilepath": "MENU/slider_up_button",
+                        "downArrowFilepath": "MENU/slider_down_button",
+                        "barFilepath": "MENU/slider_bar",
+                        "viewName": "BindingsList",
+                    }
+                },
+            ]
+        },
+        {
+            "type": "Widget", "name": "ActionButtons",
+            "fields": {
+                "rect": { "x": 0, "y": 319 }
+            },
+            "children": [
+                {
+                    "type": "ButtonWidget", "name": "CancelButton",
+                    "fields": {
+                        "rect": { "x": 3, "width": 200, "height": 38 },
+                        "onClickMessage": "OptionsPanelMessage:CancelChanges",
+                        "textString": "@CfgCancel",
+                        "fontType": "Chat",
+                        "textColor": "$FontColorGold",
+                        "textHoverColor": "$FontColorRed",
+                        "pressLabelOffset": { "x": 0, "y": 0 },
+                        "sound": "select",
+                        "acceptsEscKeyEverywhere": true
+                    }
+                },
+                {
+                    "type": "ButtonWidget", "name": "DefaultButton",
+                    "fields": {
+                        "rect": { "x": 209, "width": 200, "height": 38 },
+                        "onClickMessage": "OptionsPanelMessage:ResetToDefaults",
+                        "textString": "@CfgDefault",
+                        "fontType": "Chat",
+                        "textColor": "$FontColorGold",
+                        "textHoverColor": "$FontColorBlue",
+                        "pressLabelOffset": { "x": 0, "y": 0 },
+                        "sound": "select",
+                    }
+                },
+                {
+                    "type": "ButtonWidget", "name": "AcceptButton",
+                    "fields": {
+                        "rect": { "x": 415, "width": 200, "height": 38 },
+                        "onClickMessage": "OptionsPanelMessage:AcceptChanges",
+                        "textString": "@CfgAccept",
+                        "fontType": "Chat",
+                        "textColor": "$FontColorGold",
+                        "textHoverColor": "$FontColorGreen",
+                        "pressLabelOffset": { "x": 0, "y": 0 },
+                        "sound": "select",
+                    }
+                },
+            ]
+        },
+        {
+            "type": "TextBoxWidget", "name": "ErrorMessage",
+            "fields": {
+                "rect": { "x": 310, "y": 399 },
+                "fontType": "Chat",
+                "style": {
+                    "fontColor": "$FontColorRed",
+                    "alignment": { "h": "center", "v": "bottom" },
+                }
+            }
+        }
+    ]
+}

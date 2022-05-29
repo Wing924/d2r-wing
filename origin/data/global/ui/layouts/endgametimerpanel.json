@@ -1,0 +1,19 @@
+{
+    "type": "EndGameTimerPanel", "name": "EndGameTimerPanel",
+    "fields": {
+        "rect": { "x": 150, "y": 150},
+        "diabloDeathAnimTimerDelay": 10, 
+    },
+    "children": [
+        {
+            "type": "TextBoxWidget", "name": "TimerLabel",
+            "fields": { 
+                "style": {
+                    "pointSize": "$LargeFontSize",
+                    "alignment": { "v": "center", "h": "center" },
+                    "fontColor": "$FontColorGold",
+                },
+            }
+        },
+    ]
+}

@@ -1,0 +1,246 @@
+{
+    "@DOCUMENTATION": [
+        "Channels are loaded in-order from this file (i.e., the first channel listed is the first one loaded).",
+        "A channel's parent MUST come before it in the list. DSP nodes are also loaded and applied in the order",
+        "in which they are listed here (i.e. the first DSP node is applied first, and so on).",
+        "The following parameters exist per channel:",
+        {
+            "id": "The unique name of the channel",
+            "parentid": "The id if the hierarchy parent channel for this channel",
+            "volume": "The relative (hierarchical) volume of this channel, 0.0 to 1.0",
+            "@COMMENT": "Documentation for this channel",
+            "nodes": "The list of DSP nodes to apply to this channel. Can be empty, but must exist."
+        },
+        "The following nodes are currently supported with these parameters:",
+        [
+            {
+                "type": "lowpass",
+                "parameters": {
+                    "cutoff": [ 10.0, 22000.0 ]
+                }
+            },
+            {
+                "type": "highpass",
+                "parameters": {
+                    "cutoff": [ 10.0, 22000.0 ]
+                }
+            },
+            {
+                "type": "flange",
+                "parameters": {
+                    "drymix": [ 0.0, 1.0 ],
+                    "wetmix": [ 0.0, 1.0 ],
+                    "depth": [ 0.01, 1.0 ],
+                    "rate": [ 0.0, 20.0 ]
+                }
+            },
+            {
+                "type": "normalize",
+                "parameters": {
+                    "fadetime": [ 0.0, 20000.0 ],
+                    "threshold": [ 0.0, 1.0 ],
+                    "maxamp": [ 0.01, 100000.0 ]
+                }
+            },
+            {
+                "type": "eq",
+                "parameters": {
+                    "center": [ 20.0, 22000.0 ],
+                    "bandwidth": [ 0.2, 5.0 ],
+                    "gain": [ 0.05, 3.0 ]
+                }
+            },
+            {
+                "type": "compressor",
+                "parameters": {
+                    "threshold": [ -60.0, 0.0 ],
+                    "attack": [ 10.0, 200.0 ],
+                    "release": [ 20.0, 1000.0 ],
+                    "gainmakeup": [ 0.0, 30.0 ]
+                }
+            },
+            {
+                "type": "reverb",
+                "parameters": "Do not set parameters for reverb. They are handled at runtime by soundenviron.txt"
+            }
+        ],
+        "All variable names, properties, IDs, etc. should be all lowercase.",
+        "To reload the DSP nodes at runtime, use the chat command: 'reloaddsp'. We do not currently support",
+        "changing ANYTHING about the channel structure when running this command (i.e. renaming, reordering,",
+        "reparenting, or otherwise changing the channels). Doing so will result in an error."
+    ],
+    "channels": [
+        {
+            "id": "master",
+            "nodes": []
+        },
+        {
+            "id": "music",
+            "parentid": "master",
+            "nodes": []
+        },
+        {
+            "id": "sfx",
+            "parentid": "master",
+            "nodes": []
+        },
+        {
+            "id": "sfx/eax",
+            "parentid": "sfx",
+            "@COMMENT": "This node is a special case. Its parameters are handled at runtime by soundenviron.txt",
+            "nodes": [
+                {
+                    "type": "reverb"
+                }
+            ]
+        },
+        {
+            "id": "vo",
+            "parentid": "sfx/eax",
+            "@COMMENT": "vo is parented to sfx/eax, not master - is this what we want?",
+            "nodes": []
+        },
+        {
+            "id": "music/event",
+            "parentid": "music",
+            "nodes": [ ]
+        },
+        {
+            "id": "music/ui",
+            "parentid": "music",
+            "nodes": [ ]
+        },
+        {
+            "id": "sfx/combat",
+            "parentid": "sfx/eax",
+            "nodes": [ ]
+        },
+        {
+            "id": "sfx/combat/explosion",
+            "parentid": "sfx/combat",
+            "nodes": [ ]
+        },
+        {
+            "id": "sfx/combat/impacts",
+            "parentid": "sfx/combat",
+            "nodes": [ ]
+        },
+        {
+            "id": "sfx/combat/player",
+            "parentid": "sfx/combat",
+            "nodes": [ ]
+        },
+        {
+            "id": "sfx/combat/weapon",
+            "parentid": "sfx/combat",
+            "nodes": [ ]
+        },
+        {
+            "id": "sfx/lfe-events",
+            "parentid": "sfx/eax",
+            "nodes": [ ]
+        },
+        {
+            "id": "sfx/ambient",
+            "parentid": "sfx/eax",
+            "@COMMENT": "Maybe this should be parented to sfx/eax instead?",
+            "nodes": [ ]
+        },
+        {
+            "id": "sfx/ambient/event-3d",
+            "parentid": "sfx/ambient",
+            "nodes": [ ]
+        },
+        {
+            "id": "sfx/ambient/scene-2d",
+            "parentid": "sfx/ambient",
+            "nodes": [ ]
+        },
+        {
+            "id": "sfx/ambient/footsteps",
+            "parentid": "sfx/ambient",
+            "nodes": [ ]
+        },
+        {
+            "id": "sfx/ambient/environment-objects",
+            "parentid": "sfx/ambient",
+            "nodes": [ ]
+        },
+        {
+            "id": "sfx/gameplay-events",
+            "parentid": "sfx/eax",
+            "nodes": [ ]
+        },
+        {
+            "id": "sfx/quest",
+            "parentid": "sfx/eax",
+            "nodes": [ ]
+        },
+        {
+            "id": "sfx/cursor-ui",
+            "parentid": "sfx",
+            "nodes": [ ]
+        },
+        {
+            "id": "sfx/items",
+            "parentid": "sfx/eax",
+            "nodes": [ ]
+        },
+        {
+            "id": "sfx/monster",
+            "parentid": "sfx/eax",
+            "nodes": [ ]
+        },
+        {
+            "id": "sfx/act-boss",
+            "parentid": "sfx/eax",
+            "nodes": [ ]
+        },
+        {
+            "id": "sfx/player-skills",
+            "parentid": "sfx/eax",
+            "nodes": [ ]
+        },
+        {
+            "id": "sfx/npc",
+            "parentid": "sfx/eax",
+            "nodes": [ ]
+        },
+        {
+            "id": "sfx/player-intro-selection",
+            "parentid": "sfx",
+            "nodes": [ ]
+        },
+        {
+            "id": "sfx/cinematics",
+            "@COMMENT": "Currently, cinematic sounds are not loaded through sounds.txt - so they will not have DSP nodes applied.",
+            "parentid": "sfx",
+            "nodes": [ ]
+        },
+        {
+            "id": "vo/eax",
+            "parentid": "vo",
+            "nodes": [
+              {
+                "type": "reverb",
+                "name": "channel_31_nodes_0"
+              }
+            ]
+        },
+        {
+            "id": "vo/eax/player-dialog",
+            "parentid": "vo/eax",
+            "nodes": [ ]
+        },
+        {
+            "id": "vo/eax/boss-dialog",
+            "parentid": "vo/eax",
+            "nodes": [ ]
+        },
+        {
+            "id": "vo/eax/dialog",
+            "parentid": "vo/eax",
+            "nodes": [ ]
+        }
+    ]
+}

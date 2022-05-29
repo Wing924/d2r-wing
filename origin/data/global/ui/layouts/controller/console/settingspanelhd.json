@@ -1,0 +1,52 @@
+{
+    "basedOn": "Controller/SettingsPanelHD.json",
+    "type": "SettingsPanel", "name": "SettingsPanel",
+    "children": [
+        {
+            "type": "ClickCatcherWidget", "name": "catcher",
+        },
+        {
+            "type": "RectangleWidget", "name": "Background",
+            "children": [
+                {
+                    "type": "Widget", "name": "Anchor",
+                     "children": [
+                        {
+                            "type": "ImageWidget", "name": "Background",
+                        },
+                        {
+                            "type": "TextBoxWidget", "name": "Title",
+                        },
+                        {
+                            "type": "ButtonLegendWidget", "name": "Legend",
+                        },
+                    ]
+                },
+            ]
+        },
+        {
+            "type": "ImageWidget", "name": "SettingsBackground",
+            "children": [
+                {
+                    "type": "ControllerCursorBoundsWidget", "name": "ControllerCursorBounds",
+                },
+            ]
+        },
+        {
+            "type": "TabBarWidget", "name": "OptionsTabs",
+            "fields": {
+                "tabCount": 5,
+                "inactiveFrames": [ 1, 1, 1, 1, 1 ],
+                "activeFrames": [ 0, 0, 0, 0, 0 ],
+                "textStrings": [ "@OptionsMenuVideo", "@Audio", "@Gameplay", "@GameSettingsTab", "@Controls" ],
+                "tabMessages": [
+                    "SettingsPanelMessage:CheckChanges:VideoOptionsPanel",
+                    "SettingsPanelMessage:CheckChanges:SoundOptionsPanel",
+                    "SettingsPanelMessage:CheckChanges:GameplayOptionsPanel",
+                    "SettingsPanelMessage:CheckChanges:OnlineGameOptionsPanel",
+                    "SettingsPanelMessage:CheckChanges:KeyBindingMenu",
+                ],
+            },
+        },
+    ]
+}

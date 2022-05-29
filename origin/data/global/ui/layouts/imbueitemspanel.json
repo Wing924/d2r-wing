@@ -1,0 +1,70 @@
+{
+    "type": "ImbueItemsPanel", "name": "ImbueItemsPanel",
+    "fields": {
+        "rect": { "x": -295, "y": -214, "width": 120, "height": 190 }, 
+        "anchor": "$LeftPanelAnchor",
+        "priority": 55,
+    },
+    "children": [
+        {
+            "type": "ClickCatcherWidget", "name": "ClickCatcher",
+            "fields": {
+                "rect": { "x": 0, "y": 0, "width": 120, "height": 190 },
+            }
+        },
+        {
+            "type": "ImageWidget", "name": "UpgradeModeBackground",
+            "fields": {
+                "filename": "MENU\\upgrade",
+            }
+        },
+        {
+            "type": "ImageWidget", "name": "AcceptModeBackground",
+            "fields": {
+                "filename": "MENU\\horadricback",
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "TopText",
+            "fields": {
+                "rect": { "x": -80, "y": -30, "width": 280, "height": 30 },
+                "style": {
+                    "fontColor": { "r": 199, "g": 179, "b": 119, "a": 255 },
+                    "alignment": { "h": "center", "v": "center" },
+                    "options": { "newlineHandling": "standard", "lineWrap": true },
+                },
+            }
+        },
+        {
+            "type": "ImbueSocketWidget", "name": "ItemDropRegion",
+            "fields": {
+                "rect": { "x": 10, "y": 10, "width": 100, "height": 125 },
+                "cellSize": "$ItemCellSize",
+            }
+        },
+        {
+            "type": "ButtonWidget", "name": "Confirm",
+            "fields": {
+                "filename": "PANEL\\buysellbtn",
+                "rect": { "x": 17, "y": 138 },
+                "normalFrame": 16,
+                "pressedFrame": 17,
+                //tooltip depends on menu type
+                "onClickMessage": "ImbueItemPanelMessage:Confirm",
+            }
+        },
+        {
+            "type": "ButtonWidget", "name": "Cancel",
+            "fields": {
+                "filename": "PANEL\\buysellbtn",
+                "rect": { "x": 72, "y": 138 },
+                "tooltipString": "@strClose",
+                "normalFrame": 10,
+                "pressedFrame": 11,
+                "sound": "cursor_pass",
+                "onClickMessage": "ImbueItemPanelMessage:Close",
+                "tooltipOffset": { "x": 0, "y": -3 },
+            }
+        }
+    ]
+}

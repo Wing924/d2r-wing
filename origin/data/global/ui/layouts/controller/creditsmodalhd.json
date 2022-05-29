@@ -1,0 +1,48 @@
+{
+    "basedOn": "CreditsModalHD.json",
+    "type": "CreditsModal", "name": "CreditsModal",
+    "children": [
+        {
+            "type": "MoviePlayerWidget", "name": "CreditsBackground",
+            "fields": {
+                "jukeboxManaged": true,
+                "showCursor": false,
+                "ignoreInputMessages": true,
+            }
+        },
+        {
+            "type": "CreditsWidget", "name": "Credits",
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "TitleTemplate",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "LeftTemplate",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "RightTemplate",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "CenterTemplate",
+                },
+            ]
+        },
+        {
+            "type": "ButtonWidget", "name": "ExitButton",
+            "children": [
+                {
+                    "type": "ButtonLegendWidget", "name": "DismissLegend",
+                    "fields": {
+                        "anchor": { "x": 0.5, "y": 1.0 },
+                        "text": { "style": "$StyleButtonLegend" },
+                        "presets": [
+                            {
+                                "action": "back",
+                            },
+                        ],
+                    }
+                }
+            ]
+        }
+    ]
+}

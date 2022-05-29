@@ -1,0 +1,62 @@
+{
+    "basedOn": "GammaCalibrationPanelHD.json",
+    "type": "GammaCalibrationPanel", "name": "GammaCalibrationPanel",
+    "fields": {
+        "priority": 9500,
+		"fitToParent": true,
+		"defaultWidget": "GammaHD",
+    },
+    "children": [
+        {
+            "type": "RectangleWidget", "name": "Background",
+            "children": [
+				{
+					"type": "ClickCatcherWidget", "name": "ClickCatcher",
+				},
+			]
+        },
+		{
+			"type": "TextBoxWidget", "name": "Title",
+			"children": [
+					{
+						"type": "ImageWidget", "name": "Divider",
+					},
+				]
+		},
+		{
+			"type": "ImageWidget", "name": "GammaIcon",
+		},
+		{
+			"type": "ImageWidget", "name": "Gradient",
+		},
+		{
+			"type": "SettingsSliderWidget", "name": "GammaHD",
+			"fields": {
+				"onUpdateMessage": "OptionsPanelMessage:SetGammaHD",
+			}
+		},
+		{
+			"type": "TextBoxWidget", "name": "GammaCalibrationText",
+		},
+        {
+            "type": "ButtonLegendWidget", "name": "Legend",
+            "fields": {
+                "anchor": { "x": 0.5, "y": 0 },
+                "rect": { "x": -975, "y": 1800, "width": 1950, "height": 103 },
+                "text": { "style": "$StyleButtonLegend",
+                          "style/fontColor": "$FontColorWhite", 
+                },
+                "presets": [
+                    {
+                        "action": "select",
+                        "description": "@SaveAndCloseCalibration",
+                    },
+                    {
+                        "action": "back",
+                        "description": "@close",
+                    },
+                ],
+            },
+        },
+    ]
+}

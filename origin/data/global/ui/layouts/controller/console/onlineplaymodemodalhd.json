@@ -1,0 +1,67 @@
+{
+    "type": "OnlinePlayModeModal", "name": "OnlinePlayModeModal",
+    "fields": {
+        "anchor": { "x": 0.5, "y": 0.5 },
+        "rect": {"scale": "$ConsoleUIScale"},
+        "defaultWidget": "Online",
+    },
+    "children": [
+        {
+            "type": "ImageWidget", "name": "Frame",
+            "fields": {
+                "rect": { "x": -272, "y": -270 },
+                "filename": "FrontEnd/HD/Final/FrontEnd_OnlineModal"
+            },
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "Prompt",
+                    "fields": {
+                        "rect": { "x": -228, "y": -66, "width": 1000, "height": 270 },
+                        "text": "@GameModes",
+                        "style": {
+                            "fontColor": "$PanelTitleColor",
+                            "alignment": { "h": "center" },
+                            "options": { "lineWrap": true, "newlineHandling": "standard" },
+                            "pointSize": "$LargeFontSize",
+                            "spacing": "$ReducedSpacing"
+                        }
+                    }
+                },
+
+                {
+                    "type": "ButtonWidget", "name": "Online",
+                    "fields": {
+                        "rect": { "x": 36, "y": 40, "width": 408 },
+                        "filename": "FrontEnd/HD/Final/FrontEnd_ButtonMed",
+                        "hoveredFrame": 3,
+                        "focusIndicatorFilename": "Controller/HoverImages/FrontEndButtonMed",
+                        "textString": "@OnlineButton",
+                        "onClickMessage": "FrontEndNavigation:ToCharacterCreate:0",
+                        "textColor": "$LightButtonTextColor",
+                        "text/style" : "$StyleFEButtonText",
+                        "navigation": {
+                            "down": { "name": "Offline" },
+                        },
+                    }
+                },
+                {
+                    "type": "ButtonWidget", "name": "Offline",
+                    "fields": {
+                        "rect": { "x": 36, "y": 171, "width": 408 },
+                        "filename": "FrontEnd/HD/Final/FrontEnd_ButtonMed",
+                        "hoveredFrame": 3,
+                        "focusIndicatorFilename": "Controller/HoverImages/FrontEndButtonMed",
+                        "textString": "@Offline",
+                        "onClickMessage": "FrontEndNavigation:ToCharacterCreate:1",
+                        "textColor": "$LightButtonTextColor",
+                        "text/style" : "$StyleFEButtonText",
+                        "navigation": {
+                            "up": { "name": "Online" },
+                        },
+                        "disabledTooltipString": "@MPBetaDisabled",
+                    }
+                },
+            ]
+        },
+    ]
+}

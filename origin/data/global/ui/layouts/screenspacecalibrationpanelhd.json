@@ -1,0 +1,127 @@
+{
+    "type": "ScreenSpaceCalibrationPanel", "name": "ScreenSpaceCalibrationPanel",
+    "fields": {
+        "priority": 9500,
+		"fitToParent": true,
+        "minScreenPercent": 0.9,
+        "maxScreenPercent": 1.0,
+        "percentStepAmount": 0.025,
+        "parentOptionsPanelName": "VideoOptionsPanel", 
+        "saveAndClosePosition": { "x": -700, "y": 1750 },
+        "continuePosition": { "x": -329, "y": 1750 },
+    },
+    "children": [
+        {
+            "type": "RectangleWidget", "name": "Background",
+            "fields": {
+                "fitToScreen": true,
+                "color": [ 0.0, 0.0, 0.0, 1.0 ]
+            },
+            "children": [
+                {
+                    "type": "ClickCatcherWidget", "name": "ClickCatcher",
+                    "fields": {
+                        "fitToParent": true
+                    }
+                },  
+            ]
+        },
+		{
+            "type": "TextBoxWidget", "name": "Title",
+            "fields": {
+				"anchor": { "x": 0.5, "y": 0 },
+				"rect": { "x": 0, "y": 200 },
+                "text": "@ScreenSpaceCalibration",
+                "style": {
+                    "pointSize": "$HugeFontSize",
+                    "alignment": { "v": "center", "h": "center" }
+                }
+            },
+			"children": [
+				{
+					"type": "ImageWidget", "name": "Divider",
+					"fields": {
+						"rect": { "x": -820, "y": 50 },
+						"filename": "PauseMenu\\Divider",
+					}
+				},
+			]
+			
+        },
+		{
+			"type": "TextBoxWidget", "name": "ScreenSpaceMessage",
+            "fields": {
+				"anchor": { "x": 0.5, "y": 0.5 },
+                "text": "@ScreenSpaceMessage",
+                "style": {
+                    "pointSize": "$ExtraLargeFontSize",
+                    "alignment": { "v": "center", "h": "center" },
+                    "options": { "newlineHandling": "standard" },
+                }
+            },
+		},
+		{
+            "type": "ButtonWidget", "name": "SaveButton",
+            "fields": {
+				"anchor": { "x": 0.5, "y": 0 },
+				"rect": { "x": -700, "y": 1750 },
+                "filename": "PauseMenu\\PauseButton",
+                "textString": "@SaveAndCloseCalibration",
+                "onClickMessage": "CalibrationPanelMessage:SaveAndClose",
+                "textColor": "$LightButtonTextColor",
+                "text/style": "$StyleFEButtonText",
+                "pressedFrame": 1,
+                "disabledFrame": 2,
+                "hoveredFrame": 3,
+            }
+        },
+		{
+            "type": "ButtonWidget", "name": "CloseButton",
+            "fields": {
+				"anchor": { "x": 0.5, "y": 0 },
+				"rect": { "x": 20, "y": 1750 },
+                "filename": "PauseMenu\\PauseButton",
+                "textString": "@close",
+                "onClickMessage": "CalibrationPanelMessage:Close",
+                "textColor": "$LightButtonTextColor",
+                "text/style": "$StyleFEButtonText",
+				"acceptsEscKeyEverywhere": true,
+                "pressedFrame": 1,
+                "disabledFrame": 2,
+                "hoveredFrame": 3,
+            }
+        },
+        {
+            "type": "ImageWidget", "name": "TopLeftCorner",
+            "fields": { 
+                "rect": { "x": 0, "y": 0 },
+                "filename": "FrontEnd/HD/Final/PositionCalibrationCorners",
+                "frame": 0,
+            }
+        },
+        {
+            "type": "ImageWidget", "name": "TopRightCorner",
+            "fields": { 
+                "rect": { "x": 3575, "y": 0 },
+                "filename": "FrontEnd/HD/Final/PositionCalibrationCorners",
+                "frame": 1,
+            }
+        },
+        {
+            "type": "ImageWidget", "name": "BottomLeftCorner",
+            "fields": { 
+                "rect": { "x": 0, "y": 1800 },
+                "filename": "FrontEnd/HD/Final/PositionCalibrationCorners",
+                "frame": 2,
+            }
+        },
+        {
+            "type": "ImageWidget", "name": "BottomRightCorner",
+            "fields": { 
+                "rect": { "x": 3575, "y": 1800 },
+                "filename": "FrontEnd/HD/Final/PositionCalibrationCorners",
+                "frame": 3,
+            }
+        },
+    ]
+}

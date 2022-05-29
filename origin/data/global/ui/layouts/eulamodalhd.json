@@ -1,0 +1,132 @@
+{
+    "type": "EULAModal", "name": "EULAModal",
+    "fields": {
+        "fitToParent": true,
+        "fontStyle": {
+            "pointSize": "$MediumFontSize",
+            "spacing" : "$ReducedSpacing",
+            "alignment": { "v": "top", "h": "left" },
+            "fontFace": "BlizzardGlobal",
+            "fontColor": "$FontColorWhite",
+            "options": { "pipeCharacterBehavior" : "handle", "newlineHandling": "standard", "lineWrap": true },
+        },
+        "maxHeaderFontSize": 40,
+    },
+    "children": [
+        {
+            "type": "ClickCatcherWidget", "name": "ClickCatcher",
+            "fields": {
+                "fitToParent": true,
+            }
+        },
+        {
+            "type": "RectangleWidget", "name": "backgroundShading",
+            "fields": {
+                "fitToParent": true,
+                "color": [ 0.0, 0.0, 0.0, 0.5 ]
+            }
+        },
+        {
+            "type": "NineTileImageWidget", "name": "EULATitleTile",
+            "fields": {
+                "rect": { "x": -875, "y": 250, "width": 1750, "height": 0 },
+                "anchor": { "x": 0.5 },
+                "filename": "PANEL/TooltipBorder/TooltipBorder",
+                "backgroundColor": [ 0.0, 0.0, 0.0, 0.80 ],
+                "tileScale": 1.0,
+            },
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "Title",
+                    "fields": {
+                        "anchor": { "x": 0.5 },
+                        "text": "@LoginAgreement",
+                        "style": {
+                            "fontFace": "BlizzardGlobal",
+                            "pointSize": "$MediumLargeFontSize",
+                            "alignment": { "v": "center", "h": "center" },
+                            "fontColor": "$FontColorGoldYellow",
+                        }
+                    }
+                },
+            ]
+        },
+        {
+            "type": "NineTileImageWidget", "name": "EULADocumentTile",
+            "fields": {
+                "rect": { "x": -875, "y": 300, "width": 1750, "height": 1500 },
+                "anchor": { "x": 0.5 },
+                "filename": "PANEL/TooltipBorder/TooltipBorder",
+                "backgroundColor": [ 0.0, 0.0, 0.0, 0.80 ],
+                "tileScale": 1.0,
+            },
+            "children": [
+                {
+                    "type": "ImageWidget", "name": "ScrollBarBackground",
+                    "fields": {
+                        "rect": { "x": -40 , "y": 75, "width": 36, "height": 1272 },
+                        "anchor": { "x": 1.0 },
+                        "filename": "PauseMenu\\VerticalScroll",
+                    },
+                    "children": [
+                        {
+                            "type": "ScrollControllerWidget", "name": "ScrollController",
+                            "fields": {
+                                "rect": "$OptionsScrollBarRect",
+                                "anchor": { "x": 1.0 },
+                                "upArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollUpBtn",
+                                "downArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollDownBtn",
+                                "barFilepath": "PauseMenu\\VerticalIndicator",
+                                "viewName": "ScrollView",
+                                "focusOnMouseOver": false,
+                                "focusIndicatorVisible": false,
+                            }
+                        },
+                    ]
+                },
+                {
+                    "type": "ScrollViewWidget", "name": "ScrollView",
+                    "fields": {
+                        "rect": { "x": 50 , "y": 100, "width": 1650, "height": 1225 },
+                        "scrollControllerName": "ScrollController",
+                        "clipChildrenDraw": true,
+                    },
+                },
+            ]
+        },
+        {
+            "type": "ButtonWidget", "name": "Accept",
+            "fields": {
+                "rect": { "x": -537, "y": 1850 },
+                "anchor": { "x": 0.5 },
+                "filename": "PANEL\\Modals\\ModalButton",
+                "focusIndicatorFilename": "Controller/HoverImages/ModalButton_Hover",
+                "pressedFrame": 1,
+                "disabledFrame": 2,
+                "hoveredFrame": 3,
+                "textString": "@ControllerPromptModalAccept",
+                "pointSize": "$MediumFontSize",
+                "onClickMessage": "LoginAgreement:Accept",
+                "textColor": "$FontColorWhite",
+                "disabledTooltipString": "@EULATooltip",
+                "tooltipStyle": "$TooltipStyle",
+            }
+        },
+        {
+            "type": "ButtonWidget", "name": "Cancel",
+            "fields": {
+                "rect": { "x": 3, "y": 1850 },
+                "anchor": { "x": 0.5 },
+                "filename": "PANEL\\Modals\\ModalButton",
+                "focusIndicatorFilename": "Controller/HoverImages/ModalButton_Hover",
+                "pressedFrame": 1,
+                "disabledFrame": 2,
+                "hoveredFrame": 3,
+                "textString": "@strCancel",
+                "pointSize": "$MediumFontSize",
+                "onClickMessage": "LoginAgreement:Decline",
+                "textColor": "$FontColorWhite",
+            }
+        }
+    ]
+}

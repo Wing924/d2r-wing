@@ -1,0 +1,114 @@
+{
+    "type": "Panel", "name": "PlayPanel",
+    "fields": {
+        "defaultWidget": "SoloPlay",
+        "priority": 2,
+        "anchor": { "x": 0.5},
+        "rect": { "x": -1586, "y": 258, "scale": "$ConsoleUIScale" },
+    },
+    "children": [
+        {
+            "type": "ImageWidget", "name": "Background",
+            "fields": {
+                "rect": {"x": 0, "y": 0},
+                "filename": "Controller\\Lobby\\Play\\ConsolePlay_BG"
+            },
+        },
+        {
+            "type": "TextBoxWidget", "name": "SoloPlayTitle",
+            "fields": {
+                "rect": { "x": 484, "y": 62, "width": 670, "height": 75 },
+                "text": "@PlayPanelSoloPlayTitle",
+                "style": {
+                    "fontColor": "$FontColorGold",
+                    "pointSize": "$LargeFontSize",
+                    "options": { "newlineHandling": "standard"},
+                    "alignment": { "h": "center", "v": "center" },
+                },
+            },
+        },
+        {
+            "type": "ButtonWidget", "name": "SoloPlay",
+            "fields": {
+                "rect": { "x": 366, "y": 190 },
+                "filename": "Controller\\Lobby\\Play\\console_panel_lobby_SoloPlay",
+                "focusIndicatorFilename": "Controller/HoverImages/ConsolePlay_Hover",
+                "onClickMessage": "MainMenuHD:Play",
+                "hoveredFrame": 1,
+                "navigation": {
+                    "right": { "name": "MultiPlay" },
+                }
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "MultiPlayTitle",
+            "fields": {
+                "rect": { "x": 1566, "y": 62, "width": 670, "height": 75 },
+                "text": "@PartyFinder",
+                "style": {
+                    "fontColor": "$FontColorGold",
+                    "pointSize": "$LargeFontSize",
+                    "options": { "newlineHandling": "standard"},
+                    "alignment": { "h": "center", "v": "center" },
+                },
+            },
+        },
+        {
+            "type": "ButtonWidget", "name": "MultiPlay",
+            "fields": {
+                "rect": { "x": 1460, "y": 190 },
+                "filename": "Controller\\Lobby\\Play\\console_panel_lobby_MultiPlay",
+                "focusIndicatorFilename": "Controller/HoverImages/ConsolePlay_Hover",
+                "onClickMessage": "MainMenuHD:OpenGameFinder",
+                "hoveredFrame": 1,
+                "navigation": {
+                    "left": { "name": "SoloPlay" },
+                }
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "SoloPlayDetails",
+            "fields": {
+                "rect": { "x": 379, "y": 1246, "width": 890, "height": 110 },
+                "text": "@SoloPlayDetails",
+                "style": {
+                    "fontColor": "$FontColorGold",
+                    "pointSize": "$MediumFontSize",
+                    "options": { "newlineHandling": "standard"},
+                    "alignment": { "h": "center", "v": "center" },
+                },
+            },
+        },
+        {
+            "type": "TextBoxWidget", "name": "MultiPlayDetails",
+            "fields": {
+                "rect": { "x": 1464, "y": 1246, "width": 890, "height": 110 },
+                "text": "@PartyFinderDetails",
+                "style": {
+                    "fontColor": "$FontColorGold",
+                    "pointSize": "$MediumFontSize",
+                    "options": { "newlineHandling": "standard"},
+                    "alignment": { "h": "center", "v": "center" },
+                },
+            },
+        },
+        {
+            "type": "ButtonLegendWidget", "name": "Legend",
+            "fields": {
+                "rect": { "x": -70, "y": 1490, "width": 2880, "height": 100 },
+                "text": { "style": "$StyleButtonLegend" },
+                "presets": [
+                    {
+                        "action": "select",
+                        "description": "@ControllerPromptSelectCharacter",
+                    },
+                    {
+                        "action": "back",
+                        "description": "@ControllerPromptModalCancel",
+                    },
+                ]
+            },
+        },
+    ]
+
+}

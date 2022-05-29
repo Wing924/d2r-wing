@@ -1,0 +1,153 @@
+{
+    "type": "VendorPanel",
+    "name": "VendorPanelLayout",
+    "fields": {
+        "priority": 5,
+        "rect": { "x": -320, "y": -240, "width": 320, "height": 432 },
+        "anchor": "$LeftPanelAnchor",
+    },
+    "children": [
+        {
+            "type": "ClickCatcherWidget", "name": "click_catcher",
+            "fields": {
+                "rect": { "width": 320, "height": 432 }
+            },
+        },
+        {
+            "type": "GridImageWidget", "name": "background",
+            "fields": {
+                "filename": "PANEL\\buysell",
+                "frames": 4,
+                "rows": 2,
+            },
+        },
+        {
+            "type": "ImageWidget", "name": "gamble_tab",
+            "fields": {
+                "filename": "PANEL\\buyselltabs"
+            },
+        },
+        {
+            "type": "TabBarWidget", "name": "tabs",
+            "fields": {
+                "tabCount": 4,
+                "filename": "PANEL\\buyselltabs",
+                "inactiveFrames": [ 4, 5, 6, 7 ],
+                "activeFrames": [ 0, 1, 2, 3 ],
+                "textStrings": [ "@strBSArmor", "@strBSWeapons", "@strBSWeapons", "@strBSMisc" ],
+                "tabSize": { "x": 79, "y": 24 },
+                "tabPadding": { "x": 1, "y": 0 },
+            }
+        },
+        {
+            "type": "ButtonWidget", "name": "button_buy",
+            "fields": {
+                "rect": { "x": 116, "y": 385 },
+                "filename": "PANEL\\buysellbtn",
+                "normalFrame": 2,
+                "pressedFrame": 3,
+                "sound": "pass",
+                "tooltipString": "@NPCPurchaseItems",
+                "tooltipOffset": { "x": 0, "y": -3 },
+                "onClickMessage": "VendorPanelMessage:Buy",
+            },
+        },
+        {
+            "type": "ButtonWidget", "name": "button_sell",
+            "fields": {
+                "rect": { "x": 168, "y": 385 },
+                "filename": "PANEL\\buysellbtn",
+                "normalFrame": 4,
+                "pressedFrame": 5,
+                "sound": "pass",
+                "tooltipString": "@NPCSellItems",
+                "tooltipOffset": { "x": 0, "y": -3 },
+                "onClickMessage": "VendorPanelMessage:Sell",
+            },
+        },
+        {
+            "type": "ButtonWidget", "name": "button_repair",
+            "fields": {
+                "rect": { "x": 220, "y": 385 },
+                "filename": "PANEL\\buysellbtn",
+                "normalFrame": 6,
+                "pressedFrame": 7,
+                "sound": "pass",
+                "tooltipString": "@NPCRepairItems",
+                "tooltipOffset": { "x": 0, "y": -3 },
+                "onClickMessage": "VendorPanelMessage:Repair",
+            },
+        },
+        {
+            "type": "ImageWidget", "name": "button_blank",
+            "fields": {
+                "rect": { "x": 220, "y": 385 },
+                "filename": "PANEL\\buysellbtn",
+                "frame": 0,
+            },
+        },
+        {
+            "type": "ButtonWidget", "name": "button_refresh",
+            "fields": {
+                "rect": { "x": 220, "y": 385 },
+                "filename": "PANEL\\buysellbtn",
+                "sound": "pass",
+                "pointSize": 24,
+                "normalFrame": 23,
+                "pressedFrame": 24,
+                "tooltipString": "@refresh",
+                "onClickMessage": "VendorPanelMessage:RefreshAll",
+            },
+        },
+        {
+            "type": "ButtonWidget", "name": "button_repair_all",
+            "fields": {
+                "rect": { "x": 272, "y": 385 },
+                "filename": "PANEL\\buysellbtn",
+                "normalFrame": 18,
+                "pressedFrame": 19,
+                "sound": "pass",
+                "tooltipString": "@strThisShouldBeIn104",
+                "tooltipOffset": { "x": 0, "y": -3 },
+                "onClickMessage": "VendorPanelMessage:RepairAll",
+            },
+        },
+        {
+            "type": "ButtonWidget", "name": "button_close",
+            "fields": {
+                "rect": { "x": 272, "y": 385 },
+                "filename": "PANEL\\buysellbtn",
+                "normalFrame": 10,
+                "pressedFrame": 11,
+                "sound": "pass",
+                "tooltipString": "@strClose",
+                "tooltipOffset": { "x": 0, "y": -3 },
+                "onClickMessage": "VendorPanelMessage:Close",
+            },
+        },
+        {
+            "type": "InventoryGridWidget", "name": "grid",
+            "fields": {
+                "rect": { "x": 16, "y": 63 },
+                "cellCount": { "x": 10, "y": 10 },
+                "cellSize": "$ItemCellSize",
+                "gemSocketFilename": "PANEL\\gemsocket",
+            },
+        },
+        {
+            "type": "TextBoxWidget", "name": "gold_label",
+            "fields": {
+                "rect": { "x": 21, "y": 358 },
+                "style": { "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 } },
+                "text": "@stash",
+            },
+        },
+        {
+            "type": "TextBoxWidget", "name": "gold_amount",
+            "fields": {
+                "rect": { "x": 78, "y": 358, "width": 120 },
+                "style": { "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 }, "alignment": { "h": "right" }, },
+            },
+        },
+    ]
+}

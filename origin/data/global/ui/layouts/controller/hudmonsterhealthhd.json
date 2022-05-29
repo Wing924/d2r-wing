@@ -1,0 +1,112 @@
+{
+    "type": "MonsterHealthPanel", "name": "HUDMonsterHealth",
+    "fields": {
+        "priority": -100,
+        "anchor": { "x": 0.5 },
+        "rect": { "y": 80 }
+    },
+    "children": [
+        {
+            "type": "Widget", "name": "ScreenAnchored",
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "Name",
+                    "fields": {
+                        "style": {
+                            "pointSize": "$MediumFontSize",
+                            "alignment": { "h": "center" },
+                            "options": { "pipeCharacterBehavior": "handle" }
+                        }
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "Unique",
+                    "fields": {
+                        "rect": { "y": 50 },
+                        "style": {
+                            "pointSize": "$SmallFontSize",
+                            "alignment": { "h": "center" },
+                            "options": { "pipeCharacterBehavior": "handle" }
+                        }
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "Additional",
+                    "fields": {
+                        "rect": { "y": 120 },
+                        "style": {
+                            "pointSize": "$SmallFontSize",
+                            "alignment": { "h": "center" },
+                            "options": { "pipeCharacterBehavior": "handle" }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "type": "Widget", "name": "TargetAttached",
+            "children": [
+                {
+                    "type": "GrowableImageWidget", "name": "UniqueMonsterBackground",
+                    "rect": { "x": -500, "y": -26 },
+                    "fields": {
+                        "filename": "Controller/HUD/MonsterHealth/monster_healthbar_unique",
+                        "leftCap/filename": "Controller/HUD/MonsterHealth/monster_healthbar_unique_left_cap",
+                        "rightCap/filename": "Controller/HUD/MonsterHealth/monster_healthbar_unique_right_cap",
+                        "leftCapOffset": { "x": 0, "y": 0 },
+                        "rightCapOffset": { "x": 0, "y": 0 },
+                        "placeCapsOutsideRect": true
+                    },
+                    "children": [
+                        {
+                            "type": "ImageWidget", "name": "BottomCap",
+                            "fields": {
+                                "anchor": { "x": 0.5, "y": 1 },
+                                "rect": { "x": -60 },
+                                "filename": "Controller/HUD/MonsterHealth/monster_healthbar_unique_bottom_cap"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "GrowableImageWidget", "name": "NormalMonsterBackground",
+                    "rect": { "x": -500, "y": -26 },
+                    "fields": {
+                        "filename": "Controller/HUD/MonsterHealth/monster_healthbar_normal",
+                        "leftCap/filename": "Controller/HUD/MonsterHealth/monster_healthbar_normal_left_cap",
+                        "rightCap/filename": "Controller/HUD/MonsterHealth/monster_healthbar_normal_right_cap",
+                        "leftCapOffset": { "x": 0, "y": 0 },
+                        "rightCapOffset": { "x": 0, "y": 0 },
+                        "placeCapsOutsideRect": true
+                    }
+                },
+                {
+                    "type": "HealthBarWidget", "name": "Health",
+                    "fields": {
+                        "rect": { "x": 0, "y": -86 },
+                        "filename": "Controller/HUD/MonsterHealth/monsterhealth_console",
+                        "transparency": 0.5,
+                        "backgroundTransparency": 0.75,
+                        "criticalHealthPercent": 0,
+                        "warningHealthPercent": 0,
+                        "drawWhenEmpty": true
+                    },
+                    "children": [
+                        {
+                            "type": "TextBoxWidget", "name": "Name",
+                            "fields": {
+                                "rect": { "x": 0, "y": 0 },
+                                "anchor": { "x": 0.5, "y": 0.5 },
+                                "style": {
+                                    "pointSize": "$LargeFontSize",
+                                    "alignment": { "h": "center", "v": "center" },
+                                    "options": { "pipeCharacterBehavior": "handle" }
+                                }
+                            }
+                        },
+                    ]
+                },
+            ]
+        }
+    ]
+}

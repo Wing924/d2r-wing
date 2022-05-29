@@ -1,0 +1,186 @@
+{
+    "type": "PartyPanel", "name": "PartyPanel",
+    "fields": {
+        "priority": 5,
+        "rect": { "x": -320, "y": -240, "width": 320, "height": 432 },
+        "anchor": "$LeftPanelAnchor",
+        "hostileOffset": [80, -10],
+        "playerOffset": [28, 0],
+        "squelchOffset": [0, -13],
+        "generalOffset": [0, 0],
+        "partyBarOffset": [2, -2],
+
+    },
+    "children": [
+        {
+            "type": "ClickCatcherWidget", "name": "click_catcher",
+            "fields": {
+                "rect": { "width": 320, "height": 432 }
+            },
+        },
+        {
+            "type": "GridImageWidget", "name": "PanelBackground",
+            "fields": {
+                "filename": "Menu\\party",
+                "frames": 4,
+                "rows": 2
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "PlayerName",
+            "fields": {
+                "rect": {"x": 21, "y": 14, "width": 170, "height": 19},
+                "style": {
+                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                    "pointSize": 16,
+                    "alignment": { "h": "center", "v": "center"}
+                },
+                "fontType": "16pt"
+            }
+        },
+        {
+            "type": "ButtonWidget", "name": "LeavePartyButton",
+            "fields": {
+                "rect": { "x": 227, "y": 15 }, 
+                "filename": "Menu\\partybuttons",
+                "onClickMessage": "PartyPanelMessage:LeaveParty",
+                "fontType": "8pt",
+                "textColor": { "r": 0, "g": 255, "b": 0, "a": 255 },
+                "textString": "@Leave",
+                "tooltipString": "@strParty24",
+                "tooltipOffset": [-44, 44],
+                "text/style" : { "spacing": { "leading": 0.7  }, },
+            },
+        },
+        {
+            "type": "ListWidget", "name": "ListContainer",
+            "fields": {
+                "direction": "vertical",
+                "rect": { "x": 10, "y": 69, "width": 300, "height": 315 }, 
+            },
+            "children": [
+                {
+                    "type": "ListItemWidget", "name": "FriendsListTemplate",
+                    "fields": {
+                        "rect": { "x": 0, "y": 0, "width": 300, "height": 38 },
+                        "focusOnMouseOver": false,
+                    },
+                    "children": [
+                        {
+                            "type": "ToggleButtonWidget", "name": "HostileButton",
+                            "fields": {
+                                "rect": { "x": 4, "y": 9 }, 
+                                "filename": "Menu\\partyboxes",
+                                "onClickMessage": "PartyPanelMessage:ToggleHostile",
+                                "untoggledFrame": 6,
+                                "untoggledPressedFrame": 7,
+                                "toggledFrame": 4,
+                                "toggledPressedFrame": 5,
+                                "disabledTint": [1.0, 0, 0, 1.0]
+                            },
+                        },
+                        {
+                            "type": "ToggleButtonWidget", "name": "LootBodyButton",
+                            "fields": {
+                                "rect": { "x": 235, "y": 2 }, 
+                                "filename": "Menu\\partyboxes",
+                                "onClickMessage": "PartyPanelMessage:ToggleLootBody",
+                                "untoggledFrame": 12,
+                                "untoggledPressedFrame": 13,
+                                "toggledFrame": 14,
+                                "toggledPressedFrame": 15,
+                            },
+                        },
+                        {
+                            "type": "ToggleButtonWidget", "name": "SquelchPlayerButton",
+                            "fields": {
+                                "rect": { "x": 277, "y": 2 }, 
+                                "filename": "Menu\\partyboxes",
+                                "onClickMessage": "PartyPanelMessage:ToggleSquelchPlayer",
+                                "untoggledFrame": 8,
+                                "untoggledPressedFrame": 9,
+                                "toggledFrame": 10,
+                                "toggledPressedFrame": 11,
+                            },
+                        },
+                        {
+                            "type": "TextBoxWidget", "name": "PlayerNameAndClass",
+                            "fields": {
+                                "rect": {"x": 26, "y": 4, "width": 80, "height": 30},
+                                "fontType": "8pt",
+                                "style": {
+                                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                                    "alignment": { "h": "left", "v": "center" },
+                                    "options": { "newlineHandling": "standard", "pipeCharacterBehavior" : "handle" },
+                                    "spacing": { "leading": 0.65 },
+                                },
+                                "text": ""
+                            }
+                        },
+                        {
+                            "type": "TextBoxWidget", "name": "PartyInfoText",
+                            "fields": {
+                                "rect": {"x": 227, "y": -3},
+                                "fontType": "8pt",
+                                "style": {
+                                    "fontColor": { "r": 255, "g": 168, "b": 0, "a": 255 },
+                                    "alignment": { "h": "right" },
+                                },
+                                "text": "@Inparty"
+                            }
+                        },
+                        {
+                            "type": "TextBoxWidget", "name": "LevelInfoText",
+                            "fields": {
+                                "rect": {"x": 256, "y": 11, "width": 0, "height": 0},
+                                "fontType": "8pt",
+                                "style": {
+                                    "fontColor": { "r": 255, "g": 168, "b": 0, "a": 255 },
+                                    "alignment": { "h": "left" },
+                                },
+                                "text": "@Level: "
+                            }
+                        },
+                        {
+                            "type": "TextBoxWidget", "name": "LocationText",
+                            "fields": {
+                                "rect": {"x": 116, "y": 11, "width": 140, "height": 25},
+                                "fontType": "8pt",
+                                "style": {
+                                    "fontColor": { "r": 255, "g": 168, "b": 0, "a": 255 },
+                                    "alignment": { "h": "left" },
+                                },
+                                "text": "",
+                                "truncateWithEllipsis": true,
+                                "keepLastLetter": true,
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget", "name": "InviteButton",
+                            "fields": {
+                                "rect": { "x": 180, "y": 1 }, 
+                                "filename": "Menu\\partybuttons",
+                                "onClickMessage": "PartyPanelMessage:ProcessInviteButton",
+                                "fontType": "8pt",
+                                "textColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                                "textString": "@Invite",
+                                "pressLabelOffset": { "x": 0, "y": 0 }
+                            },
+                        },
+                    ]
+                },
+            ]
+        },
+        {
+            "type": "ButtonWidget", "name": "CloseButton",
+            "fields": {
+                "rect": { "x": 278, "y": 389 }, 
+                "filename": "PANEL\\buysellbtn",
+                "onClickMessage": "PartyPanelMessage:Close",
+                "normalFrame": 10,
+                "pressedFrame": 11,
+                "tooltipString": "@strClose"
+            },
+        },
+    ]
+}

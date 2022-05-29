@@ -1,0 +1,69 @@
+{
+    "type": "ConfirmationModal", "name": "ConfirmResolutionChangeModal",
+    "fields": { 
+        "anchor": { "x": 0.5, "y": 0.5 },
+        "isDismissable": false,
+    },
+    "children": [
+        {
+            "type": "ImageWidget", "name": "Frame",
+            "fields": {
+                "rect": { "x": -627, "y": -270 },
+                "filename": "Panel\\Modals\\Modal_No_Title_BG"
+            },
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "Prompt",
+                    "fields": {
+                        "rect": { "x": 78, "y": 80, "width": 1076, "height": 170 },
+                        "text": "@ScreenResolutionChanged",
+                        "style": "$StyleModalDialogDescription"
+                    }
+                },
+                {
+                    "type": "ButtonWidget", "name": "Confirm",
+                    "fields": { 
+                        "rect": { "x": 79, "y": 302 },
+                        "filename": "Panel\\Modals\\ModalButton",
+                        "focusIndicatorFilename": "Controller/HoverImages/ModalButton_Hover",
+                        "hoveredFrame": 3,
+                        "textString": "@strOk",
+                        "onClickMessage": "OptionsPanelMessage:AcceptWindowModeChange",
+                        "textColor": "$LightButtonTextColor",
+                        "text/style" : "$StyleFEButtonText"
+                    }
+                },
+                {
+                    "type": "ButtonWidget", "name": "Cancel",
+                    "fields": { 
+                        "rect": { "x": 625, "y": 302 },
+                        "filename": "Panel\\Modals\\ModalButton",
+                        "focusIndicatorFilename": "Controller/HoverImages/ModalButton_Hover",
+                        "hoveredFrame": 3,
+                        "textString": "@cancel",
+                        "onClickMessage": "OptionsPanelMessage:CancelWindowModeChange",
+                        "textColor": "$LightButtonTextColor",
+                        "text/style" : "$StyleFEButtonText"
+                    }
+                },
+                {
+                    "type": "TimerWidget", "name": "Timer",
+                    "fields": {
+                        "rect": { "x": 78, "y": 200, "width": 1076, "height": 94 },
+                        "textVisible": true,
+                        "text/fitToParent": true,
+                        "text/fontType": "8pt",
+                        "text/style": { 
+                            "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 }, 
+                            "alignment": { "h": "center" },
+                            "options": { "lineWrap": true, "newlineHandling": "standard" },
+                            "pointSize": "$LargeFontSize"
+                        },
+                        "time": 30,
+                        "message": "OptionsPanelMessage:CancelWindowModeChange"
+                    }
+                }
+            ]
+        }
+    ]
+}

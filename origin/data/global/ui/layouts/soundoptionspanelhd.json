@@ -1,0 +1,771 @@
+{
+    "type": "SoundOptionsPanel", "name": "SoundOptionsPanel",
+    "fields": {
+        "priority": 9003,
+        "rect": "$OptionsPanelRect",
+        "anchor": { "x": 0.5 },
+    },
+    "children": [
+        {
+            "type": "ImageWidget", "name": "ScrollBarBackground",
+            "fields": {
+                "rect": "$OptionsScrollBarBackgroundRect",
+                "anchor": { "x": 1.0 },
+                "filename": "PauseMenu\\VerticalScroll",
+            },
+            "children": [
+                {
+                    "type": "ScrollControllerWidget", "name": "ScrollController",
+                    "fields": {
+                        "rect": "$OptionsScrollBarRect",
+                        "anchor": { "x": 1.0 },
+                        "upArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollUpBtn",
+                        "downArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollDownBtn",
+                        "barFilepath": "PauseMenu\\VerticalIndicator",
+                        "viewName": "ScrollView",
+                        "wheelScrollSound": "cursor_scroll_hd",
+                        "buttonScrollSound": "cursor_scroll_hd",
+                    }
+                },
+            ]
+        },
+        {
+            "type": "ScrollViewWidget", "name": "ScrollView",
+            "fields": {
+                "fitToParent": true,
+                "scrollControllerName": "ScrollController",
+            },
+            "children": [
+                {
+                    "type": "TableWidget", "name": "OptionsTable",
+                    "fields": {
+                        "columns": [ "$OptionsTableColumn1", "$OptionsTableColumn2" ],
+                        "rowHeight": "$OptionsTableRowHeight",
+                    },
+                    "children": [
+                        {
+                            "type": "TableRowWidget", "name": "Row Sound Options",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "Sound Options",
+                                    "fields": {
+                                        "text": "@SoundOptionsHD",
+                                        "style": "$StyleSettingsTitle"
+                                    },
+                                    "children": [
+                                        {
+                                            "type": "ImageWidget", "name": "Divider",
+                                            "fields": {
+                                                "rect": "$OptionsDividerRect",
+                                                "filename": "PauseMenu\\Divider",
+                                            }
+                                        },
+                                    ]
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row Sound",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "SoundText",
+                                    "fields": {
+                                        "text": "@strOptSound",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                },
+                                {
+                                    "type": "SettingsSliderWidget", "name": "Sound",
+                                    "fields": {
+                                        "rect": "$OptionsSliderRect",
+                                        "focusIndicatorPadding": "$OptionsSliderFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsSliderFocusIndicatorFilename",
+                                        "isHorizontal": true,
+                                        "indicatorFilepath": "PauseMenu\\HorizontalIndicator",
+                                        "background": "$SettingsSliderBackground",
+                                        "onUpdateMessage": "OptionsPanelMessage:SetMasterVolume",
+                                        "leftButton": "$SettingsSliderLeftButtonFields",
+                                        "rightButton": "$SettingsSliderRightButtonFields",
+                                        "valueText": "$SettingsSliderValueFields",
+                                        "tooltipString": "@OptionsMenuMasterVolumeTooltip",
+                                        "tooltipStyle": {
+                                            "fontStyle": {
+                                                "options": { "newlineHandling": "standard" },
+                                            },
+                                            "showAfterDelay": true,
+                                        }
+                                    },
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row Music",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "MusicText",
+                                    "fields": {
+                                        "text": "@strOptMusic",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                },
+                                {
+                                    "type": "SettingsSliderWidget", "name": "Music",
+                                    "fields": {
+                                        "rect": "$OptionsSliderRect",
+                                        "focusIndicatorPadding": "$OptionsSliderFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsSliderFocusIndicatorFilename",
+                                        "isHorizontal": true,
+                                        "indicatorFilepath": "PauseMenu\\HorizontalIndicator",
+                                        "background": "$SettingsSliderBackground",
+                                        "onUpdateMessage": "OptionsPanelMessage:SetMusicVolume",
+                                        "leftButton": "$SettingsSliderLeftButtonFields",
+                                        "rightButton": "$SettingsSliderRightButtonFields",
+                                        "valueText": "$SettingsSliderValueFields",
+                                        "tooltipString": "@OptionsMenuMusicVolumeTooltip",
+                                        "tooltipStyle": {
+                                            "fontStyle": {
+                                                "options": { "newlineHandling": "standard" },
+                                            },
+                                            "showAfterDelay": true,
+                                        }
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row NPCSpeech",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "NPC Speech",
+                                    "fields": {
+                                        "text": "@NPCSpeechHD",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                },
+                                {
+                                    "type": "CarouselWidget", "name": "NPCSpeech",
+                                    "fields": {
+                                        "rect": "$OptionsCarouselRect",
+                                        "focusIndicatorPadding": "$OptionsCarouselFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsCarouselFocusIndicatorFilename",
+                                        "states": [ "OptionsMenuNPCSpeechAudioOnly", "OptionsMenuNPCSpeechTextOnly", "OptionsMenuNPCSpeechAudioAndText" ],
+                                        "fontType": "8ptE",
+                                        "onUpdateMessage": "OptionsPanelMessage:SetNPCSpeech",
+                                        "style": "$StyleSettingsCarousel",
+                                        "enabledColor" : "$CarouselEnabledColor",
+                                        "disabledColor" : "$CarouselDisabledColor",
+                                        "tooltipString": "@OptionsMenuNPCSpeechTooltip",
+                                        "tooltipStyle": {
+                                            "fontStyle": {
+                                                "options": { "newlineHandling": "standard" },
+                                            },
+                                            "showAfterDelay": true,
+                                        }
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row LanguageOptions",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "LanguageOptionsText",
+                                    "fields": {
+                                        "text": "@LanguageOptions",
+                                        "style": "$StyleSettingsTitle"
+                                    },
+                                    "children": [
+                                        {
+                                            "type": "ImageWidget", "name": "Divider",
+                                            "fields": {
+                                                "rect": "$OptionsDividerRect",
+                                                "filename": "PauseMenu\\Divider",
+                                            }
+                                        },
+                                    ]
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row VoiceLanguage",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "VoiceLanguageText",
+                                    "fields": {
+                                        "text": "@VoiceLanguage",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                },
+                                {
+                                    "type": "CarouselWidget", "name": "VoiceLanguage",
+                                    "fields": {
+                                        "rect": "$OptionsCarouselRect",
+                                        //"focusIndicatorPadding": "$OptionsCarouselFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsCarouselFocusIndicatorFilename",
+                                        "states": [ "English", "German", "Spanish", "French", "Italian", "Korean", "Polish", "Russian", "ChineseSimplified", "ChineseTraditional", "SpanishMexican", "Japanese", "Portuguese" ],
+                                        "fontType": "8ptE",
+                                        "onUpdateMessage": "OptionsPanelMessage:SetVoiceLanguage",
+                                        "style": "$StyleSettingsCarousel",
+                                        "enabledColor" : "$CarouselEnabledColor",
+                                        "disabledColor" : "$CarouselDisabledColor",
+										"tooltipString": "@OptionsMenuVoiceLanguageTooltip",
+                                        "tooltipStyle": {
+                                            "fontStyle": {
+                                                "options": { "newlineHandling": "standard" },
+                                            },
+                                            "showAfterDelay": true,
+										}
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row TextLanguage",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "TextLanguageText",
+                                    "fields": {
+                                        "text": "@TextLanguage",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                },
+                                {
+                                    "type": "CarouselWidget", "name": "TextLanguage",
+                                    "fields": {
+                                        "rect": "$OptionsCarouselRect",
+                                        //"focusIndicatorPadding": "$OptionsCarouselFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsCarouselFocusIndicatorFilename",
+                                        "states": [ "English", "German", "Spanish", "French", "Italian", "Korean", "Polish", "Russian", "ChineseSimplified", "ChineseTraditional", "SpanishMexican", "Japanese", "Portuguese" ],
+                                        "fontType": "8ptE",
+                                        "onUpdateMessage": "OptionsPanelMessage:SetTextLanguage",
+                                        "style": "$StyleSettingsCarousel",
+                                        "enabledColor" : "$CarouselEnabledColor",
+                                        "disabledColor" : "$CarouselDisabledColor",
+                                        "tooltipString": "@OptionsMenuTextLanguageTooltip",
+                                        "tooltipStyle": {
+                                            "fontStyle": {
+                                                "options": { "newlineHandling": "standard" },
+                                            },
+                                            "showAfterDelay": true,
+                                        }
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row Advanced Audio",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "Advanced Audio",
+                                    "fields": {
+                                        "text": "@AudioAccessibility",
+                                        "style": "$StyleSettingsTitle"
+                                    },
+                                    "children": [
+                                        {
+                                            "type": "ImageWidget", "name": "Divider",
+                                            "fields": {
+                                                "rect": "$OptionsDividerRect",
+                                                "filename": "PauseMenu\\Divider",
+                                            }
+                                        },
+                                    ]
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row Verb Disable",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "VerbDisableText",
+                                    "fields": {
+                                        "text": "@OptionsMenuDisableReverb",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                },
+                                {
+                                    "type": "ToggleButtonWidget", "name": "VerbDisable",
+                                    "fields": {
+                                        "rect": "$OptionsToggleRect",
+                                        "sound": "cursor_menu_select_hd",
+                                        "focusIndicatorPadding": "$OptionsToggleFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsToggleFocusIndicatorFilename",
+                                        "focusIndicatorOffset": { "x": 0, "y": -4 },
+                                        "filename": "Lobby\\CreateGame\\CreateGame_AdvancedCheckbox",
+                                        "untoggledFrame": 0,
+                                        "untoggledPressedFrame": 1,
+                                        "untoggledHoveredFrame": 3,
+                                        "untoggledDisabledFrame": 2,
+                                        "toggledFrame": 4,
+                                        "toggledPressedFrame": 5,
+                                        "toggledHoveredFrame": 6,
+                                        "onClickMessage": "OptionsPanelMessage:VerbDisable",
+                                        "tooltipString": "@SoundOptionsMenuDisableReverbTooltip",
+                                        "tooltipStyle": {
+                                            "showAfterDelay": true,
+                                        }
+                                    },
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row Text to Speech",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "TextToSpeechText",
+                                    "fields": {
+                                        "text": "@OptionsMenuTextToSpeech",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                },
+                                {
+                                    "type": "ToggleButtonWidget", "name": "TextToSpeech",
+                                    "fields": {
+                                        "rect": "$OptionsToggleRect",
+                                        "sound": "cursor_menu_select_hd",
+                                        "focusIndicatorPadding": "$OptionsToggleFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsToggleFocusIndicatorFilename",
+                                        "focusIndicatorOffset": { "x": 0, "y": -4 },
+                                        "filename": "Lobby\\CreateGame\\CreateGame_AdvancedCheckbox",
+                                        "untoggledFrame": 0,
+                                        "untoggledPressedFrame": 1,
+                                        "untoggledHoveredFrame": 3,
+                                        "untoggledDisabledFrame": 2,
+                                        "toggledFrame": 4,
+                                        "toggledPressedFrame": 5,
+                                        "toggledHoveredFrame": 6,
+                                        "onClickMessage": "OptionsPanelMessage:SetTextToSpeech",
+                                        "tooltipString": "@SoundOptionsMenuTextToSpeechTooltip",
+                                        "tooltipStyle": {
+                                            "showAfterDelay": true,
+                                        }
+                                    },
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row TTS Speed",
+                            "fields": {},
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "TTSSpeedText",
+                                    "fields": {
+                                        "text": "        @OptionsMenuTextToSpeechSpeed",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                },
+                                {
+                                    "type": "SettingsSliderWidget", "name": "TTSSpeed",
+                                    "fields": {
+                                        "rect": "$OptionsSliderRect",
+                                        "focusIndicatorPadding": "$OptionsSliderFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsSliderFocusIndicatorFilename",
+                                        "isHorizontal": true,
+                                        "onUpdateMessage": "OptionsPanelMessage:SetTTSSpeed",
+                                        "indicatorFilepath": "PauseMenu\\HorizontalIndicator",
+                                        "background": "$SettingsSliderBackground",
+                                        "leftButton": "$SettingsSliderLeftButtonFields",
+                                        "rightButton": "$SettingsSliderRightButtonFields",
+                                        "valueText": "$SettingsSliderValueFields",
+                                        "tooltipString": "@SoundOptionsMenuTextToSpeechSpeedTooltip",
+                                        "tooltipStyle": {
+                                            "fontStyle": {
+                                                "options": { "newlineHandling": "standard" },
+                                            },
+                                            "showAfterDelay": true,
+                                        }
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row TTS Volume",
+                            "fields": {},
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "TTSVolumeText",
+                                    "fields": {
+                                        "text": "        @SoundOptionsHD",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                },
+                                {
+                                    "type": "SettingsSliderWidget", "name": "TTSVolume",
+                                    "fields": {
+                                        "rect": "$OptionsSliderRect",
+                                        "focusIndicatorPadding": "$OptionsSliderFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsSliderFocusIndicatorFilename",
+                                        "isHorizontal": true,
+                                        "onUpdateMessage": "OptionsPanelMessage:SetTTSVolume",
+                                        "indicatorFilepath": "PauseMenu\\HorizontalIndicator",
+                                        "background": "$SettingsSliderBackground",
+                                        "leftButton": "$SettingsSliderLeftButtonFields",
+                                        "rightButton": "$SettingsSliderRightButtonFields",
+                                        "valueText": "$SettingsSliderValueFields",
+                                        "tooltipString": "@SoundOptionsMenuTextToSpeechVolTooltip",
+                                        "tooltipStyle": {
+                                            "fontStyle": {
+                                                "options": { "newlineHandling": "standard" },
+                                            },
+                                            "showAfterDelay": true,
+                                        }
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row Controller Feedback",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "VerbDisableText",
+                                    "fields": {
+                                        "text": "@SoundOptionsMenuControllerFeedback",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                },
+                                {
+                                    "type": "ToggleButtonWidget", "name": "ControllerFeedback",
+                                    "fields": {
+                                        "rect": "$OptionsToggleRect",
+                                        "sound": "cursor_menu_select_hd",
+                                        "focusIndicatorPadding": "$OptionsToggleFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsToggleFocusIndicatorFilename",
+                                        "focusIndicatorOffset": { "x": 0, "y": -4 },
+                                        "filename": "Lobby\\CreateGame\\CreateGame_AdvancedCheckbox",
+                                        "untoggledFrame": 0,
+                                        "untoggledPressedFrame": 1,
+                                        "untoggledHoveredFrame": 3,
+                                        "untoggledDisabledFrame": 2,
+                                        "toggledFrame": 4,
+                                        "toggledPressedFrame": 5,
+                                        "toggledHoveredFrame": 6,
+                                        "onClickMessage": "OptionsPanelMessage:ControllerFeedback",
+                                        "tooltipString": "@SoundOptionsMenuControllerFeedbackTooltip",
+                                        "tooltipStyle": {
+                                            "showAfterDelay": true,
+                                        }
+                                    },
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row AdvancedAudioPreset",
+                            "fields": {},
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "AdvancedAudioPresetText",
+                                    "fields": {
+                                        "text": "@Preset",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                },
+                                {
+                                    "type": "CarouselWidget", "name": "AdvancedAudioPreset",
+                                    "fields": {
+                                        "rect": "$OptionsCarouselRect",
+                                        "focusIndicatorPadding": "$OptionsCarouselFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsCarouselFocusIndicatorFilename",
+                                        "states": [ "1", "2", "3" ],
+                                        "fontType": "8ptE",
+                                        "onUpdateMessage": "OptionsPanelMessage:AdvancedAudioPreset",
+                                        "style": "$StyleSettingsCarousel",
+                                        "enabledColor" : "$CarouselEnabledColor",
+                                        "disabledColor" : "$CarouselDisabledColor",
+                                        "tooltipString": "@SoundOptionsMenuPresetTooltip",
+                                        "tooltipStyle": {
+                                            "fontStyle": {
+                                                "options": { "newlineHandling": "standard" },
+                                            },
+                                            "showAfterDelay": true,
+                                        }
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row AdvancedVO",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "AdvancedVOText",
+                                    "fields": {
+                                        "text": "@AdvancedVO",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                },
+                                {
+                                    "type": "SettingsSliderWidget", "name": "AdvancedVO",
+                                    "fields": {
+                                        "rect": "$OptionsSliderRect",
+                                        "focusIndicatorPadding": "$OptionsSliderFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsSliderFocusIndicatorFilename",
+                                        "isHorizontal": true,
+                                        "onUpdateMessage": "OptionsPanelMessage:AdvancedVO",
+                                        "indicatorFilepath": "PauseMenu\\HorizontalIndicator",
+                                        "background": "$SettingsSliderBackground",
+                                        "leftButton": "$SettingsSliderLeftButtonFields",
+                                        "rightButton": "$SettingsSliderRightButtonFields",
+                                        "valueText": "$SettingsSliderValueFields",
+                                        "tooltipString": "@SoundOptionsMenuVoicesTooltip",
+                                        "tooltipStyle": {
+                                            "fontStyle": {
+                                                "options": { "newlineHandling": "standard" },
+                                            },
+                                            "showAfterDelay": true,
+                                        }
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row AdvancedSFX",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "AdvancedSFXText",
+                                    "fields": {
+                                        "text": "@AdvancedSFX",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                },
+                                {
+                                    "type": "SettingsSliderWidget", "name": "AdvancedSFX",
+                                    "fields": {
+                                        "rect": "$OptionsSliderRect",
+                                        "focusIndicatorPadding": "$OptionsSliderFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsSliderFocusIndicatorFilename",
+                                        "isHorizontal": true,
+                                        "onUpdateMessage": "OptionsPanelMessage:AdvancedSFX",
+                                        "indicatorFilepath": "PauseMenu\\HorizontalIndicator",
+                                        "background": "$SettingsSliderBackground",
+                                        "leftButton": "$SettingsSliderLeftButtonFields",
+                                        "rightButton": "$SettingsSliderRightButtonFields",
+                                        "valueText": "$SettingsSliderValueFields",
+                                        "tooltipString": "@SoundOptionsMenuSoundEffectsTooltip",
+                                        "tooltipStyle": {
+                                            "fontStyle": {
+                                                "options": { "newlineHandling": "standard" },
+                                            },
+                                            "showAfterDelay": true,
+                                        }
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row AdvancedUI",
+                            "fields": {},
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "AdvancedUIText",
+                                    "fields": {
+                                        "text": "        @AdvancedUI",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                },
+                                {
+                                    "type": "SettingsSliderWidget", "name": "AdvancedUI",
+                                    "fields": {
+                                        "rect": "$OptionsSliderRect",
+                                        "focusIndicatorPadding": "$OptionsSliderFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsSliderFocusIndicatorFilename",
+                                        "isHorizontal": true,
+                                        "onUpdateMessage": "OptionsPanelMessage:AdvancedUI",
+                                        "indicatorFilepath": "PauseMenu\\HorizontalIndicator",
+                                        "background": "$SettingsSliderBackground",
+                                        "leftButton": "$SettingsSliderLeftButtonFields",
+                                        "rightButton": "$SettingsSliderRightButtonFields",
+                                        "valueText": "$SettingsSliderValueFields",
+                                        "tooltipString": "@SoundOptionsMenuUITooltip",
+                                        "tooltipStyle": {
+                                            "fontStyle": {
+                                                "options": { "newlineHandling": "standard" },
+                                            },
+                                            "showAfterDelay": true,
+                                        }
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row AdvancedItems",
+                            "fields": {},
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "AdvancedItemsText",
+                                    "fields": {
+                                        "text": "        @AdvancedItems",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                },
+                                {
+                                    "type": "SettingsSliderWidget", "name": "AdvancedItems",
+                                    "fields": {
+                                        "rect": "$OptionsSliderRect",
+                                        "focusIndicatorPadding": "$OptionsSliderFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsSliderFocusIndicatorFilename",
+                                        "isHorizontal": true,
+                                        "onUpdateMessage": "OptionsPanelMessage:AdvancedItems",
+                                        "indicatorFilepath": "PauseMenu\\HorizontalIndicator",
+                                        "background": "$SettingsSliderBackground",
+                                        "leftButton": "$SettingsSliderLeftButtonFields",
+                                        "rightButton": "$SettingsSliderRightButtonFields",
+                                        "valueText": "$SettingsSliderValueFields",
+                                        "tooltipString": "@SoundOptionsMenuItemsTooltip",
+                                        "tooltipStyle": {
+                                            "fontStyle": {
+                                                "options": { "newlineHandling": "standard" },
+                                            },
+                                            "showAfterDelay": true,
+                                        }
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row AdvancedMonsters",
+                            "fields": {},
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "AdvancedMonstersText",
+                                    "fields": {
+                                        "text": "        @AdvancedMonsters",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                },
+                                {
+                                    "type": "SettingsSliderWidget", "name": "AdvancedMonsters",
+                                    "fields": {
+                                        "rect": "$OptionsSliderRect",
+                                        "focusIndicatorPadding": "$OptionsSliderFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsSliderFocusIndicatorFilename",
+                                        "isHorizontal": true,
+                                        "onUpdateMessage": "OptionsPanelMessage:AdvancedMonsters",
+                                        "indicatorFilepath": "PauseMenu\\HorizontalIndicator",
+                                        "background": "$SettingsSliderBackground",
+                                        "leftButton": "$SettingsSliderLeftButtonFields",
+                                        "rightButton": "$SettingsSliderRightButtonFields",
+                                        "valueText": "$SettingsSliderValueFields",
+                                        "tooltipString": "@SoundOptionsMenuMonstersTooltip",
+                                        "tooltipStyle": {
+                                            "fontStyle": {
+                                                "options": { "newlineHandling": "standard" },
+                                            },
+                                            "showAfterDelay": true,
+                                        }
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row AdvancedPlayerSkills",
+                            "fields": {},
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "AdvancedPlayerSkillsText",
+                                    "fields": {
+                                        "text": "        @AdvancedPlayerSkills",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                },
+                                {
+                                    "type": "SettingsSliderWidget", "name": "AdvancedPlayerSkills",
+                                    "fields": {
+                                        "rect": "$OptionsSliderRect",
+                                        "focusIndicatorPadding": "$OptionsSliderFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsSliderFocusIndicatorFilename",
+                                        "isHorizontal": true,
+                                        "onUpdateMessage": "OptionsPanelMessage:AdvancedPlayerSkills",
+                                        "indicatorFilepath": "PauseMenu\\HorizontalIndicator",
+                                        "background": "$SettingsSliderBackground",
+                                        "leftButton": "$SettingsSliderLeftButtonFields",
+                                        "rightButton": "$SettingsSliderRightButtonFields",
+                                        "valueText": "$SettingsSliderValueFields",
+                                        "tooltipString": "@SoundOptionsMenuSkillsTooltip",
+                                        "tooltipStyle": {
+                                            "fontStyle": {
+                                                "options": { "newlineHandling": "standard" },
+                                            },
+                                            "showAfterDelay": true,
+                                        }
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row AdvancedAmbient",
+                            "fields": {},
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "AdvancedAmbientText",
+                                    "fields": {
+                                        "text": "        @AdvancedAmbient",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                },
+                                {
+                                    "type": "SettingsSliderWidget", "name": "AdvancedAmbient",
+                                    "fields": {
+                                        "rect": "$OptionsSliderRect",
+                                        "focusIndicatorPadding": "$OptionsSliderFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsSliderFocusIndicatorFilename",
+                                        "isHorizontal": true,
+                                        "onUpdateMessage": "OptionsPanelMessage:AdvancedAmbient",
+                                        "indicatorFilepath": "PauseMenu\\HorizontalIndicator",
+                                        "background": "$SettingsSliderBackground",
+                                        "leftButton": "$SettingsSliderLeftButtonFields",
+                                        "rightButton": "$SettingsSliderRightButtonFields",
+                                        "valueText": "$SettingsSliderValueFields",
+                                        "tooltipString": "@SoundOptionsMenuAmbientTooltip",
+                                        "tooltipStyle": {
+                                            "fontStyle": {
+                                                "options": { "newlineHandling": "standard" },
+                                            },
+                                            "showAfterDelay": true,
+                                        }
+                                    }
+                                },
+                            ]
+                        },   
+                        {
+                            "type": "TableRowWidget", "name": "Row AdvancedCombat",
+                            "fields": {},
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "AdvancedCombatText",
+                                    "fields": {
+                                        "text": "        @AdvancedCombat",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                },
+                                {
+                                    "type": "SettingsSliderWidget", "name": "AdvancedCombat",
+                                    "fields": {
+                                        "rect": "$OptionsSliderRect",
+                                        "focusIndicatorPadding": "$OptionsSliderFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsSliderFocusIndicatorFilename",
+                                        "isHorizontal": true,
+                                        "onUpdateMessage": "OptionsPanelMessage:AdvancedCombat",
+                                        "indicatorFilepath": "PauseMenu\\HorizontalIndicator",
+                                        "background": "$SettingsSliderBackground",
+                                        "leftButton": "$SettingsSliderLeftButtonFields",
+                                        "rightButton": "$SettingsSliderRightButtonFields",
+                                        "valueText": "$SettingsSliderValueFields",
+                                        "tooltipString": "@SoundOptionsMenuCombatTooltip",
+                                        "tooltipStyle": {
+                                            "fontStyle": {
+                                                "options": { "newlineHandling": "standard" },
+                                            },
+                                            "showAfterDelay": true,
+                                        }
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row Spacer",
+                        },
+                    ]
+                },
+            ]
+        },
+    ]
+}

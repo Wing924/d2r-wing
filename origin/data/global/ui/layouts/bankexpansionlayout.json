@@ -1,0 +1,106 @@
+{
+    "basedOn": "BankOriginalLayout.json",
+    "type": "BankPanel", "name": "BankExpansionLayout",
+    "children": [
+        {
+            "type": "ClickCatcherWidget", "name": "click_catcher",
+        },
+        {
+            "type": "GridImageWidget", "name": "background",
+            "fields": {
+                "filename": "PANEL\\expandedstash",
+            },
+        },
+        {
+            "type": "TextBoxWidget", "name": "gold_max",
+            "fields": {
+                "rect": { "x": 78, "y": 35 },
+            },
+        },
+        {
+            "type": "TextBoxWidget", "name": "gold_amount",
+            "fields": {
+                "rect": { "x": 40, "y": 358 },
+            },
+        },
+        {
+            "type": "ButtonWidget", "name": "gold_withdraw",
+            "fields": {
+                "rect": { "x": 15, "y": 357 },
+            },
+        },
+        {
+            "type": "ButtonWidget", "name": "close",
+            "fields": {
+                "rect": { "x": 272, "y": 384 },
+            },
+        },
+        {
+            "type": "InventoryGridWidget", "name": "grid",
+            "fields": {
+                "rect": { "x": 15, "y": 63 },
+                "cellCount": { "x": 10, "y": 10 },
+                "cellSize": "$ItemCellSize",
+            },
+        },
+        {
+            "type": "TabBarWidget", "name": "BankTabs",
+            "fields": {
+                "tabCount": 4,
+                "filename": "PANEL\\buyselltabs",
+                "inactiveFrames": [ 4, 5, 6, 7],
+                "activeFrames": [ 0, 1, 2, 3],
+                "disabledFrames": [-1, 5, ],
+                "textStrings": [ "@personal", "@shared", "@shared", "@shared"],
+                "tabSize": { "x": 79, "y": 24 },
+                "tabPadding": { "x": 1, "y": 0 },
+                "onSwitchTabMessage": "BankPanelMessage:SelectTab",
+            }
+        },
+        {
+            "type": "Widget", "name": "PreviousSeasonToggleDisplay",
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "ShowPreviousLadderText",
+                    "fields": {
+                        "text": "@oldStash",
+                        "rect": { "x": 45, "y": 404 },
+                        "style": {
+                            "fontColor": "$PanelTitleColor",
+                            "pointSize": "$MediumFontSize",
+                            "alignment": { "v": "center", "h": "left" },
+                            "spacing" : "$MinimumSpacing",
+                            "dropShadow": "$DefaultDropShadow"
+                        }
+                    }
+                },
+                {
+                    "type": "ToggleButtonWidget", "name": "ShowPreviousLadderSeasonToggle",
+                    "fields": {
+                        "rect": { "x": 10, "y": 388 },
+                        "filename": "PANEL\\buysellbtn",
+                        "untoggledFrame": 0,
+                        "untoggledPressedFrame": 1,
+                        "toggledFrame": 16,
+                        "toggledPressedFrame": 17,
+                        "onClickMessage": "BankPanelMessage:TogglePreviousSeasonTabs",
+                        "tooltipString": "@SharedStashPreviousSeasonToggleTooltip",
+                    }
+                }
+            ]
+        },
+        {
+            "type": "TabBarWidget", "name": "PreviousLadderSeasonBankTabs",
+            "fields": {
+                "tabCount": 3,
+                "filename": "PANEL\\buyselltabs",
+                "inactiveFrames": [ 12, 13, 14 ],
+                "activeFrames": [ 8, 9, 10 ],
+                "textStrings": [ "@shared", "@shared", "@shared"],
+                "tabSize": { "x": 79, "y": 24 },
+                "tabPadding": { "x": 1, "y": 0 },
+                "onSwitchTabMessage": "BankPanelMessage:SelectTab",
+            }
+        },
+    ]
+}

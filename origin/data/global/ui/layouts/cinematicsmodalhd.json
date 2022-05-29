@@ -1,0 +1,148 @@
+{
+    "type": "CinematicsModal", "name": "CinematicsModal",
+    "fields": {
+        "anchor": { "x": 0.45, "y": 0.1 },
+        "rect": { "x": -384 },
+        "isDismissable": true,
+        "drawTint": true,
+    },
+    "children": [
+        {
+            "type": "GridImageWidget", "name": "Background",
+            "fields": {
+                "filename": "FrontEnd\\HD\\Final\\Cinematics\\CinematicsBG"
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "Title",
+            "fields": {
+                "rect": { "x": 96, "y": 68, "width": 972, "height": 61 },
+                "text": "@strselectcinematics",
+                "style": "$StyleTitleBlock",
+                "style": {
+                    "options": { "newlineHandling": "standard" },
+                }
+            }
+        },
+        {
+            "type": "ButtonWidget", "name": "Close",
+            "fields": {
+                "rect": { "x": 1075, "y": 9 },
+                "filename": "PANEL\\closebtn_4x",
+                "onClickMessage": "Cinematics:Close",
+                "tooltipString": "@strClose",
+                "sound": "cursor_close_window_hd",
+                "hoveredFrame": 3,
+                "acceptsEscKeyEverywhere": true,
+            }
+        },
+        {
+            "type": "ButtonWidget", "name": "Option0",
+            "fields": {
+                "rect": { "x": 160, "y": 170 },
+                "filename": "FrontEnd\\HD\\Final\\Cinematics\\CinematicsBtn",
+                "hoveredFrame": 3,
+                "textString": "@act1X",
+                "onClickMessage": "Cinematics:Play:0",
+                "textColor": "$LightButtonTextColor",
+                "text/style": "$StyleCinematicsButtonText",
+            }
+        },
+        {
+            "type": "ButtonWidget", "name": "Option1",
+            "fields": {
+                "rect": { "x": 160, "y": 320 },
+                "filename": "FrontEnd\\HD\\Final\\Cinematics\\CinematicsBtn",
+                "hoveredFrame": 3,
+                "textString": "@act2X",
+                "onClickMessage": "Cinematics:Play:1",
+                "textColor": "$LightButtonTextColor",
+                "text/style": "$StyleCinematicsButtonText",
+            }
+        },
+        {
+            "type": "ButtonWidget", "name": "Option2",
+            "fields": {
+                "rect": { "x": 160, "y": 470 },
+                "filename": "FrontEnd\\HD\\Final\\Cinematics\\CinematicsBtn",
+                "hoveredFrame": 3,
+                "textString": "@act3X",
+                "onClickMessage": "Cinematics:Play:2",
+                "textColor": "$LightButtonTextColor",
+                "text/style": "$StyleCinematicsButtonText",
+            }
+        },
+        {
+            "type": "ButtonWidget", "name": "Option3",
+            "fields": {
+                "rect": { "x": 160, "y": 620 },
+                "filename": "FrontEnd\\HD\\Final\\Cinematics\\CinematicsBtn",
+                "hoveredFrame": 3,
+                "textString": "@act4X",
+                "onClickMessage": "Cinematics:Play:3",
+                "textColor": "$LightButtonTextColor",
+                "text/style": "$StyleCinematicsButtonText",
+            }
+        },
+        {
+            "type": "ButtonWidget", "name": "Option4",
+            "fields": {
+                "rect": { "x": 160, "y": 770 },
+                "filename": "FrontEnd\\HD\\Final\\Cinematics\\CinematicsBtn",
+                "hoveredFrame": 3,
+                "textString": "@strepilogueX",
+                "onClickMessage": "Cinematics:Play:4",
+                "textColor": "$LightButtonTextColor",
+                "text/style": "$StyleCinematicsButtonText",
+            }
+        },
+        {
+            "type": "ButtonWidget", "name": "Option5",
+            "fields": {
+                "rect": { "x": 160, "y": 920 },
+                "filename": "FrontEnd\\HD\\Final\\Cinematics\\CinematicsBtn",
+                "hoveredFrame": 3,
+                "textString": "@act5X",
+                "onClickMessage": "Cinematics:Play:5",
+                "textColor": "$LightButtonTextColor",
+                "text/style": "$StyleCinematicsButtonText",
+            }
+        },
+        {
+            "type": "ButtonWidget", "name": "Option6",
+            "fields": {
+                "rect": { "x": 160, "y": 1070 },
+                "filename": "FrontEnd\\HD\\Final\\Cinematics\\CinematicsBtn",
+                "hoveredFrame": 3,
+                "textString": "@strlastcinematic",
+                "onClickMessage": "Cinematics:Play:6",
+                "textColor": "$LightButtonTextColor",
+                "text/style": "$StyleCinematicsButtonText",
+            }
+        },
+        {
+            "type": "ToggleButtonWidget", "name": "LegacyCheckbox",
+            "fields": {
+                "rect": { "x": 312, "y": 1292 },
+                "sound": "cursor_menu_select_hd",
+                "filename": "Lobby\\CreateGame\\CreateGame_AdvancedCheckbox",
+                "untoggledFrame": 0,
+                "untoggledPressedFrame": 1,
+                "untoggledHoveredFrame": 3,
+                "untoggledDisabledFrame": 2,
+                "toggledFrame": 4,
+                "toggledPressedFrame": 5,
+                "toggledHoveredFrame": 6,
+                "onClickMessage": "Cinematics:LegacyToggle",
+            },
+        },
+        {
+            "type": "TextBoxWidget", "name": "LegacyCinematicsText",
+            "fields": {
+                "rect": { "x": 422, "y": 1292, "width": 500, "height": 66 },
+                "text": "@ViewLegacyCinematics",
+                "style": "$StyleSettingsText",
+            }
+        },
+    ]
+}

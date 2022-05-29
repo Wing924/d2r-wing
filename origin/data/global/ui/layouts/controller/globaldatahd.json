@@ -1,0 +1,82 @@
+{
+    "basedOn": "GlobalDataHD.json",
+    "type": "GlobalData", "name": "GlobalData",
+    "children": [
+        {
+            "type": "SpriteColoringHelper", "name": "SpriteColoringHelper",
+        },
+        {
+            "type": "LanguageFontRemapper", "name": "LanguageFontRemapper",
+        },
+        {
+            "type": "ShowItemsParameters", "name": "ShowItemsParameters",
+        },
+        {
+            "type": "ControllerCursorParameters", "name": "ControllerCursorParameters",
+            "fields": {
+                // The factor that will be applied to the cursor's current velocity when it's hovering over a focusable widget.
+                "minDragFactor": 0.75,
+                "maxDragFactor": 0.90,
+                "minVariableDragVelocity": 200,
+                // Defines the curve that will be used to calculate cursor velocity from the joystick deflection.
+                // https://www.desmos.com/calculator/d1ofwre0fr can be helpful to visualize the curve.
+                "velocityCurve": {
+                    "anchor1": { "x": 0.0, "y": 0.0 },
+                    "anchor2": { "x": 1.0, "y": 1.0 },
+                    "control1": { "x": 0.5, "y": 0.5 },
+                    "control2": { "x": 1.0, "y": 0.0 },
+                },
+                // When detecting snap cursor movement, this is the max width we check perpendicular, defined in terms of the current
+                // hovered button. If no button is hovered, this is relative to the cursor size
+                "snapPerpendicularMaxWidthMultiplier": 3.0,
+                // When detecting snap cursor movement, if (our max width multiplier * the current hovered button) is smaller than this width,
+                // then we force the max expanded width to be this large, scaled for the UI master scale
+                "snapPerpendicularMinimumExpandedWidth": 256.0,
+                // When detecting snap cursor movement, this is the extra margin amount to add when clipping our test bounds
+                // This ensures that we don't include bad targets that barely get within range
+                "snapBoundaryMargin": 16.0,
+                // When detecting snap cursor movement, this is the minimum required distance along the forward vector to be considered
+                // closer by our test criteria
+                "snapEquivalentDistanceThreshold": 64.0,
+                // Determines how much influence autosteering can have over the cursor's velocity. 0.0 means no influence, and 1.0
+                // means complete influence (when a widget meets the auto-steer threshold).
+                "autoSteerWeight": 0.0,
+                // Specifies how long it should take for the cursor to animate to the next widget in snapping mode.
+                "snappingAnimationSeconds": 0.05,
+                // Defines the factor that will be used to calculate the delay until a cursor snapping movement starts repeating.
+                // This delay will be scaled using the position of joystick (less deflection means a longer longer delay).
+                "snappingRepeatDelayFactor": 0.285,
+                // Defines the longest allowable repeat delay. The delay calculated with the factor above will be clamped to this value.
+                "snappingMaximumRepeatDelaySeconds": 0.5,
+                // Defines the factor that will be used to calculate the delay between each cursor snapping repeat movement.
+                // This delay will be scaled using the position of joystick (less deflection means a longer longer delay).
+                "snappingRepeatRateFactor": 0.071,
+                // Defines the longest allowable repeat rate. The rate calculated with the factor above will be clamped to this value.
+                "snappingMaximumRepeatRateSeconds": 0.25,
+                // Defines how far the cursor can be from the closest focusable item and still focus on it.
+                "cursorSelectionRadius": 48,
+                // The minimum time that the user must be idle before we magnetize their cursor
+                "magnetizeMinIdleTimeSeconds": 0.10,
+                // The duration that magnetization should take to reach the target position
+                "magnetizeDurationSeconds": 0.15,
+                // The minimum distance the cursor must be from an item's edge to trigger magnetization
+                "magnetizeMinDetectionDistance": 0.0,
+                // The distance checked from the cursor's position for target edges for magnetization
+                "magnetizeMaxDetectionDistance": 0.0,
+                // The distance along each dimension into the target rectangle toward which the cursor is magnetized
+                "magnetizePositionEdgePadding": 0.0,
+                // The time it takes for the cursor to accelerate from stop to full speed
+                "cursorAccelerationTimeSeconds": 0.4,
+                // The time stick input has to go from neutral to full and back to be considered a flick
+                "flickMaximumTimeSeconds": 0.225,
+                // The ratio of the stick input from [0, 1] that is considered to be a full enough input for a flick motion
+                "flickFullStickInputThreshold": 0.4,
+                // The time after releasing a held stick input where the user can begin holding again and it won't be counted as flick.
+                "holdInputRecaptureTimeSeconds": 0.175,
+                // The time before we respond to snap cursor input, allowing the user to potentially change it and more easily input
+                // diagonals
+                "cursorSnapInitialInputDelaySeconds": 0.034,
+            },
+        },
+    ]    
+}

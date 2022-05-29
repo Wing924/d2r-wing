@@ -1,0 +1,197 @@
+{
+    "type": "HDRCalibrationPanel", "name": "HDRCalibrationPanel",
+    "fields": {
+        "priority": 9500,
+		"fitToParent": true,
+        "parentOptionsPanelName": "VideoOptionsPanel", 
+        "saveAndClosePosition": { "x": -700, "y": 1750 },
+        "continuePosition": { "x": -329, "y": 1750 },
+    },
+    "children": [
+        {
+            "type": "RectangleWidget", "name": "Background",
+            "fields": {
+                "fitToScreen": true,
+                "color": [ 0.0, 0.0, 0.0, 0.0 ]
+            },
+            "children": [
+                {
+                    "type": "ClickCatcherWidget", "name": "ClickCatcher",
+                    "fields": {
+                        "fitToParent": true
+                    }
+                },  
+            ]
+        },
+        // Image for calibration
+		{
+			"type": "ImageWidget", "name": "CalibrationImage",
+			"fields": { 
+				"anchor": { "x": 0.5, "y": 0 },
+				"rect": { "x": -1920, "y": 0, "scale": 2.0 },
+				"filename": "FrontEnd/HD/HDR_Calibration",
+                "isLinear": true,
+			}
+		},
+		{
+            "type": "TextBoxWidget", "name": "Title",
+            "fields": {
+				"anchor": { "x": 0.5, "y": 0 },
+				"rect": { "x": 0, "y": 200 },
+                "text": "@HDRCalibration",
+                "style": {
+                    "pointSize": "$HugeFontSize",
+                    "alignment": { "v": "center", "h": "center" }
+                }
+            },
+			"children": [
+				{
+					"type": "ImageWidget", "name": "Divider",
+					"fields": {
+						"rect": { "x": -820, "y": 50 },
+						"filename": "PauseMenu\\Divider",
+					}
+				},
+			]
+			
+        },
+        {
+            "type": "TableWidget", "name": "OptionsTable",
+            "fields": {
+                "columns": [ "$CalibrationTableColumn1", "$OptionsTableColumn2" ],
+                "rowHeight": "$OptionsTableRowHeight",
+				"anchor": { "x": 0.5, "y": 0 },
+				"rect": { "x": -700, "y": 1400 },
+            },
+            "children": [
+                {
+                    "type": "TableRowWidget", "name": "Row PaperWhiteNits",
+                    "children": [
+                        {
+                            "type": "TextBoxWidget", "name": "BrightnessText",
+                            "fields": {
+                                "text": "@BrightnessHD",
+                                "style": "$StyleSettingsText"
+                            }
+                        },
+                        {
+                            "type": "SettingsSliderWidget", "name": "PaperWhiteNits",
+                            "fields": {
+                                "rect": "$OptionsSliderRect",
+                                "isHorizontal": true,
+                                "focusIndicatorPadding": "$OptionsSliderFocusIndicatorPadding",
+                                "focusIndicatorFilename": "$OptionsSliderFocusIndicatorFilename",
+                                "indicatorFilepath": "PauseMenu\\HorizontalIndicator",
+                                "background": "$SettingsSliderBackground",
+                                "onUpdateMessage": "OptionsPanelMessage:SetPaperWhiteNits",
+                                "leftButton": "$SettingsSliderLeftButtonFields",
+                                "rightButton": "$SettingsSliderRightButtonFields",
+                                "valueText": "$SettingsSliderValueFields",
+                                "tooltipString": "@HDRBrightnessTooltip",
+                                "tooltipStyle": {
+                                    "fontStyle": {
+                                        "options": { "newlineHandling": "standard" },
+                                    }
+                                },
+                                "increment": 10,
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "TableRowWidget", "name": "Row MaxLuminance",
+                    "children": [
+                        {
+                            "type": "TextBoxWidget", "name": "MaxLuminanceText",
+                            "fields": {
+                                "text": "@MaxLuminance",
+                                "style": "$StyleSettingsText"
+                            }
+                        },
+                        {
+                            "type": "SettingsSliderWidget", "name": "MaxLuminance",
+                            "fields": {
+                                "rect": "$OptionsSliderRect",
+                                "isHorizontal": true,
+                                "focusIndicatorPadding": "$OptionsSliderFocusIndicatorPadding",
+                                "focusIndicatorFilename": "$OptionsSliderFocusIndicatorFilename",
+                                "indicatorFilepath": "PauseMenu\\HorizontalIndicator",
+                                "background": "$SettingsSliderBackground",
+                                "onUpdateMessage": "OptionsPanelMessage:SetMaxLuminance",
+                                "leftButton": "$SettingsSliderLeftButtonFields",
+                                "rightButton": "$SettingsSliderRightButtonFields",
+                                "valueText": "$SettingsSliderValueFields",
+                                "tooltipString": "@MaxLuminanceTooltip",
+                                "tooltipStyle": {
+                                    "fontStyle": {
+                                        "options": { "newlineHandling": "standard" },
+                                    }
+                                },
+                                "increment": 1,
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "TableRowWidget", "name": "Row HDRContrast",
+                    "children": [
+                        {
+                            "type": "TextBoxWidget", "name": "ContrastText",
+                            "fields": {
+                                "text": "@ContrastHD",
+                                "style": "$StyleSettingsText"
+                            }
+                        },
+                        {
+                            "type": "SettingsSliderWidget", "name": "HDRContrast",
+                            "fields": {
+                                "rect": "$OptionsSliderRect",
+                                "isHorizontal": true,
+                                "focusIndicatorPadding": "$OptionsSliderFocusIndicatorPadding",
+                                "focusIndicatorFilename": "$OptionsSliderFocusIndicatorFilename",
+                                "indicatorFilepath": "PauseMenu\\HorizontalIndicator",
+                                "background": "$SettingsSliderBackground",
+                                "onUpdateMessage": "OptionsPanelMessage:SetHDRContrast",
+                                "leftButton": "$SettingsSliderLeftButtonFields",
+                                "rightButton": "$SettingsSliderRightButtonFields",
+                                "valueText": "$SettingsSliderValueFields",
+                                "tooltipString": "@HDRContrastTooltip",
+                                "tooltipStyle": {
+                                    "fontStyle": {
+                                        "options": { "newlineHandling": "standard" },
+                                    }
+                                },
+                                "increment": 10,
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+		{
+            "type": "ButtonWidget", "name": "SaveButton",
+            "fields": {
+				"anchor": { "x": 0.5, "y": 0 },
+				"rect": { "x": -700, "y": 1750 },
+                "filename": "PauseMenu\\PauseButton",
+                "textString": "@SaveAndCloseCalibration",
+                "onClickMessage": "CalibrationPanelMessage:SaveAndClose",
+                "textColor": "$LightButtonTextColor",
+                "text/style": "$StyleFEButtonText",
+            }
+        },
+		{
+            "type": "ButtonWidget", "name": "CloseButton",
+            "fields": {
+				"anchor": { "x": 0.5, "y": 0 },
+				"rect": { "x": 20, "y": 1750 },
+                "filename": "PauseMenu\\PauseButton",
+                "textString": "@close",
+                "onClickMessage": "CalibrationPanelMessage:Close",
+                "textColor": "$LightButtonTextColor",
+                "text/style": "$StyleFEButtonText",
+				"acceptsEscKeyEverywhere": true,
+            }
+        },
+    ]
+}

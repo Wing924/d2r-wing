@@ -1,0 +1,91 @@
+{
+    "basedOn": "Controller/PartyPanelHD.json",
+    "type": "PartyPanel", "name": "PartyPanel",
+    "children": [
+        {
+            "type": "ClickCatcherWidget", "name": "click_catcher",
+        },
+        {
+            "type": "ImageWidget", "name": "PanelBackground",
+        },
+        //player name
+        {
+            "type": "ImageWidget", "name": "GameInformationBackground",
+            "fields": {
+                "rect": {"x": 175, "y": 68, "width": 962, "height": 146},
+                "filename": "Controller/Panel/Party/V2/GameInformationBackground_console",
+            },
+        },
+        {
+            "type": "TextBoxWidget", "name": "PlayerNameHeadingText",
+            "fields": {
+                "rect": {"x": 677, "y": 75, "width": 434, "height": 30},
+                "style": "$StylePartyPanelSmallHeading",
+                "text":"@strPlayerName"
+            },
+        },
+        {
+            "type": "TextBoxWidget", "name": "PlayerName",
+            "fields": {
+                "rect": {"x": 688, "y": 142, "width": 413, "height": 30},
+                "style": "$StylePartyPanelGameInfo",
+            },
+        },
+        {
+            "type": "ListWidget", "name": "ListContainer",
+            "children": [
+                {
+                    "type": "ListItemWidget", "name": "FriendsListTemplate",
+                    "children": [
+                        {
+                            "type": "ImageWidget", "name": "ListBackground",
+                        },
+                        {
+                            "type": "TextBoxWidget", "name": "PlayerName",
+                            "fields": {
+                                "useAltStyleIfDoesntFit": true,
+                                "altStyle": {
+                                    "fontColor": "$FontColorGold",
+                                    "pointSize": "$SmallFontSize",
+                                    "alignment": { "h": "left", "v": "bottom" },
+                                    "options": { "newlineHandling": "standard", "pipeCharacterBehavior": "handle" },
+                                    "spacing": { "leading": 0.8, "kerning": 0.9 },
+                                },
+                            },
+                        },
+                        {
+                            "type": "TextBoxWidget", "name": "PlayerInfo",
+                        },
+                        {
+                            "type": "TextBoxWidget", "name": "PartyInfoText",
+                        },
+                        {
+                            "type": "ToggleButtonWidget", "name": "LootBodyButton",
+                            "fields": {
+                                 "rect": { "x": 1520, "y": 50 },
+                            }
+                        },
+                        {
+                            "type": "ToggleButtonWidget", "name": "HostileButton",
+                        },
+                        {
+                            "type": "ButtonWidget", "name": "InviteButton",
+                        },
+                    ]
+                },
+            ]
+        },
+        {
+            "type": "ButtonWidget", "name": "CloseButton",
+        },
+        {
+            "type": "ImageWidget", "name": "PartyBorder0",
+        },
+        {
+            "type": "ImageWidget", "name": "PartyBorder1",
+        },
+        {
+            "type": "ImageWidget", "name": "PartyBorder2",
+        },
+    ]
+}

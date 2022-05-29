@@ -1,0 +1,96 @@
+{
+    "type": "CreditsModal", "name": "CreditsModal",
+    "fields": {
+        "fitToParent": true,
+    },
+    "children": [
+        {
+            "type": "MoviePlayerWidget", "name": "CreditsBackground",
+            "fields": {
+                "jukeboxManaged": true,
+                "showCursor": true,
+                "ignoreInputMessages": true,
+            }
+        },
+        {
+            "type": "CreditsWidget", "name": "Credits",
+            "fields": {
+                "rect": { "x": 1080, "width": 250 },
+                "anchor": { "x": -0.5, "y": 0.0 },
+                "filename": "CreditsResurrected.txt",
+                "normalScrollPerSecond": 165,
+                "fastScrollPerSecond": 500,
+                "maxScrollPerSecond": 2000,
+                "accelerationPercentPerSecond": 0.3,
+                "onFinishMessage": "CreditsModalMessage:Finish",
+                "titleLineHeight": 144,
+                "normalLineHeight": 72,
+                "endOfnormalLinesHeight": 54,
+                "blankLineHeight": 72,
+            },
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "TitleTemplate",
+                    "fields": {
+                        "rect": { "width": 250, "height": 90 },
+                        "style": {
+                            "fontFace": "BlizzardGlobal",
+                            "pointSize": "$LargeFontSize",
+                            "fontColor": "$FontColorWhite",
+                            "alignment": { "h": "center", "v": "bottom" },
+                        }
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "LeftTemplate",
+                    "fields": {
+                        "rect": { "width": 100, "height": 72 },
+                        "style": {
+                            "fontFace": "BlizzardGlobal",
+                            "pointSize": "$LargeFontSize",
+                            "fontColor": "$FontColorGold",
+                            "alignment": { "h": "right", "v": "bottom" },
+                        }
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "RightTemplate",
+                    "fields": {
+                        "rect": { "x": 150, "width": 100, "height": 72 },
+                        "style": {
+                            "fontFace": "BlizzardGlobal",
+                            "pointSize": "$LargeFontSize",
+                            "fontColor": "$FontColorGold",
+                            "alignment": { "h": "left", "v": "bottom" },
+                        }
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "CenterTemplate",
+                    "fields": {
+                        "rect": { "x": 75, "width": 100, "height": 72 },
+                        "style": {
+                            "fontFace": "BlizzardGlobal",
+                            "pointSize": "$LargeFontSize",
+                            "fontColor": "$FontColorGold",
+                            "alignment": { "h": "center", "v": "bottom" },
+                        }
+                    }
+                },
+            ]
+        },
+        {
+            "type": "ButtonWidget", "name": "ExitButton",
+            "fields": {
+                "rect": { "x": -766, "y": -245 },
+                "anchor": { "x": 1.0, "y": 1.0 },
+                "filename": "FrontEnd\\HD\\Final\\FrontEnd_ButtonMed",
+                "hoveredFrame": 3,
+                "textString": "@strExit",
+                "onClickMessage": "CreditsModalMessage:Finish",
+                "textColor": "$FontColorLightGold",
+                "text/style" : "$StyleFEButtonText"
+            },
+        }
+    ]
+}

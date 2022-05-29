@@ -1,0 +1,49 @@
+{
+    "type": "YouDiedModal", "name": "YouDiedModal",
+    "fields": {
+        "anchor": { "x": 0.5, "y": 0 },
+        "drawTint": true,
+        "isDismissable": false,
+    },
+    "children": [
+        // You have died
+        {
+            "type": "TextBoxWidget", "name": "MainText",
+            "fields": {
+                "rect": { "x": 0, "y": 700, "width": 0, "height": 0},
+                "style": {
+                    "fontColor": { "r": 200, "g": 20, "b": 0, "a": 255 },
+                    "pointSize": "$HugeFontSize",
+                    "alignment": { "h": "center", "v": "center" },
+                    "options": { "newlineHandling": "standard" },
+                    "dropShadow": {"offset": {"x": 5, "y": 5}}
+                }
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "SubText",
+            "fields": {
+                "rect": { "x": 0, "y": 900, "width": 0, "height": 0 },
+                "style": {
+                    "fontColor": { "r": 200, "g": 20, "b": 0, "a": 255 },
+                    "pointSize": "$ExtraLargeFontSize",
+                    "alignment": { "h": "center", "v": "center" },
+                    "options": { "newlineHandling": "standard" },
+                    "dropShadow": "$DefaultDropShadow",
+                }
+            }
+        },
+        {
+            "type": "ButtonWidget", "name": "ContinueButton",
+            "fields": {
+                "rect": { "x": -330, "y": 1100 },
+                "filename": "PauseMenu\\PauseButton",
+                "textString": "@Continue",
+                "onClickMessage": "YouDiedModalMessage:Continue",
+                "textColor": "$LightButtonTextColor",
+                "text/style": "$StyleFEButtonText",
+                "hoveredFrame": 3
+            }
+        },
+    ]
+}

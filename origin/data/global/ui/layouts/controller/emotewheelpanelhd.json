@@ -1,0 +1,230 @@
+{
+    "type": "EmoteWheelPanel", "name": "EmoteWheelPanel",
+    "fields": {
+        "rect": { "x": 0, "y": 0 },
+        "anchor": {"x": 0.5, "y": 0.5},
+        "defaultWidget": "SkillToRebind",
+        "arrowPositions": [
+            { "x": 10, "y": -432 },
+            { "x": 85, "y": -348 },
+            { "x": 118, "y": -275 },
+            { "x": 78, "y": -215 },
+            { "x": -2, "y": -144 },
+            { "x": -64, "y": -104 },
+            { "x": -128, "y": -136 },
+            { "x": -208, "y": -210 },
+            { "x": -252, "y": -274 },
+            { "x": -210, "y": -350 },
+            { "x": -140, "y": -432 },
+            { "x": -72, "y": -472 },
+        ],
+    },
+    "children": [
+        {
+            "type": "Widget", "name": "Container",
+            "children": [
+                {
+                    "type": "DamageIndicatorWidget", "name": "TransparentBG",
+                    "fields": {
+                        "fitToScreen": true,
+                        "baseColor": [ 0.0, 0.0, 0.0, 0.7 ],
+                        "damageColor": [ 0.3, 0.0, 0.0, 0.7 ],
+                        "animationLengthSeconds": 0.75,
+                    },
+                    "children": [
+                        {
+                            "type": "ClickCatcherWidget", "name": "BGClickCatcher",
+                            "fields": {
+                                "fitToParent": true
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "ImageWidget", "name": "Radial",
+                    "fields": {
+                        "rect": { "x": -540, "y": -744 },
+                        "filename": "Controller/Panel/EmoteWheel/Emote_Radial"
+                    }
+                },
+                {
+                    "type": "ButtonWidget", "name": "Emote1",
+                    "fields": {
+                        "rect": { "x": 265, "y": -654 },
+                        "filename": "Controller/Panel/EmoteWheel/Emote_Button",
+                        "focusIndicatorFilename": "Controller/HoverImages/EmoteWheel_Hover",
+                        "textString": "@EmoteHelp",
+                        "fontType": "8ptE",
+                        "pointSize": "$LargeFontSize",
+                        "textColor": "$FontColorGoldYellow",
+                    }
+                },
+                {
+                    "type": "ButtonWidget", "name": "Emote2",
+                    "fields": {
+                        "rect": { "x": 412, "y": -470 },
+                        "filename": "Controller/Panel/EmoteWheel/Emote_Button",
+                        "focusIndicatorFilename": "Controller/HoverImages/EmoteWheel_Hover",
+                        "textString": "@EmoteFollowMe",
+                        "fontType": "8ptE",
+                        "pointSize": "$LargeFontSize",
+                        "textColor": "$FontColorGoldYellow",
+                    }
+                },
+                {
+                    "type": "ButtonWidget", "name": "Emote3",
+                    "fields": {
+                        "rect": { "x": 474, "y": -279 },
+                        "filename": "Controller/Panel/EmoteWheel/Emote_Button",
+                        "focusIndicatorFilename": "Controller/HoverImages/EmoteWheel_Hover",
+                        "textString": "@EmoteNotEnough",
+                        "fontType": "8ptE",
+                        "pointSize": "$LargeFontSize",
+                        "textColor": "$FontColorGoldYellow",
+                    }
+                },
+                {
+                    "type": "ButtonWidget", "name": "Emote4",
+                    "fields": {
+                        "rect": { "x": 412, "y": -87 },
+                        "filename": "Controller/Panel/EmoteWheel/Emote_Button",
+                        "focusIndicatorFilename": "Controller/HoverImages/EmoteWheel_Hover",
+                        "textString": "@EmoteThanks",
+                        "fontType": "8ptE",
+                        "pointSize": "$LargeFontSize",
+                        "textColor": "$FontColorGoldYellow",
+                    }
+                },
+                {
+                    "type": "ButtonWidget", "name": "Emote5",
+                    "fields": {
+                        "rect": { "x": 265, "y": 106 },
+                        "filename": "Controller/Panel/EmoteWheel/Emote_Button",
+                        "focusIndicatorFilename": "Controller/HoverImages/EmoteWheel_Hover",
+                        "textString": "@EmoteSelling",
+                        "fontType": "8ptE",
+                        "pointSize": "$LargeFontSize",
+                        "textColor": "$FontColorGoldYellow",
+                    }
+                },
+                {
+                    "type": "ButtonWidget", "name": "Emote6",
+                    "fields": {
+                        "rect": { "x": -298, "y": 293 },
+                        "filename": "Controller/Panel/EmoteWheel/Emote_Button",
+                        "focusIndicatorFilename": "Controller/HoverImages/EmoteWheel_Hover",
+                        "textString": "@EmoteBye",
+                        "fontType": "8ptE",
+                        "pointSize": "$LargeFontSize",
+                        "textColor": "$FontColorGoldYellow",
+                    }
+                },
+                {
+                    "type": "ButtonWidget", "name": "Emote7",
+                    "fields": {
+                        "rect": { "x": -855, "y": 106 },
+                        "filename": "Controller/Panel/EmoteWheel/Emote_Button",
+                        "focusIndicatorFilename": "Controller/HoverImages/EmoteWheel_Hover",
+                        "textString": "@EmoteDie",
+                        "fontType": "8ptE",
+                        "pointSize": "$LargeFontSize",
+                        "textColor": "$FontColorGoldYellow",
+                    }
+                },
+                {
+                    "type": "ButtonWidget", "name": "Emote8",
+                    "fields": {
+                        "rect": { "x": -1014, "y": -87 },
+                        "filename": "Controller/Panel/EmoteWheel/Emote_Button",
+                        "focusIndicatorFilename": "Controller/HoverImages/EmoteWheel_Hover",
+                        "textString": "@EmoteRun",
+                        "fontType": "8ptE",
+                        "pointSize": "$LargeFontSize",
+                        "textColor": "$FontColorGoldYellow",
+                    }
+                },
+                {
+                    "type": "ButtonWidget", "name": "Emote9",
+                    "fields": {
+                        "rect": { "x": -1047, "y": -279 },
+                        "filename": "Controller/Panel/EmoteWheel/Emote_Button",
+                        "focusIndicatorFilename": "Controller/HoverImages/EmoteWheel_Hover",
+                        "textString": "@EmoteGG",
+                        "fontType": "8ptE",
+                        "pointSize": "$LargeFontSize",
+                        "textColor": "$FontColorGoldYellow",
+                    }
+                },
+                {
+                    "type": "ButtonWidget", "name": "Emote10",
+                    "fields": {
+                        "rect": { "x": -1014, "y": -470 },
+                        "filename": "Controller/Panel/EmoteWheel/Emote_Button",
+                        "focusIndicatorFilename": "Controller/HoverImages/EmoteWheel_Hover",
+                        "textString": "@EmoteNeedToTP",
+                        "fontType": "8ptE",
+                        "pointSize": "$LargeFontSize",
+                        "textColor": "$FontColorGoldYellow",
+
+                    }
+                },
+                {
+                    "type": "ButtonWidget", "name": "Emote11",
+                    "fields": {
+                        "rect": { "x": -855, "y": -654 },
+                        "filename": "Controller/Panel/EmoteWheel/Emote_Button",
+                        "focusIndicatorFilename": "Controller/HoverImages/EmoteWheel_Hover",
+                        "textString": "@EmoteBagFull",
+                        "fontType": "8ptE",
+                        "pointSize": "$LargeFontSize",
+                        "textColor": "$FontColorGoldYellow",
+                    }
+                },
+                {
+                    "type": "ButtonWidget", "name": "Emote12",
+                    "fields": {
+                        "rect": { "x": -298, "y": -826 },
+                        "filename": "Controller/Panel/EmoteWheel/Emote_Button",
+                        "focusIndicatorFilename": "Controller/HoverImages/EmoteWheel_Hover",
+                        "textString": "@EmoteNeedThat",
+                        "fontType": "8ptE",
+                        "pointSize": "$LargeFontSize",
+                        "textColor": "$FontColorGoldYellow",
+                    }
+                },
+                {
+                    "type": "ImageWidget", "name": "Circle",
+                    "fields": {
+                        "rect": { "x": -155, "y": -375 },
+                        "filename": "Controller/Panel/EmoteWheel/Emote_Circle"
+                    }
+                },
+                {
+                    "type": "ImageWidget", "name": "Arrow",
+                    "fields": {
+                        "rect": { "x": -72, "y": -472 },
+                        "filename": "Controller/Panel/EmoteWheel/Emote_Arrow",
+                        "frame": 11,
+                    }
+                },
+                {
+                    "type": "ButtonLegendWidget", "name": "DismissLegend",
+                        "fields": {
+                            "rect": { "x": -1000, "y": 550, "width": 2000, "height": 100 },
+                            "text": { "style": "$StyleButtonLegend" },
+                            "presets": [
+                                {
+                                  "action": "select",
+                                  "description": "@EmoteWheelAcceptButton",
+                                },
+                                {
+                                  "action": "back",
+                                  "description": "@UIBack",
+                                },
+                            ],
+                        }
+                },
+            ]
+        },
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "type": "Panel", "name": "PaladinAuraPanel",
+    "fields": {
+        "priority": -5,
+        "anchor": { "x": 0.5, "y": 1.0 },
+    },
+    "children": [
+        {
+            "type": "PaladinAuraWidget", "name": "PaladinAura",
+            "fields": {
+                "rect": { "x": -616, "y": -350, "scale": 0.6 },
+                "skillIconFilenames": "$SkillIconFilenames",
+            },
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "QuantityText",
+                    "fields": {
+                        "rect": "$SkillQuantityTextRectController",
+                        "style": "$SkillQuantityTextStyle",
+                    }
+                }
+            ]
+        }
+    ]
+}

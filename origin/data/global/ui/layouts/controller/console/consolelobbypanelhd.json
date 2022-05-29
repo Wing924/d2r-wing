@@ -1,0 +1,63 @@
+{
+    "type": "ConsoleLobbyPanel", "name": "ConsoleLobbyPanel",
+    "fields": {
+        // In the front end the controller overlay needs higher priority than the button ribbon
+        "priority": 1,
+        "fitToParent": true,
+        "lobbyTabs" :  ["PlayPanel", "FriendsListPanel", "LadderPanel"],
+        "defaultTab": 0,
+    },
+    "children": [
+        {
+            "type": "RectangleWidget", "name": "TransparentBG",
+            "fields": {
+                "fitToParent": true,
+                "color": [ 0.0, 0.0, 0.0, 0.7 ],
+            },
+            "children": [
+                {
+                    "type": "ClickCatcherWidget", "name": "BGClickCatcher",
+                    "fields": {
+                        "fitToParent": true
+                    }
+                }
+            ]
+        },
+        {
+            "type": "Widget", "name": "Anchor",
+            "fields": {
+                "anchor": { "x": 0.5, "y": 0.5 },
+                "rect": { "x": -1670, "y": -1023, "width": 2880, "height": 1763, "scale": "$ConsoleUIScale" },
+            },
+            "children": [
+                {
+                    "type": "ImageWidget", "name": "Background",
+                    "fields": {
+                        "rect": { "x": 0, "y": 0 },
+                        "filename": "Controller/Panel/MainPanelBG",
+                    },
+                },
+                {
+                    "type": "TabBarWidget", "name": "LobbyTabs",
+                    "fields": {
+                        "rect": { "x": 58, "y": 17 },
+                        "tabCount": 3,
+                        "filename": "Controller\\Panel\\Controller_Top_Tab_3Tabs",
+                        "inactiveFrames": [ 0, 0, 0 ],
+                        "activeFrames": [ 1, 1, 1 ],
+                        "disabledFrames": [0, 0, 0],
+                        "textStrings": [ "@PlayButton", "@FriendsList", "@CharacterSelectPanelLadderCharacter" ],
+                        "disabledTooltipStrings":  [ "@UnavailableFeature", "@UnavailableFeature", "@UnavailableFeature"],
+                        "textStyle": { "pointSize": "$MediumFontSize" },
+                        "activeTextColor": "$TabsActiveTextColor",
+                        "inactiveTextColor": "$TabsInactiveTextColor",
+                        "tabSize": { "x": 913, "y": 71 },
+                        "tabPadding": { "x": 1, "y": 0 },
+                        "onSwitchTabMessage": "ConsoleLobby:SelectTab",
+                        "automaticallyPositionIndicators": true,
+                    }
+                },
+            ]
+        },
+    ]
+}

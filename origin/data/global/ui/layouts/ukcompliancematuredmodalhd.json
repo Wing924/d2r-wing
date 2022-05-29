@@ -1,0 +1,63 @@
+{
+    "type": "UKComplianceModal", "name": "UKComplianceMaturedModal",
+    "fields": { 
+        "anchor": { "x": 0.5, "y": 0.5 },
+        "isDismissable": false,
+    },
+    "children": [
+        {
+            "type": "NineTileImageWidget", "name": "TooltipTile",
+            "fields": {
+                "rect": { "x": -775, "y": -262, "width": 1550, "height": 525 },
+                "filename": "PANEL/TooltipBorder/TooltipBorder",
+                "backgroundColor": [ 0.0, 0.0, 0.0, 0.80 ],
+                "tileScale": 1.0,
+            },
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "Title",
+                    "fields": {
+                        "rect": { "x": 0, "y": 0, "width": 1550, "height": 140 },
+                        "style": { //"$StyleModalDialogTitle" with vertical alignment
+                            "fontColor": "$FontColorWhite",
+                            "alignment": { "h": "center", "v": "center" },
+                            "options": { "lineWrap": true, "newlineHandling": "standard" },
+                            "pointSize": "$MediumLargeFontSize",
+                            "spacing": "$ReducedSpacing",
+                        },
+                        "text": "Region Settings", // English only due to compliance
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "PromptParagraph1",
+                    "fields": {
+                        "rect": { "x": 50, "y": 130, "width": 1450, "height": 100 },
+                        "style": "$StyleModalDialogDescription",
+                        "text": "Certain regulations no longer apply to this account.", // English only due to compliance
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "PromptParagraph2",
+                    "fields": {
+                        "rect": { "x": 50, "y": 220, "width": 1450, "height": 120 },
+                        "style": "$StyleModalDialogDescription",
+                        "text": "If you would like to re-enable affected settings, please go into the settings menu to change them.", // English only due to compliance
+                    }
+                },
+                {
+                    "type": "ButtonWidget", "name": "Close",
+                    "fields": {
+                        "rect": { "x": 510, "y": 390 },
+                        "filename": "Panel\\Modals\\ModalButton",
+                        "focusIndicatorFilename": "Controller/HoverImages/ModalButton_NoGap_Hover",
+                        "hoveredFrame": 3,
+                        "onClickMessage": "PanelManager:ClosePanel:UKComplianceMaturedModal",
+                        "textColor": "$LightButtonTextColor",
+                        "text/style" : "$StyleFEMultiLineButtonText",
+                        "textString": "Close", // English only due to compliance
+                    }
+                },
+            ]
+        },
+    ]
+}

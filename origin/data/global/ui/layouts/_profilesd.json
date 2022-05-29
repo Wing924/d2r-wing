@@ -1,0 +1,181 @@
+{
+    // Named globals.
+    "INT_MAX": 2147483647,
+
+    // Anchor points.
+    "LeftPanelAnchor": { "x": 0.5, "y": 0.5 },
+    "RightPanelAnchor": { "x": 0.5, "y": 0.5 },
+
+    // Colors.
+    "FontColorWhite": { "r": 255, "g": 255, "b": 255, "a": 255 },
+    "FontColorRed": { "r": 252, "g": 70, "b": 70, "a": 255 },
+    "FontColorGreen": { "r": 0, "g": 252, "b": 0, "a": 255 },
+    "FontColorBlue": { "r": 99, "g": 99, "b": 252, "a": 255 },
+    "FontColorGold": { "r": 195, "g": 175, "b": 113, "a": 255 },
+    "FontColorGray": { "r": 99, "g": 99, "b": 99, "a": 255 },
+    "FontColorGrey": "$FontColorGray",
+    "FontColorTransparent": { "r": 0, "g": 0, "b": 0, "a": 0 },
+
+    // Font sizes.
+
+    // Other.
+    "NineTileBoxPiecesFrames": {
+        "topLeft": 0,
+        "topRight": 1,
+        "top": [ 2, 3, 4, 5, 6, 7 ],
+        "bottomLeft": 8,
+        "bottomRight": 9,
+        "left": [ 10, 11, 12 ],
+        "right": [ 13, 14, 15 ],
+        "bottom": [ 16, 17, 18, 19, 20, 21 ],
+        "center": []
+    },
+    "NineTileNoFrames": {
+        "topLeft": [],
+        "top": [],
+        "topRight": [],
+        "left": [],
+        "center": [],
+        "right": [],
+        "bottomLeft": [],
+        "bottom": [],
+        "bottomRight": [],
+    },
+    "TooltipStyle": {
+        "fontStyle": {
+            "fontColor": "$FontColorWhite",
+            "pointSize": 24,
+            "alignment": { "h": "center", "v": "center" },
+            "options": { "pipeCharacterBehavior" : "handle", "newlineHandling": "reversed" }
+        },
+        "padding": [0, 0, 0, 0],
+        "inGameTargetPadding": [0, 0, 0, 0],
+        "drawBorder": false,
+        "centeredOnAnchor": true,
+        "hp": 0,
+        "backgroundColor": [ 0, 0, 0, 0.5 ],
+        // This color is used for in-game tooltip label backgrounds
+        "inGameBackgroundColor": [ 0, 0, 0, 0.5 ],
+        // This color is used for the show items selected label background
+        "inGameShowItemsSelectedBackgroundColor": [ 0, 0.25, 0.5, 1.0 ],
+        "substringColor": [ 150, 128, 77, 255 ],
+        "healthColor": [0.31, 0, 0, 1.0],
+        "borderColor": [0.59, 0.50, 0.30, 1.0]
+    },
+
+    // Settings/Options
+    "OptionsTableColumn1": { "width": 800, "alignment": { "h": "left", "v": "fit" } },
+    "OptionsTableColumn2": { "width": 0, "alignment": { "h": "right", "v": "center" } },
+    "OptionsTableRowHeight": 44,
+    "OptionsTableCellPadding": { "left": 170, "right": 170, "top": 2, "bottom": 2 },
+
+    "OptionsButtonRect": { "width": 460, "height": 40 },
+    "OptionsButtonHitMargin": { "left": 170, "right": 170 },
+    "OptionsCarouselRect": { "width": 460, "height": 40 },
+    "OptionsCarouselHitMargin": { "left": 170, "right": 170 },
+    "OptionsSliderRect": { "width": 290, "height": 35 },
+    "OptionsSliderHitMargin": { "left": 340, "right": 170 },
+
+    "OptionsNumericContainerRect": { "x": 0, "y": 0, "width": 169, "height": 26 },
+    "OptionsNumericRect": { "x": 6, "y": 0, "width": 157, "height": 26 },
+    "OptionsNumericHitMargin": { "left": 467, "right": 176 },
+    "OptionsNumericBackgroundImage": "FrontEnd/textbox2",
+
+    "StyleSettingsTitle": {
+        "alignment": { "h": "center", "v": "center" },
+    },
+    "StyleSettingsCarousel": {
+        "alignment": { "h": "right", "v": "center" },
+    },
+    "StyleSettingsNumeric": {
+        "alignment": { "h": "right", "v": "center" },
+    },
+    "StyleSettingsText": {
+        "alignment": { "h": "left", "v": "center" },
+    },
+
+    "SkillIconFilenames": [
+        "SPELLS/AmSkillicon",
+        "SPELLS/SoSkillicon",
+        "SPELLS/NeSkillicon",
+        "SPELLS/PaSkillicon",
+        "SPELLS/BaSkillicon",
+        "SPELLS/DrSkillicon",
+        "SPELLS/AsSkillicon",
+        "SPELLS/Skillicon"
+    ],
+
+    // Inventory
+    "ItemCellSize": { "x": 29, "y": 29 },
+
+    // Skills
+    "SkillHotkeyTextStyle": {
+        "alignment": { "h": "right" },
+        "fontColor": { "r": 199, "g": 179, "b": 119 },
+        "options": { "hideOverflow": true },
+    },
+    "SkillHotkeyTextRect": { "x": 0, "y": -3, "width": 48, "height": 50 },
+    "SkillQuantityTextStyle": {
+        "alignment": { "v": "bottom" },
+        "fontColor": { "r": 99, "g": 99, "b": 252 },
+        "options": { "hideOverflow": true },
+    },
+    "SkillQuantityTextRect": { "x": 4, "y": -4, "width": 43, "height": 50 },
+    
+    // Cutscenes
+    "SubtitleConfiguration": {
+        "anchor": { "x": 0.5, "y": 0.9 },
+        "style": {
+            "pointSize": 24,
+            "options": { "newlineHandling": "standard" },
+            "alignment": { "h": "center", "v": "center" },
+        },
+    },
+    "HoldToSkipTextConfiguration": {
+        "anchor": { "x": 0.9, "y": 0.1 },
+        "style": {
+            "pointSize": 20,
+            "alignment": { "h": "right", "v": "bottom" },
+        },
+        "text": "@MoviePlaybackHoldToSkip",
+    },
+    "HoldToSkipDurationMilliseconds": 500,
+    "HoldToSkipTextTimeoutMilliseconds": 5000,
+
+    "CharacterStatsBackground": "PANEL\\invchar6",
+    "CharacterStatsStatTopY": 0,
+    "CharacterStatsStatTopAltY": -2,
+    "CharacterStatsStatHeight": 17,
+
+    "HelpGoldPointY1_640": 825,
+    "HelpGoldPointY2_640": 845,
+    "HelpGoldPointY3_640": 865,
+    "HelpGoldPointY4_640": 885,
+    "HelpGoldPointY5_640": 905,
+    "HelpGoldPointY6_640": 925,
+    "HelpGoldPointY7_640": 945,
+    "HelpGoldPointY8_640": 965,
+    "HelpGoldPointY9_640": 985,
+    "HelpGoldPointY10_640": 1005,
+    "HelpGoldPointY1": 765,
+    "HelpGoldPointY2": 785,
+    "HelpGoldPointY3": 805,
+    "HelpGoldPointY4": 825,
+    "HelpGoldPointY5": 845,
+    "HelpGoldPointY6": 865,
+    "HelpGoldPointY7": 885,
+    "HelpGoldPointY8": 905,
+    "HelpGoldPointY9": 925,
+    "HelpGoldPointY10": 945,
+    "HelpAligned12ptf": "12ptF",
+
+    "CharacterCreateNameInputY": 496,
+
+    "HirelingInventory6pt": "6pt",
+    "HirelingInventoryYHP": 193,
+    "HirelingInventoryY0": 230,
+    "HirelingInventoryY1": 260,
+    "HirelingInventoryY2": 284,
+    "HirelingInventoryY3": 308,
+    "HirelingInventoryY4": 333,
+}

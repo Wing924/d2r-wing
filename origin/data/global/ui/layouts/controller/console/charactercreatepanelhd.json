@@ -1,0 +1,117 @@
+{
+    "basedOn": "Controller/CharacterCreatePanelHD.json",
+    "type": "CharacterCreatePanel", "name": "CharacterCreatePanel",
+    "children": [
+        {
+            "type": "Camera3DWidget", "name": "Camera",
+        },
+        {
+            "type": "HDCharacterSelectorWidget", "name": "Amazon",
+            "fields": {
+                "rect": { "x": -1316, "y": 616, "width": 375, "height": 1050 },
+            }
+        },
+        {
+            "type": "HDCharacterSelectorWidget", "name": "Assassin",
+            "fields": {
+                "rect": { "x": -930, "y": 600, "width": 330, "height": 980 },
+            }
+        },
+        {
+            "type": "HDCharacterSelectorWidget", "name": "Necromancer",
+            "fields": {
+                "rect": { "x": -595, "y": 600, "width": 360, "height": 900 },
+            }
+        },
+        {
+            "type": "HDCharacterSelectorWidget", "name": "Barbarian",
+            "fields": {
+                "rect": { "x": -195, "y": 600, "width": 430, "height": 900 },
+            },
+        },
+        {
+            "type": "HDCharacterSelectorWidget", "name": "Paladin",
+            "fields": {
+                "rect": { "x": 200, "y": 600, "width": 420, "height": 900 },
+            }
+        },
+        {
+            "type": "HDCharacterSelectorWidget", "name": "Sorceress",
+            "fields": {
+                "rect": { "x": 590, "y": 600, "width": 380, "height": 960 },
+            }
+        },
+        {
+            "type": "HDCharacterSelectorWidget", "name": "Druid",
+            "fields": {
+                "rect": { "x": 980, "y": 600, "width": 465, "height": 975 },
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "Title",
+        },
+        {
+            "type" : "ImageWidget", "name": "GameTypeBackground",
+            "fields": {
+                "rect": { "x": -148, "y": 215, "width": 841 },
+                "filename": "Controller/FrontEnd/MainMenu/Console_GameType_Background"
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "GameType",
+            "fields": {
+                "rect": { "x": -420, "y": 240, "width": 841 }, 
+                "fontType": "16pt", 
+                "style": { 
+                    "pointSize": "$MediumFontSize",
+                    "alignment": { "h": "center", "v": "center" },
+                    "dropShadow": "$DefaultDropShadow",
+                    "spacing": "$ReducedSpacing",
+                    "fontColor" : "$FontColorDarkGrayBlue"
+                },
+            }
+        },
+        {
+            "type": "Widget", "name": "InfoContainer",
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "ClassTitle",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "ClassDescription",
+                },
+            ]
+        },
+        {
+            "type": "ButtonLegendWidget", "name": "CharacterCreateLegend",
+            "fields": {
+                "rect": { "x": -600, "y": 1800, "width": 1200, "height": 186 },
+            }
+        },
+        {
+            "type": "RectangleWidget", "name": "LoadingScreen",
+            "children": [
+                {
+                    "type": "ClickCatcherWidget", "name": "catcher",
+                },
+                {
+                    "type": "AnimatedImageWidget", "name": "FullGlow",
+                },
+                {
+                    "type": "AnimatedImageWidget", "name": "Logo",
+                },
+                {
+                    "type": "ImageWidget", "name": "ResurrectedText",
+                },
+                {
+                    "type": "AnimatedImageWidget", "name": "BottomFlames",
+                },
+            ]
+        },
+        {
+            // Empty widget for focusing to SD legacy toggle 
+            "type": "ButtonWidget", "name": "ToggleLegacyConsole",
+            "fields": { "focusIndicatorVisible": false }
+        },
+    ]
+}

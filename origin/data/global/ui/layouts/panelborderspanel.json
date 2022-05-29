@@ -1,0 +1,72 @@
+{
+    "type": "BordersPanel", "name": "PanelBordersPanel",
+    "fields": {
+        "priority": 15,
+        "filename": "PANEL/800BorderFrame",
+        "leftStartFrame": 0,
+        "leftPositions": [
+            { "x": 0, "y": -3 },
+            { "x": 256, "y": -193 },
+            { "x": 0, "y": 228 },
+            { "x": 0, "y": 297 },
+            { "x": 256, "y": 297 },
+        ],
+        "rightStartFrame": 5,
+        "rightPositions": [
+            { "x": 400, "y": -193 },
+            { "x": 544, "y": -3 },
+            { "x": 713, "y": 228 },
+            { "x": 544, "y": 297 },
+            { "x": 400, "y": 297 },
+        ],
+    },
+    "children": [
+        {
+            "type": "Widget", "name": "LeftClickCatcher",
+            "children": [
+                {
+                    "type": "ClickCatcherWidget", "name": "Top",
+                    "fields": {
+                        "rect": { "x": 0, "y": 0, "width": 400, "height": 60 }
+                    }
+                },
+                {
+                    "type": "ClickCatcherWidget", "name": "Left",
+                    "fields": {
+                        "rect": { "x": 0, "y": 0, "width": 80, "height": 600 }
+                    }
+                },
+                {
+                    "type": "ClickCatcherWidget", "name": "Bottom",
+                    "fields": {
+                        "rect": { "x": 0, "y": 490, "width": 400, "height": 60 }
+                    }
+                },
+            ]
+            
+        },
+        {
+            "type": "Widget", "name": "RightClickCatcher",
+            "children": [
+                {
+                    "type": "ClickCatcherWidget", "name": "Top",
+                    "fields": {
+                        "rect": { "x": 400, "y": 0, "width": 400, "height": 60 }
+                    }
+                },
+                {
+                    "type": "ClickCatcherWidget", "name": "Right",
+                    "fields": {
+                        "rect": { "x": 720, "y": 0, "width": 80, "height": 600 }
+                    }
+                },
+                {
+                    "type": "ClickCatcherWidget", "name": "Bottom",
+                    "fields": {
+                        "rect": { "x": 400, "y": 490, "width": 400, "height": 60 }
+                    }
+                },
+            ]
+        }
+    ]
+}

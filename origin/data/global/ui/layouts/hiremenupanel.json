@@ -1,0 +1,146 @@
+{
+    "type": "HireMenuPanel", "name": "HireMenuPanel",
+    "fields": {
+        "rect": { "x": -245, "y": -175, "width": 490, "height": 350 },
+        "anchor": "$LeftPanelAnchor"
+    },
+    "children": [
+        {
+            "type": "ClickCatcherWidget", "name": "ClickCatcher",
+            "fields": {
+                "rect": { "x": 0, "y": 0, "width": 490, "height": 350 },
+            }
+        },
+        {
+            "type": "NineTileImageWidget", "name": "BackgroundImage",
+            "fields": {
+                "rect": { "width": 490, "height": 350 },
+                "filename": "MENU/boxpieces",
+                "tileFrames": "$NineTileBoxPiecesFrames",
+                "backgroundColor": [0.0, 0.0, 0.0, 0.5]
+            }
+        },
+        {
+            "type": "NineTileImageWidget", "name": "GoldBackgroundImage",
+            "fields": {
+                "rect": { "width": 490, "height": 35 },
+                "filename": "MENU/boxpieces",
+                "tileFrames": "$NineTileNoFrames",
+                "tileFrames": {
+                    "bottomLeft": 8,
+                    "bottomRight": 9,
+                    "bottom": [16, 17, 18, 19, 20, 21],
+                },
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "GoldText",
+            "fields": {
+                "rect": { "x": 0, "y": 0, "width": 490, "height": 35 },
+                "text": "Template",
+                "style": {
+                    "fontColor": { "r": 199, "g": 179, "b": 119, "a": 255 },
+                    "pointSize": 24,
+                    "alignment": { "h": "center", "v": "center" },
+                }
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "NoHiresAlert",
+            "fields": {
+                "rect": { "x": 0, "y": 150, "width": 1100, "height": 50 },
+                "style": {
+                    "fontColor": { "r": 255, "g": 0, "b": 0, "a": 255 },
+                    "pointSize": 24,
+                    "alignment": { "h": "center", "v": "center" },
+                }
+            }
+        },
+        {
+            "type": "ListWidget", "name": "ListContainer",
+            "fields": {
+                "rect": { "x": 0, "y": 45, "width": 490, "height": 245},
+                "isHoverList": true,
+                "direction": "vertical",
+                "itemSelectionMessage": "DialogMessage:HireMenuSelection",
+                "selectorName": "Selector",
+                "selectionChangedSound": "cursor_pass",
+            },
+            "children": [
+                {
+                    "type": "HoverListItemWidget", "name": "OptionTemplate",
+                    "fields": {
+                        "rect": { "x": 0, "y": 10, "width": 490, "height": 40 },
+                        "focusOnMouseOver": true,
+                        "baseColor": "$FontColorWhite",
+                        "hoveredColor": "$FontColorBlue"
+                    },
+                    "children": [
+                        {
+                            "type": "TextBoxWidget", "name": "TextBox",
+                            "fields": {
+                                "rect": { "x": 30, "width": 480, "height": 33 },
+                                "style": {
+                                    "pointSize": 24,
+                                    "alignment": { "h": "left" },
+                                    "options": { "newlineHandling": "standard" },
+                                },
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "Widget", "name": "Selector",
+                    "fields": {
+                        "rect": { "width": 490, "height": 33 },
+                    },
+                },
+            ]
+        },
+        {
+            "type": "NineTileImageWidget", "name": "CancelContainer",
+            "fields": {
+                "rect": { "x": 0, "y": 315, "width": 490, "height": 35 },
+                "filename": "MENU/boxpieces",
+                "tileFrames": "$NineTileNoFrames",
+                "tileFrames": {
+                    "topLeft": 0,
+                    "topRight": 1,
+                    "top": [2, 3, 4, 5, 6, 7],
+                }
+            },
+            "children": [
+                {
+                    "type": "FocusableWidget", "name": "CancelButton",
+                    "fields": {
+                        "rect": { "x": 145, "y": 5, "width": 200, "height": 20 },
+                    },
+                    "children": [
+                        {
+                            "type": "TextBoxWidget", "name": "CancelButtonText",
+                            "fields": {
+                                "rect": { "width": 200, "height": 20 },
+                                "style": {
+                                    "pointSize": 24,
+                                    "alignment": { "h": "center" },
+                                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                                },
+                                "text": "@Back",
+                            }
+                        }
+                    ]
+                },
+            ]
+        },
+        {
+            "type": "ScrollControllerWidget", "name": "ScrollBar",
+            "fields": { 
+                "rect": { "x": 470, "y": 60, "width": 12, "height": 230 }, //FrontEnd\\joingamescrollbars
+                "upArrowFilepath": "FrontEnd\\ScrollUp", // 0/2
+                "downArrowFilepath": "FrontEnd\\ScrollDown", // 1/3
+                "barFilepath": "FrontEnd\\ScrollBar", // 4
+                "viewName": "ListContainer",
+            }
+        },
+    ]
+}

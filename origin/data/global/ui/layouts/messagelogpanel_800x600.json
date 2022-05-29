@@ -1,0 +1,75 @@
+{
+    "basedOn": "MessageLogPanel_640x480.json",
+    "type": "MessageLogPanel", "name": "MessageLogPanel_800x600",
+    "fields": {
+        "rect": { "x": -390, "y": 30, "width": 780, "height": 480 },
+    },
+    "children": [
+        {
+            "type": "ClickCatcherWidget", "name": "ClickCatcher",
+        },
+        {
+            "type": "NineTileImageWidget", "name": "MessageLogTitle",
+            "fields": {
+                "rect": { "x": 0, "y": 0, "width": 780, "height": 35 },
+            },
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "Title",
+                }
+            ]
+        },
+        {
+            "type": "NineTileImageWidget", "name": "MessageLogBorder",
+            "fields": {
+                "rect": { "x": 0, "y": 36, "width": 780, "height": 400 },
+            },
+            "children": [
+                {
+                    "type": "ChatListWidget", "name": "ListContainer",
+                    "children": [
+                        {
+                            "type": "ListItemWidget", "name": "ChatEntryTemplate",
+                            "fields": {
+                                "rect": { "x": 10, "y": 0, "width": 725, "height": 17 },
+                            },
+                            "children": [
+                                {
+                                    "type": "TextBoxWithLinksWidget", "name": "MessageText",
+                                },
+                            ]
+                        },
+                    ]
+                },
+                { 
+                    "type": "NineTileImageWidget", "name": "ScrollBarBackground",
+                    "fields": {
+                        "rect": { "x": 740, "y": 15, "width": 12, "height": 370 }
+                    }
+                },
+                {
+                    "type": "ScrollControllerWidget", "name": "ScrollBar",
+                    "fields": { 
+                        "rect": { "x": 740, "y": 15, "width": 12, "height": 370 }
+                    }
+                },
+            ]
+        },
+        {
+            "type": "NineTileImageWidget", "name": "MessageLogCancelBorder",
+            "fields": {
+                "rect": { "x": 0, "y": 444, "width": 780, "height": 25 },
+            },
+            "children": [
+                {
+                    "type": "FocusableWidget", "name": "CancelButton",
+                    "children": [
+                        {
+                            "type": "TextBoxWidget", "name": "CancelButtonText",
+                        }
+                    ]
+                },
+            ]
+        },
+    ]
+}

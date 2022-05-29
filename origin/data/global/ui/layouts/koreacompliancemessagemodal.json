@@ -1,0 +1,43 @@
+﻿{
+    "type": "KoreaComplianceMessageModal", "name": "KoreaComplianceMessageModal",
+    "fields": {
+        "anchor": { "x": 0.5 },
+        "rect": { "x": -174, "y": 452, "width": 347, "height": 73 },
+        "priority": "$INT_MAX", // as high as possible, must display over everything
+        "isDismissable": false,
+    },
+    "children": [
+        {
+            "type": "ClickCatcherWidget", "name": "ClickCatcher",
+            "fields": {
+                "fitToParent": true,
+            }
+        },
+        {
+            "type": "GridImageWidget", "name":  "KoreanMessageImage",
+            "fields": {
+                "filename": "PANEL/Korean",
+                "frames": 2,
+                "rows": 1
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "OverIndulgenceTextBox",
+            "fields": {
+                "rect": { "x": 155, "y": 4, "width": 32, "height": 17 },
+                "fontType": "16pt",
+                "style": {
+                    "fontColor": "$FontColorGold",
+                    "alignment": { "h": "center", "v": "bottom" },
+                }
+            }
+        },
+        {
+            "type": "TimerWidget", "name": "OverIndulgenceTimer",
+            "fields": {
+                "time": 5,
+                "message": "PanelManager:ClosePanel:KoreaComplianceMessageModal",
+            }
+        }
+    ]
+}

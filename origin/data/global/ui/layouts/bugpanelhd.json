@@ -1,0 +1,191 @@
+{
+    "type": "BugPanel", "name": "BugPanel",
+    "fields": {
+        "fitToParent": true,
+        "defaultWidget": "ReportType",
+        "drawTint": true,
+        "isDismissable": false,
+    },
+    "children": [
+        {
+            "type": "ClickCatcherWidget", "name": "BugClickCatcher",
+            "fields": {
+                "fitToParent": true
+            }
+        },
+        {
+            "type": "Widget", "name": "BugParent",
+            "fields": {
+                "rect": { "x": -438, "y": -510 },
+                "anchor": { "x": 0.5, "y": 0.5 },
+            },
+            "children": [
+                {
+                    "type": "NineTileImageWidget", "name": "BugTitleTile",
+                    "fields": {
+                        "filename": "PANEL/TooltipBorder/TooltipBorder",
+                        "backgroundColor": [ 0.0, 0.0, 0.0, 0.80 ],
+                        "tileScale": 1.0,
+                        "rect": { "x": 0, "y": 0, "width": 876, "height": 0 },
+                    },
+                    "children": [
+                        {
+                            "type": "TextBoxWidget", "name": "BugBuildText",
+                            "fields": {
+                                "anchor": { "x": 0.5 },
+                                "text": "@ReportPanelTitle",
+                                "style": {
+                                    "pointSize": "$LargeFontSize",
+                                    "alignment": { "v": "center", "h": "center" },
+                                    "fontColor": "$FontColorGold",
+                                }
+                            }
+                        },
+                    ]
+                },
+                {
+                    "type": "NineTileImageWidget", "name": "BugDescriptionTile",
+                    "fields": {
+                        "filename": "PANEL/TooltipBorder/TooltipBorder",
+                        "backgroundColor": [ 0.0, 0.0, 0.0, 0.80 ],
+                        "tileScale": 1.0,
+                        "rect": { "x": 0 , "y": 62, "width": 876, "height": 887 },
+                    },
+                },
+                {
+                    "type": "TextBoxWidget", "name": "ReportTypeLabel",
+                    "fields": {
+                        "rect": { "x": 50, "y": 125, "width": 780, "height": 70 },
+                        "text": "@ReportType",
+                        "style": {
+                            "fontColor": "$FontColorGold",
+                            "pointSize": "$MediumLargeFontSize",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": {
+                                "newlineHandling": "standard",
+                                "lineWrap": true
+                            }
+                        }
+                    }
+                },
+                {
+                    "type": "DropdownListWidget", "name": "ReportType",
+                    "fields": {
+                        "rect": "$OptionsDropDownRect",
+                        "rect": { "x": 50, "y": 195 },
+                        "background/rect": "$OptionsDropDownBackgroundRect",
+                        "background/leftCapOffset": "$OptionsDropDownLeftCapOffset",
+                        "background/rightCapOffset": "$OptionsDropDownRightCapOffset",
+                        "pressedFrame": 1,
+                        "disabledFrame": 2,
+                        "hoveredFrame": 3,
+                        "focusIndicatorFilename": "$OptionsDropDownFocusIndicatorFilename",
+                        "states": [ "" ],
+                        "text/style": {
+                            "fontFace": "BlizzardGlobal",
+                            "pointSize": "$MediumFontSize",
+                            "alignment": { "h": "left", "v": "center" },
+                        },
+                        "textColor": "$FontColorLightGold",
+                        "navigation": {
+                            "next": { "name": "BugDescription" },
+                        }
+                    },
+                },
+                {
+                    "type": "TextBoxWidget", "name": "ErrorLabel",
+                    "fields": {
+                        "rect": { "x": 50, "y": 305, "width": 780, "height": 70 },
+                        "text": "",
+                        "style": {
+                            "fontFace": "BlizzardGlobal",
+                            "fontColor": "$FontColorRed",
+                            "pointSize": "$MediumFontSize",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": {
+                                "newlineHandling": "standard",
+                                "lineWrap": true,
+                            }
+                        }
+                    }
+                },
+                {
+                    "type": "RectangleWidget", "name": "DescriptionBackgroundBox",
+                    "fields": {
+                        "rect": { "x": 50, "y": 375, "width": 776, "height": 400 },
+                        "color": [ 0.0, 0.0, 0.0, 0.4 ],
+                        "borderColor":  "$TooltipBorderColor",
+                    }
+                },
+                {
+                    "type": "InputTextBoxWidget", "name": "BugDescription",
+                    "fields": {
+                        "rect": { "x": 60, "y": 382, "width": 756, "height": 381 },
+                        "backgroundColor": { "r": 0, "g": 0, "b": 0, "a": 0 },
+                        "canInsertNewlines": true,
+                        "virtualKeyboardType": "Default",
+                        "imeEnabled": true,
+                        "fontStyle": {
+                            "alignment": { "h": "left", "v": "top" },
+                            "spacing": { "leading": 0.9 },
+                            "fontFace": "BlizzardGlobal",
+                            "pointSize": "$MediumFontSize",
+                            "fontColor": "$FontColorLightGold",
+                            "options": { "lineWrap": true },
+                        },
+                        "fontType": "16pt",
+                        "maxStringLength": 750,
+                        "hint/style": {
+                            "alignment": { "h": "left", "v": "top" },
+                            "spacing": { "leading": 0.68 },
+                            "pointSize": "$MediumFontSize",
+                            "fontFace": "BlizzardGlobal",
+                            "fontColor": "$FontColorLightGray",
+                        },
+                        "hint/text": "@ReportPanelDescriptionHint",
+                        "navigation": {
+                            "previous": { "name": "ReportType" },
+                            "next": { "name": "Ok" },
+                        }
+                    }
+                },
+                {
+                    "type": "ButtonWidget", "name": "Ok",
+                    "fields": {
+                        "rect": { "x": 50, "y": 818 },
+                        "filename": "FrontEnd\\HD\\Final\\FrontEnd_ButtonSmall",
+                        "textString": "@Submit",
+                        "textColor": "$LightButtonTextColor",
+                        "text/style" : "$StyleFEButtonText",
+                        "onClickMessage": "BugReportMessage:SendReport",
+                        "pressedFrame": 1,
+                        "hoveredFrame": 3,
+                        "disabledFrame": 2,
+                        "navigation": {
+                            "previous": { "name": "BugDescription" },
+                            "next": { "name": "Cancel" },
+                        }
+                    }
+                },
+                {
+                    "type": "ButtonWidget", "name": "Cancel",
+                    "fields": {
+                        "rect": { "x": 460, "y": 818 },
+                        "filename": "FrontEnd\\HD\\Final\\FrontEnd_ButtonSmall",
+                        "textString": "@cancel",
+                        "textColor": "$LightButtonTextColor",
+                        "text/style" : "$StyleFEButtonText",
+                        "onClickMessage": "PanelManager:ClosePanel:BugPanel",
+                        "acceptsEscKeyEverywhere": true,
+                        "pressedFrame": 1,
+                        "hoveredFrame": 3,
+                        "disabledFrame": 2,
+                        "navigation": {
+                            "previous": { "name": "Ok" },
+                        }
+                    }
+                }
+            ]
+        },
+    ]
+}

@@ -1,0 +1,54 @@
+{
+    "type": "MonsterHealthPanel", "name": "HUDMonsterHealth",
+    "fields": {
+        "priority": -100,
+        "anchor": { "x": 0.5 },
+        "rect": { "x": 4, "y": 16 },
+    },
+    "children": [
+        {
+            "type": "HealthBarWidget", "name": "Health",
+            "fields": {
+                "rect": { "y": 2, "height": 16 },
+                "normalColor": { "r": 0.31, "g": 0, "b": 0 },
+                "transparency": 0.5,
+                "backgroundTransparency": 0.75,
+                "criticalHealthPercent": 0,
+                "warningHealthPercent": 0,
+                "drawWhenEmpty": true
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "Name",
+            "fields": {
+                "fontType": "16pt",
+                "style": {
+                    "alignment": { "h": "center" },
+                    "options": { "pipeCharacterBehavior": "handle" }
+                }
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "Unique",
+            "fields": {
+                "rect": { "y": 23 },
+                "fontType": "6pt",
+                "style": {
+                    "alignment": { "h": "center" },
+                    "options": { "pipeCharacterBehavior": "handle" }
+                }
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "Additional",
+            "fields": {
+                "rect": { "y": 33 },
+                "fontType": "6pt",
+                "style": {
+                    "alignment": { "h": "center" },
+                    "options": { "pipeCharacterBehavior": "handle" }
+                }
+            }
+        },
+    ]
+}

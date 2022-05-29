@@ -1,0 +1,75 @@
+{
+    "type": "RenameCharacterModal", "name": "RenameCharacterModal",
+    "fields": {
+        "fitToParent": true,
+        "defaultWidget": "RenameInput",
+    },
+    "children": [
+        {
+            "type": "NineTileImageWidget", "name": "Background",
+            "fields": {
+                "rect": { "x": -800, "y": -300, "width": 1600, "height": 600 },
+                "anchor": { "x": 0.5, "y": 0.5 },
+                "filename": "PANEL/TooltipBorder/TooltipBorder",
+                "backgroundColor": [ 0.0, 0.0, 0.0, 1.0 ],
+                "tileScale": 1.0,
+            },
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "RenameMessage",
+                    "fields": {
+                        "rect": { "x": -300, "y": 90, "width": 600, "height": 50 },
+                        "anchor": { "x": 0.5, "y": 0.0 },
+                        "fontType": "24pt",
+                        "text": "@RenameCharacterPrompt",
+                        "style": {
+                            "alignment": { "v": "center", "h": "center" },
+                            "pointSize": "$LargeFontSize",
+                            "options": {"newlineHandling": "standard" },
+                        },
+                    }
+                },
+                {
+                    "type": "ImageWidget", "name": "InputBackground",
+                    "fields": {
+                        "rect": { "x": -432, "y": 226 },
+                        "anchor": { "x": 0.5, "y": 0.0 },
+                        "filename": "FrontEnd\\HD\\Final\\FrontEnd_CharNameEntry"
+                    },
+                    "children": [
+                        {
+                            "type": "InputTextBoxWidget", "name": "RenameInput",
+                            "fields": {
+                                "rect": { "x": -360, "y": -40, "width": 720, "height": 80 },
+                                "anchor": { "x": 0.5, "y": 0.5 },
+                                "backgroundColor":  { "r": 0, "g": 0, "b": 0, "a": 1.0 },
+                                "maxStringLength": 15,
+                                "fontStyle": {
+                                    "alignment": { "v": "center" },
+                                    "pointSize": "$MediumLargeFontSize",
+                                }, 
+                                "fontType": "12ptF",
+                                "focusIndicatorFilename": "Controller/HoverImages/CharEntry_Hover",
+                            }
+                        },
+                    ]
+                },
+                {
+                    "type":"ButtonWidget", "name": "ConfirmButton",
+                    "fields": {
+                        "rect": { "x": -260, "y": -145  },
+                        "anchor": { "x": 0.5, "y": 1.0  },
+                        "hoveredFrame": 3,
+                        "disabledFrame": 2,
+                        "filename": "PANEL/Modals/ModalButton",
+                        "focusIndicatorFilename": "Controller/HoverImages/ModalButton_Hover",
+                        "textString": "@strOk",
+                        "textColor": "$FontColorLightGold",
+                        "text/style" : "$StyleFEButtonText",
+                        "onClickMessage": "RenameCharacterMessage:Confirm"
+                    },
+                },
+            ]
+        },
+    ]
+}

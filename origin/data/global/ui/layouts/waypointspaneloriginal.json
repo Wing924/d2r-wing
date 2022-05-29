@@ -1,0 +1,90 @@
+{
+    "type": "WaypointsPanel", "name": "WaypointsPanelOriginal",
+    "fields": { 
+        "rect": { "x": -320, "y": -240, "width": 320, "height": 432 }, 
+        "anchor": "$LeftPanelAnchor",
+        "buttonOffset": 36,
+        "selectableFontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+        "selectableFrames": [3,4],
+        "currentFontColor": { "r": 105, "g": 105, "b": 255, "a": 255 },
+    },
+    "children": [
+        {
+            "type": "ClickCatcherWidget", "name": "ClickCatcher",
+            "fields": {
+                "rect": { "width": 320, "height": 432 }
+            }
+        },
+        {
+            "type": "GridImageWidget", "name": "Background",
+            "fields": {
+                "filename": "menu\\waygatebackground",
+                "frames": 4,
+                "rows": 2,
+            } 
+        },
+        {
+            "type": "TextBoxWidget", "name": "waypointsTitle",
+            "fields": {
+                "rect": { "x": 61, "y": 31 },
+                "text": "@waypointsheader",
+                "style": {
+                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                    "pointSize": 48
+                },
+            }
+        },
+        {
+            "type": "TabBarWidget", "name": "Tabs",
+            "fields": {
+                "rect": { "x": 5, "y": 3 },
+                "tabCount": 4,
+                "filename": "\\menu\\waygatetabs",
+                "inactiveFrames": [ 1, 3, 5, 7 ],
+                "activeFrames": [ 0, 2, 4, 6 ],
+                "tabSize": { "x": 77, "y": 24 },
+                "tabPadding": { "x": 0, "y": 0 },
+                "onSwitchTabMessage": "Waypoints:SelectTab",
+            }
+        },
+        {
+            "type": "ButtonWidget", "name": "CancelButton",
+            "fields": {
+                "rect": { "x": 272, "y": 386 },
+                "filename": "\\panel\\buysellbtn",
+                "onClickMessage": "Waypoints:CloseWaypointPanel",
+                "normalFrame": 10,
+                "pressedFrame": 11
+            }
+        },
+        {
+            "type": "Widget", "name": "Templates",
+            "children": [
+                {
+                    "type": "ButtonWidget", "name": "UnselectableButtonTemplate",
+                    "fields": {
+                        "rect": { "x": 17, "y": 61, "width": 280, "height": 30 },
+                        "onClickMessage": "Waypoints:SelectWaypoint",
+                        "normalFrame": 4,
+                        "pressedFrame": 4,
+                        "pointSize": 24,
+                        "textColor": { "r": 105, "g": 105, "b": 105, "a": 255 },
+                        "text/rect": {"x": 70}
+                    }
+                },
+                {
+                    "type": "ImageWidget", "name": "SelectableButton",
+                    "fields": {
+                        "filename": "\\menu\\waygateicons"
+                    }
+                },
+                {
+                    "type": "ImageWidget", "name": "CurrentButton",
+                    "fields": {
+                        "filename": "\\menu\\waygateicons"
+                    }
+                }
+            ]
+        }
+    ]
+}

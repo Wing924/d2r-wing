@@ -1,0 +1,70 @@
+{
+    "type": "ControllerReconnectPanel", "name": "ControllerReconnectPanel",
+    "fields": {
+        "fitToParent": true,
+        "defaultWidget": "DismissButton",
+        "priority": 2147483646
+    },
+    "children": [
+        {
+            "type": "RectangleWidget", "name": "Background",
+            "fields": {
+                "fitToParent": true,
+                "color": [ 0.0, 0.0, 0.0, 0.5 ]
+            }
+        },
+        {
+            "type": "ImageWidget", "name": "PromptBackground",
+            "fields": {
+                "anchor": { "x": 0.5, "y": 0.5 },
+                "rect": { "x": -627, "y": -228 },
+                "filename": "PANEL/Modals/Modal_No_Title_BG"
+            },
+            "children" : [
+                {
+                    "type": "TextBoxWidget", "name": "ReconnectMessage",
+                    "fields": {
+                        "anchor": { "x": 0.5, "y": 0.5 },
+                        "rect": { "x": -587, "y": -64, "width": 1176, "height": 0 },
+                        "text": "@ControllerReconnectMessage",
+                        "style": {
+                            "fontColor": "$PanelTitleColor",
+                            "pointSize": "$XMediumLargeFontSize",
+                            "alignment": { "h": "center", "v": "center" },
+                            "options": { "lineWrap": true }
+                        }
+                    }
+                },
+                {
+                    "type":"ButtonWidget", "name": "DismissButton",
+                    "fields": {
+                        "rect": { "x": -260, "y": 50 },
+                        "anchor": { "x": 0.5, "y": 0.5  },
+                        "hoveredFrame": 3,
+                        "disabledFrame": 2,
+                        "filename": "PANEL/Modals/ModalButton",
+                        "focusIndicatorFilename": "Controller/HoverImages/ModalButton_Hover",
+                        "textString": "@strOk",
+                        "textColor": "$FontColorLightGold",
+                        "text/style" : "$StyleFEButtonText",
+                        "onClickMessage": "PanelManager:ClosePanel:ControllerReconnectPanel"
+                    },
+                    "children": [
+                        {
+                            "type": "ButtonLegendWidget", "name": "DismissLegend",
+                            "fields": {
+                                "anchor": { "x": 0.5, "y": 1.0 },
+                                "text": { "style": "$StyleButtonLegend" },
+                                "presets": [
+                                    {
+                                      "action": "select",
+                                    },
+                                ],
+                            }
+                        },
+                    ]
+                },
+            ]
+        },
+    ]
+}

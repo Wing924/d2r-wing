@@ -1,0 +1,55 @@
+{
+    "type": "DropdownListContentsPanel", "name": "DropdownListContents",
+    "fields": {
+        "rect": { "width": 625, "height": 1000 },
+        "priority": 2000000001,
+        "drawTint": false,
+    },
+    "children": [
+        {
+            "type": "ListWidget", "name": "Items",
+            "fields": {
+                "fitToParent": true,
+                "isHoverList": true,
+                "selectorName": "Selector",
+            },
+            "children": [
+                {
+                    "type": "HoverListItemWidget", "name": "ItemTemplate",
+                    "fields": {
+                        "rect": { "width": 625, "height": 40 },
+                        "baseColor": "$FontColorGold",
+                        "hoveredColor": "$FontColorWhite",
+                        "sound": "cursor_menu_select_hd",
+                    },
+                    "children": [
+                        {
+                            "type": "GrowableImageWidget", "name": "Image",
+                            "fields": {
+                                "rect": { "width": 625, "height": 40 },
+                                "filename": "PANEL/DropdownTile_Center",
+                                "leftCap/filename": "PANEL/DropdownTile_Left",
+                                "rightCap/filename": "PANEL/DropdownTile_Right"
+                            }
+                        },
+                        {
+                            "type": "TextBoxWidget", "name": "TextBox",
+                            "fields": {
+                                "fitToParent": true,
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "Widget", "name": "Selector",
+                },
+            ]
+        },
+        {
+            "type": "ScrollControllerWidget", "name": "ScrollController",
+            "fields": {
+                "viewName": "Items"
+            }
+        },
+    ]
+}

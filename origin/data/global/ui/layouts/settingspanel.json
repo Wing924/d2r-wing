@@ -1,0 +1,136 @@
+{
+    "type": "SettingsPanel", "name": "SettingsPanel",
+    "fields": {
+        "rect": [ -400, -300, 800, 600 ],
+        "priority": 9002,
+        "anchor": [ 0.5, 0.5 ],
+        "defaultWidget": "Sound Options",
+    },
+    "children":
+    [
+        {
+            "type": "ClickCatcherWidget", "name": "catcher",
+            "fields": {
+                "fitToParent": true,
+            }
+        },
+        {
+            "type": "AnimatedImageWidget", "name": "LeftPentagram",
+            "fields": {
+                "rect": { "x": 100, "y": 250 },
+                "filename": "CURSOR/Pentspin",
+                "fps": -16
+            }
+        },
+        {
+            "type": "AnimatedImageWidget", "name": "RightPentagram",
+            "fields": {
+                "rect": { "x": 650, "y": 250 },
+                "filename": "CURSOR/Pentspin",
+                "fps": 16
+            }
+        },
+        {
+            "type": "TableWidget", "name": "OptionsTable",
+            "fields": {
+                "rect": { "x": 0, "y": 133 },
+                "columns": [ { "width": 800, "alignment": { "h": "fit", "v": "fit" } } ],
+                "rowHeight": 50,
+                "generateFocusLinks": true,
+            },
+            "children": [
+                {
+                    "type": "TableRowWidget", "name": "Row Sound Options",
+                    "children": [
+                        {
+                            "type": "ButtonWidget", "name": "Sound Options",
+                            "fields": {
+                                "textString": "@SoundOptionsSD",
+                                "onClickMessage": "SettingsPanelMessage:ToggleChildPanel:SoundOptionsPanel",
+                                "sound": "select",
+                                "fontType": "42pt",
+                                "pressLabelOffset": [ 0, 0 ],
+                                "textColor": "$FontColorWhite",
+                                "acceptsReturnKey": true,
+                                "focusOnMouseOver": true,
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "TableRowWidget", "name": "Row Video Options",
+                    "children": [
+                        {
+                            "type": "ButtonWidget", "name": "Video Options",
+                            "fields": {
+                                "textString": "@VideoOptionsSD",
+                                "onClickMessage": "SettingsPanelMessage:ToggleChildPanel:VideoOptionsPanel",
+                                "sound": "select",
+                                "fontType": "42pt",
+                                "pressLabelOffset": [ 0, 0 ],
+                                "textColor": "$FontColorWhite",
+                                "acceptsReturnKey": true,
+                                "focusOnMouseOver": true,
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "TableRowWidget", "name": "Row Gameplay Options",
+                    "children": [
+                        {
+                            "type": "ButtonWidget", "name": "Gameplay Options",
+                            "fields": {
+                                "textString": "@AutomapOptionsSD",
+                                "onClickMessage": "SettingsPanelMessage:ToggleChildPanel:GameplayOptionsPanel",
+                                "sound": "select",
+                                "fontType": "42pt",
+                                "pressLabelOffset": [ 0, 0 ],
+                                "textColor": "$FontColorWhite",
+                                "acceptsReturnKey": true,
+                                "focusOnMouseOver": true,
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "TableRowWidget", "name": "Row Controls",
+                    "children": [
+                        {
+                            "type": "ButtonWidget", "name": "Controls",
+                            "fields": {
+                                "textString": "@ConfigureControlsSD",
+                                "onClickMessage": "SettingsPanelMessage:ToggleChildPanel:KeyBindingMenu",
+                                "sound": "select",
+                                "fontType": "42pt",
+                                "pressLabelOffset": [ 0, 0 ],
+                                "textColor": "$FontColorWhite",
+                                "acceptsReturnKey": true,
+                                "focusOnMouseOver": true,
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "TableRowWidget", "name": "Row Previous Menu",
+                    "children": [
+                        {
+                            "type": "ButtonWidget", "name": "Previous Menu",
+                            "fields": {
+                                "textString": "@PreviousMenuSD",
+                                "onClickMessage": "PanelManager:ClosePanel:SettingsPanel",
+                                "sound": "select",
+                                "fontType": "42pt",
+                                "pressLabelOffset": [ 0, 0 ],
+                                "textColor": "$FontColorWhite",
+                                "acceptsReturnKey": true,
+                                "focusOnMouseOver": true,
+                                "acceptsEscKeyEverywhere": true
+                            }
+                        }
+                    ]
+                },
+            ]
+        }
+    ]
+}

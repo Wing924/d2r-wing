@@ -1,0 +1,40 @@
+{
+    "type": "GlobalData", "name": "GlobalData",
+    "fields": {
+         "defaultTooltipStyle": "$TooltipStyle"
+    },
+    "children": [
+        {
+            "type": "SpriteColoringHelper", "name": "SpriteColoringHelper"
+        },
+        {
+            "type": "LanguageFontRemapper", "name": "LanguageFontRemapper",
+            "fields": {
+                "fontLoadingInfo": [
+                     { "loadFont": "Exocet", "inLanguage": "InvalidLocale" },
+                     { "loadFont": "Formal", "inLanguage": "InvalidLocale" },
+                     { "loadFont": "BlizzardGlobal", "inLanguage": "InvalidLocale" },
+                     { "loadFont": "Philosopher", "inLanguage": "InvalidLocale" },
+                     { "loadFont": "SNReilWA", "inLanguage": "InvalidLocale" },
+                     { "loadFont": "TB Gothic", "inLanguage": "InvalidLocale" },
+                     { "loadFont": "KoDia", "inLanguage": "InvalidLocale" },
+                     { "loadFont": "Iris", "inLanguage": "InvalidLocale" },
+                     { "loadFont": "AR FangXinShuh", "inLanguage": "InvalidLocale" },
+                     { "loadFont": "BlizzardGlobalJapanese", "inLanguage": "InvalidLocale" },
+                     { "loadFont": "BlizzardGlobalTraditionalChinese", "inLanguage": "InvalidLocale" },
+                ],
+            }
+        },
+        {
+            "type": "ShowItemsParameters", "name": "ShowItemsParameters",
+            "fields": {
+                "itemNamesFont": {
+                    "fontColor": "$FontColorWhite",
+                    "pointSize": 24,
+                    "alignment": { "h": "center", "v": "center" },
+                    "options": { "pipeCharacterBehavior" : "handle", "newlineHandling": "reversed" }
+                },
+            },
+        },
+    ]    
+}

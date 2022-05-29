@@ -1,0 +1,42 @@
+{
+    "basedOn": "WaypointsPanelOriginal.json",
+    "type": "WaypointsPanel", "name": "WaypointsPanelExpansion",
+    "children": [
+        {
+            "type": "ClickCatcherWidget", "name": "ClickCatcher",
+        },
+        {
+            "type": "GridImageWidget", "name": "Background",
+        },
+        {
+            "type": "TextBoxWidget", "name": "waypointsTitle",
+        },
+        {
+            "type": "TabBarWidget", "name": "Tabs",
+            "fields": {
+                "tabCount": 5,
+                "filename": "\\menu\\expwaygatetabs",
+                "inactiveFrames": [ 1, 3, 5, 7, 9 ],
+                "activeFrames": [ 0, 2, 4, 6, 8 ],
+                "tabSize": { "x": 62, "y": 24 },
+            }
+        },
+        {
+            "type": "ButtonWidget", "name": "CancelButton",
+        },
+        {
+            "type": "Widget", "name": "Templates",
+            "children": [
+                {
+                    "type": "ButtonWidget", "name": "UnselectableButtonTemplate",
+                },
+                {
+                    "type": "ImageWidget", "name": "SelectableButton",
+                },
+                {
+                    "type": "ImageWidget", "name": "CurrentButton",
+                }
+            ]
+        }
+    ]
+}

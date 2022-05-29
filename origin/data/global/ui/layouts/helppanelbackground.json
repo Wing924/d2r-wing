@@ -1,0 +1,17 @@
+{
+    "type": "Panel", "name": "HelpPanelBackground",
+    "fields": {
+        // This needs to be low enough to draw below the HUD.
+        "priority": -10,
+        "fitToParent": true,
+    },
+    "children": [
+        {
+            "type": "RectangleWidget", "name": "backgroundShading",
+            "fields": {
+                "fitToParent": true,
+                "color": [ 0.0, 0.0, 0.0, 0.5 ]
+            }
+        },
+    ]
+}

@@ -1,0 +1,61 @@
+{
+    "basedOn": "ScreenSpaceCalibrationPanelHD.json",
+    "type": "ScreenSpaceCalibrationPanel", "name": "ScreenSpaceCalibrationPanel",
+    "children": [
+        {
+            "type": "RectangleWidget", "name": "Background",
+            "children": [
+				{
+					"type": "ClickCatcherWidget", "name": "ClickCatcher",
+				},
+			]
+        },
+		{
+            "type": "TextBoxWidget", "name": "Title",
+			"children": [
+				{
+					"type": "ImageWidget", "name": "Divider",
+				},
+			]
+			
+        },
+		{
+			"type": "TextBoxWidget", "name": "ScreenSpaceMessage",
+            "fields": {
+                "text": "@ScreenSpaceControllerMessage",
+            },
+		},
+        {
+            "type": "ButtonLegendWidget", "name": "Legend",
+            "fields": {
+                "anchor": { "x": 0.5, "y": 0 },
+                "rect": { "x": -975, "y": 1800, "width": 1950, "height": 103 },
+                "text": { "style": "$StyleButtonLegend",
+                          "style/fontColor": "$FontColorWhite", 
+                },
+                "presets": [
+                    {
+                        "action": "select",
+                        "description": "@SaveAndCloseCalibration",
+                    },
+                    {
+                        "action": "back",
+                        "description": "@close",
+                    },
+                ],
+            },
+        },
+        {
+            "type": "ImageWidget", "name": "TopLeftCorner",
+        },
+        {
+            "type": "ImageWidget", "name": "TopRightCorner",
+        },
+        {
+            "type": "ImageWidget", "name": "BottomLeftCorner",
+        },
+        {
+            "type": "ImageWidget", "name": "BottomRightCorner",
+        },
+    ]
+}

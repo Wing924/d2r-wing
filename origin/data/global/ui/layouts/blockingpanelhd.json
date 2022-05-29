@@ -1,0 +1,60 @@
+{
+    "type": "BlockingPanel", "name": "BlockingPanel",
+    "fields": { 
+        "anchor": { "x": 0.5, "y": 0.5 },
+        "waitDurationToShow": 1,
+        "minimumDuration": 2,
+        "priority": 2100000000,
+    },
+    "children": [
+        {
+            "type": "RectangleWidget", "name": "TransparentBG",
+            "fields": {
+                "fitToScreen": true,
+                "color": [ 0.0, 0.0, 0.0, 0.5 ]
+            }
+        },
+        {
+            "type": "ImageWidget", "name": "Frame",
+            "fields": {
+                "rect": { "x": -627, "y": -270 },
+                "filename": "Panel\\Modals\\Modal_No_Title_BG",
+            },
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "Prompt",
+                    "fields": {
+                        "rect": { "x": 170, "y": 115, "width": 906, "height": 170 },
+                        "style": "$StyleModalDialogDescription"
+                    }
+                },
+                {
+                    "type": "AnimatedImageWidget", "name": "Logo",
+                    "fields": {
+                        "anchor": { "x": 1.0, "y": 1.0 },
+                        "rect": { "x": 475, "y": 515, "scale": 0.5 },
+                        "filename": "LogoAnimation/LogoAnimation",
+                        "fps": 20,
+                    },
+                },
+                {
+                    "type": "ImageWidget", "name": "ResurrectedText",
+                    "fields": {
+                        "anchor": { "x": 1.0, "y": 1.0 },
+                        "rect": { "x": 504, "y": 681, "scale": 0.5 },
+                        "filename": "LogoAnimation/ResurrectedText",
+                    },
+                },
+                {
+                    "type": "AnimatedImageWidget", "name": "BottomFlames",
+                    "fields": {
+                        "anchor": { "x": 1.0, "y": 1.0 },
+                        "rect": { "x": 555, "y": 699, "scale": 0.5 },
+                        "filename": "LogoAnimation/Logo_BottomFlame",
+                        "fps": 20,
+                    },
+                },
+            ]
+        },
+    ]
+}

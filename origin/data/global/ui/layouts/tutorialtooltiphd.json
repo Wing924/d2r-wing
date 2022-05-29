@@ -1,0 +1,157 @@
+{
+    "type": "TutorialTooltip", "name": "TutorialTooltip",
+    "fields": {
+        "fitToParent": true,
+        "drawTint": false,
+        "priority": 2000000001,
+        "childFormatMainMenu":[
+            { "label": "TutorialTooltipIntro", "titleRect": { "x": 175, "y": 302 }, "titleText": "@OnlineButton", "textRect": "$TutorialTooltipIntroRect", "text": "@TutorialToolTipOnline", "confirmRect": "$TooltipConfirmXL", "dismissRect": "$TooltipDismissXL", "highlightRect": { "y": 70, "x" : -730, "width": 332, "height": 71 }, "tooltipAnchor": { "x": 1.0, "y": 0.0 } },
+            { "label": "TutorialTooltipLocal", "titleRect": { "x": 175, "y": 402 }, "titleText": "@Offline", "textRect": "$TutorialTooltipLocalRect", "text": "@TutorialToolTipLocal", "confirmRect": "$TooltipConfirmLarge", "dismissRect": "$TooltipDismissLarge", "highlightRect": { "y": 70, "x" : -400, "width": 332, "height": 71 } },
+            { "label": "TutorialTooltipTabs", "titleRect": { "x": 175, "y": 302 }, "titleText": "@TutorialToolTipTabsTitle", "textRect": "$TutorialTooltipTabsRect", "text": "@TutorialToolTipTabs", "confirmRect": "$TooltipConfirmSmall", "dismissRect": "$TooltipDismissSmall", "highlightRect": { "y": 70, "x" : -730, "width": 664, "height": 71 } },
+            { "label": "TutorialTooltipCreateNew", "titleRect": { "x": 475, "y": 902 }, "titleText": "@strLaunchCharSelectNewX", "textRect": "$TutorialTooltipCreateNewRect", "text": "@TutorialToolTipCreateNew", "confirmRect": "$TooltipConfirmMed", "dismissRect": "$TooltipDismissMed", "highlightRect": { "y": 1815, "x" : -635, "width": 472, "height": 120 } },
+            { "label": "TutorialTooltipDelete", "titleRect": { "x": 475, "y": 1302 }, "titleText": "@strDelete", "textRect": "$TutorialTooltipDeleteRect", "text": "@TutorialToolTipDelete", "confirmRect": "$TooltipConfirmSmall", "dismissRect": "$TooltipDismissSmall", "highlightRect": { "x": -560, "y": 1980, "width": 92, "height": 88 } },
+            { "label": "TutorialTooltipConvert", "titleRect": { "x": 475, "y": 702 }, "titleText": "@CharacterSelectPanelConvertCharacter", "textRect": "$TutorialTooltipConvertRect", "text": "@TutorialToolTipConvert", "confirmRect": "$TooltipConfirmLarge", "dismissRect": "$TooltipDismissLarge", "highlightRect": { "x": -340, "y": 1980, "width": 93, "height": 88 } },
+        ],
+        "childFormatLobby":[
+            { "label": "TutorialTooltipChat", "titleRect": { "x": 175, "y": 702 }, "titleText": "@Chatcaps", "textRect": "$TutorialTooltipChatRect", "text": "@TutorialToolTipLobbyChat", "confirmRect": "$TooltipConfirmSmall", "dismissRect": "$TooltipDismissSmall", "highlightRect": { "x": -1250, "y" : 165, "width": 1180, "height": 1400 }, "tooltipAnchor": { "x": 0.5, "y": 0.0 }  },
+            { "label": "TutorialTooltipChatArrow", "titleRect": { "x": -1075, "y": 702 }, "titleText": "@Chatcaps", "textRect": "$TutorialTooltipChatArrowRect", "text": "@TutorialToolTipLobbyArrow", "confirmRect": "$TooltipConfirmSmall", "dismissRect": "$TooltipDismissSmall", "highlightRect": { "x": -603, "y": 110, "width": 52, "height": 52 }  },
+            { "label": "TutorialTooltipCreateGame", "titleRect": { "x": -275, "y": 402 }, "titleText": "@LobbyCreateGame", "textRect": "$TutorialTooltipCreateGameRect", "text": "@TutorialToolTipCreateGame", "confirmRect": "$TooltipConfirmSmall", "dismissRect": "$TooltipDismissSmall", "highlightRect": { "x": 440, "y": 105, "width": 386, "height": 103 }  },
+            { "label": "TutorialTooltipGameName", "titleRect": { "x": -575, "y": 402 }, "titleText": "@LobbyCreateGame", "textRect": "$TutorialTooltipGameName", "text": "@TutorialToolTipCreateGameSettings", "confirmRect": "$TooltipConfirmMed", "dismissRect": "$TooltipDismissMed", "highlightRect": { "x": 785, "y": 1235, "width": 472, "height": 120 }  },
+            { "label": "TutorialTooltipJoinGame", "titleRect": { "x": 275, "y": 402 }, "titleText": "@LobbyJoinGame", "textRect": "$TutorialTooltipJoinGame", "text": "@TutorialToolTipJoinGame", "confirmRect": "$TooltipConfirmSmall", "dismissRect": "$TooltipDismissSmall", "highlightRect": { "x": 825, "y": 105, "width": 386, "height": 103 }  },
+            { "label": "TutorialTooltipLadder", "titleRect": { "x": 275, "y": 402 }, "titleText": "@LobbyLadder", "textRect": "$TutorialTooltipLadder", "text": "@TutorialToolTipLadder", "confirmRect": "$TooltipConfirmLarge", "dismissRect": "$TooltipDismissLarge", "highlightRect": { "x": 1210, "y": 105, "width": 386, "height": 103 }  },
+        ],
+        "childFormatFinder":[
+            { "label": "TutorialTooltipSolo", "titleRect": { "x": 275, "y": 402 }, "titleText": "@SoloPlay", "textRect": "$TutorialTooltipConsoleSoloRect", "text": "@TutorialToolTipSoloPlay", "confirmRect": "$TooltipConfirmMed", "dismissRect": "$TooltipDismissMed", "highlightRect": { "x": -1130, "y": 470, "width": 1044, "height": 1161 }, "tooltipAnchor": { "x": 0.5, "y": 0.0 }  },
+            { "label": "TutorialTooltipMulti", "titleRect": { "x": -1375, "y": 402 }, "titleText": "@PartyFinder", "textRect": "$TutorialTooltipConsoleMultiRect", "text": "@TutorialToolTipGameFinder", "confirmRect": "$TooltipConfirmMed", "dismissRect": "$TooltipDismissMed", "highlightRect": { "x": 104, "y": 470, "width": 1044, "height": 1161 }  },
+        ],
+        "childFormatMode":[
+            { "label": "TutorialTooltipOnline", "titleRect": { "x": -1375, "y": 402 }, "titleText": "@OnlineButton", "textRect": "$TutorialTooltipConsoleOnlineRect", "text": "@TutorialToolTipOnlineConsole", "confirmRect": "$TooltipConfirmXL", "dismissRect": "$TooltipDismissXL", "highlightRect": { "x": -280, "y": 800, "width": 560, "height": 165 }, "tooltipAnchor": { "x": 0.5, "y": 0.0 }   },
+            { "label": "TutorialTooltipOffline", "titleRect": { "x": -1375, "y": 402 }, "titleText": "@Offline", "textRect": "$TutorialTooltipConsoleOfflineRect", "text": "@TutorialToolTipOfflineConsole", "confirmRect": "$TooltipConfirmXL", "dismissRect": "$TooltipDismissXL", "highlightRect": { "x": -280, "y": 960, "width": 560, "height": 140 }   },
+        ],
+        "childFormatConsoleMainMenu":[
+            { "label": "TutorialTooltipIntro", "titleRect": { "x": -675, "y": 702 }, "titleText": "@strLaunchCharSelectNew", "textRect": "$TutorialTooltipConsoleIntroRect", "text": "@TutorialToolTipCreateNewConsole", "confirmRect": "$TooltipConfirmSmall", "dismissRect": "$TooltipDismissSmall", "highlightRect": { "x": 171, "y": 755, "width": 472, "height": 120 }, "tooltipAnchor": { "x": 0.0, "y": 0.0 } },
+            { "label": "TutorialTooltipTabs", "titleRect": { "x": -675, "y": 702 }, "titleText": "@TutorialToolTipTabsTitle", "textRect": "$TutorialTooltipConsoleTabsRect", "text": "@TutorialToolTipTabs", "confirmRect": "$TooltipConfirmMed", "dismissRect": "$TooltipDismissMed", "highlightRect": { "x": 160, "y": 905, "width": 494, "height": 90 } },
+        ],
+    },
+    "children": [
+        {
+            "type": "ClickCatcherWidget", "name": "ClickCatcher",
+            "fields": {
+                "fitToParent": true,
+            }
+        },
+        {
+            "type": "RectangleWidget", "name": "background",
+            "fields": {
+                "anchor" : { "x" : 1.0},
+                "color": [ 0.0, 0.0, 0.0, 0.0 ],
+            }
+        },
+        {
+            "type": "NineTileImageWidget", "name": "TooltipTile",
+            "fields": {
+                "rect": { "width": 900, "height": 0 },
+                "anchor": { "x": 0.5 },
+                "filename": "PANEL/TooltipBorder/TooltipBorder",
+                "backgroundColor": [ 0.0, 0.0, 0.0, 0.80 ],
+                "tileScale": 1.0,
+            },
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "Title",
+                    "fields": {
+                        "anchor": { "x": 0.5 },
+                        "style": {
+                            "pointSize": "$MediumLargeFontSize",
+                            "alignment": { "v": "center", "h": "center" },
+                            "fontColor": "$FontColorGoldYellow",
+                        }
+                    }
+                },
+            ]
+        },
+        {
+            "type": "NineTileImageWidget", "name": "TutorialTextTile",
+            "fields": {
+                "anchor": { "x": 0.5 },
+                "filename": "PANEL/TooltipBorder/TooltipBorder",
+                "backgroundColor": [ 0.0, 0.0, 0.0, 0.80 ],
+                "tileScale": 1.0,
+            },
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "TutorialTextDescription",
+                    "fields": {
+                        "rect": {"x": 100, "y": 50, "width": 730, "height": 400},
+                        "style": {
+                            "fontFace": "BlizzardGlobal",
+                            "pointSize": "$MediumFontSize",
+                            "alignment": { "h": "left" },
+                            "fontColor": "$FontColorWhite",
+                            "spacing": { "leading": 0.9 },
+                            "options": { "pipeCharacterBehavior" : "handle", "newlineHandling": "standard", "lineWrap": true },
+                        },
+                    },
+                },
+                {
+                    "type": "ButtonWidget", "name": "Confirm",
+                    "fields": {
+                        "rect": { "x": 200, "y": 650},
+                        "filename": "PANEL\\Modals\\ModalButton",
+                        "focusIndicatorFilename": "Controller/HoverImages/ModalButton_Hover",
+                        "pressedFrame": 1,
+                        "disabledFrame": 2,
+                        "hoveredFrame": 3,
+                        "textString": "@strOk",
+                        "pointSize": "$MediumLargeFontSize",
+                        "textColor": "$FontColorWhite",
+                        "onClickMessage": "TutorialTip:NextTooltip",
+                    },
+                    "children": [
+                        {
+                            "type": "ButtonLegendWidget", "name": "ConfirmLegend",
+                            "fields": {
+                                "anchor": { "x": 0.5, "y": 1.0 },
+                                "text": { "style": "$StyleButtonLegend" },
+                                "presets": [
+                                    {
+                                        "action": "select",
+                                    },
+                                ],
+                             }
+                        },
+                    ]
+                },
+                {
+                    "type": "ButtonWidget", "name": "Dismiss",
+                    "fields": {
+                        "rect": { "x": 200, "y": 775},
+                        "filename": "PANEL\\Modals\\ModalButton",
+                        "focusIndicatorFilename": "Controller/HoverImages/ModalButton_Hover",
+                        "pressedFrame": 1,
+                        "disabledFrame": 2,
+                        "hoveredFrame": 3,
+                        "textString": "@SkipTutorialButton",
+                        "pointSize": "$MediumLargeFontSize",
+                        "textColor": "$FontColorWhite",
+                        "onClickMessage": "PanelManager:ClosePanel:TutorialTooltip",
+                    },
+                    "children": [
+                        {
+                            "type": "ButtonLegendWidget", "name": "DismissLegend",
+                            "fields": {
+                                "anchor": { "x": 0.5, "y": 1.0 },
+                                "text": { "style": "$StyleButtonLegend" },
+                                "presets": [
+                                    {
+                                        "action": "back",
+                                    },
+                                ],
+                            }
+                        },
+                    ]
+                },
+            ]
+        },
+    ]
+}

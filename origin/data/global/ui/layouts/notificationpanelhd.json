@@ -1,0 +1,37 @@
+{
+    "type": "NotificationPanel", "name": "NotificationPanel",
+    "fields": { 
+        "priority": 200,
+        "notificationSeconds": 10.0,
+        "transitionSeconds": 0.8,
+        "rect": { "x": 0, "y": -500, "width": 1200, "height": 244 },
+        "anchor": { "x": 0.5, "y": 1.0 },
+    },
+    "children": [
+        {
+            "type": "NineTileImageWidget", "name": "NotificationBorder",
+            "fields": {
+                "rect": { "x": 0, "y": 0, "width": 1200, "height": 244 },
+                "anchor": { "x": -0.5, "y": 0.0 },
+                "filename": "PANEL/TooltipBorder/TooltipBorder",
+                "backgroundColor": [ 0.0, 0.0, 0.0, 0.70 ],
+                "tileScale": 1,
+            },
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "Prompt",
+                    "fields": {
+                        "fitToParent": true,
+                        "style": "$StyleNotification",
+                    }
+                },
+                {
+                    "type": "ButtonWidget", "name": "Confirm",
+                    "fields": {
+                        "fitToParent": true,
+                    }
+                },
+            ]
+        },
+    ]
+}

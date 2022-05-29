@@ -1,0 +1,90 @@
+{
+    "type": "DropGoldModal", "name": "DropGoldModal",
+    "fields": {
+        "rect": { "x": -105, "y": -80},
+        "anchor": {"x": 0.5, "y": 0.5},
+        "confirmMessage": "GoldPanelMessage:DropGold",
+        "drawTint": false,
+    },
+    "children": [
+        {
+            "type": "ClickCatcherWidget", "name": "ClickCatcher",
+            "fields": {
+                "rect": { "width": 210, "height": 160 }
+            },
+        },
+        // background image/border
+        {
+            "type": "ImageWidget", "name": "Background",
+            "fields": { 
+                "filename": "MENU\\dialogbackground"
+            }
+        },
+    
+        //localized text
+        {
+            "type": "TextBoxWidget", "name": "TextBox",
+            "fields": { 
+                "rect": { "width": 210, "height": 60},
+                "text": "@strDropGoldInfo",
+                "style": {
+                    "fontColor": { "r": 199, "g": 179, "b": 119, "a": 255 },
+                    "pointSize": 24,
+                    "alignment": { "h": "center", "v": "center" },
+                    "options": { "lineWrap": true, "newlineHandling": "standard" },
+                },
+            }
+        },
+        // get input
+        {
+            "type": "NumericInputTextBoxWidget", "name": "InputTextBox",
+            "fields": { 
+                "rect": { "x": 35, "y": 70, "width": 160, "height": 30 },
+                "backgroundColor": { "r": 0, "g": 0, "b": 0, "a": 0 },
+                "fontType": "12ptF", 
+                "fontStyle": { 
+                    "spacing": { "leading": 0.5 },
+                },
+                "scrollUpButton": {
+                    "rect": { "x": -27, "y": -2 }, 
+                    "repeatDelayMS": 100,
+                    "filename": "MENU\\spinner",
+                    "normalFrame": 0,
+                    "pressedFrame": 2,
+                    "onClickMessage": "NumericInputTextBoxWidgetMessage:ScrollUp",
+                },
+                "scrollDownButton": {
+                    "rect": { "x": -27, "y": 15 }, 
+                    "repeatDelayMS": 100,
+                    "filename": "MENU\\spinner",
+                    "normalFrame": 1,
+                    "pressedFrame": 3,
+                    "onClickMessage": "NumericInputTextBoxWidgetMessage:ScrollDown",
+                },
+            },
+        },
+        // Confirm/cancel buttons
+        {
+            "type": "ButtonWidget", "name": "Confirm",
+            "fields": {
+                "rect": { "x": 35, "y": 115 }, 
+                "filename": "PANEL\\buysellbtn",
+                "onClickMessage": "ModalMessage:Confirm",
+                "tooltipString": "@ok",
+                "normalFrame": 16,
+                "pressedFrame": 17,
+            },
+        },
+        {
+            "type": "ButtonWidget", "name": "Cancel",
+            "fields": {
+                "rect": { "x": 140, "y": 115 }, 
+                "filename": "PANEL\\buysellbtn",
+                "onClickMessage": "ModalMessage:Dismiss",
+                "tooltipString": "@Back",
+                "normalFrame": 10,
+                "pressedFrame": 11,
+            },
+        },
+    ]
+}

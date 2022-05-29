@@ -1,0 +1,245 @@
+{
+    "type": "VideoOptionsPanel", "name": "VideoOptionsPanel",
+    "fields": {
+        "priority": 9003,
+        "defaultWidget": "Resolution",
+        "rect": [ -400, -300, 800, 600 ],
+        "anchor": [ 0.5, 0.5 ]
+    },
+    "children": [
+        {
+            "type": "ClickCatcherWidget", "name": "catcher",
+            "fields": {
+                "fitToParent": true,
+            }
+        },
+        {
+            "type": "AnimatedImageWidget", "name": "LeftPentagram",
+            "fields": {
+                "rect": { "x": 100, "y": 250 },
+                "filename": "CURSOR/Pentspin",
+                "fps": -16,
+            }
+        },
+        {
+            "type": "AnimatedImageWidget", "name": "RightPentagram",
+            "fields": {
+                "rect": { "x": 650, "y": 250 },
+                "filename": "CURSOR/Pentspin",
+                "fps": 16,
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "Video Options",
+            "fields": {
+                "rect": { "x": 0, "y": 77, "width": 800, "height": 44 },
+                "text": "@VideoOptionsSD",
+                "fontType": "42pt",
+                "style": "$StyleSettingsTitle",
+            }
+        },
+        {
+            "type": "TableWidget", "name": "OptionsTable",
+            "fields": {
+                "rect": { "x": 0, "y": 127 },
+                "columns": [ "$OptionsTableColumn1", "$OptionsTableColumn2" ],
+                "rowHeight": "$OptionsTableRowHeight",
+                "cellPadding": "$OptionsTableCellPadding",
+                "generateFocusLinks": true,
+            },
+            "children": [
+                {
+                    "type": "TableRowWidget", "name": "Row Resolution",
+                    "children": [
+                        {
+                            "type": "TextBoxWidget", "name": "ResolutionText",
+                            "fields": {
+                                "text": "@ResolutionSD",
+                                "fontType": "30pt",
+                                "style": "$StyleSettingsText",
+                            },
+                        },
+                        {
+                            "type": "CarouselWidget", "name": "Resolution",
+                            "fields": {
+                                "rect": "$OptionsCarouselRect",
+                                "hitMargin": "$OptionsCarouselHitMargin",
+                                "states": [ "OptionsMenuLegacyGameResolution640x480", "OptionsMenuLegacyGameResolution800x600" ],
+                                "fontType": "30pt",
+                                "onUpdateMessage": "OptionsPanelMessage:SetResolution",
+                                "textClickedChangesState": true,
+                                "sound": "select",
+                                "enabledColor": "$FontColorWhite",
+                                "style": "$StyleSettingsCarousel",
+                                "focusOnMouseOver": true,
+                            }
+                        },
+                    ]
+                },
+                {
+                    "type": "TableRowWidget", "name": "Row LightingQuality",
+                    "children": [
+                        {
+                            "type": "TextBoxWidget", "name": "LightingQualityText",
+                            "fields": {
+                                "text": "@LightingQualitySD",
+                                "fontType": "30pt",
+                                "style": "$StyleSettingsText",
+                            },
+                        },
+                        {
+                            "type": "CarouselWidget", "name": "LightingQuality",
+                            "fields": {
+                                "rect": "$OptionsCarouselRect",
+                                "hitMargin": "$OptionsCarouselHitMargin",
+                                "states": [ "Low", "Medium", "High" ],
+                                "fontType": "30pt",
+                                "onUpdateMessage": "OptionsPanelMessage:SetLightingQuality",
+                                "textClickedChangesState": true,
+                                "sound": "select",
+                                "enabledColor": "$FontColorWhite",
+                                "style": "$StyleSettingsCarousel",
+                                "focusOnMouseOver": true,
+                            }
+                        },
+                    ]
+                },
+                {
+                    "type": "TableRowWidget", "name": "Row BlendedShadows",
+                    "children": [
+                        {
+                            "type": "TextBoxWidget", "name": "BlendedShadowsText",
+                            "fields": {
+                                "text": "@BlendedShadowsSD",
+                                "fontType": "30pt",
+                                "style": "$StyleSettingsText",
+                            },
+                        },
+                        {
+                            "type": "CarouselWidget", "name": "BlendedShadows",
+                            "fields": {
+                                "rect": "$OptionsCarouselRect",
+                                "hitMargin": "$OptionsCarouselHitMargin",
+                                "states": [ "Off", "On" ],
+                                "fontType": "30pt",
+                                "onUpdateMessage": "OptionsPanelMessage:SetBlendedShadows",
+                                "textClickedChangesState": true,
+                                "sound": "select",
+                                "enabledColor": "$FontColorWhite",
+                                "style": "$StyleSettingsCarousel",
+                                "focusOnMouseOver": true,
+                            }
+                        },
+                    ]
+                },
+                {
+                    "type": "TableRowWidget", "name": "Row Perspective",
+                    "children": [
+                        {
+                            "type": "TextBoxWidget", "name": "PerspectiveText",
+                            "fields": {
+                                "text": "@PerspectiveSD",
+                                "fontType": "30pt",
+                                "style": "$StyleSettingsText",
+                            },
+                        },
+                        {
+                            "type": "CarouselWidget", "name": "Perspective",
+                            "fields": {
+                                "rect": "$OptionsCarouselRect",
+                                "hitMargin": "$OptionsCarouselHitMargin",
+                                "states": [ "Off", "On" ],
+                                "fontType": "30pt",
+                                "onUpdateMessage": "OptionsPanelMessage:SetPerspective",
+                                "textClickedChangesState": true,
+                                "sound": "select",
+                                "enabledColor": "$FontColorWhite",
+                                "style": "$StyleSettingsCarousel",
+                                "focusOnMouseOver": true,
+                            }
+                        },
+                    ]
+                },
+                {
+                    "type": "TableRowWidget", "name": "Row Gamma",
+                    "children": [
+                        {
+                            "type": "TextBoxWidget", "name": "GammaText",
+                            "fields": {
+                                "text": "@GammaSD",
+                                "fontType": "30pt",
+                                "style": "$StyleSettingsText",
+                            },
+                        },
+                        {
+                            "type": "SettingsSliderWidget", "name": "Gamma",
+                            "fields": {
+                                "rect": "$OptionsSliderRect",
+                                "hitMargin": "$OptionsSliderHitMargin",
+                                "isHorizontal": true,
+                                "indicatorFilepath": "WIDGETS/optskull",
+                                "background/filename": "WIDGETS/optbarC",
+                                "background/frames": 2,
+                                "background/rect": { "y": -5 },
+                                "backgroundShading/color": [ 0.0, 0.0, 0.0, 0.5 ],
+                                "backgroundShading/rect": { "y": 2, "width": 290, "height": 29 },
+                                "onUpdateMessage": "OptionsPanelMessage:SetGamma",
+                                "focusOnMouseOver": true,
+                            }
+                        },
+                    ]
+                },
+                {
+                    "type": "TableRowWidget", "name": "Row Contrast",
+                    "children": [
+                        {
+                            "type": "TextBoxWidget", "name": "ContrastText",
+                            "fields": {
+                                "text": "@ContrastSD",
+                                "fontType": "30pt",
+                                "style": "$StyleSettingsText",
+                            }
+                        },
+                        {
+                            "type": "SettingsSliderWidget", "name": "Contrast",
+                            "fields": {
+                                "rect": "$OptionsSliderRect",
+                                "hitMargin": "$OptionsSliderHitMargin",
+                                "isHorizontal": true,
+                                "indicatorFilepath": "WIDGETS/optskull",
+                                "background/filename": "WIDGETS/optbarC",
+                                "background/rect": { "y": -5 },
+                                "background/frames": 2,
+                                "backgroundShading/rect": { "y": 2, "width": 290, "height": 30 },
+                                "backgroundShading/color": [ 0.0, 0.0, 0.0, 0.5 ],
+                                "onUpdateMessage": "OptionsPanelMessage:SetContrast",
+                                "focusOnMouseOver": true,
+                            }
+                        },
+                    ]
+                },
+                {
+                    "type": "TableRowWidget", "name": "Row Previous Menu",
+                    "children": [
+                        {
+                            "type": "ButtonWidget", "name": "Previous Menu",
+                            "fields": {
+                                "rect": "$OptionsButtonRect",
+                                "hitMargin": "$OptionsButtonHitMargin",
+                                "textString": "@PreviousMenuSD",
+                                "onClickMessage": "SettingsPanelMessage:ToggleChildPanel:VideoOptionsPanel",
+                                "sound": "select",
+                                "fontType": "30pt",
+                                "pressLabelOffset": [ 0, 0 ],
+                                "textColor": "$FontColorWhite",
+                                "acceptsReturnKey": true,
+                                "focusOnMouseOver": true,
+                                "acceptsEscKeyEverywhere": true
+                            }
+                        },
+                    ]
+                },
+            ]
+        },
+    ],
+}

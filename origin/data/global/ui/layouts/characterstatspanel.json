@@ -1,0 +1,799 @@
+{
+    "type": "CharacterStatsPanel", "name": "CharacterStatsPanel",
+    "fields": {
+        "rect": { "x": -320, "y": -240, "width": 320, "height": 432 },
+        "anchor": "$LeftPanelAnchor",
+        "defaultTextColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+    },
+    "children": [
+        {
+            "type": "ClickCatcherWidget",
+            "fields": {
+                "rect": { "width": 320, "height": 432 }
+            }
+        },
+        {
+            "type": "GridImageWidget", "name": "background",
+            "fields": {
+                "filename": "$CharacterStatsBackground",
+                "frames": 4,
+                "rows": 2
+            }
+        },
+        // Character Info
+        {
+            "type": "TextBoxWidget", "name": "CharacterName",
+            "fields": {
+                "rect": { "x": 10, "y": 9, "width": 171, "height": 15 },
+                "style": {
+                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                    "pointSize": 36,
+                    "alignment": { "h": "center", "v": "center" }
+                },
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "ClassInfo",
+            "fields": {
+                "rect": { "x": 194, "y": 9, "width": 116, "height": 15 },
+                "style": {
+                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                    "pointSize": 18,
+                    "alignment": { "h": "center", "v": "center" }
+                },
+            },
+        },
+        // Experience
+        {
+            "type": "TextBoxWidget", "name": "NextLevelXPText",
+            "fields": {
+                "rect": { "x": 193, "y": 33, "width": 116, "height": 35 },
+                "text": "@strchrnxtlvl",
+                "style": {
+                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                    "pointSize": 16,
+                    "alignment": { "h": "center" }
+                },
+                "fontType": "6pt"
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "NextLevelXP",
+            "fields": {
+                "rect": { "x": 194, "y": 43, "width": 116, "height": 35 },
+                "text": "@strchrnxtlvl",
+                "style": {
+                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                    "pointSize": 16,
+                    "alignment": { "h": "center" }
+                },
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "CurrentXPTitle",
+            "fields": {
+                "rect": { "x": 65, "y": 33, "width": 116, "height": 35 },
+                "text": "@strchrexp",
+                "style": {
+                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                    "pointSize": 16,
+                    "alignment": { "h": "center" }
+                },
+                "fontType": "6pt"
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "CurrentXP",
+            "fields": {
+                "rect": { "x": 66, "y": 43, "width": 116, "height": 35 },
+                "text": "@strchrexp",
+                "style": {
+                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                    "pointSize": 16,
+                    "alignment": { "h": "center" }
+                },
+            }
+        },
+        // Level
+        {
+            "type": "TextBoxWidget", "name": "LevelTitle",
+            "fields": { "rect": { "x": 9, "y": 33, "width": 45, "height": 35 },
+                "text": "@strchrlvl",
+                "style": {
+                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                    "pointSize": 16,
+                    "alignment": { "h": "center" }
+                },
+                "fontType": "6pt"
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "Level",
+            "fields": {
+                "rect": { "x": 11, "y": 43, "width": 45, "height": 35 },
+                "text": "@strchrlvl",
+                "style": {
+                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                    "pointSize": 16,
+                    "alignment": { "h": "center" }
+                },
+            }
+        },
+        // Base stats
+        {
+            "type": "TextBoxWidget", "name": "StrengthTitle",
+            "fields": {
+                "rect": { "x": 10, "y": 83, "width": 65, "height": 17 },
+                "text": "@strchrstr",
+                "style": {
+                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                    "pointSize": 16,
+                    "alignment": { "h": "center", "v": "center" }
+                },
+                "fontType": "6pt"
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "StrengthStat",
+            "fields": {
+                "rect": { "x": 75, "y": 83, "width": 40, "height": "$CharacterStatsStatHeight" },
+                "style": {
+                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                    "alignment": { "h": "center", "v": "center" }
+                },
+                "fontType": "16pt"
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "DexTitle",
+            "fields": {
+                "rect": { "x": 10, "y": 146, "width": 65, "height": 17 },
+                "text": "@strchrdex",
+                "style": {
+                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                    "alignment": { "h": "center", "v": "center" }
+                },
+                "fontType": "6pt"
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "DexStat",
+            "fields": {
+                "rect": { "x": 75, "y": 145, "width": 40, "height": "$CharacterStatsStatHeight" },
+                "style": {
+                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                    "alignment": { "h": "center", "v": "center" }
+                },
+                "fontType": "16pt"
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "VitalityTitle",
+            "fields": {
+                "rect": { "x": 10, "y": 231,"width": 65, "height": 17 },
+                "text": "@strchrvit",
+                "style": {
+                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                    "alignment": { "h": "center", "v": "center" }
+                },
+                "fontType": "6pt"
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "VitalityStat",
+            "fields": {
+                "rect": { "x": 75, "y": 231, "width": 40, "height": "$CharacterStatsStatHeight" },
+                "style": {
+                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                    "alignment": { "h": "center", "v": "center" }
+                },
+                "fontType": "16pt"
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "EnergyTitle",
+            "fields": {
+                "rect": { "x": 10, "y": 293, "width": 65, "height": 17 },
+                "text": "@strchreng",
+                "style": {
+                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                    "alignment": { "h": "center", "v": "center" }
+                },
+                "fontType": "6pt"
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "EnergyStat",
+            "fields": {
+                "rect": { "x": 75, "y": 292, "width": 40, "height": "$CharacterStatsStatHeight" },
+                "style": {
+                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                    "alignment": { "h": "center", "v": "center" }
+                },
+                "fontType": "16pt"
+            }
+        },
+        // Attack Stats Left Skill
+        {
+            "type": "Widget", "name": "LeftSkillStats",
+            "fields": {
+                "rect": { "x": 161, "y": 81 }
+            },
+            "children": [
+                //Attack Damage
+                {
+                    "type": "Widget", "name": "Damage",
+                    "fields": {
+                        "rect": { "x": 0, "y": 0, "width": 150, "height": 20 }
+                    },
+                    "children": [
+                        {
+                            "type": "TextBoxWidget", "name": "AttackDamageTitle",
+                            "fields": {
+                                "rect": { "x": 0, "y": 2, "width": 100, "height": 20 },
+                                "style": {
+                                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                                    "alignment": { "h": "center","v": "center" },
+                                    "options": { "newlineHandling": "standard" },
+                                    "spacing": { "leading": 0.73 },
+                                },
+                                "fontType": "6pt"
+                            }
+                        },
+                        {
+                            "type": "TextBoxWidget", "name": "AttackDamageStat",
+                            "fields": {
+                                "rect": { "x": 100, "y": 0, "width": 50, "height": 20 },
+                                "style": {
+                                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                                    "alignment": { "h": "center", "v": "center" },
+                                },
+                                "fontType": "16pt"
+                            }
+                        },
+                        {
+                            "type": "TextBoxWidget", "name": "AttackDamageStatTop",
+                            "fields": {
+                                "rect": { "x": 99, "y": "$CharacterStatsStatTopY", "width": 50, "height": 20 },
+                                "style": {
+                                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                                    "alignment": { "h": "center", "v": "top" },
+                                },
+                                "fontType": "6pt"
+                            }
+                        },
+                        {
+                            "type": "TextBoxWidget", "name": "AttackDamageStatBottom",
+                            "fields": {
+                                "rect": { "x": 99, "y": -1, "width": 50, "height": 20 },
+                                "style": {
+                                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                                    "alignment": { "h": "center", "v": "bottom" },
+                                },
+                                "fontType": "6pt"
+                            }
+                        },
+                    ]
+                },
+                // Attack Ratings
+                {
+                    "type": "Widget", "name": "Rating",
+                    "fields": {
+                        "rect": { "x": 0, "y": 64, "width": 150, "height": 20 }
+                    },
+                    "children": [
+                        {
+                            "type": "TextBoxWidget", "name": "AttackRatingTitle",
+                            "fields": {
+                                "rect": { "x": 0, "y": 0, "width": 110, "height": 20 },
+                                "style": {
+                                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                                    "alignment": { "h": "center", "v": "center" },
+                                    "options": { "newlineHandling": "standard" },
+                                    "spacing": { "leading": 0.73 },
+                                },
+                                "fontType": "6pt"
+                            }
+                        },
+                        {
+                            "type": "TextBoxWidget", "name": "AttackRatingStat",
+                            "fields": {
+                                "rect": { "x": 110, "y": 0, "width": 40, "height": 20 },
+                                "style": {
+                                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                                    "alignment": { "h": "center", "v": "center" },
+                                },
+                                "fontType": "16pt"
+                            }
+                        },
+                        {
+                            "type": "TextBoxWidget", "name": "AttackRatingStatTop",
+                            "fields": {
+                                "rect": { "x": 110, "y": "$CharacterStatsStatTopAltY", "width": 40, "height": 20 },
+                                "style": {
+                                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                                    "alignment": { "h": "center", "v": "top" },
+                                },
+                                "fontType": "6pt"
+                            }
+                        },
+                        {
+                            "type": "TextBoxWidget", "name": "AttackRatingStatBottom",
+                            "fields": {
+                                "rect": { "x": 110, "y": -3, "width": 40, "height": 20 },
+                                "style": {
+                                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                                    "alignment": { "h": "center", "v": "bottom" },
+                                },
+                                "fontType": "6pt"
+                            }
+                        },
+                    ]
+                }
+            ]
+        },
+        // Attack Stats right Skill
+        {
+            "type": "Widget", "name": "RightSkillStats",
+            "fields": {
+                "rect": { "x": 161, "y": 105 }
+            },
+            "children": [
+                //Attack Damage
+                {
+                    "type": "Widget", "name": "Damage",
+                    "fields": {
+                        "rect": { "x": 0, "y": 0,"width": 150, "height": 20 }
+                    },
+                    "children": [
+                        {
+                            "type": "TextBoxWidget", "name": "AttackDamageTitle",
+                            "fields": {
+                                "rect": { "x": 0, "y": 3, "width": 100, "height": 20 },
+                                "style": {
+                                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                                    "alignment": { "h": "center","v": "center" },
+                                    "options": { "newlineHandling": "standard" },
+                                    "spacing": { "leading": 0.73 },
+                                },
+                                "fontType": "6pt"
+                            }
+                        },
+                        {
+                            "type": "TextBoxWidget", "name": "AttackDamageStat",
+                            "fields": {
+                                "rect": { "x": 100, "y": 0, "width": 50, "height": 20 },
+                                "style": {
+                                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                                    "alignment": { "h": "center", "v": "center" },
+                                },
+                                "fontType": "16pt"
+                            }
+                        },
+                        {
+                            "type": "TextBoxWidget", "name": "AttackDamageStatTop",
+                            "fields": {
+                                "rect": { "x": 99, "y": "$CharacterStatsStatTopY", "width": 50, "height": 20 },
+                                "style": {
+                                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                                    "alignment": { "h": "center", "v": "top" },
+                                },
+                                "fontType": "6pt"
+                            }
+                        },
+                        {
+                            "type": "TextBoxWidget", "name": "AttackDamageStatBottom",
+                            "fields": {
+                                "rect": { "x": 99, "y": -1, "width": 50, "height": 20 },
+                                "style": {
+                                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                                    "alignment": { "h": "center", "v": "bottom" },
+                                },
+                                "fontType": "6pt"
+                            }
+                        },
+                    ]
+                },
+                // Attack Ratings
+                {
+                    "type": "Widget", "name": "Rating",
+                    "fields": {
+                        "rect": { "x": 0, "y": 62, "width": 150, "height": 20 }
+                    },
+                    "children": [
+                        {
+                            "type": "TextBoxWidget", "name": "AttackRatingTitle",
+                            "fields": {
+                                "rect": { "x": 0, "y": 3, "width": 110, "height": 20 },
+                                "style": {
+                                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                                    "alignment": { "h": "center", "v": "center" },
+                                    "options": { "newlineHandling": "standard" },
+                                    "spacing": { "leading": 0.73 },
+                                },
+                                "fontType": "6pt"
+                            }
+                        },
+                        {
+                            "type": "TextBoxWidget", "name": "AttackRatingStat",
+                            "fields": {
+                                "rect": { "x": 110, "y": 0, "width": 40, "height": 20},
+                                "style": {
+                                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                                    "alignment": { "h": "center", "v": "center" },
+                                },
+                                "fontType": "16pt"
+                            }
+                        },
+                        {
+                            "type": "TextBoxWidget", "name": "AttackRatingStatTop",
+                            "fields": {
+                                "rect": { "x": 110, "y": "$CharacterStatsStatTopY", "width": 40, "height": 20},
+                                "style": {
+                                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                                    "alignment": { "h": "center", "v": "top" },
+                                },
+                                "fontType": "6pt"
+                            }
+                        },
+                        {
+                            "type": "TextBoxWidget", "name": "AttackRatingStatBottom",
+                            "fields": {
+                                "rect": { "x": 110, "y": -1, "width": 40, "height": 20},
+                                "style": {
+                                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                                    "alignment": { "h": "center", "v": "bottom" },
+                                },
+                                "fontType": "6pt"
+                            }
+                        },
+                    ]
+                }
+            ]
+        },
+
+        // Defense Rating / Armor Class
+        {
+            "type": "TextBoxWidget", "name": "ArmorClassTitle",
+            "fields": {
+                "rect": { "x": 162, "y": 192, "width": 110, "height": 20 },
+                "text": "@strchrdef",
+                "style": {
+                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                    "alignment": { "h": "center", "v": "center" },
+                },
+                "fontType": "6pt"
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "ArmorClass",
+            "fields": {
+                "rect": { "x": 272, "y": 191,  "width": 37, "height": 20 },
+                "style": {
+                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                    "alignment": { "h": "center", "v": "center" },
+                },
+                "fontType": "16pt"
+            }
+        },
+        // Stamina
+        {
+            "type": "TextBoxWidget", "name": "StaminaTitle",
+            "fields": {
+                "rect": { "x": 162, "y": 231, "width": 68, "height": 20 },
+                "text": "@strchrstm",
+                "style": {
+                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                    "alignment": { "h": "center", "v": "center" },
+                },
+                "fontType": "6pt"
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "MaxStamina",
+            "fields": {
+                "rect": { "x": 232, "y": 229, "width": 40, "height": 20 },
+                "style": {
+                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                    "alignment": { "h": "center", "v": "center" },
+                },
+                "fontType": "16pt"
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "CurrentStamina",
+            "fields": {
+                "rect": { "x": 272, "y": 229, "width": 40, "height": 20 },
+                "style": {
+                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                    "alignment": { "h": "center", "v": "center" },
+                },
+                "fontType": "16pt"
+            }
+        },
+        // HP
+        {
+            "type": "TextBoxWidget", "name": "HPTitle",
+            "fields": {
+                "rect": { "x": 162, "y": 255, "width": 68, "height": 20 },
+                "text": "@strchrlif",
+                "style": {
+                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                    "alignment": { "h": "center", "v": "center" },
+                },
+                "fontType": "6pt"
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "MaxHP",
+            "fields": {
+                "rect": { "x": 232, "y": 253, "width": 40, "height": 20 },
+                "style": {
+                    "fontColor": { "r": 150, "g": 255, "b": 255, "a": 255 },
+                    "alignment": { "h": "center", "v": "center" },
+                },
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "CurrentHP",
+            "fields": {
+                "rect": { "x": 272, "y": 253, "width": 40, "height": 20 },
+                "style": {
+                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                    "alignment": { "h": "center", "v": "center" },
+                },
+            }
+        },
+        // Mana
+        {
+            "type": "TextBoxWidget", "name": "ManaTitle",
+            "fields": {
+                "rect": { "x": 162, "y": 293, "width": 68, "height": 20 },
+                "text": "@strchrman",
+                "style": {
+                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                    "alignment": { "h": "center", "v": "center" },
+               },
+              "fontType": "6pt"
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "MaxMana",
+            "fields": {
+                "rect": { "x": 232, "y": 290, "width": 40, "height": 20 },
+                "style": {
+                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                    "alignment": { "h": "center", "v": "center" },
+                },
+                "fontType": "16pt"
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "CurrentMana",
+            "fields": {
+                "rect": { "x": 272, "y": 290, "width": 40, "height": 20 },
+                "style": {
+                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                    "alignment": { "h": "center", "v": "center" },
+                },
+                "fontType": "16pt"
+            }
+        },
+        // Elemental Resistances
+        {
+            "type": "TextBoxWidget", "name": "FireResistanceTitle",
+            "fields": {
+                "rect": { "x": 175, "y": 333, "width": 95, "height": 19 },
+                "text": "@strchrfir",
+                "style": {
+                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                    "alignment": { "h": "center", "v": "center" },
+                    "options": { "newlineHandling": "standard" },
+                    "spacing": { "leading": 0.73 },
+                },
+                "fontType": "6pt"
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "FireText",
+            "fields": {
+                "rect": { "x": 271, "y": 330, "width": 42, "height": 19 },
+                "style": {
+                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                    "alignment": { "h": "center", "v": "center" },
+                },
+                "fontType": "16pt"
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "ColdResistanceTitle",
+            "fields": {
+                "rect": {  "x": 175, "y": 357, "width": 95, "height": 19 },
+                "text": "@strchrcol",
+                "style": {
+                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                    "alignment": { "h": "center", "v": "center" },
+                    "options": { "newlineHandling": "standard" },
+                    "spacing": { "leading": 0.73 },
+                },
+                "fontType": "6pt"
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "ColdText",
+            "fields": {
+                "rect": { "x": 271, "y": 354, "width": 42, "height": 19 },
+                "style": {
+                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                    "alignment": { "h": "center", "v": "center" },
+                },
+                "fontType": "16pt"
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "LightningResistanceTitle",
+            "fields": {
+                "rect": { "x": 175, "y": 381, "width": 95, "height": 19 },
+                "text": "@strchrlit",
+                "style": {
+                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                    "alignment": { "h": "center", "v": "center" },
+                    "options": { "newlineHandling": "standard" },
+                    "spacing": { "leading": 0.73 },
+                },
+                "fontType": "6pt"
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "LightningText",
+            "fields": {
+                "rect": { "x": 271, "y": 378, "width": 42, "height": 19 },
+                "style": {
+                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                    "alignment": { "h": "center", "v": "center" },
+                },
+                "fontType": "16pt"
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "PoisonResistanceTitle",
+            "fields": {
+                "rect": { "x": 175, "y": 405, "width": 95, "height": 19 },
+                "text": "@strchrpos",
+                "style": {
+                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                    "alignment": { "h": "center", "v": "center" },
+                    "options": { "newlineHandling": "standard" },
+                    "spacing": { "leading": 0.73 },
+                },
+                "fontType": "6pt"
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "PoisonText",
+            "fields": {
+                "rect": { "x": 271, "y": 402, "width": 42, "height": 19 },
+                "style": {
+                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                    "alignment": { "h": "center", "v": "center" },
+                },
+                "fontType": "16pt"
+            },
+        },
+        // container for all level up info
+        {
+            "type": "Widget", "name": "LevelUpInfo",
+            "children": [
+                {
+                    "type": "ImageWidget", "name": "ButtonBackgroundStrength",
+                    "fields": {
+                        "rect": { "x": 122, "y": 74 },
+                        "filename": "PANEL\\levelsocket",
+                    },
+                },
+                {
+                    "type": "ImageWidget", "name": "ButtonBackgroundDexterity",
+                    "fields": {
+                        "rect": { "x": 122, "y": 136 },
+                        "filename": "PANEL\\levelsocket",
+                    },
+                },
+                {
+                    "type": "ImageWidget", "name": "ButtonBackgroundVitality",
+                    "fields": {
+                        "rect": { "x": 122, "y": 222 },
+                        "filename": "PANEL\\levelsocket",
+                    },
+                },
+                {
+                    "type": "ImageWidget", "name": "ButtonBackgroundEnergy",
+                    "fields": {
+                        "rect": { "x": 122, "y": 284 },
+                        "filename": "PANEL\\levelsocket",
+                    },
+                },
+                {
+                    "type": "ButtonWidget", "name": "StrengthPointButton",
+                    "fields": {
+                        "rect": { "x": 125, "y": 76 },
+                        "filename": "PANEL\\level",
+                        "onClickMessage": "CharacterStatsPanelMessage:UseSkillPoint:0",
+                    },
+                },
+                {
+                    "type": "ButtonWidget", "name": "DexPointButton",
+                    "fields": {
+                        "rect": { "x": 125, "y": 138 },
+                        "filename": "PANEL\\level",
+                        "onClickMessage": "CharacterStatsPanelMessage:UseSkillPoint:1",
+                    },
+                },
+                {
+                    "type": "ButtonWidget", "name": "VitalityPointButton",
+                    "fields": {
+                        "rect": { "x": 125, "y": 224 },
+                        "filename": "PANEL\\level",
+                        "onClickMessage": "CharacterStatsPanelMessage:UseSkillPoint:2",
+                    },
+                },
+                {
+                    "type": "ButtonWidget", "name": "EnergyPointButton",
+                    "fields": {
+                        "rect": { "x": 125, "y": 286 },
+                        "filename": "PANEL\\level",
+                        "onClickMessage": "CharacterStatsPanelMessage:UseSkillPoint:3",
+                    },
+                },
+                //Unused Points fields
+                {
+                    "type": "ImageWidget", "name": "UnusedPointsBackground",
+                    "fields": {
+                        "rect": { "x": 3, "y": 341 },
+                        "filename": "PANEL\\skillpoints",
+                    },
+                },
+                {
+                    "type": "TextBoxWidget", "name": "UnusedPointsText",
+                    "fields": {
+                        "rect": { "x": 10, "y": 345, "width": 80, "height": 20 },
+                        "text": "@strchrstat\n@strchrrema",
+                        "style": {
+                            "fontColor": { "r": 255, "g": 0, "b": 0, "a": 255 },
+                            "pointSize": 24,
+                            "alignment": { "h": "center", "v": "center" },
+                            "options": { "newlineHandling": "standard" },
+                            "spacing": { "leading": 0.73 }
+                        },
+                        "fontType": "6pt"
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "UnusedPoints",
+                    "fields": {
+                        "rect": { "x": 91, "y": 343, "width": 40, "height": 20 },
+                        "style": {
+                            "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                            "alignment": { "h": "center", "v": "center" },
+                            "options": { "newlineHandling": "standard" },
+                        },
+                        "fontType": "16pt"
+                    }
+                },
+            ]
+        },
+
+        // Close Panel
+        {
+            "type": "ButtonWidget", "name": "CloseButton",
+            "fields": {
+                "rect": { "x": 128, "y": 388 },
+                "filename": "PANEL\\buysellbtn",
+                "onClickMessage": "CharacterStatsPanelMessage:Close",
+                "normalFrame": 10,
+                "pressedFrame": 11,
+                "tooltipString": "@strClose",
+                "tooltipOffset": { "x": 0, "y": -3 },
+            },
+        },
+    ]
+}

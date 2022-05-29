@@ -1,0 +1,86 @@
+{
+    "type": "HUDMessagePanel", "name": "HUDMessagePanel",
+    "fields": { 
+        "priority": 5000,
+        "horizontalPadding": 20, 
+    },
+    "children": [
+        {
+            "type": "ChatListWidget", "name": "GlobalChatListContainer",
+            "fields": {
+                "rect": { "x": 0, "y": 0, "width": 600, "height": 770 },
+                "isHoverList": false,
+                "direction": "vertical",
+                "chatDataSource": "ChatNotificationMessages"
+            },
+            "children": [
+                {
+                    "type": "ListItemWidget", "name": "ChatEntryTemplate",
+                    "fields": {
+                        "rect": { "x": 0, "y": 0, "width": 580, "height": 14 },
+                        "consumeMouseClicks": false,
+                    },
+                    "children": [
+                        {
+                            "type": "RectangleWidget", "name": "TextBackground",
+                            "fields": {
+                                "fitToParent": true,
+                                "color": [ 0.0, 0.0, 0.0, 0.5 ],
+                                "borderColor": [ 0, 0, 0, 0 ],
+                            },
+                        },
+                        {
+                            "type": "TextBoxWithLinksWidget", "name": "MessageText",
+                            "fields": {
+                                "fitToParent": true,
+                                "text/fontType": "Chat",
+                                "text/style": {
+                                    "alignment": { "h": "left", "v": "center" },
+                                    "options": { "newlineHandling": "standard", "pipeCharacterBehavior" : "handle", "lineWrap": true },
+                                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                                    "spacing": { "leading": 0.73 },
+                                    "highlight": { 
+                                        "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                                        "backgroundColor": { "r": 0, "g": 0, "b": 0, "a": 192 }
+                                    },
+                                },
+                            }
+                        },
+                    ]
+                },
+            ]
+        },
+        {
+            "type": "ChatListWidget", "name": "QuickChatListContainer",
+            "fields": {
+                "rect": { "x": 0, "y": 400, "width": 600, "height": 770},
+                "isHoverList": false,
+                "direction": "vertical",
+                "chatDataSource": "PartyNotificationMessages"
+            },
+            "children": [
+                {
+                    "type": "ListItemWidget", "name": "ChatEntryTemplate",
+                    "fields": {
+                        "rect": { "x": 10, "y": 0, "width": 1100, "height": 15 },
+                    },
+                    "children": [
+                        {
+                            "type": "TextBoxWithLinksWidget", "name": "MessageText",
+                            "fields": {
+                                "fitToParent": true,
+                                "text/fontType": "Chat",
+                                "text/style": {
+                                    "alignment": { "h": "left", "v": "center" },
+                                    "options": { "newlineHandling": "standard", "pipeCharacterBehavior" : "handle", "lineWrap": true },
+                                    "spacing": { "leading": 0.73 },
+                                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                                },
+                            }
+                        },
+                    ]
+                },
+            ]
+        },
+    ]
+}

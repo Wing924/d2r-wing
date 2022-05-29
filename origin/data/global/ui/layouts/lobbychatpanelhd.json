@@ -1,0 +1,317 @@
+{
+    "type": "LobbyChatPanel", "name": "LobbyChatPanel",
+    "fields": {
+        "anchor": "$LobbyAnchor",
+        "rect": "$LeftLobbyRect",
+        "priority": 10,
+        "defaultWidget": "SendMessageButton"
+    },
+    "children": [
+        // Message log
+        {
+            "type": "Widget", "name": "FriendsListAnchor",
+            "fields": {
+                "rect": { "x": 60, "y": 168},
+            }
+        },
+        {
+            "type": "ChatListWidget", "name": "ListContainer",
+            "fields": {
+                "rect": { "x": 76, "y": 184, "width": 1100, "height": 1225 },
+                "isHoverList": false,
+                "direction": "vertical",
+                "scrollControllerName": "ChatHistoryScrollBar",
+                "chatDataSource": "ChatHistory",
+                "growsBottomUp": true,
+                "itemsContainerSizeMultiplier": 5.0
+            },
+            "children": [
+                {
+                    "type": "ListItemWidget", "name": "ChatEntryTemplate",
+                    "fields": {
+                        "rect": { "x": 10, "y": 0, "width": 1085, "height": 50 },
+                    },
+                    "children": [
+                        {
+                            "type": "TextBoxWithLinksWidget", "name": "MessageText",
+                            "fields": {
+                                "fitToParent": true,
+                                "text/style": {
+                                    "fontColor": "$FontColorWhite",
+                                    "fontFace": "BlizzardGlobal",
+                                    "pointSize": "$MediumFontSize",
+                                    "options": { "pipeCharacterBehavior" : "handle", "newlineHandling": "standard", "lineWrap": true }
+                                }
+                            }
+                        },
+                    ]
+                },
+            ]
+        },
+        {
+            "type": "ImageWidget", "name": "ChatHistoryScrollBarBackground",
+            "fields": {
+                "rect": { "x": 1178, "y": 184 },
+                "filename": "Lobby\\Final\\LobbyChatScrollBar",
+            },
+            "children": [
+                {
+                    "type": "ScrollControllerWidget", "name": "ChatHistoryScrollBar",
+                    "fields": {
+                        "rect": { "x": 5, "y": 30, "width": 30, "height": 1160 },
+                        "upArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollUpBtn",
+                        "downArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollDownBtn",
+                        "barFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollIndicator",
+                        "viewName": "ListContainer",
+                    }
+                },
+            ]
+        },
+        {
+            "type": "TextBoxWidget", "name": "ChannelName",
+            "fields": {
+                "rect": { "x": 178, "y": 1453, "width": 100, "height": 100 },
+                "style": {
+                    "fontColor": "$FontColorWhite",
+                    "fontFace": "BlizzardGlobal",
+                    "pointSize": "$MediumFontSize",
+                    "options": { "pipeCharacterBehavior" : "handle" },
+                    "alignment": { "h": "left", "v": "center" },
+                }
+            }
+        },
+        // Input field
+        {
+            "type": "AutocompleteInputTextBoxWidget", "name": "InputBox",
+            "fields":
+            {
+                "rect": { "x": 298, "y": 1453, "width": 705, "height": 100 },
+                "focusIndicatorFilename": "Controller/HoverImages/ChatInput_Hover",
+                "focusIndicatorOffset": { "x": 8, "y": -2 },
+                "fontType": "Chat",
+                "fontStyle":
+                {
+                    "fontColor": "$FontColorWhite",
+                    "fontFace": "BlizzardGlobal",
+                    "pointSize": "$MediumFontSize",
+                    "alignment": { "h": "left", "v": "center" },
+                },
+                "backgroundColor": [ 0.0, 0.0, 0.0, 0.0 ],
+                "maxStringLength": 256,
+                "imeEnabled": true,
+                "onUpdateMessage": "AutocompleteInputTextboxMessage:UpdateAutocomplete",
+                "leftCursorPadding": 60
+            },
+            "children": [
+                {
+                    "type": "RectangleWidget", "name": "AutoSuggestContainer",
+                    "fields": {
+                        "rect": { "x": 0, "y": 0, "width": 382, "height": 250 },
+                        "color": [ 0.0, 0.0, 0.0, 0.7 ],
+                    },
+                    "children": [
+                        {
+                            "type": "ListWidget", "name": "AutoSuggestList",
+                            "fields": {
+                                "fitToParent": true,
+                                "selectorName": "AutoSuggestSelector",
+                                "direction": "vertical",
+                                "scrollControllerName": "AutocompleteScrollBar",
+                                "isHoverList": true,
+                            },
+                            "children": [
+                                {
+                                    "type": "HoverListItemWidget", "name": "AutoSuggestTemplate",
+                                    "fields": {
+                                        "rect": { "x": 0, "y": 0, "width": 382, "height": 54 },
+                                        "baseColor": "$FontColorGold",
+                                        "hoveredColor": "$FontColorWhite",
+                                    },
+                                    "children": [
+                                        {
+                                            "type": "ImageWidget", "name": "Image",
+                                            "fields": {
+                                                 "filename": "Lobby\\ContextMenuSlots",
+                                            }
+                                        },
+                                        {
+                                            "type": "TextBoxWidget", "name": "TextBox",
+                                            "fields": {
+                                                "rect": { "x": 10, "y": 0, "width": 372, "height": 54 },
+                                                "style": {
+                                                    "pointSize": "$MediumFontSize",
+                                                    "fontFace": "BlizzardGlobal",
+                                                    "alignment": { "h": "left", "v": "center" },
+                                                },
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Widget", "name": "AutoSuggestSelector",
+                                }
+                            ]
+                        },
+                        {
+                            "type": "ImageWidget", "name": "ScrollBarBackground",
+                            "fields": {
+                                "rect": { "x": 382, "y": 0 },
+                                "filename": "Lobby\\Final\\Chat_Context_ScrollBar",
+                            },
+                            "children": [
+                                {
+                                    "type": "ScrollControllerWidget", "name": "AutocompleteScrollBar",
+                                    "fields": {
+                                        "rect": { "x": 5, "y": 28, "width": 26, "height": 188 },
+                                        "viewName": "AutoSuggestList",
+                                        "upArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollUpBtn",
+                                        "downArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollDownBtn",
+                                        "barFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollIndicator",
+                                    }
+                                },
+                            ]
+                        },
+                    ]
+                }  
+            ]
+        },
+        {
+            "type": "ButtonWidget", "name": "SendMessageButton",
+            "fields": {
+                "rect": { "x": 1012, "y": 1458 },
+                "filename": "Lobby\\Final\\SendButton",
+                "focusIndicatorFilename": "Controller/HoverImages/ChatSendBtn_Hover",
+                "textString": "@LobbySendMessageButton",
+                "pointSize": "$SmallFontSize",
+                "textColor": "$FontColorLightGold",
+                "onClickMessage": "Lobby:SendBNetMessage",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "hoveredFrame": 3,
+                "disabledFrame": 2,
+                "disabledTint": { "a": 1.0 },
+            }
+        },
+        // Friends
+        {
+            "type": "ButtonWidget", "name": "FriendsListButton",
+            "fields": {
+                "rect": { "x": 76, "y": 1458 },
+                "filename": "Lobby\\Final\\Friends_Button",
+                "onClickMessage": "PanelManager:TogglePanel:FriendsListPanel",
+                "tooltipString": "@FriendsList",
+                "hoveredFrame": 2,
+            }
+        },
+         // Channels name + dropdown
+        {
+            "type": "ChatChannelsWidget", "name": "ChannelsDropdown",
+            "fields": {
+                "rect": {  "x": 177, "y": 91, "width": 951, "height": 47 },
+            },
+            "children": [
+                {
+                   "type": "TextBoxWidget", "name": "ChannelName",
+                    "fields": {
+                        "rect": { "x": 2, "y": -8, "width": 884, "height": 58 },
+                        "text": "",
+                        "style": {
+                            "fontFace": "BlizzardGlobal",
+                            "fontColor": "$FontColorLightGold",
+                            "options": { "pipeCharacterBehavior" : "handle" },
+                            "alignment": { "h": "center", "v": "center" },
+                        }
+                    }
+                },
+                {
+                    "type": "ToggleButtonWidget", "name": "ChannelDropDownButton",
+                    "fields": {
+                        "rect": { "x": 897, "y": -4 },
+                        "filename": "Lobby\\Final\\Dropdown_Arrows",
+                        "focusIndicatorFilename": "Controller/HoverImages/ChatDropDown_Hover",
+                        "untoggledFrame": 0,
+                        "untoggledPressedFrame": 1,
+                        "untoggledHoveredFrame": 2,
+                        "toggledFrame": 1,
+                        "toggledPressedFrame": 0,
+                        "onClickMessage": "ChatChannelsMessage:ToggleDropdown",
+                    },
+                },
+                {
+                    "type": "ImageWidget", "name": "ListBackground",
+                    "fields":
+                    {
+                        "rect": {"x": -17, "y": 64, "width": 977, "height": 609},
+                        "filename": "Lobby\\Final\\LobbyDropdownFrame"
+                    },
+                    "children": [
+                        {
+                            "type": "ListWidget", "name": "ChannelList",
+                            "fields": {
+                                "fitToParent": true,
+                                "isHoverList": true,
+                                "direction": "vertical",
+                                "itemSelectionMessage": "ChatChannelsMessage:SelectChannel",
+                                "selectorName": "Selector",
+                                "selectionChangedSound": "cursor_pass",
+                                "scrollControllerName": "ChannelsScrollController",
+                            },
+                            "children": [
+                                {
+                                    "type": "HoverListItemWidget", "name": "ChannelNameContainer",
+                                    "fields": {
+                                        "rect": { "x": 2, "y": 0, "width": 938, "height": 54 },
+                                        "baseColor": "$FontColorGold",
+                                        "hoveredColor": "$FontColorWhite",
+                                    },
+                                    "children": [
+                                        {
+                                            "type": "ImageWidget", "name": "Image",
+                                            "fields": {
+                                                "filename": "Lobby\\Final\\LobbyDropdownSlots",
+                                            }
+                                        },
+                                        {
+                                            "type": "TextBoxWidget", "name": "TextBox",
+                                            "fields": {
+                                                "rect": { "x": 10, "y": 2, "width": 930, "height": 48 },
+                                                "style": {
+                                                    "fontFace": "BlizzardGlobal",
+                                                    "alignment": { "h": "left", "v": "center" },
+                                                },
+                                            }
+                                        },
+                                    ]
+                                },
+                                {
+                                    "type": "Widget", "name": "Selector",
+                                },
+                            ]
+                        },
+                        {
+                            "type": "ImageWidget", "name": "ScrollBarBackground",
+                            "fields": {
+                                "rect": { "x": 938, "y": 3 },
+                                "filename": "Lobby\\Final\\LobbyDropdownScrollBar",
+                            },
+                            "children": [
+                                {
+                                    "type": "ScrollControllerWidget", "name": "ChannelsScrollController",
+                                    "fields": {
+                                        "rect": { "x": 5, "y": 28, "width": 30, "height": 540 },
+                                        "viewName": "ChannelList",
+                                        "upArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollUpBtn",
+                                        "downArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollDownBtn",
+                                        "barFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollIndicator",
+
+                                    }
+                                },
+                            ]
+                        }
+
+                    ]
+                }
+            ]
+        },
+    ]
+}

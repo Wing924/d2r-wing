@@ -1,0 +1,424 @@
+{
+    "type": "HirelingInventoryPanel", "name": "HirelingInventoryPanel",
+    "fields": {
+        "rect": {"x": -320, "y": -240, "width": 320, "height": 432 },
+        "anchor": "$LeftPanelAnchor",
+        "bowBackgroundFilename": "PANEL\\inv_weapons",
+        "spearBackgroundFilename": "PANEL\\inv_weapons",
+        "longswordBackgroundFilename": "PANEL\\inv_weapons",
+        "shieldBackgroundFilename": "PANEL\\inv_weapons",
+        "twoHandSwordBackgroundFilename": "PANEL\\inv_weapons",
+    },
+    "children": [
+        {
+            "type": "GridImageWidget", "name": "Background",
+            "fields": {
+                "filename": "PANEL\\NpcInv",
+                "frames": 4,
+                "rows": 2
+            },
+        },
+        {
+            "type": "ClickCatcherWidget",
+            "fields": {
+                "rect": { "width": 320, "height": 435 }
+            }
+        },
+      // inventory slots
+        {
+            "type": "InventorySlotWidget", "name": "slot_head",
+            "fields": {
+                "rect": { "x": 135, "y": 5, "width": 54, "height": 51 },
+                "cellSize": "$ItemCellSize",
+                "location": "head",
+                "gemSocketFilename": "PANEL\\gemsocket",
+                "backgroundFilename": "PANEL\\inv_helm_glove",
+                "backgroundFrame": 1,
+                "isHireable": true,
+            }
+        },
+        {
+            "type": "InventorySlotWidget", "name": "slot_torso",
+            "fields": {
+                "rect": { "x": 133, "y": 77, "width": 56, "height": 82 },
+                "cellSize": "$ItemCellSize",
+                "location": "torso",
+                "gemSocketFilename": "PANEL\\gemsocket",
+                "backgroundFilename": "PANEL\\inv_armor",
+                "backgroundOffset": { "x": 2, "y": -2 },
+                "itemOffset": { "x": 3, "y": 0 },
+                "isHireable": true,
+            }
+        },
+        {
+            "type": "InventorySlotWidget", "name": "slot_right_arm",
+            "fields": {
+                "rect": { "x": 20, "y": 45, "width": 55, "height": 112 },
+                "cellSize": "$ItemCellSize",
+                "location": "right_arm",
+                "gemSocketFilename": "PANEL\\gemsocket",
+                "backgroundFilename": "PANEL\\inv_weapons",
+                "backgroundFrame": 0,
+                "isHireable": true,
+            }
+        },
+        {
+            "type": "InventorySlotWidget", "name": "slot_left_arm",
+            "fields": {
+                "rect": { "x": 250, "y": 45, "width": 55, "height": 112 },
+                "cellSize": "$ItemCellSize",
+                "location": "left_arm",
+                "gemSocketFilename": "PANEL\\gemsocket",
+                "backgroundFilename": "PANEL\\inv_weapons",
+                "backgroundFrame": 0,
+                "isHireable": true,
+            }
+        },
+        // Character Info
+        {
+            "type": "TextBoxWidget", "name": "CharacterName",
+            "fields": {
+                "rect": { "x": 15, "y": 200, "width": 150, "height": 15 },
+                "style": {
+                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                    "alignment": { "h": "left", "v": "center" }
+                },
+                "fontType": "$HirelingInventory6pt"
+            }
+        },
+        // Experience
+        {
+            "type": "TextBoxWidget", "name": "HPTitle",
+            "fields": {
+                "rect": { "x": 180, "y": 200, "width": 50, "height": 15 },
+                "text": "@strchrlif",
+                "style": {
+                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                    "alignment": { "h": "left", "v": "center" }
+                },
+                "fontType": "$HirelingInventory6pt"
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "HPStat",
+            "fields": {
+                "rect": { "x": 238, "y": "$HirelingInventoryYHP", "width": 80, "height": 20 },
+                "style": {
+                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                    "alignment": { "h": "left", "v": "center" }
+                },
+                "fontType": "8pt"
+            }
+        },
+        // Experience
+        {
+            "type": "TextBoxWidget", "name": "NextLevelXPText",
+            "fields": {
+                "rect": { "x": 200, "y": 225, "width": 110, "height": 15 },
+                "text": "@strchrnxtlvl",
+                "style": {
+                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                    "alignment": { "h": "left", "v": "center" }
+                },
+                "fontType": "$HirelingInventory6pt"
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "NextLevelXP",
+            "fields": {
+                "rect": { "x": 198, "y": "$HirelingInventoryY0", "width": 110, "height": 15 },
+                "text": "@strchrnxtlvl",
+                "style": {
+                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                    "alignment": { "h": "right" }
+                },
+                "fontType": "8pt"
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "CurrentXPTitle",
+            "fields": {
+                "rect": { "x": 15, "y": 225, "width": 110, "height": 15 },
+                "text": "@strchrexp",
+                "style": {
+                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                    "alignment": { "h": "left" }
+                },
+                "fontType": "$HirelingInventory6pt"
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "CurrentXP",
+            "fields": {
+                "rect": { "x": 15, "y": "$HirelingInventoryY0", "width": 110, "height": 15 },
+                "text": "@strchrexp",
+                "style": {
+                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                    "alignment": { "h": "right" }
+                },
+                "fontType": "8pt"
+            }
+        },
+        // Level
+        {
+            "type": "TextBoxWidget", "name": "LevelTitle",
+            "fields": {
+                "rect": { "x": 136, "y": 225, "width": 45, "height": 15 },
+                "text": "@strchrlvl",
+                "style": {
+                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                    "alignment": { "h": "center" }
+                },
+                "fontType": "$HirelingInventory6pt"
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "Level",
+            "fields": {
+                "rect": { "x": 142, "y": "$HirelingInventoryY0", "width": 40, "height": 15 },
+                "text": "@strchrlvl",
+                "style": {
+                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                    "alignment": { "h": "right" }
+                },
+                "fontType": "8pt"
+            }
+        },
+        // Base stats
+        {
+            "type": "TextBoxWidget", "name": "StrengthTitle",
+            "fields": {
+                "rect": { "x": 15, "y": 267, "width": 95, "height": 18 },
+                "text": "@strchrstr",
+                "style": {
+                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                    "alignment": { "h": "left", "v": "center" }
+                },
+                "fontType": "$HirelingInventory6pt"
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "StrengthStat",
+            "fields": {
+                "rect": { "x": 109, "y": "$HirelingInventoryY1", "width": 45, "height": 18 },
+                "style": {
+                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                    "alignment": { "h": "right", "v": "center" }
+                },
+                "fontType": "8pt"
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "DexTitle",
+            "fields": {
+                "rect": { "x": 15, "y": 291, "width": 95, "height": 18 },
+                "text": "@strchrdex",
+                "style": {
+                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                    "alignment": { "h": "left", "v": "center" }
+                },
+                "fontType": "$HirelingInventory6pt"
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "DexStat",
+            "fields": {
+                "rect": { "x": 109, "y": "$HirelingInventoryY2", "width": 45, "height": 18 },
+                "style": {
+                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                    "alignment": { "h": "right", "v": "center" }
+                },
+                "fontType": "8pt"
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "DamageTitle",
+            "fields": {
+                "rect": { "x": 15, "y": 315, "width": 95, "height": 18 },
+                "text": "@strchrskm",
+                "style": {
+                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                    "alignment": { "h": "left", "v": "center" }
+                },
+                "fontType": "$HirelingInventory6pt"
+            }
+        },
+        {
+            "type": "Widget", "name": "Damage",
+            "fields": {
+                "rect": { "x": 109, "y": "$HirelingInventoryY3", "width": 45, "height": 18 },
+            },
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "DamageStat",
+                    "fields": {
+                        "rect": { "x": 0, "y": 0, "width": 45, "height": 18 },
+                        "style": {
+                            "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                            "alignment": { "h": "right", "v": "center" }
+                        },
+                        "fontType": "8pt"
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "DamageStatTop",
+                    "fields": {
+                        "rect": { "x": 0, "y": 4, "width": 45, "height": 18 },
+                        "style": {
+                            "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                            "alignment": { "h": "right", "v": "top" }
+                        },
+                        "fontType": "6pt"
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "DamageStatBottom",
+                    "fields": {
+                        "rect": { "x": 0, "y": 5, "width": 45, "height": 18 },
+                        "style": {
+                            "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                            "alignment": { "h": "right", "v": "bottom" }
+                        },
+                        "fontType": "6pt"
+                    }
+                },
+            ]
+        },
+        {
+            "type": "TextBoxWidget", "name": "ArmorClassTitle",
+            "fields": {
+                "rect": { "x": 15, "y": 339, "width": 95, "height": 18 },
+                "text": "@strchrdef",
+                "style": {
+                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                    "alignment": { "h": "left", "v": "center" }
+                },
+                "fontType": "$HirelingInventory6pt"
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "ArmorClass",
+            "fields": {
+                "rect": { "x": 109, "y": "$HirelingInventoryY4", "width": 45, "height": 18 },
+                "style": {
+                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                    "alignment": { "h": "right", "v": "center" }
+                },
+                "fontType": "8pt"
+            }
+        },
+        // Elemental Resistances
+        {
+            "type": "TextBoxWidget", "name": "FireTitle",
+            "fields": {
+                "rect": {  "x": 165, "y": 267, "width": 95, "height": 18 },
+                "text": "@strchrfir",
+                "style": {
+                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                    "alignment": { "h": "center", "v": "center" },
+                    "options": { "newlineHandling": "standard" },
+                    "spacing": { "leading": 0.73 },
+                },
+                "fontType": "$HirelingInventory6pt"
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "FireText",
+            "fields": {
+                "rect": { "x": 265, "y": "$HirelingInventoryY1", "width": 42, "height": 18 },
+                "style": {
+                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                    "alignment": { "h": "right", "v": "center" },
+                },
+                "fontType": "8pt"
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "ColdTitle",
+            "fields": { "rect": {  "x": 165, "y": 291, "width": 95, "height": 18 },
+                "text": "@strchrcol",
+                "style": {
+                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                    "alignment": { "h": "center", "v": "center" },
+                    "options": { "newlineHandling": "standard" },
+                    "spacing": { "leading": 0.73 },
+                },
+                "fontType": "$HirelingInventory6pt"
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "ColdText",
+            "fields": {
+                "rect": { "x": 265, "y": "$HirelingInventoryY2", "width": 42, "height": 18 },
+                "style": {
+                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                    "alignment": { "h": "right", "v": "center" },
+                },
+                "fontType": "8pt"
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "LightningTitle",
+            "fields": {
+                "rect": { "x": 165, "y": 315, "width": 95, "height": 18 },
+                "text": "@strchrlit",
+                "style": {
+                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                    "alignment": { "h": "center", "v": "center" },
+                    "options": { "newlineHandling": "standard" },
+                    "spacing": { "leading": 0.73 },
+                },
+                "fontType": "$HirelingInventory6pt"
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "LightningText",
+            "fields": {
+                "rect": { "x": 265, "y": "$HirelingInventoryY3", "width": 42, "height": 18 },
+                "style": {
+                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                    "alignment": { "h": "right", "v": "center" },
+                },
+                "fontType": "8pt"
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "PoisonTitle",
+            "fields": {
+                "rect": { "x": 166, "y": 339, "width": 95, "height": 18 },
+                "text": "@strchrpos",
+                "style": {
+                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                    "alignment": {"h": "center", "v": "center" },
+                    "options": { "newlineHandling": "standard" },
+                    "spacing": { "leading": 0.73 },
+                },
+                "fontType": "$HirelingInventory6pt"
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "PoisonText",
+            "fields": {
+                "rect": { "x": 265, "y": "$HirelingInventoryY4", "width": 42, "height": 18 },
+                "style": {
+                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                    "alignment": { "h": "right", "v": "center" },
+                },
+                "fontType": "8pt"
+            },
+        },
+        // Close Panel
+        {
+            "type": "ButtonWidget", "name": "CloseButton",
+            "fields": {
+                "rect": { "x": 272, "y": 385 },
+                "filename": "PANEL\\buysellbtn",
+                "onClickMessage": "HirelingInventoryPanelMessage:Close",
+                "normalFrame": 10,
+                "pressedFrame": 11,
+                "tooltipString": "@strClose",
+                "tooltipOffset": { "x": 0, "y": -3 },
+            },
+        },
+    ]
+}

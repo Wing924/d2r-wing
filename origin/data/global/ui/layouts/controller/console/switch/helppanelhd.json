@@ -1,0 +1,420 @@
+{
+    "basedOn": "Controller/HelpPanelHD.json",
+    "type": "HelpPanel", "name": "HelpPanel",
+    "fields": {
+        "childFormatsSwitchFullkey": [
+            { "name": "ControllerImage", "rect": { "x": -425, "y": 70}},
+            { "name": "HelpAutoMap", "rect": { "x": -634, "y": 292}},
+            { "name": "HelpAutoMapIcon", "rect": { "x": -605, "y": 293}},
+            { "name": "AutoMapLine", "rect": { "x": -488, "y": 299, "width": 360, "height": 6}},
+            { "name": "AutoMapLineV", "rect": { "x": -135, "y": 299, "width": 6, "height": 113}},
+            { "name": "HelpGameMenu", "rect": { "x": 701, "y": 295}},
+            { "name": "HelpGameMenuIcon", "rect": { "x": 584, "y": 293}},
+            { "name": "GameMenuLine", "rect": { "x": 211, "y": 299, "width": 360, "height": 6}},
+            { "name": "GameMenuLineV", "rect": { "x": 211, "y": 299, "width": 6, "height": 113}},
+            { "name": "HelpToggleSkills", "rect": { "x": -500, "y": 96}},
+            { "name": "HelpHighItems", "rect": { "x": -505, "y": 184}},
+            { "name": "HelpRun", "rect": { "x": -629, "y": 528}},
+            { "name": "HelpRunIcon", "rect": { "x": -505, "y": 528}},
+            { "name": "HelpRunIcon", "rect": { "x": -505, "y": 528}},
+            { "name": "HelpBelt1", "rect": { "x": -508, "y": 795}},
+            { "name": "HelpBelt2", "rect": { "x": -508, "y": 865}},
+            { "name": "HelpBelt3", "rect": { "x": -508, "y": 935}},
+            { "name": "HelpBelt4", "rect": { "x": -508, "y": 1005}},
+            { "name": "HelpSkill6", "rect": { "x": 586, "y": 96}},
+            { "name": "HelpSkill5", "rect": { "x": 586, "y": 184}},
+            { "name": "HelpSkill4", "rect": { "x": 586, "y": 447}},
+            { "name": "HelpSkill3", "rect": { "x": 586, "y": 516}},
+            { "name": "HelpSkill2", "rect": { "x": 586, "y": 650}},
+            { "name": "HelpSkill1", "rect": { "x": 586, "y": 582}},
+            { "name": "HelpEmote", "rect": { "x": 701, "y": 900}},
+            { "name": "HelpEmoteIcon", "rect": { "x": 586, "y": 900}},
+            { "name": "BeltLineV", "rect": { "x": -201, "y": 790, "width": 6, "height": 114}},
+            { "name": "EmoteLineV", "rect": { "x": 277, "y": 766, "width": 6, "height": 134}},
+            { "name": "SkillToggleLine", "rect": { "x": -488, "y": 96, "width": 212, "height": 6}},
+            { "name": "ShowItemsLine", "rect": { "x": -488, "y": 176, "width": 175, "height": 6}},
+            { "name": "MoveLine", "rect": { "x": -488, "y": 525, "width": 233, "height": 6}},
+            { "name": "BeltLineH", "rect": { "x": -488, "y": 900, "width": 295, "height": 6}},
+            { "name": "Skill6Line", "rect": { "x": 362, "y": 95, "width": 212, "height": 6}},
+            { "name": "Skill5Line", "rect": { "x": 395, "y": 176, "width": 175, "height": 6}},
+            { "name": "Skill4Line", "rect": { "x": 275, "y": 438, "width": 306, "height": 6}},
+            { "name": "Skill3Line", "rect": { "x": 360, "y": 520, "width": 224, "height": 6}},
+            { "name": "Skill2Line", "rect": { "x": 314, "y": 576, "width": 261, "height": 6}},
+            { "name": "Skill1Line", "rect": { "x": 229, "y": 635, "width": 352, "height": 6}},
+            { "name": "Skill1LineV", "rect": { "x": 228, "y": 558, "width": 6, "height": 80}},
+            { "name": "EmoteWeheelLine", "rect": { "x": 275, "y": 896, "width": 297, "height": 6}},
+            { "name": "HelpLegacyToggle", "rect": { "x": 314, "y": 1096}},
+        ],
+        "childFormatsSwitchDualJoyCon": [
+            { "name": "ControllerImage", "rect": { "x": -425, "y": 200}},
+            { "name": "HelpAutoMap", "rect": { "x": 25, "y": 40}},
+            { "name": "HelpAutoMapIcon", "rect": { "x": -35, "y": 100}},
+            { "name": "AutoMapLine", "rect": { "x": -5, "y": 140, "width": 6, "height": 395}},
+            { "name": "HelpGameMenu", "rect": { "x": 130, "y": 40}},
+            { "name": "HelpGameMenuIcon", "rect": { "x": 130, "y": 100}},
+            { "name": "GameMenuLine", "rect": { "x": 160, "y": 140, "width": 6, "height": 395}},
+            { "name": "HelpToggleSkills", "rect": { "x": -660, "y": 250}},
+            { "name": "HelpHighItems", "rect": { "x": -660, "y": 315}},
+            { "name": "HelpRun", "rect": { "x": -629, "y": 560}},
+            { "name": "HelpRunIcon", "rect": { "x": -505, "y": 528}},
+            { "name": "HelpBelt1", "rect": { "x": -660, "y": 795}},
+            { "name": "HelpBelt2", "rect": { "x": -660, "y": 865}},
+            { "name": "HelpBelt3", "rect": { "x": -660, "y": 935}},
+            { "name": "HelpBelt4", "rect": { "x": -660, "y": 1005}},
+            { "name": "HelpSkill6", "rect": { "x": 800, "y": 250}},
+            { "name": "HelpSkill5", "rect": { "x": 800, "y": 315}},
+            { "name": "HelpSkill4", "rect": { "x": 800, "y": 650}},
+            { "name": "HelpSkill3", "rect": { "x": 800, "y": 455}},
+            { "name": "HelpSkill2", "rect": { "x": 800, "y": 650}},
+            { "name": "HelpSkill1", "rect": { "x": 800, "y": 585}},
+            { "name": "HelpEmote", "rect": { "x": 701, "y": 900}},
+            { "name": "HelpEmoteIcon", "rect": { "x": 586, "y": 900}},
+            { "name": "BeltLineV", "rect": { "x": -60, "y": 717, "width": 6, "height": 185}},
+            { "name": "EmoteLineV", "rect": { "x": 220, "y": 717, "width": 6, "height": 185}},
+            { "name": "SkillToggleLine", "rect": { "x": -660, "y": 250, "width": 435, "height": 6}},
+            { "name": "ShowItemsLine", "rect": { "x": -660, "y": 315, "width": 435, "height": 6}},
+            { "name": "MoveLine", "rect": { "x": -660, "y": 560, "width": 460, "height": 6}},
+            { "name": "BeltLineH", "rect": { "x": -660, "y": 900, "width": 600, "height": 6}},
+            { "name": "Skill6Line", "rect": { "x": 365, "y": 250, "width": 435, "height": 6}},
+            { "name": "Skill5Line", "rect": { "x": 365, "y": 315, "width": 435, "height": 6}},
+            { "name": "Skill4Line", "rect": { "x": 360, "y": 455, "width": 440, "height": 6}},
+            { "name": "Skill3Line", "rect": { "x": 425, "y": 520, "width": 375, "height": 6}},
+            { "name": "Skill2Line", "rect": { "x": 355, "y": 585, "width": 445, "height": 6}},
+            { "name": "Skill1Line", "rect": { "x": 280, "y": 650, "width": 520, "height": 6}},
+            { "name": "Skill1LineV", "rect": { "x": 280, "y": 535, "width": 6, "height": 115}},
+            { "name": "EmoteWeheelLine", "rect": { "x": 220, "y": 900, "width": 580, "height": 6}},
+            { "name": "HelpLegacyToggle", "rect": { "x": 314, "y": 1096}},
+        ],
+        "childFormatsSwitchSingleJoyCon": [
+            { "name": "ControllerImage", "rect": { "x": -425, "y": 200}},
+            { "name": "HelpAutoMap", "rect": { "x": 25, "y": 40}},
+            { "name": "HelpAutoMapIcon", "rect": { "x": -35, "y": 100}},
+            { "name": "AutoMapLine", "rect": { "x": -5, "y": 140, "width": 6, "height": 395}},
+            { "name": "HelpGameMenu", "rect": { "x": 130, "y": 40}},
+            { "name": "HelpGameMenuIcon", "rect": { "x": 130, "y": 100}},
+            { "name": "GameMenuLine", "rect": { "x": 160, "y": 140, "width": 6, "height": 395}},
+            { "name": "HelpToggleSkills", "rect": { "x": -660, "y": 250}},
+            { "name": "HelpHighItems", "rect": { "x": -660, "y": 315}},
+            { "name": "HelpRun", "rect": { "x": -629, "y": 560}},
+            { "name": "HelpRunIcon", "rect": { "x": -505, "y": 528}},
+            { "name": "HelpBelt1", "rect": { "x": -660, "y": 795}},
+            { "name": "HelpBelt2", "rect": { "x": -660, "y": 865}},
+            { "name": "HelpBelt3", "rect": { "x": -660, "y": 935}},
+            { "name": "HelpBelt4", "rect": { "x": -660, "y": 1005}},
+            { "name": "HelpSkill6", "rect": { "x": 800, "y": 250}},
+            { "name": "HelpSkill5", "rect": { "x": 800, "y": 315}},
+            { "name": "HelpSkill4", "rect": { "x": 800, "y": 650}},
+            { "name": "HelpSkill3", "rect": { "x": 800, "y": 455}},
+            { "name": "HelpSkill2", "rect": { "x": 800, "y": 650}},
+            { "name": "HelpSkill1", "rect": { "x": 800, "y": 585}},
+            { "name": "HelpEmote", "rect": { "x": 701, "y": 900}},
+            { "name": "HelpEmoteIcon", "rect": { "x": 586, "y": 900}},
+            { "name": "BeltLineV", "rect": { "x": -60, "y": 717, "width": 6, "height": 185}},
+            { "name": "EmoteLineV", "rect": { "x": 220, "y": 717, "width": 6, "height": 185}},
+            { "name": "SkillToggleLine", "rect": { "x": -660, "y": 250, "width": 435, "height": 6}},
+            { "name": "ShowItemsLine", "rect": { "x": -660, "y": 315, "width": 435, "height": 6}},
+            { "name": "MoveLine", "rect": { "x": -660, "y": 560, "width": 460, "height": 6}},
+            { "name": "BeltLineH", "rect": { "x": -660, "y": 900, "width": 600, "height": 6}},
+            { "name": "Skill6Line", "rect": { "x": 365, "y": 250, "width": 435, "height": 6}},
+            { "name": "Skill5Line", "rect": { "x": 365, "y": 315, "width": 435, "height": 6}},
+            { "name": "Skill4Line", "rect": { "x": 360, "y": 455, "width": 440, "height": 6}},
+            { "name": "Skill3Line", "rect": { "x": 425, "y": 520, "width": 375, "height": 6}},
+            { "name": "Skill2Line", "rect": { "x": 355, "y": 585, "width": 445, "height": 6}},
+            { "name": "Skill1Line", "rect": { "x": 280, "y": 650, "width": 520, "height": 6}},
+            { "name": "Skill1LineV", "rect": { "x": 280, "y": 535, "width": 6, "height": 115}},
+            { "name": "EmoteWeheelLine", "rect": { "x": 220, "y": 900, "width": 580, "height": 6}},
+            { "name": "HelpLegacyToggle", "rect": { "x": 314, "y": 1096}},
+        ],
+        "childFormatsSwitchHandheld": [
+            { "name": "ControllerImage", "rect": { "x": -425, "y": 70}},
+            { "name": "HelpAutoMap", "rect": { "x": -634, "y": 292}},
+            { "name": "HelpAutoMapIcon", "rect": { "x": -605, "y": 293}},
+            { "name": "AutoMapLine", "rect": { "x": -488, "y": 299, "width": 360, "height": 6}},
+            { "name": "AutoMapLineV", "rect": { "x": -135, "y": 299, "width": 6, "height": 113}},
+            { "name": "HelpGameMenu", "rect": { "x": 701, "y": 295}},
+            { "name": "HelpGameMenuIcon", "rect": { "x": 584, "y": 293}},
+            { "name": "GameMenuLine", "rect": { "x": 211, "y": 299, "width": 360, "height": 6}},
+            { "name": "GameMenuLineV", "rect": { "x": 211, "y": 299, "width": 6, "height": 113}},
+            { "name": "HelpToggleSkills", "rect": { "x": -500, "y": 96}},
+            { "name": "HelpHighItems", "rect": { "x": -505, "y": 184}},
+            { "name": "HelpRun", "rect": { "x": -629, "y": 528}},
+            { "name": "HelpRunIcon", "rect": { "x": -505, "y": 528}},
+            { "name": "HelpBelt1", "rect": { "x": -508, "y": 795}},
+            { "name": "HelpBelt2", "rect": { "x": -508, "y": 865}},
+            { "name": "HelpBelt3", "rect": { "x": -508, "y": 935}},
+            { "name": "HelpBelt4", "rect": { "x": -508, "y": 1005}},
+            { "name": "HelpSkill6", "rect": { "x": 586, "y": 96}},
+            { "name": "HelpSkill5", "rect": { "x": 586, "y": 184}},
+            { "name": "HelpSkill4", "rect": { "x": 586, "y": 447}},
+            { "name": "HelpSkill3", "rect": { "x": 586, "y": 516}},
+            { "name": "HelpSkill2", "rect": { "x": 586, "y": 650}},
+            { "name": "HelpSkill1", "rect": { "x": 586, "y": 582}},
+            { "name": "HelpEmote", "rect": { "x": 701, "y": 900}},
+            { "name": "HelpEmoteIcon", "rect": { "x": 586, "y": 900}},
+            { "name": "BeltLineV", "rect": { "x": -201, "y": 790, "width": 6, "height": 114}},
+            { "name": "EmoteLineV", "rect": { "x": 277, "y": 766, "width": 6, "height": 134}},
+            { "name": "SkillToggleLine", "rect": { "x": -488, "y": 96, "width": 212, "height": 6}},
+            { "name": "ShowItemsLine", "rect": { "x": -488, "y": 176, "width": 175, "height": 6}},
+            { "name": "MoveLine", "rect": { "x": -488, "y": 525, "width": 233, "height": 6}},
+            { "name": "BeltLineH", "rect": { "x": -488, "y": 900, "width": 295, "height": 6}},
+            { "name": "Skill6Line", "rect": { "x": 362, "y": 95, "width": 212, "height": 6}},
+            { "name": "Skill5Line", "rect": { "x": 395, "y": 176, "width": 175, "height": 6}},
+            { "name": "Skill4Line", "rect": { "x": 275, "y": 438, "width": 306, "height": 6}},
+            { "name": "Skill3Line", "rect": { "x": 360, "y": 520, "width": 224, "height": 6}},
+            { "name": "Skill2Line", "rect": { "x": 314, "y": 576, "width": 261, "height": 6}},
+            { "name": "Skill1Line", "rect": { "x": 229, "y": 635, "width": 352, "height": 6}},
+            { "name": "Skill1LineV", "rect": { "x": 228, "y": 558, "width": 6, "height": 80}},
+            { "name": "EmoteWeheelLine", "rect": { "x": 275, "y": 896, "width": 297, "height": 6}},
+            { "name": "HelpLegacyToggle", "rect": { "x": 314, "y": 1096}},
+        ],
+    },
+    "children": [
+        {
+            "type": "ClickCatcherWidget", "name": "catcher",
+        },
+        {
+            "type": "ImageWidget", "name": "background",
+        },
+        {
+            "type": "Widget", "name": "CenterSection",
+            "children": [
+                {
+                    "type": "NineTileImageWidget", "name": "HelpTile",
+                },
+                {
+                    "type": "ImageWidget", "name": "ControllerImage",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "Title",
+                },
+                // Mapping Labels
+                {
+                    "type": "TextBoxWidget", "name": "MapLabel",
+                },
+                // Controller Labels Left Column
+                {
+                    "type": "TextBoxWidget", "name": "HelpToggleSkills",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "HelpHighItems",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "HelpRun",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "HelpRunIcon",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "HelpBelt1",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "HelpBelt2",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "HelpBelt3",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "HelpBelt4",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "HelpAutoMap",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "HelpAutoMapIcon",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "HelpLegacyToggle",
+                },
+                // Controller Labels Right Column
+                {
+                    "type": "TextBoxWidget", "name": "HelpSkill6",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "HelpSkill5",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "HelpSkill4",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "HelpSkill3",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "HelpSkill2",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "HelpSkill1",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "HelpGameMenu",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "HelpGameMenuIcon",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "HelpEmote",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "HelpEmoteIcon",
+                },
+                // Gold text
+                {
+                    "type": "TextBoxWidget", "name": "HelpHealth",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "HelpRunToggle",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "HelpExperienceBar",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "HelpBelt",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "NewStatsAndSkills",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "Helpmana",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "HelpSkillsBar",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "HelpSkillsBackBar",
+                },
+                // Indicator lines
+                {
+                    "type": "IndicatorLineWidget", "name": "LifeLine",
+                },
+                {
+                    "type": "IndicatorLineWidget", "name": "RunWalkLine",
+                },
+                {
+                    "type": "IndicatorLineWidget", "name": "ExperienceBarLine",
+                },
+                {
+                    "type": "IndicatorLineWidget", "name": "BeltLine",
+                },
+                {
+                    "type": "IndicatorLineWidget", "name": "NewStatsAndSkillsLine",
+                },
+                {
+                    "type": "IndicatorLineWidget", "name": "ManaLine",
+                },
+                {
+                    "type": "IndicatorLineWidget", "name": "SkillsLine",
+                },
+                {
+                    "type": "IndicatorLineWidget", "name": "SkillsBackLine",
+                },
+                // Controller Lines
+                {
+                    "type": "IndicatorLineWidget", "name": "AutoMapLine",
+                },
+                {
+                    "type": "IndicatorLineWidget", "name": "AutoMapLineV",
+                },
+                {
+                    "type": "IndicatorLineWidget", "name": "GameMenuLine",
+                },
+                {
+                    "type": "IndicatorLineWidget", "name": "BeltLineV",
+                },
+                {
+                    "type": "IndicatorLineWidget", "name": "EmoteLineV",
+                },
+                {
+                    "type": "IndicatorLineWidget", "name": "SkillToggleLine",
+                },
+                {
+                    "type": "IndicatorLineWidget", "name": "SkillToggleLineV",
+                },
+                {
+                    "type": "IndicatorLineWidget", "name": "ShowItemsLine",
+                },
+                {
+                    "type": "IndicatorLineWidget", "name": "MoveLine",
+                },
+                {
+                    "type": "IndicatorLineWidget", "name": "BeltLineH",
+                },
+                {
+                    "type": "IndicatorLineWidget", "name": "Skill6Line",
+                },
+                {
+                    "type": "IndicatorLineWidget", "name": "Skill6LineV",
+                },
+                {
+                    "type": "IndicatorLineWidget", "name": "Skill5Line",
+                },
+                {
+                    "type": "IndicatorLineWidget", "name": "Skill4Line",
+                },
+                {
+                    "type": "IndicatorLineWidget", "name": "Skill3Line",
+                },
+                {
+                    "type": "IndicatorLineWidget", "name": "Skill2Line",
+                },
+                {
+                    "type": "IndicatorLineWidget", "name": "Skill1Line",
+                },
+                {
+                    "type": "IndicatorLineWidget", "name": "Skill1LineV",
+                },
+                {
+                    "type": "IndicatorLineWidget", "name": "EmoteWeheelLine",
+                },
+                {
+                    "type": "IndicatorLineWidget", "name": "GameMenuLineV",
+                },
+            ]
+        },
+        // Right Anchored Panel
+        {
+            "type": "Widget", "name": "RightSection",
+            "children": [
+                // Warnings
+                {
+                    "type": "ImageWidget", "name": "HostileWarning",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "HostileLabel",
+                },
+                {
+                    "type": "DurabilityWidget", "name": "DurabilityWarning",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "DurabilityLabel",
+                },
+                {
+                    "type": "ImageWidget", "name": "AmmoWarning",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "AmmoLabel",
+                },
+            ]
+        },
+        // Left Anchored Panel
+        {
+            "type": "Widget", "name": "LeftSection",
+            "children": [
+                // Ally Display
+                {
+                    "type": "ImageWidget", "name": "AllyPortait1",
+                },
+                {
+                    "type": "ImageWidget", "name": "AllyPortait2",
+                },
+                {
+                    "type": "ImageWidget", "name": "AllyPortait3",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "AllyLabel",
+                },
+            ]
+        },
+
+
+
+    ]
+}

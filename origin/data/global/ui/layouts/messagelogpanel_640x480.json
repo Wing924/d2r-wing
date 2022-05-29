@@ -1,0 +1,134 @@
+{
+    "type": "MessageLogPanel", "name": "MessageLogPanel_640x480",
+    "fields": {
+        "rect": { "x": -310, "y": 30, "width": 620, "height": 350 },
+        "anchor": { "x": 0.5, "y": 0.0 },
+        "priority": 5000
+    },
+    "children": [
+        {
+            "type": "ClickCatcherWidget", "name": "ClickCatcher",
+            "fields": {
+                "fitToParent": true,
+            }
+        },
+        {
+            "type": "NineTileImageWidget", "name": "MessageLogTitle",
+            "fields": {
+                "rect": { "x": 0, "y": 0, "width": 620, "height": 35 },
+                "filename": "MENU/boxpieces",
+                "tileFrames": "$NineTileBoxPiecesFrames",
+                "backgroundColor": [ 0.0, 0.0, 0.0, 0.5 ]
+            },
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "Title",
+                    "fields": {
+                        "fitToParent": true,
+                        "text": "@CfgMessageLog",
+                        "style": {
+                            "fontColor": { "r": 199, "g": 179, "b": 119, "a": 255 },
+                            "alignment": { "h": "center", "v": "center" },
+                            "options": { "pipeCharacterBehavior" : "handle", "newlineHandling": "standard" }
+                        }
+                    }
+                },
+            ]
+        },
+        {
+            "type": "NineTileImageWidget", "name": "MessageLogBorder",
+            "fields": {
+                "rect": { "x": 0, "y": 36, "width": 620, "height": 280 },
+                "filename": "MENU/boxpieces",
+                "tileFrames": "$NineTileBoxPiecesFrames",
+                "backgroundColor": [ 0.0, 0.0, 0.0, 0.5 ]
+            },
+            "children": [
+                {
+                    "type": "ChatListWidget", "name": "ListContainer",
+                    "fields": {
+                        "fitToParent": true,
+                        "isHoverList": false,
+                        "direction": "vertical",
+                        "scrollControllerName": "ScrollBar",
+                        "chatDataSource": "ChatHistory"
+                    },
+                    "children": [
+                        {
+                            "type": "ListItemWidget", "name": "ChatEntryTemplate",
+                            "fields": {
+                                "rect": { "x": 10, "y": 0, "width": 560, "height": 17 },
+                                "focusOnMouseOver": false,
+                            },
+                            "children": [
+                                {
+                                    "type": "TextBoxWithLinksWidget", "name": "MessageText",
+                                    "fields": {
+                                        "fitToParent": true,
+                                        "text/fontType": "Chat",
+                                        "text/style": {
+                                            "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                                            "alignment": { "h": "left", "v": "center" },
+                                            "options": { "pipeCharacterBehavior" : "handle", "newlineHandling": "standard", "lineWrap": true },
+                                            "spacing": { "leading": 0.73 },
+                                        },
+                                    }
+                                },
+                            ]
+                        },
+                    ]
+                },
+                {
+                    "type": "NineTileImageWidget", "name": "ScrollBarBackground",
+                    "fields": {
+                        "rect": { "x": 600, "y": 15, "width": 12, "height": 246 },
+                        "filename": "MENU/slider_background",
+                        "tileFrames": "$NineTileNoFrames",
+                        "tileFrames": { "center": 0 }
+                    },
+                },
+                {
+                    "type": "ScrollControllerWidget", "name": "ScrollBar",
+                    "fields": { 
+                        "rect": { "x": 600, "y": 15, "width": 12, "height": 250 },
+                        "upArrowFilepath": "MENU/slider_up_button",
+                        "downArrowFilepath": "MENU/slider_down_button",
+                        "barFilepath": "MENU/slider_bar",
+                        "viewName": "ListContainer",
+                    }
+                },
+            ]
+        },
+        {
+            "type": "NineTileImageWidget", "name": "MessageLogCancelBorder",
+            "fields": {
+                "rect": { "x": 0, "y": 322, "width": 620, "height": 25 },
+                "filename": "MENU/boxpieces",
+                "tileFrames": "$NineTileBoxPiecesFrames",
+                "backgroundColor": [ 0.0, 0.0, 0.0, 0.5 ]
+            },
+            "children": [
+                {
+                    "type": "FocusableWidget", "name": "CancelButton",
+                    "fields": {
+                        "fitToParent": true,
+                    },
+                    "children": [
+                        {
+                            "type": "TextBoxWidget", "name": "CancelButtonText",
+                            "fields": {
+                                "fitToParent": true,
+                                "style": {
+                                    "pointSize": 24,
+                                    "alignment": { "h": "center", "v": "center" },
+                                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                                },
+                                "text": "@strClose",
+                            }
+                        }
+                    ]
+                },
+            ]
+        },
+    ]
+}

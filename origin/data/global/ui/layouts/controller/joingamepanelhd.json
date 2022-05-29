@@ -1,0 +1,227 @@
+{
+    "basedOn": "JoinGamePanelHD.json",
+    "type": "JoinGamePanel", "name": "JoinGamePanel",
+    "fields": {
+        "defaultWidget": "NameInput",
+    },
+    "children": [
+        {
+            "type": "ImageWidget", "name": "Background",
+        },
+        {
+            "type": "ClickCatcherWidget",
+        },
+        {
+            "type": "TextBoxWidget", "name": "GameNameInputTitle",
+            "children": [
+                {
+                    "type": "InputTextBoxWidget", "name": "NameInput",
+                    "fields": {
+                        "focusIndicatorFilename": "Controller/HoverImages/JoinGameInput_Hover",
+                        "navigation": {
+                            "left": { "panelBoundary": true },
+                            "right": { "name": "PasswordInput" },
+                            "down": { "name": "down" },
+                        },
+                    }
+                },
+            ]
+        },
+        {
+            "type": "TextBoxWidget", "name": "Password",
+            "children": [
+                {
+                    "type": "MaskedInputTextBoxWidget", "name": "PasswordInput",
+                    "fields": {
+                        "focusIndicatorFilename": "Controller/HoverImages/JoinGameInput_Hover",
+                        "navigation": {
+                            "left": { "name": "NameInput" },
+                            "right": { "name": "Refresh" },
+                            "down": { "name": "down" },
+                        },
+                    }
+                },
+            ]
+        },
+        {
+            "type": "ButtonWidget", "name": "Refresh",
+            "fields": {
+                "focusIndicatorFilename": "Controller/HoverImages/Checkbox_Hover",
+                "focusIndicatorOffset": { "x": 0, "y": -3 },
+                "navigation": {
+                    "left": { "name": "PasswordInput" },
+                    "right": { "name": "Settings" },
+                    "down": { "name": "down" }
+                }
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "GameNameTitle",
+        },
+        {
+            "type": "TextBoxWidget", "name": "NumPlayersTitle",
+        },
+        {
+            "type": "ListWidget", "name": "GamesList",
+            "fields": {
+                "itemSelectionMessage": "JoinGame:ControllerSelectGame",
+            },
+            "children": [
+                {
+                    "type": "ListItemWidget", "name": "Template",
+                    "fields": {
+                        "focusIndicatorFilename": "Controller/HoverImages/JoinGameSlat_Hover",
+                        "navigation": {
+                            "up": { "name": "NameInput" },
+                            "down": { "name": "JoinButton" },
+                            "left": { "panelBoundary": true },
+                        }
+                    },
+                    "children": [
+                        {
+                            "type": "ImageWidget", "name": "Image",
+                        },
+                        {
+                            "type": "TextBoxWidget", "name": "GameName",
+                        },
+                        {
+                            "type": "TextBoxWidget", "name": "PlayerCount",
+                        }
+                    ]
+                },
+                {
+                    "type": "ListWidgetFocusRedirector", "name": "GameListRedirector",
+                    "children": [
+                        {
+                            "type": "ListWidgetFocusReceiver", "name": "up",
+                        },
+                        {
+                            "type": "ListWidgetFocusReceiver", "name": "down",
+                        },
+                        {
+                            "type": "ListWidgetFocusReceiver", "name": "left",
+                        },
+                        {
+                            "type": "ListWidgetFocusReceiver", "name": "right",
+                        }
+                    ],
+                },
+                {
+                    "type": "RectangleWidget", "name": "JoinGameSelector",
+                },
+            ]
+        },
+        {
+            "type": "ImageWidget", "name": "ScrollBarBG",
+        },
+        {
+            "type": "ScrollControllerWidget", "name": "GamesListScrollBar",
+        },
+        {
+            "type": "TabBarWidget", "name": "DetailsTabs",
+        },
+        {
+            "type": "Widget", "name": "PlayerListContainer",
+            "children": [
+                {
+                    "type": "ListWidget", "name": "PlayersList",
+                    "children": [
+                        {
+                            "type": "ListItemWidget", "name": "PlayerEntry",
+                            "fields": { "rect": { "x": 0, "y": 0, "width": 410, "height": 98 } },
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "PlayerName",
+                                },
+                                {
+                                    "type": "TextBoxWidget", "name": "PlayerDescription",
+                                },
+                            ]
+                        },
+
+                    ]
+                },
+                {
+                    "type": "ScrollControllerWidget", "name": "PlayerListScrollBar",
+                },
+            ]
+        },
+
+        {
+            "type": "Widget", "name": "GameDescriptionContainer",
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "ElapsedTimeLabel",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "ElapsedTime",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "LevelRangeLabel",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "LevelRange",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "ItemSpacingLabel",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "ItemSpacing",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "DescriptionLabel",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "Description",
+                },
+            ]
+        },
+        {
+            "type": "ButtonWidget", "name": "JoinButton",
+            "fields": {
+                "focusIndicatorFilename": "Controller/HoverImages/FrontEndButtonMed",
+                "navigation": {
+                    "down": { "panelBoundary": true },
+                    "left": { "panelBoundary": true },
+                    "up": { "name": "up" }
+                }
+            }
+        },
+        {
+            "type": "ButtonWidget", "name": "Settings",
+            "fields": {
+                "focusIndicatorFilename": "Controller/HoverImages/Checkbox_Hover",
+                "focusIndicatorOffset": { "x": 0, "y": -3 },
+                "navigation": {
+                    "left": { "name": "Refresh" },
+                    "down": { "name": "down" }
+                },
+            },
+            "children": [
+                {
+                    "type": "ListWidget", "name": "DifficultyList",
+                    "children": [
+                        {
+                            "type": "ListItemWidget", "name": "DifficultyTemplate",
+                            "fields": {
+                                "focusIndicatorFilename": "Controller/HoverImages/ContextMenu_Hover",
+                                "focusIndicatorOffset": { "x": -10 },
+                            },
+                            "children": [
+                                {
+                                    "type": "ToggleButtonWidget", "name": "ToggleItem",
+                                    "fields": {
+                                        "focusIndicatorFilename": "Controller/HoverImages/DropDown_Hover",
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Widget", "name": "DifficultySelector",
+                        }
+                    ]
+                },
+            ]
+        },
+    ]
+}

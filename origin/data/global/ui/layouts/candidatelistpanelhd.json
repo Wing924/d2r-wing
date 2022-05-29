@@ -1,0 +1,60 @@
+{
+    "type": "CandidateListPanel", "name": "CandidateListPanel",
+    "fields": {
+        "priority": 2147483647,
+    },
+    "children": [
+        {
+            "type": "ListWidget", "name": "IMECandidateList",
+            "fields": { 
+                "rect": { "x": 0, "y": -85, "width": 880, "height": 500 },
+                "selectorName": "IMECandidateListSelector",
+                "direction": "reversevertical",
+                "scrollControllerName": "IMECandidateListScrollBar",
+            },
+            "children": [
+                {
+                    "type": "HoverListItemWidget", "name": "IMECandidateListTemplate",
+                    "fields": { 
+                        "rect": { "x": 0, "y": 30, "width": 382, "height": 40 },
+                        "baseColor": "$FontColorGold",
+                        "hoveredColor": "$FontColorWhite",
+                    },
+                    "children": [
+                        {
+                            "type": "GrowableImageWidget", "name": "Image",
+                            "rect": { "x": 0, "y": 0, "width": 382, "height": 0 },
+                            "fields": {
+                                "filename": "PANEL/DropdownTile_Center",
+                                "leftCap/filename": "PANEL/DropdownTile_Left",
+                                "rightCap/filename": "PANEL/DropdownTile_Right",
+                                "leftCapOffset": { "x": 0, "y": 0 },
+                                "rightCapOffset": { "x": 0, "y": 0 },
+                            }
+                        },
+                        {
+                            "type": "TextBoxWidget", "name": "TextBox",
+                            "fields": { 
+                                "rect": { "x": 10, "y": -28, "width": 372, "height": 54 },
+                                "style": {
+                                    "pointSize": "$SmallFontSize",
+                                    "fontFace": "BlizzardGlobal",
+                                    "alignment": { "h": "left", "v": "center" }, 
+                                },
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "Widget", "name": "IMECandidateListSelector",
+                },
+                {
+                    "type": "ScrollControllerWidget", "name": "IMECandidateListScrollBar",
+                    "fields": {
+                        "viewName": "IMECandidateList",
+                    }
+                },
+            ]
+        },
+    ]
+}

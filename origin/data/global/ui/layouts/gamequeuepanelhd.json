@@ -1,0 +1,44 @@
+{
+    "type": "GameQueuePanel", "name": "GameQueuePanel",
+    "fields": {
+        "priority": 5,
+        "anchor": {"x": 0.5},
+        "rect": {"x": -500, "y": 1680, "width": 1000, "height": 150}
+    },
+    "children": [
+        {
+            "type": "NineTileImageWidget", "name": "TooltipBackGround",
+            "fields": {
+                "fitToParent": true,
+                "filename": "PANEL/TooltipBorder/TooltipBorder",
+                "backgroundColor": [ 0.0, 0.0, 0.0, 0.80 ],
+                "tileScale": 1.0,
+            },
+        },
+        {
+            "type": "TextBoxWidget", "name": "WaitingPrompt",
+            "fields": { 
+                "rect": { "x": 0, "y": 15, "width": 1000, "height": 60 }, 
+                "text": "@GameQueuePrompt",
+                "style": {
+                    "fontColor": "$FontColorGold", 
+                    "pointSize": "$MediumFontSize",
+                    "options": { "newlineHandling": "standard"},
+                    "alignment": { "h": "center", "v": "center" },
+                },
+            },
+        },
+        {
+            "type": "TextBoxWidget", "name": "ElapsedTimeText",
+            "fields": { 
+                "rect": { "x": 0, "y": 75, "width": 1000, "height": 60 }, 
+                "style": {
+                    "fontColor": "$FontColorGold", 
+                    "pointSize": "$MediumFontSize",
+                    "options": { "newlineHandling": "standard"},
+                    "alignment": { "h": "center", "v": "center" },
+                },
+            },
+        },
+    ]
+}

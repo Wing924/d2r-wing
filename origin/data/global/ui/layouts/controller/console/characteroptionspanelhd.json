@@ -1,0 +1,356 @@
+{
+    "type": "CharacterOptionsPanel", "name": "CharacterOptionsPanel",
+    "fields": {
+        "anchor": {"x": 0.5},
+        "fitToParent": true,
+        "defaultWidget": "LadderCenter",
+        "priority": 1,
+        "inactiveDescriptionFontColor": "$FontColorDarkGrayBlue",
+        "activeDescriptionFontColor": "$FontColorWhite",
+    },
+    "children": [
+        {
+            "type": "ClickCatcherWidget", "name": "ClickCatcher",
+            "fields": {
+                "fitToParent": true,
+                "anchor": {"x": -0.5}
+            }
+        },
+        {
+            "type": "RectangleWidget", "name": "BackgroundTint",
+            "fields": {
+                "fitToParent": true,
+                "anchor": {"x": -0.5},
+                "color": [0, 0, 0, 0.8]
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "Title",
+            "fields": {
+                "rect": { "x": -1000, "y": 292, "width": 2000, "height": 100 },
+                "text": "@GameModes",
+                "style": {
+                    "fontColor": "$FontColorGoldYellow",
+                    "alignment": { "h": "center" },
+                    "pointSize": "$XExtraLargeFontSize",
+                },
+            }
+        },
+
+
+        // Ladder section
+        {
+            "type": "ImageWidget", "name": "LadderFlag",
+            "fields":
+            {
+                "rect": {"x":-122, "y":493},
+                "anchor": {"x":0, "y":0},
+                "filename":"Controller\\FrontEnd\\CharacterCreate\\Character_Mode_Select_Flags_Ladder",
+
+            }
+        },
+        {
+            "type": "ToggleButtonWidget", "name": "LadderToggle",
+            "fields": {
+                "rect": { "x": 173, "y": 493, "width": 1471, "height": 360 },
+                "filename": "Controller\\FrontEnd\\CharacterCreate\\CharacterCreate_RightPanel",
+                "onClickMessage": "ConsoleCharacterCreate:ToggleCharacterOptions:0",
+                "focusIndicatorFilename": "Controller/HoverImages/CharacterOptions_Hover",
+                "focusIndicatorOffset": {"x":54, "y":0},
+                "untoggledFrame": 1,
+                "toggledFrame": 0,
+                "disabledTint": [1, 0, 0, 0.75],
+                "sound": "cursor_character_flag_hd",
+                "navigation": {
+                    "left": {"name": "LadderCenter"},
+                    "down": {"name": "HardcoreCenter"}
+                },
+            },
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "ButtonTitle",
+                    "fields": {
+                        "rect": { "x": 160, "y": 40, "width": 690, "height": 60 },
+                        "text": "@CharacterSelectPanelLadderCharacter",
+                        "style": "$StyleCharacterModeSelectTitle"
+                    },
+                },
+                {
+                    "type": "TextBoxWidget", "name": "ButtonDescription",
+                    "fields": {
+                        "rect": { "x": 160, "y": 150, "width": 1255, "height": 175 },
+                        "text": "@LadderDescription",
+                        "style": "$StyleCharacterModeSelectDescription"
+                    },
+                }
+            ]
+        },
+        {
+            "type": "ToggleButtonWidget", "name": "NonLadderToggle",
+            "fields": {
+                "rect": { "x": -1601, "y": 493, "width": 1471, "height": 360 },
+                "filename": "Controller\\FrontEnd\\CharacterCreate\\CharacterCreate_LeftPanel",
+                "onClickMessage": "ConsoleCharacterCreate:ToggleCharacterOptions:0",
+                "focusIndicatorFilename": "Controller/HoverImages/CharacterOptions_Hover",
+                "focusIndicatorOffset": {"x":-58, "y":0},
+                "untoggledFrame": 1,
+                "toggledFrame": 0,
+                "disabledTint": [1, 1, 1, 0.5],
+                "sound": "cursor_character_flag_hd",
+                "navigation": {
+                    "right": {"name": "LadderCenter"},
+                    "down": {"name": "HardcoreCenter"}
+                }
+            },
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "ButtonTitle",
+                    "fields": {
+                        "rect": { "x": 50, "y": 40, "width": 690, "height": 60 },
+                        "text": "@Nonladder",
+                        "style": "$StyleCharacterModeSelectTitle"
+                    },
+                },
+                {
+                    "type": "TextBoxWidget", "name": "ButtonDescription",
+                    "fields": {
+                        "rect": { "x": 50, "y": 150, "width": 1255, "height": 175 },
+                        "text": "@NonLadderDescription",
+                        "style": "$StyleCharacterModeSelectDescription"
+                    },
+                }
+            ]
+        },
+        {
+            "type": "ButtonWidget", "name": "LadderCenter",
+            "fields":
+            {
+                "rect": {"x":-122, "y":493, "width": 289, "height": 355 },
+                "focusIndicatorFilename": "Controller/HoverImages/CreateCharBanner_Hover",
+                "navigation": {
+                    "left": {"name": "NonLadderToggle"},
+                    "right": {"name": "LadderToggle"},
+                    "down": {"name": "HardcoreCenter"}
+                }
+            }
+        },
+
+
+        // hardcore section
+        {
+            "type": "ImageWidget", "name": "HardcoreFlag",
+            "fields":
+            {
+                "rect": {"x":-122, "y":899},
+                "anchor": {"x":0, "y":0},
+                "filename":"Controller\\FrontEnd\\CharacterCreate\\Character_Mode_Select_Flags_Hardcore",
+            }
+        },
+        {
+            "type": "ToggleButtonWidget", "name": "StandardToggle",
+            "fields": {
+                "rect": { "x": -1601, "y": 899, "width": 1471, "height": 360 },
+                "filename": "Controller\\FrontEnd\\CharacterCreate\\CharacterCreate_LeftPanel",
+                "onClickMessage": "ConsoleCharacterCreate:ToggleCharacterOptions:1",
+                "focusIndicatorFilename": "Controller/HoverImages/CharacterOptions_Hover",
+                "focusIndicatorOffset": {"x":-58, "y":0},
+                "untoggledFrame": 1,
+                "toggledFrame": 0,
+                "disabledTint": [1, 1, 1, 0.5],
+                "sound": "cursor_character_flag_hd",
+                "navigation": {
+                    "right": {"name": "HardcoreCenter"},
+                    "up": {"name": "LadderCenter"},
+                    "down": {"name": "ExpansionCenter"}
+                }
+            },
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "ButtonTitle",
+                    "fields": {
+                        "rect": { "x": 50, "y": 40, "width": 690, "height": 60 },
+                        "text": "@Standard",
+                        "style": "$StyleCharacterModeSelectTitle"
+                    },
+                },
+                {
+                    "type": "TextBoxWidget", "name": "ButtonDescription",
+                    "fields": {
+                        "rect": { "x": 50, "y": 150, "width": 1255, "height": 175 },
+                        "text": "@StandardDescription",
+                        "style": "$StyleCharacterModeSelectDescription"
+                    },
+                }
+            ]
+        },
+        {
+            "type": "ToggleButtonWidget", "name": "HardcoreToggle",
+            "fields": {
+                "rect": { "x": 173, "y": 899, "width": 1471, "height": 360 },
+                "filename": "Controller\\FrontEnd\\CharacterCreate\\CharacterCreate_RightPanel",
+                "onClickMessage": "ConsoleCharacterCreate:ToggleCharacterOptions:1",
+                "focusIndicatorFilename": "Controller/HoverImages/CharacterOptions_Hover",
+                "focusIndicatorOffset": {"x":54, "y":0},
+                "untoggledFrame": 1,
+                "toggledFrame": 0,
+                "disabledTint": [1, 0, 0, 0.75],
+                "sound": "cursor_hardcore_flag_hd",
+                "navigation": {
+                    "left": {"name": "HardcoreCenter"},
+                    "up": {"name": "LadderCenter"},
+                    "down": {"name": "ExpansionCenter"}
+                }
+            },
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "ButtonTitle",
+                    "fields": {
+                        "rect": { "x": 160, "y": 40, "width": 690, "height": 60 },
+                        "text": "@strHardcore",
+                        "style": "$StyleCharacterModeSelectTitle"
+                    },
+                },
+                {
+                    "type": "TextBoxWidget", "name": "ButtonDescription",
+                    "fields": {
+                        "rect": { "x": 160, "y": 150, "width": 1255, "height": 175 },
+                        "text": "@HardcoreDescription",
+                        "style": "$StyleCharacterModeSelectDescription"
+                    },
+                }
+            ]
+        },
+        {
+            "type": "ButtonWidget", "name": "HardcoreCenter",
+            "fields":
+            {
+                "rect": {"x":-122, "y":899, "width": 289, "height": 355 },
+                "focusIndicatorFilename": "Controller/HoverImages/CreateCharBanner_Hover",
+                "navigation": {
+                    "left": {"name": "StandardToggle"},
+                    "right": {"name": "HardcoreToggle"},
+                    "up": {"name": "LadderCenter"},
+                    "down": {"name": "ExpansionCenter"}
+                }
+            }
+        },
+
+
+        // Expansion section
+        {
+            "type": "ImageWidget", "name": "ExpansionFlag",
+            "fields":
+            {
+                "rect": {"x":-122, "y": 1306},
+                "anchor": {"x":0, "y":0},
+                "filename":"Controller\\FrontEnd\\CharacterCreate\\Character_Mode_Select_Flags_Classic",
+            }
+        },
+        {
+            "type": "ToggleButtonWidget", "name": "ExpansionToggle",
+            "fields": {
+                "rect": { "x": -1601, "y": 1306, "width": 1471, "height": 360 },
+                "filename": "Controller\\FrontEnd\\CharacterCreate\\CharacterCreate_LeftPanel",
+                "onClickMessage": "ConsoleCharacterCreate:ToggleCharacterOptions:2",
+                "focusIndicatorFilename": "Controller/HoverImages/CharacterOptions_Hover",
+                "focusIndicatorOffset": {"x":-58, "y":0},
+                "untoggledFrame": 1,
+                "toggledFrame": 0,
+                "disabledTint": [1, 0, 0, 0.75],
+                "sound": "cursor_character_flag_hd",
+                "navigation": {
+                    "right": {"name": "ExpansionCenter"},
+                    "up": {"name": "HardcoreCenter"},
+                }
+            },
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "ButtonTitle",
+                    "fields": {
+                        "rect": { "x": 50, "y": 40, "width": 690, "height": 60 },
+                        "text": "@Expansion",
+                        "style": "$StyleCharacterModeSelectTitle"
+                    },
+                },
+                {
+                    "type": "TextBoxWidget", "name": "ButtonDescription",
+                    "fields": {
+                        "rect": { "x": 50, "y": 150, "width": 1255, "height": 175 },
+                        "text": "@ExpansionDescription",
+                        "style": "$StyleCharacterModeSelectDescription"
+                    },
+                }
+            ]
+        },
+        {
+            "type": "ToggleButtonWidget", "name": "ClassicToggle",
+            "fields": {
+                "rect": { "x": 173, "y": 1306, "width": 1471, "height": 360 },
+                "filename": "Controller\\FrontEnd\\CharacterCreate\\CharacterCreate_RightPanel",
+                "onClickMessage": "ConsoleCharacterCreate:ToggleCharacterOptions:2",
+                "focusIndicatorFilename": "Controller/HoverImages/CharacterOptions_Hover",
+                "focusIndicatorOffset": {"x":54, "y":0},
+                "untoggledFrame": 1,
+                "toggledFrame": 0,
+                "disabledTint": [1, 0, 0, 0.75],
+                "sound": "cursor_character_flag_hd",
+                "navigation": {
+                    "left": {"name": "ExpansionCenter"},
+                    "up": {"name": "HardcoreCenter"},
+                }
+            },
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "ButtonTitle",
+                    "fields": {
+                        "rect": { "x": 160, "y": 40, "width": 690, "height": 60 },
+                        "text": "@Classic",
+                        "style": "$StyleCharacterModeSelectTitle"
+                    },
+                },
+                {
+                    "type": "TextBoxWidget", "name": "ButtonDescription",
+                    "fields": {
+                       "rect": { "x": 160, "y": 150, "width": 1255, "height": 175 },
+                        "text": "@ClassicDescription",
+                        "style": "$StyleCharacterModeSelectDescription"
+                    },
+                }
+            ]
+        },
+                {
+            "type": "ButtonWidget", "name": "ExpansionCenter",
+            "fields":
+            {
+                "rect": {"x":-122, "y":1306, "width": 289, "height": 355 },
+                "focusIndicatorFilename": "Controller/HoverImages/CreateCharBanner_Hover",
+                "navigation": {
+                    "left": {"name": "ExpansionToggle"},
+                    "right": {"name": "ClassicToggle"},
+                    "up": {"name": "HardcoreCenter"},
+                }
+            }
+        },
+
+
+        {
+            "type": "ButtonLegendWidget", "name": "CharacterOptionsLegend",
+            "fields": {
+                "rect": { "x": -800, "y": 1800, "width": 1600, "height": 186 },
+                "text": { "style": "$StyleButtonLegend",
+                    "style": { "fontColor": "$FontColorWhite" }
+                },
+                "presets": [
+                    {
+                        "action": "select",
+                        "description": "@ControllerSettingsAcceptAll",
+                    },
+                    {
+                        "action": "back",
+                        "description": "@ControllerPromptModalCancel"
+                    },
+                ],
+            }
+        }
+    ]
+}

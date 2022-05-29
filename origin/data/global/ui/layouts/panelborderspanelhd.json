@@ -1,0 +1,51 @@
+{
+    "type": "BordersPanel", "name": "PanelBordersPanel",
+    "fields": {
+        "fitToParent": true,
+        "priority": -1,
+    },
+    "children": [
+        {
+            "type": "Panel", "name": "LeftAnchor",
+            "fields": {
+                "anchor": { "x": 0.0 }
+            },
+            "children": [
+                {
+                    "type": "ClickCatcherWidget", "name": "LeftClickCatcher",
+                    "fields": {
+                        "rect": "$LeftSideCatcherRect"
+                    }
+                },
+                {
+                    "type": "ImageWidget", "name": "LeftBorderImage",
+                    "fields": {
+                        "rect": "$LeftSideRect",
+                        "filename": "$LeftSideSprite"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "Panel", "name": "RightAnchor",
+            "fields": {
+                "anchor": { "x": 1.0 }
+            },
+            "children": [
+                {
+                    "type": "ClickCatcherWidget", "name": "RightClickCatcher",
+                    "fields": {
+                        "rect": "$RightSideCatcherRect"
+                    }
+                },
+                {
+                    "type": "ImageWidget", "name": "RightBorderImage",
+                    "fields": {
+                        "rect": "$RightSideRect",
+                        "filename": "$RightSideSprite"
+                    }
+                }
+            ]
+        }
+    ]
+}

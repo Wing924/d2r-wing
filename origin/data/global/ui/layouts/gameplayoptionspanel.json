@@ -1,0 +1,216 @@
+{
+    "type": "GameplayOptionsPanel", "name": "GameplayOptionsPanel",
+    "fields": {
+        "priority": 9003,
+        "defaultWidget": "AutomapSize",
+        "rect": [ -400, -300, 800, 600 ],
+        "anchor": [ 0.5, 0.5 ]
+    },
+    "children": [
+        {
+            "type": "ClickCatcherWidget", "name": "catcher",
+            "fields": {
+                "fitToParent": true,
+            }
+        },
+        {
+            "type": "AnimatedImageWidget", "name": "LeftPentagram",
+            "fields": {
+                "rect": { "x": 100, "y": 250 },
+                "filename": "CURSOR/Pentspin",
+                "fps": -16,
+            }
+        },
+        {
+            "type": "AnimatedImageWidget", "name": "RightPentagram",
+            "fields": {
+                "rect": { "x": 650, "y": 250 },
+                "filename": "CURSOR/Pentspin",
+                "fps": 16,
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "Automap Options",
+            "fields": {
+                "rect": { "x": 0, "y": 100, "width": 800, "height": 44 },
+                "text": "@AutomapOptionsSD",
+                "fontType": "42pt",
+                "style": "$StyleSettingsTitle",
+            }
+        },
+        {
+            "type": "TableWidget", "name": "OptionsTable",
+            "fields": {
+                "rect": { "x": 0, "y": 150 },
+                "columns": [ "$OptionsTableColumn1", "$OptionsTableColumn2" ],
+                "rowHeight": "$OptionsTableRowHeight",
+                "cellPadding": "$OptionsTableCellPadding",
+                "generateFocusLinks": true,
+            },
+            "children": [
+                {
+                    "type": "TableRowWidget", "name": "Row AutomapSize",
+                    "children": [
+                        {
+                            "type": "TextBoxWidget", "name": "AutomapSizeText",
+                            "fields": {
+                                "text": "@AutomapSizeSD",
+                                "fontType": "30pt",
+                                "style": "$StyleSettingsText",
+                            }
+                        },
+                        {
+                            "type": "CarouselWidget", "name": "AutomapSize",
+                            "fields": {
+                                "rect": "$OptionsCarouselRect",
+                                "hitMargin": "$OptionsCarouselHitMargin",
+                                "states": [ "FullScreen", "MiniMap"],
+                                "fontType": "30pt",
+                                "onUpdateMessage": "OptionsPanelMessage:SetSize",
+                                "enabledColor": "$FontColorWhite",
+                                "textClickedChangesState": true,
+                                "sound": "select",
+                                "style": "$StyleSettingsCarousel",
+                                "focusOnMouseOver": true
+                            }
+                        },
+                    ]
+                },
+                {
+                    "type": "TableRowWidget", "name": "Row AutomapFade",
+                    "children": [
+                        {
+                            "type": "TextBoxWidget", "name": "AutomapFadeText",
+                            "fields": {
+                                "text": "@AutomapFadeSD",
+                                "fontType": "30pt",
+                                "style": "$StyleSettingsText",
+                            }
+                        },
+                        {
+                            "type": "CarouselWidget", "name": "AutomapFade",
+                            "fields": {
+                                "rect": "$OptionsCarouselRect",
+                                "hitMargin": "$OptionsCarouselHitMargin",
+                                "states": [ "No", "Center", "Everything", "Auto" ],
+                                "fontType": "30pt",
+                                "onUpdateMessage": "OptionsPanelMessage:SetFade",
+                                "enabledColor": "$FontColorWhite",
+                                "textClickedChangesState": true,
+                                "sound": "select",
+                                "style": "$StyleSettingsCarousel",
+                                "focusOnMouseOver": true
+                            }
+                        },
+                    ]
+                },
+                {
+                    "type": "TableRowWidget", "name": "Row CenterWhenCleared",
+                    "children": [
+                        {
+                            "type": "TextBoxWidget", "name": "CenterWhenClearedText",
+                            "fields": {
+                                "text": "@CenterWhenClearedSD",
+                                "fontType": "30pt",
+                                "style": "$StyleSettingsText",
+                            }
+                        },
+                        {
+                            "type": "CarouselWidget", "name": "CenterWhenCleared",
+                            "fields": {
+                                "rect": "$OptionsCarouselRect",
+                                "hitMargin": "$OptionsCarouselHitMargin",
+                                "states": [ "No", "Yes" ],
+                                "fontType": "30pt",
+                                "onUpdateMessage": "OptionsPanelMessage:SetCenterWhenCleared",
+                                "enabledColor": "$FontColorWhite",
+                                "textClickedChangesState": true,
+                                "sound": "select",
+                                "style": "$StyleSettingsCarousel",
+                                "focusOnMouseOver": true
+                            }
+                        },
+                    ]
+                },
+                {
+                    "type": "TableRowWidget", "name": "Row ShowParty",
+                    "children": [
+                        {
+                            "type": "TextBoxWidget", "name": "ShowPartyText",
+                            "fields": {
+                                "text": "@ShowPartySD",
+                                "fontType": "30pt",
+                                "style": "$StyleSettingsText",
+                            }
+                        },
+                        {
+                            "type": "CarouselWidget", "name": "ShowParty",
+                            "fields": {
+                                "rect": "$OptionsCarouselRect",
+                                "hitMargin": "$OptionsCarouselHitMargin",
+                                "states": [ "No", "Yes" ],
+                                "fontType": "30pt",
+                                "onUpdateMessage": "OptionsPanelMessage:SetShowParty",
+                                "enabledColor": "$FontColorWhite",
+                                "textClickedChangesState": true,
+                                "sound": "select",
+                                "style": "$StyleSettingsCarousel",
+                                "focusOnMouseOver": true,
+                            }
+                        },
+                    ]
+                },
+                {
+                    "type": "TableRowWidget", "name": "Row ShowNames",
+                    "children": [
+                        {
+                            "type": "TextBoxWidget", "name": "ShowNamesText",
+                            "fields": {
+                                "text": "@ShowNamesSD",
+                                "fontType": "30pt",
+                                "style": "$StyleSettingsText",
+                            }
+                        },
+                        {
+                            "type": "CarouselWidget", "name": "ShowNames",
+                            "fields": {
+                                "rect": "$OptionsCarouselRect",
+                                "hitMargin": "$OptionsCarouselHitMargin",
+                                "states": [ "No", "Yes" ],
+                                "fontType": "30pt",
+                                "onUpdateMessage": "OptionsPanelMessage:SetShowNames",
+                                "enabledColor": "$FontColorWhite",
+                                "disabledColor": { "r": 255, "g": 255, "b": 255, "a": 126 },
+                                "textClickedChangesState": true,
+                                "sound": "select",
+                                "style": "$StyleSettingsCarousel",
+                                "focusOnMouseOver": true
+                            }
+                        },
+                    ]
+                },
+                {
+                    "type": "TableRowWidget", "name": "Row Previous Menu",
+                    "children": [
+                        {
+                            "type": "ButtonWidget", "name": "Previous Menu",
+                            "fields": {
+                                "rect": "$OptionsButtonRect",
+                                "hitMargin": "$OptionsButtonHitMargin",
+                                "textString": "@PreviousMenuSD",
+                                "onClickMessage": "SettingsPanelMessage:ToggleChildPanel:GameplayOptionsPanel",
+                                "sound": "select",
+                                "fontType": "30pt",
+                                "pressLabelOffset": [ 0, 0 ],
+                                "textColor": "$FontColorWhite",
+                                "acceptsReturnKey": true,
+                                "focusOnMouseOver": true,
+                                "acceptsEscKeyEverywhere": true
+                            }
+                        },
+                    ]
+                },
+            ]
+        },
+    ]
+}

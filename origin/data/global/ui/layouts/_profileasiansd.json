@@ -1,0 +1,41 @@
+{
+    // Base (parent) profile.
+    "basedOn": "SD",
+
+    "CharacterStatsBackground": "PANEL\\invcharAsian",
+    "CharacterStatsStatTopY": -6,
+    "CharacterStatsStatTopAltY": -8,
+    "CharacterStatsStatHeight": 14,
+
+    "HelpGoldPointY1_640": 810,
+    "HelpGoldPointY2_640": 830,
+    "HelpGoldPointY3_640": 850,
+    "HelpGoldPointY4_640": 870,
+    "HelpGoldPointY5_640": 890,
+    "HelpGoldPointY6_640": 910,
+    "HelpGoldPointY7_640": 930,
+    "HelpGoldPointY8_640": 950,
+    "HelpGoldPointY9_640": 970,
+    "HelpGoldPointY10_640": 990,
+    "HelpGoldPointY1": 750,
+    "HelpGoldPointY2": 770,
+    "HelpGoldPointY3": 790,
+    "HelpGoldPointY4": 810,
+    "HelpGoldPointY5": 830,
+    "HelpGoldPointY6": 850,
+    "HelpGoldPointY7": 870,
+    "HelpGoldPointY8": 890,
+    "HelpGoldPointY9": 910,
+    "HelpGoldPointY10": 930,
+    "HelpAligned12ptf": "11ptF",
+
+    "CharacterCreateNameInputY": 500,
+
+    "HirelingInventory6pt": "8pt",
+    "HirelingInventoryYHP": 199,
+    "HirelingInventoryY0": 225,
+    "HirelingInventoryY1": 265,
+    "HirelingInventoryY2": 289,
+    "HirelingInventoryY3": 313,
+    "HirelingInventoryY4": 337,
+}

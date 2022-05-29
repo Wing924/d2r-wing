@@ -1,0 +1,34 @@
+{
+    "type": "BlockingPanel", "name": "BlockingPanel",
+    "fields": { 
+        "anchor": { "x": 0.5, "y": 0.5 },
+        "waitDurationToShow": 1,
+        "minimumDuration": 2,
+		"priority": 2100000000,
+    },
+    "children": [
+        {
+            "type": "GridImageWidget", "name": "Frame",
+            "fields": {
+                "rect": { "x": -132, "y": -88 },
+                "filename": "FrontEnd\\PopUpOKCancel",
+                "frames": 2,
+                "rows": 1,
+            },
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "Prompt",
+                    "fields": {
+                        "rect": { "x": 12, "y": 6, "width": 243, "height": 110 },
+                        "fontType": "8pt",
+                        "style": { 
+                            "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 }, 
+                            "alignment": { "h": "center" },
+                            "options": { "lineWrap": true, "newlineHandling": "standard" },
+                        }
+                    }
+                },
+            ]
+        },
+    ]
+}

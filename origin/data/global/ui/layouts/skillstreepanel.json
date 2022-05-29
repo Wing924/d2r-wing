@@ -1,0 +1,212 @@
+{
+    "type": "SkillsTreePanel", "name": "SkillsTreePanel",
+    "fields": {
+        "anchor": "$RightPanelAnchor",
+        "skillRow": [ -226, -158, -90, -22, 47, 115 ],
+        "skillColumn": [ 15, 84, 153 ],
+        "disabledButtonTint": { "r": 0.4, "g": 0.4, "b": 0.4 },
+        "skillButtonFile": [
+            "Spells\\AmSkillicon",
+            "Spells\\SoSkillicon",
+            "Spells\\NeSkillicon",
+            "Spells\\PaSkillicon",
+            "Spells\\BaSkillicon",
+            "Spells\\DrSkillicon",
+            "Spells\\AsSkillicon"
+        ],
+        "skillBackgroundFile": [
+            "Spells\\skltree_a_back",
+            "Spells\\skltree_s_back",
+            "Spells\\skltree_n_back",
+            "Spells\\skltree_p_back",
+            "Spells\\skltree_b_back",
+            "Spells\\skltree_d_back",
+            "Spells\\skltree_i_back"
+        ],
+        // Amazon, Sorceress, Necromancer, Palladin, Barbarian, Druid, Assassin
+        "textTab0": [
+            "@SkillCategoryAm1",
+            "@SkillCategorySo1",
+            "@SkillCategoryNe1",
+            "@SkillCategoryPa1",
+            "@SkillCategoryBa1",
+            "@SkillCategoryDr1",
+            "@SkillCategoryAs1",
+        ],
+        "textTab1": [
+            "@SkillCategoryAm2",
+            "@SkillCategorySo2",
+            "@SkillCategoryNe2",
+            "@SkillCategoryPa2",
+            "@SkillCategoryBa2",
+            "@SkillCategoryDr2",
+            "@SkillCategoryAs2",
+        ],
+        "textTab2": [
+            "@SkillCategoryAm3",
+            "@SkillCategorySo3",
+            "@SkillCategoryNe3",
+            "@SkillCategoryPa3",
+            "@SkillCategoryBa3",
+            "@SkillCategoryDr3",
+            "@SkillCategoryAs3",
+        ],
+        "cancelPositionX": [ 15, 100, 171 ],
+        "cancelPositionCode": [ 321, 113, 131, 121, 313, 333, 231 ],
+     }, 
+    "children": [
+        {
+            "type": "ClickCatcherWidget", "name": "ClickCatcher",
+            "fields": {
+                "rect": { "y": -300, "width": 400, "height": 550 }
+            }
+        },
+        {
+            "type": "GridImageWidget", "name": "Background",
+            "fields": {
+                "rect": { "x": 0, "y": -240 },
+                "frames": 4,
+                "rows": 2,
+                "frame": 0
+            },
+        },
+        {
+            "type": "TabWidget", "name": "Tab0",
+            "fields": {
+                "activationRect": { "x": 231, "y": -132, "width": 90, "height": 108 },
+                "onClickMessage": "SkillsTreePanelMessage:ActivateTab:0",
+                "tooltipString": "@StrSklTreea",
+                "tooltipOffset": { "x": 227, "y": -112 },
+            },
+            "children": [
+                {
+                    "type": "GridImageWidget", "name": "Background",
+                    "fields": {
+                        "rect": { "x": 0, "y": -240 },
+                        "frames": 4,
+                        "rows": 2,
+                        "frame": 12
+                    },
+                },
+            ]
+        },
+        {
+            "type": "TabWidget", "name": "Tab1",
+            "fields": {
+                "activationRect": { "x": 231, "y": -24, "width": 90, "height": 108 },
+                "onClickMessage": "SkillsTreePanelMessage:ActivateTab:1",
+                "tooltipString": "@StrSklTreeb",
+                "tooltipOffset": { "x": 227, "y": -4 },
+            },
+            "children": [
+                {
+                    "type": "GridImageWidget", "name": "Background",
+                    "fields": {
+                        "rect": { "x": 0, "y": -240 },
+                        "frames": 4,
+                        "rows": 2,
+                        "frame": 8
+                    },
+                },
+            ]
+        },
+        {
+            "type": "TabWidget", "name": "Tab2",
+            "fields": {
+                "activationRect": { "x": 231, "y": 84, "width": 90, "height": 108 },
+                "onClickMessage": "SkillsTreePanelMessage:ActivateTab:2",
+                "tooltipString": "@StrSklTreec",
+                "tooltipOffset": { "x": 227, "y": 104 },
+            },
+            "children": [
+                {
+                    "type": "GridImageWidget", "name": "Background",
+                    "fields": {
+                        "rect": { "x": 0, "y": -240 },
+                        "frames": 4,
+                        "rows": 2,
+                        "frame": 4
+                    },
+                },
+            ]
+        },
+        {
+            "type": "TextBoxWidget", "name": "SkillCounter",
+            "fields": {
+                "rect": { "x": 260, "y": -176, "width": 28 },
+                "style": {
+                    "pointSize": 28,
+                    "alignment": { "h": "center" }
+                }
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "SkillChoicesRemaining",
+            "fields": {
+                "rect": { "x": 235, "y": -232, "width": 85, "height": 52 },
+                "text": "@StrSklTree1 @StrSklTree2 @StrSklTree3",
+                "fontType": "16pt",
+                "style": {
+                    "options": { "lineWrap": true },
+                    "alignment": { "h": "center", "v": "center" },
+                    "spacing": { "leading": 0.8 }
+                }
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "CounterTemplate",
+            "fields": {
+                "rect": { "x": 41, "y": 35, "width": 23 },
+                "fontType": "10ptF",
+                "style": {
+                    "alignment": { "h": "center" }
+                }
+            }
+        },
+        {
+            "type": "ButtonWidget", "name": "Cancel",
+            "fields": {
+                "rect": { "x": 15, "y": 145 },
+                "filename": "PANEL\\buysellbtn",
+                "normalFrame": 10,
+                "pressedFrame": 11,
+                "tooltipString": "@strClose",
+                "tooltipOffset": { "x": 0, "y": -3 },
+                "onClickMessage": "SkillsTreePanelMessage:Close",
+            },
+        },
+        {
+            "type": "TextBoxWidget", "name": "TextTab0",
+            "fields": {
+                "rect": { "x": 227, "y": -130, "width": 94, "height": 103 },
+                "style": {
+                    "options": { "lineWrap": true },
+                    "alignment": { "h": "center", "v": "center" },
+                    "spacing": { "leading": 0.8 }
+                }
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "TextTab1",
+            "fields": {
+                "rect": { "x": 227, "y": -23, "width": 94, "height": 103 },
+                "style": {
+                    "options": { "lineWrap": true },
+                    "alignment": { "h": "center", "v": "center" },
+                    "spacing": { "leading": 0.8 }
+                }
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "TextTab2",
+            "fields": {
+                "rect": { "x": 227, "y": 84, "width": 94, "height": 103 },
+                "style": {
+                    "options": { "lineWrap": true },
+                    "alignment": { "h": "center", "v": "center" },
+                    "spacing": { "leading": 0.8 }
+                }
+            }
+        },
+    ]
+}

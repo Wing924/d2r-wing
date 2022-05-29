@@ -1,0 +1,26 @@
+{
+    "basedOn": "GameQueuePanelHD.json",
+    "type": "GameQueuePanel", "name": "GameQueuePanel",
+    "fields": {
+        "priority": 5,
+        "anchor": {"x": 0.5},
+        "rect": {"x": 709, "y": 1312, "width": 575, "height": 300}
+    },
+    "children": [
+        {
+            "type": "NineTileImageWidget", "name": "TooltipBackGround",
+        },
+        {
+            "type": "TextBoxWidget", "name": "WaitingPrompt",
+            "fields": { 
+                "rect": { "x": 0, "y": 15, "width": 580, "height": 75 }, 
+            },
+        },
+        {
+            "type": "TextBoxWidget", "name": "ElapsedTimeText",
+            "fields": { 
+                "rect": { "x": 0, "y": 100, "width": 580, "height": 75 }, 
+            },
+        },
+    ]
+}

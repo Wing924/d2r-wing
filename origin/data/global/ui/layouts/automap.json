@@ -1,0 +1,27 @@
+{
+    "type": "AutoMapPanel", "name": "AutoMap",
+    "fields": {
+        // Fade none uses maxOpacity
+        // Fade all uses lowOpacity
+        // Fade auto uses highOpacity on acts 1,3; lowOpacity on acts 1,3 minimap; and maxOpacity otherwise
+        // Fade center uses minOpacity, lowOpacity, and highOpacity as it gets farther from the player
+        "maxOpacity": 1.0,
+        "highOpacity": 0.75,
+        "lowOpacity": 0.5,
+        "minOpacity": 0.25,
+        "priority": -110,
+        "miniScreenSizeFraction": 0.3333333333,
+        "miniOffsetLeft": { "y": 96 },
+        "miniOffsetRight": { "y": 78, "x": -20 },
+        "tilesDefaultFilename": "AUTOMAP/MaxiMap",
+        "tilesAct2TownFilename": "AUTOMAP/Act2Map",
+        "tilesAct4TownFilename": "AUTOMAP/Act4Map",
+        "tilesAct5TownFilename": "AUTOMAP/ExTnMap",
+        "miniTilesDefaultFilename": "AUTOMAP/MaxiMapS",
+        "miniTilesAct2TownFilename": "AUTOMAP/Act2MapS",
+        "miniTilesAct4TownFilename": "AUTOMAP/Act4MapS",
+        "miniTilesAct5TownFilename": "AUTOMAP/ExTnMapS",
+        "unitLabelFont": "6pt",
+        "unitLabelOffset": 10,
+    }
+}

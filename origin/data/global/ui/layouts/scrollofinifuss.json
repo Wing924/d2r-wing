@@ -1,0 +1,122 @@
+{
+    "type": "ScrollOfInifussPanel", "name": "ScrollOfInifuss",
+    "fields": {
+        "rect": { "x": -321, "y": -240, "width": 321, "height": 432 },
+        "anchor": "$LeftPanelAnchor",
+        "secondsBetweenStarts": 1.2,
+        "fadeInSeconds": 1.6,
+    },
+    "children": [
+        {
+            "type": "ClickCatcherWidget", "name": "ClickCatcher",
+            "fields": {
+                "rect": { "width": 320, "height": 432 }
+            }
+        },
+        {
+            "type": "GridImageWidget", "name": "Background",
+            "fields": {
+                "filename": "MENU/scroin",
+                "frames": 4,
+                "rows": 2,
+            }
+        },
+        {
+            "type": "ImageWidget", "name": "Number1",
+            "fields": {
+                "filename": "MENU/scroin2",
+                "rect": { "x": 242, "y": 80 }
+            }
+        },
+        {
+            "type": "ImageWidget", "name": "Number2",
+            "fields": {
+                "filename": "MENU/scroin2",
+                "rect": { "x": 255, "y": 198 }
+            }
+        },
+        {
+            "type": "ImageWidget", "name": "Number3",
+            "fields": {
+                "filename": "MENU/scroin2",
+                "rect": { "x": 148, "y": 286 }
+            }
+        },
+        {
+            "type": "ImageWidget", "name": "Number4",
+            "fields": {
+                "filename": "MENU/scroin2",
+                "rect": { "x": 47, "y": 198 }
+            }
+        },
+        {
+            "type": "ImageWidget", "name": "Number5",
+            "fields": {
+                "filename": "MENU/scroin2",
+                "rect": { "x": 75, "y": 80 }
+            }
+        },
+        {
+            "type": "ButtonWidget", "name": "CloseButton",
+            "fields": {
+                "rect": { "x": 276, "y": 388 }, 
+                "filename": "PANEL/buysellbtn",
+                "onClickMessage": "PanelManager:ClosePanel:ScrollOfInifuss",
+                "normalFrame": 10,
+                "pressedFrame": 11,
+                "tooltipString": "@strClose",
+                "tooltipOffset": { "x": 0, "y": -3 },
+            },
+        },
+        {
+            "type": "AnimatedImageWidget", "name": "Sparkle1",
+            "fields": {
+                "rect": { "x": 304, "y": 157 },
+                "filename": "MENU/scroin3",
+                "blendMode": "black",
+                "fps": 20,
+                "loop": false
+            }
+        },
+        {
+            "type": "AnimatedImageWidget", "name": "Sparkle2",
+            "fields": {
+                "rect": { "x": 321, "y": 240 },
+                "filename": "MENU/scroin3",
+                "blendMode": "black",
+                "fps": 20,
+                "loop": false
+            }
+        },
+        {
+            "type": "AnimatedImageWidget", "name": "Sparkle3",
+            "fields": {
+                "rect": { "x": 254, "y": 288 },
+                "filename": "MENU/scroin3",
+                "blendMode": "black",
+                "fps": 20,
+                "loop": false
+            }
+        },
+        {
+            "type": "AnimatedImageWidget", "name": "Sparkle4",
+            "fields": {
+                "rect": { "x": 187, "y": 234 },
+                "filename": "MENU/scroin3",
+                "blendMode": "black",
+                "fps": 20,
+                "loop": false
+            }
+        },
+        {
+            "type": "AnimatedImageWidget", "name": "Sparkle5",
+            "fields": {
+                "rect": { "x": 210, "y": 159 },
+                "filename": "MENU/scroin3",
+                "blendMode": "black",
+                "fps": 20,
+                "loop": false
+            }
+        }
+    ]
+}

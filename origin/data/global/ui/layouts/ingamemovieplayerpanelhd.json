@@ -1,0 +1,23 @@
+{
+    "type": "Panel", "name": "InGameMoviePlayerPanel",
+    "fields": {
+        "fitToParent": true,
+        "priority": 2147483645
+    },
+    "children": [
+        {
+            "type": "MoviePlayerWidget", "name": "MoviePlayer",
+            "fields": {
+                "fitToParent": true,
+                "subtitle": "$SubtitleConfiguration",
+                "holdToSkipText": "$HoldToSkipTextConfiguration",
+                "holdToSkipDurationMilliseconds": "$HoldToSkipDurationMilliseconds",
+                "holdToSkipTextTimeoutMilliseconds": "$HoldToSkipTextTimeoutMilliseconds",
+                "onMovieCompleteMessage": "Cinematics:MovieComplete",
+            },
+        },
+        {
+            "type": "ProgressionVideoHelperWidget", "name": "ProgressionHelper",
+        }
+    ]
+}

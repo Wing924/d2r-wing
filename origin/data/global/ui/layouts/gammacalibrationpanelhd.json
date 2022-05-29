@@ -1,0 +1,143 @@
+{
+    "type": "GammaCalibrationPanel", "name": "GammaCalibrationPanel",
+    "fields": {
+        "priority": 9500,
+		"fitToParent": true,
+        "parentOptionsPanelName": "VideoOptionsPanel", 
+        "saveAndClosePosition": { "x": -700, "y": 1750 },
+        "continuePosition": { "x": -329, "y": 1750 },
+    },
+    "children": [
+        {
+            "type": "RectangleWidget", "name": "Background",
+            "fields": {
+                "fitToScreen": true,
+                "color": [ 0.0, 0.0, 0.0, 1.0 ]
+            },
+            "children": [
+                {
+                    "type": "ClickCatcherWidget", "name": "ClickCatcher",
+                    "fields": {
+                        "fitToParent": true
+                    }
+                },  
+            ]
+        },
+        {
+            "type": "RectangleWidget", "name": "ScrollBarBackground",
+            "fields": {
+                "fitToParent": true,
+                "color": [ 0.0, 0.0, 0.0, 1.0 ]
+            }
+        },
+		{
+            "type": "TextBoxWidget", "name": "Title",
+            "fields": {
+				"anchor": { "x": 0.5, "y": 0 },
+				"rect": { "x": 0, "y": 200 },
+                "text": "@GammaCalibration",
+                "style": {
+                    "pointSize": "$HugeFontSize",
+                    "alignment": { "v": "center", "h": "center" }
+                }
+            },
+			"children": [
+				{
+					"type": "ImageWidget", "name": "Divider",
+					"fields": {
+						"rect": { "x": -820, "y": 50 },
+						"filename": "PauseMenu\\Divider",
+					}
+				},
+			]
+			
+        },
+		//Icon for calibration
+		{
+			"type": "ImageWidget", "name": "GammaIcon",
+			"fields": { 
+				"anchor": { "x": 0.5, "y": 0 },
+				"rect": { "x": -838, "y": 34, "scale": 1.2 },
+				"filename": "FrontEnd/HD/GammaLogo",
+			}
+		},
+        // Gradient
+		{
+			"type": "ImageWidget", "name": "Gradient",
+			"fields": { 
+				"anchor": { "x": 0.5, "y": 0 },
+				"rect": { "x": -960, "y": 1350 },
+				"filename": "FrontEnd/HD/GammaCalibration_Gradient",
+			}
+		},
+		{
+			"type": "SettingsSliderWidget", "name": "GammaHD",
+			"fields": {
+				"anchor": { "x": 0.5, "y": 0 },
+                "rect": "$OptionsSliderRect",
+				"rect": { "x": -240, "y": 1514 },
+				"isHorizontal": true,
+				"focusIndicatorPadding": "$OptionsSliderFocusIndicatorPadding",
+				"focusIndicatorFilename": "$OptionsSliderFocusIndicatorFilename",
+				"indicatorFilepath": "PauseMenu\\HorizontalIndicator",
+				"background": "$SettingsSliderBackground",
+				"onUpdateMessage": "OptionsPanelMessage:SetGammaHD",
+				"leftButton": "$SettingsSliderLeftButtonFields",
+				"rightButton": "$SettingsSliderRightButtonFields",
+				"valueText": "$SettingsSliderValueFields",
+                "valueText": {
+                    "style": {
+                        "fontColor": "$FontColorBlack",
+                    },
+                },
+                "increment": 100,
+			}
+		},
+		{
+			"type": "TextBoxWidget", "name": "GammaCalibrationText",
+			"fields": {
+				"anchor": { "x": 0.5, "y": 0 },
+				"rect": { "x": -1500, "y": 1660, "width": 3000, "height": 0 },
+				"text": "@GammaCalibrationText",
+				"style": {
+                    "pointSize": "$LargeFontSize",
+                    "alignment": { "v": "center", "h": "center" },
+                    "options": { "newlineHandling": "standard", "lineWrap": true },
+                }
+			},
+		},
+		{
+            "type": "ButtonWidget", "name": "SaveButton",
+            "fields": {
+				"anchor": { "x": 0.5, "y": 0 },
+				"rect": { "x": -700, "y": 1750 },
+                "filename": "PauseMenu\\PauseButton",
+                "textString": "@SaveAndCloseCalibration",
+                "onClickMessage": "CalibrationPanelMessage:SaveAndClose",
+                "textColor": "$LightButtonTextColor",
+                "text/style": "$StyleFEButtonText",
+                "pressedFrame": 1,
+                "disabledFrame": 2,
+                "hoveredFrame": 3,
+				"sound": "cursor_select",
+            },
+        },
+		{
+            "type": "ButtonWidget", "name": "CloseButton",
+            "fields": {
+				"anchor": { "x": 0.5, "y": 0 },
+				"rect": { "x": 20, "y": 1750 },
+                "filename": "PauseMenu\\PauseButton",
+                "textString": "@close",
+                "onClickMessage": "CalibrationPanelMessage:Close",
+                "textColor": "$LightButtonTextColor",
+                "text/style": "$StyleFEButtonText",
+				"acceptsEscKeyEverywhere": true,
+                "pressedFrame": 1,
+                "disabledFrame": 2,
+                "hoveredFrame": 3,
+				"sound": "cursor_select",
+            },
+        },
+    ]
+}

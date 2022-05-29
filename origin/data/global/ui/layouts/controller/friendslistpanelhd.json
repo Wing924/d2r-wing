@@ -1,0 +1,176 @@
+{
+    "basedOn": "FriendsListPanelHD.json",
+    "name": "FriendsListPanel", "type": "FriendsListPanel",
+    "children": [
+        {
+            "type": "ClickCatcherWidget", "name": "ClickCatcher",
+        },
+        {
+            "type": "ImageWidget", "name": "BackgroundImage",
+        },
+        {
+            "type":"ButtonWidget", "name": "OnlineStatus",
+            "fields": {
+                "navigation": {
+                    "down": { "name": "down" },
+                    "right": { "name": "CloseButton" },
+                }
+            },
+            "children": [
+                {
+                    "type": "ImageWidget", "name": "StatusIcon",
+                },
+            ]
+        },
+        {
+            "type": "TextBoxWidget", "name": "PlayerName",
+        },
+        {
+            "type": "ButtonWidget", "name": "CloseButton",
+            "fields": {
+                "navigation": {
+                    "down": { "name": "down" },
+                    "left": { "name": "OnlineStatus" },
+                }
+            }
+        },
+        {
+            "type": "FriendsRecyclingListWidget", "name": "FriendsList",
+            "fields": {
+                "isHoverList": true,
+                "selectorName": "FriendsListSelector",
+            },
+            "children": [
+                {
+                    "type": "HoverListItemWidget", "name": "Template",
+                    "fields": {
+                        "focusIndicatorFilename": "Controller/HoverImages/FriendsList_Hover",
+                        "focusIndicatorOffset": { "x": 0, "y": -3 },
+                        "navigation": {
+                            "up": { "name": "OnlineStatus" },
+                            "down": { "name": "AddFriends" },
+                        }
+                    },
+                    "children": [
+                        {
+                            "type": "ToggleButtonWidget", "name": "ListToggle",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ToggleButtonText",
+                                },
+                            ]
+                        },
+                        {
+                            "type": "Widget", "name": "ListItem",
+                            "children": [
+                                {
+                                    "type": "ImageWidget", "name": "Image",
+                                },
+                                {
+                                    "type": "ImageWidget", "name": "PresenceGameIcon",
+                                },
+                                {
+                                    "type": "Widget", "name": "InfoContainer",
+                                    "children": [
+                                        {
+                                            "type": "ImageWidget", "name": "OnlineStatusImage",
+                                        },
+                                        {
+                                            "type": "TextBoxWidget", "name": "Name",
+                                            "children": [
+                                                {
+                                                    "type": "FocusableWidget", "name": "FullNameTooltip",
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "TextBoxWidget", "name": "Location",
+                                        },
+                                        {
+                                            "type": "ButtonWidget", "name": "AcceptInvite",
+                                        },
+                                        {
+                                            "type": "ButtonWidget", "name": "RejectInvite",
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                        
+                    ]
+                },
+                {
+                    "type": "ListWidgetFocusRedirector", "name": "FriendListRedirector",
+                    "fields": {
+                        "listWidget": "FriendsList"
+                    },
+                    "children": [
+                        {
+                            "type": "ListWidgetFocusReceiver", "name": "up",
+                        },
+                        {
+                            "type": "ListWidgetFocusReceiver", "name": "down",
+                        },
+                        {
+                            "type": "ListWidgetFocusReceiver", "name": "left",
+                        },
+                        {
+                            "type": "ListWidgetFocusReceiver", "name": "right",
+                        }
+                    ],
+                },
+                {
+                    "type": "Widget", "name": "FriendsListSelector",
+                }
+            ]
+        },
+        {
+            "type": "ImageWidget", "name": "ScrollBarBackground",
+        },
+        {
+            "type": "ScrollControllerWidget", "name": "ScrollBar",
+        },
+        {
+            "type": "ButtonWidget", "name": "AddFriends",
+            "fields": {
+                "navigation": {
+                    "up": { "name": "up" },
+                }
+            },
+            "children": [
+                {
+                    "type": "ImageWidget", "name": "Icon",
+                },
+            ]
+        },
+        {
+            "type": "ImageWidget", "name": "OnlineStatusDropdown",
+            "children": [
+                {
+                    "type": "ListWidget", "name": "OnlineStatusOptions",
+                    "children": [
+                        {
+                            "type": "HoverListItemWidget", "name": "OnlineStatusTemplate",
+                            "children": [
+                                // Hoverable icon
+                                {
+                                    "type": "ImageWidget", "name": "Image",
+                                    "children": [
+                                        // Status icon
+                                        {
+                                            "type":"ImageWidget", "name": "OnlineStatusGem",
+                                        },
+                                    ]
+                                },
+                            ]
+                        },
+                        {
+                            "type": "Widget", "name": "Selector",
+                        }
+                    ]
+                }
+            ]
+        },
+        
+    ]
+}

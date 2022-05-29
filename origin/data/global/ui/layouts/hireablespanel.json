@@ -1,0 +1,43 @@
+{
+    "type": "HireablesPanel", "name": "HireablesPanel",
+    "fields": {
+        "priority": -120,
+        "rect": { "x": 15, "y": 20 },
+        "nextIconOffset": { "x": 56 },
+        "nameAlternationY": 10,
+        "tooltipOffset": { "y": 101 },
+        "mercenaryIconTooltipMouseoverDelay": 700,
+        "allyPlayerFontColor": "$FontColorWhite",
+        "allyNPCFontColor": "$FontColorWhite",
+    },
+    "children": [
+        {
+            "type": "AbstractImageWidget", "name": "Template",
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "Name",
+                    "fields": {
+                        "rect": { "x": -78, "y": 42, "width": 200 },
+                        "fontType": "6pt",
+                        "style": {
+                            "alignment": { "h": "center" }
+                        }
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "Counter",
+                    "fields": {
+                        "rect": { "x": 8, "y": 25 },
+                        "fontType": "6pt"
+                    }
+                },
+                {
+                    "type": "HealthBarWidget", "name": "Health",
+                    "fields": {
+                        "rect": { "x": 0, "y": -6, "width": 46, "height": 5 }
+                    }
+                },
+            ]
+        },
+    ]
+}

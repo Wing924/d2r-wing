@@ -1,0 +1,57 @@
+{
+    "basedOn": "DropGoldModalHD.json",
+    "type": "DropGoldModal", "name": "DropGoldModal",
+    "children": [
+        {
+            "type": "ClickCatcherWidget", "name": "ClickCatcher",
+        },
+        {
+            "type": "ImageWidget", "name": "Background",
+        },
+        {
+            "type": "TextBoxWidget", "name": "Title",
+        },
+        {
+            "type": "ImageWidget", "name": "BackgroundBox",
+        },
+        {
+            "type": "NumericInputTextBoxWidget", "name": "InputTextBox",
+        },
+        {
+            "type": "ButtonWidget", "name": "Confirm",
+            "children": [
+                {
+                    "type": "ButtonLegendWidget", "name": "ConfirmLegend",
+                    "fields": {
+                        "anchor": { "x": 0.5, "y": 1.0 },
+                        "focusIndicatorFilename": "Controller/HoverImages/ModalButton_Hover",
+                        "text": { "style": "$StyleButtonLegend" },
+                        "presets": [
+                            {
+                              "action": "select",
+                            },
+                        ],
+                    }
+                },
+            ]
+        },
+        {
+            "type": "ButtonWidget", "name": "Cancel",
+            "children": [
+                {
+                    "type": "ButtonLegendWidget", "name": "DismissLegend",
+                    "fields": {
+                        "anchor": { "x": 0.5, "y": 1.0 },
+                        "focusIndicatorFilename": "Controller/HoverImages/ModalButton_Hover",
+                        "text": { "style": "$StyleButtonLegend" },
+                        "presets": [
+                            {
+                              "action": "back",
+                            },
+                        ],
+                    }
+                },
+            ]
+        },
+    ]
+}

@@ -1,0 +1,696 @@
+{
+    "type": "HelpPanel", "name": "HelpPanel",
+    "fields": {
+        "priority": 300,
+        "anchor": { "x": 0.5, "y": 0.5 },
+        "rect": [ -1000, -1000, 2000, 2000 ],
+        "childFormats640": [
+            { "name": "Title", "rect": { "x": 933, "y": 761 } },
+            { "name": "Close", "rect": { "x": 1206, "y": 785 } },
+            { "name": "CloseText", "rect": { "x": 1201, "y": 817 } },
+            { "name": "HelpRun", "rect": { "x": 797, "y": 806 }, "command": "run", "text": "@StrHelp2" },
+            { "name": "HelpHighItems", "rect": { "x": 797, "y": 826 }, "command": "showitems", "text": "@StrHelp3" },
+            { "name": "HelpStandAttack", "rect": { "x": 797, "y": 846 }, "command": "standstill", "text": "@StrHelp4" },
+            { "name": "HelpAutoMap", "rect": { "x": 797, "y": 866 }, "command": "automap", "text": "@StrHelp5" },
+            { "name": "HelpGameMenu", "rect": { "x": 797, "y": 886 } },
+            { "name": "HelpchatMode", "rect": { "x": 797, "y": 906 } },
+            { "name": "Helpbeltopen", "rect": { "x": 797, "y": 926 } },
+            { "name": "HelpRenderToggle", "rect": { "x": 797, "y": 946 }, "command": "toggle_renderer", "text": "@StrSDHelpLegacyToggle" },
+            { "name": "HelpZoom", "rect": { "x": 797, "y": 966 }, "command": "zoom", "text": "@StrSDHelpZoom" },
+            { "name": "HelpHelpme", "rect": { "x": 797, "y": 986 }, "command": "help", "text": "@StrHelp8a" },
+            { "name": "HelpHealth", "rect": { "x": 735, "y": 1088 } },
+            { "name": "HelpMSkilla", "rect": { "x": 811, "y": 1018 } },
+            { "name": "HelpMSkillb", "rect": { "x": 811, "y": 1033 } },
+            { "name": "HelpMSkillc", "rect": { "x": 811, "y": 1048 } },
+            { "name": "HelpRunToggle", "rect": { "x": 862, "y": 1113 } },
+            { "name": "HelpRunTogglea", "rect": { "x": 863, "y": 1128 } },
+            { "name": "HelpStamina", "rect": { "x": 911, "y": 1088 } },
+            { "name": "HelpExperience", "rect": { "x": 968, "y": 1113 } },
+            { "name": "HelpExperiencea", "rect": { "x": 968, "y": 1128 } },
+            { "name": "HelpMiniPanel", "rect": { "x": 1034, "y": 1013 } },
+            { "name": "HelpMiniPanela", "rect": { "x": 1034, "y": 1028 } },
+            { "name": "HelpMiniPanelb", "rect": { "x": 1034, "y": 1043 } },
+            { "name": "HelpMiniPanelc", "rect": { "x": 1034, "y": 1058 } },
+            { "name": "Helpbelt", "rect": { "x": 1129, "y": 1128 } },
+            { "name": "HelpMSkilld", "rect": { "x": 1187, "y": 1018 } },
+            { "name": "HelpMSkillb2", "rect": { "x": 1187, "y": 1033 } },
+            { "name": "HelpMSkillc2", "rect": { "x": 1187, "y": 1048 } },
+            { "name": "Helpmana", "rect": { "x": 1266, "y": 1088 } },
+            // points
+            { "name": "GoldPoint1", "rect": { "x": 784, "y": "$HelpGoldPointY1_640" } },
+            { "name": "GoldPoint2", "rect": { "x": 784, "y": "$HelpGoldPointY2_640" } },
+            { "name": "GoldPoint3", "rect": { "x": 784, "y": "$HelpGoldPointY3_640" } },
+            { "name": "GoldPoint4", "rect": { "x": 784, "y": "$HelpGoldPointY4_640" } },
+            { "name": "GoldPoint5", "rect": { "x": 784, "y": "$HelpGoldPointY5_640" } },
+            { "name": "GoldPoint6", "rect": { "x": 784, "y": "$HelpGoldPointY6_640" } },
+            { "name": "GoldPoint7", "rect": { "x": 784, "y": "$HelpGoldPointY7_640" } },
+            { "name": "GoldPoint8", "rect": { "x": 784, "y": "$HelpGoldPointY8_640" } },
+            { "name": "GoldPoint9", "rect": { "x": 784, "y": "$HelpGoldPointY9_640" } },
+            { "name": "GoldPoint10", "rect": { "x": 784, "y": "$HelpGoldPointY10_640" } },
+            // lines
+            { "name": "LifeLine", "rect": { "x": 734, "y": 1125, "width": 2, "height": 46 } },
+            { "name": "LeftMouseLine", "rect": { "x": 810, "y": 1085, "width": 2, "height": 116 } },
+            { "name": "RunWalkLine", "rect": { "x": 861, "y": 1165, "width": 2, "height": 56 } },
+            { "name": "StaminaLine", "rect": { "x": 910, "y": 1125, "width": 2, "height": 96 } },
+            { "name": "ExperienceLine", "rect": { "x": 967, "y": 1165, "width": 2, "height": 37 } },
+            { "name": "MiniPanelLine", "rect": { "x": 1033, "y": 1095, "width": 2, "height": 76 } },
+            { "name": "BeltLine", "rect": { "x": 1128, "y": 1165, "width": 2, "height": 41 } },
+            { "name": "RightMouseLine", "rect": { "x": 1186, "y": 1085, "width": 2, "height": 116 } },
+            { "name": "ManaLine", "rect": { "x": 1265, "y": 1125, "width": 2, "height": 46 } },
+            // 640p only
+            { "name": "background640p0", "rect": { "x": 680, "y": 760 } },
+            { "name": "background640p1", "rect": { "x": 936, "y": 760 } },
+            { "name": "background640p2", "rect": { "x": 680, "y": 936 } },
+            { "name": "background640p3", "rect": { "x": 936, "y": 936 } },
+            { "name": "background640p4", "rect": { "x": 1000, "y": 760 } },
+            { "name": "background640p5", "rect": { "x": 1256, "y": 760 } },
+            { "name": "background640p6", "rect": { "x": 1000, "y": 936 } },
+            { "name": "background640p7", "rect": { "x": 1256, "y": 936 } },
+            // 800p/HD only
+            { "name": "background800p0", "visible": false },
+            { "name": "background800p1", "visible": false },
+            { "name": "background800p2", "visible": false },
+            { "name": "background800p3", "visible": false },
+            { "name": "background800p4", "visible": false },
+            { "name": "background800p5", "visible": false },
+            { "name": "background800p6", "visible": false },
+            { "name": "NewStats", "visible": false },
+            { "name": "NewSkill", "visible": false },
+            { "name": "NewStatsLine", "visible": false },
+            { "name": "NewSkillLine", "visible": false }
+        ],
+        "childFormats": [
+            { "name": "Title", "rect": { "x": 928, "y": 701 } },
+            { "name": "Close", "rect": { "x": 1285, "y": 724 } },
+            { "name": "CloseText", "rect": { "x": 1281, "y": 757 } },
+            { "name": "HelpRun", "rect": { "x": 717, "y": 746 }, "command": "run", "text": "@StrHelp2" },
+            { "name": "HelpHighItems", "rect": { "x": 717, "y": 766 }, "command": "showitems", "text": "@StrHelp3" },
+            { "name": "HelpStandAttack", "rect": { "x": 717, "y": 786 }, "command": "standstill", "text": "@StrHelp4" },
+            { "name": "HelpAutoMap", "rect": { "x": 717, "y": 806 }, "command": "automap", "text": "@StrHelp5" },
+            { "name": "HelpGameMenu", "rect": { "x": 717, "y": 826 } },
+            { "name": "HelpchatMode", "rect": { "x": 717, "y": 846 } },
+            { "name": "Helpbeltopen", "rect": { "x": 717, "y": 866 } },
+            { "name": "HelpRenderToggle", "rect": { "x": 717, "y": 886 }, "command": "toggle_renderer", "text": "@StrSDHelpLegacyToggle" },
+            { "name": "HelpZoom", "rect": { "x": 717, "y": 906 }, "command": "zoom", "text": "@StrSDHelpZoom" },
+            { "name": "HelpHelpme", "rect": { "x": 717, "y": 926 }, "command": "help", "text": "@StrHelp8a" },
+            { "name": "HelpHealth", "rect": { "x": 659, "y": 1149 } },
+            { "name": "HelpMSkilla", "rect": { "x": 734, "y": 1078 } },
+            { "name": "HelpMSkillb", "rect": { "x": 734, "y": 1093 } },
+            { "name": "HelpMSkillc", "rect": { "x": 734, "y": 1108 } },
+            { "name": "NewStats", "rect": { "x": 822, "y": 1043 } },
+            { "name": "HelpRunToggle", "rect": { "x": 864, "y": 1174 } },
+            { "name": "HelpRunTogglea", "rect": { "x": 864, "y": 1189 } },
+            { "name": "HelpStamina", "rect": { "x": 914, "y": 1149 } },
+            { "name": "HelpExperience", "rect": { "x": 968, "y": 1173 } },
+            { "name": "HelpExperiencea", "rect": { "x": 968, "y": 1188 } },
+            { "name": "HelpMiniPanel", "rect": { "x": 1049, "y": 1069 } },
+            { "name": "HelpMiniPanela", "rect": { "x": 1049, "y": 1084 } },
+            { "name": "HelpMiniPanelb", "rect": { "x": 1049, "y": 1099 } },
+            { "name": "HelpMiniPanelc", "rect": { "x": 1049, "y": 1114 } },
+            { "name": "Helpbelt", "rect": { "x": 1134, "y": 1188 } },
+            { "name": "NewSkill", "rect": { "x": 1172, "y": 1043 } },
+            { "name": "HelpMSkilld", "rect": { "x": 1274, "y": 1078 } },
+            { "name": "HelpMSkillb2", "rect": { "x": 1274, "y": 1093 } },
+            { "name": "HelpMSkillc2", "rect": { "x": 1274, "y": 1108 } },
+            { "name": "Helpmana", "rect": { "x": 1344, "y": 1149 } },
+            // points
+            { "name": "GoldPoint1", "rect": { "x": 704, "y": "$HelpGoldPointY1" } },
+            { "name": "GoldPoint2", "rect": { "x": 704, "y": "$HelpGoldPointY2" } },
+            { "name": "GoldPoint3", "rect": { "x": 704, "y": "$HelpGoldPointY3" } },
+            { "name": "GoldPoint4", "rect": { "x": 704, "y": "$HelpGoldPointY4" } },
+            { "name": "GoldPoint5", "rect": { "x": 704, "y": "$HelpGoldPointY5" } },
+            { "name": "GoldPoint6", "rect": { "x": 704, "y": "$HelpGoldPointY6" } },
+            { "name": "GoldPoint7", "rect": { "x": 704, "y": "$HelpGoldPointY7" } },
+            { "name": "GoldPoint8", "rect": { "x": 704, "y": "$HelpGoldPointY8" } },
+            { "name": "GoldPoint9", "rect": { "x": 704, "y": "$HelpGoldPointY9" } },
+            { "name": "GoldPoint10", "rect": { "x": 704, "y": "$HelpGoldPointY10" } },
+            // lines
+            { "name": "LifeLine", "rect": { "x": 658, "y": 1186, "width": 2, "height": 46 } },
+            { "name": "LeftMouseLine", "rect": { "x": 733, "y": 1145, "width": 2, "height": 116 } },
+            { "name": "NewStatsLine", "rect": { "x": 820, "y": 1075, "width": 2, "height": 197 } },
+            { "name": "RunWalkLine", "rect": { "x": 863,"y": 1226, "width": 2, "height": 56 } },
+            { "name": "StaminaLine", "rect": { "x": 913, "y": 1186, "width": 2, "height": 96 } },
+            { "name": "ExperienceLine", "rect": { "x": 968, "y": 1225, "width": 2, "height": 37 } },
+            { "name": "MiniPanelLine", "rect": { "x": 1048, "y": 1151, "width": 2, "height": 86 } },
+            { "name": "BeltLine", "rect": { "x": 1133, "y": 1225, "width": 2, "height": 41 } },
+            { "name": "NewSkillLine", "rect": { "x": 1175, "y": 1075, "width": 2, "height": 197 } },
+            { "name": "RightMouseLine", "rect": { "x": 1273, "y": 1145, "width": 2, "height": 116 } },
+            { "name": "ManaLine", "rect": { "x": 1343, "y": 1186, "width": 2, "height": 46 } },
+            // 640p only
+            { "name": "background640p0", "visible": false },
+            { "name": "background640p1", "visible": false },
+            { "name": "background640p2", "visible": false },
+            { "name": "background640p3", "visible": false },
+            { "name": "background640p4", "visible": false },
+            { "name": "background640p5", "visible": false },
+            { "name": "background640p6", "visible": false },
+            { "name": "background640p7", "visible": false },
+            // 800p only
+            { "name": "background800p0", "rect": { "x": 600, "y": 700 } },
+            { "name": "background800p1", "rect": { "x": 600,"y": 955 } },
+            { "name": "background800p2", "rect": { "x": 665, "y": 464 } },
+            { "name": "background800p3", "rect": { "x": 922, "y": 464 } },
+            { "name": "background800p4", "rect": { "x": 1135, "y": 700 } },
+            { "name": "background800p5", "rect": { "x": 1380, "y": 700 } },
+            { "name": "background800p6", "rect": { "x": 1380, "y": 956 } }
+        ]
+    },
+    "children": [
+        {
+            "type": "ClickCatcherWidget", "name": "catcher",
+            "fields": {
+                "fitToParent": true
+            }
+        },
+        // Unfortunately because these are overlapping and have different offsets, they cannot be a NineTileImageWidget
+        {
+            "type": "ImageWidget", "name": "background800p0",
+            "fields": {
+                "frame": 0,
+                "filename": "MENU/800helpborder"
+            }
+        },
+        {
+            "type": "ImageWidget", "name": "background800p1",
+            "fields": {
+                "frame": 1,
+                "filename": "MENU/800helpborder"
+            }
+        },
+        {
+            "type": "ImageWidget", "name": "background800p2",
+            "fields": {
+                "frame": 2,
+                "filename": "MENU/800helpborder"
+            }
+        },
+        {
+            "type": "ImageWidget", "name": "background800p3",
+            "fields": {
+                "frame": 3,
+                "filename": "MENU/800helpborder"
+            }
+        },
+        {
+            "type": "ImageWidget", "name": "background800p4",
+            "fields": {
+                "frame": 4,
+                "filename": "MENU/800helpborder"
+            }
+        },
+        {
+            "type": "ImageWidget", "name": "background800p5",
+            "fields": {
+                "frame": 5,
+                "filename": "MENU/800helpborder"
+            }
+        },
+        {
+            "type": "ImageWidget", "name": "background800p6",
+            "fields": {
+                "frame": 6,
+                "filename": "MENU/800helpborder"
+            }
+        },
+        // 640p background
+        {
+            "type": "ImageWidget", "name": "background640p0",
+            "fields": {
+                "frame": 0,
+                "filename": "MENU/helpborder"
+            }
+        },
+        {
+            "type": "ImageWidget", "name": "background640p1",
+            "fields": {
+                "frame": 1,
+                "filename": "MENU/helpborder"
+            }
+        },
+        {
+            "type": "ImageWidget", "name": "background640p2",
+            "fields": {
+                "frame": 2,
+                "filename": "MENU/helpborder"
+            }
+        },
+        {
+            "type": "ImageWidget", "name": "background640p3",
+            "fields": {
+                "frame": 3,
+                "filename": "MENU/helpborder"
+            }
+        },
+        {
+            "type": "ImageWidget", "name": "background640p4",
+            "fields": {
+                "frame": 4,
+                "filename": "MENU/helpborder"
+            }
+        },
+        {
+            "type": "ImageWidget", "name": "background640p5",
+            "fields": {
+                "frame": 5,
+                "filename": "MENU/helpborder"
+            }
+        },
+        {
+            "type": "ImageWidget", "name": "background640p6",
+            "fields": {
+                "frame": 6,
+                "filename": "MENU/helpborder"
+            }
+        },
+        {
+            "type": "ImageWidget", "name": "background640p7",
+            "fields": {
+                "frame": 7,
+                "filename": "MENU/helpborder"
+            }
+        },
+        // Text
+        {
+            "type": "TextBoxWidget", "name": "Title",
+            "fields": {
+                "text": "@Strhelp1"
+            }
+        },
+        {
+            "type": "ButtonWidget", "name": "Close",
+            "fields": {
+                "onClickMessage": "PanelManager:ClosePanel:HelpPanel",
+                "filename": "panel\\buysellbtn",
+                "normalFrame": 10,
+                "pressedFrame": 11
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "CloseText",
+            "fields": {
+                "text": "@strClose"
+            }
+        },
+        // Widgets below use 12ptf, some use 11ptf in Asian languages (the same font, different alignment).
+        {
+            "type": "TextBoxWidget", "name": "HelpRun",
+            "fields": {
+                "fontType": "$HelpAligned12ptf",
+                "text": "@StrHelp2"
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "HelpHighItems",
+            "fields": {
+                "fontType": "$HelpAligned12ptf",
+                "text": "@StrHelp3"
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "HelpStandAttack",
+            "fields": {
+                "fontType": "$HelpAligned12ptf",
+                "text": "@StrHelp4"
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "HelpAutoMap",
+            "fields": {
+                "fontType": "$HelpAligned12ptf",
+                "text": "@StrHelp5"
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "HelpGameMenu",
+            "fields": {
+                "fontType": "$HelpAligned12ptf",
+                "text": "@StrHelp6"
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "HelpchatMode",
+            "fields": {
+                "fontType": "$HelpAligned12ptf",
+                "text": "@StrHelp7"
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "Helpbeltopen",
+            "fields": {
+                "fontType": "$HelpAligned12ptf",
+                "text": "@StrHelp8"
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "HelpRenderToggle",
+            "fields": {
+                "fontType": "$HelpAligned12ptf",
+                "text": "@StrSDHelpLegacyToggle"
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "HelpZoom",
+            "fields": {
+                "fontType": "$HelpAligned12ptf",
+                "text": "@StrSDHelpZoom"
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "HelpHelpme",
+            "fields": {
+                "fontType": "$HelpAligned12ptf",
+                "text": "@StrHelp8a"
+            }
+        },
+        // White text
+        {
+            "type": "TextBoxWidget", "name": "HelpHealth",
+            "fields": {
+                "text": "@StrHelp9",
+                "fontType": "12ptF",
+                "style": {
+                    "alignment": { "h": "center" }
+                }
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "HelpMSkilla",
+            "fields": {
+                "text": "@StrHelp10",
+                "fontType": "12ptF",
+                "style": {
+                    "alignment": { "h": "center" }
+                }
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "HelpMSkillb",
+            "fields": {
+                "text": "@StrHelp11",
+                "fontType": "12ptF",
+                "style": {
+                    "alignment": { "h": "center" }
+                }
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "HelpMSkillc",
+            "fields": {
+                "text": "@StrHelp12",
+                "fontType": "12ptF",
+                "style": {
+                    "alignment": { "h": "center" }
+                }
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "NewStats",
+            "fields": {
+                "text": "@strlvlup",
+                "fontType": "12ptF",
+                "style": {
+                    "alignment": { "h": "center" }
+                }
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "HelpRunToggle",
+            "fields": {
+                "text": "@StrHelp14",
+                "fontType": "12ptF",
+                "style": {
+                    "alignment": { "h": "center" }
+                }
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "HelpRunTogglea",
+            "fields": {
+                "text": "@StrHelp14a",
+                "fontType": "12ptF",
+                "style": {
+                    "alignment": { "h": "center" }
+                }
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "HelpStamina",
+            "fields": {
+                "text": "@StrHelp15",
+                "fontType": "12ptF",
+                "style": {
+                    "alignment": { "h": "center" }
+                }
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "HelpExperience",
+            "fields": {
+                "text": "@StrHelp16",
+                "fontType": "12ptF",
+                "style": {
+                    "alignment": { "h": "center" }
+                }
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "HelpExperiencea",
+            "fields": {
+                "text": "@StrHelp16a",
+                "fontType": "12ptF",
+                "style": {
+                    "alignment": { "h": "center" }
+                }
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "HelpMiniPanel",
+            "fields": {
+                "text": "@StrHelp17",
+                "fontType": "12ptF",
+                "style": {
+                    "alignment": { "h": "center" }
+                }
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "HelpMiniPanela",
+            "fields": {
+                "text": "@StrHelp18",
+                "fontType": "12ptF",
+                "style": {
+                    "alignment": { "h": "center" }
+                }
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "HelpMiniPanelb",
+            "fields": {
+                "text": "@StrHelp19",
+                "fontType": "12ptF",
+                "style": {
+                    "alignment": { "h": "center" }
+                }
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "HelpMiniPanelc",
+            "fields": {
+                "text": "@StrHelp20",
+                "fontType": "12ptF",
+                "style": {
+                    "alignment": { "h": "center" }
+                }
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "Helpbelt",
+            "fields": {
+                "text": "@StrHelp21",
+                "fontType": "12ptF",
+                "style": {
+                    "alignment": { "h": "center" }
+                }
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "NewSkill",
+            "fields": {
+                "text": "@strnewskl",
+                "fontType": "12ptF",
+                "style": {
+                    "alignment": { "h": "center" }
+                }
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "HelpMSkilld",
+            "fields": {
+                "text": "@StrHelp13",
+                "fontType": "12ptF",
+                "style": {
+                    "alignment": { "h": "center" }
+                }
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "HelpMSkillb2",
+            "fields": {
+                "text": "@StrHelp11",
+                "fontType": "12ptF",
+                "style": {
+                    "alignment": { "h": "center" }
+                }
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "HelpMSkillc2",
+            "fields": {
+                "text": "@StrHelp12",
+                "fontType": "12ptF",
+                "style": {
+                    "alignment": { "h": "center" }
+                }
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "Helpmana",
+            "fields": {
+                "text": "@StrHelp22",
+                "fontType": "12ptF",
+                "style": {
+                    "alignment": { "h": "center" }
+                }
+            }
+        },
+        // Gold bullet points
+        {
+            "type": "ImageWidget", "name": "GoldPoint1",
+            "fields": { "filename": "MENU/helpyellowbullet" }
+        },
+        {
+            "type": "ImageWidget", "name": "GoldPoint2",
+            "fields": { "filename": "MENU/helpyellowbullet" }
+        },
+        {
+            "type": "ImageWidget", "name": "GoldPoint3",
+            "fields": { "filename": "MENU/helpyellowbullet" }
+        },
+        {
+            "type": "ImageWidget", "name": "GoldPoint4",
+            "fields": { "filename": "MENU/helpyellowbullet" }
+        },
+        {
+            "type": "ImageWidget", "name": "GoldPoint5",
+            "fields": { "filename": "MENU/helpyellowbullet" }
+        },
+        {
+            "type": "ImageWidget", "name": "GoldPoint6",
+            "fields": { "filename": "MENU/helpyellowbullet" }
+        },
+        {
+            "type": "ImageWidget", "name": "GoldPoint7",
+            "fields": { "filename": "MENU/helpyellowbullet" }
+        },
+        {
+            "type": "ImageWidget", "name": "GoldPoint8",
+            "fields": { "filename": "MENU/helpyellowbullet" }
+        },
+        {
+            "type": "ImageWidget", "name": "GoldPoint9",
+            "fields": { "filename": "MENU/helpyellowbullet" }
+        },
+        {
+            "type": "ImageWidget", "name": "GoldPoint10",
+            "fields": { "filename": "MENU/helpyellowbullet" }
+        },
+        // Indicator lines
+        {
+            "type": "IndicatorLineWidget", "name": "LifeLine",
+            "fields": {
+                "rect": { "width": 2, "height": 46 },
+                "indicator/filename": "MENU/helpwhitebullet",
+                "color": [ 1, 1, 1, 1 ]
+            }
+        },
+        {
+            "type": "IndicatorLineWidget", "name": "LeftMouseLine",
+            "fields": {
+                "rect": { "width": 2, "height": 116 },
+                "indicator/filename": "MENU/helpwhitebullet",
+                "color": [ 1, 1, 1, 1 ]
+            }
+        },
+        {
+            "type": "IndicatorLineWidget", "name": "NewStatsLine",
+            "fields": {
+                "rect": { "width": 2, "height": 197 },
+                "indicator/filename": "MENU/helpwhitebullet",
+                "color": [ 1, 1, 1, 1 ]
+            }
+        },
+        {
+            "type": "IndicatorLineWidget", "name": "RunWalkLine",
+            "fields": {
+                "rect": { "width": 2, "height": 56 },
+                "indicator/filename": "MENU/helpwhitebullet",
+                "color": [ 1, 1, 1, 1 ]
+            }
+        },
+        {
+            "type": "IndicatorLineWidget", "name": "StaminaLine",
+            "fields": {
+                "rect": { "width": 2, "height": 96 },
+                "indicator/filename": "MENU/helpwhitebullet",
+                "color": [ 1, 1, 1, 1 ]
+            }
+        },
+        {
+            "type": "IndicatorLineWidget", "name": "ExperienceLine",
+            "fields": {
+                "rect": { "width": 2, "height": 37 },
+                "indicator/filename": "MENU/helpwhitebullet",
+                "color": [ 1, 1, 1, 1 ]
+            }
+        },
+        {
+            "type": "IndicatorLineWidget", "name": "MiniPanelLine",
+            "fields": {
+                "rect": { "width": 2, "height": 86 },
+                "indicator/filename": "MENU/helpwhitebullet",
+                "color": [ 1, 1, 1, 1 ]
+            }
+        },
+        {
+            "type": "IndicatorLineWidget", "name": "BeltLine",
+            "fields": {
+                "rect": { "width": 2, "height": 41 },
+                "indicator/filename": "MENU/helpwhitebullet",
+                "color": [ 1, 1, 1, 1 ]
+            }
+        },
+        {
+            "type": "IndicatorLineWidget", "name": "NewSkillLine",
+            "fields": {
+                "rect": { "width": 2, "height": 197 },
+                "indicator/filename": "MENU/helpwhitebullet",
+                "color": [ 1, 1, 1, 1 ]
+            }
+        },
+        {
+            "type": "IndicatorLineWidget", "name": "RightMouseLine",
+            "fields": {
+                "rect": { "width": 2, "height": 116 },
+                "indicator/filename": "MENU/helpwhitebullet",
+                "color": [ 1, 1, 1, 1 ]
+            }
+        },
+        {
+            "type": "IndicatorLineWidget", "name": "ManaLine",
+            "fields": {
+                "indicator/filename": "MENU/helpwhitebullet",
+                "color": [ 1, 1, 1, 1 ]
+            }
+        }
+    ]
+}

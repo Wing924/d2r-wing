@@ -1,0 +1,242 @@
+{
+    "type": "KeyBindingPanel", "name": "KeyBindingMenu",
+    "fields": {
+        "rect": "$OptionsPanelRect",
+        "anchor": { "x": 0.5 },
+        "priority": 9003,
+        "primaryChangedSound": "pass",
+        "startBindingKeySound": "select",
+        "changeBindingSound": "select",
+        "cancelBindingSound": "pass",
+        "clearBindingSound": "select",
+        "exitMenuKeySound": "select",
+        "errorMessageSeconds": 2.0,
+    },
+    "children": [
+        {
+            "type": "TableWidget", "name": "HeaderTable",
+            "fields": {
+                "rect": { "x": 30, "y": 20 },
+                "columns": [
+                    { "width": 530, "alignment": { "h": "fit", "v": "fit" } },
+                    { "width": 510, "alignment": { "h": "fit", "v": "fit" } },
+                    { "width": 510, "alignment": { "h": "fit", "v": "fit" } },
+                ],
+                "rowHeight": 50,
+                "cellPadding": { "left": 40, "right": 40 },
+            },
+            "children": [
+                {
+                    "type": "TableRowWidget", "name": "Row",
+                    "children": [
+                        {
+                            "type": "TextBoxWidget", "name": "BindingNameTitle",
+                            "fields": {
+                                "text": "@KeyMacCommand",
+                                "style": {
+                                    "fontColor": "$FontColorGold",
+                                    "fontFace": "Formal",
+                                    "pointSize": "$MediumLargeFontSize",
+                                },
+                            }
+                        },
+                        {
+                            "type": "TextBoxWidget", "name": "PrimaryKeyTitle",
+                            "fields": {
+                                "text": "@OptionsMenuControlsKeyOne",
+                                "style": {
+                                    "fontColor": "$FontColorGold",
+                                    "fontFace": "Formal",
+                                    "pointSize": "$MediumLargeFontSize",
+                                },
+                            }
+                        },
+                        {
+                            "type": "TextBoxWidget", "name": "SecondaryKeyTitle",
+                            "fields": {
+                                "text": "@OptionsMenuControlsKeyTwo",
+                                "style": {
+                                    "fontColor": "$FontColorGold",
+                                    "fontFace": "Formal",
+                                    "pointSize": "$MediumLargeFontSize",
+                                },
+                            }
+                        },
+                    ]
+                },
+            ]
+        },
+        {
+            "type": "ListWidget", "name": "BindingsList",
+            "fields": {
+                "rect": { "x": 50, "y": 90, "width": 1494, "height": 1050 },
+                "direction": "vertical",
+                "selectorName": "BindingSelector",
+                "selectionChangedSound": "cursor_pass",
+            },
+            "children": [
+                {
+                    "type": "ListItemWidget", "name": "Template",
+                    "fields": {
+                        "rect": { "width": 1494, "height": 50 }
+                    },
+                    "children": [
+                        {
+                            "type": "KeyBindingItemWidget", "name": "Binding",
+                            "fields": {
+                                "rect": { "width": 1494, "height": 58 },
+                                "selectedColor": "$FontColorBlue",
+                                "boundColor": "$FontColorGold",
+                                "unboundColor": "$FontColorGray",
+                                "allUnboundColor": "$FontColorRed",
+                                "blinkOnSeconds": 0.3,
+                                "blinkOffSeconds": 0.2,
+                            },
+                            "children": [
+                                {
+                                    "type": "ButtonWidget", "name": "PrimaryKeyButton",
+                                    "fields": {
+                                        "rect": { "x": 0, "y": 0, "width": 1494, "height": 58 },
+                                        "sound": "select",
+                                    },
+                                    "children": [
+                                        {
+                                            "type": "TextBoxWidget", "name": "BindingName",
+                                            "fields": {
+                                                "rect": { "x": 20, "y": 0 },
+                                                "style": {
+                                                    "fontColor": "$FontColorWhite",
+                                                    "fontFace": "Formal",
+                                                    "pointSize": "$MediumFontSize",
+                                                },
+                                            }
+                                        },
+                                        {
+                                            "type": "TextBoxWidget", "name": "PrimaryKeyName",
+                                            "fields": {
+                                                "rect": { "x": 554, "y": 0 },
+                                                "style": {
+                                                    "fontFace": "Formal",
+                                                    "pointSize": "$MediumFontSize",
+                                                }
+                                            }
+                                        },
+                                    ]
+                                },
+                                {
+                                    "type": "ButtonWidget", "name": "SecondaryKeyButton",
+                                    "fields": {
+                                        "rect": { "x": 1042, "y": 0, "width": 450, "height": 58 },
+                                        "sound": "select",
+                                    },
+                                    "children": [
+                                        {
+                                            "type": "TextBoxWidget", "name": "SecondaryKeyName",
+                                            "fields": {
+                                                "rect": { "x": 20, "y": 0 },
+                                                "style": {
+                                                    "fontFace": "Formal",
+                                                    "pointSize": "$MediumFontSize",
+                                                }
+                                            }
+                                        },
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Widget", "name": "BindingSelector",
+                }
+            ]
+        },
+        {
+            "type": "ImageWidget", "name": "ScrollBarBackground",
+            "fields": {
+                "rect": "$OptionsScrollBarBackgroundRect",
+                "anchor": { "x": 1.0 },
+                "filename": "PauseMenu/VerticalScroll_KeyMapping",
+            },
+            "children": [
+                {
+                    "type": "ScrollControllerWidget", "name": "ScrollBar",
+                    "fields": {
+                        "rect": { "x": -31, "y": 29, "width": 26, "height": 1080 },
+                        "anchor": { "x": 1.0 },
+                        "wheelScrollAmount": 90,
+                        "buttonScrollAmount": 60,
+                        "buttonScrollDelayMS": 100,
+                        "wheelScrollSound": "cursor_scroll_hd",
+                        "buttonScrollSound": "cursor_scroll_hd",
+                        "upArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollUpBtn",
+                        "downArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollDownBtn",
+                        "barFilepath": "PauseMenu\\VerticalIndicator",
+                        "viewName": "BindingsList",
+                    }
+                },
+            ]
+        },
+        {
+            "type": "TableWidget", "name": "ButtonsTable",
+            "fields": {
+                "anchor": {"x":0.5, "y":0.0},
+                "rect": { "x": -400, "y": 1155, "width": 1500},
+                "columns": [
+                    { "width": 400, "alignment": { "h": "center", "v": "center" } },
+                    { "width": 400, "alignment": { "h": "center", "v": "center" } },
+                ],
+                "rowHeight": 120,
+                "cellPadding": { "left": 5, "right": 5 },
+            },
+            "children": [
+                {
+                    "type": "TableRowWidget", "name": "Row",
+                    "children": [
+                        {
+                            "type": "ButtonWidget", "name": "SaveCustomButton",
+                            "fields": {
+                                "filename": "FrontEnd/HD/Final/FrontEnd_ButtonSmall",
+                                "textString": "@KeyBindingCustomDefaultsSave",
+                                "hoveredFrame": 3,
+                                "onClickMessage": "KeyBindingPanelMessage:SaveCustomDefaults",
+                                "pointSize": "$MediumFontSize",
+                                "text/style": "$StyleFEButtonText",
+                                "textColor": "$LightButtonTextColor",
+                                "disabledTint": { "a": 1.0 },
+                                "disabledFrame": 2,
+                                "sound": "cursor_select",
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget", "name": "DeleteCustomButton",
+                            "fields": {
+                                "filename": "FrontEnd/HD/Final/FrontEnd_ButtonSmall",
+                                "textString": "@KeyBindingCustomDefaultsDelete",
+                                "hoveredFrame": 3,
+                                "onClickMessage": "KeyBindingPanelMessage:DeleteCustomDefaults",
+                                "pointSize": "$MediumFontSize",
+                                "text/style": "$StyleFEButtonText",
+                                "textColor": "$LightButtonTextColor",
+                                "disabledTint": { "a": 1.0 },
+                                "disabledFrame": 2,
+                                "sound": "cursor_select",
+                            }
+                        },
+                    ]
+                },
+            ]
+        },
+        {
+            "type": "TextBoxWidget", "name": "ErrorMessage",
+            "fields": {
+                "rect": { "x": 310, "y": 399 },
+                "fontType": "Chat",
+                "style": {
+                    "fontColor": "$FontColorRed",
+                    "alignment": { "h": "center", "v": "bottom" },
+                }
+            }
+        }
+    ]
+}

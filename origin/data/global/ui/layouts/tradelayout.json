@@ -1,0 +1,133 @@
+{
+    "type": "TradePanel", "name": "TradeLayout",
+    "fields": {
+        "priority": 5,
+        "rect": { "x": -320, "y": -240, "width": 320, "height": 432 },
+        "anchor": "$LeftPanelAnchor",
+    },
+    "children": [
+        {
+            "type": "ClickCatcherWidget", "name": "click_catcher",
+            "fields": {
+                "rect": { "width": 320, "height": 432 }
+            },
+        },
+        {
+            "type": "GridImageWidget", "name": "background",
+            "fields": {
+                "filename": "PANEL\\trade",
+                "frames": 4,
+                "rows": 2,
+            },
+        },
+        {
+            "type": "TextBoxWidget", "name": "name_them",
+            "fields": {
+                "rect": { "x": 24, "y": 9, "width": 112, "height": 16 },
+                "style": {
+                    "alignment": { "h": "left", "v": "center" }
+                },
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "gold_them",
+            "fields": {
+                "rect": { "x": 158, "y": 9, "width": 56, "height": 16 },
+                "text": "@gld",
+                "style": {
+                    "alignment": { "h": "center", "v": "center" }
+                },
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "gold_amount_them",
+            "fields": {
+                "rect": { "x": 220, "y": 9, "width": 84, "height": 16 },
+                "style": {
+                    "alignment": { "h": "left", "v": "center" }
+                },
+            }
+        },
+        {
+            "type": "InventoryGridWidget", "name": "grid_them",
+            "fields": {
+                "rect": { "x": 18, "y": 39 },
+                "cellCount": { "x": 10, "y": 4 },
+                "cellSize": "$ItemCellSize",
+                "gemSocketFilename": "PANEL\\gemsocket",
+            },
+        },
+        {
+            "type": "TextBoxWidget", "name": "name_us",
+            "fields": {
+                "rect": { "x": 24, "y": 225, "width": 112, "height": 16 },
+                "style": {
+                    "alignment": { "h": "left", "v": "center" }
+                },
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "gold_us",
+            "fields": {
+                "rect": { "x": 158, "y": 225, "width": 56, "height": 16 },
+                "text": "@gld",
+                "style": {
+                    "alignment": { "h": "center", "v": "center" }
+                },
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "gold_amount_us",
+            "fields": {
+                "rect": { "x": 220, "y": 225, "width": 84, "height": 16 },
+                "style": {
+                    "alignment": { "h": "left", "v": "center" }
+                },
+            }
+        },
+        {
+            "type": "InventoryGridWidget", "name": "grid_us",
+            "fields": {
+                "rect": { "x": 18, "y": 255 },
+                "cellCount": { "x": 10, "y": 4 },
+                "cellSize": "$ItemCellSize",
+                "gemSocketFilename": "PANEL\\gemsocket",
+            },
+        },
+        {
+            "type": "ButtonWidget", "name": "ready_them",
+            "fields": {
+                "rect": { "x": 275, "y": 170 },
+                "filename": "PANEL\\buysellbtn",
+                "normalFrame": 16,
+                "pressedFrame": 17,
+                "tooltipString": "@strAcceptTrade",
+                "tooltipOffset": { "x": 0, "y": -3 },
+            },
+        },
+        {
+            "type": "ButtonWidget", "name": "ready_us",
+            "fields": {
+                "rect": { "x": 223, "y": 384 },
+                "filename": "PANEL\\buysellbtn",
+                "normalFrame": 16,
+                "pressedFrame": 17,
+                "tooltipString": "@strAcceptTrade",
+                "tooltipOffset": { "x": 0, "y": -3 },
+                "onClickMessage": "TradePanelMessage:Confirm",
+            },
+        },
+        {
+            "type": "ButtonWidget", "name": "close",
+            "fields": {
+                "rect": { "x": 275, "y": 384 },
+                "filename": "PANEL\\buysellbtn",
+                "normalFrame": 10,
+                "pressedFrame": 11,
+                "tooltipString": "@strClose",
+                "tooltipOffset": { "x": 0, "y": -3 },
+                "onClickMessage": "TradePanelMessage:Close",
+            },
+        },
+    ]
+}

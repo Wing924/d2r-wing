@@ -1,0 +1,436 @@
+{
+    "type": "ButtonBindingModal", "name": "ButtonBindingModal",
+    "fields": {
+        "rect": { "x": -495, "y": -368 },
+        "anchor": {"x": 0.5, "y": 0.5},
+        "drawTint": false,
+        "isDismissable": false,
+        "defaultWidget": "SkillToRebind"
+    },
+    "children": [
+        {
+            "type": "ClickCatcherWidget", "name": "ClickCatcher",
+            "fields": {
+                "rect": { "width": 875, "height": 550 }
+            },
+        },
+        // background image/border
+        {
+            "type": "ImageWidget", "name": "Background",
+            "fields": { 
+                "filename": "Controller/Panel/Modal/ui-console-modal"
+            }
+        },
+        //localized text
+        {
+            "type": "TextBoxWidget", "name": "Title",
+            "fields": { 
+                "rect": { "x":52, "y":38, "width": 880, "height": 169 },
+                "text": "@RebindSkill",
+                "style":"$StyleModalDialogTitle",
+            }
+        },
+        // Skill to rebind
+        {
+            "type": "SkillSelectButtonWidget", "name": "SkillToRebind",
+            "fields": {
+                "rect": { "x": 426, "y": 190 },
+                "tooltipIsTopAligned": false,
+                "skillIconFilenames": "$SkillIconFilenames",
+                "tooltipPadding": 50,
+            },
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "HotkeyText",
+                    "fields": {
+                        "rect": "$SkillHotkeyTextRect",
+                        "style": "$SkillHotkeyTextStyle",
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "QuantityText",
+                    "fields": {
+                        "rect": "$SkillQuantityTextRect",
+                        "style": "$SkillQuantityTextStyle",
+                    }
+                },
+                {
+                    "type": "Widget", "name": "CurrentSkillContainer",
+                    "fields": {
+                        "rect": { "x": -895, "y": -54 },
+                    },
+                    "children": [
+                        {
+                            "type": "ImageWidget", "name": "SkillSwapIndicator",
+                            "fields": {
+                                "filename": "Controller/HUD/SkillSwapButton",
+                                "rect": { "x": 509, "y": 467 },
+                            }
+                        },
+                        {
+                            "type": "TextBoxWidget", "name": "LTButtonPrompt",
+                            "fields": {
+                                "rect": { "x": 504, "y": 485 },
+                                "text": "\uE00D",
+                            }
+                        }, 
+                        {
+                            "type": "SkillSelectButtonWidget", "name": "SkillButton1",
+                            "fields": {
+                                "rect": { "x": 562, "y": 256 },
+                                "side": "right",
+                                "skillIconFilenames": "$SkillIconFilenames",
+                                "skillButton": "SkillButton1"
+                            },
+                            "children": [
+
+                                {
+                                    "type": "TextBoxWidget", "name": "QuantityText",
+                                    "fields": {
+                                        "rect": "$SkillQuantityTextRectController",
+                                        "style": "$SkillQuantityTextStyle",
+                                    }
+                                },
+                                {
+                                    "type": "SkillButtonPromptWidget", "name": "SkillButton1Prompt",
+                                    "fields": {
+                                        "anchor": { "x": 0.5, "y": 1.0 },
+                                        "skillButton": "SkillButton1",
+                                        "style": {
+                                            "alignment": { "h": "center", "v": "center" },
+                                        },
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "SkillSelectButtonWidget", "name": "SkillButton2",
+                            "fields": {
+                                "rect": { "x": 696, "y": 256 },
+                                "side": "right",
+                                "skillIconFilenames": "$SkillIconFilenames",
+                                "skillButton": "SkillButton2"
+                            },
+                            "children": [
+
+                                {
+                                    "type": "TextBoxWidget", "name": "QuantityText",
+                                    "fields": {
+                                        "rect": "$SkillQuantityTextRectController",
+                                        "style": "$SkillQuantityTextStyle",
+                                    }
+                                },
+                                {
+                                    "type": "SkillButtonPromptWidget", "name": "SkillButton2Prompt",
+                                    "fields": {
+                                        "anchor": { "x": 0.5, "y": 1.0 },
+                                        "skillButton": "SkillButton2",
+                                        "style": {
+                                            "alignment": { "h": "center", "v": "center" },
+                                        },
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "SkillSelectButtonWidget", "name": "SkillButton3",
+                            "fields": {
+                                "rect": { "x": 830, "y": 256 },
+                                "side": "right",
+                                "skillIconFilenames": "$SkillIconFilenames",
+                                "skillButton": "SkillButton3",
+                            },
+                            "children": [
+
+                                {
+                                    "type": "TextBoxWidget", "name": "QuantityText",
+                                    "fields": {
+                                        "rect": "$SkillQuantityTextRectController",
+                                        "style": "$SkillQuantityTextStyle",
+                                    }
+                                },
+                                {
+                                    "type": "SkillButtonPromptWidget", "name": "SkillButton3Prompt",
+                                    "fields": {
+                                        "anchor": { "x": 0.5, "y": 1.0 },
+                                        "skillButton": "SkillButton3",
+                                        "style": {
+                                            "alignment": { "h": "center", "v": "center" },
+                                        },
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "SkillSelectButtonWidget", "name": "SkillButton4",
+                            "fields": {
+                                "rect": { "x": 965, "y": 256 },
+                                "side": "right",
+                                "skillIconFilenames": "$SkillIconFilenames",
+                                "skillButton": "SkillButton4",
+                            },
+                            "children": [
+
+                                {
+                                    "type": "TextBoxWidget", "name": "QuantityText",
+                                    "fields": {
+                                        "rect": "$SkillQuantityTextRectController",
+                                        "style": "$SkillQuantityTextStyle",
+                                    }
+                                },
+                                {
+                                    "type": "SkillButtonPromptWidget", "name": "SkillButton4Prompt",
+                                    "fields": {
+                                        "anchor": { "x": 0.5, "y": 1.0 },
+                                        "skillButton": "SkillButton4",
+                                        "style": {
+                                            "alignment": { "h": "center", "v": "center" },
+                                        },
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "SkillSelectButtonWidget", "name": "SkillButton5",
+                            "fields": {
+                                "rect": { "x": 1099, "y": 256 },
+                                "side": "right",
+                                "skillIconFilenames": "$SkillIconFilenames",
+                                "skillButton": "SkillButton5",
+                            },
+                            "children": [
+
+                                {
+                                    "type": "TextBoxWidget", "name": "QuantityText",
+                                    "fields": {
+                                        "rect": "$SkillQuantityTextRectController",
+                                        "style": "$SkillQuantityTextStyle",
+                                    }
+                                },
+                                {
+                                    "type": "SkillButtonPromptWidget", "name": "SkillButton5Prompt",
+                                    "fields": {
+                                        "anchor": { "x": 0.5, "y": 1.0 },
+                                        "skillButton": "SkillButton5",
+                                        "style": {
+                                            "alignment": { "h": "center", "v": "center" },
+                                        },
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "SkillSelectButtonWidget", "name": "SkillButton6",
+                            "fields": {
+                                "rect": { "x": 1232, "y": 256 },
+                                "side": "right",
+                                "skillIconFilenames": "$SkillIconFilenames",
+                                "skillButton": "SkillButton6",
+                            },
+                            "children": [
+
+                                {
+                                    "type": "TextBoxWidget", "name": "QuantityText",
+                                    "fields": {
+                                        "rect": "$SkillQuantityTextRectController",
+                                        "style": "$SkillQuantityTextStyle",
+                                    }
+                                },
+                                {
+                                    "type": "SkillButtonPromptWidget", "name": "SkillButton6Prompt",
+                                    "fields": {
+                                        "anchor": { "x": 0.5, "y": 1.0 },
+                                        "skillButton": "SkillButton6",
+                                        "style": {
+                                            "alignment": { "h": "center", "v": "center" },
+                                        },
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "SkillSelectButtonWidget", "name": "AltSkillButton1",
+                            "fields": {
+                                "rect": { "x": 562, "y": 450 },
+                                "side": "left",
+                                "skillIconFilenames": "$SkillIconFilenames",
+                                "skillButton": "SkillButton1",
+                                "alwaysGetAlt": true
+                            },
+                            "children": [
+                
+                                {
+                                    "type": "TextBoxWidget", "name": "QuantityText",
+                                    "fields": {
+                                        "rect": "$SkillQuantityTextRectController",
+                                        "style": "$SkillQuantityTextStyle",
+                                    }
+                                },
+                                {
+                                    "type": "SkillButtonPromptWidget", "name": "BottomButtonPrompt",
+                                    "fields": {
+                                        "anchor": { "x": 0.5, "y": 1.0 },
+                                        "skillButton": "SkillButton1",
+                                        "style": {
+                                            "alignment": { "h": "center", "v": "center" },
+                                        },
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "SkillSelectButtonWidget", "name": "AltSkillButton2",
+                            "fields": {
+                                "rect": { "x": 696, "y": 450 },
+                                "side": "right",
+                                "skillIconFilenames": "$SkillIconFilenames",
+                                "skillButton": "SkillButton2",
+                                "alwaysGetAlt": true
+                            },
+                            "children": [
+                
+                                {
+                                    "type": "TextBoxWidget", "name": "QuantityText",
+                                    "fields": {
+                                        "rect": "$SkillQuantityTextRectController",
+                                        "style": "$SkillQuantityTextStyle",
+                                    }
+                                },
+                                {
+                                    "type": "SkillButtonPromptWidget", "name": "RightButtonPrompt",
+                                    "fields": {
+                                        "anchor": { "x": 0.5, "y": 1.0 },
+                                        "skillButton": "SkillButton2",
+                                        "style": {
+                                            "alignment": { "h": "center", "v": "center" },
+                                        },
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "SkillSelectButtonWidget", "name": "AltSkillButton3",
+                            "fields": {
+                                "rect": { "x": 830, "y": 450 },
+                                "side": "right",
+                                "skillIconFilenames": "$SkillIconFilenames",
+                                "skillButton": "SkillButton3",
+                                "alwaysGetAlt": true
+                            },
+                            "children": [
+                
+                                {
+                                    "type": "TextBoxWidget", "name": "QuantityText",
+                                    "fields": {
+                                        "rect": "$SkillQuantityTextRectController",
+                                        "style": "$SkillQuantityTextStyle",
+                                    }
+                                },
+                                {
+                                    "type": "SkillButtonPromptWidget", "name": "LeftButtonPrompt",
+                                    "fields": {
+                                        "anchor": { "x": 0.5, "y": 1.0 },
+                                        "skillButton": "SkillButton3",
+                                        "style": {
+                                            "alignment": { "h": "center", "v": "center" },
+                                        },
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "SkillSelectButtonWidget", "name": "AltSkillButton4",
+                            "fields": {
+                                "rect": { "x": 965, "y": 450 },
+                                "side": "right",
+                                "skillIconFilenames": "$SkillIconFilenames",
+                                "skillButton": "SkillButton4",
+                                "alwaysGetAlt": true
+                            },
+                            "children": [
+                
+                                {
+                                    "type": "TextBoxWidget", "name": "QuantityText",
+                                    "fields": {
+                                        "rect": "$SkillQuantityTextRectController",
+                                        "style": "$SkillQuantityTextStyle",
+                                    }
+                                },
+                                {
+                                    "type": "SkillButtonPromptWidget", "name": "TopButtonPrompt",
+                                    "fields": {
+                                        "anchor": { "x": 0.5, "y": 1.0 },
+                                        "skillButton": "SkillButton4",
+                                        "style": {
+                                            "alignment": { "h": "center", "v": "center" },
+                                        },
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "SkillSelectButtonWidget", "name": "AltSkillButton5",
+                            "fields": {
+                                "rect": { "x": 1099, "y": 450 },
+                                "side": "right",
+                                "skillIconFilenames": "$SkillIconFilenames",
+                                "skillButton": "SkillButton5",
+                                "alwaysGetAlt": true
+                            },
+                            "children": [
+                
+                                {
+                                    "type": "TextBoxWidget", "name": "QuantityText",
+                                    "fields": {
+                                        "rect": "$SkillQuantityTextRectController",
+                                        "style": "$SkillQuantityTextStyle",
+                                    }
+                                },
+                                {
+                                    "type": "SkillButtonPromptWidget", "name": "RBButtonPrompt",
+                                    "fields": {
+                                        "anchor": { "x": 0.5, "y": 1.0 },
+                                        "skillButton": "SkillButton5",
+                                        "style": {
+                                            "alignment": { "h": "center", "v": "center" },
+                                        },
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "SkillSelectButtonWidget", "name": "AltSkillButtonRT",
+                            "fields": {
+                                "rect": { "x": 1232, "y": 450 },
+                                "side": "right",
+                                "skillIconFilenames": "$SkillIconFilenames",
+                                "skillButton": "SkillButton6",
+                                "alwaysGetAlt": true
+                            },
+                            "children": [
+                
+                                {
+                                    "type": "TextBoxWidget", "name": "QuantityText",
+                                    "fields": {
+                                        "rect": "$SkillQuantityTextRectController",
+                                        "style": "$SkillQuantityTextStyle",
+                                    }
+                                },
+                                {
+                                    "type": "SkillButtonPromptWidget", "name": "RTButtonPrompt",
+                                    "fields": {
+                                        "anchor": { "x": 0.5, "y": 1.0 },
+                                        "skillButton": "SkillButton6",
+                                        "style": {
+                                            "alignment": { "h": "center", "v": "center" },
+                                        },
+                                    }
+                                },
+                            ]
+                        },
+                    ]
+                },
+            ]
+        }
+    ]
+}

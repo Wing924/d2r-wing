@@ -1,0 +1,63 @@
+{
+    "type": "ScrollSpeechPanel", "name": "ScrollSpeechPanel",
+    "fields": {
+        "rect": { "x": "$ScrollSpeechOffset", "y": 50, "width": 800, "height": 325 },
+        "anchor": { "x": 0.5, "y": 0 },
+        "scrollStartOffset": -80,
+        "priority": 101,
+    },
+    "children": [
+        {
+            "type": "NineTileImageWidget", "name": "DialogBorder",
+            "fields": {
+                "rect": { "x": 0, "y": 0, "width": "$ScrollSpeechBorderWidth", "height": 345 },
+                "filename": "PANEL/TooltipBorder/TooltipBorder",
+                "backgroundColor": [ 0.0, 0.0, 0.0, 0.70 ],
+                "tileScale": 1,
+            },
+            "children": [
+                {
+                    "type": "ScrollingSpeechWidget", "name": "ScrollSpeechWidget",
+                    "fields": {
+                        "rect": { "x": 50, "y": 8, "width": "$ScrollSpeechWidth", "height": 330 },
+                        "onSpeechOverMessage": "DialogMessage:ScrollingTextEnd",
+                        "scrollRate": "$ScrollSpeechSpeed",
+                        "scrollControllerName": "ScrollController",
+                    },
+                    "children": [
+                        {
+                            "type": "TextBoxWidget", "name": "ScrollingText",
+                            "fields": {
+                                "rect": { "x": 0, "y": 330, "width": "$ScrollSpeechWidth", "height": 2000 },
+                                "style": "$StyleScrollingSpeech",
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "ImageWidget", "name": "ScrollBarBackground",
+                    "fields": {
+                        "anchor": { "x":  1.0 },
+                    },
+                    "children": [
+                        {
+                            "type": "ScrollControllerWidget", "name": "ScrollController",
+                            "fields": {
+                                "rect": { "x": -33, "y": 28, "width": 26, "height": 290 },
+                                "upArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollUpBtn",
+                                "downArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollDownBtn",
+                                "barFilepath": "PauseMenu\\VerticalIndicator",
+                                "viewName": "ScrollSpeechWidget",
+                                "isFullscreenScroll": true,
+                                "wheelScrollAmount": 30,
+                                "buttonScrollAmount": 150,
+                                "focusIndicatorVisible": false,
+                            }
+                        },
+                    ]
+                },
+            ]
+        },
+
+    ]
+}

@@ -1,0 +1,218 @@
+{
+    "type": "HireMenuPanel", "name": "HireMenuPanel",
+    "fields": {
+        "rect": "$LeftPanelRect",
+        "anchor": "$LeftPanelAnchor"
+    },
+    "children": [
+        {
+            "type": "ClickCatcherWidget", "name": "LeftClickCatcher",
+            "fields": {
+                "rect": { "x": -200, "y": -150, "width": 954, "height": 2160 }
+            }
+        },
+        {
+            "type": "ImageWidget", "name": "LeftBorderImage",
+            "fields": {
+                "filename": "$LeftSideSprite",
+                "rect": "$LeftSideRectHireMenu",
+            }
+        },
+        {
+            "type": "ImageWidget", "name": "BackgroundImage",
+            "fields": {
+                "filename": "PANEL\\Hireling\\HireablePanel\\Hireables_BG",
+            }
+        },
+        {
+            "type": "ImageWidget", "name": "LeftHinge",
+            "fields": {
+                "rect": "$LeftHingeRect",
+                "filename": "$LeftHingeSprite"
+            },
+        },
+        {
+            "type": "ClickCatcherWidget", "name": "ClickCatcher",
+            "fields": {
+                "rect": "$PanelClickCatcherRect"
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "Title",
+            "fields": {
+                "rect": "$InGamePanelTitleRect",
+                "style": "$StyleTitleBlock",
+            },
+        },
+        {
+            "type": "TextBoxWidget", "name": "GoldText",
+            "fields": {
+                "rect": { "x": 498, "y": 1285, "width": 244, "height": 57 },
+                "text": "Template",
+                "style": "$StyleGoldAmount"
+            }
+        },
+        {
+            "type": "ImageWidget", "name": "GoldIcon",
+            "fields": {
+                "rect": { "x": 432, "y": 1279 },
+                "filename": "PANEL\\Inventory\\Button",
+            },
+        },
+        {
+            "type": "FocusableWidget", "name": "YourGoldTooltipWidget",
+            "fields": {
+                "rect": { "x": 422, "y": 1281, "width": 322, "height": 57 },
+            },
+        },
+        {
+            "type": "TextBoxWidget", "name": "NoHiresAlert",
+            "fields": {
+                "rect": { "x": 153, "y": 211, "width": 857, "height": 51 },
+                "style": {
+                    "fontColor": { "r": 255, "g": 0, "b": 0, "a": 255 },
+                    "pointSize": "$MediumPanelFontSize",
+                    "alignment": { "h": "center", "v": "center" },
+                }
+            }
+        },
+        {
+            "type": "ListWidget", "name": "ListContainer",
+            "fields": {
+                "rect": { "x": 155, "y":167, "width": 857, "height": 1021 },
+                "direction": "vertical",
+                "itemSelectionMessage": "DialogMessage:HireMenuSelection",
+                "selectorName": "Selection",
+                "selectionChangedSound": "cursor_pass",
+            },
+            "children": [
+                {
+                    "type": "ListItemWidget", "name": "OptionTemplate",
+                    "fields": {
+                        "rect": { "x": 0, "y": 0, "width": 854, "height": 102 },
+                    },
+                    "children": [
+                        {
+                            "type": "ImageWidget", "name": "DialogBackground",
+                            "fields": {
+                                "filename": "PANEL\\Hireling\\HireablePanel\\Hireables_SlotBase",
+                            }
+                        },
+                        {
+                            "type": "TextBoxWidget", "name": "HireName",
+                            "fields": {
+                                "rect": { "x": 40, "y": 27, "width": 192, "height": 51 },
+                                "style": {
+                                    "fontColor": "$FontColorWhite",
+                                    "pointSize": "$SmallPanelFontSize",
+                                    "alignment": { "h": "center", "v": "center" },
+                                }
+                            }
+                        },
+                        {
+                            "type": "TextBoxWidget", "name": "HireLevel",
+                            "fields": {
+                                "rect": { "x": 245, "y": 27, "width": 185, "height": 51 },
+                                "text": "@strchrlvl ",
+                                "style": {
+                                    "fontColor": "$FontColorWhite",
+                                    "pointSize": "$SmallPanelFontSize",
+                                    "alignment": { "h": "center", "v": "center" },
+                                }
+                            }
+                        },
+                        {
+                            "type": "HirelingSkillIconWidget", "name": "Skill0",
+                            "fields": {
+                                "rect": { "x": 431, "y": 20, "scale": 0.50 },
+                                "skillIconFilename": "Spells/Hireables/HrSkillIcon"
+                            }
+                        },
+                        {
+                            "type": "HirelingSkillIconWidget", "name": "Skill1",
+                            "fields": {
+                                "rect": { "x": 498, "y": 20, "scale": 0.50 },
+                                "skillIconFilename": "Spells/Hireables/HrSkillIcon"
+                            }
+                        },
+                        {
+                            "type": "HirelingSkillIconWidget", "name": "Skill2",
+                            "fields": {
+                                "rect": { "x": 565, "y": 20, "scale": 0.50 },
+                                "skillIconFilename": "Spells/Hireables/HrSkillIcon"
+                            }
+                        },
+                        {
+                            "type": "Widget", "name": "CostContainer",
+                            "fields": {
+                                "rect": { "x": 647, "y": 27, "width": 186, "height": 51 },
+                            },
+                            "children": [
+                                {
+                                    "type": "ImageWidget", "name": "CostImage",
+                                    "fields": {
+                                        "rect": { "x": 3, "y": 5 },
+                                        "filename": "PANEL\\Modals\\Gold_Drop_Coins",
+                                    }
+                                },
+                                {
+                                    "type": "TextBoxWidget", "name": "HireCost",
+                                    "fields": {
+                                        "rect": { "x": 53, "y": 2, "width": 128, "height": 51 },
+                                        "text": "99,999",
+                                        "style": {
+                                            "fontColor": "$FontColorCurrencyGold",
+                                            "pointSize": "$SmallPanelFontSize",
+                                            "alignment": { "h": "center", "v": "center" },
+                                        }
+                                    }
+                                },
+                                {
+                                    "type": "FocusableWidget", "name": "GoldCostTooltipWidget",
+                                    "fields": {
+                                        "rect": { "x": 4, "y": 5, "width": 180, "height": 51 },
+                                    },
+                                },
+                            ]
+                        },
+                    ]
+                },
+                {
+                    "type": "ImageWidget", "name": "Selection",
+                    "fields": {
+                        "rect": {"x": 130, "y": 505},
+                        "filename": "PANEL\\Hireling\\HireablePanel\\Hireables_Selector"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "ButtonWidget", "name": "CloseButton",
+            "fields": {
+                "rect": { "x": 1075, "y": 9 },
+                "filename": "PANEL\\closebtn_4x",
+                "hoveredFrame": 3,
+                "tooltipString": "@strClose",
+                "sound": "cursor_close_window_hd",
+                "onClickMessage": "DialogMessage:HireMenuCancel",
+            }
+        },
+        {
+            "type": "ScrollControllerWidget", "name": "ScrollBar",
+            "fields": {
+                "rect": { "x": 0, "y": 0, "width": 0, "height": 0 },
+                "upArrowFilepath": "FrontEnd\\ScrollUp", // 0/2
+                "downArrowFilepath": "FrontEnd\\ScrollDown", // 1/3
+                "barFilepath": "FrontEnd\\ScrollBar", // 4
+                "viewName": "ListContainer",
+            }
+        },
+        {
+            "type": "ImageWidget", "name": "Overlay",
+            "fields": {
+                "rect": { "x": 150, "y": 166, },
+                "filename": "PANEL\\Hireling\\HireablePanel\\Hirables_Overlay"
+            },
+        },
+    ]
+}

@@ -1,0 +1,59 @@
+{
+    "basedOn": "BroadcastFriendsMessageModalHD.json",
+    "type": "ConfirmationModal", "name": "BroadcastFriendsMessageModal",
+    "children": [
+        {
+            "type": "ClickCatcherWidget", "name": "ClickCatcher",
+        },
+        // background image/border
+        {
+            "type": "ImageWidget", "name": "Background",
+        },
+        //localized text
+        {
+            "type": "TextBoxWidget", "name": "Title",
+        },
+        //  Input Box
+        {
+            "type": "ImageWidget", "name": "BackgroundBox",
+        },
+        {
+            "type": "InputTextBoxWidget", "name": "InputText",
+        },
+        // Confirm/cancel buttons
+        {
+            "type": "ButtonWidget", "name": "Confirm",
+            "children": [
+                {
+                    "type": "ButtonLegendWidget", "name": "ConfirmLegend",
+                    "fields": {
+                        "anchor": { "x": 0.5, "y": 1.0 },
+                        "text": { "style": "$StyleButtonLegend" },
+                        "presets": [
+                            {
+                              "action": "select",
+                            },
+                        ],
+                    }
+                },
+            ]
+        },
+        {
+            "type": "ButtonWidget", "name": "Cancel",
+            "children": [
+                {
+                    "type": "ButtonLegendWidget", "name": "DismissLegend",
+                    "fields": {
+                        "anchor": { "x": 0.5, "y": 1.0 },
+                        "text": { "style": "$StyleButtonLegend" },
+                        "presets": [
+                            {
+                              "action": "back",
+                            },
+                        ],
+                    }
+                },
+            ]
+        },
+    ]
+}

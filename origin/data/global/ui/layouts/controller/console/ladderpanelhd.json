@@ -1,0 +1,428 @@
+{
+    "basedOn": "Controller/LadderPanelHD.json",
+    "type": "LadderPanel", "name": "LadderPanel",
+    "fields": {
+        "rect": { "x": -660, "y": 350, "scale": "$ConsoleUIScale" },
+        "priority": 2,
+        "anchor": {"x": 0.5},
+        "numLadderEntriesPerPage": 12,
+    },
+    "children": [
+        {
+            "type": "Widget", "name": "LadderDisplay",
+            "children": [
+                {
+                    "type": "ImageWidget", "name": "LobbyBackground",
+                    "fields": { 
+                        "rect": { "x": -798, "y": -81 }, 
+                        "filename": "Controller\\Lobby\\Ladder\\Ladder_BG"
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "LadderTitle",
+                    "fields": {
+                        "rect": { "x": -656, "y": -36, "width": 1000, "height": 75 },
+                        "text": "@CharacterSelectPanelLadderCharacter",
+                        "style": {
+                            "fontColor": "$FontColorGold", 
+                            "pointSize": "$LargeFontSize",
+                            "dropShadow": "$DefaultDropShadow",
+                            "options": { "newlineHandling": "standard"},
+                            "alignment": { "h": "left", "v": "center" },
+                        },
+                    },
+                    "children": [
+                        {
+                            "type": "FocusableWidget", "name": "LadderRefreshTooltip",
+                            "fields": {
+                                "tooltipString": "@LadderLeaderboardRefreshMessage",
+                                "tooltipStyle": {
+                                    "fontStyle": {
+                                        "options": { "newlineHandling": "standard" }
+                                    }
+                                },
+                                "navigation": {
+                                    "down": { "name": "SeasonDropdown" }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "ImageWidget", "name": "MainListBackground",
+                    "fields": { 
+                        "rect": { "x": -127, "y": 150 }, 
+                        "filename": "Controller\\Lobby\\Ladder\\Ladder_ListFull"
+                    }
+                },
+                {
+                    "type": "ListWidget", "name": "MainLadderList",
+                    "fields": {
+                        "rect": { "x": -120, "y": 152, "width": 1980, "height": 810 },
+                    },
+                    "children": [
+                        {
+                            "type": "ListItemWidget", "name": "Template",
+                            "fields": {
+                                "rect": { "x": 0, "y": 0, "width": 1980, "height": 67 },
+                        	"focusIndicatorFilename": "Controller/HoverImages/LadderSlatConsole_Hover",
+                       	        "focusIndicatorOffset": { "x": -4, "y": -4 },
+                                "navigation": {
+                                    "left": { "name": "SeasonDropdown" },
+                                    "right": { "name": "SeasonDropdown" },
+                                }
+                            },
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "Rank",
+                                    "fields": {
+                                        "rect": { "x": 15, "width": 120, "height": 54 },
+                                    },
+                                },
+                                {
+                                    "type": "TextBoxWidget", "name": "Name",
+                                    "fields": {
+                                        "rect": { "x": 225, "width": 300, "height": 54 },
+                                    },
+                                },
+                                {
+                                    "type": "TextBoxWidget", "name": "Class",
+                                    "fields": {
+                                        "rect": { "x": 720, "width": 120, "height": 54 },
+                                    },
+                                },
+                                {
+                                    "type": "TextBoxWidget", "name": "Level",
+                                    "fields": {
+                                        "rect": { "x": 1100, "width": 85, "height": 54 },
+                                    }
+                                },
+                                {
+                                    "type": "TextBoxWidget", "name": "Experience",
+                                    "fields": {
+                                        "rect": { "x": 1525, "width": 340, "height": 54 },
+                                    },
+                                }
+                            ]
+                        },
+                        {
+                            "type": "ListWidgetFocusRedirector", "name": "LadderListRedirector",
+                            "children": [
+                                {
+                                    "type": "ListWidgetFocusReceiver", "name": "up",
+                                },
+                                {
+                                    "type": "ListWidgetFocusReceiver", "name": "down",
+                                },
+                                {
+                                    "type": "ListWidgetFocusReceiver", "name": "left",
+                                },
+                                {
+                                    "type": "ListWidgetFocusReceiver", "name": "right",
+                                }
+                            ],
+                        },
+                        {
+                            "type": "RectangleWidget", "name": "LadderSelector",
+                        },
+                    ]
+                },
+                // Title textboxes above list
+                {
+                    "type": "TextBoxWidget", "name": "MainListRankTitle",
+                    "fields": { 
+                        "rect": { "x": -120, "y": 100, "width": 200, "height": 40 }, 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "MainListNameTitle",
+                    "fields": { 
+                        "rect": { "x": 100, "y": 100, "width": 200, "height": 40 }, 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "MainListClassTitle",
+                    "fields": { 
+                        "rect": { "x": 600, "y": 100, "width": 200, "height": 40 }, 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "MainListLevelTitle",
+                    "fields": { 
+                        "rect": { "x": 950, "y": 100, "width": 120, "height": 40 }, 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "MainListExperienceTitle",
+                    "fields": { 
+                        "rect": { "x": 1450, "y": 100, "width": 255, "height": 40 }, 
+                    }
+                },
+                {
+                    "type": "ImageWidget", "name": "PlayerSlatRankUp",
+                    "fields": { 
+                        "rect": { "x": -127, "y": 1054 }, 
+                        "filename": "Controller\\Lobby\\Ladder\\Ladder_Slots",
+                    },
+                },
+                {
+                    "type": "ImageWidget", "name": "PlayerSlatRankBelow",
+                    "fields": { 
+                        "rect": { "x": -127, "y": 1198 }, 
+                        "filename": "Controller\\Lobby\\Ladder\\Ladder_Slots",
+                    },
+                },
+                {
+                    "type": "ImageWidget", "name": "PlayerSlat",
+                    "fields": { 
+                        "rect": { "x": -130, "y": 1126 }, 
+                        "filename": "Controller\\Lobby\\Ladder\\Ladder_Slots",
+                        "frame": 1
+                    },
+                    "children": [
+                        {
+                            "type": "ListWidget", "name": "PersonalRankList",
+                            "fields": {
+                                "rect": { "x": 12, "y": -67, "width": 1980, "height": 215 },
+                                "direction": "vertical",
+                                "selectorName": "PersonalRankSelector",
+                            },
+                            "children": [
+                                {
+                                    "type": "ListItemWidget", "name": "Template",
+                                    "fields": {
+                                        "rect": { "x": 0, "y": 0, "width": 1980, "height": 71 },
+                        		"focusIndicatorFilename": "Controller/HoverImages/LadderSlatConsole_Hover",
+                        		"focusIndicatorOffset": { "x": -6, "y": -6 },
+                                    },
+                                    "children": [
+                                        {
+                                            "type": "TextBoxWidget", "name": "Rank",
+                                            "fields": {
+                                                "rect": { "x": 15, "width": 120, "height": 54 },
+                                            },
+                                        },
+                                        {
+                                            "type": "TextBoxWidget", "name": "Name",
+                                            "fields": {
+                                                "rect": { "x": 225, "width": 300, "height": 54 },
+                                            },
+                                        },
+                                        {
+                                            "type": "TextBoxWidget", "name": "Class",
+                                            "fields": {
+                                                "rect": { "x": 720, "width": 120, "height": 54 },
+                                            },
+                                        },
+                                        {
+                                            "type": "TextBoxWidget", "name": "Level",
+                                            "fields": {
+                                                "rect": { "x": 1100, "width": 85, "height": 54 },
+                                            },
+                                        },
+                                        {
+                                            "type": "TextBoxWidget", "name": "Experience",
+                                            "fields": {
+                                                "rect": { "x": 1525, "width": 340, "height": 54 },
+                                            },
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "ListWidgetFocusRedirector", "name": "PersonalRankListRedirector",
+                                    "children": [
+                                        {
+                                            "type": "ListWidgetFocusReceiver", "name": "personalRankUp",
+                                        },
+                                        {
+                                            "type": "ListWidgetFocusReceiver", "name": "personalRankDown",
+                                        },
+                                        {
+                                            "type": "ListWidgetFocusReceiver", "name": "personalRankLeft",
+                                        },
+                                        {
+                                            "type": "ListWidgetFocusReceiver", "name": "personalRankRight",
+                                        }
+                                    ],
+                                },
+                                {
+                                    "type": "RectangleWidget", "name": "PersonalRankSelector",
+                                },
+                            ]
+                        },
+                        {
+                            "type": "RectangleWidget", "name": "PersonalRankListEmptyMessage",
+                            "fields": {
+                                "rect": { "x": -6, "y": -82, "width": 2000, "height": 225 },
+                                "fitToParent": false,
+                            },
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "PersonalRankListEmptyMessageText",
+                                }
+                            ]
+                        }
+                    ]
+                },
+                // Drop downs at top of panel - need to be at the bottom of the layout so they end up on top of the rest of the UI
+                {
+                    "type": "TextBoxWidget", "name": "SeasonTitle",
+                    "fields": { 
+                        "rect": { "x": -740, "y": 110, "width": 200, "height": 40 },
+                    }
+                },
+                {
+                    "type": "DropdownListWidget", "name": "SeasonDropdown",
+                    "fields": {
+                        "rect": {"x": -745, "y": 160, "width": 560, "height": 67 },
+                        "background/rect": { "x": 0, "y": 0, "width": 560, "height": 67 },
+                        "text/rect": {"x": -50},
+                        "focusIndicatorOffset": { "x": 252, "y": 2 },
+                        "navigation": {
+                            "up": { "name": "LadderRefreshTooltip" },
+                            "down": { "name": "TypeDropdown" },
+                            "right":  { "name": "right" }
+                        }
+                    },
+                },
+                {
+                    "type": "TextBoxWidget", "name": "TypeTitle",
+                    "fields": { 
+                        "rect": { "x": -740, "y": 260, "width": 200, "height": 40 }, 
+                    }
+                },
+                {
+                    "type": "DropdownListWidget", "name": "TypeDropdown",
+                    "fields": {
+                        "rect": {"x": -745, "y": 310, "width": 560, "height": 67 },
+                        "background/rect": { "x": 0, "y": 0, "width": 560, "height": 67 },
+                        "text/rect": {"x": -50},
+                        "focusIndicatorOffset": { "x": 252, "y": 2 },
+                        "navigation": {
+                            "up": { "name": "SeasonDropdown" },
+                            "down": { "name": "ClassExpansionDropdown" },
+                            "right":  { "name": "right" }
+                        }
+                    },
+                },
+                {
+                    "type": "TextBoxWidget", "name": "ClassTitle",
+                    "fields": { 
+                        "rect": { "x": -740, "y": 415, "width": 200, "height": 40 }, 
+                        "text": "@strClass",
+                        "style": {
+                            "fontColor": "$FontColorLightGray", 
+                            "pointSize": "$MediumFontSize",
+                        },
+                    }
+                },
+                {
+                    "type": "DropdownListWidget", "name": "ClassExpansionDropdown",
+                    "fields": {
+                        "rect": {"x": -745, "y": 465, "width": 560, "height": 67 },
+                        "background/rect": { "x": 0, "y": 0, "width": 560, "height": 67 },
+                        "text/rect": {"x": -50},
+                        "focusIndicatorOffset": { "x": 252, "y": 2 },
+                        "navigation": {
+                            "up": { "name": "TypeDropdown" },
+                            "right":  { "name": "right" },
+                            "down": { "name": "SeasonDropdown" }
+                        }
+                    }
+                },
+                {
+                    "type": "DropdownListWidget", "name": "ClassClassicDropdown",
+                    "fields": {
+                        "rect": {"x": -745, "y": 465, "width": 560, "height": 67 },
+                        "background/rect": { "x": 0, "y": 0, "width": 560, "height": 67 },
+                        "text/rect": {"x": -50},
+                        "focusIndicatorOffset": { "x": 252, "y": 2 },
+                        "navigation": {
+                            "up": { "name": "TypeDropdown" },
+                            "right":  { "name": "right" },
+                            "down": { "name": "SeasonDropdown" }
+                        }
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "LadderDescription",
+                    "fields": {
+                        "rect": {"x": -750, "y": 650, "width": 560, "height": 300 },
+                        "text": "@LadderDescription",
+                        "style": {
+                            "fontColor": "$FontColorLightGray",
+                            "pointSize": "$LargeFontSize",
+                            "alignment": { "v": "top", "h": "center" },
+                            "options": {"lineWrap": true}
+                        }
+                    }
+                },
+        
+                // Pagination buttons/UI
+                {
+                    "type": "ImageWidget", "name": "PaginationBackground",
+                    "fields": { 
+                        "rect": { "x": -135, "y": 968 }, 
+                        "filename": "Controller\\Lobby\\Ladder\\ScrollBarBase_Full"
+                    },
+                    "children": [
+                        {
+                            "type": "ButtonWidget", "name": "LeftArrowButton",
+                            "fields": { 
+                                "rect": { "x": 5, "y": 6 },
+                            },
+                            "children": [
+                                {
+                                    "type": "ButtonLegendWidget", "name": "PageLeftLegend",
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TextBoxWidget", "name": "PageNumber",
+                            "fields": {
+                                "rect": { "x": 65, "y": 8, "width": 1867, "height": 40 },
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget", "name": "RightArrowButton",
+                            "fields": { 
+                                "rect": { "x": 1940, "y": 6 },
+                            },
+                            "children": [
+                                {
+                                    "type": "ButtonLegendWidget", "name": "PageRightLegend",
+                                }
+                            ]
+                        },
+                    ]
+                },
+                {
+                    "type": "ButtonLegendWidget", "name": "Legend",
+                    "fields": {
+                        "rect": { "x": -860, "y": 1410, "width": 2880, "height": 100 },
+                        "text": { "style": "$StyleButtonLegend" },
+                        "presets": [
+                            {
+                                "action": "back",
+                                "description": "@ControllerPromptModalCancel",
+                            },
+                        ]
+                    },
+                },
+            ]
+        },
+        {
+            "type": "TextBoxWidget", "name": "LadderCountdown",
+            "fields": {
+                "rect": { "x": 0, "y": 400, "width": 1140, "height": 250 },
+                "text": "@LadderSeasonNotStarted",
+                "style": {
+                    "fontColor": "$FontColorRed",
+                    "pointSize": "$HugeFontSize",
+                    "alignment": { "v": "center", "h": "center" },
+                    "options": {"lineWrap": true}
+                },
+            },
+        },
+    ]
+}

@@ -1,0 +1,1406 @@
+{
+    "type": "GameplayOptionsPanel", "name": "GameplayOptionsPanel",
+    "fields": {
+        "priority": 9003,
+        "rect": "$OptionsPanelRect",
+        "applySettingsImmediately": false,
+        "anchor": { "x": 0.5 },
+    },
+    "children": [
+        {
+            "type": "ImageWidget", "name": "ScrollBarBackground",
+            "fields": {
+                "rect": "$OptionsScrollBarBackgroundRect",
+                "anchor": { "x": 1.0 },
+                "filename": "PauseMenu\\VerticalScroll",
+            },
+            "children": [
+                {
+                    "type": "ScrollControllerWidget", "name": "ScrollController",
+                    "fields": {
+                        "rect": "$OptionsScrollBarRect",
+                        "anchor": { "x": 1.0 },
+                        "upArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollUpBtn",
+                        "downArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollDownBtn",
+                        "barFilepath": "PauseMenu\\VerticalIndicator",
+                        "viewName": "ScrollView",
+                        "wheelScrollSound": "cursor_scroll_hd",
+                        "buttonScrollSound": "cursor_scroll_hd",
+                    }
+                },
+            ]
+        },
+        {
+            "type": "ScrollViewWidget", "name": "ScrollView",
+            "fields": {
+                "fitToParent": true,
+                "scrollControllerName": "ScrollController",
+            },
+            "children": [
+                {
+                    "type": "TableWidget", "name": "OptionsTable",
+                    "fields": {
+                        "columns": [ "$OptionsTableColumn1", "$OptionsTableColumn2" ],
+                        "rowHeight": "$OptionsTableRowHeight",
+                    },
+                    "children": [
+                        {
+                            "type": "TableRowWidget", "name": "Row Gameplay Options",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "Gameplay Options",
+                                    "fields": {
+                                        "text": "@GameplayOptions",
+                                        "style": "$StyleSettingsTitle"
+                                    },
+                                    "children": [
+                                        {
+                                            "type": "ImageWidget", "name": "Divider",
+                                            "fields": {
+                                                "rect": "$OptionsDividerRect",
+                                                "filename": "PauseMenu\\Divider",
+                                            }
+                                        },
+                                    ]
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row ItemNameDisplayMode",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ItemNameDisplayModeText",
+                                    "fields": {
+                                        "text": "@ItemNameDisplayModeText",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                },
+                                {
+                                    "type": "CarouselWidget", "name": "ItemNameDisplayMode",
+                                    "fields": {
+                                        "rect": "$OptionsCarouselRect",
+                                        "focusIndicatorPadding": "$OptionsCarouselFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsCarouselFocusIndicatorFilename",
+                                        "states": [ "ItemDisplayHold", "ItemDisplayToggle", "ItemDisplayTimed" ],
+                                        "fontType": "8ptE",
+                                        "onUpdateMessage": "OptionsPanelMessage:SetItemNameDisplayMode",
+                                        "style": "$StyleSettingsCarousel",
+                                        "enabledColor": "$CarouselEnabledColor",
+                                        "disabledColor": "$CarouselDisabledColor",
+                                        "tooltipString": "@ItemNameDisplayModeTooltip",
+                                        "tooltipStyle": {
+                                            "fontStyle": {
+                                                "options": { "newlineHandling": "standard" },
+                                            },
+                                            "showAfterDelay": true,
+                                        }
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row AutoGold",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "AutoGoldText",
+                                    "fields": {
+                                        "text": "@AutoGoldTextSetting",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                },
+                                {
+                                    "type": "ToggleButtonWidget", "name": "AutoGold",
+                                    "fields": {
+                                        "rect": "$OptionsToggleRect",
+                                        "sound": "cursor_menu_select_hd",
+                                        "focusIndicatorPadding": "$OptionsToggleFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsToggleFocusIndicatorFilename",
+                                        "focusIndicatorOffset": { "x": 0, "y": -4 },
+                                        "filename": "Lobby\\CreateGame\\CreateGame_AdvancedCheckbox",
+                                        "untoggledFrame": 0,
+                                        "untoggledPressedFrame": 1,
+                                        "untoggledHoveredFrame": 3,
+                                        "untoggledDisabledFrame": 2,
+                                        "toggledFrame": 4,
+                                        "toggledPressedFrame": 5,
+                                        "toggledHoveredFrame": 6,
+                                        "onClickMessage": "OptionsPanelMessage:SetAutoGoldEnabled",
+                                        "tooltipString": "@OptionsMenuAutoGoldPickupTooltip",
+                                        "tooltipStyle": {
+                                            "showAfterDelay": true,
+                                        }
+                                    },
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row AutoPartyInvite",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "AutoPartyInviteText",
+                                    "fields": {
+                                        "text": "@OptionsMenuAutoParty",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                },
+                                {
+                                    "type": "ToggleButtonWidget", "name": "AutoPartyInvite",
+                                    "fields": {
+                                        "rect": "$OptionsToggleRect",
+                                        "sound": "cursor_menu_select_hd",
+                                        "focusIndicatorPadding": "$OptionsToggleFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsToggleFocusIndicatorFilename",
+                                        "focusIndicatorOffset": { "x": 0, "y": -4 },
+                                        "filename": "Lobby\\CreateGame\\CreateGame_AdvancedCheckbox",
+                                        "untoggledFrame": 0,
+                                        "untoggledPressedFrame": 1,
+                                        "untoggledHoveredFrame": 3,
+                                        "untoggledDisabledFrame": 2,
+                                        "toggledFrame": 4,
+                                        "toggledPressedFrame": 5,
+                                        "toggledHoveredFrame": 6,
+                                        "onClickMessage": "OptionsPanelMessage:SetAutoPartyInvite",
+                                        "tooltipString": "@CreateTooltipAutoParty",
+                                        "tooltipStyle": {
+                                            "fontStyle": {
+                                                "options": { "newlineHandling": "standard" },
+                                            },
+                                            "showAfterDelay": true,
+                                        }
+                                    },
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row KeyboardQuickCastEnabled",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "KeyboardQuickCastEnabledText",
+                                    "fields": {
+                                        "text": "@OptionsMenuQuickCastEnable",
+                                        "style": "$StyleSettingsText",
+                                    }
+                                },
+                                {
+                                    "type": "ToggleButtonWidget", "name": "KeyboardQuickCastEnabled",
+                                    "fields": {
+                                        "rect": "$OptionsToggleRect",
+                                        "sound": "cursor_menu_select_hd",
+                                        "focusIndicatorPadding": "$OptionsToggleFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsToggleFocusIndicatorFilename",
+                                        "filename": "Lobby\\CreateGame\\CreateGame_AdvancedCheckbox",
+                                        "focusIndicatorOffset": { "x": 0, "y": -4 },
+                                        "untoggledFrame": 0,
+                                        "untoggledPressedFrame": 1,
+                                        "untoggledHoveredFrame": 3,
+                                        "untoggledDisabledFrame": 2,
+                                        "toggledFrame": 4,
+                                        "toggledPressedFrame": 5,
+                                        "toggledHoveredFrame": 6,
+                                        "onClickMessage": "OptionsPanelMessage:SetKeyboardQuickCastEnabled",
+                                        "tooltipString": "@OptionsMenuQuickCastTooltip",
+                                        "tooltipStyle": {
+                                            "showAfterDelay": true,
+                                        }
+                                    },
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row DisplayActiveSkillBindings",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "DisplayActiveSkillBindingsText",
+                                    "fields": {
+                                        "text": "@OptionsMenuDisplayActiveSkillBinding",
+                                        "style": "$StyleSettingsText",
+                                    }
+                                },
+                                {
+                                    "type": "ToggleButtonWidget", "name": "DisplayActiveSkillBindings",
+                                    "fields": {
+                                        "rect": "$OptionsToggleRect",
+                                        "sound": "cursor_menu_select_hd",
+                                        "focusIndicatorPadding": "$OptionsToggleFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsToggleFocusIndicatorFilename",
+                                        "filename": "Lobby\\CreateGame\\CreateGame_AdvancedCheckbox",
+                                        "focusIndicatorOffset": { "x": 0, "y": -4 },
+                                        "untoggledFrame": 0,
+                                        "untoggledPressedFrame": 1,
+                                        "untoggledHoveredFrame": 3,
+                                        "untoggledDisabledFrame": 2,
+                                        "toggledFrame": 4,
+                                        "toggledPressedFrame": 5,
+                                        "toggledHoveredFrame": 6,
+                                        "onClickMessage": "OptionsPanelMessage:SetDisplayActiveSkillBindings",
+                                        "tooltipString": "@OptionsMenuDisplayActiveSkillBindingTooltip",
+                                        "tooltipStyle": {
+                                            "showAfterDelay": true,
+                                        }
+                                    },
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row DefaultKeyBindings",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "DefaultKeyBindingsText",
+                                    "fields": {
+                                        "text": "@DefaultKeyBindingsTextSetting",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                },
+                                {
+                                    "type": "CarouselWidget", "name": "DefaultKeyBindings",
+                                    "fields": {
+                                        "rect": "$OptionsCarouselRect",
+                                        "focusIndicatorPadding": "$OptionsCarouselFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsCarouselFocusIndicatorFilename",
+                                        "states": [ "KeyBindingTypeClassic", "KeyBindingTypeResurrected", "KeyBindingTypeCustom" ],
+                                        "fontType": "8ptE",
+                                        "onUpdateMessage": "OptionsPanelMessage:SetDefaultKeyBindings",
+                                        "style": "$StyleSettingsCarousel",
+                                        "enabledColor": "$CarouselEnabledColor",
+                                        "disabledColor": "$CarouselDisabledColor",
+                                        "tooltipString": "@OptionsMenuDefaultKeyBindingsTooltip",
+                                        "tooltipStyle": {
+                                            "fontStyle": {
+                                                "options": { "newlineHandling": "standard" },
+                                            },
+                                            "showAfterDelay": true,
+                                        }
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row ConfineCursor",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ConfineCursorText",
+                                    "fields": {
+                                        "text": "@ConfineCursor",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                },
+                                {
+                                    "type": "ToggleButtonWidget", "name": "ConfineCursor",
+                                    "fields": {
+                                        "rect": "$OptionsToggleRect",
+                                        "sound": "cursor_menu_select_hd",
+                                        "focusIndicatorPadding": "$OptionsToggleFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsToggleFocusIndicatorFilename",
+                                        "filename": "Lobby\\CreateGame\\CreateGame_AdvancedCheckbox",
+                                        "focusIndicatorOffset": { "x": 0, "y": -4 },
+                                        "untoggledFrame": 0,
+                                        "untoggledPressedFrame": 1,
+                                        "untoggledHoveredFrame": 3,
+                                        "untoggledDisabledFrame": 2,
+                                        "toggledFrame": 4,
+                                        "toggledPressedFrame": 5,
+                                        "toggledHoveredFrame": 6,
+                                        "onClickMessage": "OptionsPanelMessage:ConfineCursor",
+                                        "tooltipString": "@ConfineCursorTooltip",
+                                        "tooltipStyle": {
+                                            "showAfterDelay": true,
+                                        },
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row UI",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "UI",
+                                    "fields": {
+                                        "text": "@AdvancedUI",
+                                        "style": "$StyleSettingsTitle"
+                                    },
+                                    "children": [
+                                        {
+                                            "type": "ImageWidget", "name": "Divider",
+                                            "fields": {
+                                                "rect": "$OptionsDividerRect",
+                                                "filename": "PauseMenu\\Divider",
+                                            }
+                                        },
+                                    ]
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row ItemHotkeyTooltipAppender",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ItemTooltipHotkeyAppenderText",
+                                    "fields": {
+                                        "text": "@OptionsMenuItemTooltipHotkeyAppender",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                },
+                                {
+                                    "type": "ToggleButtonWidget", "name": "ItemTooltipHotkeyAppender",
+                                    "fields": {
+                                        "rect": "$OptionsToggleRect",
+                                        "sound": "cursor_menu_select_hd",
+                                        "focusIndicatorPadding": "$OptionsToggleFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsToggleFocusIndicatorFilename",
+                                        "filename": "Lobby\\CreateGame\\CreateGame_AdvancedCheckbox",
+                                        "focusIndicatorOffset": { "x": 0, "y": -4 },
+                                        "untoggledFrame": 0,
+                                        "untoggledPressedFrame": 1,
+                                        "untoggledHoveredFrame": 3,
+                                        "untoggledDisabledFrame": 2,
+                                        "toggledFrame": 4,
+                                        "toggledPressedFrame": 5,
+                                        "toggledHoveredFrame": 6,
+                                        "onClickMessage": "OptionsPanelMessage:SetItemTooltipHotkeyAppender",
+                                        "tooltipString": "@OptionsMenuItemTooltipHotkeyAppenderDescription",
+                                        "tooltipStyle": {
+                                            "showAfterDelay": true,
+                                        }
+                                    },
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row ShowLifeOrbText",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ShowLifeOrbTextText",
+                                    "fields": {
+                                        "text": "@OptionsMenuShowLifeOrbText",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                },
+                                {
+                                    "type": "ToggleButtonWidget", "name": "ShowLifeOrbText",
+                                    "fields": {
+                                        "rect": "$OptionsToggleRect",
+                                        "sound": "cursor_menu_select_hd",
+                                        "focusIndicatorPadding": "$OptionsToggleFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsToggleFocusIndicatorFilename",
+                                        "filename": "Lobby\\CreateGame\\CreateGame_AdvancedCheckbox",
+                                        "focusIndicatorOffset": { "x": 0, "y": -4 },
+                                        "untoggledFrame": 0,
+                                        "untoggledPressedFrame": 1,
+                                        "untoggledHoveredFrame": 3,
+                                        "untoggledDisabledFrame": 2,
+                                        "toggledFrame": 4,
+                                        "toggledPressedFrame": 5,
+                                        "toggledHoveredFrame": 6,
+                                        "onClickMessage": "OptionsPanelMessage:SetShowLifeOrbText",
+                                        "tooltipString": "@OptionsMenuShowLifeOrbTextTooltip",
+                                        "tooltipStyle": {
+                                            "showAfterDelay": true,
+                                        }
+                                    },
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row ShowManaOrbText",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ShowManaOrbTextText",
+                                    "fields": {
+                                        "text": "@OptionsMenuShowManaOrbText",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                },
+                                {
+                                    "type": "ToggleButtonWidget", "name": "ShowManaOrbText",
+                                    "fields": {
+                                        "rect": "$OptionsToggleRect",
+                                        "sound": "cursor_menu_select_hd",
+                                        "focusIndicatorPadding": "$OptionsToggleFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsToggleFocusIndicatorFilename",
+                                        "filename": "Lobby\\CreateGame\\CreateGame_AdvancedCheckbox",
+                                        "focusIndicatorOffset": { "x": 0, "y": -4 },
+                                        "untoggledFrame": 0,
+                                        "untoggledPressedFrame": 1,
+                                        "untoggledHoveredFrame": 3,
+                                        "untoggledDisabledFrame": 2,
+                                        "toggledFrame": 4,
+                                        "toggledPressedFrame": 5,
+                                        "toggledHoveredFrame": 6,
+                                        "onClickMessage": "OptionsPanelMessage:SetShowManaOrbText",
+                                        "tooltipString": "@OptionsMenuShowManaOrbTextTooltip",
+                                        "tooltipStyle": {
+                                            "showAfterDelay": true,
+                                        }
+                                    },
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row SkillAmmoFeedback",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "SkillAmmoFeedbackText",
+                                    "fields": {
+                                        "text": "@SkillAmmoFeedbackText",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                },
+                                {
+                                    "type": "ToggleButtonWidget", "name": "SkillAmmoFeedback",
+                                    "fields": {
+                                        "rect": "$OptionsToggleRect",
+                                        "sound": "cursor_menu_select_hd",
+                                        "focusIndicatorPadding": "$OptionsToggleFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsToggleFocusIndicatorFilename",
+                                        "filename": "Lobby\\CreateGame\\CreateGame_AdvancedCheckbox",
+                                        "focusIndicatorOffset": { "x": 0, "y": -4 },
+                                        "untoggledFrame": 0,
+                                        "untoggledPressedFrame": 1,
+                                        "untoggledHoveredFrame": 3,
+                                        "untoggledDisabledFrame": 2,
+                                        "toggledFrame": 4,
+                                        "toggledPressedFrame": 5,
+                                        "toggledHoveredFrame": 6,
+                                        "onClickMessage": "OptionsPanelMessage:SetSkillAmmoFeedback",
+                                        "tooltipString": "@OptionsMenuSkillAmmoFeedbackTooltip",
+                                        "tooltipStyle": {
+                                            "showAfterDelay": true,
+                                        }
+                                    },
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row ShowClock",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ShowClockText",
+                                    "fields": {
+                                        "text": "@OptionsMenuShowClock",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                },
+                                {
+                                    "type": "ToggleButtonWidget", "name": "ShowClock",
+                                    "fields": {
+                                        "rect": "$OptionsToggleRect",
+                                        "sound": "cursor_menu_select_hd",
+                                        "focusIndicatorPadding": "$OptionsToggleFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsToggleFocusIndicatorFilename",
+                                        "filename": "Lobby\\CreateGame\\CreateGame_AdvancedCheckbox",
+                                        "focusIndicatorOffset": { "x": 0, "y": -4 },
+                                        "untoggledFrame": 0,
+                                        "untoggledPressedFrame": 1,
+                                        "untoggledHoveredFrame": 3,
+                                        "untoggledDisabledFrame": 2,
+                                        "toggledFrame": 4,
+                                        "toggledPressedFrame": 5,
+                                        "toggledHoveredFrame": 6,
+                                        "onClickMessage": "OptionsPanelMessage:SetShowClock",
+                                        "tooltipString": "@OptionsMenuShowClockDescription",
+                                        "tooltipStyle": {
+                                            "showAfterDelay": true,
+                                        }
+                                    },
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row ChatGemMode",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ChatGemModeText",
+                                    "fields": {
+                                        "text": "@ChatGemMode",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                },
+                                {
+                                    "type": "CarouselWidget", "name": "ChatGemMode",
+                                    "fields": {
+                                        "rect": "$OptionsCarouselRect",
+                                        "focusIndicatorPadding": "$OptionsCarouselFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsCarouselFocusIndicatorFilename",
+                                        "states": [ "ChatGemManual", "ChatGemAutomatic" ],
+                                        "fontType": "8ptE",
+                                        "onUpdateMessage": "OptionsPanelMessage:SetChatGemMode",
+                                        "style": "$StyleSettingsCarousel",
+                                        "enabledColor": "$CarouselEnabledColor",
+                                        "disabledColor": "$CarouselDisabledColor",
+                                        "tooltipString": "@OptionsMenuChatGemModeDescription",
+                                        "tooltipStyle": {
+                                            "fontStyle": {
+                                                "options": { "newlineHandling": "standard" },
+                                            },
+                                            "showAfterDelay": true,
+                                        }
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row AllowChat",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "AllowChatText",
+                                    "fields": {
+                                        "text": "@OptionsAllowChat",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                },
+                                {
+                                    "type": "ToggleButtonWidget", "name": "AllowChat",
+                                    "fields": {
+                                        "rect": "$OptionsToggleRect",
+                                        "sound": "cursor_menu_select_hd",
+                                        "focusIndicatorPadding": "$OptionsToggleFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsToggleFocusIndicatorFilename",
+                                        "filename": "Lobby\\CreateGame\\CreateGame_AdvancedCheckbox",
+                                        "focusIndicatorOffset": { "x": 0, "y": -4 },
+                                        "untoggledFrame": 0,
+                                        "untoggledPressedFrame": 1,
+                                        "untoggledHoveredFrame": 3,
+                                        "untoggledDisabledFrame": 2,
+                                        "toggledFrame": 4,
+                                        "toggledPressedFrame": 5,
+                                        "toggledHoveredFrame": 6,
+                                        "onClickMessage": "OptionsPanelMessage:SetAllowChat",
+                                        "tooltipString": "@OptionsAllowChatTooltip",
+                                        "tooltipStyle": {
+                                            "showAfterDelay": true,
+                                        }
+                                    },
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row SonyOnlyLeaderboards",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "SonyOnlyLeaderboardsText",
+                                    "fields": {
+                                        "text": "@OptionsShowSonyOnlyLeaderboards",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                },
+                                {
+                                    "type": "ToggleButtonWidget", "name": "SonyOnlyLeaderboards",
+                                    "fields": {
+                                        "rect": "$OptionsToggleRect",
+                                        "sound": "cursor_menu_select_hd",
+                                        "focusIndicatorPadding": "$OptionsToggleFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsToggleFocusIndicatorFilename",
+                                        "filename": "Lobby\\CreateGame\\CreateGame_AdvancedCheckbox",
+                                        "focusIndicatorOffset": { "x": 0, "y": -4 },
+                                        "untoggledFrame": 0,
+                                        "untoggledPressedFrame": 1,
+                                        "untoggledHoveredFrame": 3,
+                                        "untoggledDisabledFrame": 2,
+                                        "toggledFrame": 4,
+                                        "toggledPressedFrame": 5,
+                                        "toggledHoveredFrame": 6,
+                                        "onClickMessage": "OptionsPanelMessage:SetSonyOnlyLeaderboards",
+                                        "tooltipString": "@OptionsShowSonyOnlyLeaderboardsTooltip",
+                                        "tooltipStyle": {
+                                            "showAfterDelay": true,
+                                        }
+                                    },
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row Accessibility",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "Accessibility",
+                                    "fields": {
+                                        "text": "@Accessibility",
+                                        "style": "$StyleSettingsTitle"
+                                    },
+                                    "children": [
+                                        {
+                                            "type": "ImageWidget", "name": "Divider",
+                                            "fields": {
+                                                "rect": "$OptionsDividerRect",
+                                                "filename": "PauseMenu\\Divider",
+                                            }
+                                        },
+                                    ]
+                                },
+                            ]
+                        },
+
+                        {
+                            "type": "TableRowWidget", "name": "Row ChatFontSize",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ChatFontSizeText",
+                                    "fields": {
+                                        "text": "@ChatFontSize",
+                                        "style": "$StyleSettingsText",
+                                    }
+                                },
+                                {
+                                    "type": "CarouselWidget", "name": "ChatFontSize",
+                                    "fields": {
+                                        "rect": "$OptionsCarouselRect",
+                                        "focusIndicatorPadding": "$OptionsCarouselFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsCarouselFocusIndicatorFilename",
+                                        "states": [ "Small", "OptionsMenuMedium", "Large", "ExtraLarge" ],
+                                        "fontType": "8ptE",
+                                        "onUpdateMessage": "OptionsPanelMessage:SetChatFontSize",
+                                        "style": "$StyleSettingsCarousel",
+                                        "enabledColor" : "$CarouselEnabledColor",
+                                        "disabledColor" : "$CarouselDisabledColor",
+                                        "tooltipString": "@OptionsMenuChatFontSizeTooltip",
+                                        "tooltipStyle": {
+                                            "fontStyle": {
+                                                "options": { "newlineHandling": "standard" },
+                                            },
+                                            "showAfterDelay": true,
+                                        }
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row ChatBackground",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ChatBackgroundText",
+                                    "fields": {
+                                        "text": "@ChatBackgroundSetting",
+                                        "style": "$StyleSettingsText",
+                                    }
+                                },
+                                {
+                                    "type": "ToggleButtonWidget", "name": "ChatBackground",
+                                    "fields": {
+                                        "rect": "$OptionsToggleRect",
+                                        "sound": "cursor_menu_select_hd",
+                                        "focusIndicatorPadding": "$OptionsToggleFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsToggleFocusIndicatorFilename",
+                                        "filename": "Lobby\\CreateGame\\CreateGame_AdvancedCheckbox",
+                                        "focusIndicatorOffset": { "x": 0, "y": -4 },
+                                        "untoggledFrame": 0,
+                                        "untoggledPressedFrame": 1,
+                                        "untoggledHoveredFrame": 3,
+                                        "untoggledDisabledFrame": 2,
+                                        "toggledFrame": 4,
+                                        "toggledPressedFrame": 5,
+                                        "toggledHoveredFrame": 6,
+                                        "onClickMessage": "OptionsPanelMessage:SetChatBackground",
+                                        "tooltipString": "@OptionsMenuChatBackgroundTooltip",
+                                        "tooltipStyle": {
+                                            "showAfterDelay": true,
+                                        }
+                                    },
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row LowVisionMode",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "LowVisionModeText",
+                                    "fields": {
+                                        "text": "@LowVisionMode",
+                                        "style": "$StyleSettingsText",
+                                    }
+                                },
+                                {
+                                    "type": "ToggleButtonWidget", "name": "LowVisionMode",
+                                    "fields": {
+                                        "rect": "$OptionsToggleRect",
+                                        "sound": "cursor_menu_select_hd",
+                                        "focusIndicatorPadding": "$OptionsToggleFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsToggleFocusIndicatorFilename",
+                                        "filename": "Lobby\\CreateGame\\CreateGame_AdvancedCheckbox",
+                                        "focusIndicatorOffset": { "x": 0, "y": -4 },
+                                        "untoggledFrame": 0,
+                                        "untoggledPressedFrame": 1,
+                                        "untoggledHoveredFrame": 3,
+                                        "untoggledDisabledFrame": 2,
+                                        "toggledFrame": 4,
+                                        "toggledPressedFrame": 5,
+                                        "toggledHoveredFrame": 6,
+                                        "onClickMessage": "OptionsPanelMessage:SetLowVisionMode",
+                                        "tooltipString": "@OptionsMenuLowVisionModeTooltip",
+                                        "tooltipStyle": {
+                                            "showAfterDelay": true,
+                                        }
+                                    },
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row ColorBlindCalibration",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ColorBlindCalibrationText",
+                                    "fields": {
+                                        "text": "@ColorBlind",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                },
+                                {
+                                    "type": "ButtonWidget", "name": "ColorBlindCalibration",
+                                    "fields": {
+                                        "filename": "FrontEnd/HD/Final/FrontEnd_ButtonSmall",
+                                        "textString": "@CalibrationText",
+                                        "onClickMessage": "PanelManager:OpenPanel:ColorBlindCalibrationPanel",
+                                        "textColor": "$LightButtonTextColor",
+                                        "text/style" : "$StyleFEButtonText",
+                                        "tooltipString": "@OptionsMenuColorBlindTooltip",
+                                        "pressedFrame": 1,
+                                        "disabledFrame": 2,
+                                        "hoveredFrame": 3,
+                                        "sound": "cursor_select",
+                                        "focusIndicatorFilename": "Controller/HoverImages/FrontEndButtonSmall_Hover",
+                                        "tooltipStyle": {
+                                            "showAfterDelay": true,
+                                        },
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row CameraShake",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "CameraShakeText",
+                                    "fields": {
+                                        "text": "@OptionsMenuCameraShake",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                },
+                                {
+                                    "type": "ToggleButtonWidget", "name": "CameraShake",
+                                    "fields": {
+                                        "rect": "$OptionsToggleRect",
+                                        "sound": "cursor_menu_select_hd",
+                                        "focusIndicatorPadding": "$OptionsToggleFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsToggleFocusIndicatorFilename",
+                                        "filename": "Lobby\\CreateGame\\CreateGame_AdvancedCheckbox",
+                                        "focusIndicatorOffset": { "x": 0, "y": -4 },
+                                        "untoggledFrame": 0,
+                                        "untoggledPressedFrame": 1,
+                                        "untoggledHoveredFrame": 3,
+                                        "untoggledDisabledFrame": 2,
+                                        "toggledFrame": 4,
+                                        "toggledPressedFrame": 5,
+                                        "toggledHoveredFrame": 6,
+                                        "onClickMessage": "OptionsPanelMessage:SetCameraShake",
+                                        "tooltipString": "@OptionsMenuCameraShakeDescription",
+                                        "tooltipStyle": {
+                                            "showAfterDelay": true,
+                                        }
+                                    },
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row CombatFeedback",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "CombatFeedbackText",
+                                    "fields": {
+                                        "text": "@CombatFeedbackTextSetting",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                },
+                                {
+                                    "type": "ToggleButtonWidget", "name": "CombatFeedback",
+                                    "fields": {
+                                        "rect": "$OptionsToggleRect",
+                                        "sound": "cursor_menu_select_hd",
+                                        "focusIndicatorPadding": "$OptionsToggleFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsToggleFocusIndicatorFilename",
+                                        "filename": "Lobby\\CreateGame\\CreateGame_AdvancedCheckbox",
+                                        "focusIndicatorOffset": { "x": 0, "y": -4 },
+                                        "untoggledFrame": 0,
+                                        "untoggledPressedFrame": 1,
+                                        "untoggledHoveredFrame": 3,
+                                        "untoggledDisabledFrame": 2,
+                                        "toggledFrame": 4,
+                                        "toggledPressedFrame": 5,
+                                        "toggledHoveredFrame": 6,
+                                        "onClickMessage": "OptionsPanelMessage:SetCombatFeedback",
+                                        "tooltipString": "@OptionsMenuCombatFeedbackTooltip",
+                                        "tooltipStyle": {
+                                            "showAfterDelay": true,
+                                        }
+                                    },
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row Subtitles",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "SubtitlesText",
+                                    "fields": {
+                                        "text": "@Subtitles",
+                                        "style": "$StyleSettingsText",
+                                    }
+                                },
+                                {
+                                    "type": "ToggleButtonWidget", "name": "Subtitles",
+                                    "fields": {
+                                        "rect": "$OptionsToggleRect",
+                                        "sound": "cursor_menu_select_hd",
+                                        "focusIndicatorPadding": "$OptionsToggleFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsToggleFocusIndicatorFilename",
+                                        "filename": "Lobby\\CreateGame\\CreateGame_AdvancedCheckbox",
+                                        "focusIndicatorOffset": { "x": 0, "y": -4 },
+                                        "untoggledFrame": 0,
+                                        "untoggledPressedFrame": 1,
+                                        "untoggledHoveredFrame": 3,
+                                        "untoggledDisabledFrame": 2,
+                                        "toggledFrame": 4,
+                                        "toggledPressedFrame": 5,
+                                        "toggledHoveredFrame": 6,
+                                        "onClickMessage": "OptionsPanelMessage:SetSubtitles",
+                                        "tooltipString": "@OptionsMenuSubtitlesTooltip",
+                                        "tooltipStyle": {
+                                            "showAfterDelay": true,
+                                        }
+                                    },
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row GreetingsSubtitles",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "GreetingsSubtitlesText",
+                                    "fields": {
+                                        "text": "@GreetingsSubtitles",
+                                        "style": "$StyleSettingsText",
+                                    }
+                                },
+                                {
+                                    "type": "ToggleButtonWidget", "name": "GreetingsSubtitles",
+                                    "fields": {
+                                        "rect": "$OptionsToggleRect",
+                                        "sound": "cursor_menu_select_hd",
+                                        "focusIndicatorPadding": "$OptionsToggleFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsToggleFocusIndicatorFilename",
+                                        "filename": "Lobby\\CreateGame\\CreateGame_AdvancedCheckbox",
+                                        "focusIndicatorOffset": { "x": 0, "y": -4 },
+                                        "untoggledFrame": 0,
+                                        "untoggledPressedFrame": 1,
+                                        "untoggledHoveredFrame": 3,
+                                        "untoggledDisabledFrame": 2,
+                                        "toggledFrame": 4,
+                                        "toggledPressedFrame": 5,
+                                        "toggledHoveredFrame": 6,
+                                        "onClickMessage": "OptionsPanelMessage:SetGreetingsSubtitles",
+                                        "tooltipString": "@OptionsMenuGreetingsSubtitlesTooltip",
+                                        "tooltipStyle": {
+                                            "showAfterDelay": true,
+                                        }
+                                    },
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row Controller Options",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "Controller Options",
+                                    "fields": {
+                                        "text": "@OptionsMenuController",
+                                        "style": "$StyleSettingsTitle"
+                                    },
+                                    "children": [
+                                        {
+                                            "type": "ImageWidget", "name": "Divider",
+                                            "fields": {
+                                                "rect": "$OptionsDividerRect",
+                                                "filename": "PauseMenu\\Divider",
+                                            }
+                                        },
+                                    ]
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row ControllerCursorSpeed",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ControllerCursorSpeedText",
+                                    "fields": {
+                                        "text": "@ControllerCursorSpeedSetting",
+                                        "style": "$StyleSettingsText",
+                                    }
+                                },
+                                {
+                                    "type": "SettingsSliderWidget", "name": "ControllerCursorSpeed",
+                                    "fields": {
+                                        "rect": "$OptionsSliderRect",
+                                        "focusIndicatorPadding": "$OptionsSliderFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsSliderFocusIndicatorFilename",
+                                        "isHorizontal": true,
+                                        "indicatorFilepath": "PauseMenu\\HorizontalIndicator",
+                                        "background": "$SettingsSliderBackground",
+                                        "onUpdateMessage": "OptionsPanelMessage:SetControllerCursorSpeed",
+                                        "leftButton": "$SettingsSliderLeftButtonFields",
+                                        "rightButton": "$SettingsSliderRightButtonFields",
+                                        "valueText": "$SettingsSliderValueFields",
+                                        "tooltipString": "@OptionsMenuControllerCursorSpeedTooltip",
+                                        "tooltipStyle": {
+                                            "fontStyle": {
+                                                "options": { "newlineHandling": "standard" },
+                                            },
+                                            "showAfterDelay": true,
+                                        }
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row ControllerWeaponSwapSeparateBindings",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ControllerWeaponSwapSeparateBindingsText",
+                                    "fields": {
+                                        "text": "@ControllerWeaponSwapSeparateBindingsSetting",
+                                        "style": "$StyleSettingsText",
+                                    }
+                                },
+                                {
+                                    "type": "ToggleButtonWidget", "name": "ControllerWeaponSwapSeparateBindings",
+                                    "fields": {
+                                        "rect": "$OptionsToggleRect",
+                                        "sound": "cursor_menu_select_hd",
+                                        "focusIndicatorPadding": "$OptionsToggleFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsToggleFocusIndicatorFilename",
+                                        "filename": "Lobby\\CreateGame\\CreateGame_AdvancedCheckbox",
+                                        "focusIndicatorOffset": { "x": 0, "y": -4 },
+                                        "untoggledFrame": 0,
+                                        "untoggledPressedFrame": 1,
+                                        "untoggledHoveredFrame": 3,
+                                        "untoggledDisabledFrame": 2,
+                                        "toggledFrame": 4,
+                                        "toggledPressedFrame": 5,
+                                        "toggledHoveredFrame": 6,
+                                        "onClickMessage": "OptionsPanelMessage:SetControllerWeaponSwapSeparateBindings",
+                                        "tooltipString": "@OptionsMenuWeaponSwapUniqueBindingsTooltip",
+                                        "tooltipStyle": {
+                                            "showAfterDelay": true,
+                                        }
+                                    },
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row ControllerRumbleEnabled",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ControllerRumbleEnabledText",
+                                    "fields": {
+                                        "text": "@OptionsMenuControllerRumbleEnabledText",
+                                        "style": "$StyleSettingsText",
+                                    }
+                                },
+                                {
+                                    "type": "ToggleButtonWidget", "name": "ControllerRumbleEnabled",
+                                    "fields": {
+                                        "rect": "$OptionsToggleRect",
+                                        "sound": "cursor_menu_select_hd",
+                                        "focusIndicatorPadding": "$OptionsToggleFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsToggleFocusIndicatorFilename",
+                                        "filename": "Lobby\\CreateGame\\CreateGame_AdvancedCheckbox",
+                                        "focusIndicatorOffset": { "x": 0, "y": -4 },
+                                        "untoggledFrame": 0,
+                                        "untoggledPressedFrame": 1,
+                                        "untoggledHoveredFrame": 3,
+                                        "untoggledDisabledFrame": 2,
+                                        "toggledFrame": 4,
+                                        "toggledPressedFrame": 5,
+                                        "toggledHoveredFrame": 6,
+                                        "onClickMessage": "OptionsPanelMessage:SetControllerRumbleEnabled",
+                                        "tooltipString": "@OptionsMenuControllerRumbleEnabledTooltip",
+                                        "tooltipStyle": {
+                                            "showAfterDelay": true,
+                                        }
+                                    },
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row ControllerSwapThumbsticks",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ControllerSwapThumbsticksText",
+                                    "fields": {
+                                        "text": "@OptionsMenuSettingSwapThumbsticks",
+                                        "style": "$StyleSettingsText",
+                                    }
+                                },
+                                {
+                                    "type": "ToggleButtonWidget", "name": "ControllerSwapThumbsticks",
+                                    "fields": {
+                                        "rect": "$OptionsToggleRect",
+                                        "sound": "cursor_menu_select_hd",
+                                        "focusIndicatorPadding": "$OptionsToggleFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsToggleFocusIndicatorFilename",
+                                        "filename": "Lobby\\CreateGame\\CreateGame_AdvancedCheckbox",
+                                        "focusIndicatorOffset": { "x": 0, "y": -4 },
+                                        "untoggledFrame": 0,
+                                        "untoggledPressedFrame": 1,
+                                        "untoggledHoveredFrame": 3,
+                                        "untoggledDisabledFrame": 2,
+                                        "toggledFrame": 4,
+                                        "toggledPressedFrame": 5,
+                                        "toggledHoveredFrame": 6,
+                                        "onClickMessage": "OptionsPanelMessage:SetControllerSwapThumbsticks",
+                                        "tooltipString": "@OptionsMenuSettingSwapThumbsticksTooltip",
+                                        "tooltipStyle": {
+                                            "showAfterDelay": true,
+                                        }
+                                    },
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row Automap",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "Automap",
+                                    "fields": {
+                                        "text": "@minipanelautomap",
+                                        "style": "$StyleSettingsTitle"
+                                    },
+                                    "children": [
+                                        {
+                                            "type": "ImageWidget", "name": "Divider",
+                                            "fields": {
+                                                "rect": "$OptionsDividerRect",
+                                                "filename": "PauseMenu\\Divider",
+                                            }
+                                        },
+                                    ]
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row AutomapSize",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "AutomapSizeText",
+                                    "fields": {
+                                        "text": "@AutomapSizeHD",
+                                        "style": "$StyleSettingsText",
+                                    }
+                                },
+                                {
+                                    "type": "CarouselWidget", "name": "AutomapSize",
+                                    "fields": {
+                                        "rect": "$OptionsCarouselRect",
+                                        "focusIndicatorPadding": "$OptionsCarouselFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsCarouselFocusIndicatorFilename",
+                                        "states": [ "FullScreen", "MiniMapLeft", "MiniMapRight" ],
+                                        "fontType": "8ptE",
+                                        "onUpdateMessage": "OptionsPanelMessage:SetSize",
+                                        "style": "$StyleSettingsCarousel",
+                                        "enabledColor" : "$CarouselEnabledColor",
+                                        "disabledColor" : "$CarouselDisabledColor",
+                                        "tooltipString": "@OptionsMenuAutomapSizeTooltip",
+                                        "tooltipStyle": {
+                                            "fontStyle": {
+                                                "options": { "newlineHandling": "standard" },
+                                            },
+                                            "showAfterDelay": true,
+                                        }
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row AutomapFade",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "AutomapFadeText",
+                                    "fields": {
+                                        "text": "@AutomapFadeHD",
+                                        "style": "$StyleSettingsText",
+                                    }
+                                },
+                                {
+                                    "type": "CarouselWidget", "name": "AutomapFade",
+                                    "fields": {
+                                        "rect": "$OptionsCarouselRect",
+                                        "focusIndicatorPadding": "$OptionsCarouselFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsCarouselFocusIndicatorFilename",
+                                        "states": [ "No", "Center", "Everything", "Auto" ],
+                                        "fontType": "8ptE",
+                                        "onUpdateMessage": "OptionsPanelMessage:SetFade",
+                                        "style": "$StyleSettingsCarousel",
+                                        "enabledColor" : "$CarouselEnabledColor",
+                                        "disabledColor" : "$CarouselDisabledColor",
+                                        "tooltipString": "@OptionsMenuAutomapFadeTooltip",
+                                        "tooltipStyle": {
+                                            "fontStyle": {
+                                                "options": { "newlineHandling": "standard" },
+                                            },
+                                            "showAfterDelay": true,
+                                        }
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row AutomapFadeAllOpacity",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "AutomapFadeAllOpacityText",
+                                    "fields": {
+                                        "text": "@AutomapFadeAllOpacity",
+                                        "style": "$StyleSettingsText",
+                                    }
+                                },
+                                {
+                                    "type": "SettingsSliderWidget", "name": "AutomapFadeAllOpacity",
+                                    "fields": {
+                                        "rect": "$OptionsSliderRect",
+                                        "focusIndicatorPadding": "$OptionsSliderFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsSliderFocusIndicatorFilename",
+                                        "isHorizontal": true,
+                                        "indicatorFilepath": "PauseMenu\\HorizontalIndicator",
+                                        "background": "$SettingsSliderBackground",
+                                        "onUpdateMessage": "OptionsPanelMessage:SetFadeAllOpacity",
+                                        "leftButton": "$SettingsSliderLeftButtonFields",
+                                        "rightButton": "$SettingsSliderRightButtonFields",
+                                        "valueText": "$SettingsSliderValueFields",
+                                        "tooltipString": "@OptionsMenuAutomapOpacityTooltip",
+                                        "tooltipStyle": {
+                                            "fontStyle": {
+                                                "options": { "newlineHandling": "standard" },
+                                            },
+                                            "showAfterDelay": true,
+                                        }
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row CenterWhenCleared",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "CenterWhenClearedText",
+                                    "fields": {
+                                        "text": "@CenterWhenClearedHD",
+                                        "style": "$StyleSettingsText",
+                                    }
+                                },
+                                {
+                                    "type": "ToggleButtonWidget", "name": "CenterWhenCleared",
+                                    "fields": {
+                                        "rect": "$OptionsToggleRect",
+                                        "sound": "cursor_menu_select_hd",
+                                        "focusIndicatorPadding": "$OptionsToggleFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsToggleFocusIndicatorFilename",
+                                        "filename": "Lobby\\CreateGame\\CreateGame_AdvancedCheckbox",
+                                        "focusIndicatorOffset": { "x": 0, "y": -4 },
+                                        "untoggledFrame": 0,
+                                        "untoggledPressedFrame": 1,
+                                        "untoggledHoveredFrame": 3,
+                                        "untoggledDisabledFrame": 2,
+                                        "toggledFrame": 4,
+                                        "toggledPressedFrame": 5,
+                                        "toggledHoveredFrame": 6,
+                                        "onClickMessage": "OptionsPanelMessage:SetCenterWhenCleared",
+                                        "tooltipString": "@OptionsMenuCenterWhenClearedTooltip",
+                                        "tooltipStyle": {
+                                            "showAfterDelay": true,
+                                        }
+                                    },
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row ShowParty",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ShowPartyText",
+                                    "fields": {
+                                        "text": "@ShowPartyHD",
+                                        "style": "$StyleSettingsText",
+                                    }
+                                },
+                                {
+                                    "type": "ToggleButtonWidget", "name": "ShowParty",
+                                    "fields": {
+                                        "rect": "$OptionsToggleRect",
+                                        "sound": "cursor_menu_select_hd",
+                                        "focusIndicatorPadding": "$OptionsToggleFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsToggleFocusIndicatorFilename",
+                                        "filename": "Lobby\\CreateGame\\CreateGame_AdvancedCheckbox",
+                                        "focusIndicatorOffset": { "x": 0, "y": -4 },
+                                        "untoggledFrame": 0,
+                                        "untoggledPressedFrame": 1,
+                                        "untoggledHoveredFrame": 3,
+                                        "untoggledDisabledFrame": 2,
+                                        "toggledFrame": 4,
+                                        "toggledPressedFrame": 5,
+                                        "toggledHoveredFrame": 6,
+                                        "onClickMessage": "OptionsPanelMessage:SetShowParty",
+                                        "tooltipString": "@OptionsMenuShowPartyTooltip",
+                                        "tooltipStyle": {
+                                            "showAfterDelay": true,
+                                        }
+                                    },
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row ShowNames",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ShowNamesText",
+                                    "fields": {
+                                        "text": "@ShowNamesHD",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                },
+                                {
+                                    "type": "ToggleButtonWidget", "name": "ShowNames",
+                                    "fields": {
+                                        "rect": "$OptionsToggleRect",
+                                        "sound": "cursor_menu_select_hd",
+                                        "focusIndicatorPadding": "$OptionsToggleFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsToggleFocusIndicatorFilename",
+                                        "filename": "Lobby\\CreateGame\\CreateGame_AdvancedCheckbox",
+                                        "focusIndicatorOffset": { "x": 0, "y": -4 },
+                                        "untoggledFrame": 0,
+                                        "untoggledPressedFrame": 1,
+                                        "untoggledHoveredFrame": 3,
+                                        "untoggledDisabledFrame": 2,
+                                        "toggledFrame": 4,
+                                        "toggledPressedFrame": 5,
+                                        "toggledHoveredFrame": 6,
+                                        "onClickMessage": "OptionsPanelMessage:SetShowNames",
+                                        "tooltipString": "@OptionsMenuShowNamesTooltip",
+                                        "tooltipStyle": {
+                                            "showAfterDelay": true,
+                                        }
+                                    },
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row ShowRoomName",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ShowRoomNameText",
+                                    "fields": {
+                                        "text": "@ShowRoomNameHD",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                },
+                                {
+                                    "type": "ToggleButtonWidget", "name": "ShowRoomName",
+                                    "fields": {
+                                        "rect": "$OptionsToggleRect",
+                                        "sound": "cursor_menu_select_hd",
+                                        "focusIndicatorPadding": "$OptionsToggleFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsToggleFocusIndicatorFilename",
+                                        "filename": "Lobby\\CreateGame\\CreateGame_AdvancedCheckbox",
+                                        "focusIndicatorOffset": { "x": 0, "y": -4 },
+                                        "untoggledFrame": 0,
+                                        "untoggledPressedFrame": 1,
+                                        "untoggledHoveredFrame": 3,
+                                        "untoggledDisabledFrame": 2,
+                                        "toggledFrame": 4,
+                                        "toggledPressedFrame": 5,
+                                        "toggledHoveredFrame": 6,
+                                        "onClickMessage": "OptionsPanelMessage:SetShowRooomName",
+                                        "tooltipString": "@OptionsMenuShowRoomNameTooltip",
+                                        "tooltipStyle": {
+                                            "showAfterDelay": true,
+                                        }
+                                    },
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row Offline",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "Offline",
+                                    "fields": {
+                                        "text": "@OfflineHeader",
+                                        "style": "$StyleSettingsTitle"
+                                    },
+                                    "children": [
+                                        {
+                                            "type": "ImageWidget", "name": "Divider",
+                                            "fields": {
+                                                "rect": "$OptionsDividerRect",
+                                                "filename": "PauseMenu\\Divider",
+                                            }
+                                        },
+                                    ]
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row OfflineDifficultyScaling",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "OfflineDifficultyScalingText",
+                                    "fields": {
+                                        "text": "@OptionsMenuOfflineDifficultyScalingSetting",
+                                        "style": "$StyleSettingsText",
+                                    }
+                                },
+                                {
+                                    "type": "SettingsSliderWidget", "name": "OfflineDifficultyScaling",
+                                    "fields": {
+                                        "rect": "$OptionsSliderRect",
+                                        "focusIndicatorPadding": "$OptionsSliderFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsSliderFocusIndicatorFilename",
+                                        "isHorizontal": true,
+                                        "increment": 1,
+                                        "indicatorFilepath": "PauseMenu\\HorizontalIndicator",
+                                        "background": "$SettingsSliderBackground",
+                                        "onUpdateMessage": "OptionsPanelMessage:SetOfflineDifficultyScaling",
+                                        "leftButton": "$SettingsSliderLeftButtonFields",
+                                        "rightButton": "$SettingsSliderRightButtonFields",
+                                        "valueText": "$SettingsSliderValueFields",
+                                        "tooltipString": "@OptionsMenuOfflineDifficultyScalingTooltip",
+                                        "tooltipStyle": {
+                                            "fontStyle": {
+                                                "options": { "newlineHandling": "standard" },
+                                            },
+                                            "showAfterDelay": true,
+                                        }
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row OfflineSettingsEffectNote",
+                            "children": [
+                                {
+                                        "type": "TextBoxWidget", "name": "OfflineSettingsEffectNote",
+                                        "fields": {
+                                                "rect": { "x": 0, "y": 0, "width": 1730 },
+                                                "anchor": { "x": 0.0, "y": 1.0 },
+                                                "text": "@OfflineSettingsEffectNote",
+                                                "style": "$StyleSettingsText"
+                                        }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row Spacer",
+                        },
+                    ]
+                },
+            ]
+        },
+    ]
+}

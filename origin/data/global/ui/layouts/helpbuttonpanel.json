@@ -1,0 +1,37 @@
+{
+    "type": "HelpButtonPanel", "name": "HelpButtonPanel",
+    "fields": {
+        "priority": -1, // Lower than all right panels
+        "anchor": { "x": 0.5, "y": 1 },
+        "rect": { "x": 328, "y": -200 },
+        "resolution640x480HelpPanelPosition": { "x": 250, "y": -200 },
+    },
+    "children": [
+        {
+            "type": "ImageWidget", "name": "HelpSocket",
+            "fields": {
+                "rect": { "x": -3, "y": -2 },
+                "filename": "PANEL/levelsocket"
+            }
+        },
+        {
+            "type": "ButtonWidget", "name": "Help",
+            "fields": {
+                "filename": "PANEL/level",
+                "onClickMessage": "HelpButtonPanelMessage:OpenHelp"
+            },
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "Label",
+                    "fields": {
+                        "rect": { "x": 15, "y": -19 },
+                        "text": "@minipanelHelp@minipanelspecial",
+                        "style": {
+                            "alignment": { "h": "center" }
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,70 @@
+{
+    "type":  "MessageLogPanel", "name": "MessageLogPanel_640x480",
+    "fields": {
+        "rect": { "x": 40, "y": 900, "width": 1200, "height": 780 },
+        "priority": 5000
+    },
+    "children": [
+        {
+            "type": "ClickCatcherWidget", "name": "ClickCatcher",
+            "fields": {
+                "fitToParent": true
+            }
+        },
+        {
+            "type": "RectangleWidget", "name": "MessageLogBackground",
+            "fields": {
+                "fitToParent": true,
+                "color": [ 0.0, 0.0, 0.0, 0.7 ],
+            },
+        },
+        {
+            "type": "ChatListWidget", "name": "ListContainer",
+            "fields": {
+                "rect": { "x": 0, "y": 10, "width": 1200, "height": 770 },
+                "isHoverList": false,
+                "direction": "vertical",
+                "scrollControllerName": "ScrollBar",
+                "chatDataSource": "ChatHistory",
+                "growsBottomUp": true,
+                "itemsContainerSizeMultiplier": 5.0,
+            },
+            "children": [
+                {
+                    "type": "ListItemWidget", "name": "ChatEntryTemplate",
+                    "fields": {
+                        "rect": { "x": 10, "y": 0, "width": 1100, "height": 50 },
+                    },
+                    "children": [
+                        {
+                            "type": "TextBoxWithLinksWidget", "name": "MessageText",
+                            "fields": {
+                                "fitToParent": true,
+                                "text/fontType": "Chat",
+                                "text/style": {
+                                    "alignment": { "h": "left", "v": "center" },
+                                    "options": { "pipeCharacterBehavior" : "handle", "newlineHandling": "standard", "lineWrap": true },
+                                    "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                                    "fontFace": "BlizzardGlobal",
+                                    "pointSize": "$MediumFontSize",
+                                },
+                            }
+                        },
+                    ]
+                },
+            ]
+        },
+        {
+            "type": "ScrollControllerWidget", "name": "ScrollBar",
+            "fields": {
+                "rect": { "x": 1170, "y": 40, "width": 26, "height": 700 },
+                "upArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollUpBtn",
+                "downArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollDownBtn",
+                "barFilepath": "PauseMenu\\VerticalIndicator",
+                "viewName": "ListContainer",
+                "focusOnMouseOver": false,
+                "focusIndicatorVisible": false,
+            }
+        },
+    ]
+}

@@ -1,0 +1,1122 @@
+{
+    "type": "VideoOptionsPanel", "name": "VideoOptionsPanel",
+    "fields": {
+        "priority": 9003,
+        "rect": "$OptionsPanelRect",
+        "anchor": { "x": 0.5 },
+        "applySettingsImmediately": false,
+        "vramUsageBarTintColor": [0.98, 0.27, 0.27, 1],
+        "vramUsageBarDefaultTintColor": [1, 1, 1, 0],
+        "vramUsageBarOffset": {"x":10, "y": 9}
+    },
+    "children": [
+        {
+            "type": "ImageWidget", "name": "ScrollBarBackground",
+            "fields": {
+                "rect": "$OptionsScrollBarBackgroundRect",
+                "anchor": { "x": 1.0 },
+                "filename": "PauseMenu\\VerticalScroll",
+            },
+            "children": [
+                {
+                    "type": "ScrollControllerWidget", "name": "ScrollController",
+                    "fields": {
+                        "rect": "$OptionsScrollBarRect",
+                        "anchor": { "x": 1.0 },
+                        "upArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollUpBtn",
+                        "downArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollDownBtn",
+                        "barFilepath": "PauseMenu\\VerticalIndicator",
+                        "viewName": "ScrollView",
+                        "wheelScrollSound": "cursor_scroll_hd",
+                        "buttonScrollSound": "cursor_scroll_hd",
+                    }
+                },
+            ]
+        },
+        {
+            "type": "ScrollViewWidget", "name": "ScrollView",
+            "fields": {
+                "fitToParent": true,
+                "scrollControllerName": "ScrollController",
+            },
+            "children": [
+                {
+                    "type": "TableWidget", "name": "OptionsTable",
+                    "fields": {
+                        "columns": [ "$OptionsTableColumn1", "$OptionsTableColumn2" ],
+                        "rowHeight": "$OptionsTableRowHeight",
+                    },
+                    "children": [
+                        {
+                            "type": "TableRowWidget", "name": "Row Video Options",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "Video Options",
+                                    "fields": {
+                                        "text": "@OptionsMenuDisplay",
+                                        "style": "$StyleSettingsTitle"
+                                    },
+                                    "children": [
+                                        {
+                                            "type": "ImageWidget", "name": "Divider",
+                                            "fields": {
+                                                "rect": "$OptionsDividerRect",
+                                                "filename": "PauseMenu\\Divider",
+                                            }
+                                        },
+                                    ]
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row WindowMode",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "WindowModeText",
+                                    "fields": {
+                                        "text": "@OptionsMenuDisplayMode",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                },
+                                {
+                                    "type": "DropdownListWidget", "name": "WindowMode",
+                                    "fields": {
+                                        "rect": "$OptionsDropDownRect",
+                                        "background/rect": "$OptionsDropDownBackgroundRect",
+                                        "background/leftCapOffset": "$OptionsDropDownLeftCapOffset",
+                                        "background/rightCapOffset": "$OptionsDropDownRightCapOffset",
+                                        "pressedFrame": 1,
+                                        "disabledFrame": 2,
+                                        "hoveredFrame": 3,
+                                        "focusIndicatorFilename": "$OptionsDropDownFocusIndicatorFilename",
+                                        "states": [ "@Windowed", "@Fullscreen" ],
+                                        "onUpdateMessage": "OptionsPanelMessage:SetWindowMode",
+                                        "text/style": "$StyleSettingsCarousel",
+                                        "text/style": { "pointSize": "$MediumFontSize" },
+                                        "textColor": "$FontColorLightGold",
+                                        "tooltipString": "@OptionsMenuWindowModeTooltip",
+                                        "tooltipStyle": {
+                                            "showAfterDelay": true,
+                                        }
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row ScreenResolution",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ScreenResolutionText",
+                                    "fields": {
+                                        "text": "@ScreenResolution",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                },
+                                {
+                                    "type": "DropdownListWidget", "name": "ScreenResolution",
+                                    "fields": {
+                                        "rect": "$OptionsDropDownRect",
+                                        "background/rect": "$OptionsDropDownBackgroundRect",
+                                        "background/leftCapOffset": "$OptionsDropDownLeftCapOffset",
+                                        "background/rightCapOffset": "$OptionsDropDownRightCapOffset",
+                                        "pressedFrame": 1,
+                                        "disabledFrame": 2,
+                                        "hoveredFrame": 3,
+                                        "focusIndicatorFilename": "$OptionsDropDownFocusIndicatorFilename",
+                                        "states": [ "?" ],
+                                        "onUpdateMessage": "OptionsPanelMessage:SetScreenResolution",
+                                        "text/style": "$StyleSettingsCarousel",
+                                        "text/style": { "pointSize": "$MediumFontSize" },
+                                        "textColor": "$FontColorLightGold",
+                                        "tooltipString": "@OptionsMenuScreenResolutionTooltip",
+                                        "tooltipStyle": {
+                                            "showAfterDelay": true,
+                                        }
+                                    },
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row DLSS",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ResolutionScaleText",
+                                    "fields": {
+                                        "text": "@DLSS",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                },
+                                {
+                                    "type": "DropdownListWidget", "name": "DLSS",
+                                    "fields": {
+                                        "rect": "$OptionsDropDownRect",
+                                        "background/rect": "$OptionsDropDownBackgroundRect",
+                                        "background/leftCapOffset": "$OptionsDropDownLeftCapOffset",
+                                        "background/rightCapOffset": "$OptionsDropDownRightCapOffset",
+                                        "pressedFrame": 1,
+                                        "disabledFrame": 2,
+                                        "hoveredFrame": 3,
+                                        "focusIndicatorFilename": "$OptionsDropDownFocusIndicatorFilename",
+                                        "states": [ "@Off", "@Auto", "@Quality", "@Balanced", "@Performance", "@UltraPerformance" ],
+                                        "onUpdateMessage": "OptionsPanelMessage:SetDLSSMode",
+                                        "text/style": "$StyleSettingsCarousel",
+                                        "text/style": { "pointSize": "$MediumFontSize" },
+                                        "textColor": "$FontColorLightGold",
+                                        "tooltipString": "@DLSSTooltip",
+                                        "tooltipStyle": {
+                                            "showAfterDelay": true,
+                                        }
+                                    },
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row ResolutionScale",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ResolutionScaleText",
+                                    "fields": {
+                                        "text": "@ResolutionScale",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                },
+                                {
+                                    "type": "SettingsSliderWidget", "name": "ResolutionScale",
+                                    "fields": {
+                                        "rect": "$OptionsSliderRect",
+                                        "focusIndicatorPadding": "$OptionsSliderFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsSliderFocusIndicatorFilename",
+                                        "isHorizontal": true,
+                                        "indicatorFilepath": "PauseMenu\\HorizontalIndicator",
+                                        "background": "$SettingsSliderBackground",
+                                        "onUpdateMessage": "OptionsPanelMessage:SetResolutionScale",
+                                        "leftButton": "$SettingsSliderLeftButtonFields",
+                                        "rightButton": "$SettingsSliderRightButtonFields",
+                                        "valueText": "$SettingsSliderValueFields",
+                                        "tooltipString": "@OptionsMenuResolutionScaleTooltip",
+                                        "tooltipStyle": {
+                                            "fontStyle": {
+                                                "options": { "newlineHandling": "standard" },
+                                            },
+                                            "showAfterDelay": true,
+                                        },
+                                        "increment": 1,
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row Sharpening",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "SharpeningText",
+                                    "fields": {
+                                        "text": "@Sharpening",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                },
+                                {
+                                    "type": "SettingsSliderWidget", "name": "Sharpening",
+                                    "fields": {
+                                        "rect": "$OptionsSliderRect",
+                                        "focusIndicatorPadding": "$OptionsSliderFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsSliderFocusIndicatorFilename",
+                                        "isHorizontal": true,
+                                        "indicatorFilepath": "PauseMenu\\HorizontalIndicator",
+                                        "background": "$SettingsSliderBackground",
+                                        "onUpdateMessage": "OptionsPanelMessage:SetSharpening",
+                                        "leftButton": "$SettingsSliderLeftButtonFields",
+                                        "rightButton": "$SettingsSliderRightButtonFields",
+                                        "valueText": "$SettingsSliderValueFields",
+                                        "tooltipString": "@OptionsMenuSharpeningTooltip",
+                                        "tooltipStyle": {
+                                            "fontStyle": {
+                                                "options": { "newlineHandling": "standard" },
+                                            },
+                                            "showAfterDelay": true,
+                                        },
+                                        "increment": 1,
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row GammaCalibration",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "GammaCalibrationText",
+                                    "fields": {
+                                        "text": "@BrightnessHD",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                },
+                                {
+                                    "type": "ButtonWidget", "name": "GammaCalibration",
+                                    "fields": {
+                                        "filename": "FrontEnd/HD/Final/FrontEnd_ButtonSmall",
+                                        "textString": "@CalibrationText",
+                                        "onClickMessage": "OptionsPanelMessage:OpenCalibrationPanel",
+                                        "textColor": "$LightButtonTextColor",
+                                        "text/style" : "$StyleFEButtonText",
+                                        "tooltipString": "@OptionsMenuGammaTooltip",
+                                        "pressedFrame": 1,
+                                        "disabledFrame": 2,
+                                        "hoveredFrame": 3,
+                                        "sound": "cursor_select",
+                                        "focusIndicatorFilename": "Controller/HoverImages/FrontEndButtonSmall_Hover",
+                                        "tooltipStyle": {
+                                            "showAfterDelay": true,
+                                        },
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row ScreenSpaceCalibration",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ScreenSpaceCalibrationText",
+                                    "fields": {
+                                        "text": "@ScreenSpace",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                },
+                                {
+                                    "type": "ButtonWidget", "name": "ScreenSpaceCalibration",
+                                    "fields": {
+                                        "filename": "FrontEnd/HD/Final/FrontEnd_ButtonSmall",
+                                        "textString": "@CalibrationText",
+                                        "onClickMessage": "PanelManager:OpenPanel:ScreenSpaceCalibrationPanel",
+                                        "textColor": "$LightButtonTextColor",
+                                        "text/style" : "$StyleFEButtonText",
+                                        "tooltipString": "@OptionsMenuScreenSpaceTooltip",
+                                        "pressedFrame": 1,
+                                        "disabledFrame": 2,
+                                        "hoveredFrame": 3,
+                                        "sound": "cursor_select",
+                                        "focusIndicatorFilename": "Controller/HoverImages/FrontEndButtonSmall_Hover",
+                                        "tooltipStyle": {
+                                            "showAfterDelay": true,
+                                        },
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row VSync",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "VSyncText",
+                                    "fields": {
+                                        "text": "@VSync",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                },
+                                {
+                                    "type": "ToggleButtonWidget", "name": "VSync",
+                                    "fields": {
+                                        "rect": "$OptionsToggleRect",
+                                        "sound": "cursor_menu_select_hd",
+                                        "focusIndicatorPadding": "$OptionsToggleFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsToggleFocusIndicatorFilename",
+                                        "filename": "Lobby\\CreateGame\\CreateGame_AdvancedCheckbox",
+                                        "focusIndicatorOffset": { "x": 0, "y": -4 },
+                                        "untoggledFrame": 0,
+                                        "untoggledPressedFrame": 1,
+                                        "untoggledHoveredFrame": 3,
+                                        "untoggledDisabledFrame": 2,
+                                        "toggledFrame": 4,
+                                        "toggledPressedFrame": 5,
+                                        "toggledHoveredFrame": 6,
+                                        "onClickMessage": "OptionsPanelMessage:SetVSync",
+                                        "tooltipString": "@OptionsMenuVerticalSyncTooltip",
+                                        "tooltipStyle": {
+                                            "showAfterDelay": true,
+                                        },
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row FramerateCap",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "FramerateCapText",
+                                    "fields": {
+                                        "text": "@FramerateCap",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                },
+                                {
+                                    "type": "SettingsSliderWidget", "name": "FramerateCap",
+                                    "fields": {
+                                        "rect": "$OptionsSliderRect",
+                                        "focusIndicatorPadding": "$OptionsSliderFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsSliderFocusIndicatorFilename",
+                                        "isHorizontal": true,
+                                        "indicatorFilepath": "PauseMenu\\HorizontalIndicator",
+                                        "background": "$SettingsSliderBackground",
+                                        "onUpdateMessage": "OptionsPanelMessage:SetFramerateCap",
+                                        "leftButton": "$SettingsSliderLeftButtonFields",
+                                        "rightButton": "$SettingsSliderRightButtonFields",
+                                        "valueText": "$SettingsSliderValueFields",
+                                        "tooltipString": "@OptionsMenuFramerateCapTooltip",
+                                        "tooltipStyle": {
+                                            "fontStyle": {
+                                                "options": { "newlineHandling": "standard" },
+                                            },
+                                            "showAfterDelay": true,
+                                        },
+                                        "increment": 1,
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row Graphics",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "Graphics",
+                                    "fields": {
+                                        "text": "@Graphics",
+                                        "style": "$StyleSettingsTitle"
+                                    },
+                                    "children": [
+                                        {
+                                            "type": "ImageWidget", "name": "Divider",
+                                            "fields": {
+                                                "rect": "$OptionsDividerRect",
+                                                "filename": "PauseMenu\\Divider",
+                                            }
+                                        },
+                                    ]
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row VRAMUsage",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "VRAMUsageText",
+                                    "fields": {
+                                        "text": "@VRAMUsage",
+                                        "style": "$StyleSettingsText",
+                                    }
+                                },
+                                {
+                                    "type": "FocusableWidget", "name": "VRAMUsage",
+                                    "fields": {
+                                        "rect": { "x": 0, "y": 0, "width": 500, "height": 50 },
+                                        "focusIndicatorPadding": "$OptionsCarouselFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsCarouselFocusIndicatorFilename",
+                                        "fontType": "8ptE",
+                                        "tooltipString": "@VRAMUsageTooltip",
+                                        "tooltipStyle": {
+                                            "fontStyle": {
+                                                "options": { "newlineHandling": "standard" },
+                                            },
+                                            "showAfterDelay": true,
+                                        },
+                                    },
+                                    "children": [
+                                        {
+                                            "type": "ImageWidget", "name": "VRAMUsageImage",
+                                            "fields": {
+                                                "filename": "MENU\\Options_vRAM_bar",
+                                                "useAdvancedColoring": true,
+                                            },
+                                            "children": [
+                                                {
+                                                    "type": "ImageWidget", "name": "VRAMUsageRectangle",
+                                                    "fields": {
+                                                        "filename": "MENU\\Options_vRAM_bar_Fill_gray",
+                                                    },
+                                                },
+                                            ]
+                                        }
+                        
+                                    ]
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row GraphicPresets",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "GraphicPresetsText",
+                                    "fields": {
+                                        "text": "@GraphicPresetsText",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                },
+                                {
+                                    "type": "CarouselWidget", "name": "GraphicPresets",
+                                    "fields": {
+                                        "rect": "$OptionsCarouselRect",
+                                        "focusIndicatorPadding": "$OptionsCarouselFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsCarouselFocusIndicatorFilename",
+                                        "states": [  "Low", "Medium", "High", "VeryHigh", "Custom" ],
+                                        "wrapAround": false,
+                                        "fontType": "8ptE",
+                                        "onUpdateMessage": "OptionsPanelMessage:SetGraphicPresets",
+                                        "style": "$StyleSettingsCarousel",
+                                        "enabledColor" : "$CarouselEnabledColor",
+                                        "disabledColor" : "$CarouselDisabledColor",
+                                        "tooltipString": "@GraphicPresetsTooltip",
+                                        "tooltipStyle": {
+                                            "fontStyle": {
+                                                "options": { "newlineHandling": "standard" },
+                                            },
+                                            "showAfterDelay": true,
+                                        }
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row TextureQuality",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "TextureQualityText",
+                                    "fields": {
+                                        "text": "@TextureQuality",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                },
+                                {
+                                    "type": "CarouselWidget", "name": "TextureQuality",
+                                    "fields": {
+                                        "rect": "$OptionsCarouselRect",
+                                        "focusIndicatorPadding": "$OptionsCarouselFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsCarouselFocusIndicatorFilename",
+                                        "states": [  "Low", "Medium", "High", "VeryHigh" ],
+                                        "wrapAround": false,
+                                        "fontType": "8ptE",
+                                        "onUpdateMessage": "OptionsPanelMessage:SetTextureQuality",
+                                        "style": "$StyleSettingsCarousel",
+                                        "enabledColor" : "$CarouselEnabledColor",
+                                        "disabledColor" : "$CarouselDisabledColor",
+                                        "tooltipString": "@OptionsMenuTextureQualityTooltip",
+                                        "tooltipStyle": {
+                                            "fontStyle": {
+                                                "options": { "newlineHandling": "standard" },
+                                            },
+                                            "showAfterDelay": true,
+                                        }
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row TextureAnisotropy",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "TextureAnisotropyText",
+                                    "fields": {
+                                        "text": "@AnisotropicFiltering",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                },
+                                {
+                                    "type": "CarouselWidget", "name": "TextureAnisotropy",
+                                    "fields": {
+                                        "rect": "$OptionsCarouselRect",
+                                        "focusIndicatorPadding": "$OptionsCarouselFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsCarouselFocusIndicatorFilename",
+                                        "states": [ "Anisotropy1", "Anisotropy2", "Anisotropy4", "Anisotropy8", "Anisotropy16" ],
+                                        "wrapAround": false,
+                                        "fontType": "8ptE",
+                                        "onUpdateMessage": "OptionsPanelMessage:SetTextureAnisotropy",
+                                        "style": "$StyleSettingsCarousel",
+                                        "enabledColor" : "$CarouselEnabledColor",
+                                        "disabledColor" : "$CarouselDisabledColor",
+                                        "tooltipString": "@OptionsMenuAnisotropicFilteringTooltip",
+                                        "tooltipStyle": {
+                                            "fontStyle": {
+                                                "options": { "newlineHandling": "standard" },
+                                            },
+                                            "showAfterDelay": true,
+                                        }
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row AmbientOcclusionQuality",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "AmbientOcclusionQualityText",
+                                    "fields": {
+                                        "text": "@AmbientOcclusionQuality",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                },
+                                {
+                                    "type": "CarouselWidget", "name": "AmbientOcclusionQuality",
+                                    "fields": {
+                                        "rect": "$OptionsCarouselRect",
+                                        "focusIndicatorPadding": "$OptionsCarouselFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsCarouselFocusIndicatorFilename",
+                                        "states": [ "Off", "Low", "Medium", "High", "VeryHigh" ],
+                                        "wrapAround": false,
+                                        "fontType": "8ptE",
+                                        "onUpdateMessage": "OptionsPanelMessage:SetAmbientOcclusionQuality",
+                                        "style": "$StyleSettingsCarousel",
+                                        "enabledColor" : "$CarouselEnabledColor",
+                                        "disabledColor" : "$CarouselDisabledColor",
+                                        "tooltipString": "@OptionsMenuAmbientOcclusionQualityTooltip",
+                                        "tooltipStyle": {
+                                            "fontStyle": {
+                                                "options": { "newlineHandling": "standard" },
+                                            },
+                                            "showAfterDelay": true,
+                                        }
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row CharacterDetail",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "CharacterDetailText",
+                                    "fields": {
+                                        "text": "@CharacterDetail",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                },
+                                {
+                                    "type": "CarouselWidget", "name": "CharacterDetail",
+                                    "fields": {
+                                        "rect": "$OptionsCarouselRect",
+                                        "focusIndicatorPadding": "$OptionsCarouselFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsCarouselFocusIndicatorFilename",
+                                        "states": [ "Low", "Medium", "High", "VeryHigh" ],
+                                        "wrapAround": false,
+                                        "fontType": "8ptE",
+                                        "onUpdateMessage": "OptionsPanelMessage:SetCharacterDetail",
+                                        "style": "$StyleSettingsCarousel",
+                                        "enabledColor" : "$CarouselEnabledColor",
+                                        "disabledColor" : "$CarouselDisabledColor",
+                                        "tooltipString": "@OptionsMenuCharacterDetailTooltip",
+                                        "tooltipStyle": {
+                                            "fontStyle": {
+                                                "options": { "newlineHandling": "standard" },
+                                            },
+                                            "showAfterDelay": true,
+                                        }
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row EnvironmentDetail",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "EnvironmentDetailText",
+                                    "fields": {
+                                        "text": "@EnvironmentDetail",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                },
+                                {
+                                    "type": "CarouselWidget", "name": "EnvironmentDetail",
+                                    "fields": {
+                                        "rect": "$OptionsCarouselRect",
+                                        "focusIndicatorPadding": "$OptionsCarouselFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsCarouselFocusIndicatorFilename",
+                                        "states": [ "Low", "Medium", "High", "VeryHigh" ],
+                                        "wrapAround": false,
+                                        "fontType": "8ptE",
+                                        "onUpdateMessage": "OptionsPanelMessage:SetEnvironmentDetail",
+                                        "style": "$StyleSettingsCarousel",
+                                        "enabledColor" : "$CarouselEnabledColor",
+                                        "disabledColor" : "$CarouselDisabledColor",
+                                        "tooltipString": "@OptionsMenuEnvironmentDetailTooltip",
+                                        "tooltipStyle": {
+                                            "fontStyle": {
+                                                "options": { "newlineHandling": "standard" },
+                                            },
+                                            "showAfterDelay": true,
+                                        }
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row TransparencyQuality",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "TransparencyQualityText",
+                                    "fields": {
+                                        "text": "@TransparencyQuality",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                },
+                                {
+                                    "type": "CarouselWidget", "name": "TransparencyQuality",
+                                    "fields": {
+                                        "rect": "$OptionsCarouselRect",
+                                        "focusIndicatorPadding": "$OptionsCarouselFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsCarouselFocusIndicatorFilename",
+                                        "states": [ "High", "VeryHigh", "Ultra" ],
+                                        "wrapAround": false,
+                                        "fontType": "8ptE",
+                                        "onUpdateMessage": "OptionsPanelMessage:SetTransparencyQuality",
+                                        "style": "$StyleSettingsCarousel",
+                                        "enabledColor" : "$CarouselEnabledColor",
+                                        "disabledColor" : "$CarouselDisabledColor",
+                                        "tooltipString": "@OptionsMenuTransparencyQualityTooltip",
+                                        "tooltipStyle": {
+                                            "fontStyle": {
+                                                "options": { "newlineHandling": "standard" },
+                                            },
+                                            "showAfterDelay": true,
+                                        }
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row ShadowQuality",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ShadowQualityText",
+                                    "fields": {
+                                        "text": "@ShadowQuality",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                },
+                                {
+                                    "type": "CarouselWidget", "name": "ShadowQuality",
+                                    "fields": {
+                                        "rect": "$OptionsCarouselRect",
+                                        "focusIndicatorPadding": "$OptionsCarouselFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsCarouselFocusIndicatorFilename",
+                                        "states": [ "Low", "Medium", "High", "VeryHigh" ],
+                                        "wrapAround": false,
+                                        "fontType": "8ptE",
+                                        "onUpdateMessage": "OptionsPanelMessage:SetShadowQuality",
+                                        "style": "$StyleSettingsCarousel",
+                                        "enabledColor" : "$CarouselEnabledColor",
+                                        "disabledColor" : "$CarouselDisabledColor",
+                                        "tooltipString": "@OptionsMenuShadowQualityTooltip",
+                                        "tooltipStyle": {
+                                            "fontStyle": {
+                                                "options": { "newlineHandling": "standard" },
+                                            },
+                                            "showAfterDelay": true,
+                                        }
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row AntiAliasing",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "AntiAliasingText",
+                                    "fields": {
+                                        "text": "@AntiAliasing",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                },
+                                {
+                                    "type": "CarouselWidget", "name": "AntiAliasing",
+                                    "fields": {
+                                        "rect": "$OptionsCarouselRect",
+                                        "focusIndicatorPadding": "$OptionsCarouselFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsCarouselFocusIndicatorFilename",
+                                        "states": [ "Off", "FXAA", "SMAA1x", "SMAAT2x" ],
+                                        "wrapAround": false,
+                                        "fontType": "8ptE",
+                                        "onUpdateMessage": "OptionsPanelMessage:SetAntiAliasing",
+                                        "style": "$StyleSettingsCarousel",
+                                        "enabledColor" : "$CarouselEnabledColor",
+                                        "disabledColor" : "$CarouselDisabledColor",
+                                        "tooltipString": "@OptionsMenuAntiAliasingTooltip",
+                                        "tooltipStyle": {
+                                            "fontStyle": {
+                                                "options": { "newlineHandling": "standard" },
+                                            },
+                                            "showAfterDelay": true,
+                                        }
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row DynamicResolutionScaling",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "DynamicResolutionScalingText",
+                                    "fields": {
+                                        "text": "@DynamicResolutionScaling",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                },
+                                {
+                                    "type": "ToggleButtonWidget", "name": "DynamicResolutionScaling",
+                                    "fields": {
+                                        "rect": "$OptionsToggleRect",
+                                        "sound": "cursor_menu_select_hd",
+                                        "focusIndicatorPadding": "$OptionsToggleFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsToggleFocusIndicatorFilename",
+                                        "filename": "Lobby\\CreateGame\\CreateGame_AdvancedCheckbox",
+                                        "focusIndicatorOffset": { "x": 0, "y": -4 },
+                                        "untoggledFrame": 0,
+                                        "untoggledPressedFrame": 1,
+                                        "untoggledHoveredFrame": 3,
+                                        "untoggledDisabledFrame": 2,
+                                        "toggledFrame": 4,
+                                        "toggledPressedFrame": 5,
+                                        "toggledHoveredFrame": 6,
+                                        "onClickMessage": "OptionsPanelMessage:SetDynamicResolutionScaling",
+                                        "disabledTooltipString": "@MPBetaDisabled",
+                                        "tooltipString": "@OptionsMenuDynamicResolutionScalingTooltip",
+                                        "tooltipStyle": {
+                                            "showAfterDelay": true,
+                                        }
+                                    }
+                                },
+
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row FramerateTarget",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "FramerateTargetText",
+                                    "fields": {
+                                        "text": "@FramerateTarget",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                },
+                                {
+                                    "type": "SettingsSliderWidget", "name": "FramerateTarget",
+                                    "fields": {
+                                        "rect": "$OptionsSliderRect",
+                                        "focusIndicatorPadding": "$OptionsSliderFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsSliderFocusIndicatorFilename",
+                                        "isHorizontal": true,
+                                        "indicatorFilepath": "PauseMenu\\HorizontalIndicator",
+                                        "background": "$SettingsSliderBackground",
+                                        "onUpdateMessage": "OptionsPanelMessage:SetFramerateTarget",
+                                        "leftButton": "$SettingsSliderLeftButtonFields",
+                                        "rightButton": "$SettingsSliderRightButtonFields",
+                                        "valueText": "$SettingsSliderValueFields",
+                                        "tooltipString": "@MinimumFramerateTooltip",
+                                        "tooltipStyle": {
+                                            "fontStyle": {
+                                                "options": { "newlineHandling": "standard" }
+                                            },
+                                            "showAfterDelay": true
+                                        },
+                                        "increment": 1,
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row VfxQuality",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "VfxQualityText",
+                                    "fields": {
+                                        "text": "@VfxQuality",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                },
+                                {
+                                    "type": "CarouselWidget", "name": "VfxQuality",
+                                    "fields": {
+                                        "rect": "$OptionsCarouselRect",
+                                        "focusIndicatorPadding": "$OptionsCarouselFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsCarouselFocusIndicatorFilename",
+                                        "states": [ "Low", "Medium", "High", "VeryHigh", "Ultra" ],
+                                        "wrapAround": false,
+                                        "fontType": "8ptE",
+                                        "onUpdateMessage": "OptionsPanelMessage:SetVfxQuality",
+                                        "style": "$StyleSettingsCarousel",
+                                        "enabledColor" : "$CarouselEnabledColor",
+                                        "disabledColor" : "$CarouselDisabledColor",
+                                        "tooltipString": "@OptionsMenuVFXQualityTooltip",
+                                        "tooltipStyle": {
+                                            "fontStyle": {
+                                                "options": { "newlineHandling": "standard" },
+                                            },
+                                            "showAfterDelay": true,
+                                        }
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row VfxLightingQuality",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "VfxLightingQualityText",
+                                    "fields": {
+                                        "text": "@VfxLightingQuality",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                },
+                                {
+                                    "type": "CarouselWidget", "name": "VfxLightingQuality",
+                                    "fields": {
+                                        "rect": "$OptionsCarouselRect",
+                                        "focusIndicatorPadding": "$OptionsCarouselFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsCarouselFocusIndicatorFilename",
+                                        "states": [ "Low", "Medium", "High", "Ultra" ],
+                                        "wrapAround": false,
+                                        "fontType": "8ptE",
+                                        "onUpdateMessage": "OptionsPanelMessage:SetVfxLightingQuality",
+                                        "style": "$StyleSettingsCarousel",
+                                        "enabledColor" : "$CarouselEnabledColor",
+                                        "disabledColor" : "$CarouselDisabledColor",
+                                        "tooltipString": "@OptionsMenuVFXLightingQualityTooltip",
+                                        "tooltipStyle": {
+                                            "fontStyle": {
+                                                "options": { "newlineHandling": "standard" },
+                                            },
+                                            "showAfterDelay": true,
+                                        }
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row Legacy Video Options",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "Legacy Video Options",
+                                    "fields": {
+                                        "text": "@LegacyVideoOptionsHD",
+                                        "style": "$StyleSettingsTitle"
+                                    },
+                                    "children": [
+                                        {
+                                            "type": "ImageWidget", "name": "Divider",
+                                            "fields": {
+                                                "rect": "$OptionsDividerRect",
+                                                "filename": "PauseMenu\\Divider",
+                                            }
+                                        },
+                                    ]
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row Resolution",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ResolutionText",
+                                    "fields": {
+                                        "text": "@GameResolutionHD",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                },
+                                {
+                                    "type": "CarouselWidget", "name": "Resolution",
+                                    "fields": {
+                                        "rect": "$OptionsCarouselRect",
+                                        "focusIndicatorPadding": "$OptionsCarouselFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsCarouselFocusIndicatorFilename",
+                                        "states": [ "OptionsMenuLegacyGameResolution640x480", "OptionsMenuLegacyGameResolution800x600" ],
+                                        "fontType": "8ptE",
+                                        "onUpdateMessage": "OptionsPanelMessage:SetResolution",
+                                        "style": "$StyleSettingsCarousel",
+                                        "enabledColor" : "$CarouselEnabledColor",
+                                        "disabledColor" : "$CarouselDisabledColor",
+                                        "tooltipString": "@OptionsMenuLegacyGameResolutionTooltip",
+                                        "tooltipStyle": {
+                                            "fontStyle": {
+                                                "options": { "newlineHandling": "standard" },
+                                            },
+                                            "showAfterDelay": true,
+                                        }
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row LightingQuality",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "LightingQualityText",
+                                    "fields": {
+                                        "text": "@LightingQualityHD",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                },
+                                {
+                                    "type": "CarouselWidget", "name": "LightingQuality",
+                                    "fields": {
+                                        "rect": "$OptionsCarouselRect",
+                                        "focusIndicatorPadding": "$OptionsCarouselFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsCarouselFocusIndicatorFilename",
+                                        "states": [ "Low", "Medium", "High" ],
+                                        "wrapAround": false,
+                                        "fontType": "8ptE",
+                                        "onUpdateMessage": "OptionsPanelMessage:SetLightingQuality",
+                                        "style": "$StyleSettingsCarousel",
+                                        "enabledColor" : "$CarouselEnabledColor",
+                                        "disabledColor" : "$CarouselDisabledColor",
+                                        "tooltipString": "@OptionsMenuLegacyLightingQualityTooltip",
+                                        "tooltipStyle": {
+                                            "fontStyle": {
+                                                "options": { "newlineHandling": "standard" },
+                                            },
+                                            "showAfterDelay": true,
+                                        }
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row BlendedShadows",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "BlendedShadowsText",
+                                    "fields": {
+                                        "text": "@BlendedShadowsHD",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                },
+                                {
+                                    "type": "ToggleButtonWidget", "name": "BlendedShadows",
+                                    "fields": {
+                                        "rect": "$OptionsToggleRect",
+                                        "sound": "cursor_menu_select_hd",
+                                        "focusIndicatorPadding": "$OptionsToggleFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsToggleFocusIndicatorFilename",
+                                        "focusIndicatorOffset": { "x": 0, "y": -4 },
+                                        "filename": "Lobby\\CreateGame\\CreateGame_AdvancedCheckbox",
+                                        "untoggledFrame": 0,
+                                        "untoggledPressedFrame": 1,
+                                        "untoggledHoveredFrame": 3,
+                                        "untoggledDisabledFrame": 2,
+                                        "toggledFrame": 4,
+                                        "toggledPressedFrame": 5,
+                                        "toggledHoveredFrame": 6,
+                                        "onClickMessage": "OptionsPanelMessage:SetBlendedShadows",
+                                        "tooltipString": "@OptionsMenuLegacyBlendedShadowsTooltip",
+                                        "tooltipStyle": {
+                                            "showAfterDelay": true,
+                                        }
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row Perspective",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "PerspectiveText",
+                                    "fields": {
+                                        "text": "@PerspectiveHD",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                },
+                                {
+                                    "type": "ToggleButtonWidget", "name": "Perspective",
+                                    "fields": {
+                                        "rect": "$OptionsToggleRect",
+                                        "sound": "cursor_menu_select_hd",
+                                        "focusIndicatorPadding": "$OptionsToggleFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsToggleFocusIndicatorFilename",
+                                        "filename": "Lobby\\CreateGame\\CreateGame_AdvancedCheckbox",
+                                        "focusIndicatorOffset": { "x": 0, "y": -4 },
+                                        "untoggledFrame": 0,
+                                        "untoggledPressedFrame": 1,
+                                        "untoggledHoveredFrame": 3,
+                                        "untoggledDisabledFrame": 2,
+                                        "toggledFrame": 4,
+                                        "toggledPressedFrame": 5,
+                                        "toggledHoveredFrame": 6,
+                                        "onClickMessage": "OptionsPanelMessage:SetPerspective",
+                                        "tooltipString": "@OptionsMenuLegacyPerspectiveModeTooltip",
+                                        "tooltipStyle": {
+                                            "showAfterDelay": true,
+                                        }
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row Contrast",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ContrastText",
+                                    "fields": {
+                                        "text": "@ContrastHD",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                },
+                                {
+                                    "type": "SettingsSliderWidget", "name": "Contrast",
+                                    "fields": {
+                                        "rect": "$OptionsSliderRect",
+                                        "focusIndicatorPadding": "$OptionsSliderFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsSliderFocusIndicatorFilename",
+                                        "isHorizontal": true,
+                                        "indicatorFilepath": "PauseMenu\\HorizontalIndicator",
+                                        "background": "$SettingsSliderBackground",
+                                        "onUpdateMessage": "OptionsPanelMessage:SetContrast",
+                                        "leftButton": "$SettingsSliderLeftButtonFields",
+                                        "rightButton": "$SettingsSliderRightButtonFields",
+                                        "valueText": "$SettingsSliderValueFields",
+                                        "tooltipString": "@OptionsMenuLegacyContrastTooltip",
+                                        "tooltipStyle": {
+                                            "fontStyle": {
+                                                "options": { "newlineHandling": "standard" },
+                                            },
+                                            "showAfterDelay": true,
+                                        },
+                                        "increment": 1,
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row LegacyGraphicsMode",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "LegacyGraphicsModeText",
+                                    "fields": {
+                                        "text": "@LegacyGraphicsModeLabel",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                },
+                                {
+                                    "type": "CarouselWidget", "name": "LegacyGraphicsMode",
+                                    "fields": {
+                                        "rect": "$OptionsCarouselRect",
+                                        "focusIndicatorPadding": "$OptionsCarouselFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsCarouselFocusIndicatorFilename",
+                                        "states": [ "LegacyGraphicsModeGDI", "LegacyGraphicsModeGlide", "KeyBindingTypeResurrected" ],
+                                        "fontType": "8ptE",
+                                        "onUpdateMessage": "OptionsPanelMessage:SetLegacyGraphicsMode",
+                                        "style": "$StyleSettingsCarousel",
+                                        "enabledColor" : "$CarouselEnabledColor",
+                                        "disabledColor" : "$CarouselDisabledColor",
+                                        "tooltipString": "@LegacyGraphicsModeTooltip",
+                                        "tooltipStyle": {
+                                            "fontStyle": {
+                                                "options": { "newlineHandling": "standard" },
+                                            },
+                                            "showAfterDelay": true,
+                                        }
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row Spacer",
+                        },
+                    ]
+                }
+            ]
+        },
+    ]
+}
