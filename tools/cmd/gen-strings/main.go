@@ -7,6 +7,7 @@ import (
 	"log"
 	"os"
 	"path"
+	"strconv"
 	"strings"
 	"unicode"
 
@@ -20,6 +21,10 @@ const (
 	colorRed   = "ÿc1"
 	colorGray  = "ÿc5"
 	colorPink  = "ÿc;"
+)
+
+const (
+	gradeNormal = "普"
 )
 
 var colorPalette = map[string]string{
@@ -36,16 +41,15 @@ var (
 var inFile = flag.String("in", "-", "input string JOSN file")
 
 var (
-	itemColor    = enc.ReadCSVAsMap(path.Join(resourcesDir, "item-color.csv"))
-	itemGrade    = enc.ReadCSVAsMap(path.Join(resourcesDir, "item-grade.csv"))
-	itemMax      = enc.ReadCSVAsMap(path.Join(resourcesDir, "item-max.csv"))
-	itemRare     = enc.ReadCSVAsMap(path.Join(resourcesDir, "item-rare.csv"))
-	itemSocket   = enc.ReadCSVAsMap(path.Join(resourcesDir, "item-socket.csv"))
-	itemWeight   = enc.ReadCSVAsMap(path.Join(resourcesDir, "item-weight.csv"))
-	propsAbbrv   = enc.ReadCSVAsMap(path.Join(resourcesDir, "props-abbrv.csv"))
-	textRename   = enc.ReadCSVAsMap(path.Join(resourcesDir, "text-rename.csv"))
-	textSuffixes = enc.ReadCSVAsMap(path.Join(resourcesDir, "text-suffixes.csv"))
-	levels       = enc.ReadCSVAsMap(path.Join(resourcesDir, "levels.csv"))
+	itemArmor   = enc.ReadCSVAsMap(path.Join(resourcesDir, "item-armor.csv"))
+	itemWeapons = enc.ReadCSVAsMap(path.Join(resourcesDir, "item-weapons.csv"))
+	itemMax     = enc.ReadCSVAsMap(path.Join(resourcesDir, "item-max.csv"))
+	itemRare    = enc.ReadCSVAsMap(path.Join(resourcesDir, "item-rare.csv"))
+	itemRunes   = enc.ReadCSVAsMap(path.Join(resourcesDir, "item-runes.csv"))
+	itemModify  = enc.ReadCSVAsMap(path.Join(resourcesDir, "item-modify.csv"))
+	propsAbbrv  = enc.ReadCSVAsMap(path.Join(resourcesDir, "props-abbrv.csv"))
+	textModify  = enc.ReadCSVAsMap(path.Join(resourcesDir, "text-modify.csv"))
+	levels      = enc.ReadCSVAsMap(path.Join(resourcesDir, "levels.csv"))
 )
 
 func main() {
@@ -72,6 +76,7 @@ func processFile(filename string) []model.Entry {
 		oldZhTW := e.ZhTW
 		e = processText(e)
 		e = processItem(e)
+		e = processRunes(e)
 		e = processLevels(e)
 		if oldZhTW != e.ZhTW {
 			log.Printf("Replace string: %d %q -> %q", e.ID, oldZhTW, e.ZhTW)
@@ -82,70 +87,88 @@ func processFile(filename string) []model.Entry {
 }
 
 func processItem(e model.Entry) model.Entry {
-	var extraTxt1 string
-	var extraTxt2 string
+	var (
+		txtDesc        string
+		txtGradeWeight string
+		txtRarity      string
+		txtSocket      string
+		txtMax         string
+	)
 
-	// add grade
-	if g, ok := itemGrade[e.ID]; ok {
-		extraTxt1 += g["grade"]
+	if armor, ok := itemArmor[e.ID]; ok {
+		txtGradeWeight = armor["grade"] + armor["weight"]
+		txtSocket = socketString(armor["socket"], 3)
 	}
 
-	// add armor weight
-	if w, ok := itemWeight[e.ID]; ok {
-		extraTxt1 += w["weight"]
+	if weapon, ok := itemWeapons[e.ID]; ok {
+		txtGradeWeight = weapon["grade"]
+		txtSocket = socketString(weapon["socket"], 4)
 	}
 
 	// add rare
 	if r, ok := itemRare[e.ID]; ok {
 		switch r["rarity"] {
 		case "1":
-			extraTxt1 += "☆"
+			txtRarity = "☆"
 		case "2":
-			extraTxt1 += "★"
+			txtRarity = "★"
 		case "3":
-			extraTxt2 += "★" + r["type"] + "★"
+			txtDesc = "★" + r["type"] + "★"
 		default:
 			panic("unsupported rarity:" + r["rarity"])
 		}
 	}
 
-	// add socket if #socket >= 3
-	if grade, ok := itemGrade[e.ID]; ok && grade["grade"] == "精" {
-		if s, ok := itemSocket[e.ID]; ok {
-			switch s["socket"] {
-			case "3":
-				extraTxt1 += " ③"
-			case "4":
-				extraTxt1 += " ④"
-			case "5":
-				extraTxt1 += " ⑤"
-			case "6":
-				extraTxt1 += " ⑥"
-			}
-		}
-	}
-
 	// add max
 	if m, ok := itemMax[e.ID]; ok {
-		extraTxt2 += "[" + m["max"] + "]"
+		txtMax = "[" + m["max"] + "]"
 	}
 
-	if extraTxt1 != "" {
-		e.ZhTW += "|" + extraTxt1
+	if item, ok := itemModify[e.ID]; ok {
+		if newName := item["new_name"]; newName != "" {
+			e.ZhTW = newName
+		}
+		e.ZhTW = item["prefix"] + e.ZhTW + item["suffix"]
 	}
-	if extraTxt2 != "" {
-		e.ZhTW += "\n" + extraTxt2
+
+	if txtMax != "" {
+		e.ZhTW = txtMax + "\n" + e.ZhTW
+	}
+	if txtGradeWeight != "" || txtRarity != "" {
+		e.ZhTW += "|" + txtGradeWeight + txtRarity
+		if txtSocket != "" {
+			e.ZhTW += " " + txtSocket
+		}
+	}
+	if txtDesc != "" {
+		e.ZhTW += "\n" + txtDesc
 	}
 
 	// change color
-	if item, ok := itemColor[e.ID]; ok {
-		newColor, ok := colorPalette[item["new_color"]]
+	if item, ok := itemModify[e.ID]; ok && item["color"] != "" {
+		newColor, ok := colorPalette[item["color"]]
 		if !ok {
-			panic("unknown color: " + item["new_color"])
+			panic("unknown color: " + item["color"])
 		}
 		e.ZhTW = fmt.Sprint(newColor, e.ZhTW, colorWhite)
 	}
 
+	return e
+}
+
+func processRunes(e model.Entry) model.Entry {
+	if item, ok := itemRunes[e.ID]; ok {
+		var txt string
+		if strings.HasSuffix(e.Key, "L") {
+			txt = fmt.Sprintf("%s#%s", e.ZhTW, item["number"])
+		} else {
+			txt = fmt.Sprintf("%sÿc2(#%s)ÿc8", e.ZhTW, item["number"])
+			if recipe := item["recipe"]; recipe != "" {
+				txt = fmt.Sprintf("ÿc5[%sÿc5]\nÿc8%s", recipe, txt)
+			}
+		}
+		e.ZhTW = txt
+	}
 	return e
 }
 
@@ -166,13 +189,11 @@ func processText(e model.Entry) model.Entry {
 	}
 
 	// rename
-	if item, ok := textRename[e.ID]; ok {
-		e.ZhTW = item["new_name"]
-	}
-
-	// add suffixes
-	if item, ok := textSuffixes[e.ID]; ok {
-		e.ZhTW += item["suffix"]
+	if item, ok := textModify[e.ID]; ok {
+		if newName := item["new_name"]; newName != "" {
+			e.ZhTW = newName
+		}
+		e.ZhTW = item["prefix"] + e.ZhTW + item["suffix"]
 	}
 	return e
 }
@@ -182,4 +203,29 @@ func processLevels(e model.Entry) model.Entry {
 		e.ZhTW += fmt.Sprintf(" [%s|%s|%s]", item["normal"], item["nightmare"], item["hell"])
 	}
 	return e
+}
+
+func socketString(socket string, min int) string {
+	if socket == "" {
+		return ""
+	}
+	n, err := strconv.Atoi(socket)
+	if err != nil {
+		panic(err)
+	}
+	if n < min {
+		return ""
+	}
+	switch n {
+	case 3:
+		return "③"
+	case 4:
+		return "④"
+	case 5:
+		return "⑤"
+	case 6:
+		return "⑥"
+	default:
+		panic("unsupported socket: " + socket)
+	}
 }

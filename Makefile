@@ -1,13 +1,18 @@
+LANG_TYPE			= sc
 ORIGINDIR 			= origin
 BUILDDIR 			= build
+RESDIR				= resources
 TCDIR				= $(BUILDDIR)/tc
 SCDIR				= $(BUILDDIR)/sc
-SRC_STRINGS 		= $(wildcard $(ORIGINDIR)/data/local/lng/strings/*.json)
+SRC_STRINGS 		= $(filter-out */chinese-overlay.json, $(wildcard $(ORIGINDIR)/data/local/lng/strings/*.json))
 TC_TARGET_STRINGS 	= $(patsubst $(ORIGINDIR)/%, $(TCDIR)/%, $(SRC_STRINGS))
 SC_TARGET_STRINGS 	= $(patsubst $(ORIGINDIR)/%, $(SCDIR)/%, $(SRC_STRINGS))
 
+EXCEL				= $(wildcard $(RESDIR)/data/global/excel/*.txt)
+EXCEL_PATCH			= $(patsubst %, %.patch, $(EXCEL))
+
 .PHONY: build
-build: tool $(TC_TARGET_STRINGS) $(SC_TARGET_STRINGS)
+build: clean tool $(TC_TARGET_STRINGS) $(SC_TARGET_STRINGS)
 
 tool:
 	mkdir -p $(BUILDDIR)/bin
@@ -25,34 +30,47 @@ $(SCDIR)/data/local/lng/strings/%.json: $(TCDIR)/data/local/lng/strings/%.json
 clean:
 	rm -rf build
 
+publish:
+	rm -rf d2r-wing.mpq/data
+	cp -r $(BUILDDIR)/$(LANG_TYPE)/* d2r-wing.mpq
 
-gen: gen-mkdir gen-lang-diff
+gen: gen-levels gen-armor gen-weapons
 
-gen-mkdir:
-	mkdir -p resources/generated
+gen-patch: $(EXCEL_PATCH)
+
+$(RESDIR)/%.txt.patch: $(RESDIR)/%.txt
+	diff -u $(ORIGINDIR)/$*.txt $(RESDIR)/$*.txt | tee $(RESDIR)/$*.txt.patch
 
 gen-lang-diff:
+	mkdir -p resources/generated
 	go run github.com/Wing924/d2r-wing/tools/cmd/string-diff > resources/generated/zhTW-strings-diff.json
 	jq -r '.[] | [.id, .old_zhTW, .new_zhTW] | @csv' resources/generated/zhTW-strings-diff.json > resources/generated/zhTW-strings-diff.csv
 
 gen-levels:
+	@echo "id,zhTW,normal,nightmare,hell" | tee resources/levels.csv
 	@go run github.com/Wing924/d2r-wing/tools/cmd/join-strings \
 		-json origin/data/local/lng/strings/levels.json \
-		-on-json enUS \
+		-on-json Key \
 		-csv origin/data/global/excel/levels.txt \
 		-on-csv '*StringName' \
-		| jq -r '.[] | [.id, .zhTW, .MonLvl, ."MonLvlEx(N)", ."MonLvlEx(H)"] | @csv'
+		| jq -r '.[] | select(."MonLvlEx(N)" != "") | [.id, .zhTW, .MonLvl, ."MonLvlEx(N)", ."MonLvlEx(H)"] | @csv' | tee -a resources/levels.csv
 
-gen-sockets:
+gen-armor:
+	@echo "id,zhTW,grade,weight,socket" | tee resources/item-armor.csv
 	@go run github.com/Wing924/d2r-wing/tools/cmd/join-strings \
 		-json origin/data/local/lng/strings/item-names.json \
 		-on-json Key \
 		-csv origin/data/global/excel/armor.txt \
-		-on-csv code \
-		| jq -r '.[] | [.id, .zhTW, .gemsockets] | @csv'
+		-on-csv namestr \
+		| jq -r '.[] | [.id, .zhTW, if .code == .normcode then "普" elif .code == .ubercode then "擴" else "精" end, if .speed == "0" then "輕" elif .speed == "5" then "中" else "重" end, .gemsockets] | @csv' \
+		| tee -a resources/item-armor.csv
+
+gen-weapons:
+	@echo "id,zhTW,grade,socket" | tee resources/item-weapons.csv
 	@go run github.com/Wing924/d2r-wing/tools/cmd/join-strings \
-    	-json origin/data/local/lng/strings/item-names.json \
-    	-on-json Key \
-    	-csv origin/data/global/excel/weapons.txt \
-    	-on-csv code \
-    	| jq -r '.[] | [.id, .zhTW, .gemsockets] | @csv'
+		-json origin/data/local/lng/strings/item-names.json \
+		-on-json Key \
+		-csv origin/data/global/excel/weapons.txt \
+		-on-csv namestr \
+		| jq -r '.[] | [.id, .zhTW, if .code == .normcode then "普" elif .code == .ubercode then "擴" else "精" end, .gemsockets] | @csv' \
+		| tee -a resources/item-weapons.csv
