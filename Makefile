@@ -2,17 +2,22 @@ LANG_TYPE			= sc
 ORIGINDIR 			= origin
 BUILDDIR 			= build
 RESDIR				= resources
+COMMONDIR			= $(BUILDDIR)/common
 TCDIR				= $(BUILDDIR)/tc
 SCDIR				= $(BUILDDIR)/sc
 SRC_STRINGS 		= $(filter-out */chinese-overlay.json, $(wildcard $(ORIGINDIR)/data/local/lng/strings/*.json))
 TC_TARGET_STRINGS 	= $(patsubst $(ORIGINDIR)/%, $(TCDIR)/%, $(SRC_STRINGS))
 SC_TARGET_STRINGS 	= $(patsubst $(ORIGINDIR)/%, $(SCDIR)/%, $(SRC_STRINGS))
 
-EXCEL				= $(wildcard $(RESDIR)/data/global/excel/*.txt)
-EXCEL_PATCH			= $(patsubst %, %.patch, $(EXCEL))
+EXCEL_PATCH			= $(wildcard $(RESDIR)/patches/data/global/excel/*.txt.patch)
+EXCEL_OUT			= $(patsubst $(RESDIR)/patches/%.patch, $(COMMONDIR)/%, $(EXCEL_PATCH))
+
+.PHONY: nop
+nop:
+	@echo $(EXCEL_PATCH)
 
 .PHONY: build
-build: clean tool $(TC_TARGET_STRINGS) $(SC_TARGET_STRINGS)
+build: clean tool cp-static excel $(TC_TARGET_STRINGS) $(SC_TARGET_STRINGS)
 
 tool:
 	mkdir -p $(BUILDDIR)/bin
@@ -27,12 +32,23 @@ $(SCDIR)/data/local/lng/strings/%.json: $(TCDIR)/data/local/lng/strings/%.json
 	mkdir -p $(@D)
 	$(BUILDDIR)/bin/t2s -in $< > $@
 
+cp-static:
+	mkdir -p $(BUILDDIR)
+	cp -r $(RESDIR)/static $(COMMONDIR)
+
+excel: $(EXCEL_OUT)
+
+$(COMMONDIR)/%.txt: $(RESDIR)/patches/%.txt.patch $(ORIGINDIR)/%.txt
+	mkdir -p $(@D)
+	patch -u -o $@ $(ORIGINDIR)/$*.txt < $<
+
 clean:
 	rm -rf build
 
 publish:
 	rm -rf d2r-wing.mpq/data
-	cp -r $(BUILDDIR)/$(LANG_TYPE)/* d2r-wing.mpq
+	cp -r $(COMMONDIR)/data d2r-wing.mpq
+	cp -r $(BUILDDIR)/$(LANG_TYPE)/data d2r-wing.mpq
 
 gen: gen-levels gen-armor gen-weapons
 
