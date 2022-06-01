@@ -1,0 +1,169 @@
+{
+    "dependencies": {
+        "particles": [
+            {
+                "path": "data/hd/vfx/particles/env/UI/vfx_mouse_over_light_sml.particles"
+            }
+        ],
+        "models": [],
+        "skeletons": [],
+        "animations": [],
+        "textures": [],
+        "physics": [],
+        "json": [],
+        "variantdata": [],
+        "objecteffects": [],
+        "other": []
+    },
+    "type": "UnitDefinition",
+    "name": "act_2_sewer_up",
+    "entities": [
+        {
+            "type": "Entity",
+            "name": "entity_root",
+            "id": 885899821,
+            "components": [
+                {
+                    "type": "UnitRootComponent",
+                    "name": "component_root",
+                    "state_machine_filename": "",
+                    "doNotInheritRotation": false,
+                    "rotationOverride": {
+                        "x": 0.0,
+                        "y": 0.3826834,
+                        "z": 0.0,
+                        "w": 0.9238795
+                    },
+                    "doNotUseHDHeight": false,
+                    "hideAllMeshWhenInOpenedMode": false,
+                    "onCreateEventName": "",
+                    "animations": []
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "entity_vfx1",
+            "id": 3592378159,
+            "components": [
+                {
+                    "type": "VfxDefinitionComponent",
+                    "name": "component_vfx1",
+                    "filename": "data/hd/vfx/particles/env/UI/vfx_mouse_over_light_sml.particles",
+                    "hardKillOnDestroy": false
+                },
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "component_transform1",
+                    "position": {
+                        "x": 4.0,
+                        "y": 9.0,
+                        "z": -12.0
+                    },
+                    "orientation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "inheritOnlyPosition": false
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "outdoor_spot",
+            "id": 3183006671,
+            "components": [
+                {
+                    "type": "SpotLightDefinitionComponent",
+                    "name": "outdoor_spot_SpotLightDefinition",
+                    "color": {
+                        "x": 1.0,
+                        "y": 0.6941177,
+                        "z": 0.427451
+                    },
+                    "power": 60.0,
+                    "angle": 45.0,
+                    "distance": 20.0,
+                    "attenuation": 5.0,
+                    "shadowCaster": false,
+                    "lightMask": 1,
+                    "isLocalLight": false,
+                    "diffuseContribution": 1.0,
+                    "specularContribution": 1.0
+                },
+                {
+                    "type": "UnitCustomEntityFilterComponent",
+                    "name": "outdoor_spot_UnitCustomEntityFilter",
+                    "roomTileDestinationFilter": 1
+                },
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "outdoor_spot_TransformDefinition",
+                    "position": {
+                        "x": 6.0,
+                        "y": 11.0,
+                        "z": -20.0
+                    },
+                    "orientation": {
+                        "x": 0.206467852,
+                        "y": -0.111994855,
+                        "z": -0.06403219,
+                        "w": 0.969911337
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "inheritOnlyPosition": false
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "outdoor_lightshaft",
+            "id": 143669374,
+            "components": [
+                {
+                    "type": "VfxDefinitionComponent",
+                    "name": "outdoor_lightshaft_VfxDefinition",
+                    "filename": "",
+                    "hardKillOnDestroy": false
+                },
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "outdoor_lightshaft_TransformDefinition",
+                    "position": {
+                        "x": -3.479,
+                        "y": 0.0,
+                        "z": 15.559
+                    },
+                    "orientation": {
+                        "x": -0.22791177,
+                        "y": 0.0505268238,
+                        "z": -0.210459366,
+                        "w": 0.949320853
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "inheritOnlyPosition": false
+                },
+                {
+                    "type": "UnitCustomEntityFilterComponent",
+                    "name": "outdoor_lightshaft_UnitCustomEntityFilter",
+                    "roomTileDestinationFilter": 1
+                }
+            ]
+        }
+    ]
+}

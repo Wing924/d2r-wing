@@ -37,8 +37,8 @@ var (
 var inFile = flag.String("in", "-", "input string JOSN file")
 
 var (
-	itemArmor    = enc.ReadCSVAsMap(path.Join(resourcesDir, "generated", "item-armor.tsv"))
-	itemWeapons  = enc.ReadCSVAsMap(path.Join(resourcesDir, "generated", "item-weapons.tsv"))
+	itemArmor    = enc.ReadCSVAsMap(path.Join(resourcesDir, "generated", "armor.tsv"))
+	itemWeapons  = enc.ReadCSVAsMap(path.Join(resourcesDir, "generated", "weapons.tsv"))
 	levels       = enc.ReadCSVAsMap(path.Join(resourcesDir, "generated", "levels.tsv"))
 	itemMax      = enc.ReadCSVAsMap(path.Join(resourcesDir, "item-max.csv"))
 	itemRareBase = enc.ReadCSVAsMap(path.Join(resourcesDir, "item-rare-base.csv"))
@@ -97,7 +97,7 @@ func processItem(e model.Entry) model.Entry {
 	}
 
 	if weapon, ok := itemWeapons[e.ID]; ok {
-		txtGradeWeight = weapon["grade"] + "[" + weapon["speed"] + "]"
+		txtGradeWeight = weapon["grade"]
 		txtSocket = socketString(weapon["socket"], 4)
 	}
 
@@ -156,7 +156,7 @@ func processRunes(e model.Entry) model.Entry {
 		if strings.HasSuffix(e.Key, "L") {
 			txt = fmt.Sprintf("%s#%s", e.ZhTW, item["number"])
 		} else {
-			txt = fmt.Sprintf("%sÿc2(#%s)ÿc8", e.ZhTW, item["number"])
+			txt = fmt.Sprintf("%sÿc2#%sÿc8", e.ZhTW, item["number"])
 			if recipe := item["recipe"]; recipe != "" {
 				txt = fmt.Sprintf("ÿc5[%sÿc5]\nÿc8%s", recipe, txt)
 			}

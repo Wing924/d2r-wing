@@ -1,3 +1,5 @@
+SHELL=/bin/bash -o pipefail
+
 LANG_TYPE					= sc
 ORIGINDIR 					= origin
 BUILDDIR 					= build
@@ -16,9 +18,9 @@ GENERATED_RES				= armor levels weapons
 PATCHES						= $(wildcard $(PATCHDIR)/*)
 
 # origin/data/local/lng/strings/XXX.json
-ORI_STRINGS_FILES			= $(addprefix $(ORI_STRINGS_DIR), $(STRINGS_FILES))
+ORI_STRINGS_FILES			= $(addprefix $(ORI_STRINGS_DIR)/, $(STRINGS_FILES))
 # origin/data/local/lng/strings-legacy/XXX.json
-ORI_STRINGS_LEGACY_FILES	= $(addprefix $(ORI_STRINGS_LEGACY_DIR), $(LEGACY_STRINGS_FILES))
+ORI_STRINGS_LEGACY_FILES	= $(addprefix $(ORI_STRINGS_LEGACY_DIR)/, $(LEGACY_STRINGS_FILES))
 # build/tc/data/local/lng/strings/XXX.json
 TC_TARGET_STRINGS 			= $(patsubst $(ORIGINDIR)/%, $(TCDIR)/%, $(ORI_STRINGS_FILES))
 # build/sc/data/local/lng/strings/XXX.json
@@ -32,6 +34,7 @@ ZHTW_DIFF_FILES				= $(patsubst %.json, $(RESDIR)/generated/zhTW-diff/%.tsv, $(L
 
 .PHONY: nop
 nop:
+	echo $(ORI_STRINGS_FILES)
 
 dist-clean: clean clean-gen
 
@@ -78,7 +81,7 @@ publish:
 
 # generate resources
 
-gen: gen-zhTW-diff $(addprefix gen-, $(GENERATED_RES)) $(patsubst %, $(RESDIR)/generated/%.tsv, $(GENERATED_RES))
+gen: clean-gen gen-zhTW-diff $(addprefix gen-, $(GENERATED_RES)) $(patsubst %, $(RESDIR)/generated/%.tsv, $(GENERATED_RES))
 
 gen-zhTW-diff: $(ZHTW_DIFF_FILES)
 

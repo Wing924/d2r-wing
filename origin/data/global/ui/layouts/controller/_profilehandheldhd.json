@@ -1,8 +1,0 @@
-{
-    // Base (parent) profile.
-    "basedOn": "ConsoleLV",
-
-    "XMediumLargeFontSize": 36,
-    "MediumLargeFontSize": 36,
-    "XMediumFontSize": 34,
-}
