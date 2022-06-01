@@ -21,8 +21,7 @@ func main() {
 		os.Exit(1)
 	}
 
-	content := enc.ReadFileWithBOM(*inFile)
-	entries := enc.ParseStringsJson(content)
+	entries := enc.ReadStringsJSON(*inFile)
 
 	t2s, err := opencc.New("t2s")
 	if err != nil {

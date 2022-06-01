@@ -23,10 +23,6 @@ const (
 	colorPink  = "ÿc;"
 )
 
-const (
-	gradeNormal = "普"
-)
-
 var colorPalette = map[string]string{
 	"white": colorWhite,
 	"red":   colorRed,
@@ -41,15 +37,16 @@ var (
 var inFile = flag.String("in", "-", "input string JOSN file")
 
 var (
-	itemArmor   = enc.ReadCSVAsMap(path.Join(resourcesDir, "item-armor.csv"))
-	itemWeapons = enc.ReadCSVAsMap(path.Join(resourcesDir, "item-weapons.csv"))
-	itemMax     = enc.ReadCSVAsMap(path.Join(resourcesDir, "item-max.csv"))
-	itemRare    = enc.ReadCSVAsMap(path.Join(resourcesDir, "item-rare.csv"))
-	itemRunes   = enc.ReadCSVAsMap(path.Join(resourcesDir, "item-runes.csv"))
-	itemModify  = enc.ReadCSVAsMap(path.Join(resourcesDir, "item-modify.csv"))
-	propsAbbrv  = enc.ReadCSVAsMap(path.Join(resourcesDir, "props-abbrv.csv"))
-	textModify  = enc.ReadCSVAsMap(path.Join(resourcesDir, "text-modify.csv"))
-	levels      = enc.ReadCSVAsMap(path.Join(resourcesDir, "levels.csv"))
+	itemArmor    = enc.ReadCSVAsMap(path.Join(resourcesDir, "generated", "item-armor.tsv"))
+	itemWeapons  = enc.ReadCSVAsMap(path.Join(resourcesDir, "generated", "item-weapons.tsv"))
+	levels       = enc.ReadCSVAsMap(path.Join(resourcesDir, "generated", "levels.tsv"))
+	itemMax      = enc.ReadCSVAsMap(path.Join(resourcesDir, "item-max.csv"))
+	itemRareBase = enc.ReadCSVAsMap(path.Join(resourcesDir, "item-rare-base.csv"))
+	itemRareUniq = enc.ReadCSVAsMap(path.Join(resourcesDir, "item-rare-uniq.csv"))
+	itemRunes    = enc.ReadCSVAsMap(path.Join(resourcesDir, "item-runes.csv"))
+	itemModify   = enc.ReadCSVAsMap(path.Join(resourcesDir, "item-modify.csv"))
+	propsAbbrv   = enc.ReadCSVAsMap(path.Join(resourcesDir, "props-abbrv.csv"))
+	textModify   = enc.ReadCSVAsMap(path.Join(resourcesDir, "text-modify.csv"))
 )
 
 func main() {
@@ -70,8 +67,7 @@ func main() {
 }
 
 func processFile(filename string) []model.Entry {
-	content := enc.ReadFileWithBOM(filename)
-	entries := enc.ParseStringsJson(content)
+	entries := enc.ReadStringsJSON(filename)
 	for i, e := range entries {
 		oldZhTW := e.ZhTW
 		e = processText(e)
@@ -101,22 +97,23 @@ func processItem(e model.Entry) model.Entry {
 	}
 
 	if weapon, ok := itemWeapons[e.ID]; ok {
-		txtGradeWeight = weapon["grade"]
+		txtGradeWeight = weapon["grade"] + "[" + weapon["speed"] + "]"
 		txtSocket = socketString(weapon["socket"], 4)
 	}
 
 	// add rare
-	if r, ok := itemRare[e.ID]; ok {
+	if r, ok := itemRareBase[e.ID]; ok {
 		switch r["rarity"] {
 		case "1":
 			txtRarity = "☆"
 		case "2":
 			txtRarity = "★"
-		case "3":
-			txtDesc = "★" + r["type"] + "★"
 		default:
 			panic("unsupported rarity:" + r["rarity"])
 		}
+	}
+	if r, ok := itemRareUniq[e.ID]; ok {
+		txtDesc = "★" + r["desc"] + "★"
 	}
 
 	// add max
@@ -125,10 +122,7 @@ func processItem(e model.Entry) model.Entry {
 	}
 
 	if item, ok := itemModify[e.ID]; ok {
-		if newName := item["new_name"]; newName != "" {
-			e.ZhTW = newName
-		}
-		e.ZhTW = item["prefix"] + e.ZhTW + item["suffix"]
+		e.ZhTW = modifyText(e.ZhTW, item["prefix"], item["new_name"], item["suffix"])
 	}
 
 	if txtMax != "" {
@@ -190,10 +184,7 @@ func processText(e model.Entry) model.Entry {
 
 	// rename
 	if item, ok := textModify[e.ID]; ok {
-		if newName := item["new_name"]; newName != "" {
-			e.ZhTW = newName
-		}
-		e.ZhTW = item["prefix"] + e.ZhTW + item["suffix"]
+		e.ZhTW = modifyText(e.ZhTW, item["prefix"], item["new_name"], item["suffix"])
 	}
 	return e
 }
@@ -203,6 +194,16 @@ func processLevels(e model.Entry) model.Entry {
 		e.ZhTW += fmt.Sprintf(" [%s|%s|%s]", item["normal"], item["nightmare"], item["hell"])
 	}
 	return e
+}
+
+func modifyText(original, prefix, newName, suffix string) string {
+	switch newName {
+	case "":
+		newName = original
+	case "(null)":
+		newName = ""
+	}
+	return prefix + newName + suffix
 }
 
 func socketString(socket string, min int) string {

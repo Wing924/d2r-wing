@@ -4,42 +4,20 @@ import (
 	"bytes"
 	"encoding/csv"
 	"errors"
-	"golang.org/x/exp/slices"
 	"io"
-	"os"
 	"strconv"
 )
 
 func ReadCSVAsMap(filename string) map[int]map[string]string {
-	f, err := os.Open(filename)
-	if err != nil {
-		panic(err)
-	}
-	r := csv.NewReader(f)
-
-	header, err := r.Read()
-	if err != nil {
-		panic(err)
-	}
-	idIdx := slices.Index(header, "id")
-	if idIdx < 0 {
-		panic("cannot find column id in CSV")
-	}
+	rows := ReadCSVAsTable(filename)
 
 	result := map[int]map[string]string{}
-	for {
-		row, err := r.Read()
-		if err != nil {
-			if errors.Is(err, io.EOF) {
-				break
-			}
-			panic(err)
-		}
-		id, err := strconv.Atoi(row[idIdx])
+	for _, row := range rows {
+		id, err := strconv.Atoi(row["id"])
 		if err != nil {
 			panic(err)
 		}
-		result[id] = rowToMap(header, row)
+		result[id] = row
 	}
 	return result
 }
