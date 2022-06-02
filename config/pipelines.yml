@@ -1,0 +1,92 @@
+data:
+  grade:
+    normal: 普
+    exceptional: 擴
+    elite: 精
+  weight:
+    light: 輕
+    medium: 中
+    heavy: 重
+  tc:
+    "87": ★
+    "84": ☆
+  socket:
+    "3": ' ③'
+    "4": ' ④'
+    "5": ' ⑤'
+    "6": ' ⑥'
+  color:
+    white: "ÿc0"
+    red: "ÿc1"
+    green: "ÿc2"
+    blue: "ÿc3"
+    gray: "ÿc5"
+    orange: "ÿc8"
+    yelllow: "ÿc9"
+    pink: "ÿc;"
+
+pipelines:
+  - name: add equip info
+    resource: resources/generated/equip.tsv
+    template: |-
+      {{ .zhTW -}} |
+      {{- with .speed }}
+        {{- . -}} |
+      {{- end }}
+      {{- if .max | and (.grade | eq "elite") | and (contains .type "tors|shie|ashd") }}
+        {{- .max }}-e{{ .maxEth -}} |
+      {{- end }}
+      {{- index .data.grade .grade }}
+      {{- index .data.weight .weight }}
+      {{- index .data.tc .tc }}
+      {{- index .data.socket .socket }}
+
+  - name: add MAX
+    resource: resources/item-max.tsv
+    template: |-
+      [{{ .max }}]
+      {{ .zhTW }}
+
+  - name: modify item
+    resource: resources/item-modify.tsv
+    template: &modify |-
+      {{- with .color }}{{ index $.data.color . }}{{ end }}
+      {{- .prefix }}
+      {{- if .newName | eq "(null)" }}
+      {{- else if .newName }}
+        {{- .newName }}
+      {{- else }}
+        {{- .zhTW }}
+      {{- end }}
+      {{- .suffix }}
+      {{- with .color }}{{ index $.data.color "white" }}{{ end }}
+
+  - name: modify runes
+    resource: resources/generated/runes.tsv
+    template: |-
+      {{- $num := atoi .num }}
+      {{- if .category | eq "in socket" }}
+        {{- .zhTW }}#{{ printf "%02d" $num }}
+      {{- else }}
+        {{- if .recipeGem -}}
+          {{- .data.color.gray -}}
+          [x{{ .recipeQty -}} + {{- .recipeGem }}]
+          {{- "\n" }}
+          {{- .data.color.orange }}
+        {{- end }}
+        {{- .zhTW }}#{{ printf "%02d" $num }}
+      {{- end }}
+
+  - name: add map levels
+    resource: resources/generated/levels.tsv
+    template: |-
+      {{ .zhTW }} [{{ .normal }}|{{ .nightmare }}|{{ .hell }}]
+
+  - name: modify abbr
+    resource: resources/text-abbr.tsv
+    template: |-
+      {{ mkAbbr .zhTW .abbr }}
+
+  - name: modify text
+    resource: resources/text-modify.tsv
+    template: *modify

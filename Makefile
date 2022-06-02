@@ -14,7 +14,7 @@ ORI_STRINGS_LEGACY_DIR		= $(ORIGINDIR)/data/local/lng/strings-legacy
 
 LEGACY_STRINGS_FILES		= bnet.json item-gems.json item-modifiers.json item-nameaffixes.json item-names.json item-runes.json keybinds.json levels.json mercenaries.json monsters.json npcs.json objects.json quests.json shrines.json skills.json ui.json vo.json
 STRINGS_FILES				= commands.json presence-states.json ui-controller.json $(LEGACY_STRINGS_FILES)
-GENERATED_RES				= armor levels weapons
+GENERATED_RES				= equip levels runes
 PATCHES						= $(wildcard $(PATCHDIR)/*)
 
 # origin/data/local/lng/strings/XXX.json
@@ -25,6 +25,8 @@ ORI_STRINGS_LEGACY_FILES	= $(addprefix $(ORI_STRINGS_LEGACY_DIR)/, $(LEGACY_STRI
 TC_TARGET_STRINGS 			= $(patsubst $(ORIGINDIR)/%, $(TCDIR)/%, $(ORI_STRINGS_FILES))
 # build/sc/data/local/lng/strings/XXX.json
 SC_TARGET_STRINGS 			= $(patsubst $(ORIGINDIR)/%, $(SCDIR)/%, $(ORI_STRINGS_FILES))
+
+GENERATED_RES_FILES			= $(patsubst %, $(RESDIR)/generated/%.tsv, $(GENERATED_RES))
 
 EXCEL_PATCH					= $(wildcard $(RESDIR)/patches/data/global/excel/*.txt.patch)
 EXCEL_OUT					= $(patsubst $(RESDIR)/patches/%.patch, $(COMMONDIR)/%, $(EXCEL_PATCH))
@@ -54,7 +56,7 @@ $(TOOLDIR)/%:
 # build Traditional Chinese strings
 $(TCDIR)/data/local/lng/strings/%.json: $(ORIGINDIR)/data/local/lng/strings/%.json
 	mkdir -p $(@D)
-	$(TOOLDIR)/gen-strings -in $< > $@
+	$(TOOLDIR)/gen-strings -config ./config/pipelines.yml < $< > $@
 
 # convert Traditional Chinese to Simplified Chinese
 $(SCDIR)/data/local/lng/strings/%.json: $(TCDIR)/data/local/lng/strings/%.json
@@ -81,7 +83,7 @@ publish:
 
 # generate resources
 
-gen: clean-gen gen-zhTW-diff $(addprefix gen-, $(GENERATED_RES)) $(patsubst %, $(RESDIR)/generated/%.tsv, $(GENERATED_RES))
+gen: clean-gen gen-zhTW-diff $(GENERATED_RES_FILES)
 
 gen-zhTW-diff: $(ZHTW_DIFF_FILES)
 
@@ -90,8 +92,6 @@ $(RESDIR)/generated/zhTW-diff/%.tsv: $(RESDIR)/generated/zhTW-diff $(ORI_STRINGS
 
 $(RESDIR)/generated/zhTW-diff:
 	mkdir -p $(RESDIR)/generated/zhTW-diff
-
-gen-%: $(RESDIR)/generated/%.tsv
 
 $(RESDIR)/generated/%.tsv: resources/generated
 	./scripts/gen-$*.sh | tee $@

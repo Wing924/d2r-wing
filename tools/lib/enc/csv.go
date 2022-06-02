@@ -5,16 +5,21 @@ import (
 	"encoding/csv"
 	"errors"
 	"io"
+	"log"
 	"strconv"
 )
 
-func ReadCSVAsMap(filename string) map[int]map[string]string {
+type CSVMap = map[int]map[string]string
+
+func ReadCSVAsMap(filename string) CSVMap {
 	rows := ReadCSVAsTable(filename)
 
 	result := map[int]map[string]string{}
 	for _, row := range rows {
+
 		id, err := strconv.Atoi(row["id"])
 		if err != nil {
+			log.Printf("%#v", row)
 			panic(err)
 		}
 		result[id] = row
@@ -31,6 +36,7 @@ func ReadCSVAsTable(filename string) []map[string]string {
 	}
 
 	reader := csv.NewReader(bytes.NewBuffer(content))
+	reader.FieldsPerRecord = -1
 	if bytes.IndexByte(content[0:lfIdx], '\t') >= 0 {
 		reader.Comma = '\t'
 	}
@@ -57,7 +63,11 @@ func ReadCSVAsTable(filename string) []map[string]string {
 func rowToMap(header, row []string) map[string]string {
 	data := make(map[string]string, len(header))
 	for i, v := range header {
-		data[v] = row[i]
+		if i < len(row) {
+			data[v] = row[i]
+		} else {
+			data[v] = ""
+		}
 	}
 	return data
 }

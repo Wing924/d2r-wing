@@ -8,4 +8,4 @@ if [[ $# -ne 1 ]]; then
 fi
 
 echo "id	Key	enUS	zhTW	deDE	esES	frFR	itIT	koKR	plPL	esMX	jaJP	ptBR	ruRU	zhCN"
-jq -r '.[] | [.id, .Key, .enUS, .zhTW, .deDE, .esES, .frFR, .itIT, .koKR, .plPL, .esMX, .jaJP, .ptBR, .ruRU, .zhCN] | @tsv' "$1"
+jq -r '.[] | [.id, .Key, .enUS, .zhTW, .deDE, .esES, .frFR, .itIT, .koKR, .plPL, .esMX, .jaJP, .ptBR, .ruRU, .zhCN] | @csv' "$1" | sed 's/,/\t/g'
