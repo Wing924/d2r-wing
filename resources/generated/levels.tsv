@@ -1,5 +1,6 @@
 id	Key	old_zhTW	zhTW	normal	nightmare	hell
 788	Moo Moo Farm	秘密母牛關卡	秘密乳牛關	28	64	81
+789	Chaos Sanctum	混沌庇難所	混沌魔殿	28	58	85
 791	River of Flame	火焰之河	火焰之河	27	57	85
 792	Outer Steppes	郊外大草原	外圍荒原	26	56	82
 793	Plains of Despair	絕望平原	絕望平原	26	56	83
@@ -19,6 +20,7 @@ id	Key	old_zhTW	zhTW	normal	nightmare	hell
 807	Swampy Pit Level 3	沼澤地洞第三層	沼澤地穴第三層	21	51	85
 808	Swampy Pit Level 2	沼澤地洞第二層	沼澤地穴第二層	21	51	85
 809	Swampy Pit Level 1	沼澤地洞第一層	沼澤地穴第一層	21	51	85
+810	Spider Cave	蜘蛛巢穴	蜘蛛巢穴	21	50	85
 811	Spider Cavern	蜘蛛洞窟	蜘蛛洞窟	21	50	79
 812	Travincal	崔凡克	崔凡克	24	54	82
 813	Kurast Causeway	庫拉斯特堤道	庫拉斯特堤道	24	53	81
@@ -94,9 +96,26 @@ id	Key	old_zhTW	zhTW	normal	nightmare	hell
 5052	Stony Field	石塊曠野	亂石曠野	4	37	68
 5053	Cold Plains	冰冷之原	冰冷之原	2	36	68
 5054	Blood Moor	鮮血荒地	鮮血荒地	1	36	67
+11155	Pandemonium Run 1	主母巢穴	魔母巢穴	50	75	83
+11156	Pandemonium Run 2	遺忘沙漠	遺忘沙漠	50	75	83
+11157	Pandemonium Run 3	痛苦熔爐	苦痛熔爐	50	75	83
+21865	Hell1	艾巴當	亞巴頓	39	60	85
+21866	Hell2	冥河之洞	冥河地穴	39	61	85
+21867	Hell3	地獄魔窟	煉獄地穴	39	62	85
 22647	Bloody Foothills	血腥丘陵	血腥丘陵	24	58	80
+22648	Rigid Highlands	冰凍高地	冰凍高地	25	59	81
 22649	Arreat Plateau	亞瑞特高原	亞瑞特高原	26	60	81
+22650	Crystalized Cavern Level 1	水晶通道	水晶通道	29	61	82
+22651	Cellar of Pity	冰河	冰凍之河	29	61	83
+22652	Crystalized Cavern Level 2	冰河路徑	冰河小徑	29	61	83
+22653	Echo Chamber	漂泊者洞穴	漂泊者洞窟	29	61	85
+22654	Tundra Wastelands	冰凍苔原	冰凍苔原	27	60	81
+22655	Glacial Caves Level 1	遠古之路	先祖之路	29	62	82
+22656	Glacial Caves Level 2	冰窖	冰窖	29	62	85
+22657	Rocky Summit	亞瑞特山脈顛峰	亞瑞特山巔	37	68	87
+22658	Nihlathaks Temple	尼拉塞克的神殿	尼拉塞克的神殿	32	63	83
 22659	Halls of Anguish	悲痛之廳	怨慟之廳	33	63	83
+22660	Halls of Death's Calling	痛苦之廳	苦痛之廳	34	64	84
 22662	Halls of Vaught	瓦特之廳	沃特之廳	36	64	84
 22663	The Worldstone Keep Level 1	世界之石要塞第一層	世界之石要塞第一層	39	65	85
 22664	The Worldstone Keep Level 2	世界之石要塞第二層	世界之石要塞第二層	40	65	85

@@ -21,7 +21,7 @@ SELECT DISTINCT
     `MonLvlEx(N)` nightmare,
     `MonLvlEx(H)` hell
 FROM levels l
-    JOIN str s ON l.`*StringName` = s.Key
+    JOIN str s ON l.`*StringName` = s.enUS OR l.`*StringName` = s.Key
     JOIN oldstr o ON o.id = s.id
 WHERE
     `MonLvlEx(H)` != ""

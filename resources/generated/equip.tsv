@@ -352,30 +352,30 @@ id	Key	old_zhTW	zhTW	category	type	grade	weight	speed	socket	max	maxEth	qlvls	tc
 20278	6mx	蛇魔女十字弓	蛇魔弩	weap	xbow	elite		0	4		0	67	69
 20279	6hx	巨神十字弓	巨神弩	weap	xbow	elite		10	6		0	75	75
 20280	6rx	惡魔十字弓	惡魔弩	weap	xbow	elite		-60	5		0	84	84
-20281	ob1	鷹之法珠	鷹之法珠	weap	orb	normal		-10	4		0	1	3
-20282	ob2	神聖天球	神聖天球	weap	orb	normal		-10	4		0	8	9
-20283	ob3	攏煙之球	攏煙之球	weap	orb	normal		0	4		0	12	12
-20284	ob4	握扣法珠	握扣法珠	weap	orb	normal		0	4		0	17	18
+20281	ob1	鷹之法珠	鷹之法珠	weap	orb	normal		-10	2		0	1	3
+20282	ob2	神聖天球	神聖天球	weap	orb	normal		-10	2		0	8	9
+20283	ob3	攏煙之球	攏煙之球	weap	orb	normal		0	2		0	12	12
+20284	ob4	握扣法珠	握扣法珠	weap	orb	normal		0	2		0	17	18
 20292	am1	男性之弓	獵鹿弓	weap	abow	normal		0	5		0	18	18
 20293	am2	反射之弓	反射弓	weap	abow	normal		10	5		0	27	27
 20294	am3	女士之矛	女戰長矛	weap	aspe	normal		0	6		0	18	18
 20295	am4	女士長矛	女戰長槍	weap	aspe	normal		10	6		0	27	27
 20296	am5	女士鏢槍	女戰標槍	weap	ajav	normal		-10			0	23	24
-20297	ob6	靈光法珠	靈光法珠	weap	orb	exceptional		-10	4		0	32	33
-20298	ob7	水晶天球	水晶天球	weap	orb	exceptional		-10	4		0	37	39
-20299	ob8	雲霧之球	雲霧之球	weap	orb	exceptional		0	4		0	41	42
-20300	ob9	閃耀之球	閃耀之球	weap	orb	exceptional		0	4		0	46	48
-20301	oba	渦流水晶	渦流水晶	weap	orb	exceptional		10	4		0	50	51
+20297	ob6	靈光法珠	靈光法珠	weap	orb	exceptional		-10	2		0	32	33
+20298	ob7	水晶天球	水晶天球	weap	orb	exceptional		-10	2		0	37	39
+20299	ob8	雲霧之球	雲霧之球	weap	orb	exceptional		0	2		0	41	42
+20300	ob9	閃耀之球	閃耀之球	weap	orb	exceptional		0	2		0	46	48
+20301	oba	渦流水晶	渦流水晶	weap	orb	exceptional		10	3		0	50	51
 20302	am6	灰木之弓	梣木弓	weap	abow	exceptional		0	5		0	39	39
 20303	am7	祭典之弓	儀禮弓	weap	abow	exceptional		10	5		0	47	48
 20304	am8	祭典之矛	儀禮長矛	weap	aspe	exceptional		0	6		0	43	45
 20305	am9	祭典之長矛	儀禮長槍	weap	aspe	exceptional		20	6		0	51	51
 20306	ama	祭典之鏢槍	儀禮標槍	weap	ajav	exceptional		-10			0	35	36
-20307	obb	天堂之石	天堂之石	weap	orb	elite		-10	4		0	59	60
-20308	obc	怪異之球	異能法珠	weap	orb	elite		-10	4		0	67	69
-20309	obd	惡魔之心	惡魔心石	weap	orb	elite		0	4		0	75	75
-20310	obe	漩渦球	漩渦法珠	weap	orb	elite		0	4		0	84	84
-20311	obf	次元碎片	次元法珠	weap	orb	elite		10	4		0	85	87
+20307	obb	天堂之石	天堂之石	weap	orb	elite		-10	2		0	59	60
+20308	obc	怪異之球	異能法珠	weap	orb	elite		-10	2		0	67	69
+20309	obd	惡魔之心	惡魔心石	weap	orb	elite		0	2		0	75	75
+20310	obe	漩渦球	漩渦法珠	weap	orb	elite		0	2		0	84	84
+20311	obf	次元碎片	次元法珠	weap	orb	elite		10	3		0	85	87
 20312	amb	女族長之弓	女傑之弓	weap	abow	elite		-10	5		0	53	54
 20313	amc	大院長之弓	主母之弓	weap	abow	elite		10	5		0	78	78
 20314	amd	女族長之矛	女傑長矛	weap	aspe	elite		0	6		0	61	63
@@ -489,6 +489,6 @@ id	Key	old_zhTW	zhTW	category	type	grade	weight	speed	socket	max	maxEth	qlvls	tc
 20423	ned	監視者之骨	督軍顱骨	armo	head	elite			2	142	213	66	66
 20424	nee	女妖之骨	魅魔顱骨	armo	head	elite			2	146	219	81	81
 20425	nef	血王之骨	鮮血之王顱骨	armo	head	elite			2	148	222	85	87
-21778	ob5	傑瑞德之石	傑瑞德之石	weap	orb	normal		10	4		0	24	24
+21778	ob5	傑瑞德之石	傑瑞德之石	weap	orb	normal		10	3		0	24	24
 21779	pad	庫拉斯特之盾	庫拉斯特盾	armo	ashd	elite	light		4	172	258	74	75
 21780	axf	斧手	斧手	weap	h2h	normal		10	2		0	12	12

@@ -41,7 +41,7 @@ SELECT
     END speed,
     CASE
         WHEN gemsockets > 0 THEN
-            gemsockets
+            MIN(gemsockets, invwidth*invheight)
         ELSE
             ""
     END socket,
@@ -53,10 +53,10 @@ FROM str s
     JOIN oldstr o
         ON o.id = s.id
     JOIN (
-        SELECT "armo" category, namestr, code, normcode, ubercode, ultracode, type, maxac max, speed, gemsockets, level
+        SELECT "armo" category, namestr, code, normcode, ubercode, ultracode, type, maxac max, speed, gemsockets, invwidth, invheight, level
         FROM armor
         UNION
-        SELECT "weap" category, namestr, code, normcode, ubercode, ultracode, type, "" max, speed, gemsockets, level
+        SELECT "weap" category, namestr, code, normcode, ubercode, ultracode, type, "" max, speed, gemsockets, invwidth, invheight, level
         FROM weapons
     ) a
         ON a.namestr = s.Key
