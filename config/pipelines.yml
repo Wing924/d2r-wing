@@ -22,7 +22,7 @@ data:
     blue: "ÿc3"
     gray: "ÿc5"
     orange: "ÿc8"
-    yelllow: "ÿc9"
+    yellow: "ÿc9"
     pink: "ÿc;"
 
 pipelines:
@@ -30,11 +30,13 @@ pipelines:
     resource: resources/generated/equip.tsv
     template: |-
       {{ .zhTW -}} |
-      {{- with .speed }}
-        {{- . -}} |
-      {{- end }}
-      {{- if .max | and (.grade | eq "elite") | and (contains .type "tors|shie|ashd") }}
-        {{- .max }}-e{{ .maxEth -}} |
+      {{- if .grade | eq "elite" }}
+        {{- if .speed }}
+          {{- .speed -}} |
+        {{- end }}
+        {{- if .max | and (contains .type "tors|ashd") }}
+          {{- .max }}-e{{ .maxEth -}} |
+        {{- end }}
       {{- end }}
       {{- index .data.grade .grade }}
       {{- index .data.weight .weight }}
@@ -42,7 +44,7 @@ pipelines:
       {{- index .data.socket .socket }}
 
   - name: add MAX
-    resource: resources/item-max.tsv
+    resource: resources/item_max.tsv
     template: |-
       [{{ .max }}]
       {{ .zhTW }}
@@ -82,11 +84,12 @@ pipelines:
     template: |-
       {{ .zhTW }} [{{ .normal }}|{{ .nightmare }}|{{ .hell }}]
 
+  - name: modify text
+    resource: resources/text-modify.tsv
+    template: *modify
+
   - name: modify abbr
     resource: resources/text-abbr.tsv
     template: |-
       {{ mkAbbr .zhTW .abbr }}
 
-  - name: modify text
-    resource: resources/text-modify.tsv
-    template: *modify

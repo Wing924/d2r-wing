@@ -1,887 +1,1017 @@
-id	name	base	prop	par	min	max
-2574	噬咬者	手斧	dmg%		60	70
-2575	死亡之鏟	斧	dmg%		60	70
-2576	肩胛骨	雙刃斧	dmg%		30	50
-2577	劈顱斧	軍用鎬	att		50	100
-2577	劈顱斧	軍用鎬	dmg%		60	100
-2577	劈顱斧	軍用鎬	ltng-max		12	15
-2578	耙痕	征戰斧	dmg%		75	150
-2579	費屈瑪之斧	重斧	dmg%		70	90
-2580	血鍬	闊斧	dmg%		40	50
-2581	酋長	戰斧	dmg-ltng		1	40
-2581	酋長	戰斧	res-all		10	20
-2582	劈腦	巨斧	dmg%		50	80
-2582	劈腦	巨斧	dmg-fire		15	35
-2582	劈腦	巨斧	manasteal		10	13
-2583	巨無霸	巨人斧	dmg%		80	120
-2583	巨無霸	巨人斧	dmg-max		15	25
-2583	巨無霸	巨人斧	str		20	30
-2584	伊洛的火炬	魔杖	dmg-fire		5	9
-2585	漩渦	紫杉魔杖	skill	66	1	3
-2585	漩渦	紫杉魔杖	skill	74	1	3
-2585	漩渦	紫杉魔杖	skill	76	1	3
-2585	漩渦	紫杉魔杖	skill	77	1	3
-2586	墓穴之脊	骸骨魔杖	mana		25	50
-2588	魔橡樹	短棒	dmg%		70	80
-2589	喪鐘敲擊者	權杖	dmg%		70	80
-2590	鏽蝕把手	莊嚴權杖	dmg%		50	60
-2590	鏽蝕把手	莊嚴權杖	dmg-norm		3	7
-2590	鏽蝕把手	莊嚴權杖	dmg-undead		50	60
-2590	鏽蝕把手	莊嚴權杖	skill	111	1	3
-2591	暴風眼	征戰權杖	dmg%		80	120
-2591	暴風眼	征戰權杖	dmg-cold	75	3	5
-2591	暴風眼	征戰權杖	dmg-ltng		1	6
-2591	暴風眼	征戰權杖	skill	110	3	5
-2592	特粗鐵釘	狼牙棒	thorns		3	10
-2593	碎擊釘錘	釘鎚	dmg%		50	60
-2595	將軍的連枷	連枷	dmg%		50	60
-2596	鐵石	戰鎚	att		100	150
-2596	鐵石	戰鎚	dmg%		100	150
-2597	碎骨	重鎚	dmg%		200	300
-2598	打鋼鎚	巨型重鎚	dmg%		150	250
-2600	血紅新月	彎刀	dmg%		60	80
-2601	克里維茲的肉叉	軍刀	dmg-norm		3	7
-2602	閃耀鐮刀	彎刃大刀	dmg%		60	100
-2602	閃耀鐮刀	彎刃大刀	dmg-cold	50	3	5
-2603	碧藍怒火	幻化之刃	all-stats		5	10
-2603	碧藍怒火	幻化之刃	aura	Sanctuary	10	13
-2603	碧藍怒火	幻化之刃	dmg%		230	270
-2603	碧藍怒火	幻化之刃	dmg-cold	250	250	500
-2603	碧藍怒火	幻化之刃	dmg-mag		250	500
-2603	碧藍怒火	水晶劍	dmg-cold	100	3	6
-2603	碧藍怒火	水晶劍	dmg-mag		5	10
-2604	格里斯瓦德之刃	闊劍	dmg%		80	120
-2604	格里斯瓦德之刃	闊劍	fire-max		15	25
-2604	格里斯瓦德之刃	闊劍	fire-min		10	12
-2605	地獄瘟疫	長劍	dmg%		70	80
-2605	地獄瘟疫	長劍	dmg-fire		25	75
-2606	庫爾溫的尖刃	征戰劍	dmg%		70	80
-2607	暗影之牙	雙手劍	dmg-cold	150	10	30
-2608	剝魂	闊刃大劍	dmg%		70	100
-2608	剝魂	闊刃大劍	manasteal		4	10
-2609	金麥爾的鑽錐	大劍	att		100	150
-2609	金麥爾的鑽錐	大劍	dmg%		80	100
-2609	金麥爾的鑽錐	大劍	fire-max		20	40
-2610	黑舌	重劍	dmg%		50	60
-2611	齒鋸	焰形劍	dmg%		80	100
-2612	尊父	巨劍	dmg%		100	120
-2615	玉匕	波刃匕首	att		100	150
-2617	龍槍	長矛	dmg-fire		3	6
-2618	剃刀叉	三叉戟	dmg%		30	50
-2619	血賊	三叉槍	dmg%		50	70
-2619	血賊	三叉槍	lifesteal		8	12
-2621	坦納血杖	步戰矛	dmg%		80	100
-2623	鐵刺棒	槍斧	dmg%		60	80
-2623	鐵刺棒	槍斧	dur		20	40
-2624	靈魂收割者	鐮刀	dmg%		50	90
-2625	戰鬥枝椏	長柄斧	att		50	100
-2625	戰鬥枝椏	長柄斧	dmg%		50	70
-2626	悲哀護杖	長戟	dmg%		20	40
-2628	禍根之灰	短杖	dmg%		50	60
-2629	海蛇之王	長杖	dmg%		30	40
-2630	拉撒雷茲之杖	木節法杖	dmg-ltng		1	28
-2631	火精靈	戰鬥法杖	dmg-fire		15	32
-2634	凋萎之弦	獵弓	dmg%		40	50
-2635	掠鴉之爪	長弓	dmg%		60	70
-2636	俠盜之弓	複合弓	dmg%		40	60
-2637	暴風之擊	戰鬥短弓	dmg%		70	90
-2637	暴風之擊	戰鬥短弓	dmg-ltng		1	30
-2638	凋謝弓弦	戰鬥長弓	att		50	100
-2638	凋謝弓弦	戰鬥長弓	dmg%		70	80
-2638	凋謝弓弦	戰鬥長弓	pierce-cold		20	35
-2639	地獄轟鳴	征戰短弓	att		50	75
-2639	地獄轟鳴	征戰短弓	dmg%		70	90
-2639	地獄轟鳴	征戰短弓	fire-max		30	50
-2640	爆裂咆哮	征戰長弓	dmg%		70	130
-2643	地獄擲弩	重弩	dmg%		70	80
-2643	地獄擲弩	重弩	dmg-fire		15	35
-2644	毀滅投索	連弩	dmg%		60	100
-2646	塔因頭盔	顱帽	mag%		25	50
-2648	黃昏深處	全罩盔	ac		10	20
-2648	黃昏深處	全罩盔	ac%		30	50
-2651	不死皇冠	王冠	ac%		30	60
-2651	不死皇冠	王冠	att-undead		50	100
-2657	暗光	環甲	ac%		70	100
-2658	鷹甲	鱗甲	ac%		80	100
-2659	電光之甲	鎖鍊甲	ac%		75	85
-2659	電光之甲	鎖鍊甲	dmg-ltng		1	20
-2659	電光之甲	鎖鍊甲	light-thorns		10	14
-2660	毒之守禦	胸鎧	ac%		60	100
-2661	冰晶	板甲	ac%		70	80
-2662	骨肉	鎧甲	ac%		100	120
-2663	石羊毛	野戰鎧甲	ac%		100	130
-2665	黃金之膚	全身鎧甲	ac%		120	150
-2666	勝利者的絲綢	上古鎧甲	ac%		100	120
-2668	新月小盾	小圓盾	ac%		30	40
-2668	新月小盾	小圓盾	dur		8	12
-2669	陰影圓盤	小型盾	ac%		40	50
-2669	陰影圓盤	小型盾	dur		10	15
-2670	風暴同盟	大型盾	ac%		50	60
-2670	風暴同盟	大型盾	dmg-ltng		1	6
-2670	風暴同盟	大型盾	dur		10	15
-2671	無眼者之牆	骨盾	ac%		30	40
-2672	劍棘之盾	尖刺盾	ac%		30	60
-2672	劍棘之盾	尖刺盾	bloody		3	5
-2673	鋼鐵衝擊	鳶盾	ac%		60	100
-2673	鋼鐵衝擊	鳶盾	dur		15	20
-2674	布雷維特要塞	塔盾	ac%		80	120
-2674	布雷維特要塞	塔盾	dur		80	100
-2675	庇護結界	哥德盾	res-all		30	50
-2676	柏克之手	皮革手套	ac%		10	20
-2677	血拳	厚皮手套	ac%		10	20
-2678	運氣守護	鍊甲手套	ac%		20	30
-2678	運氣守護	鍊甲手套	mag%		25	40
-2679	法師之拳	輕型護手	ac%		20	30
-2679	法師之拳	輕型護手	dmg-fire		1	6
-2680	霜燃	鋼鐵護手	ac%		10	20
-2680	霜燃	鋼鐵護手	dmg-cold	50	1	6
-2681	熱靴刺	皮靴	ac%		10	20
-2681	熱靴刺	皮靴	dmg-fire		3	6
-2682	血腳	重靴	ac%		20	30
-2682	血腳	重靴	bloody		3	5
-2683	凱松的足靴	鎖鍊靴	ac%		30	40
-2684	哥布林腳趾	輕鎧靴	ac%		50	60
-2685	裂臀	護脛	ac%		60	80
-2687	蛇索	輕腰帶	ac%		20	30
-2688	夜煙	腰帶	ac%		30	50
-2689	黃金裹腰	厚腰帶	ac%		40	60
-2689	黃金裹腰	厚腰帶	gold%		50	80
-2690	刀鋒扣帶	鎧甲腰帶	ac%		80	100
-2691	諾科藍遺物	護身符	dmg-fire		3	6
-2692	艾利曲之眼	護身符	ac-miss		10	40
-2692	艾利曲之眼	護身符	cold-len		50	250
-2692	艾利曲之眼	護身符	cold-max		3	5
-2692	艾利曲之眼	護身符	cold-min		1	2
-2692	艾利曲之眼	護身符	lifesteal		3	7
-2692	艾利曲之眼	護身符	light		1	5
-2694	拿各的戒指	戒指	att		50	75
-2694	拿各的戒指	戒指	mag%		15	30
-2695	瑪那德的治療	戒指	manasteal		4	7
-2695	瑪那德的治療	戒指	regen		5	8
-10000	霸圖克的割喉爪	巨鷹爪	dmg%		150	200
-10000	霸圖克的割喉爪	巨鷹爪	dmg-norm		25	50
-10000	霸圖克的割喉爪	巨鷹爪	lifesteal		5	9
-10911	狂巫之弦	攻城短弓	dmg%		150	170
-10911	狂巫之弦	攻城短弓	hit-skill	66	2	5
-11153	地獄火炬	大型咒符	all-stats		10	20
-11153	地獄火炬	大型咒符	charged	Hydra	10	30
-11153	地獄火炬	大型咒符	hit-skill	197	5	10
-11153	地獄火炬	大型咒符	randclassskill		0	6
-11153	地獄火炬	大型咒符	res-all		10	20
-21286	冷殺	短斧	dmg%		150	190
-21286	冷殺	短斧	gethit-skill	44	10	5
-21288	屠夫的徒弟	斬斧	dmg%		150	200
-21288	屠夫的徒弟	斬斧	dmg-norm		30	50
-21289	島擊	雙面斧	dmg%		170	190
-21290	龐貝之怒	鴉嘴鎬	dmg%		140	170
-21290	龐貝之怒	鴉嘴鎬	dmg-fire		35	150
-21290	龐貝之怒	鴉嘴鎬	hit-skill	244	4	8
-21291	那伽守護者	那伽斧	dmg%		150	180
-21291	那伽守護者	那伽斧	hit-skill	92	5	8
-21293	鋼鐵魔咒	鉤斧	charged	54	20	1
-21293	鋼鐵魔咒	鉤斧	charged	87	30	3
-21293	鋼鐵魔咒	鉤斧	charged	101	100	10
-21293	鋼鐵魔咒	鉤斧	charged	225	60	12
-21293	鋼鐵魔咒	鉤斧	red-mag		12	15
-21294	暴風騎士	長戰斧	dmg-ltng		1	200
-21294	暴風騎士	長戰斧	dmg-norm		35	75
-21294	暴風騎士	長戰斧	gethit-skill	38	15	5
-21294	暴風騎士	長戰斧	hit-skill	38	10	0
-21294	暴風騎士	長戰斧	hit-skill	53	5	10
-21295	斬骨者之斧	哥德斧	charged	101	200	20
-21295	斬骨者之斧	哥德斧	dmg%		180	220
-21295	斬骨者之斧	哥德斧	gethit-skill	101	50	0
-21299	李奧瑞克王的手骨	古墓魔杖	gethit-skill	88	10	2
-21299	李奧瑞克王的手骨	古墓魔杖	gethit-skill	93	5	10
-21300	黑手之鑰	墓地魔杖	charged	150	30	13
-21301	闇族碎滅者	鬥棍	att%		20	25
-21304	惡臭散佈者	聖水禮杖	att		150	200
-21304	惡臭散佈者	聖水禮杖	dmg%		160	190
-21304	惡臭散佈者	聖水禮杖	dmg-norm		15	25
-21304	惡臭散佈者	聖水禮杖	hit-skill	81	10	1
-21304	惡臭散佈者	聖水禮杖	hit-skill	87	5	1
-21305	聖光之手	聖恩權杖	dmg%		130	160
-21305	聖光之手	聖恩權杖	dmg-norm		20	45
-21305	聖光之手	聖恩權杖	hit-skill	121	5	4
-21306	血肉撕裂者	倒刺棍棒	dmg%		130	200
-21306	血肉撕裂者	倒刺棍棒	dmg-norm		35	50
-21307	尖嘯冰霜	凸緣釘鎚	charged	64	50	9
-21307	尖嘯冰霜	凸緣釘鎚	dmg%		150	180
-21307	尖嘯冰霜	凸緣釘鎚	dmg-cold	125	63	112
-21307	尖嘯冰霜	凸緣釘鎚	dmg-norm		5	10
-21308	月落	鋸齒釘頭鎚	charged	56	60	11
-21308	月落	鋸齒釘頭鎚	dmg%		120	150
-21308	月落	鋸齒釘頭鎚	dmg-fire		55	115
-21308	月落	鋸齒釘頭鎚	dmg-norm		10	15
-21308	月落	鋸齒釘頭鎚	hit-skill	56	5	6
-21308	月落	鋸齒釘頭鎚	red-mag		9	12
-21310	震地者	戰鬥鐵鎚	hit-skill	234	5	7
-21311	血樹殘株	征戰重鎚	dmg%		180	220
-21312	痛苦之槌	長柄戰鎚	charged	66	3	8
-21312	痛苦之槌	長柄戰鎚	dmg%		130	160
-21312	痛苦之槌	長柄戰鎚	dmg-norm		12	30
-21312	痛苦之槌	長柄戰鎚	gethit-skill	76	5	1
-21312	痛苦之槌	長柄戰鎚	hit-skill	66	5	1
-21313	放血者	羅馬短劍	dmg-norm		12	45
-21313	放血者	羅馬短劍	skill	127	2	4
-21313	放血者	羅馬短劍	skill	151	1	3
-21315	妖火	波斯彎刀	charged	62	36	6
-21315	妖火	波斯彎刀	dmg%		140	160
-21315	妖火	波斯彎刀	dmg-norm		35	40
-21316	阿里巴巴之刃	印度彎刀	dex		5	15
-21316	阿里巴巴之刃	印度彎刀	dmg%		60	120
-21319	疫病帶原者	符文劍	dmg-norm		10	45
-21319	疫病帶原者	符文劍	hit-skill	92	5	4
-21321	恐懼之嘔	雙手重劍	dmg%		160	200
-21322	冰之王	達西安長刀	dmg%		130	160
-21322	冰之王	達西安長刀	dmg-cold	75	50	140
-21322	冰之王	達西安長刀	hit-skill	64	5	3
-21323	兇邪軀殼	長牙劍	dmg%		150	200
-21323	兇邪軀殼	長牙劍	hit-skill	66	6	1
-21324	雲裂	哥德劍	dmg%		150	200
-21324	雲裂	哥德劍	dmg-ltng		1	240
-21324	雲裂	哥德劍	hit-skill	121	6	7
-21325	死落之火	日耳曼大劍	att-skill	47	10	6
-21325	死落之火	日耳曼大劍	charged	51	20	10
-21325	死落之火	日耳曼大劍	charged	52	45	10
-21325	死落之火	日耳曼大劍	dmg%		120	160
-21325	死落之火	日耳曼大劍	dmg-fire		50	200
-21326	劍衛	處刑劍	dmg%		170	180
-21326	劍衛	處刑劍	res-all		10	20
-21327	裂脊者	刺擊短劍	dmg%		200	240
-21327	裂脊者	刺擊短劍	dmg-norm		15	27
-21328	刨心者	圓柄匕首	dmg%		190	240
-21328	刨心者	圓柄匕首	dmg-norm		15	35
-21329	黑沼之鋒	闊身短劍	dmg-norm		15	45
-21330	暴風尖刺	窄刃匕首	dmg-ltng		1	120
-21330	暴風尖刺	窄刃匕首	gethit-skill	38	25	3
-21331	刺穿者	征戰長矛	dmg%		140	170
-21332	水魔陷阱	矛叉	dmg%		140	180
-21332	水魔陷阱	矛叉	dmg-norm		30	50
-21333	噬魂叉	征戰軍叉	att		150	250
-21333	噬魂叉	征戰軍叉	dmg%		150	190
-21334	骨寸斷	三尖槍	dmg%		160	200
-21334	骨寸斷	三尖槍	dmg-norm		20	40
-21335	榮耀尖塔	長槍	dmg%		150	200
-21335	榮耀尖塔	長槍	dmg-norm		20	40
-21336	刮肉者	鉤斧	dmg%		150	200
-21337	黑蛭長刀	長柄鍥	dmg%		100	140
-21338	雅典娜之怒	戰鬥鐮刀	dmg%		150	180
-21338	雅典娜之怒	戰鬥鐮刀	dru		1	3
-21339	墓石長戟	闊頭槍	att		100	200
-21339	墓石長戟	闊頭槍	dmg%		160	220
-21339	墓石長戟	闊頭槍	dmg-norm		12	20
-21340	血肉吞食者	渡鴉喙	att		200	250
-21340	血肉吞食者	渡鴉喙	dmg%		160	200
-21340	血肉吞食者	渡鴉喙	dmg-norm		20	32
-21341	懼焰亡靈	陰森鐮刀	att		200	250
-21341	懼焰亡靈	陰森鐮刀	dmg%		140	180
-21341	懼焰亡靈	陰森鐮刀	dmg-fire		131	232
-21342	肋骨粉碎者	長棍	dmg%		200	300
-21342	肋骨粉碎者	長棍	dmg-norm		30	65
-21343	炫彩之怒	杉木法杖	hp%		20	25
-21343	炫彩之怒	杉木法杖	res-all		20	40
-21346	天擊	銳弓	dmg%		150	200
-21346	天擊	銳弓	dmg-ltng		1	250
-21346	天擊	銳弓	hit-skill	56	2	6
-21347	社角久子	杉木弓	dmg%		150	180
-21347	社角久子	杉木弓	dmg-fire		40	180
-21350	金擊之拱	哥德弓	att%		100	150
-21350	金擊之拱	哥德弓	dmg%		200	250
-21350	金擊之拱	哥德弓	dmg-demon		100	200
-21350	金擊之拱	哥德弓	dmg-undead		100	200
-21350	金擊之拱	哥德弓	hit-skill	121	5	7
-21351	蘭古布利薩	鋼弩	dmg%		170	200
-21351	蘭古布利薩	鋼弩	dmg-ltng		1	212
-21351	蘭古布利薩	鋼弩	dmg-max		10	30
-21351	蘭古布利薩	鋼弩	mag%		30	60
-21352	吐膿毒弩	攻城弩	dmg%		150	220
-21352	吐膿毒弩	攻城弩	gethit-skill	92	9	6
-21352	吐膿毒弩	攻城弩	hit-skill	91	4	1
-21353	暴雪砲弩	砲弩	ac		75	150
-21353	暴雪砲弩	砲弩	dmg%		150	200
-21353	暴雪砲弩	砲弩	dmg-cold	200	32	196
-21354	吸血鬼的凝視	陰森頭盔	dmg-cold	100	6	22
-21354	吸血鬼的凝視	陰森頭盔	lifesteal		6	8
-21354	吸血鬼的凝視	陰森頭盔	manasteal		6	8
-21354	吸血鬼的凝視	陰森頭盔	red-dmg%		15	20
-21354	吸血鬼的凝視	陰森頭盔	red-mag		10	15
-21355	長串之耳	魔皮束帶	ac%		150	180
-21355	長串之耳	魔皮束帶	lifesteal		6	8
-21355	長串之耳	魔皮束帶	red-dmg%		10	15
-21355	長串之耳	魔皮束帶	red-mag		10	15
-21356	蝕肉騎士	征戰靴	ac%		160	200
-21357	熔岩之痛	戰鬥護手	ac%		150	200
-21357	熔岩之痛	戰鬥護手	dmg-fire		13	46
-21357	熔岩之痛	戰鬥護手	hit-skill	52	2	10
-21358	劇毒之握	魔皮手套	ac		15	25
-21358	劇毒之握	魔皮手套	ac%		130	160
-21359	維斯爾坦特	防禦盾	ac%		100	150
-21361	箭止	鐵網戰甲	ac%		180	220
-21362	蛇魔法師之皮	海蛇皮甲	red-mag		9	13
-21362	蛇魔法師之皮	海蛇皮甲	res-all		20	35
-21364	女武神之翼	翼盔	ac%		150	200
-21364	女武神之翼	翼盔	ama		1	2
-21364	女武神之翼	翼盔	mana-kill		2	4
-21365	農夫王冠	戰帽	regen		6	12
-21367	巫師之怒	符文弓	att		200	250
-21367	巫師之怒	符文弓	dmg%		120	150
-21367	巫師之怒	符文弓	dmg-norm		25	50
-21367	巫師之怒	符文弓	red-mag		9	13
-21368	懸崖殺手	攻城長弓	dmg%		190	230
-21368	懸崖殺手	攻城長弓	dmg-max		20	30
-21368	懸崖殺手	攻城長弓	dmg-min		5	10
-21369	撕裂之鉤	剃刀弓	dmg%		180	220
-21369	撕裂之鉤	剃刀弓	lifesteal		7	10
-21372	冰鋼之眼	水手刀	dmg%		200	250
-21375	溫達的智慧	長者法杖	ac		450	550
-21375	溫達的智慧	長者法杖	allskills		2	4
-21375	溫達的智慧	長者法杖	enr		40	50
-21375	溫達的智慧	長者法杖	red-mag		5	8
-21379	死亡尖鑽	戰鬥飛鏢	att		200	450
-21379	死亡尖鑽	戰鬥飛鏢	dmg%		130	180
-21379	死亡尖鑽	戰鬥飛鏢	lifesteal		7	9
-21379	死亡尖鑽	戰鬥飛鏢	manasteal		4	6
-21380	戰爭之鳥	刃翼飛刀	dmg%		200	250
-21380	戰爭之鳥	刃翼飛刀	hit-skill	Nova	25	9
-21381	內臟吸管	惡魔弩	dmg%		160	220
-21381	內臟吸管	惡魔弩	lifesteal		12	18
-21382	剃刀銳斧	輕斧	dmg%		175	225
-21387	惡魔肢體	暴君棍棒	charged	Enchant	20	23
-21387	惡魔肢體	暴君棍棒	dmg%		180	230
-21387	惡魔肢體	暴君棍棒	dmg-fire		222	333
-21387	惡魔肢體	暴君棍棒	lifesteal		7	13
-21387	惡魔肢體	暴君棍棒	res-fire		15	20
-21388	鋼影	覆頰盔	abs-fire		5	11
-21388	鋼影	覆頰盔	ac%		100	130
-21388	鋼影	覆頰盔	manasteal		4	8
-21388	鋼影	覆頰盔	regen		10	18
-21389	盜墓者	絕秘斧	att-undead		250	350
-21389	盜墓者	絕秘斧	dmg%		200	280
-21389	盜墓者	絕秘斧	dmg-undead		150	230
-21389	盜墓者	絕秘斧	heal-kill		10	14
-21389	盜墓者	絕秘斧	mag%		50	80
-21389	盜墓者	絕秘斧	res-all		30	50
-21389	盜墓者	絕秘斧	sock		1	3
-21394	懺悔者	強威權杖	dmg		60	120
-21394	懺悔者	強威權杖	dmg%		250	300
-21394	懺悔者	強威權杖	dmg-demon		200	250
-21394	懺悔者	強威權杖	skill	Holy Bolt	2	4
-21394	懺悔者	強威權杖	skill	Redemption	2	4
-21398	破骨	巨魔斧	charged	Corpse Explosion	30	14
-21398	破骨	巨魔斧	dmg%		270	320
-21398	破骨	巨魔斧	hit-skill	Bone Spear	50	16
-21399	碎鋼	巨魔護手	ac		170	210
-21399	碎鋼	巨魔護手	dmg%		30	60
-21399	碎鋼	巨魔護手	str		15	20
-21400	碎石者	傳說戰鎚	dmg		10	30
-21400	碎石者	傳說戰鎚	dmg%		280	320
-21400	碎石者	傳說戰鎚	str		20	30
-21402	愛理歐克之針	亥伯龍矛	allskills		2	4
-21402	愛理歐克之針	亥伯龍矛	dmg%		180	230
-21403	影舞者	勇士護脛	ac%		70	100
-21403	影舞者	勇士護脛	dex		15	25
-21403	影舞者	勇士護脛	skilltab	19	1	2
-21407	吸魂者	護臂	ac%		90	120
-21407	吸魂者	護臂	hit-skill	Weaken	8	3
-21407	吸魂者	護臂	lifesteal		4	7
-21407	吸魂者	護臂	manasteal		4	7
-21408	符文大師	雙頭斧	dmg%		220	270
-21408	符文大師	雙頭斧	sock		3	5
-21409	死亡劈斧	狂戰斧	dmg%		230	280
-21409	死亡劈斧	狂戰斧	heal-kill		6	9
-21410	劊子手的裁決	榮光斧	dmg%		240	290
-21410	劊子手的裁決	榮光斧	kill-skill	Decrepify	50	6
-21412	利維坦	海怪之殼	ac		100	150
-21412	利維坦	海怪之殼	ac%		170	200
-21412	利維坦	海怪之殼	red-dmg%		15	25
-21412	利維坦	海怪之殼	str		40	50
-21417	鬼火投射者	戒指	abs-ltng%		10	20
-21417	鬼火投射者	戒指	charged	Heart of Wolverine	13	5
-21417	鬼火投射者	戒指	charged	Oak Sage	15	2
-21417	鬼火投射者	戒指	charged	Spirit of Barbs	11	7
-21417	鬼火投射者	戒指	hit-skill	Lightning	10	16
-21417	鬼火投射者	戒指	mag%		10	20
-21418	石像鬼之噬	飛翼魚叉	charged	Plague Javelin	60	11
-21418	石像鬼之噬	飛翼魚叉	dmg%		180	230
-21418	石像鬼之噬	飛翼魚叉	lifesteal		9	15
-21419	撕裂者	刃翼飛斧	dmg%		150	210
-21419	撕裂者	刃翼飛斧	hit-skill	Amplify Damage	33	3
-21420	曼宋的教誨	統御者法杖	pierce-cold		7	15
-21420	曼宋的教誨	統御者法杖	pierce-fire		7	15
-21420	曼宋的教誨	統御者法杖	pierce-ltng		7	15
-21421	蛇魔叉	捕人叉	att		200	250
-21421	蛇魔叉	捕人叉	dmg%		190	240
-21421	蛇魔叉	捕人叉	hit-skill	Poison Explosion	15	9
-21421	蛇魔叉	捕人叉	res-pois		30	50
-21425	惡魔角尖	毀滅者頭盔	ac%		120	160
-21425	惡魔角尖	毀滅者頭盔	lifesteal		3	6
-21425	惡魔角尖	毀滅者頭盔	skilltab	12	1	3
-21425	惡魔角尖	毀滅者頭盔	skilltab	13	1	3
-21425	惡魔角尖	毀滅者頭盔	skilltab	14	1	3
-21425	惡魔角尖	毀滅者頭盔	thorns		55	77
-21427	死神喪鐘	斬鐮	dmg%		190	240
-21427	死神喪鐘	斬鐮	dmg-cold		4	44
-21427	死神喪鐘	斬鐮	hit-skill	Decrepify	33	1
-21427	死神喪鐘	斬鐮	lifesteal		11	15
-21428	魂靈守衛者	地土靈獸帽	abs-cold%		15	25
-21428	魂靈守衛者	地土靈獸帽	abs-ltng		9	14
-21428	魂靈守衛者	地土靈獸帽	ac%		170	190
-21428	魂靈守衛者	地土靈獸帽	dru		1	2
-21428	魂靈守衛者	地土靈獸帽	res-fire		30	40
-21429	地獄刑具	巨神弩	att%		100	150
-21429	地獄刑具	巨神弩	charged	Immolation Arrow	150	18
-21429	地獄刑具	巨神弩	dmg%		180	230
-21429	地獄刑具	巨神弩	dmg-elem	33	63	324
-21430	黑魂	神聖輕圓盾	ac%		180	210
-21430	黑魂	神聖輕圓盾	att%		40	75
-21430	黑魂	神聖輕圓盾	dmg%		40	75
-21430	黑魂	神聖輕圓盾	pal		1	2
-21430	黑魂	神聖輕圓盾	red-mag		5	9
-21431	魔力肇生	鮮血之王顱骨	ac%		140	180
-21431	魔力肇生	鮮血之王顱骨	skilltab	6	1	3
-21431	魔力肇生	鮮血之王顱骨	skilltab	7	1	3
-21431	魔力肇生	鮮血之王顱骨	skilltab	8	1	3
-21438	鬼火	傳說尖刀	dmg%		190	240
-21438	鬼火	傳說尖刀	manasteal		10	15
-21439	影殺者	戰鬥刃拳	dmg%		170	220
-21439	影殺者	戰鬥刃拳	hit-skill	Frost Nova	33	8
-21439	影殺者	戰鬥刃拳	mana-kill		10	15
-21442	獅鷲之眼	權冠	ac		100	200
-21442	獅鷲之眼	權冠	extra-ltng		10	15
-21442	獅鷲之眼	權冠	pierce-ltng		15	20
-21444	風之鎚	巨魔重鎚	dmg%		180	230
-21444	風之鎚	巨魔重鎚	hit-skill	Twister	33	22
-21445	雷霆之擊	女傑標槍	dmg%		150	200
-21445	雷霆之擊	女傑標槍	dmg-ltng		1	511
-21445	雷霆之擊	女傑標槍	hit-skill	Lightning	20	14
-21445	雷霆之擊	女傑標槍	skilltab	2	2	4
-21447	惡魔之拱	炎魔長矛	dmg%		160	210
-21447	惡魔之拱	炎魔長矛	dmg-fire		232	323
-21447	惡魔之拱	炎魔長矛	dmg-ltng		23	333
-21447	惡魔之拱	炎魔長矛	lifesteal		6	12
-21448	頭皮剝斧	法蘭西飛斧	dmg%		150	200
-21448	頭皮剝斧	法蘭西飛斧	lifesteal		4	6
-21449	血月	典雅彎刀	charged	BloodGolem	9	15
-21449	血月	典雅彎刀	dmg%		210	260
-21449	血月	典雅彎刀	heal-kill		7	13
-21449	血月	典雅彎刀	lifesteal		10	15
-21450	巨靈殺手	土耳其彎刀	abs-ltng		3	7
-21450	巨靈殺手	土耳其彎刀	att-demon		200	300
-21450	巨靈殺手	土耳其彎刀	dmg%		190	240
-21450	巨靈殺手	土耳其彎刀	dmg-demon		100	150
-21450	巨靈殺手	土耳其彎刀	dmg-fire		250	500
-21450	巨靈殺手	土耳其彎刀	manasteal		3	6
-21450	巨靈殺手	土耳其彎刀	sock		1	2
-21451	鶴嘴	征戰鎬	charged	Raven	15	8
-21451	鶴嘴	征戰鎬	dmg%		240	300
-21451	鶴嘴	征戰鎬	dmg-ltng		1	305
-21451	鶴嘴	征戰鎬	mag%		20	50
-21455	獵頭者的榮耀	食人妖骨盾	ac		320	420
-21455	獵頭者的榮耀	食人妖骨盾	ac-miss		300	350
-21455	獵頭者的榮耀	食人妖骨盾	heal-kill		5	7
-21455	獵頭者的榮耀	食人妖骨盾	res-fire		20	30
-21455	獵頭者的榮耀	食人妖骨盾	res-pois		30	40
-21455	獵頭者的榮耀	食人妖骨盾	sock		1	3
-21461	撼地者	雷霆重鎚	charged	Volcano	30	14
-21461	撼地者	雷霆重鎚	dmg%		250	300
-21461	撼地者	雷霆重鎚	hit-skill	Eruption	25	14
-21462	自然祥和	戒指	charged	Oak Sage	27	5
-21462	自然祥和	戒指	red-dmg		7	11
-21462	自然祥和	戒指	res-pois		20	30
-21464	熾天使之韻	護身符	att-demon		150	250
-21464	熾天使之韻	護身符	att-undead		150	250
-21464	熾天使之韻	護身符	dmg-demon		25	50
-21464	熾天使之韻	護身符	dmg-undead		25	50
-21464	熾天使之韻	護身符	skilltab	11	1	2
-21466	裂肉者	尖齒小刀	dmg%		200	300
-21469	地平線的龍捲風	罪罰連枷	dmg%		230	280
-21469	地平線的龍捲風	罪罰連枷	hit-skill	Tornado	20	15
-21470	北地肉鎚	打擊棍	abs-cold%		5	15
-21470	北地肉鎚	打擊棍	att%		150	180
-21470	北地肉鎚	打擊棍	charged	Blizzard	12	16
-21470	北地肉鎚	打擊棍	dmg%		270	330
-21470	北地肉鎚	打擊棍	dmg-cold	125	205	455
-21470	北地肉鎚	打擊棍	freeze		2	4
-21473	碧玉爪	腕劍	dmg%		190	240
-21473	碧玉爪	腕劍	manasteal		10	15
-21473	碧玉爪	腕劍	res-all		40	50
-21473	碧玉爪	腕劍	skilltab	19	1	2
-21473	碧玉爪	腕劍	skilltab	20	1	2
-21476	地獄犬之咬	血系靈獸帽	ac%		130	140
-21476	地獄犬之咬	血系靈獸帽	att%		60	120
-21476	地獄犬之咬	血系靈獸帽	lifesteal		7	10
-21476	地獄犬之咬	血系靈獸帽	skill	feral rage	1	2
-21476	地獄犬之咬	血系靈獸帽	skilltab	16	2	4
-21482	石鴉	女傑長矛	ac		400	600
-21482	石鴉	女傑長矛	dmg%		230	280
-21482	石鴉	女傑長矛	dmg-mag		101	187
-21482	石鴉	女傑長矛	res-all		30	50
-21482	石鴉	女傑長矛	skilltab	2	1	3
-21508	血鴉之擊	女傑之弓	att%		200	300
-21508	血鴉之擊	女傑之弓	charged	Revive	30	5
-21508	血鴉之擊	女傑之弓	dmg%		180	230
-21508	血鴉之擊	女傑之弓	skilltab	0	2	4
-21512	死靈夜翔	鬼魂刃槍	dmg%		150	190
-21512	死靈夜翔	鬼魂刃槍	lifesteal		9	13
-21516	梅杜莎的凝視	禦塔盾	ac%		150	180
-21516	梅杜莎的凝視	禦塔盾	death-skill	Nova	100	44
-21516	梅杜莎的凝視	禦塔盾	gethit-skill	Lower Resist	10	7
-21516	梅杜莎的凝視	禦塔盾	lifesteal		5	9
-21516	梅杜莎的凝視	禦塔盾	res-cold		40	80
-21519	石禦	便盔	ac%		160	220
-21519	石禦	便盔	res-cold		20	40
-21519	石禦	便盔	res-fire		20	50
-21519	石禦	便盔	res-ltng		20	40
-21520	盜竊顱盔	兜盔	ac%		200	240
-21520	盜竊顱盔	兜盔	mag%		30	50
-21521	暗視之盔	輕盔	charged	264	30	5
-21521	暗視之盔	輕盔	gethit-skill	71	6	3
-21521	暗視之盔	輕盔	res-fire		20	40
-21522	盜賊皇冠	莊嚴王冠	ac%		160	200
-21522	盜賊皇冠	莊嚴王冠	gold%		80	100
-21522	盜賊皇冠	莊嚴王冠	lifesteal		9	12
-21523	黑荊角面具	死亡面具	ac%		180	220
-21524	靈魂帷幕	鬼魂戰衣	red-mag		7	11
-21526	鋼鐵獸皮	格網護甲	ac%		50	100
-21526	鋼鐵獸皮	格網護甲	red-dmg		15	20
-21526	鋼鐵獸皮	格網護甲	red-mag		10	16
-21527	靈魂熔爐	鍊扣戰甲	ac%		120	160
-21527	靈魂熔爐	鍊扣戰甲	dmg-fire		20	65
-21528	鴉啼	鎖鱗戰甲	*charged	221	3	5
-21528	鴉啼	鎖鱗戰甲	ac%		150	180
-21529	都瑞爾之殼	護胸甲	ac%		160	200
-21530	斯寇德的憤怒	赤褐戰甲	ac%		160	200
-21531	排齒	鯊齒戰甲	ac		40	60
-21531	排齒	鯊齒戰甲	ac%		160	220
-21531	排齒	鯊齒戰甲	thorns		20	40
-21532	亞特瑪的哭喊	雕紋戰甲	ac%		120	160
-21533	黑色黑帝斯	混沌戰甲	ac%		140	200
-21533	黑色黑帝斯	混沌戰甲	att-demon		200	250
-21533	黑色黑帝斯	混沌戰甲	dmg-demon		30	60
-21534	屍慟	華麗戰甲	ac%		150	180
-21534	屍慟	華麗戰甲	charged	74	40	5
-21534	屍慟	華麗戰甲	dmg-fire		12	36
-21534	屍慟	華麗戰甲	gethit-skill	76	6	2
-21537	風暴追逐者	大圓盾	ac%		160	220
-21537	風暴追逐者	大圓盾	dmg-ltng		1	60
-21537	風暴追逐者	大圓盾	gethit-skill	59	4	6
-21537	風暴追逐者	大圓盾	gethit-skill	245	4	5
-21538	魔龍的非難	龍盾	ac%		140	200
-21538	魔龍的非難	龍盾	dmg-cold	150	27	53
-21538	魔龍的非難	龍盾	dmg-fire		35	95
-21538	魔龍的非難	龍盾	dmg-ltng		1	120
-21538	魔龍的非難	龍盾	gethit-skill	44	5	9
-21538	魔龍的非難	龍盾	gethit-skill	48	5	7
-21538	魔龍的非難	龍盾	gethit-skill	62	3	6
-21538	魔龍的非難	龍盾	res-all		25	35
-21540	羅達門特的領域	上古盾	ac%		160	200
-21540	羅達門特的領域	上古盾	charged	83	40	6
-21541	墓穴手掌	鯊皮手套	ac%		140	180
-21541	墓穴手掌	鯊皮手套	att-undead		100	200
-21541	墓穴手掌	鯊皮手套	dmg-undead		100	200
-21542	食屍鬼之皮	重型護腕	ac%		150	190
-21542	食屍鬼之皮	重型護腕	manasteal		4	5
-21543	地獄之口	征戰護手	ac%		150	200
-21543	地獄之口	征戰護手	dmg-fire		15	72
-21543	地獄之口	征戰護手	hit-skill	56	2	4
-21543	地獄之口	征戰護手	hit-skill	225	4	12
-21544	地獄闊步	魔皮長靴	ac%		120	150
-21544	地獄闊步	魔皮長靴	dmg-fire		12	33
-21544	地獄闊步	魔皮長靴	gethit-skill	46	5	8
-21544	地獄闊步	魔皮長靴	gold%		40	70
-21545	水上飄	鯊皮靴	ac%		180	210
-21545	水上飄	鯊皮靴	hp		45	65
-21546	紗織	鐵網靴	ac%		150	190
-21547	戰爭旅者	戰鬥靴	ac%		150	190
-21547	戰爭旅者	戰鬥靴	dmg-norm		15	25
-21547	戰爭旅者	戰鬥靴	mag%		30	50
-21547	戰爭旅者	戰鬥靴	thorns		5	10
-21548	剃刀之尾	鯊皮腰帶	ac%		120	150
-21549	陰影陷阱	鐵網腰帶	ac%		120	150
-21550	冰雪交織	戰鬥腰帶	ac%		130	170
-21550	冰雪交織	戰鬥腰帶	dmg-cold	75	13	21
-21550	冰雪交織	戰鬥腰帶	gethit-skill	59	5	0
-21551	雷神之力	征戰腰帶	ac%		160	200
-21551	雷神之力	征戰腰帶	dmg-ltng		1	50
-21551	雷神之力	征戰腰帶	gethit-skill	121	5	7
-21552	警戒之牆	陰森盾牌	ac%		80	130
-21552	警戒之牆	陰森盾牌	mana-kill		3	5
-21555	骨焰	魅魔顱骨	ac%		120	150
-21555	骨焰	魅魔顱骨	gethit-skill	Terror	15	3
-21555	骨焰	魅魔顱骨	nec		2	3
-21555	骨焰	魅魔顱骨	res-all		20	30
-21556	鋼鐵之柱	征戰長槍	ac%		50	80
-21556	鋼鐵之柱	征戰長槍	dmg%		210	260
-21557	夜翼面紗	巨角頭盔	abs-cold		5	9
-21557	夜翼面紗	巨角頭盔	ac%		90	120
-21557	夜翼面紗	巨角頭盔	dex		10	20
-21557	夜翼面紗	巨角頭盔	extra-cold		8	15
-21559	歲月之冠	日冕之冠	ac		100	150
-21559	歲月之冠	日冕之冠	red-dmg%		10	15
-21559	歲月之冠	日冕之冠	res-all		20	30
-21559	歲月之冠	日冕之冠	sock		1	2
-21560	安達莉爾的面貌	惡魔頭骨	ac%		100	150
-21560	安達莉爾的面貌	惡魔頭骨	charged	278	20	3
-21560	安達莉爾的面貌	惡魔頭骨	lifesteal		8	10
-21560	安達莉爾的面貌	惡魔頭骨	str		25	30
-21562	龍鱗	撒卡蘭姆盾	abs-fire%		10	20
-21562	龍鱗	撒卡蘭姆盾	ac%		170	200
-21562	龍鱗	撒卡蘭姆盾	dmg-fire		211	371
-21562	龍鱗	撒卡蘭姆盾	str		15	25
-21563	鋼鐵甲殼	暗影鎧甲	ac%		190	220
-21563	鋼鐵甲殼	暗影鎧甲	gethit-skill	Iron Maiden	8	6
-21563	鋼鐵甲殼	暗影鎧甲	red-dmg		9	14
-21563	鋼鐵甲殼	暗影鎧甲	regen-mana		10	15
-21563	鋼鐵甲殼	暗影鎧甲	res-cold		40	60
-21565	彩虹刻面	珠寶	death-skill	Blizzard	100	37
-21565	彩虹刻面	珠寶	death-skill	Chain Lightning	100	47
-21565	彩虹刻面	珠寶	death-skill	Meteor	100	31
-21565	彩虹刻面	珠寶	death-skill	Poison Nova	100	51
-21565	彩虹刻面	珠寶	dmg-cold	3	24	38
-21565	彩虹刻面	珠寶	dmg-fire		17	45
-21565	彩虹刻面	珠寶	dmg-ltng		1	74
-21565	彩虹刻面	珠寶	extra-cold		3	5
-21565	彩虹刻面	珠寶	extra-fire		3	5
-21565	彩虹刻面	珠寶	extra-ltng		3	5
-21565	彩虹刻面	珠寶	extra-pois		3	5
-21565	彩虹刻面	珠寶	levelup-skill	Blaze	100	29
-21565	彩虹刻面	珠寶	levelup-skill	Frost Nova	100	43
-21565	彩虹刻面	珠寶	levelup-skill	Nova	100	41
-21565	彩虹刻面	珠寶	levelup-skill	Venom	100	23
-21565	彩虹刻面	珠寶	pierce-cold		3	5
-21565	彩虹刻面	珠寶	pierce-fire		3	5
-21565	彩虹刻面	珠寶	pierce-ltng		3	5
-21565	彩虹刻面	珠寶	pierce-pois		3	5
-21566	掠鴉之王	天翔靈獸帽	ac%		120	150
-21566	掠鴉之王	天翔靈獸帽	enr		20	30
-21566	掠鴉之王	天翔靈獸帽	pierce-fire		10	20
-21566	掠鴉之王	天翔靈獸帽	res-all		15	25
-21567	骸骨陰影	巫妖魔杖	skill	Bone Armor	4	5
-21567	骸骨陰影	巫妖魔杖	skill	Bone Spear	2	3
-21567	骸骨陰影	巫妖魔杖	skill	Bone Spirit	1	2
-21567	骸骨陰影	巫妖魔杖	skill	Bone Wall	2	3
-21567	骸骨陰影	巫妖魔杖	skill	Teeth	4	5
-21570	火嚎	炎魔之刃	abs-fire%		20	30
-21570	火嚎	炎魔之刃	dmg%		170	240
-21570	火嚎	炎魔之刃	dmg-fire		233	482
-21570	火嚎	炎魔之刃	hit-skill	Firestorm	12	16
-21570	火嚎	炎魔之刃	oskill	Inferno	12	18
-21570	火嚎	炎魔之刃	str		10	20
-21570	火嚎	炎魔之刃	vit		5	10
-21571	死亡深度	次元法珠	extra-cold		15	30
-21571	死亡深度	次元法珠	res-fire		25	40
-21571	死亡深度	次元法珠	res-ltng		25	40
-21572	狼嚎	暴怒面甲	ac%		120	150
-21572	狼嚎	暴怒面甲	charged	Summon Fenris	18	15
-21572	狼嚎	暴怒面甲	dex		8	15
-21572	狼嚎	暴怒面甲	oskill	Feral Rage	3	6
-21572	狼嚎	暴怒面甲	oskill	Shape Shifting	3	6
-21572	狼嚎	暴怒面甲	oskill	Wearwolf	3	6
-21572	狼嚎	暴怒面甲	skilltab	14	2	3
-21572	狼嚎	暴怒面甲	str		8	15
-21572	狼嚎	暴怒面甲	vit		8	15
-21573	魂系結界	庇護盾	abs-cold		6	11
-21573	魂系結界	庇護盾	ac%		130	180
-21573	魂系結界	庇護盾	block		20	30
-21573	魂系結界	庇護盾	gethit-skill	Fade	5	8
-21573	魂系結界	庇護盾	res-all		30	40
-21574	奇拉的守護	頭冠	ac		50	120
-21574	奇拉的守護	頭冠	res-all		50	70
-21576	基德的財運	特大咒符	cheap		10	15
-21576	基德的財運	特大咒符	gold%		80	160
-21576	基德的財運	特大咒符	mag%		20	40
-21578	暴風之鞭	罪罰連枷	abs-ltng		3	9
-21578	暴風之鞭	罪罰連枷	dmg%		240	300
-21578	暴風之鞭	罪罰連枷	dmg-ltng		1	473
-21578	暴風之鞭	罪罰連枷	hit-skill	Static Field	15	10
-21578	暴風之鞭	罪罰連枷	hit-skill	Tornado	20	18
-21579	海拉柏德的國度	征服者盔冠	ac%		140	170
-21579	海拉柏德的國度	征服者盔冠	regen		15	23
-21579	海拉柏德的國度	征服者盔冠	skill	Battle Command	1	2
-21579	海拉柏德的國度	征服者盔冠	skill	Battle Orders	1	2
-21582	尖刺荊棘	刀刃刺盾	ac%		120	150
-21582	尖刺荊棘	刀刃刺盾	red-dmg%		15	20
-21583	德古拉之握	吸血鬼骸骨手套	ac%		90	120
-21583	德古拉之握	吸血鬼骸骨手套	heal-kill		5	10
-21583	德古拉之握	吸血鬼骸骨手套	hit-skill	Life Tap	5	10
-21583	德古拉之握	吸血鬼骸骨手套	lifesteal		7	10
-21583	德古拉之握	吸血鬼骸骨手套	str		10	15
-21584	霜風	絕秘劍	abs-cold%		7	15
-21584	霜風	絕秘劍	dmg%		180	230
-21584	霜風	絕秘劍	dmg-cold	150	237	486
-21584	霜風	絕秘劍	oskill	Arctic Blast	7	14
-21585	聖堂騎士之力	神聖戰甲	ac%		170	220
-21585	聖堂騎士之力	神聖戰甲	ac-miss		250	300
-21585	聖堂騎士之力	神聖戰甲	skilltab	10	1	2
-21585	聖堂騎士之力	神聖戰甲	stam		40	50
-21585	聖堂騎士之力	神聖戰甲	str		10	15
-21585	聖堂騎士之力	神聖戰甲	vit		10	15
-21586	艾斯屈塔的憤怒	異能法珠	enr		20	30
-21586	艾斯屈塔的憤怒	異能法珠	extra-fire		10	20
-21586	艾斯屈塔的憤怒	異能法珠	extra-ltng		10	20
-21586	艾斯屈塔的憤怒	異能法珠	sor		1	3
-21587	火蜥蜴之爪	蠻獸爪	dmg%		200	270
-21587	火蜥蜴之爪	蠻獸爪	dmg-fire		236	480
-21587	火蜥蜴之爪	蠻獸爪	res-fire		40	70
-21587	火蜥蜴之爪	蠻獸爪	skill	Inferno Sentry	1	2
-21587	火蜥蜴之爪	蠻獸爪	skill	Wake of Fire Sentry	1	2
-21587	火蜥蜴之爪	蠻獸爪	skilltab	20	1	3
-21588	沙暴之旅	聖甲蟲殼皮靴	ac%		140	170
-21588	沙暴之旅	聖甲蟲殼皮靴	res-pois		40	70
-21588	沙暴之旅	聖甲蟲殼皮靴	str		10	15
-21588	沙暴之旅	聖甲蟲殼皮靴	vit		10	15
-21589	骨髓行走	骸骨網靴	ac%		170	200
-21589	骨髓行走	骸骨網靴	charged	Bone Prison	13	33
-21589	骨髓行走	骸骨網靴	charged	Life Tap	10	12
-21589	骨髓行走	骸骨網靴	skill	Skeleton Mastery	1	2
-21589	骨髓行走	骸骨網靴	str		10	20
-21590	天堂之光	強威權杖	demon-heal		15	20
-21590	天堂之光	強威權杖	dmg%		250	300
-21590	天堂之光	強威權杖	pal		2	3
-21590	天堂之光	強威權杖	sock		1	3
-21592	蜘蛛之網	蛛網束帶	ac%		90	120
-21592	蜘蛛之網	蛛網束帶	charged	Venom	11	3
-21593	吸血鬼王之圈	吸血鬼牙腰帶	lifesteal		5	7
-21595	伐頓戈的強韌腰索	秘銀腰帶	ac%		90	140
-21595	伐頓戈的強韌腰索	秘銀腰帶	red-dmg%		10	15
-21595	伐頓戈的強韌腰索	秘銀腰帶	regen		10	13
-21595	伐頓戈的強韌腰索	秘銀腰帶	stam		100	120
-21595	伐頓戈的強韌腰索	秘銀腰帶	vit		30	40
-21597	腐肉之風	戒指	ac-miss		100	160
-21597	腐肉之風	戒指	charged	Plague Poppy	15	21
-21597	腐肉之風	戒指	hit-skill	Twister	8	13
-21597	腐肉之風	戒指	lifesteal		6	9
-21598	巨大顱骨	骸骨面罩	ac		250	320
-21598	巨大顱骨	骸骨面罩	sock		1	2
-21598	巨大顱骨	骸骨面罩	str		25	35
-21599	愛斯特龍的鐵衛	神使權杖	att%		150	200
-21599	愛斯特龍的鐵衛	神使權杖	dmg		40	85
-21599	愛斯特龍的鐵衛	神使權杖	dmg%		240	290
-21599	愛斯特龍的鐵衛	神使權杖	dmg-mag		80	240
-21599	愛斯特龍的鐵衛	神使權杖	red-dmg		4	7
-21599	愛斯特龍的鐵衛	神使權杖	skilltab	9	2	4
-21608	薩拉森的機會	護身符	gethit-skill	76	10	2
-21608	薩拉森的機會	護身符	res-all		15	25
-21609	大君之怒	護身符	dmg-ltng		1	30
-21610	烏鴉之霜	戒指	att		150	250
-21610	烏鴉之霜	戒指	dex		15	20
-21610	烏鴉之霜	戒指	dmg-cold	100	15	45
-21611	矮人之星	戒指	red-mag		12	15
-21612	亞特瑪的聖甲蟲	護身符	hit-skill	66	5	2
-21613	馬拉的萬花筒	護身符	res-all		20	30
-21614	新月	護身符	lifesteal		3	6
-21614	新月	護身符	manasteal		11	15
-21615	旭日東升	護身符	dmg-fire		24	48
-21615	旭日東升	護身符	gethit-skill	56	2	0
-21617	布爾凱索的婚戒	戒指	lifesteal		3	5
-21619	金屬網格	護身符	ac		300	350
-21619	金屬網格	護身符	att		400	450
-21619	金屬網格	護身符	charged	Iron Maiden	20	12
-21619	金屬網格	護身符	charged	IronGolem	11	22
-21619	金屬網格	護身符	res-all		25	35
-21622	黑橡樹盾	圓月盾	ac%		160	200
-21622	黑橡樹盾	圓月盾	gethit-skill	72	4	5
-21623	奧瑪斯之袍	灰暮罩衣	ac		10	20
-21623	奧瑪斯之袍	灰暮罩衣	extra-cold		10	15
-21623	奧瑪斯之袍	灰暮罩衣	extra-fire		10	15
-21623	奧瑪斯之袍	灰暮罩衣	extra-ltng		10	15
-21623	奧瑪斯之袍	灰暮罩衣	regen-mana		10	15
-21623	奧瑪斯之袍	灰暮罩衣	skill-rand	3	36	60
-21624	阿凱尼的榮耀	炎魔皮板甲	ac%		150	180
-21624	阿凱尼的榮耀	炎魔皮板甲	allskills		1	2
-21624	阿凱尼的榮耀	炎魔皮板甲	red-dmg		10	15
-21625	鬥士之禍	鋼線毛皮甲	ac%		150	200
-21625	鬥士之禍	鋼線毛皮甲	red-dmg		15	20
-21625	鬥士之禍	鋼線毛皮甲	red-mag		15	20
-21628	長槍守衛	倒刺盾	ac%		70	120
-21629	基爾克的聖堂	大盾	ac%		180	240
-21629	基爾克的聖堂	大盾	red-dmg		11	16
-21629	基爾克的聖堂	大盾	red-mag		14	18
-21629	基爾克的聖堂	大盾	res-all		20	30
-21630	摩瑟的祝福之圓	圓型盾	ac%		180	220
-21631	教宗的智慧	法師鎧甲	ac%		140	160
-21631	教宗的智慧	法師鎧甲	red-mag		6	10
-21632	守護天使	聖堂騎士戰甲	ac%		180	200
-21633	剝皮者之皮	魔皮護甲	ac%		150	190
-21633	剝皮者之皮	魔皮護甲	lifesteal		5	7
-21633	剝皮者之皮	魔皮護甲	regen		15	25
-21635	風之力	多頭蛇弓	manasteal		6	8
-21637	吉默削斧	高速飛斧	dmg%		160	210
-21637	吉默削斧	高速飛斧	dmg-cold	100	176	397
-21637	吉默削斧	高速飛斧	dmg-fire		218	483
-21637	吉默削斧	高速飛斧	dmg-ltng		29	501
-21638	絕命	庇護弓	dmg%		150	200
-21638	絕命	庇護弓	oskill	Guided Arrow	3	5
-21639	暴風尖塔	巨型斬鐮	dmg%		150	250
-21639	暴風尖塔	巨型斬鐮	dmg-ltng		1	237
-21639	暴風尖塔	巨型斬鐮	gethit-skill	38	2	0
-21641	無形之刃	銀刃斧	abs-fire		10	12
-21641	無形之刃	銀刃斧	att		270	350
-21641	無形之刃	銀刃斧	demon-heal		5	10
-21641	無形之刃	銀刃斧	dmg%		150	180
-21641	無形之刃	銀刃斧	dmg-demon		150	200
-21643	高祖	巨神刃	dmg%		150	250
-21644	末日使者	豪傑大劍	dmg%		180	250
-21644	末日使者	豪傑大劍	dmg-norm		30	100
-21644	末日使者	豪傑大劍	hit-skill	72	8	3
-21644	末日使者	豪傑大劍	lifesteal		5	7
-21645	泰瑞爾之力	神聖戰甲	ac%		120	150
-21645	泰瑞爾之力	神聖戰甲	dmg-demon		50	100
-21645	泰瑞爾之力	神聖戰甲	res-all		20	30
-21645	泰瑞爾之力	神聖戰甲	str		20	30
-21646	光之軍刀	幻化之刃	att-skill	53	5	0
-21646	光之軍刀	幻化之刃	dmg%		150	200
-21646	光之軍刀	幻化之刃	dmg-ltng		1	200
-21646	光之軍刀	幻化之刃	dmg-mag		60	120
-21646	光之軍刀	幻化之刃	dmg-norm		10	30
-21646	光之軍刀	幻化之刃	manasteal		5	7
-21647	碎腦鎚	雷霆重鎚	dmg%		200	240
-21647	碎腦鎚	雷霆重鎚	hit-skill	66	4	1
-21648	史恰佛之鎚	傳說戰鎚	dmg%		100	130
-21648	史恰佛之鎚	傳說戰鎚	dmg-ltng		50	200
-21648	史恰佛之鎚	傳說戰鎚	hit-skill	42	20	10
-21649	巴拉那之星	妖鬼釘頭鎚	dmg-cold		1	200
-21649	巴拉那之星	妖鬼釘頭鎚	dmg-fire		1	200
-21649	巴拉那之星	妖鬼釘頭鎚	dmg-ltng		1	200
-21650	死亡之網	埋骨魔杖	heal-kill		7	12
-21650	死亡之網	埋骨魔杖	mana-kill		7	12
-21650	死亡之網	埋骨魔杖	pierce-pois		40	50
-21650	死亡之網	埋骨魔杖	skilltab	7	1	2
-21651	梅希斯密特之劫掠者	豪傑斧	dmg-fire		20	240
-21652	地獄殺戮者	斬首斧	att-skill	47	10	0
-21652	地獄殺戮者	斬首斧	dmg-fire		150	250
-21653	無盡冰雹	雙曲弓	dmg%		180	220
-21653	無盡冰雹	雙曲弓	dmg-cold	75	15	30
-21653	無盡冰雹	雙曲弓	skill	26	3	5
-21654	亞特蘭提恩	上古劍	dmg%		200	250
-21656	貝西爾的漩渦	刑罪連枷	charged	48	80	15
-21656	貝西爾的漩渦	刑罪連枷	dmg%		160	200
-21656	貝西爾的漩渦	刑罪連枷	dmg-ltng		1	150
-21656	貝西爾的漩渦	刑罪連枷	hit-skill	48	5	8
-21657	撒卡蘭姆之手	符文權杖	dmg%		180	220
-21657	撒卡蘭姆之手	符文權杖	hit-skill	59	6	5
-21659	牛頭怪	上古斧	dmg%		140	200
-21659	牛頭怪	上古斧	dmg-norm		20	30
-21659	牛頭怪	上古斧	str		15	20
-21735	泰坦的復仇	儀禮標槍	dmg%		150	200
-21735	泰坦的復仇	儀禮標槍	dmg-norm		25	50
-21735	泰坦的復仇	儀禮標槍	lifesteal		5	9
-21737	萊坎德的準頭	儀禮弓	dmg%		150	200
-21737	萊坎德的準頭	儀禮弓	dmg-norm		25	50
-21737	萊坎德的準頭	儀禮弓	manasteal		5	8
-21743	滅絕	小型咒符	addxp		5	10
-21743	滅絕	小型咒符	all-stats		10	20
-21743	滅絕	小型咒符	res-all		10	20
-21744	亞瑞特的面容	殺手護盔	ac%		150	200
-21744	亞瑞特的面容	殺手護盔	lifesteal		3	6
-21750	加爾的鬃毛	圖騰面具	ac%		150	200
-21755	魔胎	祭司首級	ac%		150	200
-21758	撒卡蘭姆使者	金紋盾	ac%		150	200
-21762	核瞳	渦流水晶	gethit-skill	54	25	1
-21827	萊坎德的側翼	儀禮長槍	dmg%		150	200
-21827	萊坎德的側翼	儀禮長槍	dmg-norm		25	50
-21827	萊坎德的側翼	儀禮長槍	lifesteal		5	9
-21829	金瑟的裂隙	次元刃	dmg%		100	150
-21829	金瑟的裂隙	次元刃	dmg-mag		50	120
-21829	金瑟的裂隙	次元刃	red-mag		7	12
+id	category	idx	Key	itemName	baseName	minAC	maxAC	propName	prop	param	minValue	maxValue
+2574	uniq	4	The Gnasher	噬咬者		0	0	+#% Enhanced Damage	dmg%		60	70
+2575	uniq	5	Deathspade	死亡之鏟		0	0	+#% Enhanced Damage	dmg%		60	70
+2576	uniq	7	Bladebone	肩胛骨		0	0	+#% Enhanced Damage	dmg%		30	50
+2577	uniq	4	Mindrend	劈顱斧		0	0	+# to Maximum Lightning Damage	ltng-max		12	15
+2577	uniq	5	Mindrend	劈顱斧		0	0	+# to Attack Rating	att		50	100
+2577	uniq	6	Mindrend	劈顱斧		0	0	+#% Enhanced Damage	dmg%		60	100
+2578	uniq	6	Rakescar	耙痕		0	0	+#% Enhanced Damage	dmg%		75	150
+2579	uniq	1	Fechmars Axe	費屈瑪之斧		0	0	+#% Enhanced Damage	dmg%		70	90
+2580	uniq	4	Goreshovel	血鍬		0	0	+#% Enhanced Damage	dmg%		40	50
+2581	uniq	2	The Chieftan	酋長		0	0	All Resistances +#	res-all		10	20
+2582	uniq	4	Brainhew	劈腦		0	0	#% Mana stolen per hit	manasteal		10	13
+2582	uniq	5	Brainhew	劈腦		0	0	+#% Enhanced Damage	dmg%		50	80
+2583	uniq	1	The Humongous	巨無霸		0	0	+# to Strength	str		20	30
+2583	uniq	3	The Humongous	巨無霸		0	0	+# to Maximum Damage	dmg-max		15	25
+2583	uniq	6	The Humongous	巨無霸		0	0	+#% Enhanced Damage	dmg%		80	120
+2585	uniq	6	Maelstromwrath	漩渦		0	0	+# to [Skill] ([Class] only)	skill	74	1	3
+2585	uniq	7	Maelstromwrath	漩渦		0	0	+# to [Skill] ([Class] only)	skill	77	1	3
+2585	uniq	8	Maelstromwrath	漩渦		0	0	+# to [Skill] ([Class] only)	skill	66	1	3
+2585	uniq	9	Maelstromwrath	漩渦		0	0	+# to [Skill] ([Class] only)	skill	76	1	3
+2586	uniq	8	Gravenspine	墓穴之脊		0	0	+# to Mana	mana		25	50
+2588	uniq	6	Felloak	魔橡樹		0	0	+#% Enhanced Damage	dmg%		70	80
+2589	uniq	6	Knell Striker	喪鐘敲擊者		0	0	+#% Enhanced Damage	dmg%		70	80
+2590	uniq	5	Rusthandle	鏽蝕把手		0	0	+#% Enhanced Damage	dmg%		50	60
+2590	uniq	6	Rusthandle	鏽蝕把手		0	0	+#% Damage to Undead	dmg-undead		50	60
+2590	uniq	7	Rusthandle	鏽蝕把手		0	0	+# to [Skill] ([Class] only)	skill	111	1	3
+2591	uniq	4	Stormeye	暴風眼		0	0	+#% Enhanced Damage	dmg%		80	120
+2591	uniq	5	Stormeye	暴風眼		0	0	+# to [Skill] ([Class] only)	skill	110	3	5
+2592	uniq	1	Stoutnail	特粗鐵釘		0	0	Attacker Takes Damage of #	thorns		3	10
+2593	uniq	5	Crushflange	碎擊釘錘		0	0	+#% Enhanced Damage	dmg%		50	60
+2595	uniq	6	The Generals Tan Do Li Ga	將軍的連枷		0	0	+#% Enhanced Damage	dmg%		50	60
+2596	uniq	1	Ironstone	鐵石		0	0	+# to Attack Rating	att		100	150
+2596	uniq	2	Ironstone	鐵石		0	0	+#% Enhanced Damage	dmg%		100	150
+2597	uniq	1	Bonesob	碎骨		0	0	+#% Enhanced Damage	dmg%		200	300
+2598	uniq	4	Steeldriver	打鋼鎚		0	0	+#% Enhanced Damage	dmg%		150	250
+2600	uniq	2	Blood Crescent	血紅新月		0	0	+#% Enhanced Damage	dmg%		60	80
+2602	uniq	5	Gleamscythe	閃耀鐮刀		0	0	+#% Enhanced Damage	dmg%		60	100
+2603	uniq	2	Azurewrath	碧藍怒火		0	0	+#% Enhanced Damage	dmg%		230	270
+2603	uniq	3	Azurewrath	碧藍怒火		0	0	Level # [Skill] Aura When Equipped	aura	Sanctuary	10	13
+2603	uniq	6	Azurewrath	碧藍怒火		0	0	+# to all Attributes	all-stats		5	10
+2604	uniq	1	Griswolds Edge	格里斯瓦德之刃		0	0	+# to Minimum Fire Damage	fire-min		10	12
+2604	uniq	2	Griswolds Edge	格里斯瓦德之刃		0	0	+# to Maximum Fire Damage	fire-max		15	25
+2604	uniq	6	Griswolds Edge	格里斯瓦德之刃		0	0	+#% Enhanced Damage	dmg%		80	120
+2605	uniq	6	Hellplague	地獄瘟疫		0	0	+#% Enhanced Damage	dmg%		70	80
+2606	uniq	6	Culwens Point	庫爾溫的尖刃		0	0	+#% Enhanced Damage	dmg%		70	80
+2608	uniq	1	Soulflay	剝魂		0	0	#% Mana stolen per hit	manasteal		4	10
+2608	uniq	3	Soulflay	剝魂		0	0	+#% Enhanced Damage	dmg%		70	100
+2609	uniq	1	Kinemils Awl	金麥爾的鑽錐		0	0	+# to Attack Rating	att		100	150
+2609	uniq	4	Kinemils Awl	金麥爾的鑽錐		0	0	+# to Maximum Fire Damage	fire-max		20	40
+2609	uniq	5	Kinemils Awl	金麥爾的鑽錐		0	0	+#% Enhanced Damage	dmg%		80	100
+2610	uniq	5	Blacktongue	黑舌		0	0	+#% Enhanced Damage	dmg%		50	60
+2611	uniq	4	Ripsaw	齒鋸		0	0	+#% Enhanced Damage	dmg%		80	100
+2612	uniq	5	The Patriarch	尊父		0	0	+#% Enhanced Damage	dmg%		100	120
+2615	uniq	1	The Jade Tan Do	玉匕		0	0	+# to Attack Rating	att		100	150
+2618	uniq	6	Razortine	剃刀叉		0	0	+#% Enhanced Damage	dmg%		30	50
+2619	uniq	3	Bloodthief	血賊		0	0	#% Life stolen per hit	lifesteal		8	12
+2619	uniq	5	Bloodthief	血賊		0	0	+#% Enhanced Damage	dmg%		50	70
+2621	uniq	8	The Tannr Gorerod	坦納血杖		0	0	+#% Enhanced Damage	dmg%		80	100
+2623	uniq	5	Steelgoad	鐵刺棒		0	0	+#% Enhanced Damage	dmg%		60	80
+2623	uniq	6	Steelgoad	鐵刺棒		0	0	Durability: # of #	dur		20	40
+2624	uniq	4	Soul Harvest	靈魂收割者		0	0	+#% Enhanced Damage	dmg%		50	90
+2625	uniq	3	The Battlebranch	戰鬥枝椏		0	0	+#% Enhanced Damage	dmg%		50	70
+2625	uniq	4	The Battlebranch	戰鬥枝椏		0	0	+# to Attack Rating	att		50	100
+2626	uniq	8	Woestave	悲哀護杖		0	0	+#% Enhanced Damage	dmg%		20	40
+2628	uniq	6	Bane Ash	禍根之灰		0	0	+#% Enhanced Damage	dmg%		50	60
+2629	uniq	5	Serpent Lord	海蛇之王		0	0	+#% Enhanced Damage	dmg%		30	40
+2634	uniq	6	Witherstring	凋萎之弦		0	0	+#% Enhanced Damage	dmg%		40	50
+2635	uniq	5	Rimeraven	掠鴉之爪		0	0	+#% Enhanced Damage	dmg%		60	70
+2636	uniq	5	Piercerib	俠盜之弓		0	0	+#% Enhanced Damage	dmg%		40	60
+2637	uniq	6	Pullspite	暴風之擊		0	0	+#% Enhanced Damage	dmg%		70	90
+2638	uniq	5	Wizendraw	凋謝弓弦		0	0	+# to Attack Rating	att		50	100
+2638	uniq	6	Wizendraw	凋謝弓弦		0	0	+#% Enhanced Damage	dmg%		70	80
+2638	uniq	8	Wizendraw	凋謝弓弦		0	0	-#% to Enemy Cold Resistance	pierce-cold		20	35
+2639	uniq	3	Hellclap	地獄轟鳴		0	0	+# to Maximum Fire Damage	fire-max		30	50
+2639	uniq	4	Hellclap	地獄轟鳴		0	0	+# to Attack Rating	att		50	75
+2639	uniq	7	Hellclap	地獄轟鳴		0	0	+#% Enhanced Damage	dmg%		70	90
+2640	uniq	1	Blastbark	爆裂咆哮		0	0	+#% Enhanced Damage	dmg%		70	130
+2643	uniq	6	Hellcast	地獄擲弩		0	0	+#% Enhanced Damage	dmg%		70	80
+2644	uniq	5	Doomspittle	毀滅投索		0	0	+#% Enhanced Damage	dmg%		60	100
+2645	uniq	0	War Bonnet	畢格因的軟帽	便帽	3	5				0	0
+2646	uniq	0	Tarnhelm	塔因頭盔	顱帽	8	11				0	0
+2646	uniq	2	Tarnhelm	塔因頭盔	顱帽	8	11	#% Better Chance of Getting Magic Items	mag%		25	50
+2647	uniq	0	Coif of Glory	光榮罩盔	頭盔	15	18				0	0
+2648	uniq	0	Duskdeep	黃昏深處	全罩盔	23	26				0	0
+2648	uniq	5	Duskdeep	黃昏深處	全罩盔	23	26	+# Defense	ac		10	20
+2648	uniq	6	Duskdeep	黃昏深處	全罩盔	23	26	+#% Enhanced Defense	ac%		30	50
+2649	uniq	0	Wormskull	蠕蟲頭骨	骸骨頭盔	33	36				0	0
+2650	uniq	0	Howltusk	怒號長牙	重盔	30	35				0	0
+2651	uniq	0	Undead Crown	不死皇冠	王冠	25	45				0	0
+2651	uniq	5	Undead Crown	不死皇冠	王冠	25	45	+#% Enhanced Defense	ac%		30	60
+2651	uniq	7	Undead Crown	不死皇冠	王冠	25	45	+# to Attack Rating against Undead	att-undead		50	100
+2652	uniq	0	The Face of Horror	恐懼之臉	面具	9	27				0	0
+2653	uniq	0	Greyform	灰暮之形	棉布甲	8	11				0	0
+2654	uniq	0	Blinkbats Form	閃蝠之軀	皮革甲	14	17				0	0
+2655	uniq	0	The Centurion	百夫長	硬皮甲	21	24				0	0
+2656	uniq	0	Twitchthroe	抽動掙扎	鑲釘皮甲	32	35				0	0
+2657	uniq	0	Darkglow	暗光	環甲	45	48				0	0
+2657	uniq	6	Darkglow	暗光	環甲	45	48	+#% Enhanced Defense	ac%		70	100
+2658	uniq	0	Hawkmail	鷹甲	鱗甲	57	60				0	0
+2658	uniq	1	Hawkmail	鷹甲	鱗甲	57	60	+#% Enhanced Defense	ac%		80	100
+2659	uniq	0	Sparking Mail	電光之甲	鎖鍊甲	72	75				0	0
+2659	uniq	1	Sparking Mail	電光之甲	鎖鍊甲	72	75	+#% Enhanced Defense	ac%		75	85
+2659	uniq	3	Sparking Mail	電光之甲	鎖鍊甲	72	75	Attacker Takes Lightning Damage of #	light-thorns		10	14
+2660	uniq	0	Venomsward	毒之守禦	胸鎧	65	68				0	0
+2660	uniq	5	Venomsward	毒之守禦	胸鎧	65	68	+#% Enhanced Defense	ac%		60	100
+2661	uniq	0	Iceblink	冰晶	板甲	90	95				0	0
+2661	uniq	5	Iceblink	冰晶	板甲	90	95	+#% Enhanced Defense	ac%		70	80
+2662	uniq	0	Boneflesh	骨肉	鎧甲	108	116				0	0
+2662	uniq	2	Boneflesh	骨肉	鎧甲	108	116	+#% Enhanced Defense	ac%		100	120
+2663	uniq	0	Rockfleece	石羊毛	野戰鎧甲	101	105				0	0
+2663	uniq	2	Rockfleece	石羊毛	野戰鎧甲	101	105	+#% Enhanced Defense	ac%		100	130
+2664	uniq	0	Rattlecage	震骨	哥德鎧甲	128	135				0	0
+2665	uniq	0	Goldskin	黃金之膚	全身鎧甲	150	161				0	0
+2665	uniq	1	Goldskin	黃金之膚	全身鎧甲	150	161	+#% Enhanced Defense	ac%		120	150
+2666	uniq	0	Victors Silk	勝利者的絲綢	上古鎧甲	218	233				0	0
+2666	uniq	4	Victors Silk	勝利者的絲綢	上古鎧甲	218	233	+#% Enhanced Defense	ac%		100	120
+2667	uniq	0	Heavenly Garb	天堂裝束	輕型鎧甲	90	107				0	0
+2668	uniq	0	Pelta Lunata	新月小盾	小圓盾	4	6				0	0
+2668	uniq	5	Pelta Lunata	新月小盾	小圓盾	4	6	+#% Enhanced Defense	ac%		30	40
+2668	uniq	8	Pelta Lunata	新月小盾	小圓盾	4	6	Durability: # of #	dur		8	12
+2669	uniq	0	Umbral Disk	陰影圓盤	小型盾	8	10				0	0
+2669	uniq	6	Umbral Disk	陰影圓盤	小型盾	8	10	+#% Enhanced Defense	ac%		40	50
+2669	uniq	8	Umbral Disk	陰影圓盤	小型盾	8	10	Durability: # of #	dur		10	15
+2670	uniq	0	Stormguild	風暴同盟	大型盾	12	14				0	0
+2670	uniq	5	Stormguild	風暴同盟	大型盾	12	14	+#% Enhanced Defense	ac%		50	60
+2670	uniq	8	Stormguild	風暴同盟	大型盾	12	14	Durability: # of #	dur		10	15
+2671	uniq	0	Wall of the Eyeless	無眼者之牆	骨盾	10	30				0	0
+2671	uniq	5	Wall of the Eyeless	無眼者之牆	骨盾	10	30	+#% Enhanced Defense	ac%		30	40
+2672	uniq	0	Swordback Hold	劍棘之盾	尖刺盾	15	25				0	0
+2672	uniq	4	Swordback Hold	劍棘之盾	尖刺盾	15	25		bloody		3	5
+2672	uniq	5	Swordback Hold	劍棘之盾	尖刺盾	15	25	+#% Enhanced Defense	ac%		30	60
+2673	uniq	0	Steelclash	鋼鐵衝擊	鳶盾	16	18				0	0
+2673	uniq	5	Steelclash	鋼鐵衝擊	鳶盾	16	18	+#% Enhanced Defense	ac%		60	100
+2673	uniq	9	Steelclash	鋼鐵衝擊	鳶盾	16	18	Durability: # of #	dur		15	20
+2674	uniq	0	Bverrit Keep	布雷維特要塞	塔盾	22	25				0	0
+2674	uniq	5	Bverrit Keep	布雷維特要塞	塔盾	22	25	+#% Enhanced Defense	ac%		80	120
+2674	uniq	7	Bverrit Keep	布雷維特要塞	塔盾	22	25	Durability: # of #	dur		80	100
+2675	uniq	0	The Ward	庇護結界	哥德盾	30	35				0	0
+2675	uniq	6	The Ward	庇護結界	哥德盾	30	35	All Resistances +#	res-all		30	50
+2676	uniq	0	The Hand of Broc	柏克之手	皮革手套	2	3				0	0
+2676	uniq	6	The Hand of Broc	柏克之手	皮革手套	2	3	+#% Enhanced Defense	ac%		10	20
+2677	uniq	0	Bloodfist	血拳	厚皮手套	5	6				0	0
+2677	uniq	5	Bloodfist	血拳	厚皮手套	5	6	+#% Enhanced Defense	ac%		10	20
+2678	uniq	0	Chance Guards	運氣守護	鍊甲手套	8	9				0	0
+2678	uniq	2	Chance Guards	運氣守護	鍊甲手套	8	9	#% Better Chance of Getting Magic Items	mag%		25	40
+2678	uniq	6	Chance Guards	運氣守護	鍊甲手套	8	9	+#% Enhanced Defense	ac%		20	30
+2679	uniq	0	Magefist	法師之拳	輕型護手	9	11				0	0
+2679	uniq	6	Magefist	法師之拳	輕型護手	9	11	+#% Enhanced Defense	ac%		20	30
+2680	uniq	0	Frostburn	霜燃	鋼鐵護手	12	15				0	0
+2680	uniq	5	Frostburn	霜燃	鋼鐵護手	12	15	+#% Enhanced Defense	ac%		10	20
+2681	uniq	0	Hotspur	熱靴刺	皮靴	2	3				0	0
+2681	uniq	6	Hotspur	熱靴刺	皮靴	2	3	+#% Enhanced Defense	ac%		10	20
+2682	uniq	0	Gorefoot	血腳	重靴	5	6				0	0
+2682	uniq	1	Gorefoot	血腳	重靴	5	6		bloody		3	5
+2682	uniq	6	Gorefoot	血腳	重靴	5	6	+#% Enhanced Defense	ac%		20	30
+2683	uniq	0	Treads of Cthon	凱松的足靴	鎖鍊靴	8	9				0	0
+2683	uniq	6	Treads of Cthon	凱松的足靴	鎖鍊靴	8	9	+#% Enhanced Defense	ac%		30	40
+2684	uniq	0	Goblin Toe	哥布林腳趾	輕鎧靴	9	11				0	0
+2684	uniq	6	Goblin Toe	哥布林腳趾	輕鎧靴	9	11	+#% Enhanced Defense	ac%		50	60
+2685	uniq	0	Tearhaunch	裂臀	護脛	12	15				0	0
+2685	uniq	6	Tearhaunch	裂臀	護脛	12	15	+#% Enhanced Defense	ac%		60	80
+2687	uniq	4	Snakecord	蛇索	輕腰帶	3	3	+#% Enhanced Defense	ac%		20	30
+2688	uniq	6	Nightsmoke	夜煙	腰帶	5	5	+#% Enhanced Defense	ac%		30	50
+2689	uniq	5	Goldwrap	黃金裹腰	厚腰帶	6	6	+#% Enhanced Defense	ac%		40	60
+2689	uniq	6	Goldwrap	黃金裹腰	厚腰帶	6	6	#% Extra Gold from Monsters	gold%		50	80
+2690	uniq	0	Bladebuckle	刀鋒扣帶	鎧甲腰帶	8	11				0	0
+2690	uniq	6	Bladebuckle	刀鋒扣帶	鎧甲腰帶	8	11	+#% Enhanced Defense	ac%		80	100
+2692	uniq	1	The Eye of Etlich	艾利曲之眼		0	0	+# Defense vs. Missile	ac-miss		10	40
+2692	uniq	2	The Eye of Etlich	艾利曲之眼		0	0	+# to Light Radius	light		1	5
+2692	uniq	4	The Eye of Etlich	艾利曲之眼		0	0	#% Life stolen per hit	lifesteal		3	7
+2692	uniq	5	The Eye of Etlich	艾利曲之眼		0	0	+# to Minimum Cold Damage	cold-min		1	2
+2692	uniq	6	The Eye of Etlich	艾利曲之眼		0	0	+# to Maximum Cold Damage	cold-max		3	5
+2692	uniq	7	The Eye of Etlich	艾利曲之眼		0	0		cold-len		50	250
+2694	uniq	3	Nagelring	拿各的戒指		0	0	+# to Attack Rating	att		50	75
+2694	uniq	4	Nagelring	拿各的戒指		0	0	#% Better Chance of Getting Magic Items	mag%		15	30
+2695	uniq	1	Manald Heal	瑪那德的治療		0	0	#% Mana stolen per hit	manasteal		4	7
+2695	uniq	2	Manald Heal	瑪那德的治療		0	0	Replenish Life +#	regen		5	8
+10000	uniq	3	Cutthroat1	霸圖克的割喉爪		0	0	+#% Enhanced Damage	dmg%		150	200
+10000	uniq	8	Cutthroat1	霸圖克的割喉爪		0	0	#% Life stolen per hit	lifesteal		5	9
+10122	set	0	Civerb's Ward	克維雷布的防護	大型盾	12	14				0	0
+10124	set	2	Civerb's Cudgel	克維雷布的短棍		0	0	+# to Maximum Damage	dmg-max		17	23
+10125	set	0	Hsarus' Iron Heel	海沙魯的鐵跟	鎖鍊靴	8	9				0	0
+10126	set	0	Hsarus' Iron Fist	海沙魯的鐵拳	小圓盾	4	6				0	0
+10129	set	0	Cleglaw's Claw	克雷德勞之爪	小型盾	8	10				0	0
+10130	set	0	Cleglaw's Pincers	克雷德勞之鉗	鍊甲手套	8	9				0	0
+10132	set	0	Iratha's Coil	依雷撒的盤頂	王冠	25	45				0	0
+10133	set	0	Iratha's Cuff	依雷撒的袖銬	輕型護手	9	11				0	0
+10135	set	0	Isenhart's Horns	依森哈特的角盔	全罩盔	23	26				0	0
+10136	set	0	Isenhart's Case	依森哈特的外殼	胸鎧	65	68				0	0
+10137	set	0	Isenhart's Parry	依森哈特的招架	哥德盾	30	35				0	0
+10140	set	0	Vidala's Ambush	維達拉的突襲	皮革甲	14	17				0	0
+10141	set	0	Vidala's Fetlock	維達拉的足距	輕鎧靴	9	11				0	0
+10143	set	0	Milabrega's Robe	米拉伯佳外袍	上古鎧甲	218	233				0	0
+10144	set	0	Milabrega's Diadem	米拉伯佳權冠	王冠	25	45				0	0
+10146	set	0	Milabrega's Orb	米拉伯佳之球	鳶盾	16	18				0	0
+10149	set	0	Cathan's Visage	卡珊的容貌	面具	9	27				0	0
+10150	set	0	Cathan's Mesh	卡珊的網衣	鎖鍊甲	72	75				0	0
+10153	set	0	Tancred's Spine	坦克雷的脊柱	全身鎧甲	150	161				0	0
+10154	set	0	Tancred's Hobnails	坦克雷的釘靴	皮靴	2	3				0	0
+10156	set	0	Tancred's Skull	坦克雷的顱骨	骸骨頭盔	33	36				0	0
+10157	set	0	Sigon's Visor	西剛的護面	重盔	30	35				0	0
+10158	set	0	Sigon's Shelter	西剛的庇護	哥德鎧甲	128	135				0	0
+10159	set	0	Sigon's Gage	西剛的挑戰	鋼鐵護手	12	15				0	0
+10160	set	0	Sigon's Sabot	西剛的硬靴	護脛	12	15				0	0
+10161	set	0	Sigon's Wrap	西剛的裹腰	鎧甲腰帶	8	11				0	0
+10162	set	0	Sigon's Guard	西剛的守護	塔盾	22	25				0	0
+10163	set	0	Infernal Cranium	煉獄頭骨	便帽	3	5				0	0
+10166	set	0	Berserker's Headgear	狂戰士頭盔	頭盔	15	18				0	0
+10167	set	0	Berserker's Hauberk	狂戰士鎖子甲	板甲	90	95				0	0
+10169	set	0	Death's Hand	死亡之手	皮革手套	2	3				0	0
+10173	set	0	Angelic Mantle	天使的披風	環甲	45	48				0	0
+10177	set	0	Arctic Furs	北極毛皮	棉布甲	8	11				0	0
+10177	set	1	Arctic Furs	北極毛皮	棉布甲	8	11	+#% Enhanced Defense	ac%		275	325
+10179	set	0	Arctic Mitts	北極手套	輕型護手	9	11				0	0
+10182	set	0	Arcanna's Head	阿卡娜的頭	顱帽	8	11				0	0
+10183	set	0	Arcanna's Flesh	阿卡娜的血肉	輕型鎧甲	90	107				0	0
+10911	uniq	4	Whichwild String	狂巫之弦		0	0	+#% Enhanced Damage	dmg%		150	170
+11153	uniq	1	Hellfire Torch	地獄火炬		0	0	+# to [Class] Skill Levels	randclassskill		0	6
+11153	uniq	2	Hellfire Torch	地獄火炬		0	0	+# to all Attributes	all-stats		10	20
+11153	uniq	3	Hellfire Torch	地獄火炬		0	0	All Resistances +#	res-all		10	20
+20510	rw	3	Runeword4	野獸		0	0	+#% Enhanced Damage	dmg%		240	270
+20510	rw	4	Runeword4	野獸		0	0	+# to Strength	str		25	40
+20514	rw	4	Runeword8	骸骨		0	0	+# to Mana	mana		100	150
+20515	rw	3	Runeword9	刺藤		0	0	Level # [Skill] Aura When Equipped	aura	Thorns	15	21
+20515	rw	5	Runeword9	刺藤		0	0	+#% to Poison Skill Damage	extra-pois		25	50
+20516	rw	1	Runeword10	烙印		0	0	+#% Enhanced Damage	dmg%		260	340
+20516	rw	2	Runeword10	烙印		0	0	+#% Damage to Demons	dmg-demon		280	330
+20517	rw	3	Runeword11	死亡呼吸		0	0	#% Life stolen per hit	lifesteal		12	15
+20517	rw	6	Runeword11	死亡呼吸		0	0	+#% Enhanced Damage	dmg%		350	400
+20519	rw	2	Runeword13	戰爭召喚		0	0	+#% Enhanced Damage	dmg%		200	240
+20519	rw	4	Runeword13	戰爭召喚		0	0	+# to [Skill]	oskill	Battle Command	2	6
+20519	rw	5	Runeword13	戰爭召喚		0	0	+# to [Skill]	oskill	Battle Orders	1	6
+20519	rw	6	Runeword13	戰爭召喚		0	0	+# to [Skill]	oskill	Battle Cry	1	4
+20522	rw	2	Runeword16	混沌		0	0	+#% Enhanced Damage	dmg%		240	290
+20523	rw	3	Runeword17	新月		0	0	+#% Enhanced Damage	dmg%		180	220
+20523	rw	4	Runeword17	新月		0	0	Magic Absorb #%	abs-mag		9	11
+20526	rw	1	Runeword20	死神		0	0	+#% Enhanced Damage	dmg%		300	385
+20532	rw	1	Runeword26	末日		0	0	+#% Enhanced Damage	dmg%		280	320
+20532	rw	5	Runeword26	末日		0	0	-#% to Enemy Cold Resistance	pierce-cold		40	60
+20533	rw	7	Runeword27	飛龍		0	0	+# to all Attributes	all-stats		3	5
+20535	rw	1	Runeword29	夢境		0	0	+# Defense	ac		150	220
+20535	rw	4	Runeword29	夢境		0	0	All Resistances +#	res-all		5	20
+20535	rw	5	Runeword29	夢境		0	0	+#% Faster Hit Recovery	balance3		20	30
+20535	rw	7	Runeword29	夢境		0	0	#% Better Chance of Getting Magic Items	mag%		12	25
+20536	rw	2	Runeword30	強制		0	0	+#% Enhanced Damage	dmg%		10	20
+20536	rw	3	Runeword30	強制		0	0	+#% Enhanced Defense	ac%		150	200
+20537	rw	1	Runeword31	邊緣		0	0	+#% Damage to Demons	dmg-demon		320	380
+20537	rw	6	Runeword31	邊緣		0	0	+# to all Attributes	all-stats		5	10
+20539	rw	1	Runeword33	謎團		0	0	+# Defense	ac		750	775
+20542	rw	1	Runeword36	永恆		0	0	+#% Enhanced Damage	dmg%		260	310
+20543	rw	3	Runeword37	流亡		0	0	+#% Enhanced Defense	ac%		220	260
+20543	rw	4	Runeword37	流亡		0	0	Level # [Skill] Aura When Equipped	aura	Defiance	13	16
+20544	rw	5	Runeword38	信心		0	0	Level # [Skill] Aura When Equipped	aura	Fanaticism	12	15
+20544	rw	7	Runeword38	信心		0	0	+# to All Skills	allskills		1	2
+20545	rw	1	Runeword39	饑荒		0	0	+#% Enhanced Damage	dmg%		270	320
+20546	rw	2	Runeword40	閃爍火焰		0	0	Level # [Skill] Aura When Equipped	aura	Resist Fire	4	8
+20546	rw	3	Runeword40	閃爍火焰		0	0	-#% to Enemy Fire Resistance	pierce-fire		10	15
+20546	rw	4	Runeword40	閃爍火焰		0	0	+# to Mana	mana		50	75
+20547	rw	6	Runeword41	剛毅		0	0	+# to Life (Based on Character Level)	hp/lvl		8	12
+20547	rw	7	Runeword41	剛毅		0	0	All Resistances +#	res-all		25	30
+20551	rw	1	Runeword45	幽暗		0	0	+#% Enhanced Defense	ac%		170	230
+20553	rw	2	Runeword47	悔恨		0	0	Damage +#	dmg		340	400
+20553	rw	3	Runeword47	悔恨		0	0	+#% Increased Attack Speed	swing3		30	40
+20553	rw	5	Runeword47	悔恨		0	0	-#% to Enemy Poison Resistance	pierce-pois		20	25
+20553	rw	7	Runeword47	悔恨		0	0	+# Life after each Kill	heal-kill		10	15
+20554	rw	2	Runeword48	正義之手		0	0	+#% Enhanced Damage	dmg%		280	330
+20555	rw	1	Runeword49	和諧		0	0	+#% Enhanced Damage	dmg%		200	275
+20555	rw	5	Runeword49	和諧		0	0	+# to [Skill]	oskill	Valkyrie	2	6
+20557	rw	6	Runeword51	橡樹之心		0	0	All Resistances +#	res-all		30	40
+20565	rw	1	Runeword59	寒冰		0	0	+#% Enhanced Damage	dmg%		140	210
+20565	rw	3	Runeword59	寒冰		0	0	+#% to Cold Skill Damage	extra-cold		25	30
+20566	rw	1	Runeword60	無限		0	0	+#% Enhanced Damage	dmg%		255	325
+20566	rw	6	Runeword60	無限		0	0	-#% to Enemy Lightning Resistance	pierce-ltng		45	55
+20568	rw	1	Runeword62	靈光		0	0	+#% Enhanced Damage	dmg%		200	260
+20568	rw	2	Runeword62	靈光		0	0	#% Bonus to Attack Rating	att%		180	250
+20568	rw	4	Runeword62	靈光		0	0	+# to [Skill]	oskill	Critical Strike	1	6
+20568	rw	6	Runeword62	靈光		0	0	Level # [Skill] Aura When Equipped	aura	Meditation	12	17
+20572	rw	2	Runeword66	弒王者		0	0	+#% Enhanced Damage	dmg%		230	270
+20575	rw	1	Runeword69	最後遺願		0	0	+#% Enhanced Damage	dmg%		330	375
+20575	rw	5	Runeword69	最後遺願		0	0	#% Chance of Crushing Blow	crush		40	50
+20577	rw	3	Runeword71	執法者		0	0	Level # [Skill] Aura When Equipped	aura	Sanctuary	16	18
+20577	rw	5	Runeword71	執法者		0	0	+# Defense vs. Missile	ac-miss		200	250
+20589	rw	2	Runeword84	迷霧		0	0	+#% Enhanced Damage	dmg%		325	375
+20589	rw	3	Runeword84	迷霧		0	0	Level # [Skill] Aura When Equipped	aura	Concentration	8	12
+20596	rw	1	Runeword91	誓約		0	0	+#% Enhanced Damage	dmg%		210	340
+20596	rw	6	Runeword91	誓約		0	0	Magic Absorb #%	abs-mag		10	15
+20597	rw	5	Runeword92	遵從		0	0	+# Defense	ac		200	300
+20597	rw	7	Runeword92	遵從		0	0	All Resistances +#	res-all		20	30
+20599	rw	5	Runeword94	執念		0	0	All Resistances +#	res-all		60	70
+20599	rw	6	Runeword94	執念		0	0	Increase Maximum Life #%	hp%		15	25
+20599	rw	7	Runeword94	執念		0	0	Regenerate Mana #%	regen-mana		15	30
+20600	rw	1	Runeword95	熱情		0	0	+#% Enhanced Damage	dmg%		160	210
+20600	rw	3	Runeword95	熱情		0	0	#% Bonus to Attack Rating	att%		50	80
+20602	rw	2	Runeword97	圖紋		0	0	+#% Enhanced Damage	dmg%		40	80
+20604	rw	1	Runeword99	理性之聲		0	0	+#% Damage to Demons	dmg-demon		220	350
+20604	rw	2	Runeword99	理性之聲		0	0	+#% Damage to Undead	dmg-undead		280	300
+20608	rw	1	Runeword103	鳳凰		0	0	+#% Enhanced Damage	dmg%		350	400
+20608	rw	2	Runeword103	鳳凰		0	0	+# Defense vs. Missile	ac-miss		350	400
+20608	rw	6	Runeword103	鳳凰		0	0	Level # [Skill] Aura When Equipped	aura	Redemption	10	15
+20608	rw	7	Runeword103	鳳凰		0	0	Fire Absorb #%	abs-fire		15	21
+20611	rw	1	Runeword106	瘟疫		0	0	+#% Enhanced Damage	dmg%		220	320
+20611	rw	6	Runeword106	瘟疫		0	0	Level # [Skill] Aura When Equipped	aura	Cleansing	13	17
+20611	rw	7	Runeword106	瘟疫		0	0	+# to All Skills	allskills		1	2
+20614	rw	3	Runeword109	驕傲		0	0	#% Bonus to Attack Rating	att%		260	300
+20614	rw	4	Runeword109	驕傲		0	0	Level # [Skill] Aura When Equipped	aura	Concentration	16	20
+20615	rw	3	Runeword110	原則		0	0	+# to Life	hp		100	150
+20617	rw	1	Runeword112	謹慎		0	0	+#% Enhanced Defense	ac%		140	170
+20617	rw	4	Runeword112	謹慎		0	0	All Resistances +#	res-all		25	35
+20622	rw	4	Runeword117	降雨		0	0	+# to Mana	mana		100	150
+20626	rw	7	Runeword121	裂隙		0	0	+# to all Attributes	all-stats		5	10
+20627	rw	3	Runeword122	聖堂		0	0	+#% Enhanced Defense	ac%		130	160
+20627	rw	5	Runeword122	聖堂		0	0	All Resistances +#	res-all		50	70
+20635	rw	2	Runeword130	精神		0	0	+# to Mana	mana		89	112
+20635	rw	5	Runeword130	精神		0	0	+#% Faster Cast Rate	cast3		25	35
+20635	rw	6	Runeword130	精神		0	0	Magic Absorb #%	abs-mag		3	8
+20636	rw	4	Runeword131	燦爛		0	0	+#% Enhanced Defense	ac%		60	100
+20642	rw	1	Runeword137	石塊		0	0	+#% Enhanced Defense	ac%		220	260
+20656	rw	3	Runeword151	不屈意志		0	0	+#% Increased Attack Speed	swing2		20	30
+20656	rw	4	Runeword151	不屈意志		0	0	+#% Enhanced Damage	dmg%		300	350
+20656	rw	7	Runeword151	不屈意志		0	0	#% Life stolen per hit	lifesteal		8	10
+20668	rw	1	Runeword163	輕風		0	0	+#% Enhanced Damage	dmg%		120	160
+20670	rw	2	Runeword165	智慧		0	0	#% Mana stolen per hit	manasteal		4	8
+20670	rw	3	Runeword165	智慧		0	0	#% Bonus to Attack Rating	att%		15	25
+20673	rw	2	Runeword168	憤怒		0	0	+#% Damage to Undead	dmg-undead		250	300
+21286	uniq	7	Coldkill	冷殺		0	0	+#% Enhanced Damage	dmg%		150	190
+21288	uniq	3	Butcher's Pupil	屠夫的徒弟		0	0	+#% Enhanced Damage	dmg%		150	200
+21289	uniq	8	Islestrike	島擊		0	0	+#% Enhanced Damage	dmg%		170	190
+21290	uniq	5	Pompe's Wrath	龐貝之怒		0	0	+#% Enhanced Damage	dmg%		140	170
+21291	uniq	4	Guardian Naga	那伽守護者		0	0	+#% Enhanced Damage	dmg%		150	180
+21293	uniq	3	Spellsteel	鋼鐵魔咒		0	0	Magic Damage Reduced by #	red-mag		12	15
+21294	uniq	2	Stormrider	暴風騎士		0	0	#% Chance to cast level # [Skill] on striking	hit-skill	38	10	0
+21295	uniq	6	Boneslayer Blade	斬骨者之斧		0	0	+#% Enhanced Damage	dmg%		180	220
+21295	uniq	8	Boneslayer Blade	斬骨者之斧		0	0	#% Chance to cast level # [Skill] when struck	gethit-skill	101	50	0
+21301	uniq	5	Dark Clan Crusher	闇族碎滅者		0	0	#% Bonus to Attack Rating	att%		20	25
+21304	uniq	5	The Fetid Sprinkler	惡臭散佈者		0	0	+#% Enhanced Damage	dmg%		160	190
+21304	uniq	6	The Fetid Sprinkler	惡臭散佈者		0	0	+# to Attack Rating	att		150	200
+21305	uniq	2	Hand of Blessed Light	聖光之手		0	0	+#% Enhanced Damage	dmg%		130	160
+21306	uniq	6	Fleshrender	血肉撕裂者		0	0	+#% Enhanced Damage	dmg%		130	200
+21307	uniq	3	Sureshrill Frost	尖嘯冰霜		0	0	+#% Enhanced Damage	dmg%		150	180
+21308	uniq	3	Moonfall	月落		0	0	Magic Damage Reduced by #	red-mag		9	12
+21308	uniq	4	Moonfall	月落		0	0	+#% Enhanced Damage	dmg%		120	150
+21311	uniq	2	Bloodtree Stump	血樹殘株		0	0	+#% Enhanced Damage	dmg%		180	220
+21312	uniq	6	The Gavel of Pain	痛苦之槌		0	0	+#% Enhanced Damage	dmg%		130	160
+21313	uniq	7	Bloodletter	放血者		0	0	+# to [Skill] ([Class] only)	skill	127	2	4
+21313	uniq	8	Bloodletter	放血者		0	0	+# to [Skill] ([Class] only)	skill	151	1	3
+21315	uniq	6	Hexfire	妖火		0	0	+#% Enhanced Damage	dmg%		140	160
+21316	uniq	5	Blade of Ali Baba	阿里巴巴之刃		0	0	+#% Enhanced Damage	dmg%		60	120
+21316	uniq	6	Blade of Ali Baba	阿里巴巴之刃		0	0	+# to Dexterity	dex		5	15
+21321	uniq	5	Crainte Vomir	恐懼之嘔		0	0	+#% Enhanced Damage	dmg%		160	200
+21322	uniq	6	Bing Sz Wang	冰之王		0	0	+#% Enhanced Damage	dmg%		130	160
+21323	uniq	5	The Vile Husk	兇邪軀殼		0	0	+#% Enhanced Damage	dmg%		150	200
+21324	uniq	6	Cloudcrack	雲裂		0	0	+#% Enhanced Damage	dmg%		150	200
+21325	uniq	5	Todesfaelle Flamme	死落之火		0	0	+#% Enhanced Damage	dmg%		120	160
+21326	uniq	3	Swordguard	劍衛		0	0	All Resistances +#	res-all		10	20
+21326	uniq	6	Swordguard	劍衛		0	0	+#% Enhanced Damage	dmg%		170	180
+21327	uniq	6	Spineripper	裂脊者		0	0	+#% Enhanced Damage	dmg%		200	240
+21328	uniq	4	Heart Carver	刨心者		0	0	+#% Enhanced Damage	dmg%		190	240
+21331	uniq	6	The Impaler	刺穿者		0	0	+#% Enhanced Damage	dmg%		140	170
+21332	uniq	6	Kelpie Snare	水魔陷阱		0	0	+#% Enhanced Damage	dmg%		140	180
+21333	uniq	5	Soulfeast Tine	噬魂叉		0	0	+#% Enhanced Damage	dmg%		150	190
+21333	uniq	6	Soulfeast Tine	噬魂叉		0	0	+# to Attack Rating	att		150	250
+21334	uniq	5	Hone Sundan	骨寸斷		0	0	+#% Enhanced Damage	dmg%		160	200
+21335	uniq	7	Spire of Honor	榮耀尖塔		0	0	+#% Enhanced Damage	dmg%		150	200
+21336	uniq	1	The Meat Scraper	刮肉者		0	0	+#% Enhanced Damage	dmg%		150	200
+21337	uniq	6	Blackleach Blade	黑蛭長刀		0	0	+#% Enhanced Damage	dmg%		100	140
+21338	uniq	1	Athena's Wrath	雅典娜之怒		0	0	+# to Druid Skill Levels	dru		1	3
+21338	uniq	6	Athena's Wrath	雅典娜之怒		0	0	+#% Enhanced Damage	dmg%		150	180
+21339	uniq	6	Pierre Tombale Couant	墓石長戟		0	0	+#% Enhanced Damage	dmg%		160	220
+21339	uniq	7	Pierre Tombale Couant	墓石長戟		0	0	+# to Attack Rating	att		100	200
+21340	uniq	2	Husoldal Evo	血肉吞食者		0	0	+# to Attack Rating	att		200	250
+21340	uniq	5	Husoldal Evo	血肉吞食者		0	0	+#% Enhanced Damage	dmg%		160	200
+21341	uniq	3	Grim's Burning Dead	懼焰亡靈		0	0	+#% Enhanced Damage	dmg%		140	180
+21341	uniq	9	Grim's Burning Dead	懼焰亡靈		0	0	+# to Attack Rating	att		200	250
+21342	uniq	2	Ribcracker	肋骨粉碎者		0	0	+#% Enhanced Damage	dmg%		200	300
+21343	uniq	2	Chromatic Ire	炫彩之怒		0	0	All Resistances +#	res-all		20	40
+21343	uniq	5	Chromatic Ire	炫彩之怒		0	0	Increase Maximum Life #%	hp%		20	25
+21346	uniq	5	Skystrike	天擊		0	0	+#% Enhanced Damage	dmg%		150	200
+21347	uniq	3	Kuko Shakaku	社角久子		0	0	+#% Enhanced Damage	dmg%		150	180
+21350	uniq	1	Godstrike Arch	金擊之拱		0	0	+#% Enhanced Damage	dmg%		200	250
+21350	uniq	2	Godstrike Arch	金擊之拱		0	0	#% Bonus to Attack Rating	att%		100	150
+21350	uniq	3	Godstrike Arch	金擊之拱		0	0	+#% Damage to Undead	dmg-undead		100	200
+21350	uniq	4	Godstrike Arch	金擊之拱		0	0	+#% Damage to Demons	dmg-demon		100	200
+21351	uniq	2	Langer Briser	蘭古布利薩		0	0	+#% Enhanced Damage	dmg%		170	200
+21351	uniq	3	Langer Briser	蘭古布利薩		0	0	#% Better Chance of Getting Magic Items	mag%		30	60
+21351	uniq	5	Langer Briser	蘭古布利薩		0	0	+# to Maximum Damage	dmg-max		10	30
+21352	uniq	7	Pus Spiter	吐膿毒弩		0	0	+#% Enhanced Damage	dmg%		150	220
+21353	uniq	3	Buriza-Do Kyanon	暴雪砲弩		0	0	+# Defense	ac		75	150
+21353	uniq	6	Buriza-Do Kyanon	暴雪砲弩		0	0	+#% Enhanced Damage	dmg%		150	200
+21354	uniq	0	Vampiregaze	吸血鬼的凝視	陰森頭盔	60	125				0	0
+21354	uniq	1	Vampiregaze	吸血鬼的凝視	陰森頭盔	60	125	#% Mana stolen per hit	manasteal		6	8
+21354	uniq	2	Vampiregaze	吸血鬼的凝視	陰森頭盔	60	125	#% Life stolen per hit	lifesteal		6	8
+21354	uniq	4	Vampiregaze	吸血鬼的凝視	陰森頭盔	60	125	Damage Reduced by #%	red-dmg%		15	20
+21354	uniq	5	Vampiregaze	吸血鬼的凝視	陰森頭盔	60	125	Magic Damage Reduced by #	red-mag		10	15
+21355	uniq	0	String of Ears	長串之耳	魔皮束帶	29	34				0	0
+21355	uniq	1	String of Ears	長串之耳	魔皮束帶	29	34	Magic Damage Reduced by #	red-mag		10	15
+21355	uniq	2	String of Ears	長串之耳	魔皮束帶	29	34	Damage Reduced by #%	red-dmg%		10	15
+21355	uniq	3	String of Ears	長串之耳	魔皮束帶	29	34	#% Life stolen per hit	lifesteal		6	8
+21355	uniq	4	String of Ears	長串之耳	魔皮束帶	29	34	+#% Enhanced Defense	ac%		150	180
+21356	uniq	0	Gorerider	蝕肉騎士	征戰靴	43	53				0	0
+21356	uniq	6	Gorerider	蝕肉騎士	征戰靴	43	53	+#% Enhanced Defense	ac%		160	200
+21357	uniq	0	Lavagout	熔岩之痛	戰鬥護手	39	47				0	0
+21357	uniq	5	Lavagout	熔岩之痛	戰鬥護手	39	47	+#% Enhanced Defense	ac%		150	200
+21358	uniq	0	Venom Grip	劇毒之握	魔皮手套	28	35				0	0
+21358	uniq	6	Venom Grip	劇毒之握	魔皮手套	28	35	+# Defense	ac		15	25
+21358	uniq	7	Venom Grip	劇毒之握	魔皮手套	28	35	+#% Enhanced Defense	ac%		130	160
+21359	uniq	0	Visceratuant	維斯爾坦特	防禦盾	41	49				0	0
+21359	uniq	4	Visceratuant	維斯爾坦特	防禦盾	41	49	+#% Enhanced Defense	ac%		100	150
+21361	uniq	0	Shaftstop	箭止	鐵網戰甲	198	213				0	0
+21361	uniq	4	Shaftstop	箭止	鐵網戰甲	198	213	+#% Enhanced Defense	ac%		180	220
+21362	uniq	0	Skin of the Vipermagi	蛇魔法師之皮	海蛇皮甲	111	126				0	0
+21362	uniq	2	Skin of the Vipermagi	蛇魔法師之皮	海蛇皮甲	111	126	All Resistances +#	res-all		20	35
+21362	uniq	4	Skin of the Vipermagi	蛇魔法師之皮	海蛇皮甲	111	126	Magic Damage Reduced by #	red-mag		9	13
+21364	uniq	0	Valkiry Wing	女武神之翼	翼盔	85	98				0	0
+21364	uniq	1	Valkiry Wing	女武神之翼	翼盔	85	98	+#% Enhanced Defense	ac%		150	200
+21364	uniq	4	Valkiry Wing	女武神之翼	翼盔	85	98	+# to Amazon Skill Levels	ama		1	2
+21364	uniq	5	Valkiry Wing	女武神之翼	翼盔	85	98	+# to Mana after each Kill	mana-kill		2	4
+21365	uniq	0	Peasent Crown	農夫王冠	戰帽	45	53				0	0
+21365	uniq	5	Peasent Crown	農夫王冠	戰帽	45	53	Replenish Life +#	regen		6	12
+21367	uniq	2	Magewrath	巫師之怒		0	0	Magic Damage Reduced by #	red-mag		9	13
+21367	uniq	4	Magewrath	巫師之怒		0	0	+# to Attack Rating	att		200	250
+21367	uniq	8	Magewrath	巫師之怒		0	0	+#% Enhanced Damage	dmg%		120	150
+21368	uniq	2	Cliffkiller	懸崖殺手		0	0	+#% Enhanced Damage	dmg%		190	230
+21368	uniq	6	Cliffkiller	懸崖殺手		0	0	+# to Minimum Damage	dmg-min		5	10
+21368	uniq	7	Cliffkiller	懸崖殺手		0	0	+# to Maximum Damage	dmg-max		20	30
+21369	uniq	2	Riphook	撕裂之鉤		0	0	+#% Enhanced Damage	dmg%		180	220
+21369	uniq	6	Riphook	撕裂之鉤		0	0	#% Life stolen per hit	lifesteal		7	10
+21372	uniq	5	Coldsteel Eye	冰鋼之眼		0	0	+#% Enhanced Damage	dmg%		200	250
+21375	uniq	2	Ondal's Wisdom	溫達的智慧		0	0	+# to Energy	enr		40	50
+21375	uniq	3	Ondal's Wisdom	溫達的智慧		0	0	+# to All Skills	allskills		2	4
+21375	uniq	4	Ondal's Wisdom	溫達的智慧		0	0	+# Defense	ac		450	550
+21375	uniq	6	Ondal's Wisdom	溫達的智慧		0	0	Magic Damage Reduced by #	red-mag		5	8
+21379	uniq	2	Deathbit	死亡尖鑽		0	0	+#% Enhanced Damage	dmg%		130	180
+21379	uniq	3	Deathbit	死亡尖鑽		0	0	+# to Attack Rating	att		200	450
+21379	uniq	4	Deathbit	死亡尖鑽		0	0	#% Life stolen per hit	lifesteal		7	9
+21379	uniq	5	Deathbit	死亡尖鑽		0	0	#% Mana stolen per hit	manasteal		4	6
+21380	uniq	1	Warshrike	戰爭之鳥		0	0	+#% Enhanced Damage	dmg%		200	250
+21381	uniq	1	Gutsiphon	內臟吸管		0	0	+#% Enhanced Damage	dmg%		160	220
+21381	uniq	3	Gutsiphon	內臟吸管		0	0	#% Life stolen per hit	lifesteal		12	18
+21382	uniq	1	Razoredge	剃刀銳斧		0	0	+#% Enhanced Damage	dmg%		175	225
+21387	uniq	1	Demonlimb	惡魔肢體		0	0	+#% Enhanced Damage	dmg%		180	230
+21387	uniq	3	Demonlimb	惡魔肢體		0	0	#% Life stolen per hit	lifesteal		7	13
+21387	uniq	7	Demonlimb	惡魔肢體		0	0	Fire Resist +#%	res-fire		15	20
+21388	uniq	0	Steelshade	鋼影	覆頰盔	105	149				0	0
+21388	uniq	1	Steelshade	鋼影	覆頰盔	105	149	+#% Enhanced Defense	ac%		100	130
+21388	uniq	2	Steelshade	鋼影	覆頰盔	105	149	Fire Absorb #%	abs-fire		5	11
+21388	uniq	3	Steelshade	鋼影	覆頰盔	105	149	#% Mana stolen per hit	manasteal		4	8
+21388	uniq	4	Steelshade	鋼影	覆頰盔	105	149	Replenish Life +#	regen		10	18
+21389	uniq	3	Tomb Reaver	盜墓者		0	0	+#% Enhanced Damage	dmg%		200	280
+21389	uniq	4	Tomb Reaver	盜墓者		0	0	+#% Damage to Undead	dmg-undead		150	230
+21389	uniq	5	Tomb Reaver	盜墓者		0	0	#% Better Chance of Getting Magic Items	mag%		50	80
+21389	uniq	6	Tomb Reaver	盜墓者		0	0	All Resistances +#	res-all		30	50
+21389	uniq	7	Tomb Reaver	盜墓者		0	0	+# to Attack Rating against Undead	att-undead		250	350
+21389	uniq	9	Tomb Reaver	盜墓者		0	0	+# Life after each Kill	heal-kill		10	14
+21389	uniq	10	Tomb Reaver	盜墓者		0	0	Socketed (#)	sock		1	3
+21394	uniq	1	The Reedeemer	懺悔者		0	0	+#% Enhanced Damage	dmg%		250	300
+21394	uniq	2	The Reedeemer	懺悔者		0	0	+#% Damage to Demons	dmg-demon		200	250
+21394	uniq	5	The Reedeemer	懺悔者		0	0	+# to [Skill] ([Class] only)	skill	Redemption	2	4
+21394	uniq	6	The Reedeemer	懺悔者		0	0	+# to [Skill] ([Class] only)	skill	Holy Bolt	2	4
+21394	uniq	9	The Reedeemer	懺悔者		0	0	Damage +#	dmg		60	120
+21398	uniq	1	Bonehew	破骨		0	0	+#% Enhanced Damage	dmg%		270	320
+21399	uniq	0	Steelrend	碎鋼	巨魔護手	62	71				0	0
+21399	uniq	1	Steelrend	碎鋼	巨魔護手	62	71	+# Defense	ac		170	210
+21399	uniq	2	Steelrend	碎鋼	巨魔護手	62	71	+# to Strength	str		15	20
+21399	uniq	3	Steelrend	碎鋼	巨魔護手	62	71	+#% Enhanced Damage	dmg%		30	60
+21400	uniq	1	Stone Crusher	碎石者		0	0	+#% Enhanced Damage	dmg%		280	320
+21400	uniq	2	Stone Crusher	碎石者		0	0	+# to Strength	str		20	30
+21400	uniq	6	Stone Crusher	碎石者		0	0	Damage +#	dmg		10	30
+21402	uniq	1	Arioc's Needle	愛理歐克之針		0	0	+#% Enhanced Damage	dmg%		180	230
+21402	uniq	5	Arioc's Needle	愛理歐克之針		0	0	+# to All Skills	allskills		2	4
+21403	uniq	0	Shadowdancer	影舞者	勇士護脛	62	71				0	0
+21403	uniq	1	Shadowdancer	影舞者	勇士護脛	62	71	+#% Enhanced Defense	ac%		70	100
+21403	uniq	4	Shadowdancer	影舞者	勇士護脛	62	71	+# to Dexterity	dex		15	25
+21403	uniq	5	Shadowdancer	影舞者	勇士護脛	62	71	+# to [Class Skill Tab] Skills	skilltab	19	1	2
+21407	uniq	0	Souldrain	吸魂者	護臂	59	67				0	0
+21407	uniq	1	Souldrain	吸魂者	護臂	59	67	+#% Enhanced Defense	ac%		90	120
+21407	uniq	2	Souldrain	吸魂者	護臂	59	67	#% Mana stolen per hit	manasteal		4	7
+21407	uniq	3	Souldrain	吸魂者	護臂	59	67	#% Life stolen per hit	lifesteal		4	7
+21408	uniq	1	Runemaster	符文大師		0	0	+#% Enhanced Damage	dmg%		220	270
+21408	uniq	2	Runemaster	符文大師		0	0	Socketed (#)	sock		3	5
+21409	uniq	1	Deathcleaver	死亡劈斧		0	0	+#% Enhanced Damage	dmg%		230	280
+21409	uniq	5	Deathcleaver	死亡劈斧		0	0	+# Life after each Kill	heal-kill		6	9
+21410	uniq	1	Executioner's Justice	劊子手的裁決		0	0	+#% Enhanced Damage	dmg%		240	290
+21412	uniq	0	Leviathan	利維坦	海怪之殼	417	523				0	0
+21412	uniq	1	Leviathan	利維坦	海怪之殼	417	523	+#% Enhanced Defense	ac%		170	200
+21412	uniq	2	Leviathan	利維坦	海怪之殼	417	523	+# Defense	ac		100	150
+21412	uniq	3	Leviathan	利維坦	海怪之殼	417	523	Damage Reduced by #%	red-dmg%		15	25
+21412	uniq	4	Leviathan	利維坦	海怪之殼	417	523	+# to Strength	str		40	50
+21417	uniq	1	Wisp	鬼火投射者		0	0	+# Lightning Absorb	abs-ltng%		10	20
+21417	uniq	3	Wisp	鬼火投射者		0	0	#% Better Chance of Getting Magic Items	mag%		10	20
+21418	uniq	1	Gargoyle's Bite	石像鬼之噬		0	0	+#% Enhanced Damage	dmg%		180	230
+21418	uniq	4	Gargoyle's Bite	石像鬼之噬		0	0	#% Life stolen per hit	lifesteal		9	15
+21419	uniq	1	Lacerator	撕裂者		0	0	+#% Enhanced Damage	dmg%		150	210
+21420	uniq	2	Mang Song's Lesson	曼宋的教誨		0	0	-#% to Enemy Fire Resistance	pierce-fire		7	15
+21420	uniq	3	Mang Song's Lesson	曼宋的教誨		0	0	-#% to Enemy Lightning Resistance	pierce-ltng		7	15
+21420	uniq	4	Mang Song's Lesson	曼宋的教誨		0	0	-#% to Enemy Cold Resistance	pierce-cold		7	15
+21421	uniq	1	Viperfork	蛇魔叉		0	0	+#% Enhanced Damage	dmg%		190	240
+21421	uniq	4	Viperfork	蛇魔叉		0	0	+# to Attack Rating	att		200	250
+21421	uniq	6	Viperfork	蛇魔叉		0	0	Poison Resist +#%	res-pois		30	50
+21425	uniq	0	Demonhorn's Edge	惡魔角尖	毀滅者頭盔	111	156				0	0
+21425	uniq	1	Demonhorn's Edge	惡魔角尖	毀滅者頭盔	111	156	+#% Enhanced Defense	ac%		120	160
+21425	uniq	3	Demonhorn's Edge	惡魔角尖	毀滅者頭盔	111	156	#% Life stolen per hit	lifesteal		3	6
+21425	uniq	4	Demonhorn's Edge	惡魔角尖	毀滅者頭盔	111	156	Attacker Takes Damage of #	thorns		55	77
+21425	uniq	5	Demonhorn's Edge	惡魔角尖	毀滅者頭盔	111	156	+# to [Class Skill Tab] Skills	skilltab	12	1	3
+21425	uniq	6	Demonhorn's Edge	惡魔角尖	毀滅者頭盔	111	156	+# to [Class Skill Tab] Skills	skilltab	13	1	3
+21425	uniq	7	Demonhorn's Edge	惡魔角尖	毀滅者頭盔	111	156	+# to [Class Skill Tab] Skills	skilltab	14	1	3
+21427	uniq	1	The Reaper's Toll	死神喪鐘		0	0	+#% Enhanced Damage	dmg%		190	240
+21427	uniq	4	The Reaper's Toll	死神喪鐘		0	0	#% Life stolen per hit	lifesteal		11	15
+21428	uniq	0	Spiritkeeper	魂靈守衛者	地土靈獸帽	107	152				0	0
+21428	uniq	1	Spiritkeeper	魂靈守衛者	地土靈獸帽	107	152	+#% Enhanced Defense	ac%		170	190
+21428	uniq	3	Spiritkeeper	魂靈守衛者	地土靈獸帽	107	152	Lightning Absorb #%	abs-ltng		9	14
+21428	uniq	4	Spiritkeeper	魂靈守衛者	地土靈獸帽	107	152	Fire Resist +#%	res-fire		30	40
+21428	uniq	5	Spiritkeeper	魂靈守衛者	地土靈獸帽	107	152	+# Cold Absorb	abs-cold%		15	25
+21428	uniq	7	Spiritkeeper	魂靈守衛者	地土靈獸帽	107	152	+# to Druid Skill Levels	dru		1	2
+21429	uniq	1	Hellrack	地獄刑具		0	0	+#% Enhanced Damage	dmg%		180	230
+21429	uniq	4	Hellrack	地獄刑具		0	0	#% Bonus to Attack Rating	att%		100	150
+21430	uniq	0	Alma Negra	黑魂	神聖輕圓盾	138	164				0	0
+21430	uniq	1	Alma Negra	黑魂	神聖輕圓盾	138	164	+#% Enhanced Defense	ac%		180	210
+21430	uniq	3	Alma Negra	黑魂	神聖輕圓盾	138	164	+# to Paladin Skill Levels	pal		1	2
+21430	uniq	5	Alma Negra	黑魂	神聖輕圓盾	138	164	Magic Damage Reduced by #	red-mag		5	9
+21430	uniq	6	Alma Negra	黑魂	神聖輕圓盾	138	164	#% Bonus to Attack Rating	att%		40	75
+21430	uniq	7	Alma Negra	黑魂	神聖輕圓盾	138	164	+#% Enhanced Damage	dmg%		40	75
+21431	uniq	0	Darkforge Spawn	魔力肇生	鮮血之王顱骨	103	148				0	0
+21431	uniq	1	Darkforge Spawn	魔力肇生	鮮血之王顱骨	103	148	+#% Enhanced Defense	ac%		140	180
+21431	uniq	4	Darkforge Spawn	魔力肇生	鮮血之王顱骨	103	148	+# to [Class Skill Tab] Skills	skilltab	6	1	3
+21431	uniq	5	Darkforge Spawn	魔力肇生	鮮血之王顱骨	103	148	+# to [Class Skill Tab] Skills	skilltab	7	1	3
+21431	uniq	6	Darkforge Spawn	魔力肇生	鮮血之王顱骨	103	148	+# to [Class Skill Tab] Skills	skilltab	8	1	3
+21438	uniq	1	Ghostflame	鬼火		0	0	+#% Enhanced Damage	dmg%		190	240
+21438	uniq	4	Ghostflame	鬼火		0	0	#% Mana stolen per hit	manasteal		10	15
+21439	uniq	1	Shadowkiller	影殺者		0	0	+#% Enhanced Damage	dmg%		170	220
+21439	uniq	4	Shadowkiller	影殺者		0	0	+# to Mana after each Kill	mana-kill		10	15
+21442	uniq	0	Griffon's Eye	獅鷲之眼	權冠	50	60				0	0
+21442	uniq	1	Griffon's Eye	獅鷲之眼	權冠	50	60	+# Defense	ac		100	200
+21442	uniq	4	Griffon's Eye	獅鷲之眼	權冠	50	60	+#% to Lightning Skill Damage	extra-ltng		10	15
+21442	uniq	5	Griffon's Eye	獅鷲之眼	權冠	50	60	-#% to Enemy Lightning Resistance	pierce-ltng		15	20
+21444	uniq	1	Windhammer	風之鎚		0	0	+#% Enhanced Damage	dmg%		180	230
+21445	uniq	1	Thunderstroke	雷霆之擊		0	0	+#% Enhanced Damage	dmg%		150	200
+21445	uniq	7	Thunderstroke	雷霆之擊		0	0	+# to [Class Skill Tab] Skills	skilltab	2	2	4
+21447	uniq	1	Demon's Arch	惡魔之拱		0	0	+#% Enhanced Damage	dmg%		160	210
+21447	uniq	3	Demon's Arch	惡魔之拱		0	0	#% Life stolen per hit	lifesteal		6	12
+21448	uniq	2	The Scalper	頭皮剝斧		0	0	+#% Enhanced Damage	dmg%		150	200
+21448	uniq	6	The Scalper	頭皮剝斧		0	0	#% Life stolen per hit	lifesteal		4	6
+21449	uniq	1	Bloodmoon	血月		0	0	+#% Enhanced Damage	dmg%		210	260
+21449	uniq	2	Bloodmoon	血月		0	0	#% Life stolen per hit	lifesteal		10	15
+21449	uniq	4	Bloodmoon	血月		0	0	+# Life after each Kill	heal-kill		7	13
+21450	uniq	1	Djinnslayer	巨靈殺手		0	0	+#% Enhanced Damage	dmg%		190	240
+21450	uniq	3	Djinnslayer	巨靈殺手		0	0	+#% Damage to Demons	dmg-demon		100	150
+21450	uniq	4	Djinnslayer	巨靈殺手		0	0	+# to Attack Rating against Demons	att-demon		200	300
+21450	uniq	5	Djinnslayer	巨靈殺手		0	0	Lightning Absorb #%	abs-ltng		3	7
+21450	uniq	6	Djinnslayer	巨靈殺手		0	0	#% Mana stolen per hit	manasteal		3	6
+21450	uniq	7	Djinnslayer	巨靈殺手		0	0	Socketed (#)	sock		1	2
+21451	uniq	1	Cranebeak	鶴嘴		0	0	+#% Enhanced Damage	dmg%		240	300
+21451	uniq	5	Cranebeak	鶴嘴		0	0	#% Better Chance of Getting Magic Items	mag%		20	50
+21455	uniq	0	Headhunter's Glory	獵頭者的榮耀	食人妖骨盾	158	173				0	0
+21455	uniq	1	Headhunter's Glory	獵頭者的榮耀	食人妖骨盾	158	173	+# Defense	ac		320	420
+21455	uniq	2	Headhunter's Glory	獵頭者的榮耀	食人妖骨盾	158	173	+# Defense vs. Missile	ac-miss		300	350
+21455	uniq	3	Headhunter's Glory	獵頭者的榮耀	食人妖骨盾	158	173	Poison Resist +#%	res-pois		30	40
+21455	uniq	4	Headhunter's Glory	獵頭者的榮耀	食人妖骨盾	158	173	Socketed (#)	sock		1	3
+21455	uniq	5	Headhunter's Glory	獵頭者的榮耀	食人妖骨盾	158	173	Fire Resist +#%	res-fire		20	30
+21455	uniq	6	Headhunter's Glory	獵頭者的榮耀	食人妖骨盾	158	173	+# Life after each Kill	heal-kill		5	7
+21461	uniq	1	Earthshifter	撼地者		0	0	+#% Enhanced Damage	dmg%		250	300
+21462	uniq	3	Nature's Peace	自然祥和		0	0	Damage Reduced by #	red-dmg		7	11
+21462	uniq	4	Nature's Peace	自然祥和		0	0	Poison Resist +#%	res-pois		20	30
+21464	uniq	2	Seraph's Hymn	熾天使之韻		0	0	+# to [Class Skill Tab] Skills	skilltab	11	1	2
+21464	uniq	3	Seraph's Hymn	熾天使之韻		0	0	+#% Damage to Demons	dmg-demon		25	50
+21464	uniq	4	Seraph's Hymn	熾天使之韻		0	0	+#% Damage to Undead	dmg-undead		25	50
+21464	uniq	5	Seraph's Hymn	熾天使之韻		0	0	+# to Attack Rating against Demons	att-demon		150	250
+21464	uniq	6	Seraph's Hymn	熾天使之韻		0	0	+# to Attack Rating against Undead	att-undead		150	250
+21466	uniq	1	Fleshripper	裂肉者		0	0	+#% Enhanced Damage	dmg%		200	300
+21469	uniq	1	Horizon's Tornado	地平線的龍捲風		0	0	+#% Enhanced Damage	dmg%		230	280
+21470	uniq	1	Nord's Tenderizer	北地肉鎚		0	0	+#% Enhanced Damage	dmg%		270	330
+21470	uniq	2	Nord's Tenderizer	北地肉鎚		0	0	Freezes Target +#	freeze		2	4
+21470	uniq	5	Nord's Tenderizer	北地肉鎚		0	0	#% Bonus to Attack Rating	att%		150	180
+21470	uniq	6	Nord's Tenderizer	北地肉鎚		0	0	+# Cold Absorb	abs-cold%		5	15
+21473	uniq	1	Jadetalon	碧玉爪		0	0	+#% Enhanced Damage	dmg%		190	240
+21473	uniq	2	Jadetalon	碧玉爪		0	0	#% Mana stolen per hit	manasteal		10	15
+21473	uniq	3	Jadetalon	碧玉爪		0	0	All Resistances +#	res-all		40	50
+21473	uniq	5	Jadetalon	碧玉爪		0	0	+# to [Class Skill Tab] Skills	skilltab	19	1	2
+21473	uniq	6	Jadetalon	碧玉爪		0	0	+# to [Class Skill Tab] Skills	skilltab	20	1	2
+21476	uniq	0	Cerebus	地獄犬之咬	血系靈獸帽	101	145				0	0
+21476	uniq	1	Cerebus	地獄犬之咬	血系靈獸帽	101	145	+#% Enhanced Defense	ac%		130	140
+21476	uniq	2	Cerebus	地獄犬之咬	血系靈獸帽	101	145	+# to [Class Skill Tab] Skills	skilltab	16	2	4
+21476	uniq	3	Cerebus	地獄犬之咬	血系靈獸帽	101	145	#% Life stolen per hit	lifesteal		7	10
+21476	uniq	4	Cerebus	地獄犬之咬	血系靈獸帽	101	145	#% Bonus to Attack Rating	att%		60	120
+21476	uniq	6	Cerebus	地獄犬之咬	血系靈獸帽	101	145	+# to [Skill] ([Class] only)	skill	feral rage	1	2
+21482	uniq	1	Stoneraven	石鴉		0	0	+#% Enhanced Damage	dmg%		230	280
+21482	uniq	3	Stoneraven	石鴉		0	0	All Resistances +#	res-all		30	50
+21482	uniq	4	Stoneraven	石鴉		0	0	+# Defense	ac		400	600
+21482	uniq	5	Stoneraven	石鴉		0	0	+# to [Class Skill Tab] Skills	skilltab	2	1	3
+21508	uniq	1	Bloodraven's Charge	血鴉之擊		0	0	+#% Enhanced Damage	dmg%		180	230
+21508	uniq	2	Bloodraven's Charge	血鴉之擊		0	0	#% Bonus to Attack Rating	att%		200	300
+21508	uniq	4	Bloodraven's Charge	血鴉之擊		0	0	+# to [Class Skill Tab] Skills	skilltab	0	2	4
+21512	uniq	1	Wraithflight	死靈夜翔		0	0	+#% Enhanced Damage	dmg%		150	190
+21512	uniq	3	Wraithflight	死靈夜翔		0	0	#% Life stolen per hit	lifesteal		9	13
+21516	uniq	0	Medusa's Gaze	梅杜莎的凝視	禦塔盾	145	161				0	0
+21516	uniq	1	Medusa's Gaze	梅杜莎的凝視	禦塔盾	145	161	+#% Enhanced Defense	ac%		150	180
+21516	uniq	4	Medusa's Gaze	梅杜莎的凝視	禦塔盾	145	161	#% Life stolen per hit	lifesteal		5	9
+21516	uniq	6	Medusa's Gaze	梅杜莎的凝視	禦塔盾	145	161	Cold Resist +#%	res-cold		40	80
+21519	uniq	0	Rockstopper	石禦	便盔	52	62				0	0
+21519	uniq	1	Rockstopper	石禦	便盔	52	62	Lightning Resist +#%	res-ltng		20	40
+21519	uniq	4	Rockstopper	石禦	便盔	52	62	+#% Enhanced Defense	ac%		160	220
+21519	uniq	5	Rockstopper	石禦	便盔	52	62	Fire Resist +#%	res-fire		20	50
+21519	uniq	6	Rockstopper	石禦	便盔	52	62	Cold Resist +#%	res-cold		20	40
+21520	uniq	0	Stealskull	盜竊顱盔	兜盔	63	72				0	0
+21520	uniq	5	Stealskull	盜竊顱盔	兜盔	63	72	+#% Enhanced Defense	ac%		200	240
+21520	uniq	6	Stealskull	盜竊顱盔	兜盔	63	72	#% Better Chance of Getting Magic Items	mag%		30	50
+21521	uniq	0	Darksight Helm	暗視之盔	輕盔	75	84				0	0
+21521	uniq	7	Darksight Helm	暗視之盔	輕盔	75	84	Fire Resist +#%	res-fire		20	40
+21522	uniq	0	Crown of Thieves	盜賊皇冠	莊嚴王冠	78	113				0	0
+21522	uniq	2	Crown of Thieves	盜賊皇冠	莊嚴王冠	78	113	#% Life stolen per hit	lifesteal		9	12
+21522	uniq	6	Crown of Thieves	盜賊皇冠	莊嚴王冠	78	113	+#% Enhanced Defense	ac%		160	200
+21522	uniq	7	Crown of Thieves	盜賊皇冠	莊嚴王冠	78	113	#% Extra Gold from Monsters	gold%		80	100
+21523	uniq	0	Blackhorn's Face	黑荊角面具	死亡面具	54	86				0	0
+21523	uniq	6	Blackhorn's Face	黑荊角面具	死亡面具	54	86	+#% Enhanced Defense	ac%		180	220
+21524	uniq	0	The Spirit Shroud	靈魂帷幕	鬼魂戰衣	102	117				0	0
+21524	uniq	3	The Spirit Shroud	靈魂帷幕	鬼魂戰衣	102	117	Magic Damage Reduced by #	red-mag		7	11
+21526	uniq	0	Ironpelt	鋼鐵獸皮	格網護甲	138	153				0	0
+21526	uniq	3	Ironpelt	鋼鐵獸皮	格網護甲	138	153	Magic Damage Reduced by #	red-mag		10	16
+21526	uniq	4	Ironpelt	鋼鐵獸皮	格網護甲	138	153	Damage Reduced by #	red-dmg		15	20
+21526	uniq	6	Ironpelt	鋼鐵獸皮	格網護甲	138	153	+#% Enhanced Defense	ac%		50	100
+21527	uniq	0	Spiritforge	靈魂熔爐	鍊扣戰甲	158	172				0	0
+21527	uniq	5	Spiritforge	靈魂熔爐	鍊扣戰甲	158	172	+#% Enhanced Defense	ac%		120	160
+21528	uniq	0	Crow Caw	鴉啼	鎖鱗戰甲	176	190				0	0
+21528	uniq	2	Crow Caw	鴉啼	鎖鱗戰甲	176	190	+#% Enhanced Defense	ac%		150	180
+21528	uniq	6	Crow Caw	鴉啼	鎖鱗戰甲	176	190		*charged	221	3	5
+21529	uniq	0	Duriel's Shell	都瑞爾之殼	護胸甲	188	202				0	0
+21529	uniq	4	Duriel's Shell	都瑞爾之殼	護胸甲	188	202	+#% Enhanced Defense	ac%		160	200
+21530	uniq	0	Skullder's Ire	斯寇德的憤怒	赤褐戰甲	225	243				0	0
+21530	uniq	3	Skullder's Ire	斯寇德的憤怒	赤褐戰甲	225	243	+#% Enhanced Defense	ac%		160	200
+21531	uniq	0	Toothrow	排齒	鯊齒戰甲	242	258				0	0
+21531	uniq	1	Toothrow	排齒	鯊齒戰甲	242	258	Attacker Takes Damage of #	thorns		20	40
+21531	uniq	2	Toothrow	排齒	鯊齒戰甲	242	258	+# Defense	ac		40	60
+21531	uniq	6	Toothrow	排齒	鯊齒戰甲	242	258	+#% Enhanced Defense	ac%		160	220
+21532	uniq	0	Atma's Wail	亞特瑪的哭喊	雕紋戰甲	282	303				0	0
+21532	uniq	7	Atma's Wail	亞特瑪的哭喊	雕紋戰甲	282	303	+#% Enhanced Defense	ac%		120	160
+21533	uniq	0	Black Hades	黑色黑帝斯	混沌戰甲	315	342				0	0
+21533	uniq	2	Black Hades	黑色黑帝斯	混沌戰甲	315	342	+# to Attack Rating against Demons	att-demon		200	250
+21533	uniq	5	Black Hades	黑色黑帝斯	混沌戰甲	315	342	+#% Enhanced Defense	ac%		140	200
+21533	uniq	6	Black Hades	黑色黑帝斯	混沌戰甲	315	342	+#% Damage to Demons	dmg-demon		30	60
+21534	uniq	0	Corpsemourn	屍慟	華麗戰甲	417	450				0	0
+21534	uniq	5	Corpsemourn	屍慟	華麗戰甲	417	450	+#% Enhanced Defense	ac%		150	180
+21537	uniq	0	Stormchaser	風暴追逐者	大圓盾	53	61				0	0
+21537	uniq	6	Stormchaser	風暴追逐者	大圓盾	53	61	+#% Enhanced Defense	ac%		160	220
+21538	uniq	0	Tiamat's Rebuke	魔龍的非難	龍盾	59	67				0	0
+21538	uniq	4	Tiamat's Rebuke	魔龍的非難	龍盾	59	67	All Resistances +#	res-all		25	35
+21538	uniq	5	Tiamat's Rebuke	魔龍的非難	龍盾	59	67	+#% Enhanced Defense	ac%		140	200
+21540	uniq	0	Radimant's Sphere	羅達門特的領域	上古盾	80	93				0	0
+21540	uniq	4	Radimant's Sphere	羅達門特的領域	上古盾	80	93	+#% Enhanced Defense	ac%		160	200
+21541	uniq	0	Gravepalm	墓穴手掌	鯊皮手套	33	39				0	0
+21541	uniq	3	Gravepalm	墓穴手掌	鯊皮手套	33	39	+#% Damage to Undead	dmg-undead		100	200
+21541	uniq	4	Gravepalm	墓穴手掌	鯊皮手套	33	39	+# to Attack Rating against Undead	att-undead		100	200
+21541	uniq	5	Gravepalm	墓穴手掌	鯊皮手套	33	39	+#% Enhanced Defense	ac%		140	180
+21542	uniq	0	Ghoulhide	食屍鬼之皮	重型護腕	37	44				0	0
+21542	uniq	3	Ghoulhide	食屍鬼之皮	重型護腕	37	44	#% Mana stolen per hit	manasteal		4	5
+21542	uniq	5	Ghoulhide	食屍鬼之皮	重型護腕	37	44	+#% Enhanced Defense	ac%		150	190
+21543	uniq	0	Hellmouth	地獄之口	征戰護手	43	53				0	0
+21543	uniq	3	Hellmouth	地獄之口	征戰護手	43	53	+#% Enhanced Defense	ac%		150	200
+21544	uniq	0	Infernostride	地獄闊步	魔皮長靴	28	35				0	0
+21544	uniq	6	Infernostride	地獄闊步	魔皮長靴	28	35	+#% Enhanced Defense	ac%		120	150
+21544	uniq	7	Infernostride	地獄闊步	魔皮長靴	28	35	#% Extra Gold from Monsters	gold%		40	70
+21545	uniq	0	Waterwalk	水上飄	鯊皮靴	33	39				0	0
+21545	uniq	4	Waterwalk	水上飄	鯊皮靴	33	39	+#% Enhanced Defense	ac%		180	210
+21545	uniq	5	Waterwalk	水上飄	鯊皮靴	33	39	+# to Life	hp		45	65
+21546	uniq	0	Silkweave	紗織	鐵網靴	37	44				0	0
+21546	uniq	1	Silkweave	紗織	鐵網靴	37	44	+#% Enhanced Defense	ac%		150	190
+21547	uniq	0	Wartraveler	戰爭旅者	戰鬥靴	39	47				0	0
+21547	uniq	3	Wartraveler	戰爭旅者	戰鬥靴	39	47	#% Better Chance of Getting Magic Items	mag%		30	50
+21547	uniq	6	Wartraveler	戰爭旅者	戰鬥靴	39	47	+#% Enhanced Defense	ac%		150	190
+21547	uniq	8	Wartraveler	戰爭旅者	戰鬥靴	39	47	Attacker Takes Damage of #	thorns		5	10
+21548	uniq	0	Razortail	剃刀之尾	鯊皮腰帶	31	36				0	0
+21548	uniq	5	Razortail	剃刀之尾	鯊皮腰帶	31	36	+#% Enhanced Defense	ac%		120	150
+21549	uniq	0	Gloomstrap	陰影陷阱	鐵網腰帶	35	40				0	0
+21549	uniq	4	Gloomstrap	陰影陷阱	鐵網腰帶	35	40	+#% Enhanced Defense	ac%		120	150
+21550	uniq	0	Snowclash	冰雪交織	戰鬥腰帶	37	42				0	0
+21550	uniq	1	Snowclash	冰雪交織	戰鬥腰帶	37	42	#% Chance to cast level # [Skill] when struck	gethit-skill	59	5	0
+21550	uniq	5	Snowclash	冰雪交織	戰鬥腰帶	37	42	+#% Enhanced Defense	ac%		130	170
+21551	uniq	0	Thudergod's Vigor	雷神之力	征戰腰帶	41	52				0	0
+21551	uniq	5	Thudergod's Vigor	雷神之力	征戰腰帶	41	52	+#% Enhanced Defense	ac%		160	200
+21552	uniq	0	Lidless Wall	警戒之牆	陰森盾牌	50	150				0	0
+21552	uniq	4	Lidless Wall	警戒之牆	陰森盾牌	50	150	+# to Mana after each Kill	mana-kill		3	5
+21552	uniq	5	Lidless Wall	警戒之牆	陰森盾牌	50	150	+#% Enhanced Defense	ac%		80	130
+21555	uniq	0	Boneflame	骨焰	魅魔顱骨	100	146				0	0
+21555	uniq	1	Boneflame	骨焰	魅魔顱骨	100	146	+#% Enhanced Defense	ac%		120	150
+21555	uniq	4	Boneflame	骨焰	魅魔顱骨	100	146	+# to Necromancer Skill Levels	nec		2	3
+21555	uniq	5	Boneflame	骨焰	魅魔顱骨	100	146	All Resistances +#	res-all		20	30
+21556	uniq	1	Steelpillar	鋼鐵之柱		0	0	+#% Enhanced Damage	dmg%		210	260
+21556	uniq	4	Steelpillar	鋼鐵之柱		0	0	+#% Enhanced Defense	ac%		50	80
+21557	uniq	0	Nightwing's Veil	夜翼面紗	巨角頭盔	114	159				0	0
+21557	uniq	1	Nightwing's Veil	夜翼面紗	巨角頭盔	114	159	+#% Enhanced Defense	ac%		90	120
+21557	uniq	3	Nightwing's Veil	夜翼面紗	巨角頭盔	114	159	+# to Dexterity	dex		10	20
+21557	uniq	4	Nightwing's Veil	夜翼面紗	巨角頭盔	114	159	Cold Absorb #%	abs-cold		5	9
+21557	uniq	6	Nightwing's Veil	夜翼面紗	巨角頭盔	114	159	+#% to Cold Skill Damage	extra-cold		8	15
+21559	uniq	0	Crown of Ages	歲月之冠	日冕之冠	111	165				0	0
+21559	uniq	2	Crown of Ages	歲月之冠	日冕之冠	111	165	All Resistances +#	res-all		20	30
+21559	uniq	4	Crown of Ages	歲月之冠	日冕之冠	111	165	+# Defense	ac		100	150
+21559	uniq	6	Crown of Ages	歲月之冠	日冕之冠	111	165	Damage Reduced by #%	red-dmg%		10	15
+21559	uniq	8	Crown of Ages	歲月之冠	日冕之冠	111	165	Socketed (#)	sock		1	2
+21560	uniq	0	Andariel's Visage	安達莉爾的面貌	惡魔頭骨	101	154				0	0
+21560	uniq	1	Andariel's Visage	安達莉爾的面貌	惡魔頭骨	101	154	+#% Enhanced Defense	ac%		100	150
+21560	uniq	6	Andariel's Visage	安達莉爾的面貌	惡魔頭骨	101	154	+# to Strength	str		25	30
+21560	uniq	9	Andariel's Visage	安達莉爾的面貌	惡魔頭骨	101	154	#% Life stolen per hit	lifesteal		8	10
+21561	uniq	0	Darkfear	黑暗恐懼	覆頰盔	105	149				0	0
+21562	uniq	0	Dragonscale	龍鱗	撒卡蘭姆盾	169	193				0	0
+21562	uniq	1	Dragonscale	龍鱗	撒卡蘭姆盾	169	193	+#% Enhanced Defense	ac%		170	200
+21562	uniq	2	Dragonscale	龍鱗	撒卡蘭姆盾	169	193	+# Fire Absorb	abs-fire%		10	20
+21562	uniq	4	Dragonscale	龍鱗	撒卡蘭姆盾	169	193	+# to Strength	str		15	25
+21563	uniq	0	Steel Carapice	鋼鐵甲殼	暗影鎧甲	446	557				0	0
+21563	uniq	1	Steel Carapice	鋼鐵甲殼	暗影鎧甲	446	557	+#% Enhanced Defense	ac%		190	220
+21563	uniq	3	Steel Carapice	鋼鐵甲殼	暗影鎧甲	446	557	Damage Reduced by #	red-dmg		9	14
+21563	uniq	4	Steel Carapice	鋼鐵甲殼	暗影鎧甲	446	557	Cold Resist +#%	res-cold		40	60
+21563	uniq	5	Steel Carapice	鋼鐵甲殼	暗影鎧甲	446	557	Regenerate Mana #%	regen-mana		10	15
+21565	uniq	2	Rainbow Facet	彩虹刻面		0	0	-#% to Enemy Cold Resistance	pierce-cold		3	5
+21565	uniq	2	Rainbow Facet	彩虹刻面		0	0	-#% to Enemy Fire Resistance	pierce-fire		3	5
+21565	uniq	2	Rainbow Facet	彩虹刻面		0	0	-#% to Enemy Lightning Resistance	pierce-ltng		3	5
+21565	uniq	2	Rainbow Facet	彩虹刻面		0	0	-#% to Enemy Poison Resistance	pierce-pois		3	5
+21565	uniq	3	Rainbow Facet	彩虹刻面		0	0	+#% to Cold Skill Damage	extra-cold		3	5
+21565	uniq	3	Rainbow Facet	彩虹刻面		0	0	+#% to Fire Skill Damage	extra-fire		3	5
+21565	uniq	3	Rainbow Facet	彩虹刻面		0	0	+#% to Lightning Skill Damage	extra-ltng		3	5
+21565	uniq	3	Rainbow Facet	彩虹刻面		0	0	+#% to Poison Skill Damage	extra-pois		3	5
+21566	uniq	0	Ravenlore	掠鴉之王	天翔靈獸帽	103	155				0	0
+21566	uniq	1	Ravenlore	掠鴉之王	天翔靈獸帽	103	155	+#% Enhanced Defense	ac%		120	150
+21566	uniq	2	Ravenlore	掠鴉之王	天翔靈獸帽	103	155	All Resistances +#	res-all		15	25
+21566	uniq	4	Ravenlore	掠鴉之王	天翔靈獸帽	103	155	+# to Energy	enr		20	30
+21566	uniq	5	Ravenlore	掠鴉之王	天翔靈獸帽	103	155	-#% to Enemy Fire Resistance	pierce-fire		10	20
+21567	uniq	3	Boneshade	骸骨陰影		0	0	+# to [Skill] ([Class] only)	skill	Teeth	4	5
+21567	uniq	4	Boneshade	骸骨陰影		0	0	+# to [Skill] ([Class] only)	skill	Bone Armor	4	5
+21567	uniq	5	Boneshade	骸骨陰影		0	0	+# to [Skill] ([Class] only)	skill	Bone Spear	2	3
+21567	uniq	6	Boneshade	骸骨陰影		0	0	+# to [Skill] ([Class] only)	skill	Bone Spirit	1	2
+21567	uniq	7	Boneshade	骸骨陰影		0	0	+# to [Skill] ([Class] only)	skill	Bone Wall	2	3
+21570	uniq	1	Flamebellow	火嚎		0	0	+#% Enhanced Damage	dmg%		170	240
+21570	uniq	4	Flamebellow	火嚎		0	0	+# Fire Absorb	abs-fire%		20	30
+21570	uniq	6	Flamebellow	火嚎		0	0	+# to Strength	str		10	20
+21570	uniq	7	Flamebellow	火嚎		0	0	+# to Vitality	vit		5	10
+21570	uniq	8	Flamebellow	火嚎		0	0	+# to [Skill]	oskill	Inferno	12	18
+21571	uniq	2	Fathom	死亡深度		0	0	+#% to Cold Skill Damage	extra-cold		15	30
+21571	uniq	4	Fathom	死亡深度		0	0	Fire Resist +#%	res-fire		25	40
+21571	uniq	5	Fathom	死亡深度		0	0	Lightning Resist +#%	res-ltng		25	40
+21572	uniq	0	Wolfhowl	狼嚎	暴怒面甲	105	150				0	0
+21572	uniq	1	Wolfhowl	狼嚎	暴怒面甲	105	150	+#% Enhanced Defense	ac%		120	150
+21572	uniq	2	Wolfhowl	狼嚎	暴怒面甲	105	150	+# to [Class Skill Tab] Skills	skilltab	14	2	3
+21572	uniq	3	Wolfhowl	狼嚎	暴怒面甲	105	150	+# to Strength	str		8	15
+21572	uniq	4	Wolfhowl	狼嚎	暴怒面甲	105	150	+# to Dexterity	dex		8	15
+21572	uniq	5	Wolfhowl	狼嚎	暴怒面甲	105	150	+# to Vitality	vit		8	15
+21572	uniq	6	Wolfhowl	狼嚎	暴怒面甲	105	150	+# to [Skill]	oskill	Wearwolf	3	6
+21572	uniq	8	Wolfhowl	狼嚎	暴怒面甲	105	150	+# to [Skill]	oskill	Shape Shifting	3	6
+21572	uniq	9	Wolfhowl	狼嚎	暴怒面甲	105	150	+# to [Skill]	oskill	Feral Rage	3	6
+21573	uniq	0	Spirit Ward	魂系結界	庇護盾	153	170				0	0
+21573	uniq	1	Spirit Ward	魂系結界	庇護盾	153	170	+#% Enhanced Defense	ac%		130	180
+21573	uniq	2	Spirit Ward	魂系結界	庇護盾	153	170	Cold Absorb #%	abs-cold		6	11
+21573	uniq	3	Spirit Ward	魂系結界	庇護盾	153	170	All Resistances +#	res-all		30	40
+21573	uniq	4	Spirit Ward	魂系結界	庇護盾	153	170	#% Increased Chance of Blocking	block		20	30
+21574	uniq	0	Kira's Guardian	奇拉的守護	頭冠	40	50				0	0
+21574	uniq	1	Kira's Guardian	奇拉的守護	頭冠	40	50	+# Defense	ac		50	120
+21574	uniq	2	Kira's Guardian	奇拉的守護	頭冠	40	50	All Resistances +#	res-all		50	70
+21576	uniq	1	Gheed's Fortune	基德的財運		0	0	#% Better Chance of Getting Magic Items	mag%		20	40
+21576	uniq	2	Gheed's Fortune	基德的財運		0	0	#% Extra Gold from Monsters	gold%		80	160
+21576	uniq	3	Gheed's Fortune	基德的財運		0	0	Reduces all Vendor Prices #%	cheap		10	15
+21578	uniq	1	Stormlash	暴風之鞭		0	0	+#% Enhanced Damage	dmg%		240	300
+21578	uniq	8	Stormlash	暴風之鞭		0	0	Lightning Absorb #%	abs-ltng		3	9
+21579	uniq	0	Halaberd's Reign	海拉柏德的國度	征服者盔冠	114	159				0	0
+21579	uniq	1	Halaberd's Reign	海拉柏德的國度	征服者盔冠	114	159	+#% Enhanced Defense	ac%		140	170
+21579	uniq	5	Halaberd's Reign	海拉柏德的國度	征服者盔冠	114	159	Replenish Life +#	regen		15	23
+21579	uniq	6	Halaberd's Reign	海拉柏德的國度	征服者盔冠	114	159	+# to [Skill] ([Class] only)	skill	Battle Orders	1	2
+21579	uniq	7	Halaberd's Reign	海拉柏德的國度	征服者盔冠	114	159	+# to [Skill] ([Class] only)	skill	Battle Command	1	2
+21582	uniq	0	Spike Thorn	尖刺荊棘	刀刃刺盾	147	163				0	0
+21582	uniq	1	Spike Thorn	尖刺荊棘	刀刃刺盾	147	163	+#% Enhanced Defense	ac%		120	150
+21582	uniq	5	Spike Thorn	尖刺荊棘	刀刃刺盾	147	163	Damage Reduced by #%	red-dmg%		15	20
+21583	uniq	0	Dracul's Grasp	德古拉之握	吸血鬼骸骨手套	56	65				0	0
+21583	uniq	1	Dracul's Grasp	德古拉之握	吸血鬼骸骨手套	56	65	+#% Enhanced Defense	ac%		90	120
+21583	uniq	2	Dracul's Grasp	德古拉之握	吸血鬼骸骨手套	56	65	#% Life stolen per hit	lifesteal		7	10
+21583	uniq	5	Dracul's Grasp	德古拉之握	吸血鬼骸骨手套	56	65	+# Life after each Kill	heal-kill		5	10
+21583	uniq	6	Dracul's Grasp	德古拉之握	吸血鬼骸骨手套	56	65	+# to Strength	str		10	15
+21584	uniq	1	Frostwind	霜風		0	0	+#% Enhanced Damage	dmg%		180	230
+21584	uniq	6	Frostwind	霜風		0	0	+# Cold Absorb	abs-cold%		7	15
+21584	uniq	7	Frostwind	霜風		0	0	+# to [Skill]	oskill	Arctic Blast	7	14
+21585	uniq	0	Templar's Might	聖堂騎士之力	神聖戰甲	487	600				0	0
+21585	uniq	1	Templar's Might	聖堂騎士之力	神聖戰甲	487	600	+#% Enhanced Defense	ac%		170	220
+21585	uniq	3	Templar's Might	聖堂騎士之力	神聖戰甲	487	600	+# Defense vs. Missile	ac-miss		250	300
+21585	uniq	4	Templar's Might	聖堂騎士之力	神聖戰甲	487	600	+# Maximum Stamina	stam		40	50
+21585	uniq	5	Templar's Might	聖堂騎士之力	神聖戰甲	487	600	+# to Strength	str		10	15
+21585	uniq	6	Templar's Might	聖堂騎士之力	神聖戰甲	487	600	+# to Vitality	vit		10	15
+21585	uniq	7	Templar's Might	聖堂騎士之力	神聖戰甲	487	600	+# to [Class Skill Tab] Skills	skilltab	10	1	2
+21586	uniq	1	Eschuta's temper	艾斯屈塔的憤怒		0	0	+# to Sorceress Skill Levels	sor		1	3
+21586	uniq	3	Eschuta's temper	艾斯屈塔的憤怒		0	0	+#% to Fire Skill Damage	extra-fire		10	20
+21586	uniq	4	Eschuta's temper	艾斯屈塔的憤怒		0	0	+#% to Lightning Skill Damage	extra-ltng		10	20
+21586	uniq	5	Eschuta's temper	艾斯屈塔的憤怒		0	0	+# to Energy	enr		20	30
+21587	uniq	1	Firelizard's Talons	火蜥蜴之爪		0	0	+#% Enhanced Damage	dmg%		200	270
+21587	uniq	3	Firelizard's Talons	火蜥蜴之爪		0	0	+# to [Class Skill Tab] Skills	skilltab	20	1	3
+21587	uniq	5	Firelizard's Talons	火蜥蜴之爪		0	0	Fire Resist +#%	res-fire		40	70
+21587	uniq	6	Firelizard's Talons	火蜥蜴之爪		0	0	+# to [Skill] ([Class] only)	skill	Wake of Fire Sentry	1	2
+21587	uniq	7	Firelizard's Talons	火蜥蜴之爪		0	0	+# to [Skill] ([Class] only)	skill	Inferno Sentry	1	2
+21588	uniq	0	Sandstorm Trek	沙暴之旅	聖甲蟲殼皮靴	56	65				0	0
+21588	uniq	1	Sandstorm Trek	沙暴之旅	聖甲蟲殼皮靴	56	65	+#% Enhanced Defense	ac%		140	170
+21588	uniq	6	Sandstorm Trek	沙暴之旅	聖甲蟲殼皮靴	56	65	Poison Resist +#%	res-pois		40	70
+21588	uniq	8	Sandstorm Trek	沙暴之旅	聖甲蟲殼皮靴	56	65	+# to Strength	str		10	15
+21588	uniq	9	Sandstorm Trek	沙暴之旅	聖甲蟲殼皮靴	56	65	+# to Vitality	vit		10	15
+21589	uniq	0	Marrowwalk	骨髓行走	骸骨網靴	59	67				0	0
+21589	uniq	1	Marrowwalk	骨髓行走	骸骨網靴	59	67	+#% Enhanced Defense	ac%		170	200
+21589	uniq	8	Marrowwalk	骨髓行走	骸骨網靴	59	67	+# to Strength	str		10	20
+21589	uniq	10	Marrowwalk	骨髓行走	骸骨網靴	59	67	+# to [Skill] ([Class] only)	skill	Skeleton Mastery	1	2
+21590	uniq	1	Heaven's Light	天堂之光		0	0	+#% Enhanced Damage	dmg%		250	300
+21590	uniq	5	Heaven's Light	天堂之光		0	0	+# Life after each Demon Kill	demon-heal		15	20
+21590	uniq	7	Heaven's Light	天堂之光		0	0	Socketed (#)	sock		1	3
+21590	uniq	8	Heaven's Light	天堂之光		0	0	+# to Paladin Skill Levels	pal		2	3
+21592	uniq	0	Arachnid Mesh	蜘蛛之網	蛛網束帶	55	62				0	0
+21592	uniq	1	Arachnid Mesh	蜘蛛之網	蛛網束帶	55	62	+#% Enhanced Defense	ac%		90	120
+21593	uniq	0	Nosferatu's Coil	吸血鬼王之圈	吸血鬼牙腰帶	56	63				0	0
+21593	uniq	4	Nosferatu's Coil	吸血鬼王之圈	吸血鬼牙腰帶	56	63	#% Life stolen per hit	lifesteal		5	7
+21595	uniq	0	Verdugo's Hearty Cord	伐頓戈的強韌腰索	秘銀腰帶	58	65				0	0
+21595	uniq	1	Verdugo's Hearty Cord	伐頓戈的強韌腰索	秘銀腰帶	58	65	+#% Enhanced Defense	ac%		90	140
+21595	uniq	2	Verdugo's Hearty Cord	伐頓戈的強韌腰索	秘銀腰帶	58	65	+# to Vitality	vit		30	40
+21595	uniq	3	Verdugo's Hearty Cord	伐頓戈的強韌腰索	秘銀腰帶	58	65	+# Maximum Stamina	stam		100	120
+21595	uniq	5	Verdugo's Hearty Cord	伐頓戈的強韌腰索	秘銀腰帶	58	65	Damage Reduced by #%	red-dmg%		10	15
+21595	uniq	6	Verdugo's Hearty Cord	伐頓戈的強韌腰索	秘銀腰帶	58	65	Replenish Life +#	regen		10	13
+21597	uniq	1	Carrion Wind	腐肉之風		0	0	+# Defense vs. Missile	ac-miss		100	160
+21597	uniq	2	Carrion Wind	腐肉之風		0	0	#% Life stolen per hit	lifesteal		6	9
+21598	uniq	0	Giantskull	巨大顱骨	骸骨面罩	100	157				0	0
+21598	uniq	1	Giantskull	巨大顱骨	骸骨面罩	100	157	+# Defense	ac		250	320
+21598	uniq	2	Giantskull	巨大顱骨	骸骨面罩	100	157	+# to Strength	str		25	35
+21598	uniq	4	Giantskull	巨大顱骨	骸骨面罩	100	157	Socketed (#)	sock		1	2
+21599	uniq	1	Ironward	愛斯特龍的鐵衛		0	0	+#% Enhanced Damage	dmg%		240	290
+21599	uniq	3	Ironward	愛斯特龍的鐵衛		0	0	#% Bonus to Attack Rating	att%		150	200
+21599	uniq	6	Ironward	愛斯特龍的鐵衛		0	0	Damage Reduced by #	red-dmg		4	7
+21599	uniq	7	Ironward	愛斯特龍的鐵衛		0	0	Damage +#	dmg		40	85
+21599	uniq	8	Ironward	愛斯特龍的鐵衛		0	0	+# to [Class Skill Tab] Skills	skilltab	9	2	4
+21608	uniq	1	Saracen's Chance	薩拉森的機會		0	0	All Resistances +#	res-all		15	25
+21610	uniq	5	Raven Frost	烏鴉之霜		0	0	+# to Dexterity	dex		15	20
+21610	uniq	6	Raven Frost	烏鴉之霜		0	0	+# to Attack Rating	att		150	250
+21611	uniq	5	Dwarf Star	矮人之星		0	0	Magic Damage Reduced by #	red-mag		12	15
+21613	uniq	2	Mara's Kaleidoscope	馬拉的萬花筒		0	0	All Resistances +#	res-all		20	30
+21614	uniq	1	Crescent Moon	新月		0	0	#% Mana stolen per hit	manasteal		11	15
+21614	uniq	6	Crescent Moon	新月		0	0	#% Life stolen per hit	lifesteal		3	6
+21615	uniq	3	The Rising Sun	旭日東升		0	0	#% Chance to cast level # [Skill] when struck	gethit-skill	56	2	0
+21617	uniq	3	Bul Katho's Wedding Band	布爾凱索的婚戒		0	0	#% Life stolen per hit	lifesteal		3	5
+21619	uniq	1	Metalgrid	金屬網格		0	0	+# Defense	ac		300	350
+21619	uniq	2	Metalgrid	金屬網格		0	0	All Resistances +#	res-all		25	35
+21619	uniq	3	Metalgrid	金屬網格		0	0	+# to Attack Rating	att		400	450
+21621	uniq	0	Stormshield	暴風之盾	君主盾	133	148				0	0
+21622	uniq	0	Blackoak Shield	黑橡樹盾	圓月盾	108	123				0	0
+21622	uniq	2	Blackoak Shield	黑橡樹盾	圓月盾	108	123	+#% Enhanced Defense	ac%		160	200
+21623	uniq	0	Ormus' Robes	奧瑪斯之袍	灰暮罩衣	361	467				0	0
+21623	uniq	1	Ormus' Robes	奧瑪斯之袍	灰暮罩衣	361	467	+# Defense	ac		10	20
+21623	uniq	3	Ormus' Robes	奧瑪斯之袍	灰暮罩衣	361	467	+#% to Fire Skill Damage	extra-fire		10	15
+21623	uniq	4	Ormus' Robes	奧瑪斯之袍	灰暮罩衣	361	467	+#% to Cold Skill Damage	extra-cold		10	15
+21623	uniq	5	Ormus' Robes	奧瑪斯之袍	灰暮罩衣	361	467	+#% to Lightning Skill Damage	extra-ltng		10	15
+21623	uniq	6	Ormus' Robes	奧瑪斯之袍	灰暮罩衣	361	467	Regenerate Mana #%	regen-mana		10	15
+21623	uniq	7	Ormus' Robes	奧瑪斯之袍	灰暮罩衣	361	467	+# to [Skill] ([Class] only)	skill-rand	3	36	60
+21624	uniq	0	Arkaine's Valor	阿凱尼的榮耀	炎魔皮板甲	410	517				0	0
+21624	uniq	1	Arkaine's Valor	阿凱尼的榮耀	炎魔皮板甲	410	517	+#% Enhanced Defense	ac%		150	180
+21624	uniq	3	Arkaine's Valor	阿凱尼的榮耀	炎魔皮板甲	410	517	+# to All Skills	allskills		1	2
+21624	uniq	4	Arkaine's Valor	阿凱尼的榮耀	炎魔皮板甲	410	517	Damage Reduced by #	red-dmg		10	15
+21625	uniq	0	The Gladiator's Bane	鬥士之禍	鋼線毛皮甲	375	481				0	0
+21625	uniq	1	The Gladiator's Bane	鬥士之禍	鋼線毛皮甲	375	481	+#% Enhanced Defense	ac%		150	200
+21625	uniq	2	The Gladiator's Bane	鬥士之禍	鋼線毛皮甲	375	481	Magic Damage Reduced by #	red-mag		15	20
+21625	uniq	3	The Gladiator's Bane	鬥士之禍	鋼線毛皮甲	375	481	Damage Reduced by #	red-dmg		15	20
+21626	uniq	0	Veil of Steel	鋼鐵面紗	巨角頭盔	114	159				0	0
+21627	uniq	0	Harlequin Crest	諧角之冠	軍帽	98	141				0	0
+21628	uniq	0	Lance Guard	長槍守衛	倒刺盾	58	78				0	0
+21628	uniq	5	Lance Guard	長槍守衛	倒刺盾	58	78	+#% Enhanced Defense	ac%		70	120
+21629	uniq	0	Kerke's Sanctuary	基爾克的聖堂	大盾	68	78				0	0
+21629	uniq	1	Kerke's Sanctuary	基爾克的聖堂	大盾	68	78	Damage Reduced by #	red-dmg		11	16
+21629	uniq	2	Kerke's Sanctuary	基爾克的聖堂	大盾	68	78	Magic Damage Reduced by #	red-mag		14	18
+21629	uniq	4	Kerke's Sanctuary	基爾克的聖堂	大盾	68	78	+#% Enhanced Defense	ac%		180	240
+21629	uniq	7	Kerke's Sanctuary	基爾克的聖堂	大盾	68	78	All Resistances +#	res-all		20	30
+21630	uniq	0	Mosers Blessed Circle	摩瑟的祝福之圓	圓型盾	47	55				0	0
+21630	uniq	4	Mosers Blessed Circle	摩瑟的祝福之圓	圓型盾	47	55	+#% Enhanced Defense	ac%		180	220
+21631	uniq	0	Que-Hegan's Wisdon	教宗的智慧	法師鎧甲	225	261				0	0
+21631	uniq	3	Que-Hegan's Wisdon	教宗的智慧	法師鎧甲	225	261	Magic Damage Reduced by #	red-mag		6	10
+21631	uniq	6	Que-Hegan's Wisdon	教宗的智慧	法師鎧甲	225	261	+#% Enhanced Defense	ac%		140	160
+21632	uniq	0	Guardian Angel	守護天使	聖堂騎士戰甲	252	274				0	0
+21632	uniq	3	Guardian Angel	守護天使	聖堂騎士戰甲	252	274	+#% Enhanced Defense	ac%		180	200
+21633	uniq	0	Skin of the Flayerd One	剝皮者之皮	魔皮護甲	122	136				0	0
+21633	uniq	2	Skin of the Flayerd One	剝皮者之皮	魔皮護甲	122	136	Replenish Life +#	regen		15	25
+21633	uniq	4	Skin of the Flayerd One	剝皮者之皮	魔皮護甲	122	136	#% Life stolen per hit	lifesteal		5	7
+21633	uniq	5	Skin of the Flayerd One	剝皮者之皮	魔皮護甲	122	136	+#% Enhanced Defense	ac%		150	190
+21635	uniq	4	Windforce	風之力		0	0	#% Mana stolen per hit	manasteal		6	8
+21637	uniq	1	Gimmershred	吉默削斧		0	0	+#% Enhanced Damage	dmg%		160	210
+21638	uniq	1	Widowmaker	絕命		0	0	+#% Enhanced Damage	dmg%		150	200
+21638	uniq	5	Widowmaker	絕命		0	0	+# to [Skill]	oskill	Guided Arrow	3	5
+21639	uniq	3	Stormspire	暴風尖塔		0	0	+#% Enhanced Damage	dmg%		150	250
+21639	uniq	5	Stormspire	暴風尖塔		0	0	#% Chance to cast level # [Skill] when struck	gethit-skill	38	2	0
+21641	uniq	1	Ethereal Edge	無形之刃		0	0	+#% Enhanced Damage	dmg%		150	180
+21641	uniq	3	Ethereal Edge	無形之刃		0	0	Fire Absorb #%	abs-fire		10	12
+21641	uniq	4	Ethereal Edge	無形之刃		0	0	+#% Damage to Demons	dmg-demon		150	200
+21641	uniq	5	Ethereal Edge	無形之刃		0	0	+# Life after each Demon Kill	demon-heal		5	10
+21641	uniq	6	Ethereal Edge	無形之刃		0	0	+# to Attack Rating	att		270	350
+21643	uniq	9	The Grandfather	高祖		0	0	+#% Enhanced Damage	dmg%		150	250
+21644	uniq	2	Doombringer	末日使者		0	0	+#% Enhanced Damage	dmg%		180	250
+21644	uniq	7	Doombringer	末日使者		0	0	#% Life stolen per hit	lifesteal		5	7
+21645	uniq	0	Tyrael's Might	泰瑞爾之力	神聖戰甲	487	600				0	0
+21645	uniq	3	Tyrael's Might	泰瑞爾之力	神聖戰甲	487	600	+#% Enhanced Defense	ac%		120	150
+21645	uniq	5	Tyrael's Might	泰瑞爾之力	神聖戰甲	487	600	+#% Damage to Demons	dmg-demon		50	100
+21645	uniq	8	Tyrael's Might	泰瑞爾之力	神聖戰甲	487	600	All Resistances +#	res-all		20	30
+21645	uniq	9	Tyrael's Might	泰瑞爾之力	神聖戰甲	487	600	+# to Strength	str		20	30
+21646	uniq	2	Lightsabre	光之軍刀		0	0	#% Chance to cast level # [Skill] on attack	att-skill	53	5	0
+21646	uniq	8	Lightsabre	光之軍刀		0	0	#% Mana stolen per hit	manasteal		5	7
+21646	uniq	9	Lightsabre	光之軍刀		0	0	+#% Enhanced Damage	dmg%		150	200
+21647	uniq	7	The Cranium Basher	碎腦鎚		0	0	+#% Enhanced Damage	dmg%		200	240
+21648	uniq	8	Schaefer's Hammer	史恰佛之鎚		0	0	+#% Enhanced Damage	dmg%		100	130
+21650	uniq	2	Deaths's Web	死亡之網		0	0	-#% to Enemy Poison Resistance	pierce-pois		40	50
+21650	uniq	3	Deaths's Web	死亡之網		0	0	+# Life after each Kill	heal-kill		7	12
+21650	uniq	4	Deaths's Web	死亡之網		0	0	+# to Mana after each Kill	mana-kill		7	12
+21650	uniq	5	Deaths's Web	死亡之網		0	0	+# to [Class Skill Tab] Skills	skilltab	7	1	2
+21652	uniq	7	Hellslayer	地獄殺戮者		0	0	#% Chance to cast level # [Skill] on attack	att-skill	47	10	0
+21653	uniq	4	Endlesshail	無盡冰雹		0	0	+# to [Skill] ([Class] only)	skill	26	3	5
+21653	uniq	5	Endlesshail	無盡冰雹		0	0	+#% Enhanced Damage	dmg%		180	220
+21654	uniq	6	The Atlantian	亞特蘭提恩		0	0	+#% Enhanced Damage	dmg%		200	250
+21656	uniq	5	Baezil's Vortex	貝西爾的漩渦		0	0	+#% Enhanced Damage	dmg%		160	200
+21657	uniq	6	Zakarum's Hand	撒卡蘭姆之手		0	0	+#% Enhanced Damage	dmg%		180	220
+21659	uniq	3	The Minataur	牛頭怪		0	0	+# to Strength	str		15	20
+21659	uniq	7	The Minataur	牛頭怪		0	0	+#% Enhanced Damage	dmg%		140	200
+21661	set	0	Trang-Oul's Guise	塔格奧之容	骸骨面罩	100	157				0	0
+21661	set	1	Trang-Oul's Guise	塔格奧之容	骸骨面罩	100	157	+# Defense	ac		80	100
+21662	set	0	Trang-Oul's Wing	塔格奧之翼	領唱者首級	50	64				0	0
+21662	set	4	Trang-Oul's Wing	塔格奧之翼	領唱者首級	50	64	Fire Resist +#%	res-fire		38	45
+21664	set	0	Trang-Oul's Scales	塔格奧之鱗	混沌戰甲	315	342				0	0
+21665	set	0	Trang-Oul's Claws	塔格奧之爪	重型護腕	37	44				0	0
+21666	set	0	Trang-Oul's Girth	塔格奧之腹	食人妖腰帶	59	66				0	0
+21666	set	1	Trang-Oul's Girth	塔格奧之腹	食人妖腰帶	59	66	+# Defense	ac		75	100
+21666	set	7	Trang-Oul's Girth	塔格奧之腹	食人妖腰帶	59	66	+# to Mana	mana		25	50
+21668	set	0	Natalya's Totem	娜塔亞的圖騰	陰森頭盔	60	125				0	0
+21668	set	1	Natalya's Totem	娜塔亞的圖騰	陰森頭盔	60	125	+# Defense	ac		135	175
+21668	set	2	Natalya's Totem	娜塔亞的圖騰	陰森頭盔	60	125	+# to Dexterity	dex		20	30
+21668	set	3	Natalya's Totem	娜塔亞的圖騰	陰森頭盔	60	125	+# to Strength	str		10	20
+21668	set	4	Natalya's Totem	娜塔亞的圖騰	陰森頭盔	60	125	All Resistances +#	res-all		10	20
+21670	set	0	Natalya's Shadow	娜塔亞的影子	綴鱗戰甲	390	496				0	0
+21670	set	1	Natalya's Shadow	娜塔亞的影子	綴鱗戰甲	390	496	+# Defense	ac		150	225
+21670	set	6	Natalya's Shadow	娜塔亞的影子	綴鱗戰甲	390	496	Socketed (#)	sock		1	3
+21671	set	0	Natalya's Soul	娜塔亞的靈魂	鐵網靴	37	44				0	0
+21671	set	1	Natalya's Soul	娜塔亞的靈魂	鐵網靴	37	44	+# Defense	ac		75	125
+21671	set	5	Natalya's Soul	娜塔亞的靈魂	鐵網靴	37	44	Cold Resist +#%	res-cold		15	25
+21671	set	6	Natalya's Soul	娜塔亞的靈魂	鐵網靴	37	44	Lightning Resist +#%	res-ltng		15	25
+21673	set	1	Griswolds's Redemption	格里斯瓦德的救贖		0	0	+#% Enhanced Damage	dmg%		200	240
+21673	set	5	Griswolds's Redemption	格里斯瓦德的救贖		0	0	Socketed (#)	sock		3	4
+21674	set	0	Griswold's Honor	格里斯瓦德的榮耀	渦旋盾	182	225				0	0
+21675	set	0	Griswold's Heart	格里斯瓦德之心	華麗戰甲	417	450				0	0
+21676	set	0	Griswold's Valor	格里斯瓦德的勇氣	日冕之冠	111	165				0	0
+21676	set	1	Griswold's Valor	格里斯瓦德的勇氣	日冕之冠	111	165	+#% Enhanced Defense	ac%		50	75
+21676	set	5	Griswold's Valor	格里斯瓦德的勇氣	日冕之冠	111	165	#% Better Chance of Getting Magic Items	mag%		20	30
+21697	set	0	Aldur's Stony Gaze	艾爾多的冷酷凝視	獵人面罩	67	81				0	0
+21697	set	5	Aldur's Stony Gaze	艾爾多的冷酷凝視	獵人面罩	67	81	Cold Resist +#%	res-cold		40	50
+21698	set	0	Aldur's Deception	艾爾多的欺暪	暗影鎧甲	446	557				0	0
+21698	set	5	Aldur's Deception	艾爾多的欺暪	暗影鎧甲	446	557	Lightning Resist +#%	res-ltng		40	50
+21700	set	0	Aldur's Advance	艾爾多的進擊	戰鬥靴	39	47				0	0
+21700	set	7	Aldur's Advance	艾爾多的進擊	戰鬥靴	39	47	Fire Resist +#%	res-fire		40	50
+21702	set	0	M'avina's True Sight	馬維娜的真實之眼	權冠	50	60				0	0
+21703	set	0	M'avina's Embrace	馬維娜的擁抱	海怪之殼	417	523				0	0
+21703	set	3	M'avina's Embrace	馬維娜的擁抱	海怪之殼	417	523	Magic Damage Reduced by #	red-mag		5	12
+21704	set	0	M'avina's Icy Clutch	馬維娜的冰握	戰鬥護手	39	47				0	0
+21704	set	1	M'avina's Icy Clutch	馬維娜的冰握	戰鬥護手	39	47	+# Defense	ac		45	50
+21705	set	0	M'avina's Tenet	馬維娜的教義	鯊皮腰帶	31	36				0	0
+21709	set	0	Sazabi's Ghost Liberator	沙薩比的解靈框體	炎魔皮板甲	410	517				0	0
+21709	set	5	Sazabi's Ghost Liberator	沙薩比的解靈框體	炎魔皮板甲	410	517	+# to Life	hp		50	75
+21710	set	0	Sazabi's Mental Sheath	沙薩比的精神護罩	輕盔	75	84				0	0
+21710	set	3	Sazabi's Mental Sheath	沙薩比的精神護罩	輕盔	75	84	Fire Resist +#%	res-fire		15	20
+21710	set	4	Sazabi's Mental Sheath	沙薩比的精神護罩	輕盔	75	84	Lightning Resist +#%	res-ltng		15	20
+21713	set	0	Hwanin's Splendor	桓因的光輝	莊嚴王冠	78	113				0	0
+21714	set	0	Hwanin's Refuge	桓因的庇佑	鎖鱗戰甲	176	190				0	0
+21717	set	1	Telling of Beads	誦唸珠		0	0	Poison Resist +#%	res-pois		35	50
+21717	set	4	Telling of Beads	誦唸珠		0	0	Attacker Takes Damage of #	thorns		8	10
+21718	set	0	Laying of Hands	按手禮	荊棘手套	54	62				0	0
+21719	set	0	Rite of Passage	入門式	魔皮長靴	28	35				0	0
+21719	set	4	Rite of Passage	入門式	魔皮長靴	28	35	+# Maximum Stamina	stam		15	25
+21720	set	0	Spiritual Custodian	隱門徒	灰暮罩衣	361	467				0	0
+21720	set	1	Spiritual Custodian	隱門徒	灰暮罩衣	361	467	+# Defense	ac		305	415
+21721	set	0	Credendum	守信條	秘銀腰帶	58	65				0	0
+21723	set	0	Cow King's Horns	牛王之角	戰帽	45	53				0	0
+21724	set	0	Cow King's Hide	牛王之皮	鑲釘皮甲	32	35				0	0
+21725	set	0	Cow King's Hoofs	牛王之蹄	重靴	5	6				0	0
+21725	set	1	Cow King's Hoofs	牛王之蹄	重靴	5	6	+# Defense	ac		25	35
+21731	set	0	Guillaume's Face	吉永之臉	翼盔	85	98				0	0
+21733	set	0	Magnus' Skin	馬格納斯之皮	鯊皮手套	33	39				0	0
+21734	set	0	Wihtstan's Guard	惠斯坦的守護	圓型盾	47	55				0	0
+21735	uniq	3	Titan's Revenge	泰坦的復仇		0	0	+#% Enhanced Damage	dmg%		150	200
+21735	uniq	8	Titan's Revenge	泰坦的復仇		0	0	#% Life stolen per hit	lifesteal		5	9
+21737	uniq	3	Lycander's Aim	萊坎德的準頭		0	0	+#% Enhanced Damage	dmg%		150	200
+21737	uniq	8	Lycander's Aim	萊坎德的準頭		0	0	#% Mana stolen per hit	manasteal		5	8
+21743	uniq	2	Annihilus	滅絕		0	0	+# to all Attributes	all-stats		10	20
+21743	uniq	3	Annihilus	滅絕		0	0	All Resistances +#	res-all		10	20
+21743	uniq	4	Annihilus	滅絕		0	0	+#% to Experience Gained	addxp		5	10
+21744	uniq	0	Arreat's Face	亞瑞特的面容	殺手護盔	93	120				0	0
+21744	uniq	3	Arreat's Face	亞瑞特的面容	殺手護盔	93	120	+#% Enhanced Defense	ac%		150	200
+21744	uniq	8	Arreat's Face	亞瑞特的面容	殺手護盔	93	120	#% Life stolen per hit	lifesteal		3	6
+21750	uniq	0	Jalal's Mane	加爾的鬃毛	圖騰面具	73	98				0	0
+21750	uniq	3	Jalal's Mane	加爾的鬃毛	圖騰面具	73	98	+#% Enhanced Defense	ac%		150	200
+21755	uniq	0	Homunculus	魔胎	祭司首級	58	70				0	0
+21755	uniq	3	Homunculus	魔胎	祭司首級	58	70	+#% Enhanced Defense	ac%		150	200
+21758	uniq	0	Herald of Zakarum	撒卡蘭姆使者	金紋盾	144	168				0	0
+21758	uniq	3	Herald of Zakarum	撒卡蘭姆使者	金紋盾	144	168	+#% Enhanced Defense	ac%		150	200
+21816	set	0	Tal Rasha's Fire-Spun Cloth	塔拉夏的精織腰布	鐵網腰帶	35	40				0	0
+21816	set	5	Tal Rasha's Fire-Spun Cloth	塔拉夏的精織腰布	鐵網腰帶	35	40	#% Better Chance of Getting Magic Items	mag%		10	15
+21818	set	0	Tal Rasha's Howling Wind	塔拉夏的守護	漆護鎧甲	433	541				0	0
+21819	set	5	Tal Rasha's Lidless Eye	塔拉夏的警惕之眼		0	0	+# to [Skill] ([Class] only)	skill	Fire Mastery	1	2
+21819	set	6	Tal Rasha's Lidless Eye	塔拉夏的警惕之眼		0	0	+# to [Skill] ([Class] only)	skill	Lightning Mastery	1	2
+21819	set	7	Tal Rasha's Lidless Eye	塔拉夏的警惕之眼		0	0	+# to [Skill] ([Class] only)	skill	Cold Mastery	1	2
+21820	set	0	Tal Rasha's Horadric Crest	塔拉夏的赫拉迪姆之冠	死亡面具	54	86				0	0
+21824	set	0	Ondal's Almighty	溫達的全靈	巨角頭盔	114	159				0	0
+21825	set	0	Heaven's Taebaek	太白山的榮光	庇護盾	153	170				0	0
+21826	set	0	Haemosu's Adament	解慕漱的堅決	護胸甲	188	202				0	0
+21827	uniq	3	Lycander's Flank	萊坎德的側翼		0	0	+#% Enhanced Damage	dmg%		150	200
+21827	uniq	8	Lycander's Flank	萊坎德的側翼		0	0	#% Life stolen per hit	lifesteal		5	9
+21829	uniq	1	Ginther's Rift	金瑟的裂隙		0	0	Magic Damage Reduced by #	red-mag		7	12
+21829	uniq	6	Ginther's Rift	金瑟的裂隙		0	0	+#% Enhanced Damage	dmg%		100	150
+21831	set	0	Naj's Light Plate	娜吉的輕鎧	地獄鍛甲	421	530				0	0
+21832	set	0	Naj's Circlet	娜吉的頭環	頭環	20	30				0	0
+21839	set	0	Wilhelm's Pride	威廉的自尊	戰鬥腰帶	37	42				0	0
+21840	set	5	Immortal King's Stone Crusher	不朽之王的碎魂者		0	0	#% Chance of Crushing Blow	crush		35	40
+21841	set	0	Immortal King's Pillar	不朽之王之柱	征戰靴	43	53				0	0
+21842	set	0	Immortal King's Forge	不朽之王的熔爐	征戰護手	43	53				0	0
+21843	set	0	Immortal King's Detail	不朽之王的扈從	征戰腰帶	41	52				0	0
+21844	set	0	Immortal King's Soul Cage	不朽之王的靈魂牢籠	神聖戰甲	487	600				0	0
+21845	set	0	Immortal King's Will	不朽之王的意志	復仇者護盔	35	50				0	0
+21845	set	5	Immortal King's Will	不朽之王的意志	復仇者護盔	35	50	#% Better Chance of Getting Magic Items	mag%		25	40
+21847	set	7	Aldur's Gauntlet	艾爾多的律動		0	0	Socketed (#)	sock		2	5
+21876	set	0	McAuley's Taboo	山德的禁忌	厚皮手套	5	6				0	0
+21876	set	1	McAuley's Taboo	山德的禁忌	厚皮手套	5	6	+# Defense	ac		20	25
+21877	set	0	McAuley's Riprap	山德的碎石	重靴	5	6				0	0
+21878	set	0	McAuley's Paragon	山德的模範	便帽	3	5				0	0
