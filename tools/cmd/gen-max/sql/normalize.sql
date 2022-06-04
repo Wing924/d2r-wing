@@ -46,13 +46,13 @@ UNION SELECT `index` itemKey, aprop4b prop, apar4b param, amin4b minValue, amax4
 UNION SELECT `index` itemKey, aprop5b prop, apar5b param, amin5b minValue, amax5b maxValue FROM setitems WHERE aprop5b != "";
 
 INSERT INTO equip_props(itemKey, prop, param, minValue, maxValue)
-      SELECT `NAME` itemKey, T1Code1 prop, T1param1 param, T1min1 minVlaue, T1max1 maxValue FROM runes WHERE complete = "1" AND T1Code1 != ""
-UNION SELECT `NAME` itemKey, T1Code2 prop, T1param2 param, T1min2 minVlaue, T1max2 maxValue FROM runes WHERE complete = "1" AND T1Code2 != ""
-UNION SELECT `NAME` itemKey, T1Code3 prop, T1param3 param, T1min3 minVlaue, T1max3 maxValue FROM runes WHERE complete = "1" AND T1Code3 != ""
-UNION SELECT `NAME` itemKey, T1Code4 prop, T1param4 param, T1min4 minVlaue, T1max4 maxValue FROM runes WHERE complete = "1" AND T1Code4 != ""
-UNION SELECT `NAME` itemKey, T1Code5 prop, T1param5 param, T1min5 minVlaue, T1max5 maxValue FROM runes WHERE complete = "1" AND T1Code5 != ""
-UNION SELECT `NAME` itemKey, T1Code6 prop, T1param6 param, T1min6 minVlaue, T1max6 maxValue FROM runes WHERE complete = "1" AND T1Code6 != ""
-UNION SELECT `NAME` itemKey, T1Code7 prop, T1param7 param, T1min7 minVlaue, T1max7 maxValue FROM runes WHERE complete = "1" AND T1Code7 != "";
+      SELECT `Name` itemKey, T1Code1 prop, T1param1 `param`, T1min1 minVlaue, T1max1 maxValue FROM runes WHERE complete = "1" AND T1Code1 != ""
+UNION SELECT `Name` itemKey, T1Code2 prop, T1param2 `param`, T1min2 minVlaue, T1max2 maxValue FROM runes WHERE complete = "1" AND T1Code2 != ""
+UNION SELECT `Name` itemKey, T1Code3 prop, T1param3 `param`, T1min3 minVlaue, T1max3 maxValue FROM runes WHERE complete = "1" AND T1Code3 != ""
+UNION SELECT `Name` itemKey, T1Code4 prop, T1param4 `param`, T1min4 minVlaue, T1max4 maxValue FROM runes WHERE complete = "1" AND T1Code4 != ""
+UNION SELECT `Name` itemKey, T1Code5 prop, T1param5 `param`, T1min5 minVlaue, T1max5 maxValue FROM runes WHERE complete = "1" AND T1Code5 != ""
+UNION SELECT `Name` itemKey, T1Code6 prop, T1param6 `param`, T1min6 minVlaue, T1max6 maxValue FROM runes WHERE complete = "1" AND T1Code6 != ""
+UNION SELECT `Name` itemKey, T1Code7 prop, T1param7 `param`, T1min7 minVlaue, T1max7 maxValue FROM runes WHERE complete = "1" AND T1Code7 != ""
 --
 -- -- uniq
 -- SELECT DISTINCT 'uniq' category, 0 idx,  `index` itemName, `index` itemKey, code baseCode, "" prop, "" param, 0 minValue, 0 maxValue FROM uniqueitems WHERE code != "" AND enabled = "1"

@@ -5,7 +5,9 @@ import (
 	_ "embed"
 	"fmt"
 	"log"
+	"os"
 	"path"
+	"regexp"
 	"strings"
 
 	"github.com/Wing924/d2r-wing/tools/lib/enc"
@@ -31,7 +33,8 @@ var (
 )
 
 func main() {
-	db, err := sql.Open("sqlite3", "file::memory:?cache=shared")
+	_ = os.Remove("max.db")
+	db, err := sql.Open("sqlite3", "file:max.db?cache=shared")
 	if err != nil {
 		panic(err)
 	}
@@ -44,13 +47,16 @@ func main() {
 	loadData(db, itemNamesJSON, "")
 	loadData(db, itemRunesJSON, "")
 
+	// for debug
+	loadData(db, "resources/item_max.tsv", "")
+
 	normalizeEquips(db)
 
-	rows, err := db.Query(sqlSelectMax)
-	if err != nil {
-		panic(err)
-	}
-	dumpRows(rows, -1)
+	//rows, err := db.Query(sqlSelectMax)
+	//if err != nil {
+	//	panic(err)
+	//}
+	//dumpRows(rows, -1)
 
 	//fmt.Println("id\tname\tbase")
 	//equips := collectMax(db)
@@ -76,13 +82,22 @@ type Property struct {
 	Min, Max int
 }
 
+var reSQLComment = regexp.MustCompile(`(?m)^\s*--.*$`)
+
 func normalizeEquips(db *sql.DB) {
 	if _, err := db.Exec("CREATE TABLE equip(category, idx, itemName, itemKey, baseCode, prop, param, minValue, maxValue)"); err != nil {
 		panic(err)
 	}
-	stmt := "INSERT INTO equip " + sqlNormalize
-	if _, err := db.Exec(stmt); err != nil {
-		panic(err)
+	//stmt := "INSERT INTO equip " + sqlNormalize
+	stmts := reSQLComment.ReplaceAllString(sqlNormalize, "")
+	for _, stmt := range strings.Split(stmts, ";") {
+		stmt = strings.TrimSpace(stmt)
+		if stmt != "" {
+			if _, err := db.Exec(stmt); err != nil {
+				log.Println("exec:", stmt)
+				panic(err)
+			}
+		}
 	}
 }
 
