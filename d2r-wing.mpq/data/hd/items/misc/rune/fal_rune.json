@@ -3,12 +3,12 @@
     "animations": [],
     "json": [
       {
-        "path": "data/hd/items/dropped_items/dropped_items_helms_flip_ne.json"
+        "path": "data/hd/items/dropped_items/dropped_items_helms_flip_sw.json"
       }
     ],
     "models": [
       {
-        "path": "data/hd/items/misc/rune/mal_rune/mal_rune.model"
+        "path": "data/hd/items/misc/rune/fal_rune/fal_rune.model"
       }
     ],
     "objecteffects": [],
@@ -22,13 +22,13 @@
     ],
     "textures": [
       {
-        "path": "data/hd/items/misc/rune/mal_rune/misc_mal_rune_ALB.texture"
+        "path": "data/hd/items/misc/rune/fal_rune/misc_fal_rune_ALB.texture"
       },
       {
-        "path": "data/hd/items/misc/rune/mal_rune/misc_mal_rune_NRM.texture"
+        "path": "data/hd/items/misc/rune/fal_rune/misc_fal_rune_NRM.texture"
       },
       {
-        "path": "data/hd/items/misc/rune/mal_rune/misc_mal_rune_ORM.texture"
+        "path": "data/hd/items/misc/rune/fal_rune/misc_fal_rune_ORM.texture"
       }
     ],
     "variantdata": []
@@ -49,7 +49,7 @@
             "y": 0.3826834,
             "z": 0
           },
-          "state_machine_filename": "data/hd/items/dropped_items/dropped_items_helms_flip_ne.json",
+          "state_machine_filename": "data/hd/items/dropped_items/dropped_items_helms_flip_sw.json",
           "type": "UnitRootComponent"
         },
         {
@@ -79,18 +79,18 @@
           "type": "TransformDefinitionComponent"
         }
       ],
-      "id": 4220132025,
+      "id": 2574302840,
       "name": "entity_root",
       "type": "Entity"
     },
     {
       "components": [
         {
-          "filename": "data/hd/items/misc/rune/mal_rune/mal_rune.model",
+          "filename": "data/hd/items/misc/rune/fal_rune/fal_rune.model",
           "floorModel": false,
           "ghostShadows": false,
           "lightMask": 19,
-          "name": "component_model_mal_rune",
+          "name": "component_model_fal_rune",
           "shadowMask": 3,
           "terrainBlendEnableYUpBlend": false,
           "terrainBlendMode": 1,
@@ -98,7 +98,7 @@
           "visibleLayers": 1
         }
       ],
-      "id": 2557342371,
+      "id": 297473957,
       "name": "entity_model",
       "type": "Entity"
     },
@@ -205,6 +205,6 @@
       "type": "Entity"
     }
   ],
-  "name": "mal_rune",
+  "name": "fal_rune",
   "type": "UnitDefinition"
 }

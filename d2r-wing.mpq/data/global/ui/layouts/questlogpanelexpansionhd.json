@@ -1,489 +1,388 @@
 {
-    "basedOn": "QuestLogPanelOriginalHD.json",
-    "type": "QuestLogPanel", "name": "QuestLogPanelExpansion",
-  "children":
-  [
+  "basedOn": "QuestLogPanelOriginalHD.json",
+  "children": [
     {
-      "type": "ImageWidget",
-      "name": "Background"
+      "name": "Background",
+      "type": "ImageWidget"
     },
     {
-      "type": "ImageWidget",
-      "name": "LeftHinge"
+      "name": "LeftHinge",
+      "type": "ImageWidget"
     },
     {
-      "type": "ClickCatcherWidget",
-      "name": "ClickCatcher"
+      "name": "ClickCatcher",
+      "type": "ClickCatcherWidget"
     },
     {
-      "type": "TextBoxWidget",
-      "name": "Title"
+      "name": "Title",
+      "type": "TextBoxWidget"
     },
     {
-      "type": "TabBarWidget",
-      "name": "Tabs",
-      "fields":
-      {
-        "filename": "PANEL\\Quest_Log\\QuestLogTab",
-        "tabSize":
-        {
-          "x": 205,
-          "y": 70
-        },
-        "tabPadding":
-        {
-          "x": -2,
-          "y": 0
-        },
-        "tabCount": 5,
-        "inactiveFrames":
-        [
-          1,
-          1,
-          1,
-          1,
-          1
-        ],
-        "activeFrames":
-        [
+      "fields": {
+        "activeFrames": [
           0,
           0,
           0,
           0,
           0
         ],
-        "textStrings":
-        [
+        "filename": "PANEL\\Quest_Log\\QuestLogTab",
+        "inactiveFrames": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "tabCount": 5,
+        "tabPadding": {
+          "x": -2,
+          "y": 0
+        },
+        "tabSize": {
+          "x": 205,
+          "y": 70
+        },
+        "textStrings": [
           "I",
           "II",
           "III",
           "IV",
           "V"
         ]
-      }
+      },
+      "name": "Tabs",
+      "type": "TabBarWidget"
     },
     {
-      "type": "Widget",
+      "children": [
+        {
+          "name": "Quest0",
+          "type": "QuestLogButtonWidget"
+        },
+        {
+          "name": "Quest1",
+          "type": "QuestLogButtonWidget"
+        },
+        {
+          "name": "Quest3",
+          "type": "QuestLogButtonWidget"
+        },
+        {
+          "name": "Quest4",
+          "type": "QuestLogButtonWidget"
+        },
+        {
+          "name": "Quest2",
+          "type": "QuestLogButtonWidget"
+        },
+        {
+          "name": "Quest5",
+          "type": "QuestLogButtonWidget"
+        }
+      ],
       "name": "Tab0",
-      "children":
-      [
-        {
-          "type": "QuestLogButtonWidget",
-          "name": "Quest0"
-        },
-        {
-          "type": "QuestLogButtonWidget",
-          "name": "Quest1"
-        },
-        {
-          "type": "QuestLogButtonWidget",
-          "name": "Quest3"
-        },
-        {
-          "type": "QuestLogButtonWidget",
-          "name": "Quest4"
-        },
-        {
-          "type": "QuestLogButtonWidget",
-          "name": "Quest2"
-        },
-        {
-          "type": "QuestLogButtonWidget",
-          "name": "Quest5"
-        }
-      ]
+      "type": "Widget"
     },
     {
-      "type": "Widget",
-      "name": "Tab1",
-      "children":
-      [
+      "children": [
         {
-          "type": "QuestLogButtonWidget",
-          "name": "Quest6"
+          "name": "Quest6",
+          "type": "QuestLogButtonWidget"
         },
         {
-          "type": "QuestLogButtonWidget",
-          "name": "Quest7"
+          "name": "Quest7",
+          "type": "QuestLogButtonWidget"
         },
         {
-          "type": "QuestLogButtonWidget",
-          "name": "Quest8"
+          "name": "Quest8",
+          "type": "QuestLogButtonWidget"
         },
         {
-          "type": "QuestLogButtonWidget",
-          "name": "Quest9"
+          "name": "Quest9",
+          "type": "QuestLogButtonWidget"
         },
         {
-          "type": "QuestLogButtonWidget",
-          "name": "Quest10"
+          "name": "Quest10",
+          "type": "QuestLogButtonWidget"
         },
         {
-          "type": "QuestLogButtonWidget",
-          "name": "Quest11",
-          "children":
-          [
+          "children": [
             {
-              "type": "ImageWidget",
-              "name": "TalRashaSymbol"
+              "name": "TalRashaSymbol",
+              "type": "ImageWidget"
             },
             {
-              "type": "ImageWidget",
-              "name": "TalRashaSymbol0",
-              "fields":
-              {
-                "rect":
-                {
+              "fields": {
+                "filename": "PANEL\\Quest_Log\\TalRashaSymbol",
+                "frame": 0,
+                "rect": {
+                  "scale": 0.5,
                   "x": 36,
-                  "y": -150,
-                  "scale": 0.5
-                },
-                "filename": "PANEL\\Quest_Log\\TalRashaSymbol",
-                "frame": 0
-
-              }
+                  "y": -150
+                }
+              },
+              "name": "TalRashaSymbol0",
+              "type": "ImageWidget"
             },
             {
-              "type": "ImageWidget",
-              "name": "TalRashaSymbol1",
-              "fields":
-              {
-                "rect":
-                {
-                  //"x": -50,
-                  //"y": -116,
+              "fields": {
+                "filename": "PANEL\\Quest_Log\\TalRashaSymbol",
+                "frame": 1,
+                "rect": {
+                  "scale": 0.5,
                   "x": -110,
-                  "y": -100,
-                  "scale": 0.5
-                },
-                "filename": "PANEL\\Quest_Log\\TalRashaSymbol",
-                "frame": 1
-              }
+                  "y": -100
+                }
+              },
+              "name": "TalRashaSymbol1",
+              "type": "ImageWidget"
             },
             {
-              "type": "ImageWidget",
-              "name": "TalRashaSymbol2",
-              "fields":
-              {
-                "rect":
-                {
-                  // "x": -110,
-                  //"y": -60,
+              "fields": {
+                "filename": "PANEL\\Quest_Log\\TalRashaSymbol",
+                "frame": 2,
+                "rect": {
+                  "scale": 0.5,
                   "x": -125,
-                  "y": 0,
-                  "scale": 0.5
-                },
-                "filename": "PANEL\\Quest_Log\\TalRashaSymbol",
-                "frame": 2
-              }
+                  "y": 0
+                }
+              },
+              "name": "TalRashaSymbol2",
+              "type": "ImageWidget"
             },
             {
-              "type": "ImageWidget",
-              "name": "TalRashaSymbol3",
-              "fields":
-              {
-                "rect":
-                {
-                  //"x": -140,
-                  //"y": 20,
+              "fields": {
+                "filename": "PANEL\\Quest_Log\\TalRashaSymbol",
+                "frame": 3,
+                "rect": {
+                  "scale": 0.5,
                   "x": -140,
-                  "y": 100,
-                  "scale": 0.5
-                },
-                "filename": "PANEL\\Quest_Log\\TalRashaSymbol",
-                "frame": 3
-              }
+                  "y": 100
+                }
+              },
+              "name": "TalRashaSymbol3",
+              "type": "ImageWidget"
             },
             {
-              "type": "ImageWidget",
-              "name": "TalRashaSymbol4",
-              "fields":
-              {
-                "rect":
-                {
+              "fields": {
+                "filename": "PANEL\\Quest_Log\\TalRashaSymbol",
+                "frame": 4,
+                "rect": {
+                  "scale": 0.5,
                   "x": 180,
-                  "y": -100,
-                  "scale": 0.5
-                },
-                "filename": "PANEL\\Quest_Log\\TalRashaSymbol",
-                "frame": 4
-              }
+                  "y": -100
+                }
+              },
+              "name": "TalRashaSymbol4",
+              "type": "ImageWidget"
             },
             {
-              "type": "ImageWidget",
-              "name": "TalRashaSymbol5",
-              "fields":
-              {
-                "rect":
-                {
+              "fields": {
+                "filename": "PANEL\\Quest_Log\\TalRashaSymbol",
+                "frame": 5,
+                "rect": {
+                  "scale": 0.5,
                   "x": 195,
-                  "y": 0,
-                  "scale": 0.5
-                },
-                "filename": "PANEL\\Quest_Log\\TalRashaSymbol",
-                "frame": 5
-              }
+                  "y": 0
+                }
+              },
+              "name": "TalRashaSymbol5",
+              "type": "ImageWidget"
             },
             {
-              "type": "ImageWidget",
-              "name": "TalRashaSymbol6",
-              "fields":
-              {
-                "rect":
-                {
+              "fields": {
+                "filename": "PANEL\\Quest_Log\\TalRashaSymbol",
+                "frame": 6,
+                "rect": {
+                  "scale": 0.5,
                   "x": 210,
-                  "y": 100,
-                  "scale": 0.5
-                },
-                "filename": "PANEL\\Quest_Log\\TalRashaSymbol",
-                "frame": 6
-              }
+                  "y": 100
+                }
+              },
+              "name": "TalRashaSymbol6",
+              "type": "ImageWidget"
             },
             {
-              "type": "ImageWidget",
-              "name": "TalRashaPoint",
-              "fields":
-              {
-                "rect":
-                {
-                  "x": 28,
-                  "y": 60,
-                  "scale": 1.8
-                },
+              "fields": {
                 "filename": "automap\\default03\\tiles",
-                "frame": 7
-              }
+                "frame": 7,
+                "rect": {
+                  "scale": 1.8,
+                  "x": 28,
+                  "y": 60
+                }
+              },
+              "name": "TalRashaPoint",
+              "type": "ImageWidget"
             }
-          ]
+          ],
+          "name": "Quest11",
+          "type": "QuestLogButtonWidget"
         }
-      ]
+      ],
+      "name": "Tab1",
+      "type": "Widget"
     },
     {
-      "type": "Widget",
+      "children": [
+        {
+          "name": "Quest15",
+          "type": "QuestLogButtonWidget"
+        },
+        {
+          "name": "Quest14",
+          "type": "QuestLogButtonWidget"
+        },
+        {
+          "name": "Quest13",
+          "type": "QuestLogButtonWidget"
+        },
+        {
+          "name": "Quest12",
+          "type": "QuestLogButtonWidget"
+        },
+        {
+          "name": "Quest16",
+          "type": "QuestLogButtonWidget"
+        },
+        {
+          "name": "Quest17",
+          "type": "QuestLogButtonWidget"
+        }
+      ],
       "name": "Tab2",
-      "children":
-      [
-        {
-          "type": "QuestLogButtonWidget",
-          "name": "Quest15"
-        },
-        {
-          "type": "QuestLogButtonWidget",
-          "name": "Quest14"
-        },
-        {
-          "type": "QuestLogButtonWidget",
-          "name": "Quest13"
-        },
-        {
-          "type": "QuestLogButtonWidget",
-          "name": "Quest12"
-        },
-        {
-          "type": "QuestLogButtonWidget",
-          "name": "Quest16"
-        },
-        {
-          "type": "QuestLogButtonWidget",
-          "name": "Quest17"
-        }
-      ]
+      "type": "Widget"
     },
     {
-      "type": "Widget",
-      "name": "Tab3",
-      "children":
-      [
+      "children": [
         {
-          "type": "QuestLogButtonWidget",
-          "name": "Quest18"
+          "name": "Quest18",
+          "type": "QuestLogButtonWidget"
         },
         {
-          "type": "QuestLogButtonWidget",
-          "name": "Quest19"
+          "name": "Quest19",
+          "type": "QuestLogButtonWidget"
         },
         {
-          "type": "QuestLogButtonWidget",
-          "name": "Quest20"
+          "name": "Quest20",
+          "type": "QuestLogButtonWidget"
         },
         {
-          "type": "ImageWidget",
-          "fields":
-          {
-            "rect":
-            {
+          "fields": {
+            "filename": "PANEL\\Quest_Log\\QLPanelCover",
+            "rect": {
               "x": 82,
               "y": 528
-            },
-            "filename": "PANEL\\Quest_Log\\QLPanelCover"
-          }
+            }
+          },
+          "type": "ImageWidget"
         }
-      ]
+      ],
+      "name": "Tab3",
+      "type": "Widget"
     },
     {
-      "type": "Widget",
-      "name": "Tab4",
-      "children":
-      [
+      "children": [
         {
-          "type": "QuestLogButtonWidget",
+          "fields": {
+            "filename": "QuestIcons\\a5q1",
+            "gridPosition": {
+              "x": 0,
+              "y": 0
+            }
+          },
           "name": "Quest21",
-          "fields":
-          {
-            "gridPosition":
-            {
-              "x": 0,
-              "y": 0
-            },
-            "filename": "QuestIcons\\a5q1"
-          }
+          "type": "QuestLogButtonWidget"
         },
         {
-          "type": "QuestLogButtonWidget",
+          "fields": {
+            "filename": "QuestIcons\\a5q2",
+            "gridPosition": {
+              "x": 1,
+              "y": 0
+            }
+          },
           "name": "Quest22",
-          "fields":
-          {
-            "gridPosition":
-            {
-              "x": 1,
-              "y": 0
-            },
-            "filename": "QuestIcons\\a5q2"
-          }
+          "type": "QuestLogButtonWidget"
         },
         {
-          "type": "QuestLogButtonWidget",
-          "name": "Quest23",
-          "fields":
-          {
-            "gridPosition":
-            {
+          "fields": {
+            "filename": "QuestIcons\\a5q3",
+            "gridPosition": {
               "x": 2,
               "y": 0
-            },
-            "filename": "QuestIcons\\a5q3"
-          }
+            }
+          },
+          "name": "Quest23",
+          "type": "QuestLogButtonWidget"
         },
         {
-          "type": "QuestLogButtonWidget",
-          "name": "Quest24",
-          "fields":
-          {
-            "gridPosition":
-            {
+          "fields": {
+            "filename": "QuestIcons\\a5q4",
+            "gridPosition": {
               "x": 0,
               "y": 1
-            },
-            "filename": "QuestIcons\\a5q4"
-          }
+            }
+          },
+          "name": "Quest24",
+          "type": "QuestLogButtonWidget"
         },
         {
-          "type": "QuestLogButtonWidget",
-          "name": "Quest25",
-          "fields":
-          {
-            "gridPosition":
-            {
+          "fields": {
+            "filename": "QuestIcons\\a5q5",
+            "gridPosition": {
               "x": 1,
               "y": 1
-            },
-            "filename": "QuestIcons\\a5q5"
-          }
+            }
+          },
+          "name": "Quest25",
+          "type": "QuestLogButtonWidget"
         },
         {
-          "type": "QuestLogButtonWidget",
-          "name": "Quest26",
-          "fields":
-          {
-            "gridPosition":
-            {
+          "fields": {
+            "filename": "QuestIcons\\a5q6",
+            "gridPosition": {
               "x": 2,
               "y": 1
-            },
-            "filename": "QuestIcons\\a5q6"
-          }
+            }
+          },
+          "name": "Quest26",
+          "type": "QuestLogButtonWidget"
         }
-      ]
+      ],
+      "name": "Tab4",
+      "type": "Widget"
     },
     {
-      "type": "TextBoxWidget",
       "name": "ShortDescription",
-      "fields":
-      {
-        "rect":
-        {
-          "x": 279,
-          "y": 920,
-          "width": 600
-        },
-        "style":
-        {
-          "pointSize": "$SmallFontSize",
-          "alignment":
-          {
-            "h": "center",
-            "v": "center"
-          },
-          "spacing": "$MinimumSpacing",
-          "fontColor": "$DescriptionTitleColor",
-          "options":
-          {
-            "pipeCharacterBehavior": "handle",
-            "newlineHandling": "standard"
-          }
-        }
-      }
+      "type": "TextBoxWidget"
     },
     {
-      "type": "TextBoxWidget",
       "name": "LongDescription",
-      "fields":
-      {
-        "rect":
-        {
-          "x": 220,
-          "y": 1012,
-          "width": 720,
-          "height": 250
-        },
-        "style":
-        {
-          "fontFace": "Formal",
-          "pointSize": "$SmallFontSize",
-          "options":
-          {
-            //"lineWrap": true,
-            "pipeCharacterBehavior": "handle",
-            "newlineHandling": "standard"
-          },
-          "spacing": "$ReducedSpacing",
-          "alignment":
-          {
-            "h": "left"
-          },
-          "fontColor": "$DescriptionTextColor"
-        }
-      }
+      "type": "TextBoxWidget"
     },
     {
-      "type": "ButtonWidget",
-      "name": "Cancel"
+      "name": "Cancel",
+      "type": "ButtonWidget"
     },
     {
-      "type": "ButtonWidget",
-      "name": "Speech"
+      "name": "Speech",
+      "type": "ButtonWidget"
     },
     {
-      "type": "ImageWidget",
-      "name": "TemplateGem"
+      "name": "TemplateGem",
+      "type": "ImageWidget"
     },
     {
-      "type": "ImageWidget",
-      "name": "TemplateSocket"
+      "name": "TemplateSocket",
+      "type": "ImageWidget"
     },
     {
-      "type": "ImageWidget",
-      "name": "TemplateQuestComplete"
+      "name": "TemplateQuestComplete",
+      "type": "ImageWidget"
     }
-  ]
+  ],
+  "name": "QuestLogPanelExpansion",
+  "type": "QuestLogPanel"
 }
