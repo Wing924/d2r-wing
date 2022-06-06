@@ -28,8 +28,8 @@ SC_TARGET_STRINGS 			= $(patsubst $(ORIGINDIR)/%, $(SCDIR)/%, $(ORI_STRINGS_FILE
 
 GENERATED_RES_FILES			= $(patsubst %, $(RESDIR)/generated/%.tsv, $(GENERATED_RES))
 
-EXCEL_PATCH					= $(wildcard $(RESDIR)/patches/data/global/excel/*.txt.patch)
-EXCEL_OUT					= $(patsubst $(RESDIR)/patches/%.patch, $(COMMONDIR)/%, $(EXCEL_PATCH))
+# EXCEL_PATCH					= $(wildcard $(RESDIR)/patches/data/global/excel/*.txt.patch)
+# EXCEL_OUT					= $(patsubst $(RESDIR)/patches/%.patch, $(COMMONDIR)/%, $(EXCEL_PATCH))
 ZHTW_DIFF_FILES				= $(patsubst %.json, $(RESDIR)/generated/zhTW-diff/%.tsv, $(LEGACY_STRINGS_FILES))
 
 # common
@@ -43,8 +43,7 @@ dist-clean: clean clean-gen
 # build mods
 
 .PHONY: build
-build: clean cp-static excel gen-strings t2s
-excel: $(EXCEL_OUT)
+build: clean patches gen-strings t2s
 gen-strings: $(TOOLDIR)/gen-strings $(TC_TARGET_STRINGS)
 t2s: $(TOOLDIR)/t2s $(SC_TARGET_STRINGS)
 
@@ -63,13 +62,18 @@ $(SCDIR)/data/local/lng/strings/%.json: $(TCDIR)/data/local/lng/strings/%.json
 	mkdir -p $(@D)
 	$(TOOLDIR)/t2s -in $< > $@
 
+patches: $(TOOLDIR)/std-json $(PATCHES)
+	for p in $(PATCHES); do \
+		scripts/build-patch.sh $(ORIGINDIR) "$$p" $(COMMONDIR) || exit 1; \
+	done
+
 cp-static:
 	mkdir -p $(BUILDDIR)
 	cp -r $(RESDIR)/static $(COMMONDIR)
 
-$(COMMONDIR)/%.txt: $(RESDIR)/patches/%.txt.patch $(ORIGINDIR)/%.txt
-	mkdir -p $(@D)
-	patch -u -o $@ $(ORIGINDIR)/$*.txt < $<
+# $(COMMONDIR)/%.txt: $(RESDIR)/patches/%.txt.patch $(ORIGINDIR)/%.txt
+# 	mkdir -p $(@D)
+# 	patch -u -o $@ $(ORIGINDIR)/$*.txt < $<
 
 clean:
 	rm -rf build

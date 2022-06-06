@@ -12,7 +12,6 @@ import (
 
 	"github.com/Wing924/d2r-wing/tools/lib/enc"
 	_ "github.com/mattn/go-sqlite3"
-	"golang.org/x/exp/maps"
 )
 
 const (
@@ -20,6 +19,7 @@ const (
 	uniqueItemsTxt = "origin/data/global/excel/uniqueitems.txt"
 	setItemsTxt    = "origin/data/global/excel/setitems.txt"
 	runesTxt       = "origin/data/global/excel/runes.txt"
+	skillsTxt      = "origin/data/global/excel/skills.txt"
 	propertiesTxt  = "origin/data/global/excel/properties.txt"
 	itemNamesJSON  = "origin/data/local/lng/strings/item-names.json"
 	itemRunesJSON  = "origin/data/local/lng/strings/item-runes.json"
@@ -28,8 +28,8 @@ const (
 var (
 	//go:embed sql/normalize.sql
 	sqlNormalize string
-	//go:embed sql/select-max.sql
-	sqlSelectMax string
+	//go:embed sql/collect-var.sql
+	sqlCollectVar string
 )
 
 func main() {
@@ -43,6 +43,7 @@ func main() {
 	loadData(db, uniqueItemsTxt, "")
 	loadData(db, setItemsTxt, "")
 	loadData(db, runesTxt, "")
+	loadData(db, skillsTxt, "")
 	loadData(db, propertiesTxt, "")
 	loadData(db, itemNamesJSON, "")
 	loadData(db, itemRunesJSON, "")
@@ -50,9 +51,10 @@ func main() {
 	// for debug
 	loadData(db, "resources/item_max.tsv", "")
 
-	normalizeEquips(db)
+	execStmts(db, sqlNormalize)
+	execStmts(db, sqlCollectVar)
 
-	//rows, err := db.Query(sqlSelectMax)
+	//rows, err := db.Query(sqlCollectVar)
 	//if err != nil {
 	//	panic(err)
 	//}
@@ -84,12 +86,8 @@ type Property struct {
 
 var reSQLComment = regexp.MustCompile(`(?m)^\s*--.*$`)
 
-func normalizeEquips(db *sql.DB) {
-	if _, err := db.Exec("CREATE TABLE equip(category, idx, itemName, itemKey, baseCode, prop, param, minValue, maxValue)"); err != nil {
-		panic(err)
-	}
-	//stmt := "INSERT INTO equip " + sqlNormalize
-	stmts := reSQLComment.ReplaceAllString(sqlNormalize, "")
+func execStmts(db *sql.DB, stmts string) {
+	stmts = reSQLComment.ReplaceAllString(stmts, "")
 	for _, stmt := range strings.Split(stmts, ";") {
 		stmt = strings.TrimSpace(stmt)
 		if stmt != "" {
@@ -102,7 +100,7 @@ func normalizeEquips(db *sql.DB) {
 }
 
 func collectMax(db *sql.DB) []Equip {
-	rows, err := db.Query(sqlSelectMax)
+	rows, err := db.Query(sqlCollectVar)
 	if err != nil {
 		panic(err)
 	}
@@ -229,8 +227,7 @@ func loadJSONData(db *sql.DB, filename string, tableName string) {
 }
 
 func loadCSVData(db *sql.DB, filename string, tableName string) {
-	tbl := enc.ReadCSVAsTable(filename)
-	header := maps.Keys(tbl[0])
+	header, tbl := enc.ReadCSV(filename)
 	fieldList := toSQLList(header)
 	_, err := db.Exec(fmt.Sprintf("CREATE TABLE `%s` (%s)", tableName, fieldList))
 	if err != nil {
@@ -246,8 +243,8 @@ func loadCSVData(db *sql.DB, filename string, tableName string) {
 	}
 	for _, item := range tbl {
 		data := make([]any, len(header))
-		for i, v := range header {
-			data[i] = item[v]
+		for i := range header {
+			data[i] = item[i]
 		}
 		if _, err := stmt.Exec(data...); err != nil {
 			panic(err)
