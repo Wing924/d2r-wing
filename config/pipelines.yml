@@ -30,16 +30,12 @@ pipelines:
     resource: resources/generated/equip.tsv
     template: |-
       {{ .zhTW -}} |
-      {{- if .grade | eq "elite" }}
-        {{- if .speed }}
-          {{- .speed -}} |
-        {{- end }}
-        {{- if .max | and (contains .type "tors|ashd") }}
-          {{- .max }}-e{{ .maxEth -}} |
-        {{- end }}
-      {{- end }}
       {{- index .data.grade .grade }}
       {{- index .data.weight .weight }}
+      {{- with .speed -}} 〔 {{- . -}} 〕 {{- end }}
+      {{- if .grade | eq "elite" | and .max | and (contains .type "tors|ashd") -}}
+        ( {{- .max }}-e{{ .maxEth -}} )
+      {{- end }}
       {{- index .data.tc .tc }}
       {{- index .data.socket .socket }}
 
