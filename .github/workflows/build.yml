@@ -34,15 +34,6 @@ jobs:
           chmod a+x spruce-linux-amd64
           mv spruce-linux-amd64 ~/go/bin/spruce
 
-      # - name: check gen
-      #   run: |
-      #     make gen
-      #     if [ -n "$(git status --porcelain)" ]; then
-      #       git status
-      #       echo "please run make gen before commit"
-      #       exit 1
-      #     fi
-
       - name: build
         run: |
           make build
@@ -54,6 +45,7 @@ jobs:
           mv wing.mpq build/mods/wing
           cd build
           zip -r wing-sc.zip mods
+          rm -rf build/mods
 
       - name: publish TC
         run: |
@@ -62,6 +54,7 @@ jobs:
           mv wing.mpq build/mods/wing
           cd build
           zip -r wing-tc.zip mods
+          rm -rf build/mods
 
       - name: 'Upload Artifact'
         uses: actions/upload-artifact@v3
