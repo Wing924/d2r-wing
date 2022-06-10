@@ -54,7 +54,7 @@ Diablo II: Resurrected Mods
     - 护身符、戒指、珠宝添加★醒目标识
     - 頭環、寶冠、頭冠添加☆醒目标识
     - 特大咒符、小型咒符、珠宝掉落添加光柱特效醒目标识
-    - （方块）宝石、无瑕宝石、完美宝石的名字颜色改成红色
+    - 无瑕宝石、完美宝石的名字颜色改成红色
   - 药水和其他杂物
     - 药水及卷轴的名字缩短成两个字（微、小、中、大、超红/蓝，小/大紫，回城，鉴定等）
     - 改变颜色
@@ -75,9 +75,25 @@ Diablo II: Resurrected Mods
 
 仅支持 `OSX` 或 `Windows + WSL2`。需要使用各种UNIX系的工具。
 
+```bash
+cd /path/to/d2r/mods
+
+git clone git@github.com:Wing924/d2r-wing.git wing
+
+# 生成数据
+make gen
+
+# 编译成mod
+make build
+
+# 生成可直接使用的mod
+make publish
+```
+
 ### 工具
 
-- [TextQL](https://github.com/dinedal/textql)
-- [Make](https://www.gnu.org/software/make/)
-- [jq](https://stedolan.github.io/jq/)
 - [Go](https://go.dev/)
+- [Make](https://www.gnu.org/software/make/)
+- [TextQL](https://github.com/dinedal/textql)
+- [jq](https://stedolan.github.io/jq/)
+- [spruce](https://github.com/geofffranks/spruce)
