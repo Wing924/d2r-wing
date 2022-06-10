@@ -1,5 +1,7 @@
 # d2r-wing
 
+[![Build](https://github.com/Wing924/d2r-wing/actions/workflows/build.yml/badge.svg)](https://github.com/Wing924/d2r-wing/actions/workflows/build.yml)
+
 Diablo II: Resurrected Mods
 
 ## 制作原则
