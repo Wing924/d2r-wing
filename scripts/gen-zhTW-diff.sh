@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -eu
+set -eux
 
 if [[ $# -ne 2 ]]; then
     echo "usage: $0 strings-legacy/XXX.json strings/XXX.json"

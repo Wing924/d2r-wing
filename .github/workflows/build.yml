@@ -1,9 +1,13 @@
 name: Build
 on:
   push:
-    branches: [ main ]
+    tags:
+      - 'v*'
+    branches:
+      - main
   pull_request:
-    branches: [ main ]
+    branches:
+      - main
 
 jobs:
   build:
@@ -15,22 +19,24 @@ jobs:
         with:
           go-version-file: 'go.mod'
 
-      - run: |
+      - name: cache textql
+        id: cache-textql
+        uses: actions/cache@v3
+        with:
+          path: /home/runner/go/bin/textql
+          key: ${{ runner.os }}-textql
+
+      - name: build textql
+        if: steps.cache-textql.outputs.cache-hit != 'true'
+        run: |
           go install github.com/dinedal/textql/textql@2.0.3
 
       - run: |
-          wget https://github.com/geofffranks/spruce/releases/download/v1.29.0/spruce-linux-amd64
+          id
+          echo "$PATH"
+          wget -nv https://github.com/geofffranks/spruce/releases/download/v1.29.0/spruce-linux-amd64
           chmod a+x spruce-linux-amd64
-          mv spruce-linux-amd64 /usr/bin/spruce
-
-      - name: check gen
-        run: |
-          make gen
-          if [ -n "$(git status --porcelain)" ]; then
-            git status
-            echo "please run make gen before commit"
-            exit 1
-          fi
+          mv spruce-linux-amd64 ~/go/bin/spruce
 
       - name: build
         run: |
@@ -39,23 +45,27 @@ jobs:
       - name: publish SC
         run: |
           make publish
+          rm -rf build/mods
           mkdir -p build/mods/wing
-          mv wing.mpq build/mods/wing
+          cp -r wing.mpq build/mods/wing
           cd build
           zip -r wing-sc.zip mods
 
       - name: publish TC
         run: |
           make publish LANG_TYPE=tc
+          rm -rf build/mods
           mkdir -p build/mods/wing
-          mv wing.mpq build/mods/wing
+          cp -r wing.mpq build/mods/wing
           cd build
           zip -r wing-tc.zip mods
 
-      - name: 'Upload Artifact'
-        uses: actions/upload-artifact@v3
+      - name: Release
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: "marvinpinto/action-automatic-releases@latest"
         with:
-          name: mpq
-          path: build/*.mpq
-          retention-days: 7
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          prerelease: false
+          files: |
+            build/*.zip
 
