@@ -1,0 +1,61 @@
+name: Build
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-go@v3
+        with:
+          go-version-file: 'go.mod'
+
+      - run: |
+          go install github.com/dinedal/textql/textql@2.0.3
+
+      - run: |
+          wget https://github.com/geofffranks/spruce/releases/download/v1.29.0/spruce-linux-amd64
+          chmod a+x spruce-linux-amd64
+          mv spruce-linux-amd64 /usr/bin/spruce
+
+      - name: check gen
+        run: |
+          make gen
+          if [ -n "$(git status --porcelain)" ]; then
+            git status
+            echo "please run make gen before commit"
+            exit 1
+          fi
+
+      - name: build
+        run: |
+          make build
+
+      - name: publish SC
+        run: |
+          make publish
+          mkdir -p build/mods/wing
+          mv wing.mpq build/mods/wing
+          cd build
+          zip -r wing-sc.zip mods
+
+      - name: publish TC
+        run: |
+          make publish LANG_TYPE=tc
+          mkdir -p build/mods/wing
+          mv wing.mpq build/mods/wing
+          cd build
+          zip -r wing-tc.zip mods
+
+      - name: 'Upload Artifact'
+        uses: actions/upload-artifact@v3
+        with:
+          name: mpq
+          path: build/*.mpq
+          retention-days: 7
+
