@@ -60,6 +60,6 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: mpq
-          path: build/*.mpq
+          path: build/*.zip
           retention-days: 7
 
