@@ -1,67 +1,41 @@
 package main
 
 import (
+	"bytes"
 	"encoding/json"
 	"flag"
 	"fmt"
-	"log"
-	"os"
-	"path"
-	"strconv"
-	"strings"
-	"unicode"
-
 	"github.com/Wing924/d2r-wing/tools/lib/enc"
 	"github.com/Wing924/d2r-wing/tools/lib/model"
-	"github.com/Wing924/d2r-wing/tools/lib/utils"
+	"go.uber.org/zap"
+	"os"
+	"text/template"
 )
-
-const (
-	colorWhite = "ÿc0"
-	colorRed   = "ÿc1"
-	colorGray  = "ÿc5"
-	colorPink  = "ÿc;"
-)
-
-const (
-	gradeNormal = "普"
-)
-
-var colorPalette = map[string]string{
-	"white": colorWhite,
-	"red":   colorRed,
-	"gray":  colorGray,
-	"pink":  colorPink,
-}
 
 var (
-	baseDir      = utils.TopGitRepo()
-	resourcesDir = path.Join(baseDir, "resources")
+	config = flag.String("config", "", "config file")
+	debug  = flag.Bool("debug", false, "debug mode")
 )
-var inFile = flag.String("in", "-", "input string JOSN file")
 
-var (
-	itemArmor   = enc.ReadCSVAsMap(path.Join(resourcesDir, "item-armor.csv"))
-	itemWeapons = enc.ReadCSVAsMap(path.Join(resourcesDir, "item-weapons.csv"))
-	itemMax     = enc.ReadCSVAsMap(path.Join(resourcesDir, "item-max.csv"))
-	itemRare    = enc.ReadCSVAsMap(path.Join(resourcesDir, "item-rare.csv"))
-	itemRunes   = enc.ReadCSVAsMap(path.Join(resourcesDir, "item-runes.csv"))
-	itemModify  = enc.ReadCSVAsMap(path.Join(resourcesDir, "item-modify.csv"))
-	propsAbbrv  = enc.ReadCSVAsMap(path.Join(resourcesDir, "props-abbrv.csv"))
-	textModify  = enc.ReadCSVAsMap(path.Join(resourcesDir, "text-modify.csv"))
-	levels      = enc.ReadCSVAsMap(path.Join(resourcesDir, "levels.csv"))
-)
+var logger *zap.SugaredLogger
 
 func main() {
-	log.SetFlags(0)
 	flag.Parse()
-	if *inFile == "" {
-		fmt.Println("-in is missing")
+	if *config == "" {
+		_, _ = fmt.Fprintf(os.Stderr, "The flag -config is missing.")
 		flag.Usage()
 		os.Exit(1)
 	}
+	logger = newLogger()
+	defer func() { _ = logger.Sync() }()
 
-	entries := processFile(*inFile)
+	entries := enc.ReadStringsJSON("-")
+	cfg := LoadConfig(*config)
+	processPipeline(entries, cfg)
+	writeJSON(entries)
+}
+
+func writeJSON(entries []model.Entry) {
 	out, err := json.MarshalIndent(entries, "", "  ")
 	if err != nil {
 		panic(err)
@@ -69,163 +43,69 @@ func main() {
 	fmt.Println(string(out))
 }
 
-func processFile(filename string) []model.Entry {
-	content := enc.ReadFileWithBOM(filename)
-	entries := enc.ParseStringsJson(content)
-	for i, e := range entries {
-		oldZhTW := e.ZhTW
-		e = processText(e)
-		e = processItem(e)
-		e = processRunes(e)
-		e = processLevels(e)
-		if oldZhTW != e.ZhTW {
-			log.Printf("Replace string: %d %q -> %q", e.ID, oldZhTW, e.ZhTW)
+func processPipeline(entries []model.Entry, cfg *Config) {
+	var resources []enc.CSVMap
+	var templates []*template.Template
+
+	for _, pip := range cfg.Pipelines {
+		logger.Debugw("prepare pipeline", "pipeline", pip.Name)
+		res := enc.ReadCSVAsMap(pip.Resource)
+		var lookupEntries []model.Entry
+		for _, file := range pip.LookupStringFiles {
+			lookupEntries = append(lookupEntries, enc.ReadStringsJSON(file)...)
 		}
-		entries[i] = e
-	}
-	return entries
-}
-
-func processItem(e model.Entry) model.Entry {
-	var (
-		txtDesc        string
-		txtGradeWeight string
-		txtRarity      string
-		txtSocket      string
-		txtMax         string
-	)
-
-	if armor, ok := itemArmor[e.ID]; ok {
-		txtGradeWeight = armor["grade"] + armor["weight"]
-		txtSocket = socketString(armor["socket"], 3)
+		funcs := CreateFuncs(lookupEntries)
+		tmpl := template.Must(template.New("").Funcs(funcs).Parse(pip.Template))
+		resources = append(resources, res)
+		templates = append(templates, tmpl)
 	}
 
-	if weapon, ok := itemWeapons[e.ID]; ok {
-		txtGradeWeight = weapon["grade"]
-		txtSocket = socketString(weapon["socket"], 4)
-	}
-
-	// add rare
-	if r, ok := itemRare[e.ID]; ok {
-		switch r["rarity"] {
-		case "1":
-			txtRarity = "☆"
-		case "2":
-			txtRarity = "★"
-		case "3":
-			txtDesc = "★" + r["type"] + "★"
-		default:
-			panic("unsupported rarity:" + r["rarity"])
-		}
-	}
-
-	// add max
-	if m, ok := itemMax[e.ID]; ok {
-		txtMax = "[" + m["max"] + "]"
-	}
-
-	if item, ok := itemModify[e.ID]; ok {
-		if newName := item["new_name"]; newName != "" {
-			e.ZhTW = newName
-		}
-		e.ZhTW = item["prefix"] + e.ZhTW + item["suffix"]
-	}
-
-	if txtMax != "" {
-		e.ZhTW = txtMax + "\n" + e.ZhTW
-	}
-	if txtGradeWeight != "" || txtRarity != "" {
-		e.ZhTW += "|" + txtGradeWeight + txtRarity
-		if txtSocket != "" {
-			e.ZhTW += " " + txtSocket
-		}
-	}
-	if txtDesc != "" {
-		e.ZhTW += "\n" + txtDesc
-	}
-
-	// change color
-	if item, ok := itemModify[e.ID]; ok && item["color"] != "" {
-		newColor, ok := colorPalette[item["color"]]
-		if !ok {
-			panic("unknown color: " + item["color"])
-		}
-		e.ZhTW = fmt.Sprint(newColor, e.ZhTW, colorWhite)
-	}
-
-	return e
-}
-
-func processRunes(e model.Entry) model.Entry {
-	if item, ok := itemRunes[e.ID]; ok {
-		var txt string
-		if strings.HasSuffix(e.Key, "L") {
-			txt = fmt.Sprintf("%s#%s", e.ZhTW, item["number"])
-		} else {
-			txt = fmt.Sprintf("%sÿc2(#%s)ÿc8", e.ZhTW, item["number"])
-			if recipe := item["recipe"]; recipe != "" {
-				txt = fmt.Sprintf("ÿc5[%sÿc5]\nÿc8%s", recipe, txt)
+	for i, entry := range entries {
+		oldText := entry.ZhTW
+		for j, pip := range cfg.Pipelines {
+			res := resources[j]
+			row, ok := res[entry.ID]
+			if !ok {
+				continue
 			}
-		}
-		e.ZhTW = txt
-	}
-	return e
-}
+			logger.Debugw("process pipeline", "pipeline", pip.Name)
+			data := generateTemplateData(cfg, row, entry)
 
-func processText(e model.Entry) model.Entry {
-	// abbrv
-	if item, ok := propsAbbrv[e.ID]; ok {
-		if idx := strings.IndexAny(e.ZhTW, "：，"); idx >= 0 {
-			e.ZhTW = fmt.Sprint(e.ZhTW[0:idx], "(", item["abbrv"]+")", e.ZhTW[idx:])
-		} else {
-			runes := []rune(e.ZhTW)
-			for i := len(runes) - 1; i >= 0; i-- {
-				if unicode.In(runes[i], unicode.Han) {
-					e.ZhTW = fmt.Sprint(string(runes[0:i+1]), "(", item["abbrv"]+")", string(runes[i+1:]))
-					break
-				}
+			out := bytes.NewBuffer(nil)
+
+			if err := templates[j].Execute(out, data); err != nil {
+				panic(err)
 			}
+			entry.ZhTW = out.String()
+		}
+		if oldText != entry.ZhTW {
+			logger.Infof("Replace %q\t->\t%q", oldText, entry.ZhTW)
+			entries[i] = entry
 		}
 	}
-
-	// rename
-	if item, ok := textModify[e.ID]; ok {
-		if newName := item["new_name"]; newName != "" {
-			e.ZhTW = newName
-		}
-		e.ZhTW = item["prefix"] + e.ZhTW + item["suffix"]
-	}
-	return e
 }
 
-func processLevels(e model.Entry) model.Entry {
-	if item, ok := levels[e.ID]; ok {
-		e.ZhTW += fmt.Sprintf(" [%s|%s|%s]", item["normal"], item["nightmare"], item["hell"])
+func generateTemplateData(cfg *Config, row map[string]string, entry model.Entry) map[string]any {
+	data := map[string]any{
+		"data": cfg.Data,
 	}
-	return e
+	for k, v := range row {
+		data[k] = v
+	}
+	data["Key"] = entry.Key
+	data["zhTW"] = entry.ZhTW
+	return data
 }
 
-func socketString(socket string, min int) string {
-	if socket == "" {
-		return ""
+func newLogger() *zap.SugaredLogger {
+	cfg := zap.NewDevelopmentConfig()
+	cfg.EncoderConfig.TimeKey = ""
+	cfg.EncoderConfig.NameKey = ""
+	cfg.EncoderConfig.CallerKey = ""
+	if !*debug {
+		cfg.Level = zap.NewAtomicLevelAt(zap.InfoLevel)
 	}
-	n, err := strconv.Atoi(socket)
-	if err != nil {
-		panic(err)
-	}
-	if n < min {
-		return ""
-	}
-	switch n {
-	case 3:
-		return "③"
-	case 4:
-		return "④"
-	case 5:
-		return "⑤"
-	case 6:
-		return "⑥"
-	default:
-		panic("unsupported socket: " + socket)
-	}
+
+	lg, _ := cfg.Build()
+	return lg.Sugar()
 }

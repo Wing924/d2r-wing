@@ -1,92 +1,99 @@
-LANG_TYPE			= sc
-ORIGINDIR 			= origin
-BUILDDIR 			= build
-RESDIR				= resources
-COMMONDIR			= $(BUILDDIR)/common
-TCDIR				= $(BUILDDIR)/tc
-SCDIR				= $(BUILDDIR)/sc
-SRC_STRINGS 		= $(filter-out */chinese-overlay.json, $(wildcard $(ORIGINDIR)/data/local/lng/strings/*.json))
-TC_TARGET_STRINGS 	= $(patsubst $(ORIGINDIR)/%, $(TCDIR)/%, $(SRC_STRINGS))
-SC_TARGET_STRINGS 	= $(patsubst $(ORIGINDIR)/%, $(SCDIR)/%, $(SRC_STRINGS))
+SHELL=/bin/bash -o pipefail
 
-EXCEL_PATCH			= $(wildcard $(RESDIR)/patches/data/global/excel/*.txt.patch)
-EXCEL_OUT			= $(patsubst $(RESDIR)/patches/%.patch, $(COMMONDIR)/%, $(EXCEL_PATCH))
+LANG_TYPE					= sc
+ORIGINDIR 					= origin
+BUILDDIR 					= build
+RESDIR						= resources
+PATCHDIR					= patches
+TOOLDIR						= $(BUILDDIR)/bin
+COMMONDIR					= $(BUILDDIR)/common
+TCDIR						= $(BUILDDIR)/tc
+SCDIR						= $(BUILDDIR)/sc
+ORI_STRINGS_DIR				= $(ORIGINDIR)/data/local/lng/strings
+ORI_STRINGS_LEGACY_DIR		= $(ORIGINDIR)/data/local/lng/strings-legacy
+
+LEGACY_STRINGS_FILES		= bnet.json item-gems.json item-modifiers.json item-nameaffixes.json item-names.json item-runes.json keybinds.json levels.json mercenaries.json monsters.json npcs.json objects.json quests.json shrines.json skills.json ui.json vo.json
+STRINGS_FILES				= commands.json presence-states.json ui-controller.json $(LEGACY_STRINGS_FILES)
+GENERATED_RES				= equip levels runes
+PATCHES						= $(wildcard $(PATCHDIR)/*)
+
+# origin/data/local/lng/strings/XXX.json
+ORI_STRINGS_FILES			= $(addprefix $(ORI_STRINGS_DIR)/, $(STRINGS_FILES))
+# origin/data/local/lng/strings-legacy/XXX.json
+ORI_STRINGS_LEGACY_FILES	= $(addprefix $(ORI_STRINGS_LEGACY_DIR)/, $(LEGACY_STRINGS_FILES))
+# build/tc/data/local/lng/strings/XXX.json
+TC_TARGET_STRINGS 			= $(patsubst $(ORIGINDIR)/%, $(TCDIR)/%, $(ORI_STRINGS_FILES))
+# build/sc/data/local/lng/strings/XXX.json
+SC_TARGET_STRINGS 			= $(patsubst $(ORIGINDIR)/%, $(SCDIR)/%, $(ORI_STRINGS_FILES))
+
+GENERATED_RES_FILES			= $(patsubst %, $(RESDIR)/generated/%.tsv, $(GENERATED_RES))
+
+# EXCEL_PATCH					= $(wildcard $(RESDIR)/patches/data/global/excel/*.txt.patch)
+# EXCEL_OUT					= $(patsubst $(RESDIR)/patches/%.patch, $(COMMONDIR)/%, $(EXCEL_PATCH))
+ZHTW_DIFF_FILES				= $(patsubst %.json, $(RESDIR)/generated/zhTW-diff/%.tsv, $(LEGACY_STRINGS_FILES))
+
+# common
 
 .PHONY: nop
 nop:
-	@echo $(EXCEL_PATCH)
+	echo $(ORI_STRINGS_FILES)
+
+dist-clean: clean clean-gen
+
+# build mods
 
 .PHONY: build
-build: clean tool cp-static excel $(TC_TARGET_STRINGS) $(SC_TARGET_STRINGS)
+build: clean patches gen-strings t2s
+gen-strings: $(TOOLDIR)/gen-strings $(TC_TARGET_STRINGS)
+t2s: $(TOOLDIR)/t2s $(SC_TARGET_STRINGS)
 
-tool:
-	mkdir -p $(BUILDDIR)/bin
-	go build -o $(BUILDDIR)/bin/gen-strings github.com/Wing924/d2r-wing/tools/cmd/gen-strings
-	go build -o $(BUILDDIR)/bin/t2s github.com/Wing924/d2r-wing/tools/cmd/t2s
+# build tools
+$(TOOLDIR)/%:
+	mkdir -p $(@D)
+	go build -o $(BUILDDIR)/bin/$* github.com/Wing924/d2r-wing/tools/cmd/$*
 
+# build Traditional Chinese strings
 $(TCDIR)/data/local/lng/strings/%.json: $(ORIGINDIR)/data/local/lng/strings/%.json
 	mkdir -p $(@D)
-	$(BUILDDIR)/bin/gen-strings -in $< > $@
+	$(TOOLDIR)/gen-strings -config ./config/pipelines.yml < $< > $@
 
+# convert Traditional Chinese to Simplified Chinese
 $(SCDIR)/data/local/lng/strings/%.json: $(TCDIR)/data/local/lng/strings/%.json
 	mkdir -p $(@D)
-	$(BUILDDIR)/bin/t2s -in $< > $@
+	$(TOOLDIR)/t2s -in $< > $@
 
-cp-static:
-	mkdir -p $(BUILDDIR)
-	cp -r $(RESDIR)/static $(COMMONDIR)
-
-excel: $(EXCEL_OUT)
-
-$(COMMONDIR)/%.txt: $(RESDIR)/patches/%.txt.patch $(ORIGINDIR)/%.txt
-	mkdir -p $(@D)
-	patch -u -o $@ $(ORIGINDIR)/$*.txt < $<
+patches: $(TOOLDIR)/std-json $(PATCHES)
+	for p in $(PATCHES); do \
+		scripts/build-patch.sh $(ORIGINDIR) "$$p" $(COMMONDIR) || exit 1; \
+	done
 
 clean:
 	rm -rf build
 
+# publish mods
+
 publish:
-	rm -rf d2r-wing.mpq/data
-	cp -r $(COMMONDIR)/data d2r-wing.mpq
-	cp -r $(BUILDDIR)/$(LANG_TYPE)/data d2r-wing.mpq
+	rm -rf wing.mpq/data
+	cp -r $(COMMONDIR)/data wing.mpq
+	cp -r $(BUILDDIR)/$(LANG_TYPE)/data wing.mpq
 
-gen: gen-levels gen-armor gen-weapons
+# generate resources
 
-gen-patch: $(EXCEL_PATCH)
+gen: clean-gen gen-zhTW-diff $(GENERATED_RES_FILES)
 
-$(RESDIR)/%.txt.patch: $(RESDIR)/%.txt
-	diff -u $(ORIGINDIR)/$*.txt $(RESDIR)/$*.txt | tee $(RESDIR)/$*.txt.patch
+gen-zhTW-diff: $(ZHTW_DIFF_FILES)
 
-gen-lang-diff:
+$(RESDIR)/generated/zhTW-diff/%.tsv: $(RESDIR)/generated/zhTW-diff $(ORI_STRINGS_LEGACY_DIR)/%.json $(ORI_STRINGS_DIR)/%.json
+	./scripts/gen-zhTW-diff.sh $(ORI_STRINGS_LEGACY_DIR)/$*.json $(ORI_STRINGS_DIR)/$*.json | tee $@
+
+$(RESDIR)/generated/zhTW-diff:
+	mkdir -p $(RESDIR)/generated/zhTW-diff
+
+$(RESDIR)/generated/%.tsv: resources/generated
+	./scripts/gen-$*.sh | tee $@
+
+resources/generated:
 	mkdir -p resources/generated
-	go run github.com/Wing924/d2r-wing/tools/cmd/string-diff > resources/generated/zhTW-strings-diff.json
-	jq -r '.[] | [.id, .old_zhTW, .new_zhTW] | @csv' resources/generated/zhTW-strings-diff.json > resources/generated/zhTW-strings-diff.csv
 
-gen-levels:
-	@echo "id,zhTW,normal,nightmare,hell" | tee resources/levels.csv
-	@go run github.com/Wing924/d2r-wing/tools/cmd/join-strings \
-		-json origin/data/local/lng/strings/levels.json \
-		-on-json Key \
-		-csv origin/data/global/excel/levels.txt \
-		-on-csv '*StringName' \
-		| jq -r '.[] | select(."MonLvlEx(N)" != "") | [.id, .zhTW, .MonLvl, ."MonLvlEx(N)", ."MonLvlEx(H)"] | @csv' | tee -a resources/levels.csv
-
-gen-armor:
-	@echo "id,zhTW,grade,weight,socket" | tee resources/item-armor.csv
-	@go run github.com/Wing924/d2r-wing/tools/cmd/join-strings \
-		-json origin/data/local/lng/strings/item-names.json \
-		-on-json Key \
-		-csv origin/data/global/excel/armor.txt \
-		-on-csv namestr \
-		| jq -r '.[] | [.id, .zhTW, if .code == .normcode then "普" elif .code == .ubercode then "擴" else "精" end, if .speed == "0" then "輕" elif .speed == "5" then "中" else "重" end, .gemsockets] | @csv' \
-		| tee -a resources/item-armor.csv
-
-gen-weapons:
-	@echo "id,zhTW,grade,socket" | tee resources/item-weapons.csv
-	@go run github.com/Wing924/d2r-wing/tools/cmd/join-strings \
-		-json origin/data/local/lng/strings/item-names.json \
-		-on-json Key \
-		-csv origin/data/global/excel/weapons.txt \
-		-on-csv namestr \
-		| jq -r '.[] | [.id, .zhTW, if .code == .normcode then "普" elif .code == .ubercode then "擴" else "精" end, .gemsockets] | @csv' \
-		| tee -a resources/item-weapons.csv
+clean-gen:
+	rm -rf $(RESDIR)/generated

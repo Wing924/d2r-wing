@@ -1,0 +1,67 @@
+category	Key	id	old_zhTW	zhTW	num	recipeQty	recipeGem
+in socket	r01L	20505	艾爾	艾爾	1		
+in socket	r02L	20504	艾德	艾德	2		
+in socket	r03L	20503	特爾	特爾	3		
+in socket	r04L	20502	那夫	那夫	4		
+in socket	r05L	20501	愛斯	愛斯	5		
+in socket	r06L	20500	伊司	伊司	6		
+in socket	r07L	20499	塔爾	塔爾	7		
+in socket	r08L	20498	拉爾	拉爾	8		
+in socket	r09L	20497	歐特	歐特	9		
+in socket	r10L	20496	書爾	書爾	10		
+in socket	r11L	20495	安姆	安姆	11		
+in socket	r12L	20494	索爾	索爾	12		
+in socket	r13L	10905	夏	夏	13		
+in socket	r14L	20492	多爾	多爾	14		
+in socket	r15L	20491	海爾	海爾	15		
+in socket	r16L	10903	破	埃歐	16		
+in socket	r17L	20489	盧姆	盧姆	17		
+in socket	r18L	20488	科	科	18		
+in socket	r19L	20487	法爾	法爾	19		
+in socket	r20L	20486	藍姆	藍姆	20		
+in socket	r21L	20485	普爾	普爾	21		
+in socket	r22L	20484	烏姆	烏姆	22		
+in socket	r23L	20483	馬爾	馬爾	23		
+in socket	r24L	20482	伊司特	伊司特	24		
+in socket	r25L	20481	古爾	古爾	25		
+in socket	r26L	20480	伐克斯	伐克斯	26		
+in socket	r27L	20479	歐姆	歐姆	27		
+in socket	r28L	20478	羅	羅	28		
+in socket	r29L	20477	瑟	瑟	29		
+in socket	r30L	20476	貝	貝	30		
+in socket	r31L	10907	喬	喬	31		
+in socket	r32L	20474	查姆	查姆	32		
+in socket	r33L	20473	薩德	薩德	33		
+item name	r01	20472	符文：艾爾	符文：艾爾	1	3	
+item name	r02	20471	符文：艾德	符文：艾德	2	3	
+item name	r03	20470	符文：特爾	符文：特爾	3	3	
+item name	r04	20469	符文：那夫	符文：那夫	4	3	
+item name	r05	20468	符文：愛斯	符文：愛斯	5	3	
+item name	r06	20467	符文：伊司	符文：伊司	6	3	
+item name	r07	20466	符文：塔爾	符文：塔爾	7	3	
+item name	r08	20465	符文：拉爾	符文：拉爾	8	3	
+item name	r09	20464	符文：歐特	符文：歐特	9	3	
+item name	r10	20463	符文：書爾	符文：書爾	10	3	碎裂黃寶石
+item name	r11	20462	符文：安姆	符文：安姆	11	3	碎裂紫寶石
+item name	r12	20461	符文：索爾	符文：索爾	12	3	碎裂藍寶石
+item name	r13	10904	符文：夏	符文：夏	13	3	碎裂紅寶石
+item name	r14	20459	符文：多爾	符文：多爾	14	3	碎裂綠寶石
+item name	r15	20458	符文：海爾	符文：海爾	15	3	碎裂鑽石
+item name	r16	10902	符文：破	符文：埃歐	16	3	瑕疵黃寶石
+item name	r17	20456	符文：盧姆	符文：盧姆	17	3	瑕疵紫寶石
+item name	r18	20455	符文：科	符文：科	18	3	瑕疵藍寶石
+item name	r19	20454	符文：法爾	符文：法爾	19	3	瑕疵紅寶石
+item name	r20	20453	符文：藍姆	符文：藍姆	20	3	瑕疵綠寶石
+item name	r21	20452	符文：普爾	符文：普爾	21	2	瑕疵鑽石
+item name	r22	20451	符文：烏姆	符文：烏姆	22	2	黃寶石
+item name	r23	20450	符文：馬爾	符文：馬爾	23	2	紫寶石
+item name	r24	20449	符文：伊司特	符文：伊司特	24	2	藍寶石
+item name	r25	20448	符文：古爾	符文：古爾	25	2	紅寶石
+item name	r26	20447	符文：伐克斯	符文：伐克斯	26	2	綠寶石
+item name	r27	20446	符文：歐姆	符文：歐姆	27	2	鑽石
+item name	r28	20445	符文：羅	符文：羅	28	2	無瑕黃寶石
+item name	r29	20444	符文：瑟	符文：瑟	29	2	無瑕紫寶石
+item name	r30	20443	符文：貝	符文：貝	30	2	無瑕藍寶石
+item name	r31	10906	符文：喬	符文：喬	31	2	無瑕紅寶石
+item name	r32	20441	符文：查姆	符文：查姆	32	2	無瑕綠寶石
+item name	r33	20440	符文：薩德	符文：薩德	33		

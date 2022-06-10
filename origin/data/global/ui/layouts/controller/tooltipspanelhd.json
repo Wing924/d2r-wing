@@ -1,8 +1,0 @@
-{
-    "basedOn": "TooltipsPanelHD.json",
-    "type": "TooltipsPanel", "name": "TooltipsPanel",
-    "fields": {
-        "screenEdgePadding": 50,
-        "showDelayMilliseconds": 400,
-    }
-}
