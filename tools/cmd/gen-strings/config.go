@@ -14,9 +14,10 @@ type (
 	}
 
 	Pipeline struct {
-		Name     string `yaml:"name"`
-		Resource string `yaml:"resource"`
-		Template string `yaml:"template"`
+		Name              string   `yaml:"name"`
+		Resource          string   `yaml:"resource"`
+		LookupStringFiles []string `yaml:"lookup_string_files"`
+		Template          string   `yaml:"template"`
 	}
 )
 

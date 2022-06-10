@@ -41,12 +41,14 @@ pipelines:
 
   - name: add MAX
     resource: resources/item_max.tsv
+    lookup_string_files:
+      - origin/data/local/lng/strings/skills.json
     template: |-
-      [{{ .max }}]
+      [{{ lookupString .max }}]
       {{ .zhTW }}
 
   - name: modify item
-    resource: resources/item-modify.tsv
+    resource: resources/item_modify.tsv
     template: &modify |-
       {{- with .color }}{{ index $.data.color . }}{{ end }}
       {{- .prefix }}
@@ -81,11 +83,11 @@ pipelines:
       {{ .zhTW }} [{{ .normal }}|{{ .nightmare }}|{{ .hell }}]
 
   - name: modify text
-    resource: resources/text-modify.tsv
+    resource: resources/text_modify.tsv
     template: *modify
 
   - name: modify abbr
-    resource: resources/text-abbr.tsv
+    resource: resources/text_abbr.tsv
     template: |-
       {{ mkAbbr .zhTW .abbr }}
 

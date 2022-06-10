@@ -46,10 +46,15 @@ func writeJSON(entries []model.Entry) {
 func processPipeline(entries []model.Entry, cfg *Config) {
 	var resources []enc.CSVMap
 	var templates []*template.Template
-	funcs := CreateFuncs()
+
 	for _, pip := range cfg.Pipelines {
 		logger.Debugw("prepare pipeline", "pipeline", pip.Name)
 		res := enc.ReadCSVAsMap(pip.Resource)
+		var lookupEntries []model.Entry
+		for _, file := range pip.LookupStringFiles {
+			lookupEntries = append(lookupEntries, enc.ReadStringsJSON(file)...)
+		}
+		funcs := CreateFuncs(lookupEntries)
 		tmpl := template.Must(template.New("").Funcs(funcs).Parse(pip.Template))
 		resources = append(resources, res)
 		templates = append(templates, tmpl)

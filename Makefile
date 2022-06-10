@@ -67,14 +67,6 @@ patches: $(TOOLDIR)/std-json $(PATCHES)
 		scripts/build-patch.sh $(ORIGINDIR) "$$p" $(COMMONDIR) || exit 1; \
 	done
 
-cp-static:
-	mkdir -p $(BUILDDIR)
-	cp -r $(RESDIR)/static $(COMMONDIR)
-
-# $(COMMONDIR)/%.txt: $(RESDIR)/patches/%.txt.patch $(ORIGINDIR)/%.txt
-# 	mkdir -p $(@D)
-# 	patch -u -o $@ $(ORIGINDIR)/$*.txt < $<
-
 clean:
 	rm -rf build
 

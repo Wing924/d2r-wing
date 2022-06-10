@@ -13,11 +13,3 @@ func ReadStringsJSON(filename string) []model.Entry {
 	}
 	return result
 }
-
-func ParseStringsJson(content []byte) []model.Entry {
-	var result []model.Entry
-	if err := json.Unmarshal(content, &result); err != nil {
-		panic(err)
-	}
-	return result
-}
