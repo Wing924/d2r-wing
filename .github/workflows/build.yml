@@ -15,7 +15,16 @@ jobs:
         with:
           go-version-file: 'go.mod'
 
-      - run: |
+      - name: cache textql
+        id: cache-textql
+        uses: actions/cache@v3
+        with:
+          path: ~/go/bin/textql
+          key: ${{ runner.os }}-textql
+
+      - name: build textql
+        if: steps.cache-textql.outputs.cache-hit != 'true'
+        run: |
           go install github.com/dinedal/textql/textql@2.0.3
 
       - run: |
@@ -25,14 +34,14 @@ jobs:
           chmod a+x spruce-linux-amd64
           mv spruce-linux-amd64 ~/go/bin/spruce
 
-      - name: check gen
-        run: |
-          make gen
-          if [ -n "$(git status --porcelain)" ]; then
-            git status
-            echo "please run make gen before commit"
-            exit 1
-          fi
+      # - name: check gen
+      #   run: |
+      #     make gen
+      #     if [ -n "$(git status --porcelain)" ]; then
+      #       git status
+      #       echo "please run make gen before commit"
+      #       exit 1
+      #     fi
 
       - name: build
         run: |
