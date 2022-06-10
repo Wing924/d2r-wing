@@ -17,9 +17,12 @@ jobs:
 
       - run: |
           go install github.com/dinedal/textql/textql@2.0.3
+          which textql
 
       - run: |
-          wget https://github.com/geofffranks/spruce/releases/download/v1.29.0/spruce-linux-amd64
+          id
+          echo "$PATH"
+          wget -nv https://github.com/geofffranks/spruce/releases/download/v1.29.0/spruce-linux-amd64
           chmod a+x spruce-linux-amd64
           mv spruce-linux-amd64 /usr/bin/spruce
 
