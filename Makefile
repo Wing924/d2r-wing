@@ -81,9 +81,9 @@ clean:
 # publish mods
 
 publish:
-	rm -rf d2r-wing.mpq/data
-	cp -r $(COMMONDIR)/data d2r-wing.mpq
-	cp -r $(BUILDDIR)/$(LANG_TYPE)/data d2r-wing.mpq
+	rm -rf wing.mpq/data
+	cp -r $(COMMONDIR)/data wing.mpq
+	cp -r $(BUILDDIR)/$(LANG_TYPE)/data wing.mpq
 
 # generate resources
 
