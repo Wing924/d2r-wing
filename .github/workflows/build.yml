@@ -19,7 +19,7 @@ jobs:
         id: cache-textql
         uses: actions/cache@v3
         with:
-          path: ~/go/bin/textql
+          path: /home/runner/go/bin/textql
           key: ${{ runner.os }}-textql
 
       - name: build textql
@@ -41,20 +41,20 @@ jobs:
       - name: publish SC
         run: |
           make publish
+          rm -rf build/mods
           mkdir -p build/mods/wing
-          mv wing.mpq build/mods/wing
+          cp -r wing.mpq build/mods/wing
           cd build
           zip -r wing-sc.zip mods
-          rm -rf build/mods
 
       - name: publish TC
         run: |
           make publish LANG_TYPE=tc
+          rm -rf build/mods
           mkdir -p build/mods/wing
-          mv wing.mpq build/mods/wing
+          cp -r wing.mpq build/mods/wing
           cd build
           zip -r wing-tc.zip mods
-          rm -rf build/mods
 
       - name: 'Upload Artifact'
         uses: actions/upload-artifact@v3
