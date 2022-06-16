@@ -1,4 +1,6 @@
 id	Key	zhTW	prefix	newName	suffix
+844	Sewers Level 2	下水道第二層			 A2:[13|43|74] A3:[24|53|85]
+845	Sewers Level 1	下水道第一層			 A2:[13|43|74] A3:[23|52|85]
 1711	HiqualityFormat	%0%1		%1 %0
 1712	LowqualityFormat	%0%1		%0
 1723	Low Quality	劣等的		(null)
