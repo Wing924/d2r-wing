@@ -13,16 +13,16 @@ id	zhTW	prefix	newName	suffix	color
 20435	小型咒符	★		★
 20436	大型咒符	★		★
 20437	特大咒符	★		★
-2182	刺鼻毒氣藥水		(null)
-2183	烈性藥水		(null)
-2184	窒息毒氣藥水		(null)
-2185	爆炸藥水		(null)
-2186	腐臭毒氣藥水		(null)
-2187	火油藥水		(null)
+2182	刺鼻毒氣藥水		小毒		gray
+2183	烈性藥水		小炸		gray
+2184	窒息毒氣藥水		中毒		gray
+2185	爆炸藥水		中炸		gray
+2186	腐臭毒氣藥水		大毒		gray
+2187	火油藥水		大炸		gray
 2191	維特的腿				red
-2200	城鎮傳送卷軸		(null)
-2202	鑑定卷軸		(null)
-2207	精力藥水		(null)
+2200	城鎮傳送卷軸		回城		gray
+2202	鑑定卷軸		鑑定		gray
+2207	精力藥水		精力		gray
 2208	解毒藥水		解毒		gray
 2209	活力藥水		小紫
 2210	全效活力藥水		大紫		pink
@@ -32,8 +32,8 @@ id	zhTW	prefix	newName	suffix	color
 2215	金幣		金
 2218	弓矢				gray
 2220	弩箭				gray
-2221	鑰匙		(null)		gray
-2222	鑰匙		(null)		gray
+2221	鑰匙				gray
+2222	鑰匙				gray
 2239	無瑕紫寶石				red
 2240	完美紫寶石				red
 2244	無瑕黃寶石				red
@@ -46,15 +46,15 @@ id	zhTW	prefix	newName	suffix	color
 2260	完美紅寶石				red
 2264	無瑕鑽石				red
 2265	完美鑽石				red
-2266	弱效生命藥水		(null)
-2267	輕效生命藥水		(null)
-2268	生命藥水		(null)
-2269	強效生命藥水		(null)
+2266	弱效生命藥水		微紅		gray
+2267	輕效生命藥水		小紅		gray
+2268	生命藥水		中紅		gray
+2269	強效生命藥水		大紅		gray
 2270	特效生命藥水		超紅
-2271	弱效法力藥水		(null)
-2272	輕效法力藥水		(null)
-2273	法力藥水		(null)
-2274	強效法力藥水		(null)
+2271	弱效法力藥水		微藍		gray
+2272	輕效法力藥水		小藍		gray
+2273	法力藥水		中藍		gray
+2274	強效法力藥水		大藍		gray
 2275	特效法力藥水		超藍
 2280	無瑕骷髏石				red
 2281	完美骷髏石				red
