@@ -20,7 +20,10 @@ FROM levels l
     JOIN str s ON l.`*StringName` = s.Key OR l.`*StringName` = s.enUS
     JOIN oldstr o ON o.id = s.id
 WHERE
-    `MonLvlEx(H)` != "" AND l.Name != "Act 5 - Pandemonium Finale"
+    `MonLvlEx(H)` != ""
+    AND l.Name != "Act 5 - Pandemonium Finale"
+    AND l.`*StringName` != "Sewers Level 1"
+    AND l.`*StringName` != "Sewers Level 2"
 ORDER BY s.id
 '
 

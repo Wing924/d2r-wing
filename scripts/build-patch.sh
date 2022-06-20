@@ -96,4 +96,4 @@ while IFS= read -r -d '' patch_file; do
   *.json|*.txt|*.sh)
     $DIFF --strip-trailing-cr -u "$origin_file" "$dst_file" || :
   esac
-done < <(find "$patch_dir" -type f -print0)
+done < <(find "$patch_dir/data" -type f -print0)

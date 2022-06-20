@@ -1,0 +1,855 @@
+{
+  "entities": [
+    "(( append ))",
+    {
+      "type": "Entity",
+      "name": "entity_root",
+      "id": 2101618603,
+      "components": [
+        {
+          "type": "VfxDefinitionComponent",
+          "name": "entity_root_VfxDefinition",
+          "filename": "data/hd/vfx/particles/missiles/light_beams/fx_light_beams_missiles.particles",
+          "hardKillOnDestroy": true
+        },
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "component_transform1",
+          "position": {
+            "x": 0,
+            "y": 0.0,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0.0,
+            "y": 0.7,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_root",
+      "id": 2101618603,
+      "components": [
+        {
+          "type": "VfxDefinitionComponent",
+          "name": "entity_root_VfxDefinition",
+          "filename": "data/hd/vfx/particles/missiles/light_beams/fx_light_beams_missiles.particles",
+          "hardKillOnDestroy": true
+        },
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "component_transform1",
+          "position": {
+            "x": 50,
+            "y": 0.0,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0.0,
+            "y": 1.9,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_root",
+      "id": 2101618603,
+      "components": [
+        {
+          "type": "VfxDefinitionComponent",
+          "name": "entity_root_VfxDefinition",
+          "filename": "data/hd/vfx/particles/missiles/light_beams/fx_light_beams_missiles.particles",
+          "hardKillOnDestroy": true
+        },
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "component_transform1",
+          "position": {
+            "x": -50,
+            "y": 0.0,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0.0,
+            "y": -0.4,
+            "z": -0.2,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_root",
+      "id": 2101618603,
+      "components": [
+        {
+          "type": "VfxDefinitionComponent",
+          "name": "entity_root_VfxDefinition",
+          "filename": "data/hd/vfx/particles/missiles/light_beams/fx_light_beams_missiles.particles",
+          "hardKillOnDestroy": true
+        },
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "component_transform1",
+          "position": {
+            "x": 0,
+            "y": 0.0,
+            "z": 50
+          },
+          "orientation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_root",
+      "id": 2101618603,
+      "components": [
+        {
+          "type": "VfxDefinitionComponent",
+          "name": "entity_root_VfxDefinition",
+          "filename": "data/hd/vfx/particles/missiles/light_beams/fx_light_beams_missiles.particles",
+          "hardKillOnDestroy": true
+        },
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "component_transform1",
+          "position": {
+            "x": 0,
+            "y": 0.0,
+            "z": -50
+          },
+          "orientation": {
+            "x": 1,
+            "y": 0.0,
+            "z": 0.4,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_root",
+      "id": 2101618603,
+      "components": [
+        {
+          "type": "VfxDefinitionComponent",
+          "name": "entity_root_VfxDefinition",
+          "filename": "data/hd/vfx/particles/missiles/light_beams/fx_light_beams_missiles.particles",
+          "hardKillOnDestroy": true
+        },
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "component_transform1",
+          "position": {
+            "x": 50,
+            "y": 0.0,
+            "z": 50
+          },
+          "orientation": {
+            "x": 0.3,
+            "y": 0.9,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_root",
+      "id": 2101618603,
+      "components": [
+        {
+          "type": "VfxDefinitionComponent",
+          "name": "entity_root_VfxDefinition",
+          "filename": "data/hd/vfx/particles/missiles/light_beams/fx_light_beams_missiles.particles",
+          "hardKillOnDestroy": true
+        },
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "component_transform1",
+          "position": {
+            "x": 50,
+            "y": 0.0,
+            "z": -50
+          },
+          "orientation": {
+            "x": 0.3,
+            "y": -1.9,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_root",
+      "id": 2101618603,
+      "components": [
+        {
+          "type": "VfxDefinitionComponent",
+          "name": "entity_root_VfxDefinition",
+          "filename": "data/hd/vfx/particles/missiles/light_beams/fx_light_beams_missiles.particles",
+          "hardKillOnDestroy": true
+        },
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "component_transform1",
+          "position": {
+            "x": -50,
+            "y": 0.0,
+            "z": 50
+          },
+          "orientation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": -0.2,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_root",
+      "id": 2101618603,
+      "components": [
+        {
+          "type": "VfxDefinitionComponent",
+          "name": "entity_root_VfxDefinition",
+          "filename": "data/hd/vfx/particles/missiles/light_beams/fx_light_beams_missiles.particles",
+          "hardKillOnDestroy": true
+        },
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "component_transform1",
+          "position": {
+            "x": -50,
+            "y": 0.0,
+            "z": -50
+          },
+          "orientation": {
+            "x": 1,
+            "y": 0.25,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_root",
+      "id": 2101618603,
+      "components": [
+        {
+          "type": "VfxDefinitionComponent",
+          "name": "entity_root_VfxDefinition",
+          "filename": "data/hd/vfx/particles/missiles/light_beams/fx_light_beams_missiles.particles",
+          "hardKillOnDestroy": true
+        },
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "component_transform1",
+          "position": {
+            "x": 85,
+            "y": 0.0,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0.0,
+            "y": 1.9,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_root",
+      "id": 2101618603,
+      "components": [
+        {
+          "type": "VfxDefinitionComponent",
+          "name": "entity_root_VfxDefinition",
+          "filename": "data/hd/vfx/particles/missiles/light_beams/fx_light_beams_missiles.particles",
+          "hardKillOnDestroy": true
+        },
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "component_transform1",
+          "position": {
+            "x": -85,
+            "y": 0.0,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0.0,
+            "y": -0.4,
+            "z": -0.2,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_root",
+      "id": 2101618603,
+      "components": [
+        {
+          "type": "VfxDefinitionComponent",
+          "name": "entity_root_VfxDefinition",
+          "filename": "data/hd/vfx/particles/missiles/light_beams/fx_light_beams_missiles.particles",
+          "hardKillOnDestroy": true
+        },
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "component_transform1",
+          "position": {
+            "x": 0,
+            "y": 0.0,
+            "z": 85
+          },
+          "orientation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_root",
+      "id": 2101618603,
+      "components": [
+        {
+          "type": "VfxDefinitionComponent",
+          "name": "entity_root_VfxDefinition",
+          "filename": "data/hd/vfx/particles/missiles/light_beams/fx_light_beams_missiles.particles",
+          "hardKillOnDestroy": true
+        },
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "component_transform1",
+          "position": {
+            "x": 0,
+            "y": 0.0,
+            "z": -85
+          },
+          "orientation": {
+            "x": 1,
+            "y": 0.0,
+            "z": 0.4,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_root",
+      "id": 2101618603,
+      "components": [
+        {
+          "type": "VfxDefinitionComponent",
+          "name": "entity_root_VfxDefinition",
+          "filename": "data/hd/vfx/particles/missiles/light_beams/fx_light_beams_missiles.particles",
+          "hardKillOnDestroy": true
+        },
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "component_transform1",
+          "position": {
+            "x": 85,
+            "y": 0.0,
+            "z": 85
+          },
+          "orientation": {
+            "x": 0.3,
+            "y": 0.9,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_root",
+      "id": 2101618603,
+      "components": [
+        {
+          "type": "VfxDefinitionComponent",
+          "name": "entity_root_VfxDefinition",
+          "filename": "data/hd/vfx/particles/missiles/light_beams/fx_light_beams_missiles.particles",
+          "hardKillOnDestroy": true
+        },
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "component_transform1",
+          "position": {
+            "x": 85,
+            "y": 0.0,
+            "z": -85
+          },
+          "orientation": {
+            "x": 0.3,
+            "y": -1.9,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_root",
+      "id": 2101618603,
+      "components": [
+        {
+          "type": "VfxDefinitionComponent",
+          "name": "entity_root_VfxDefinition",
+          "filename": "data/hd/vfx/particles/missiles/light_beams/fx_light_beams_missiles.particles",
+          "hardKillOnDestroy": true
+        },
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "component_transform1",
+          "position": {
+            "x": -85,
+            "y": 0.0,
+            "z": 85
+          },
+          "orientation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": -0.2,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_root",
+      "id": 2101618603,
+      "components": [
+        {
+          "type": "VfxDefinitionComponent",
+          "name": "entity_root_VfxDefinition",
+          "filename": "data/hd/vfx/particles/missiles/light_beams/fx_light_beams_missiles.particles",
+          "hardKillOnDestroy": true
+        },
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "component_transform1",
+          "position": {
+            "x": -85,
+            "y": 0.0,
+            "z": -85
+          },
+          "orientation": {
+            "x": 1,
+            "y": 0.25,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_root",
+      "id": 2101618603,
+      "components": [
+        {
+          "type": "VfxDefinitionComponent",
+          "name": "entity_root_VfxDefinition",
+          "filename": "data/hd/vfx/particles/missiles/light_beams/fx_light_beams_missiles.particles",
+          "hardKillOnDestroy": true
+        },
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "component_transform1",
+          "position": {
+            "x": 120,
+            "y": 0.0,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0.0,
+            "y": 1.9,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_root",
+      "id": 2101618603,
+      "components": [
+        {
+          "type": "VfxDefinitionComponent",
+          "name": "entity_root_VfxDefinition",
+          "filename": "data/hd/vfx/particles/missiles/light_beams/fx_light_beams_missiles.particles",
+          "hardKillOnDestroy": true
+        },
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "component_transform1",
+          "position": {
+            "x": -120,
+            "y": 0.0,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0.0,
+            "y": -0.4,
+            "z": -0.2,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_root",
+      "id": 2101618603,
+      "components": [
+        {
+          "type": "VfxDefinitionComponent",
+          "name": "entity_root_VfxDefinition",
+          "filename": "data/hd/vfx/particles/missiles/light_beams/fx_light_beams_missiles.particles",
+          "hardKillOnDestroy": true
+        },
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "component_transform1",
+          "position": {
+            "x": 0,
+            "y": 0.0,
+            "z": 120
+          },
+          "orientation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_root",
+      "id": 2101618603,
+      "components": [
+        {
+          "type": "VfxDefinitionComponent",
+          "name": "entity_root_VfxDefinition",
+          "filename": "data/hd/vfx/particles/missiles/light_beams/fx_light_beams_missiles.particles",
+          "hardKillOnDestroy": true
+        },
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "component_transform1",
+          "position": {
+            "x": 0,
+            "y": 0.0,
+            "z": -120
+          },
+          "orientation": {
+            "x": 1,
+            "y": 0.0,
+            "z": 0.4,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_root",
+      "id": 2101618603,
+      "components": [
+        {
+          "type": "VfxDefinitionComponent",
+          "name": "entity_root_VfxDefinition",
+          "filename": "data/hd/vfx/particles/missiles/light_beams/fx_light_beams_missiles.particles",
+          "hardKillOnDestroy": true
+        },
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "component_transform1",
+          "position": {
+            "x": 120,
+            "y": 0.0,
+            "z": 120
+          },
+          "orientation": {
+            "x": 0.3,
+            "y": 0.9,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_root",
+      "id": 2101618603,
+      "components": [
+        {
+          "type": "VfxDefinitionComponent",
+          "name": "entity_root_VfxDefinition",
+          "filename": "data/hd/vfx/particles/missiles/light_beams/fx_light_beams_missiles.particles",
+          "hardKillOnDestroy": true
+        },
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "component_transform1",
+          "position": {
+            "x": 120,
+            "y": 0.0,
+            "z": -120
+          },
+          "orientation": {
+            "x": 0.3,
+            "y": -1.9,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_root",
+      "id": 2101618603,
+      "components": [
+        {
+          "type": "VfxDefinitionComponent",
+          "name": "entity_root_VfxDefinition",
+          "filename": "data/hd/vfx/particles/missiles/light_beams/fx_light_beams_missiles.particles",
+          "hardKillOnDestroy": true
+        },
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "component_transform1",
+          "position": {
+            "x": -120,
+            "y": 0.0,
+            "z": 120
+          },
+          "orientation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": -0.2,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_root",
+      "id": 2101618603,
+      "components": [
+        {
+          "type": "VfxDefinitionComponent",
+          "name": "entity_root_VfxDefinition",
+          "filename": "data/hd/vfx/particles/missiles/light_beams/fx_light_beams_missiles.particles",
+          "hardKillOnDestroy": true
+        },
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "component_transform1",
+          "position": {
+            "x": -120,
+            "y": 0.0,
+            "z": -120
+          },
+          "orientation": {
+            "x": 1,
+            "y": 0.25,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        }
+      ]
+    }
+  ]
+}

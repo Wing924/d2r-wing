@@ -25,6 +25,15 @@ data:
     yellow: "ÿc9"
     pink: "ÿc;"
 
+patches:
+  - patches/01_runes_sound
+  - patches/02_runes_texture
+  - patches/03_key_texture
+  - patches/04_light_pillar
+  - patches/05_entrance_light
+  - patches/06_highlight_cain
+  - patches/07_layout
+
 pipelines:
   - name: add equip info
     resource: resources/generated/equip.tsv

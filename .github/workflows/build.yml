@@ -3,8 +3,6 @@ on:
   push:
     tags:
       - 'v*'
-    branches:
-      - main
   pull_request:
     branches:
       - main
@@ -12,53 +10,64 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        mode:
+          - std
+          - startup
+        lang:
+          - sc
+          - tc
     steps:
       - uses: actions/checkout@v3
+        with:
+          fetch-depth: '0'
 
       - uses: actions/setup-go@v3
         with:
           go-version-file: 'go.mod'
 
-      - name: cache textql
-        id: cache-textql
-        uses: actions/cache@v3
-        with:
-          path: /home/runner/go/bin/textql
-          key: ${{ runner.os }}-textql
-
-      - name: build textql
-        if: steps.cache-textql.outputs.cache-hit != 'true'
+      - name: install spruce
         run: |
-          go install github.com/dinedal/textql/textql@2.0.3
-
-      - run: |
           id
-          echo "$PATH"
           wget -nv https://github.com/geofffranks/spruce/releases/download/v1.29.0/spruce-linux-amd64
           chmod a+x spruce-linux-amd64
           mv spruce-linux-amd64 ~/go/bin/spruce
 
       - name: build
+        env:
+          MODE: ${{ matrix.mode }}
+          LANG: ${{ matrix.lang }}
         run: |
-          make build
+          make build MODE=$MODE LANG_TYPE=$LANG
+          echo "VERSION=$(git describe --tags)" >> $GITHUB_ENV
 
-      - name: publish SC
+      - name: publish
+        env:
+          MODE: ${{ matrix.mode }}
+          LANG: ${{ matrix.lang }}
         run: |
-          make publish
-          rm -rf build/mods
+          make publish MODE=$MODE LANG_TYPE=$LANG
           mkdir -p build/mods/wing
           cp -r wing.mpq build/mods/wing
           cd build
-          zip -r wing-sc.zip mods
+          zip -r wing-$MODE-$LANG-$VERSION.zip mods
 
-      - name: publish TC
-        run: |
-          make publish LANG_TYPE=tc
-          rm -rf build/mods
-          mkdir -p build/mods/wing
-          cp -r wing.mpq build/mods/wing
-          cd build
-          zip -r wing-tc.zip mods
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          path: build/wing-*.zip
+          if-no-files-found: error
+
+  publish:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - uses: actions/download-artifact@v3
+        with:
+          path: './'
+
+      - run: ls -lh -R
 
       - name: Release
         if: startsWith(github.ref, 'refs/tags/v')
@@ -67,5 +76,5 @@ jobs:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           prerelease: false
           files: |
-            build/*.zip
+            *.zip
 

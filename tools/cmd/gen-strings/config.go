@@ -10,6 +10,7 @@ type (
 
 	Config struct {
 		Data      map[string]KV `yaml:"data"`
+		Patches   []string      `yaml:"patches"`
 		Pipelines []Pipeline    `yaml:"pipelines"`
 	}
 

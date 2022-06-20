@@ -1,0 +1,10 @@
+patches:
+  - (( append ))
+  - patches/08_waypoint_light
+
+pipelines:
+  - name: modify item
+    resource: resources/item_modify_startup.tsv
+
+  - name: modify text
+    resource: resources/text_modify_startup.tsv
