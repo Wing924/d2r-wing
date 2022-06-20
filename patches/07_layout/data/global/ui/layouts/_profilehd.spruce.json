@@ -5,6 +5,12 @@
             0,
             0,
             0
+        ],
+        "inGameBackgroundColor": [
+            0,
+            0,
+            0,
+            0.9
         ]
     }
 }
