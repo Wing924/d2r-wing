@@ -20,6 +20,8 @@ jobs:
           - tc
     steps:
       - uses: actions/checkout@v3
+        with:
+          fetch-depth: '0'
 
       - uses: actions/setup-go@v3
         with:
