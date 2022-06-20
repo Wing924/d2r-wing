@@ -13,7 +13,7 @@ jobs:
     strategy:
       matrix:
         mode:
-          - normal
+          - std
           - startup
         lang:
           - sc

@@ -1,7 +1,7 @@
 SHELL=/bin/bash -o pipefail
 
 LANG_TYPE					= sc
-MODE						= normal
+MODE						= std
 
 ORIGINDIR 					= origin
 BUILDDIR 					= build
