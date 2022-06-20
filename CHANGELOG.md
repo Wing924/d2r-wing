@@ -2,6 +2,11 @@
 
 ## Unreleased
 
+### New Features
+
+- 新增开荒版
+  - 现有版本命名为标准版
+
 ### Improvements
 
 - 添加了A3剥皮地窖下楼的光柱

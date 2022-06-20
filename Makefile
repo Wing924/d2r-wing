@@ -1,6 +1,8 @@
 SHELL=/bin/bash -o pipefail
 
 LANG_TYPE					= sc
+MODE						= normal
+
 ORIGINDIR 					= origin
 BUILDDIR 					= build
 RESDIR						= resources
@@ -11,6 +13,7 @@ TCDIR						= $(BUILDDIR)/tc
 SCDIR						= $(BUILDDIR)/sc
 ORI_STRINGS_DIR				= $(ORIGINDIR)/data/local/lng/strings
 ORI_STRINGS_LEGACY_DIR		= $(ORIGINDIR)/data/local/lng/strings-legacy
+CONFIG_FILE					= $(BUILDDIR)/config-$(MODE).yml
 
 LEGACY_STRINGS_FILES		= bnet.json item-gems.json item-modifiers.json item-nameaffixes.json item-names.json item-runes.json keybinds.json levels.json mercenaries.json monsters.json npcs.json objects.json quests.json shrines.json skills.json ui.json vo.json
 STRINGS_FILES				= commands.json presence-states.json ui-controller.json $(LEGACY_STRINGS_FILES)
@@ -55,17 +58,18 @@ $(TOOLDIR)/%:
 # build Traditional Chinese strings
 $(TCDIR)/data/local/lng/strings/%.json: $(ORIGINDIR)/data/local/lng/strings/%.json
 	mkdir -p $(@D)
-	$(TOOLDIR)/gen-strings -config ./config/pipelines.yml < $< > $@
+	$(TOOLDIR)/gen-strings -config $(CONFIG_FILE) < $< > $@
 
 # convert Traditional Chinese to Simplified Chinese
 $(SCDIR)/data/local/lng/strings/%.json: $(TCDIR)/data/local/lng/strings/%.json
 	mkdir -p $(@D)
 	$(TOOLDIR)/t2s -in $< > $@
 
-patches: $(TOOLDIR)/std-json $(PATCHES)
-	for p in $(PATCHES); do \
-		scripts/build-patch.sh $(ORIGINDIR) "$$p" $(COMMONDIR) || exit 1; \
-	done
+patches: $(TOOLDIR)/std-json $(CONFIG_FILE)
+	scripts/build-patch-all.sh $(CONFIG_FILE) $(ORIGINDIR) $(COMMONDIR)
+
+$(CONFIG_FILE): config/pipelines.yml config/pipelines_$(MODE).yml
+	spruce merge config/pipelines.yml config/pipelines_$(MODE).yml > $@
 
 clean:
 	rm -rf build
