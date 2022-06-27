@@ -5,7 +5,7 @@ import (
 	"flag"
 	"fmt"
 	"github.com/Wing924/d2r-wing/tools/lib/enc"
-	"github.com/longbridgeapp/opencc"
+	"github.com/Wing924/d2r-wing/tools/lib/opencc"
 	"log"
 	"os"
 )
