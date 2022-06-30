@@ -713,35 +713,35 @@
                     },
                 },
                 {
-                    "type": "ButtonWidget", "name": "StrengthPointButton",
+                    "type": "CharacterStatLevelUpButtonWidget", "name": "StrengthPointButton",
                     "fields": {
                         "rect": { "x": 125, "y": 76 },
                         "filename": "PANEL\\level",
-                        "onClickMessage": "CharacterStatsPanelMessage:UseSkillPoint:0",
+                        "statsIndex": 0,
                     },
                 },
                 {
-                    "type": "ButtonWidget", "name": "DexPointButton",
+                    "type": "CharacterStatLevelUpButtonWidget", "name": "DexPointButton",
                     "fields": {
                         "rect": { "x": 125, "y": 138 },
                         "filename": "PANEL\\level",
-                        "onClickMessage": "CharacterStatsPanelMessage:UseSkillPoint:1",
+                        "statsIndex": 1,
                     },
                 },
                 {
-                    "type": "ButtonWidget", "name": "VitalityPointButton",
+                    "type": "CharacterStatLevelUpButtonWidget", "name": "VitalityPointButton",
                     "fields": {
                         "rect": { "x": 125, "y": 224 },
                         "filename": "PANEL\\level",
-                        "onClickMessage": "CharacterStatsPanelMessage:UseSkillPoint:2",
+                        "statsIndex": 2,
                     },
                 },
                 {
-                    "type": "ButtonWidget", "name": "EnergyPointButton",
+                    "type": "CharacterStatLevelUpButtonWidget", "name": "EnergyPointButton",
                     "fields": {
                         "rect": { "x": 125, "y": 286 },
                         "filename": "PANEL\\level",
-                        "onClickMessage": "CharacterStatsPanelMessage:UseSkillPoint:3",
+                        "statsIndex": 3,
                     },
                 },
                 //Unused Points fields

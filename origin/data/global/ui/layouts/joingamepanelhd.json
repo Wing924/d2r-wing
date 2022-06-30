@@ -3,7 +3,9 @@
     "fields": {
         "rect": "$RightLobbySubPanelRect",
         "anchor": "$LobbyAnchor",
-        "difficultyLabels": ["@strCreateGameNormalText", "@strCreateGameNightmareText", "@strCreateGameHellText"],
+        "difficultyLabels": [ "@strCreateGameNormalText", "@strCreateGameNightmareText", "@strCreateGameHellText" ],
+        "pingBucket": [ 50, 90, 130, "$INT_MAX" ],
+        "pingTooltips": [ "@ExcellentPingTooltip", "@GoodPingTooltip", "@FairPingTooltip", "@PoorPingTooltip" ],
     },
     "children": [
         {
@@ -21,7 +23,7 @@
         {
             "type": "TextBoxWidget", "name": "GameNameInputTitle",
             "fields": {
-                "rect": { "x": 25, "y": 20, "width": 400, "height": 44 },
+                "rect": { "x": 25, "y": 8, "width": 400, "height": 44 },
                 "fontType": "16pt",
                 "text": "@strGameName",
                 "style": {
@@ -36,7 +38,7 @@
                 {
                     "type": "InputTextBoxWidget", "name": "NameInput",
                     "fields": {
-                        "rect": { "x": 12, "y": 56, "width": 430, "height": 46 },
+                        "rect": { "x": 12, "y": 56, "width": 504, "height": 46 },
                         "backgroundColor": "$FontColorTransparent",
                         "maxStringLength": 15,
                         "canInsertNewlines": false,
@@ -56,7 +58,7 @@
         {
             "type": "TextBoxWidget", "name": "Password",
             "fields": {
-                "rect": { "x": 483, "y": 20, "width": 400, "height": 44 },
+                "rect": { "x": 575, "y": 8, "width": 400, "height": 44 },
                 "fontType": "16pt",
                 "text": "@strPassword",
                 "style": {
@@ -71,7 +73,7 @@
                 {
                     "type": "MaskedInputTextBoxWidget", "name": "PasswordInput",
                     "fields": {
-                        "rect": { "x": 12, "y": 56, "width": 430, "height": 46 },
+                        "rect": { "x": 12, "y": 56, "width": 504, "height": 46 },
                         "backgroundColor": "$FontColorTransparent",
                         "maxStringLength": 15,
                         "canInsertNewlines": false,
@@ -89,21 +91,9 @@
             ]
         },
         {
-            "type": "ButtonWidget", "name": "Refresh",
-            "fields": {
-                "rect": { "x": 974, "y": 66 },
-                "filename": "Lobby\\JoinGame\\JoinGame_RefreshBTN",
-                "onClickMessage": "JoinGame:RefreshList",
-                "hoveredFrame": 3,
-                "disabledFrame": 2,
-                "disabledTint": { "a": 1.0 },
-                "tooltipString": "@refresh",
-            }
-        },
-        {
             "type": "TextBoxWidget", "name": "GameNameTitle",
             "fields": {
-                "rect": { "x": 27, "y": 160, "width": 400, "height": 44 },
+                "rect": { "x": 27, "y": 243, "width": 400, "height": 44 },
                 "fontType": "16pt",
                 "text": "@strGameName",
                 "style": {
@@ -117,7 +107,7 @@
         {
             "type": "TextBoxWidget", "name": "NumPlayersTitle",
             "fields": {
-                "rect": { "x": 544, "y": 160, "width": 400, "height": 44 },
+                "rect": { "x": 497, "y": 243, "width": 200, "height": 44 },
                 "fontType": "16pt",
                 "text": "@srostertitle",
                 "style": {
@@ -131,10 +121,11 @@
         {
             "type": "ListWidget", "name": "GamesList",
             "fields": {
-                "rect": { "x": 30, "y": 205, "width": 597, "height": 760 },
+                "rect": { "x": 30, "y": 288, "width": 597, "height": 760 },
                 "selectorName": "JoinGameSelector",
                 "direction": "vertical",
                 "scrollControllerName": "GamesListScrollBar",
+                "itemSelectionMessage": "JoinGame:JoinGame",
             },
             "children": [
                 {
@@ -152,7 +143,7 @@
                         {
                             "type": "TextBoxWidget", "name": "GameName",
                             "fields": {
-                                "rect": { "x": 18, "width": 360, "height": 54 },
+                                "rect": { "x": 8, "width": 502, "height": 54 },
                                 "style": {
                                     "fontColor": "$FontColorWhite",
                                     "pointSize": "$SmallFontSize",
@@ -165,7 +156,7 @@
                         {
                             "type": "TextBoxWidget", "name": "PlayerCount",
                             "fields": {
-                                "rect": { "x": 534, "width": 60, "height": 54 },
+                                "rect": { "x": 524, "width": 40, "height": 54 },
                                 "text": "@GamePlayerCount",
                                 "style": {
                                     "fontColor": "$FontColorGoldYellow",
@@ -174,6 +165,22 @@
                                     "dropShadow": "$DefaultDropShadow",
                                 },
                             },
+                        },
+                        {
+                            "type": "ImageWidget", "name": "PingIndicator",
+                            "fields": {
+                                "rect": { "x": 552, "y": 6, "scale": 0.4 },
+                                "filename": "Lobby/JoinGame/LatencyIndicator"
+                            },
+                            "children": [
+                                {
+                                    "type": "FocusableWidget", "name": "Tooltip",
+                                    "fields": {
+                                        "rect": { "width": 100, "height": 116 },
+                                        "tooltipString": "@GameListPing"
+                                    }
+                                }
+                            ]
                         }
                     ]
                 },
@@ -210,14 +217,14 @@
         {
             "type": "ImageWidget", "name": "ScrollBarBG",
             "fields": {
-                "rect": { "x": 625, "y": 207, },
+                "rect": { "x": 625, "y": 290, },
                 "filename": "Lobby\\JoinGame\\JoinGame_Scrollbar"
             },
         },
         {
             "type": "ScrollControllerWidget", "name": "GamesListScrollBar",
             "fields": {
-                "rect": { "x": 630, "y": 235, "width": 30, "height": 700 },
+                "rect": { "x": 630, "y": 318, "width": 30, "height": 700 },
                 "upArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollUpBtn",
                 "downArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollDownBtn",
                 "barFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollIndicator",
@@ -227,7 +234,7 @@
         {
             "type": "TabBarWidget", "name": "DetailsTabs",
             "fields": {
-                "rect": { "x": 690, "y": 203 },
+                "rect": { "x": 690, "y": 288 },
                 "tabCount": 2,
                 "filename": "Lobby\\JoinGame\\JoinGame_Tabs",
                 "inactiveFrames": [ 1, 1 ],
@@ -247,7 +254,7 @@
         {
             "type": "Widget", "name": "PlayerListContainer",
             "fields": {
-                "rect": { "x": 695, "y": 262 }
+                "rect": { "x": 695, "y": 345 }
             },
             "children": [
                 {
@@ -304,7 +311,7 @@
         {
             "type": "Widget", "name": "GameDescriptionContainer",
             "fields": {
-                "rect": { "x": 695, "y": 270, "width": 410, "height": 695 },
+                "rect": { "x": 695, "y": 353, "width": 410, "height": 695 },
             },
             "children": [
                 {
@@ -424,7 +431,7 @@
         {
             "type": "ButtonWidget", "name": "JoinButton",
             "fields": {
-                "rect": { "x": 332, "y": 1028 },
+                "rect": { "x": 330, "y": 1080 },
                 "filename": "FrontEnd\\HD\\Final\\FrontEnd_ButtonMed",
                 "textString": "@LobbyJoinGame",
                 "onClickMessage": "JoinGame:JoinGame",
@@ -438,62 +445,95 @@
             }
         },
         {
-            "type": "ButtonWidget", "name": "Settings",
+            "type": "TextBoxWidget", "name": "SearchInputTitle",
             "fields": {
-                "rect": { "x": 1050, "y": 66 },
-                "filename": "Lobby\\JoinGame\\JoinGame_SettingsBTN",
-                "focusIndicatorFilename": "Controller/HoverImages/Checkbox_Hover",
-                "focusIndicatorOffset": { "x": 0, "y": -3 },
-                "onClickMessage": "JoinGame:ToggleDropdown",
-                "hoveredFrame": 3,
-                "disabledFrame": 2,
-                "disabledTint": { "a": 1.0 },
-                "disabledTooltipString": "@MPBetaDisabled",
-                "tooltipString": "@OptionsMenuGameDifficulty",
+                "rect": { "x": 25, "y": 126, "width": 400, "height": 44 },
+                "fontType": "16pt",
+                "text": "Search",
+                "style": {
+                    "fontColor": "$FontColorGoldYellow",
+                    "pointSize": "$XMediumFontSize",
+                    "spacing" : "$ReducedSpacing",
+                    "dropShadow": "$DefaultDropShadow",
+                    "alignment": { "v": "center" },
+                },
             },
             "children": [
                 {
-                    "type": "ListWidget", "name": "DifficultyList",
+                    "type": "InputTextBoxWidget", "name": "SearchInput",
                     "fields": {
-                        "rect": { "x": -314, "y": 60, "width": 400, "height": 165 },
-                        "selectorName": "DifficultySelector",
-                        "direction": "vertical",
-                        "scrollControllerName": "DifficultyScrollBar",
-                        "isHoverList": true,
-                    },
-                    "children": [
-                        {
-                            "type": "ListItemWidget", "name": "DifficultyTemplate",
-                            "fields": {
-                                "rect": { "x": 0, "y": 5, "width": 400, "height": 54 },
-                                "baseColor": "$FontColorGold",
-                            },
-                            "children": [
-                                {
-                                    "type": "ToggleButtonWidget", "name": "ToggleItem",
-                                    "fields": {
-                                        "rect": { "x": 0, "y": 0, "width": 372, "height": 54 },
-                                        "text/style": {
-                                            "pointSize": "$MediumFontSize",
-                                        },
-                                        "textColor": "$FontColorGold",
-                                        "textHoverColor": "$FontColorWhite",
-                                        "filename": "Lobby\\ContextMenuSlots",
-                                        "untoggledFrame": 0,
-                                        "toggledFrame": 1,
-                                        "disabledTint": { "r": 1.0, "g": 1.0, "b": 1.0, "a": 1.0 },
-                                        "toggledTint": { "r": 1.35, "g": 1.35, "b": 1.35, "a": 1.0 },
-                                        "textDisabledColor": "$FontColorGray",
-                                    }
-                                }
-                            ]
+                        "rect": { "x": 12, "y": 56, "width": 504, "height": 46 },
+						"focusIndicatorFilename": "Controller/HoverImages/JoinGameInput_Hover",
+                        "focusIndicatorOffset": { "x": 2, "y": 0 },
+                        "backgroundColor": "$FontColorTransparent",
+                        "maxStringLength": 15,
+                        "canInsertNewlines": false,
+                        "fontType": "12ptF",
+                        "fontStyle": "$StyleSettingsNumeric",
+                        "fontStyle": { "fontFace": "BlizzardGlobal" },
+                        "imeEnabled": true,
+                        "navigation": {
+                            "next": { "name": "PasswordInput" },
                         },
-                        {
-                            "type": "Widget", "name": "DifficultySelector",
-                        }
-                    ]
+                        "onUpdateMessage": "JoinGame:CacheSearchTerm",
+                        "onReturnInputMessage": "JoinGame:RefreshList",
+                    }
                 },
             ]
+        },
+        {
+            "type": "TextBoxWidget", "name": "Difficulty",
+            "fields": {
+                "rect": { "x": 575, "y": 126, "width": 400, "height": 44 },
+                "fontType": "16pt",
+                "text": "@OptionsMenuGameDifficulty",
+                "style": {
+                    "fontColor": "$FontColorGoldYellow",
+                    "pointSize": "$XMediumFontSize",
+                    "spacing" : "$ReducedSpacing",
+                    "dropShadow": "$DefaultDropShadow",
+                    "alignment": { "v": "center" },
+                },
+            },
+            "children": [
+                {
+                    "type": "DropdownListWidget", "name": "DifficultyDropdown",
+                    "fields": {
+                        "rect": { "x": 0, "y": 46, "width": 460, "height": 67 },
+                        "background/rect": { "x": 0, "y": 0, "width": 448, "height": 67 },
+                        "text/rect": { "x": -50 },
+                        "focusIndicatorFilename": "Controller/HoverImages/LadderDropdown_Hover",
+                        "focusIndicatorOffset": { "x": 189, "y": 4 },
+                        "pressedFrame": 1,
+                        "disabledFrame": 2,
+                        "hoveredFrame": 3,
+                        "states": [ "" ],
+                        "onUpdateMessage": "JoinGame:FilterDifficulty",
+                        "text/style": {
+                            "pointSize": "$MediumFontSize",
+                            "alignment": { "h": "center", "v": "center" },
+                        },
+                        "textColor": "$FontColorLightGold",
+                        "tooltipStyle": {
+                            "fontStyle": {
+                                "options": { "newlineHandling": "standard" },
+                            }
+                        },
+                    },
+              },
+            ]
+        },
+        {
+            "type": "ButtonWidget", "name": "Refresh",
+            "fields": {
+                "rect": { "x": 1037, "y": 172 },
+                "filename": "Lobby\\JoinGame\\JoinGame_RefreshBTN",
+                "onClickMessage": "JoinGame:RefreshList",
+                "hoveredFrame": 3,
+                "disabledFrame": 2,
+                "disabledTint": { "a": 1.0 },
+                "tooltipString": "@refresh",
+            }
         },
     ]
 }
