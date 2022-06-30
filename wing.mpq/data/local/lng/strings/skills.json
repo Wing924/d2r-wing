@@ -4094,7 +4094,7 @@
     "jaJP": "ファイアゴーレム",
     "ptBR": "Golem de Fogo",
     "ruRU": "Огненный голем",
-    "zhCN": "火焰魔像"
+    "zhCN": "火焰傀儡"
   },
   {
     "id": 3123,
@@ -4111,7 +4111,7 @@
     "jaJP": "アイアンゴーレム",
     "ptBR": "Golem de Ferro",
     "ruRU": "Железный голем",
-    "zhCN": "钢铁魔像"
+    "zhCN": "钢铁傀儡"
   },
   {
     "id": 3124,
@@ -4128,7 +4128,7 @@
     "jaJP": "ブラッドゴーレム",
     "ptBR": "Golem de Sangue",
     "ruRU": "Кровяной голем",
-    "zhCN": "鲜血魔像"
+    "zhCN": "鲜血傀儡"
   },
   {
     "id": 3125,
@@ -4145,7 +4145,7 @@
     "jaJP": "クレイゴーレム",
     "ptBR": "Golem de Barro",
     "ruRU": "Глиняный голем",
-    "zhCN": "黏土魔像"
+    "zhCN": "黏土傀儡"
   },
   {
     "id": 3179,
@@ -5046,7 +5046,7 @@
     "jaJP": "ゴーレムのレベル: ",
     "ptBR": "Nível do golem: ",
     "ruRU": "Уровень голема: ",
-    "zhCN": "魔像等级:"
+    "zhCN": "傀儡等级:"
   },
   {
     "id": 4300,
@@ -6606,7 +6606,7 @@
     "itIT": "Lancio Sinistro",
     "koKR": "왼손 투척",
     "plPL": "Rzut z lewej ręki",
-    "esMX": "Arrojar con mano izq.",
+    "esMX": "Arrojar con izq.",
     "jaJP": "左手投げ",
     "ptBR": "Arremesso Esquerdo",
     "ruRU": "Бросок левой",
@@ -11353,7 +11353,7 @@
     "jaJP": "クレイゴーレム",
     "ptBR": "Golem de Barro",
     "ruRU": "Глиняный голем",
-    "zhCN": "黏土魔像"
+    "zhCN": "黏土傀儡"
   },
   {
     "id": 4674,
@@ -11370,7 +11370,7 @@
     "jaJP": "土のゴーレムを作って戦わせる",
     "ptBR": "cria um golem para lutar por você",
     "ruRU": "Создает голема, который помогает вам в бою.",
-    "zhCN": "制造一个魔像为你而战"
+    "zhCN": "制造一个傀儡为你而战"
   },
   {
     "id": 4675,
@@ -11387,7 +11387,7 @@
     "jaJP": "土からゴーレムを\n作り出して戦わせる",
     "ptBR": "cria um golem da terra\npara lutar ao seu lado",
     "ruRU": "Создает из земли голема.",
-    "zhCN": "用黏土制造一个魔像\n和你并肩战斗"
+    "zhCN": "用黏土制造一个傀儡\n和你并肩战斗"
   },
   {
     "id": 4676,
@@ -11404,7 +11404,7 @@
     "jaJP": "クレイゴーレム",
     "ptBR": "Golem de Barro",
     "ruRU": "Глиняный голем",
-    "zhCN": "黏土魔像"
+    "zhCN": "黏土傀儡"
   },
   {
     "id": 4677,
@@ -11625,7 +11625,7 @@
     "jaJP": "ゴーレムマスター",
     "ptBR": "Maestria do Golem",
     "ruRU": "Мастер големов",
-    "zhCN": "魔像精通"
+    "zhCN": "傀儡精通"
   },
   {
     "id": 4690,
@@ -11642,7 +11642,7 @@
     "jaJP": "ゴーレムのライフと移動速度が上がる",
     "ptBR": "Aumenta a velocidade e os pontos de vida dos golens",
     "ruRU": "Увеличивает скорость и здоровье големов.",
-    "zhCN": "强化所有魔像的速度和生命"
+    "zhCN": "强化所有傀儡的速度和生命"
   },
   {
     "id": 4691,
@@ -11659,7 +11659,7 @@
     "jaJP": "召喚するゴーレムのライフと移動速度が上がる",
     "ptBR": "Aumenta a velocidade e os pontos de vida de todos os seus golens",
     "ruRU": "Увеличивает скорость и здоровье големов.",
-    "zhCN": "提高所有魔像的速度和生命"
+    "zhCN": "提高所有傀儡的速度和生命"
   },
   {
     "id": 4692,
@@ -11676,7 +11676,7 @@
     "jaJP": "ゴーレムマスター",
     "ptBR": "Maestria do Golem",
     "ruRU": "Мастер големов",
-    "zhCN": "魔像精通"
+    "zhCN": "傀儡精通"
   },
   {
     "id": 4693,
@@ -12033,7 +12033,7 @@
     "jaJP": "ブラッドゴーレム",
     "ptBR": "Golem de Sangue",
     "ruRU": "Кровяной голем",
-    "zhCN": "鲜血魔像"
+    "zhCN": "鲜血傀儡"
   },
   {
     "id": 4714,
@@ -12050,7 +12050,7 @@
     "jaJP": "奪ったライフを術者と共有するゴーレムを作る",
     "ptBR": "um golem que compartilha os pontos de vida que ele rouba",
     "ruRU": "Голем, который похищает здоровье и передает его некроманту.",
-    "zhCN": "一个可以窃取并分享生命力的魔像"
+    "zhCN": "一个可以窃取并分享生命力的傀儡"
   },
   {
     "id": 4715,
@@ -12067,7 +12067,7 @@
     "jaJP": "敵から奪ったライフを術者と共有する\nゴーレムを作り出す",
     "ptBR": "cria um golem que compartilha com você os pontos de vida que\nele rouba",
     "ruRU": "Создает голема, который передает\nвам похищаемое им здоровье.",
-    "zhCN": "制造一个魔像, 与你分享\n它所偷取的生命"
+    "zhCN": "制造一个傀儡, 与你分享\n它所偷取的生命"
   },
   {
     "id": 4716,
@@ -12084,7 +12084,7 @@
     "jaJP": "ブラッドゴーレム",
     "ptBR": "Golem de Sangue",
     "ruRU": "Кровяной голем",
-    "zhCN": "鲜血魔像"
+    "zhCN": "鲜血傀儡"
   },
   {
     "id": 4717,
@@ -12373,7 +12373,7 @@
     "jaJP": "アイアンゴーレム",
     "ptBR": "Golem de Ferro",
     "ruRU": "Железный голем",
-    "zhCN": "钢铁魔像"
+    "zhCN": "钢铁傀儡"
   },
   {
     "id": 4734,
@@ -12390,7 +12390,7 @@
     "jaJP": "金属製のアイテムからゴーレムを作る",
     "ptBR": "transforma um item em um golem",
     "ruRU": "Создает голема из предмета.",
-    "zhCN": "从一个物品中制造出魔像"
+    "zhCN": "从一个物品中制造出傀儡"
   },
   {
     "id": 4735,
@@ -12407,7 +12407,7 @@
     "jaJP": "金属製のアイテムをゴーレムに変異させる\nゴーレムは媒体となるアイテムの性質を受け継ぐ",
     "ptBR": "transforma um item metálico em um golem que ganha\nas propriedades do item",
     "ruRU": "Превращает металлический предмет в голема.\nкоторый получает свойства этого предмета.",
-    "zhCN": "将一个金属物品变为魔像\n获得物品上的属性"
+    "zhCN": "将一个金属物品变为傀儡\n获得物品上的属性"
   },
   {
     "id": 4736,
@@ -12424,7 +12424,7 @@
     "jaJP": "アイアンゴーレム",
     "ptBR": "Golem de Ferro",
     "ruRU": "Железный голем",
-    "zhCN": "钢铁魔像"
+    "zhCN": "钢铁傀儡"
   },
   {
     "id": 4737,
@@ -12645,7 +12645,7 @@
     "jaJP": "ファイアゴーレム",
     "ptBR": "Golem de Fogo",
     "ruRU": "Огненный голем",
-    "zhCN": "火焰魔像"
+    "zhCN": "火焰傀儡"
   },
   {
     "id": 4750,
@@ -12662,7 +12662,7 @@
     "jaJP": "炎のゴーレムを作る",
     "ptBR": "cria um golem de fogo",
     "ruRU": "Создает огненного голема.",
-    "zhCN": "制造一个火焰魔像"
+    "zhCN": "制造一个火焰傀儡"
   },
   {
     "id": 4751,
@@ -12679,7 +12679,7 @@
     "jaJP": "受ける火炎ダメージをライフに\n変換するゴーレムを作り出す",
     "ptBR": "cria um golem que converte o dano ígneo\nque recebe em pontos de vida",
     "ruRU": "Создает голема, который восполняет\nздоровье, получая урон от огня.",
-    "zhCN": "制造出魔像, 将受到的火焰伤害\n转化为生命"
+    "zhCN": "制造出傀儡, 将受到的火焰伤害\n转化为生命"
   },
   {
     "id": 4752,
@@ -12696,7 +12696,7 @@
     "jaJP": "ファイアゴーレム",
     "ptBR": "Golem de Fogo",
     "ruRU": "Огненный голем",
-    "zhCN": "火焰魔像"
+    "zhCN": "火焰傀儡"
   },
   {
     "id": 4753,
@@ -16886,12 +16886,12 @@
     "enUS": "Identify",
     "zhTW": "鉴定",
     "deDE": "Identifizieren",
-    "esES": "Pergamino de identificación",
+    "esES": "Ident.",
     "frFR": "Identifier",
     "itIT": "Identificazione",
     "koKR": "감별",
     "plPL": "Identyfikacja",
-    "esMX": "Pergamino de identificación",
+    "esMX": "Identif.",
     "jaJP": "鑑定",
     "ptBR": "Identificação",
     "ruRU": "Распознание предметов",
@@ -17022,12 +17022,12 @@
     "enUS": "Town Portal",
     "zhTW": "城镇传送",
     "deDE": "Stadtportal",
-    "esES": "Portal ciudad",
+    "esES": "Portal",
     "frFR": "Portail retour",
     "itIT": "Portale Cittad.",
     "koKR": "마을 차원문",
     "plPL": "Miejski portal",
-    "esMX": "Portal al poblado",
+    "esMX": "Portal",
     "jaJP": "タウン・ポータル",
     "ptBR": "Portal da Cidade",
     "ruRU": "Портал в город",
@@ -17039,7 +17039,7 @@
     "enUS": "Tome of Town Portal",
     "zhTW": "城镇传送之书",
     "deDE": "Foliant des Stadtportals",
-    "esES": "Tomo del portal de la ciudad",
+    "esES": "Tomo del portal",
     "frFR": "Tome de portail de retour en ville",
     "itIT": "Tomo del Portale Cittadino",
     "koKR": "마을 차원문의 고서",
@@ -17090,7 +17090,7 @@
     "enUS": "Town Portal",
     "zhTW": "城镇传送",
     "deDE": "Stadtportal",
-    "esES": "Tomo del portal de la ciudad",
+    "esES": "Tomo del portal",
     "frFR": "Portail retour",
     "itIT": "Portale Cittad.",
     "koKR": "마을 차원문",
@@ -28523,7 +28523,7 @@
     "jaJP": "コープスエクスプロージョンのダメージ: 死体のライフの%d - %d%%",
     "ptBR": "Dano de Explodir Cadáver: %d-%d%% de pontos de vida de cadáver",
     "ruRU": "Урон от взрыва трупа: %d–%d%% здоровья убитого монстра",
-    "zhCN": "尸爆伤害: 尸体生命值的%d-%d%%"
+    "zhCN": "邪爆伤害: 尸体生命值的%d-%d%%"
   },
   {
     "id": 10997,
@@ -35723,12 +35723,12 @@
     "zhTW": "%s：每等级 %+d%% 机率",
     "deDE": "%s: %+d%% Chance pro Stufe",
     "esES": "%s: %+d%% de probabilidad por nivel",
-    "frFR": "%s : %+d%% de chances par niveau",
+    "frFR": "%s : %+d%% de chances par niveau",
     "itIT": "%s: %+d%% di probabilità per livello",
     "koKR": "%s: 레벨당 확률 %+d%%",
     "plPL": "%s: %+d%% do szansy na poziom",
     "esMX": "%s: %+d%% de probabilidad por nivel",
-    "jaJP": "%s: レベルごとに発生率増加（%+d%%） ",
+    "jaJP": "%s: レベルごとに発生率増加（%+d%%）",
     "ptBR": "%s: %+d%% de chance por nível",
     "ruRU": "%s: %+d%% к вероятности за уровень",
     "zhCN": "%s: 每等级几率 %+d%%"
