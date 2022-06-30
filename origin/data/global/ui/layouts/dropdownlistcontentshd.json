@@ -1,9 +1,12 @@
 {
     "type": "DropdownListContentsPanel", "name": "DropdownListContents",
     "fields": {
-        "rect": { "width": 625, "height": 1000 },
+        "rect": { "width": 625, "height": 600 },
         "priority": 2000000001,
         "drawTint": false,
+        "scrollBarOffset": { "x": -15, "y": 15 },
+        "scrollBarSize": { "x": 25, "y": 540 },
+        "scrollBarBackgroundOffset": { "x": -18, "y": 0 },
     },
     "children": [
         {
@@ -46,8 +49,17 @@
             ]
         },
         {
+            "type": "ImageWidget", "name": "ScrollBarBackground",
+            "fields": {
+                "filename": "Lobby\\Final\\LobbyDropdownScrollBar",
+            },
+        },
+        {
             "type": "ScrollControllerWidget", "name": "ScrollController",
             "fields": {
+                "upArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollUpBtn",
+                "downArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollDownBtn",
+                "barFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollIndicator",
                 "viewName": "Items"
             }
         },

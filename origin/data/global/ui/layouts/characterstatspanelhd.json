@@ -967,49 +967,49 @@
             "children": [
                 // Add skill pt button
                 {
-                    "type": "ButtonWidget", "name": "StrengthPointButton",
+                    "type": "CharacterStatLevelUpButtonWidget", "name": "StrengthPointButton",
                     "fields": {
                         "rect": { "x": 436, "y": 381 },
                         "filename": "PANEL\\Character_Sheet\\LevelUpButton",
                         "hoveredFrame": 1,
                         "pressedFrame": 2,
-                        "onClickMessage": "CharacterStatsPanelMessage:UseSkillPoint:0",
+                        "statsIndex": 0,
                         "tooltipString": "@TooltipCharacterScreenSpendStatPoint",
                         "sound": "none",
                     },
                 },
                 {
-                    "type": "ButtonWidget", "name": "DexPointButton",
+                    "type": "CharacterStatLevelUpButtonWidget", "name": "DexPointButton",
                     "fields": {
                         "rect": { "x": 436, "y": 638 },
                         "filename": "PANEL\\Character_Sheet\\LevelUpButton",
                         "hoveredFrame": 1,
                         "pressedFrame": 2,
-                        "onClickMessage": "CharacterStatsPanelMessage:UseSkillPoint:1",
+                        "statsIndex": 1,
                         "tooltipString": "@TooltipCharacterScreenSpendStatPoint",
                         "sound": "none",
                     },
                 },
                 {
-                    "type": "ButtonWidget", "name": "VitalityPointButton",
+                    "type": "CharacterStatLevelUpButtonWidget", "name": "VitalityPointButton",
                     "fields": {
                         "rect": { "x": 436, "y": 895 },
                         "filename": "PANEL\\Character_Sheet\\LevelUpButton",
                         "hoveredFrame": 1,
                         "pressedFrame": 2,
-                        "onClickMessage": "CharacterStatsPanelMessage:UseSkillPoint:2",
+                        "statsIndex": 2,
                         "tooltipString": "@TooltipCharacterScreenSpendStatPoint",
                         "sound": "none",
                     },
                 },
                 {
-                    "type": "ButtonWidget", "name": "EnergyPointButton",
+                    "type": "CharacterStatLevelUpButtonWidget", "name": "EnergyPointButton",
                     "fields": {
                         "rect": { "x": 436, "y": 1056 },
                         "filename": "PANEL\\Character_Sheet\\LevelUpButton",
                         "hoveredFrame": 1,
                         "pressedFrame": 2,
-                        "onClickMessage": "CharacterStatsPanelMessage:UseSkillPoint:3",
+                        "statsIndex": 3,
                         "tooltipString": "@TooltipCharacterScreenSpendStatPoint",
                         "sound": "none",
                     },

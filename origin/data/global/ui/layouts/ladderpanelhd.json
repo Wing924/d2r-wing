@@ -31,13 +31,13 @@
                             "type": "ListItemWidget", "name": "Template",
                             "fields": {
                                 "rect": { "x": 0, "y": 0, "width": 1111, "height": 54 },
-                            "focusIndicatorFilename": "Controller/HoverImages/LadderSlat_Hover",
+                                "focusIndicatorFilename": "Controller/HoverImages/LadderSlat_Hover",
                             },
                             "children": [
                                 {
                                     "type": "TextBoxWidget", "name": "Rank",
                                     "fields": {
-                                        "rect": { "x": 15, "width": 120, "height": 54 },
+                                        "rect": { "x": 10, "width": 240, "height": 54 },
                                         "style": {
                                             "fontColor": "$FontColorWhite",
                                             "pointSize": "$MediumFontSize",
@@ -50,7 +50,7 @@
                                     "type": "TextBoxWidget", "name": "Name",
                                     "fields": {
                                         "truncateWithEllipsis": true,
-                                        "rect": { "x": 135, "width": 300, "height": 54 },
+                                        "rect": { "x": 250, "width": 310, "height": 54 },
                                         "style": {
                                             "fontColor": "$FontColorWhite",
                                             "pointSize": "$MediumFontSize",
@@ -62,7 +62,7 @@
                                 {
                                     "type": "TextBoxWidget", "name": "Class",
                                     "fields": {
-                                        "rect": { "x": 465, "width": 120, "height": 54 },
+                                        "rect": { "x": 560, "width": 120, "height": 54 },
                                         "style": {
                                             "fontColor": "$FontColorWhite",
                                             "pointSize": "$MediumFontSize",
@@ -74,7 +74,7 @@
                                 {
                                     "type": "TextBoxWidget", "name": "Level",
                                     "fields": {
-                                        "rect": { "x": 660, "width": 85, "height": 54 },
+                                        "rect": { "x": 730, "width": 70, "height": 54 },
                                         "style": {
                                             "fontColor": "$FontColorWhite",
                                             "pointSize": "$MediumFontSize",
@@ -86,7 +86,7 @@
                                 {
                                     "type": "TextBoxWidget", "name": "Experience",
                                     "fields": {
-                                        "rect": { "x": 765, "width": 340, "height": 54 },
+                                        "rect": { "x": 800, "width": 300, "height": 54 },
                                         "style": {
                                             "fontColor": "$FontColorWhite",
                                             "pointSize": "$MediumFontSize",
@@ -106,11 +106,12 @@
                 {
                     "type": "TextBoxWidget", "name": "MainListRankTitle",
                     "fields": { 
-                        "rect": { "x": 20, "y": 105, "width": 200, "height": 40 }, 
+                        "rect": { "x": 20, "y": 105, "width": 240, "height": 40 }, 
                         "text": "@RankX",
                         "style": {
                             "fontColor": "$FontColorLightGray", 
                             "pointSize": "$MediumFontSize",
+                            "spacing": "$ReducedSpacing",
                             "alignment": { "h": "left", "v": "center" },
                         },
                     }
@@ -118,11 +119,12 @@
                 {
                     "type": "TextBoxWidget", "name": "MainListNameTitle",
                     "fields": { 
-                        "rect": { "x": 150, "y": 105, "width": 200, "height": 40 }, 
+                        "rect": { "x": 260, "y": 105, "width": 340, "height": 40 }, 
                         "text": "@strName",
                         "style": {
                             "fontColor": "$FontColorLightGray", 
                             "pointSize": "$MediumFontSize",
+                            "spacing": "$ReducedSpacing",
                             "alignment": { "h": "left", "v": "center" },
                         },
                     }
@@ -130,24 +132,26 @@
                 {
                     "type": "TextBoxWidget", "name": "MainListClassTitle",
                     "fields": { 
-                        "rect": { "x": 475, "y": 105, "width": 200, "height": 40 }, 
+                        "rect": { "x": 530, "y": 105, "width": 160, "height": 40 }, 
                         "text": "@strClass",
                         "style": {
                             "fontColor": "$FontColorLightGray", 
                             "pointSize": "$MediumFontSize",
-                            "alignment": { "h": "left", "v": "center" },
+                            "spacing": "$ReducedSpacing",
+                            "alignment": { "h": "center", "v": "center" },
                         },
                     }
                 },
                 {
                     "type": "TextBoxWidget", "name": "MainListLevelTitle",
                     "fields": { 
-                        "rect": { "x": 670, "y": 105, "width": 120, "height": 40 }, 
+                        "rect": { "x": 680, "y": 105, "width": 180, "height": 40 }, 
                         "text": "@strchrlvl",
                         "style": {
                             "fontColor": "$FontColorLightGray", 
                             "pointSize": "$MediumFontSize",
-                            "alignment": { "h": "left", "v": "center" },
+                            "spacing": "$ReducedSpacing",
+                            "alignment": { "h": "center", "v": "center" },
                         },
                     }
                 },
@@ -159,7 +163,8 @@
                         "style": {
                             "fontColor": "$FontColorLightGray", 
                             "pointSize": "$MediumFontSize",
-                            "alignment": { "h": "left", "v": "center" },
+                            "spacing": "$ReducedSpacing",
+                            "alignment": { "h": "center", "v": "center" },
                         },
                     }
                 },
@@ -189,7 +194,7 @@
                                         {
                                             "type": "TextBoxWidget", "name": "Rank",
                                             "fields": {
-                                                "rect": { "x": 15, "width": 120, "height": 54 },
+                                                "rect": { "x": 10, "width": 240, "height": 54 },
                                                 "style": {
                                                     "fontColor": "$FontColorWhite",
                                                     "pointSize": "$MediumFontSize",
@@ -202,7 +207,7 @@
                                             "type": "TextBoxWidget", "name": "Name",
                                             "fields": {
                                                 "truncateWithEllipsis": true,
-                                                "rect": { "x": 135, "width": 300, "height": 54 },
+                                                "rect": { "x": 250, "width": 310, "height": 54 },
                                                 "style": {
                                                     "fontColor": "$FontColorWhite",
                                                     "pointSize": "$MediumFontSize",
@@ -214,7 +219,7 @@
                                         {
                                             "type": "TextBoxWidget", "name": "Class",
                                             "fields": {
-                                                "rect": { "x": 465, "width": 120, "height": 54 },
+                                                "rect": { "x": 560, "width": 120, "height": 54 },
                                                 "style": {
                                                     "fontColor": "$FontColorWhite",
                                                     "pointSize": "$MediumFontSize",
@@ -226,7 +231,7 @@
                                         {
                                             "type": "TextBoxWidget", "name": "Level",
                                             "fields": {
-                                                "rect": { "x": 660, "width": 85, "height": 54 },
+                                                "rect": { "x": 730, "width": 70, "height": 54 },
                                                 "style": {
                                                     "fontColor": "$FontColorWhite",
                                                     "pointSize": "$MediumFontSize",
@@ -238,7 +243,7 @@
                                         {
                                             "type": "TextBoxWidget", "name": "Experience",
                                             "fields": {
-                                                "rect": { "x": 765, "width": 340, "height": 54 },
+                                                "rect": { "x": 800, "width": 300, "height": 54 },
                                                 "style": {
                                                     "fontColor": "$FontColorWhite",
                                                     "pointSize": "$MediumFontSize",

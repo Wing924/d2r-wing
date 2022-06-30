@@ -1186,6 +1186,39 @@
                             ]
                         },
                         {
+                            "type": "TableRowWidget", "name": "Row AutomapAutoOpen",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "AutomapAutoOpenText",
+                                    "fields": {
+                                        "text": "@AutoMapAutoOpenLabel",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                },
+                                {
+                                    "type": "CarouselWidget", "name": "AutomapAutoOpen",
+                                    "fields": {
+                                        "rect": "$OptionsCarouselRect",
+                                        "focusIndicatorPadding": "$OptionsCarouselFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsCarouselFocusIndicatorFilename",
+                                        "states": [ "AutomapClosed", "AutomapOpen" ],
+                                        "fontType": "8ptE",
+                                        "onUpdateMessage": "OptionsPanelMessage:SetAutomapOpen",
+                                        "style": "$StyleSettingsCarousel",
+                                        "enabledColor" : "$CarouselEnabledColor",
+                                        "disabledColor" : "$CarouselDisabledColor",
+                                        "tooltipString": "@OptionsMenuAutomapAutoOpenTooltip",
+                                        "tooltipStyle": {
+                                            "fontStyle": {
+                                                "options": { "newlineHandling": "standard" },
+                                            },
+                                            "showAfterDelay": true,
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
                             "type": "TableRowWidget", "name": "Row CenterWhenCleared",
                             "children": [
                                 {

@@ -12,6 +12,12 @@
             },
             "children": [
                 {
+                    "type": "ClickCatcherWidget", "name": "ClickCatcher",
+                    "fields": {
+                        "fitToParent": true,
+                    }
+                },
+                {
                     "type": "TextBoxWidget", "name": "Prompt",
                     "fields": {
                         "rect": { "x": 78, "y": 85, "width": 1076, "height": 170 },

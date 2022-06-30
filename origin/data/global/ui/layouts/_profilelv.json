@@ -137,8 +137,9 @@
     "TutorialTooltipConsoleTabsRect": { "x": -675, "y": 751, "width": 900, "height": 800 },
     "TutorialTooltipConsoleOnlineRect": { "x": -1375, "y": 451, "width": 900, "height": 1400 },
     "TutorialTooltipConsoleOfflineRect": { "x": -1375, "y": 451, "width": 900, "height": 1400 },
-    "TutorialTooltipConsoleSoloRect": { "x": 275, "y": 451, "width": 900, "height": 800 },
-    "TutorialTooltipConsoleMultiRect": { "x": -1375, "y": 451, "width": 900, "height": 800 },
+    "TutorialTooltipConsoleSoloRect": { "x": -200, "y": 451, "width": 900, "height": 800 },
+    "TutorialTooltipConsoleGameCreatorRect": { "x": -1600, "y": 451, "width": 900, "height": 800 },
+    "TutorialTooltipConsoleGameListRect": { "x": -700, "y": 451, "width": 900, "height": 800 },
 
     "TooltipConfirmSmall": { "x": 200, "y": 300 },
     "TooltipDismissSmall": { "x": 200, "y": 450 },

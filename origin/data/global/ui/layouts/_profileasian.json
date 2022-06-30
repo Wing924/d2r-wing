@@ -6,6 +6,9 @@
     "MediumFontSize": 28,
     "SmallFontSize": 26,
 
+    // HirablesPanel
+    "SecondSetIconOffset": { "x": 210 },
+
     // Join game tweaks.
     "JoinGamePlayerEntryHeight": 140,
     "JoinGamePlayerNameHeight": 100,

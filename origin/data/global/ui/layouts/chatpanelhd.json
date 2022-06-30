@@ -37,7 +37,7 @@
                     "options": { "pipeCharacterBehavior" : "handle" },
                     "alignment": { "h": "left", "v": "center" }
                 }
-            }
+            } 
         },
         {
             "type": "AutocompleteInputTextBoxWidget", "name": "InputBox",
@@ -110,23 +110,10 @@
                             ]
                         },
                         {
-                            "type": "ImageWidget", "name": "ScrollBarBackground",
+                            "type": "ScrollControllerWidget", "name": "AutocompleteScrollBar",
                             "fields": {
-                                "rect": { "x": 382, "y": 0 },
-                                "filename": "Lobby\\Final\\Chat_Context_ScrollBar",
-                            },
-                            "children": [
-                                {
-                                    "type": "ScrollControllerWidget", "name": "AutocompleteScrollBar",
-                                    "fields": {
-                                        "rect": { "x": 5, "y": 28, "width": 26, "height": 188 },
-                                        "viewName": "AutoSuggestList",
-                                        "upArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollUpBtn",
-                                        "downArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollDownBtn",
-                                        "barFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollIndicator",
-                                    }
-                                },
-                            ]
+                                "viewName": "AutoSuggestList",
+                            }
                         },
                     ]
                 },
@@ -224,7 +211,7 @@
                                         {
                                             "type": "TextBoxWidget", "name": "TextBox",
                                             "fields": {
-                                                "rect": { "x": 10, "y": 6, "width": 1195, "height": 50 },
+                                                "rect": { "x": 10, "y": 2, "width": 1195, "height": 50 },
                                                 "style": {
                                                     "pointSize": "$MediumFontSize",
                                                     "alignment": { "h": "left", "v": "center" },
