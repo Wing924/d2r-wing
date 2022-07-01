@@ -1,10 +1,18 @@
 {
+    "FontColorSocketedEtherealColor": {
+        "r": 255,
+        "g": 182,
+        "b": 193,
+        "a": 255
+    },
     "TooltipStyle": {
         "inGameTargetPadding": [
             0,
             0,
             0,
             0
-        ]
+        ],
+        "SocketedColor": "$FontColorSocketedEtherealColor",
+        "EtherealColor": "$FontColorSocketedEtherealColor"
     }
 }

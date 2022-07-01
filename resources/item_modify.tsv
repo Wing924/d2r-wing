@@ -24,7 +24,7 @@ id	zhTW	prefix	newName	suffix	color
 2202	鑑定卷軸		(null)
 2207	精力藥水		(null)
 2208	解毒藥水		解毒		gray
-2209	活力藥水		小紫
+2209	活力藥水		(null)
 2210	全效活力藥水		大紫		pink
 2211	融冰藥水		融冰		gray
 2212	護身符	★		★
@@ -50,11 +50,11 @@ id	zhTW	prefix	newName	suffix	color
 2267	輕效生命藥水		(null)
 2268	生命藥水		(null)
 2269	強效生命藥水		(null)
-2270	特效生命藥水		超紅
+2270	特效生命藥水		超紅		gray
 2271	弱效法力藥水		(null)
 2272	輕效法力藥水		(null)
 2273	法力藥水		(null)
 2274	強效法力藥水		(null)
-2275	特效法力藥水		超藍
+2275	特效法力藥水		超藍		gray
 2280	無瑕骷髏石				red
 2281	完美骷髏石				red
