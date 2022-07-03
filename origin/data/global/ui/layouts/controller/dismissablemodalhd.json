@@ -1,0 +1,31 @@
+{
+    "basedOn": "DismissableModalHD.json",
+    "type": "Modal", "name": "DismissableModal",
+    "children": [
+        {
+            "type": "ImageWidget", "name": "Frame",
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "Prompt",
+                },
+                {
+                    "type": "ButtonWidget", "name": "Dismiss",
+                    "children": [
+                        {
+                            "type": "ButtonLegendWidget", "name": "DismissLegend",
+                            "fields": {
+                                "anchor": { "x": 0.5, "y": 1.0 },
+                                "text": { "style": "$StyleButtonLegend" },
+                                "presets": [
+                                    {
+                                      "action": "select",
+                                    },
+                                ],
+                            }
+                        },
+                    ]
+                },
+            ]
+        },
+    ]
+}

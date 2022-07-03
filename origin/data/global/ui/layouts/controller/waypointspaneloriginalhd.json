@@ -1,0 +1,75 @@
+{
+    "basedOn": "WaypointsPanelOriginalHD.json",
+    "type": "WaypointsPanel", "name": "WaypointsPanelOriginal",
+    "fields": {
+        "buttonOffset": 140,
+        "rect": "$ConsoleCenterPanelRect",
+        "selectableFontColor": "$FontColorGoldYellow"
+    },
+    "children": [
+        {
+            "type": "ClickCatcherWidget", "name": "ClickCatcher",
+            "fields": {
+                "rect": [ 0, 0, 0, 0 ],
+                "fitToParent": true
+            }
+        },
+        {
+            "type": "ImageWidget", "name": "Background",
+            "fields": {
+                "rect": { "x": 7, "y": 4 },
+                "filename": "Controller/Panel/Waypoints/V2/WaypointsBG",
+            }
+        },
+        {
+            "type": "TabBarWidget", "name": "Tabs",
+            "fields": {
+                "rect": { "x": 112, "y": 20, "width": 1616, "height": 121},
+                "filename": "Controller/Panel/Waypoints/V2/WaypointsTab_Classic",
+                "textStyle": { "pointSize": "$LargeFontSize" },
+                "tabSize": { "x": 391, "y": 119 },
+                "tabPadding": "$PanelTabPadding",
+                "focusOnMouseOver": true,
+                "tabLeftIndicatorPosition": { "x": -46, "y": -1 },
+                "tabRightIndicatorPosition": { "x": 1614, "y": -1 },
+            }
+        },
+        // waypoint button templates
+        {
+            "type": "Widget", "name": "Templates",
+            "children": [
+                {
+                    "type": "ButtonWidget", "name": "UnselectableButtonTemplate",
+                    "fields": {
+                        "rect": { "x": 27, "y": 132 },
+                        "filename": "Controller/Panel/Waypoints/V2/WaypointUnselectable",
+                        "focusIndicatorFilename": "Controller/HoverImages/WaypointItem_Hover",
+                        "pointSize": "$LargeFontSize",
+                        "text/rect": {"x": 160}
+                    }
+                },
+                {
+                    "type": "ImageWidget", "name": "SelectableButton",
+                    "fields": {
+                        "filename": "Controller/Panel/Waypoints/V2/WaypointSelectable",
+                    }
+                },
+                {
+                    "type": "ImageWidget", "name": "CurrentButton",
+                    "fields": {
+                        "filename": "Controller/Panel/Waypoints/V2/WaypointCurrent",
+                    }
+                }
+            ]
+        },
+        /*
+        {
+            "type": "ImageWidget", "name": "Overlay","Visible": false,
+            "fields": {
+                "rect": { "x": 59, "y": 27 },
+                "filename": "",
+            }
+        },
+        */
+    ]
+}

@@ -1,0 +1,177 @@
+{
+    "basedOn": "PartyPanelHD.json",
+    "type": "PartyPanel", "name": "PartyPanel",
+    "fields": {
+        "rect": { "x": -894, "y": -580, "width": 1789, "height": 1417 },
+        "nonHardcoreSquelchXPosition": 1520,
+        "hardcoreSquelchXPosition": 1600,
+        "partyFrameFilename": "Controller\\Panel\\Party\\V2\\PartyGroupBorder_%dSlots"
+    },
+    "children": [
+        {
+            "type": "ClickCatcherWidget", "name": "click_catcher",
+        },
+        {
+            "type": "ImageWidget", "name": "PanelBackground",
+            "fields": {
+                "filename": "Controller/Panel/Party/V2/PartyBG",
+            }
+        },
+        /* BNET Game information display */
+        {
+            "type": "ImageWidget", "name": "GameInformationBackground",
+            "fields": {
+                "rect": {"x": 412, "y": 68, "width": 962, "height": 146},
+                "filename": "Controller/Panel/Party/V2/GameInformationBackground_Bnet",
+            },
+        },
+        {
+            "type": "TextBoxWidget", "name": "GameNameHeadingText",
+            "fields": {
+                "rect": {"x": 443, "y": 75, "width": 434, "height": 30},
+                "style": "$StylePartyPanelSmallHeading"
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "GameNameText",
+            "fields": {
+                "rect": {"x": 455, "y": 144, "width": 413, "height": 30},
+                "style": "$StylePartyPanelGameInfo",
+            },
+            "children": [
+                {
+                    "type": "FocusableWidget", "name": "GameNameTooltip",
+                }
+            ]
+        },
+        {
+            "type": "TextBoxWidget", "name": "PasswordHeadingText",
+            "fields": {
+                "rect": {"x": 914, "y": 75, "width": 434, "height": 30},
+                "style": "$StylePartyPanelSmallHeading"
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "PasswordText",
+            "fields": {
+                "rect": {"x": 923, "y": 144, "width": 413, "height": 30},
+                "style": "$StylePartyPanelGameInfo",
+            },
+            "children": [
+                {
+                    "type": "FocusableWidget", "name": "GamePasswordTooltip",
+                }
+            ]
+        },
+        {
+            "type": "ButtonWidget", "name": "ShowHidePasswordButton",
+            "fields": { 
+                "rect": {"x": 1300, "y": 65 },
+                "focusIndicatorFilename": "Controller/HoverImages/CheckBox_Hover",
+
+            },
+        },
+        {
+            "type": "ListWidget", "name": "ListContainer",
+            "fields": {
+                "rect": { "x": 19, "y": 251, "width": 1752, "height": 1363 },
+            },
+            "children": [
+                {
+                    "type": "ListItemWidget", "name": "FriendsListTemplate",
+                    "fields": {
+                        "rect": { "x": 0, "y": 0, "width": 1752, "height": 162 },
+                    },
+                    "children": [
+                        {
+                            "type": "ImageWidget", "name": "ListBackground",
+                            "fields": {
+                                "rect": {"x": 0, "y": 5},
+                                "filename": "Controller/Panel/Party/V2/Selectedmember",
+                            }
+                        },
+                        {
+                            "type": "TextBoxWidget", "name": "PlayerName",
+                            "fields": {
+                                "rect": {"x": 150, "y": 10, "width": 655, "height": 77},
+                                "style": {
+                                    "fontColor": "$FontColorGold",
+                                    "pointSize": "$LargeFontSize",
+                                    "spacing": { "leading": 0.8, "kerning": 0.9},
+                                },
+                            }
+                        },
+                        {
+                            "type": "TextBoxWidget", "name": "PlayerInfo",
+                            "fields": {
+                                "rect": {"x": 150, "y": 87, "width": 655, "height": 77},
+                                "style": {
+                                    "fontColor": "$FontColorGold",
+                                    "pointSize": "$MediumFontSize",
+                                    "spacing": { "leading": 0.8, "kerning": 0.9},
+                                },
+                            }
+                        },
+                        {
+                            "type": "TextBoxWidget", "name": "PartyInfoText",
+                            "fields": {
+                                "rect": {"x": 812, "y": 10, "width": 550, "height": 150},
+                                "style": {
+                                    "pointSize": "$MediumFontSize",
+                                    "spacing": "$MinimumSpacing"
+                                },
+                            }
+                        },
+                        {
+                            "type": "ToggleButtonWidget", "name": "LootBodyButton",
+                            "fields": {
+                                "rect": { "x": 1440, "y": 50 },
+                                "focusIndicatorFilename": "Controller/HoverImages/PartyButton_Hover",
+                            },
+                        },
+                        {
+                            "type": "ToggleButtonWidget", "name": "SquelchPlayerButton",
+                            "fields": {
+                                "rect": { "x": 1520, "y": 50 },
+                                "focusIndicatorFilename": "Controller/HoverImages/PartyButton_Hover",
+                            },
+                        },
+                        {
+                            "type": "ToggleButtonWidget", "name": "HostileButton",
+                            "fields": {
+                                "rect": { "x": 24, "y": 50 },
+                                "focusIndicatorFilename": "Controller/HoverImages/PartyButton_Hover",
+                            },
+                        },
+                        {
+                            "type": "ButtonWidget", "name": "InviteButton",
+                            "fields": {
+                                "rect": { "x": 944, "y": 50 },
+                                "focusIndicatorFilename": "Controller/HoverImages/Invite_Hover",
+                                "fontType": "16pt",
+                            },
+                        },
+                    ]
+                },
+            ]
+        },
+        {
+            "type": "ButtonWidget", "name": "CloseButton",
+            "fields": {
+                "rect": { "x": 278, "y": 389 },
+                "filename": "PANEL/buysellbtn",
+                "normalFrame": 10,
+                "pressedFrame": 11,
+            },
+        },
+        {
+            "type": "ImageWidget", "name": "PartyBorder0",
+        },
+        {
+            "type": "ImageWidget", "name": "PartyBorder1",
+        },
+        {
+            "type": "ImageWidget", "name": "PartyBorder2",
+        },
+    ]
+}

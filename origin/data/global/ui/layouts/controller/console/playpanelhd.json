@@ -1,0 +1,153 @@
+{
+    "type": "Panel", "name": "PlayPanel",
+    "fields": {
+        "defaultWidget": "SoloPlayButton",
+        "priority": 2,
+        "anchor": { "x": 0.5},
+        "rect": { "x": -1586, "y": 258, "scale": "$ConsoleUIScale" },
+    },
+    "children": [
+        {
+            "type": "ImageWidget", "name": "Background",
+            "fields": {
+                "rect": {"x": 0, "y": 0},
+                "filename": "Controller\\Lobby\\Play\\ConsoleLobby_BG"
+            },
+        },
+        {
+            "type": "TextBoxWidget", "name": "SoloPlayTitle",
+            "fields": {
+                "rect": { "x": 126, "y": 62, "width": 670, "height": 75 },
+                "text": "@PlayPanelSoloPlayTitle",
+                "style": {
+                    "fontColor": "$FontColorGold",
+                    "pointSize": "$LargeFontSize",
+                    "options": { "newlineHandling": "standard"},
+                    "alignment": { "h": "center", "v": "center" },
+                },
+            },
+        },
+        {
+            "type": "ButtonWidget", "name": "SoloPlayButton",
+            "fields": {
+                "rect": { "x": 8, "y": 190 },
+                "filename": "Controller\\Lobby\\Play\\console_panel_lobby_SoloPlay",
+                "focusIndicatorFilename": "Controller/HoverImages/ConsolePlay_Hover",
+                "onClickMessage": "MainMenuHD:Play",
+                "hoveredFrame": 1,
+                "navigation": {
+                    "right": { "name": "CreateGameButton" },
+                }
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "SoloPlayDetails",
+            "fields": {
+                "rect": { "x": 20, "y": 1246, "width": 890, "height": 110 },
+                "text": "@SoloPlayDetails",
+                "style": {
+                    "fontColor": "$FontColorGold",
+                    "pointSize": "$MediumFontSize",
+                    "options": { "newlineHandling": "standard" },
+                    "alignment": { "h": "center", "v": "center" },
+                },
+            },
+        },
+        {
+            "type": "TextBoxWidget", "name": "CreateGameTitle",
+            "fields": {
+                "rect": { "x": 1018, "y": 62, "width": 670, "height": 75 },
+                "text": "@GameCreatorTitle",
+                "style": {
+                    "fontColor": "$FontColorGold",
+                    "pointSize": "$LargeFontSize",
+                    "options": { "newlineHandling": "standard" },
+                    "alignment": { "h": "center", "v": "center" },
+                },
+            },
+        },
+        {
+            "type": "ButtonWidget", "name": "CreateGameButton",
+            "fields": {
+                "rect": { "x": 912, "y": 190 },
+                "filename": "Controller\\Lobby\\Play\\console_panel_lobby_MultiPlay",
+                "focusIndicatorFilename": "Controller/HoverImages/ConsolePlay_Hover",
+                "onClickMessage": "ConsoleLobby:OpenPlaySubPanel:GameCreatorPanel",
+                "hoveredFrame": 1,
+                "navigation": {
+                    "left": { "name": "SoloPlayButton" },
+                    "right": { "name": "JoinGameButton" },
+                 }
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "CreateGameDetails",
+            "fields": {
+                "rect": { "x": 916, "y": 1246, "width": 890, "height": 110 },
+                "text": "@GameCreatorDetails",
+                "style": {
+                    "fontColor": "$FontColorGold",
+                    "pointSize": "$MediumFontSize",
+                    "options": { "newlineHandling": "standard" },
+                    "alignment": { "h": "center", "v": "center" },
+                },
+            },
+        },
+        {
+            "type": "TextBoxWidget", "name": "JoinGameTitle",
+            "fields": {
+                "rect": { "x": 1918, "y": 62, "width": 670, "height": 75 },
+                "text": "@JoinGameTitle",
+                "style": {
+                    "fontColor": "$FontColorGold",
+                    "pointSize": "$LargeFontSize",
+                    "options": { "newlineHandling": "standard"},
+                    "alignment": { "h": "center", "v": "center" },
+                },
+            },
+        },
+        {
+            "type": "ButtonWidget", "name": "JoinGameButton",
+            "fields": {
+                "rect": { "x": 1812, "y": 190 },
+                "filename": "Controller\\Lobby\\Play\\console_panel_lobby_GameList",
+                "focusIndicatorFilename": "Controller/HoverImages/ConsolePlay_Hover",
+                "onClickMessage": "ConsoleLobby:OpenPlaySubPanel:GameListPanel",
+                "hoveredFrame": 1,
+                "navigation": {
+                    "left": { "name": "CreateGameButton" },
+                }
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "JoinGameDetails",
+            "fields": {
+                "rect": { "x": 1816, "y": 1246, "width": 890, "height": 110 },
+                "text": "@JoinGameDetails",
+                "style": {
+                    "fontColor": "$FontColorGold",
+                    "pointSize": "$MediumFontSize",
+                    "options": { "newlineHandling": "standard"},
+                    "alignment": { "h": "center", "v": "center" },
+                },
+            },
+        },
+        {
+            "type": "ButtonLegendWidget", "name": "Legend",
+            "fields": {
+                "rect": { "x": -70, "y": 1490, "width": 2880, "height": 100 },
+                "text": { "style": "$StyleButtonLegend" },
+                "presets": [
+                    {
+                        "action": "select",
+                        "description": "@ControllerPromptSelectCharacter",
+                    },
+                    {
+                        "action": "back",
+                        "description": "@ControllerPromptModalCancel",
+                    },
+                ]
+            },
+        },
+    ]
+}

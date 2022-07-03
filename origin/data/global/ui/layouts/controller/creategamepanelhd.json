@@ -1,0 +1,210 @@
+{
+    "basedOn": "CreateGamePanelHD.json",
+    "type": "CreateGamePanel", "name": "CreateGamePanel",
+    "fields": {
+        "defaultWidget": "GameNameInput",
+    },
+    "children": [
+        {
+            "type": "ImageWidget", "name": "Background",
+        },
+
+        {
+            "type": "ClickCatcherWidget",
+        },
+        {
+            "type": "Widget", "name": "StandardOptionsContainer",
+            "children": [
+                {
+                    "type": "ImageWidget", "name": "Background",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "GameName",
+                    "children": [
+
+                        {
+                            "type": "InputTextBoxWidget", "name": "GameNameInput",
+                            "fields": {
+                                "focusIndicatorFilename": "Controller/HoverImages/CreateTextInputS_Hover",
+                                "navigation": {
+                                    "down": { "name": "PasswordInput" },
+                                    "left": { "panelBoundary": true },
+                                },
+                            }
+                        },
+                    ]
+                },
+                {
+                    "type": "TextBoxWidget", "name": "Password",
+                    "children": [
+                        {
+                            "type": "MaskedInputTextBoxWidget", "name": "PasswordInput",
+                            "fields": {
+                                "focusIndicatorFilename": "Controller/HoverImages/CreateTextInputS_Hover",
+                                "navigation": {
+                                    "up": { "name": "GameNameInput" },
+                                    "down": { "name": "DescriptionInput" },
+                                    "left": { "panelBoundary": true },
+                                },
+                            }
+                        },
+                    ]
+                },
+                {
+                    "type": "TextBoxWidget", "name": "GameDescription",
+                    "children": [
+                        {
+                            "type": "InputTextBoxWidget", "name": "DescriptionInput",
+                            "fields": {
+                                "focusIndicatorFilename": "Controller/HoverImages/CreateTextInputL_Hover",
+                                "navigation": {
+                                    "up": { "name": "PasswordInput" },
+                                    "down": { "name": "DifficultyNormal" },
+                                    "left": { "panelBoundary": true },
+                                },
+                            },
+                        },
+                    ]
+                },
+                // These may need to be inside a list widget, waiting on feedback from design
+                {
+                    "type": "ButtonWidget", "name": "DifficultyNormal",
+                    "fields": {
+                        "focusIndicatorFilename": "Controller/HoverImages/DifficultySelect_Hover",
+                        "navigation": {
+                            "up": { "name": "DescriptionInput" },
+                            "down": { "name": "MaxPlayersInput" },
+                            "right": { "name": "DifficultyNightmare" },
+                            "left": { "panelBoundary": true },
+                        }
+                    }
+                },
+                {
+                    "type": "ButtonWidget", "name": "DifficultyNightmare",
+                    "fields": {
+                        "focusIndicatorFilename": "Controller/HoverImages/DifficultySelect_Hover",
+                        "navigation": {
+                            "up": { "name": "DescriptionInput" },
+                            "down": { "name": "MaxPlayersInput" },
+                            "right": { "name": "DifficultyHell" },
+                            "left": { "name": "DifficultyNormal" }
+                        }
+                    }
+                },
+                {
+                    "type": "ButtonWidget", "name": "DifficultyHell",
+                    "fields": {
+                        "focusIndicatorFilename": "Controller/HoverImages/DifficultySelect_Hover",
+                        "navigation": {
+                            "up": { "name": "DescriptionInput" },
+                            "down": { "name": "MaxPlayersInput" },
+                            "left": { "name": "DifficultyNightmare" }
+                        }
+                    }
+                },
+                {
+                    "type": "ImageWidget", "name": "DifficultySelector",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "MaxPlayers",
+                },
+                {
+                    "type": "ImageWidget", "name": "MaxPlayerCounter",
+                },
+                {
+                    "type": "NumericInputTextBoxWidget", "name": "MaxPlayersInput",
+                    "fields": {
+                        "focusIndicatorPadding": "$OptionsToggleFocusIndicatorPadding",
+                        "focusIndicatorOffset": "$OptionsNumInputFocusIndicatorOffset",
+                        "focusIndicatorFilename": "$OptionsNumInputFocusIndicatorFilename",
+                        "navigation": {
+                            "up": { "name": "DifficultyNormal" },
+                            "down": { "name": "MaxLevelDifferenceInput" },
+                            "left": { "panelBoundary": true },
+                        },
+                    }
+                },
+                {
+              	    "type": "ImageWidget", "name": "MaxLevelCounter",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "MaxLevelDifference",
+                },
+                {
+                    "type": "ToggleButtonWidget", "name": "CharacterDifferenceToggle",
+                    "fields": {
+                        "focusIndicatorPadding": "$OptionsToggleFocusIndicatorPadding",
+                        "focusIndicatorFilename": "$OptionsToggleFocusIndicatorFilename",
+                        "focusIndicatorOffset": { "x": 0, "y": -3 },
+                        "navigation": {
+                            "up": { "name": "MaxPlayersInput" },
+                            "down": { "name": "AllowBnetFriendsJoinCheckbox" },
+                            "left": { "panelBoundary": true },
+                            "right": { "name": "MaxLevelDifferenceInput" },
+                        },
+                    },
+                },
+                {
+                    "type": "NumericInputTextBoxWidget", "name": "MaxLevelDifferenceInput",
+                    "fields": {
+                        "focusIndicatorPadding": "$OptionsToggleFocusIndicatorPadding",
+                        "focusIndicatorOffset": { "x": -8, "y": 0 },
+                        "focusIndicatorFilename": "$OptionsNumInputFocusIndicatorFilename",
+                        "navigation": {
+                            "up": { "name": "MaxPlayersInput" },
+                            "down": { "name": "AllowBnetFriendsJoinCheckbox" },
+                            "left": { "name": "CharacterDifferenceToggle" },
+                        },
+                    }
+                },
+            ]
+        },
+        {
+            "type": "ToggleButtonWidget", "name": "AllowBnetFriendsJoinCheckbox",
+            "fields": {
+                "focusIndicatorPadding": "$OptionsToggleFocusIndicatorPadding",
+                "focusIndicatorFilename": "$OptionsToggleFocusIndicatorFilename",
+                "focusIndicatorOffset": { "x": 0, "y": -3 },
+                "navigation": {
+                    "up": { "name": "CharacterDifferenceToggle" },
+                    "down": { "name": "ItemSpacingCheckbox" },
+                    "left": { "panelBoundary": true },
+                },
+            },
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "ToggleDescriptionText",
+                }
+            ]
+        },
+        {
+            "type": "ToggleButtonWidget", "name": "ItemSpacingCheckbox",
+            "fields": {
+                "focusIndicatorPadding": "$OptionsToggleFocusIndicatorPadding",
+                "focusIndicatorFilename": "$OptionsToggleFocusIndicatorFilename",
+                "focusIndicatorOffset": { "x": 0, "y": -3 },
+                "navigation": {
+                    "up": { "name": "AllowBnetFriendsJoinCheckbox" },
+                    "down": { "name": "CreateGameButton" },
+                    "left": { "panelBoundary": true },
+                },
+            },
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "ToggleDescriptionText",
+                }
+            ]
+        },
+        {
+            "type": "ButtonWidget", "name": "CreateGameButton",
+            "fields": {
+                "focusIndicatorFilename": "Controller/HoverImages/FrontEndButtonMed",
+                "navigation": {
+                    "up": { "name": "ItemSpacingCheckbox" },
+                    "down": { "panelBoundary": true },
+                    "left": { "panelBoundary": true },
+                }
+            }
+        },
+    ]
+}

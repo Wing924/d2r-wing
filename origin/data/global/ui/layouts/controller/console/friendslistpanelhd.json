@@ -1,0 +1,134 @@
+{
+    "type": "FriendsListPanel", "name": "FriendsListPanel",
+    "fields": {
+        "rect": {"scale": "$ConsoleUIScale"},
+        "priority": 2,
+        "anchor": {"x": 0.5},
+        "inGamePosition": {"x": 0, "y": -75},
+        "mainMenuPosition": {"x": 0, "y": -55}
+          
+    },
+    "children": [
+        {
+            "type": "ImageWidget", "name": "FrontEndBackground",
+            "fields": {
+                "rect": {"x": -854, "y": 385},
+                "filename": "Controller\\Lobby\\FriendsList\\FriendsList_BG"
+            },
+        },
+        {
+            "type": "TextBoxWidget", "name": "FriendsListTitle",
+            "fields": { 
+                "rect": { "x": -774, "y": 310, "width": 1563, "height": 75 }, 
+                "text": "@FriendsList",
+                "style": {
+                    "fontColor": "$FontColorGold", 
+                    "pointSize": "$LargeFontSize",
+                    "dropShadow": "$DefaultDropShadow",
+                    "options": { "newlineHandling": "standard"},
+                    "alignment": { "h": "left", "v": "center" },
+                },
+            },
+        },        
+        {
+            "type": "FriendsRecyclingListWidget", "name": "FriendsList",
+            "fields": {
+                "dataSource": "friends",
+                "selectorName": "FriendsListSelector",
+                "direction": "vertical",
+                "rect": {"x": -639, "y": 426, "width": 1225, "height": 1212},
+                "itemSelectionMessage": "FriendsListMessage:ShowContextMenu",
+                "isHoverList": true
+            },
+            "children": [
+                {
+                    "type": "ListItemWidget", "name": "Template",
+                    "fields": {
+                        "rect": { "x": 0, "y": 0, "width": 1222, "height": 172 },
+                        "focusIndicatorFilename": "Controller/HoverImages/FriendsList_Hover",
+                        "tooltipStyle": {
+                            "showAfterDelay": true,
+                        }
+                    },
+                    "children": [
+                        {  
+                            "type": "ImageWidget", "name": "Image",
+                            "fields": {
+                                "rect": {"x": 0, "y": 0},
+                                "filename": "Controller\\Lobby\\FriendsList\\FriendsListTile_Active",
+                            }
+                        },
+                        {                        
+                            "type": "ImageWidget", "name": "OnlineStatusImage",
+                            "fields": {
+                                "rect": {"x": 60, "y": 40},
+                                "filename": "Controller\\Lobby\\FriendsList\\Friends_Status"
+                            }
+                        },
+                        {
+                            "type": "TextBoxWidget", "name": "Name",
+                            "fields": {
+                                "rect": { "x": 100, "y": 15, "width": 960, "height": 75 },
+                                "style": {
+                                    "fontColor": "$FontColorLightGold",
+                                    "pointSize": "$LargeFontSize",
+                                    "alignment": { "h": "left", "v": "center" }
+                                },
+                                "truncateWithEllipsis": true,
+                            }
+                        },
+                        {
+                            "type": "TextBoxWidget", "name": "Location",
+                            "fields": {
+                                "rect": { "x": 100, "y": 90, "width": 1000, "height": 65 },
+                                "style": {
+																		"fontFace": "BlizzardGlobal",
+                                    "fontColor": "$FontColorLightGold",
+                                    "pointSize": "$SmallFontSize",
+                                    "alignment": { "h": "left", "v": "center" }
+                                }
+                            }
+                        },
+                    ]
+                },
+                {
+                    "type": "Widget", "name": "FriendsListSelector",
+                }
+            ]
+        },
+        {
+            "type": "ImageWidget", "name": "ScrollBarBackground",
+            "fields": {
+                "rect": { "x": 590, "y": 426},
+                "filename": "Controller\\Lobby\\FriendsList\\FriendsList_ScrollBar"
+            }
+        },
+        {
+            "type": "ScrollControllerWidget", "name": "ScrollBar",
+            "fields": { 
+                "rect": { "x": 594, "y": 458, "width": 29, "height": 1148 },
+                "upArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollUpBtn", // 0/2
+                "downArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollDownBtn", // 1/3
+                "barFilepath":  "FrontEnd\\HD\\Final\\FrontEnd_ScrollIndicator", // 4
+                "viewName": "FriendsList"
+            }
+        },
+        {
+            "type": "ButtonLegendWidget", "name": "Legend",
+            "fields": {
+                "rect": { "x": -1440, "y": 1760, "width": 2880, "height": 103 },
+                "text": { "style": "$StyleButtonLegend" },
+                "presets": [
+                    {
+                        "action": "select",
+                        "description": "@ControllerPromptModalAccept",
+                    },
+                    {
+                        "action": "back",
+                        "description": "@ControllerPromptModalCancel",
+                    },
+                ]
+            },
+        },
+    ]
+}

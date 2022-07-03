@@ -33,6 +33,7 @@ patches:
   - patches/05_entrance_light
   - patches/06_highlight_cain
   - patches/07_layout
+  - patches/09_better_arrow
 
 pipelines:
   - name: add equip info

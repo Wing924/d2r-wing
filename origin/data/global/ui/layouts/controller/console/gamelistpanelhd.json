@@ -1,0 +1,647 @@
+{
+    "type": "GameListPanel", "name": "GameListPanel",
+    "fields": {
+        "anchor": { "x": 0.5 },
+        "rect": { "x": 0, "y": -60, "scale": "$ConsoleUIScale" },
+        "priority": 3,
+        "anchor": "$LobbyAnchor",
+        "defaultFilterTextColor": "$LightButtonTextColor",
+        "noneFilterTextColor": "$DarkButtonTextColor",
+        "defaultWidget": "GamesList",
+        "difficultyLabels": ["@strCreateGameNormalText", "@strCreateGameNightmareText", "@strCreateGameHellText"],
+        "shiftStatusIconPosition1": { "x": 755, "y": 20 },
+        "shiftStatusIconPosition2": { "x": 697, "y": 20 },
+        "pingBucket": [ 50, 90, 130, "$INT_MAX" ]
+    },
+    "children": [
+        {
+            "type": "ImageWidget", "name": "Background",
+            "fields": {
+                "rect": { "x": -1367, "y": 270 },
+                "filename": "Controller/Lobby/GameList/GameList_BG"
+            },
+        },
+        {
+            "type": "TextBoxWidget", "name": "GameListTitle",
+            "fields": { 
+                "rect": { "x": -1300, "y": 332, "width": 670, "height": 75 }, 
+                "text": "@JoinGameTitle",
+                "style": {
+                    "fontColor": "$FontColorGold", 
+                    "pointSize": "$LargeFontSize",
+                    "options": { "newlineHandling": "standard" },
+                    "alignment": { "h": "left", "v": "center" },
+                },
+            },
+        },
+        {
+            "type": "TextBoxWidget", "name": "GameNameTitle",
+            "fields": {
+                "rect": { "x": -1280, "y": 450, "width": 800, "height": 44 },
+                "text": "@strGameName",
+                "style": {
+                    "fontColor": "$FontColorLightGray",
+                    "pointSize": "$SmallFontSize",
+                    "dropShadow": "$DefaultDropShadow",
+                    "alignment": { "v": "center" },
+                },
+            },
+        },
+        {
+            "type": "TextBoxWidget", "name": "DifficultyTitle",
+            "fields": {
+                "rect": { "x": -20, "y": 450, "width": 320, "height": 44 },
+                "text": "@GameListDifficulty",
+                "style": {
+                    "fontColor": "$FontColorLightGray",
+                    "pointSize": "$SmallFontSize",
+                    "dropShadow": "$DefaultDropShadow",
+                    "alignment": { "v": "center" },
+                },
+            },
+        },
+        {
+            "type": "TextBoxWidget", "name": "NumPlayersTitle",
+            "fields": {
+                "rect": { "x": 300, "y": 450, "width": 250, "height": 44 },
+                "text": "@srostertitle",
+                "style": {
+                    "fontColor": "$FontColorLightGray",
+                    "pointSize": "$SmallFontSize",
+                    "dropShadow": "$DefaultDropShadow",
+                    "alignment": { "v": "center" },
+                },
+            },
+        },
+        {
+            "type": "TextBoxWidget", "name": "PingTitle",
+            "fields": {
+                "rect": { "x": 550, "y": 450, "width": 160, "height": 44 },
+                "text": "@GameListPing",
+                "style": {
+                    "fontColor": "$FontColorLightGray",
+                    "pointSize": "$SmallFontSize",
+                    "dropShadow": "$DefaultDropShadow",
+                    "alignment": { "v": "center" },
+                },
+            },
+        },
+        {
+            "type": "ListWidget", "name": "GamesList",
+            "fields": {
+                "rect": { "x": -1280, "y": 500, "width": 1950, "height": 1072 },
+                "selectorName": "JoinGameSelector",
+                "direction": "vertical",
+                "scrollControllerName": "GamesListScrollBar",
+                "itemSelectionMessage": "GamesList:ControllerSelectGame",
+                "offViewSelectionOffset": 0.125
+            },
+            "children": [
+                {
+                    "type": "ListItemWidget", "name": "Template",
+                    "fields": {
+                        "rect": { "x": 0, "y": 0, "width": 1950, "height": 67 },
+                      	"focusIndicatorFilename": "Controller/HoverImages/GameListSlatConsole_Hover",
+                      	"focusIndicatorOffset": { "x": -4, "y": 0 },
+                        "navigation": {
+                            "up": { "name": "NameInput" },
+                            "down": { "name": "JoinButton" },
+                            "left": { "panelBoundary": true },
+                        }
+                    },
+                    "children": [
+                        {
+                            "type": "TextBoxWidget", "name": "GameName",
+                            "fields": {
+                                "rect": { "x": 12, "y": 2, "width": 1200, "height": 60 },
+                                "style": {
+                                    "fontColor": "$FontColorWhite",
+                                    "pointSize": "$SmallFontSize",
+                                    "spacing": "$MinimumSpacing",
+                                    "alignment": { "h": "left", "v": "center" },
+                                    "dropShadow": "$DefaultDropShadow",
+                                },
+                            },
+                        },
+                        {
+                            "type": "TextBoxWidget", "name": "GameDifficulty",
+                            "fields": {
+                                "rect": { "x": 1210, "y": 2, "width": 300, "height": 60 },
+                                "style": {
+                                    "fontColor": "$FontColorWhite",
+                                    "pointSize": "$SmallFontSize",
+                                    "alignment": { "h": "center", "v": "center" },
+                                    "dropShadow": "$DefaultDropShadow",
+                                },
+                            },
+                        },
+                        {
+                            "type": "TextBoxWidget", "name": "PlayerCount",
+                            "fields": {
+                                "rect": { "x": 1590, "y": 2, "width": 110, "height": 60 },
+                                "style": {
+                                    "fontColor": "$FontColorWhite",
+                                    "pointSize": "$SmallFontSize",
+                                    "alignment": { "h": "center", "v": "center" },
+                                    "dropShadow": "$DefaultDropShadow",
+                                },
+                            },
+                        },
+                        {
+                            "type": "ImageWidget", "name": "PingIndicator",
+                            "fields": {
+                                "rect": { "x": 1820, "y": 7, "width": 110, "height": 60 },
+                                "filename": "Controller/Lobby/GameList/LatencyIndicator"
+                            },
+                        }
+                    ]
+                },
+                {
+                    "type": "ListWidgetFocusRedirector", "name": "GameListRedirector",
+                    "fields": {
+                        "listWidget": "GamesList",
+                        "navigation": {
+                            "up": { "name": "NameInput" },
+                            "down": { "name": "JoinButton" },
+                            "left": { "panelBoundary": true }
+                        }
+                    },
+                    "children": [
+                        {
+                            "type": "ListWidgetFocusReceiver", "name": "up",
+                        },
+                        {
+                            "type": "ListWidgetFocusReceiver", "name": "down",
+                        },
+                        {
+                            "type": "ListWidgetFocusReceiver", "name": "left",
+                        },
+                        {
+                            "type": "ListWidgetFocusReceiver", "name": "right",
+                        }
+                    ],
+                },
+                {
+                    "type": "Widget", "name": "JoinGameSelector",
+                },
+            ]
+        },
+        {
+            "type": "ImageWidget", "name": "ScrollBarBG",
+            "fields": {
+                "rect": { "x": 670, "y": 503 },
+                "filename": "Controller/Lobby/GameList/GameList_Scrollbar"
+            },
+        },
+        {
+            "type": "ScrollControllerWidget", "name": "GamesListScrollBar",
+            "fields": {
+                "rect": { "x": 676, "y": 532, "width": 30, "height": 1008 },
+                "upArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollUpBtn",
+                "downArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollDownBtn",
+                "barFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollIndicator",
+                "viewName": "GamesList",
+            }
+        },
+        {
+            "type": "TabBarWidget", "name": "DetailsTabs",
+            "fields": {
+                "rect": { "x": 774, "y": 440 },
+                "tabCount": 2,
+                "filename": "Controller/Lobby/GameList/GameList_Tabs",
+                "inactiveFrames": [ 1, 1 ],
+                "activeFrames": [ 0, 0 ],
+                "textStrings": [ "@GameChat", "@GameListFilters" ],
+                "textStyle": { "pointSize": "$SmallFontSize" },
+                "activeTextColor": "$TabsActiveTextColor",
+                "inactiveTextColor": "$TabsInactiveTextColor",
+                "tabSize": { "x": 234, "y": 60 },
+                "tabPadding": { "x": 0, "y": 0 },
+                "onSwitchTabMessage": "GamesList:SwitchDetailsPanel",
+                "tabRightAction": "cycleRight",
+                "tabLeftAction": "cycleLeft",
+                "automaticallyPositionIndicators": true,
+            }
+        },
+        {
+            "type": "Widget", "name": "PlayersListContainer",
+            "fields": {
+                "rect": { "x": 742, "y": 502 }
+            },
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "ElapsedTimeLabel",
+                    "fields": {
+                        "rect": { "x": 0, "y": 4, "width": 546, "height": 56 },
+                        "text": "@ElapsedTime",
+                        "style": {
+                            "fontColor": "$FontColorLightGray",
+                            "pointSize": "$MediumFontSize",
+                            "alignment": { "h": "center", "v": "center" },
+                            "dropShadow": "$DefaultDropShadow",
+                            "options": { "lineWrap": true },
+                            "spacing" : { "leading": 0.75 },
+                        },
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "ElapsedTime",
+                    "fields": {
+                        "rect": { "y": 72, "width": 546 },
+                        "style": {
+                            "fontColor": "$FontColorWhite",
+                            "pointSize": "$SmallFontSize",
+                            "alignment": { "h": "center", "v": "center" },
+                            "dropShadow": "$DefaultDropShadow",
+                        },
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "LevelRangeLabel",
+                    "fields": {
+                        "rect": { "x": 0, "y": 92, "width": 546, "height": 56 },
+                        "text": "@LevelRestriction",
+                        "style": {
+                            "fontColor": "$FontColorLightGray",
+                            "pointSize": "$MediumFontSize",
+                            "alignment": { "h": "center", "v": "center" },
+                            "dropShadow": "$DefaultDropShadow",
+                            "options": { "lineWrap": true },
+                            "spacing" : { "leading": 0.75 },
+                        },
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "LevelRange",
+                    "fields": {
+                        "rect": { "y": 160, "width": 546 },
+                        "style": {
+                            "fontColor": "$FontColorWhite",
+                            "pointSize": "$SmallFontSize",
+                            "alignment": { "h": "center", "v": "center" },
+                            "dropShadow": "$DefaultDropShadow",
+                        },
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "PlayersTitle",
+                    "fields": {
+                        "rect": { "x": 0, "y": 190, "width": 546, "height": 44 },
+                        "text": "@srostertitle",
+                        "style": {
+                            "fontColor": "$FontColorLightGray",
+                            "pointSize": "$MediumFontSize",
+                            "dropShadow": "$DefaultDropShadow",
+                            "alignment": { "v": "center" },
+                        },
+                    },
+                },
+                {
+                    "type": "ListWidget", "name": "PlayersList",
+                    "fields": {
+                        "rect": { "x": 0, "y": 242, "width": 546, "height": 800 },
+                        "direction": "vertical",
+                        "scrollControllerName": "PlayerListScrollBar",
+                    },
+                    "children": [
+                        {
+                            "type": "ListItemWidget", "name": "PlayerEntry",
+                            "fields": { "rect": { "x": 0, "y": 0, "width": 546, "height": 80 } },
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "PlayerName",
+                                    "fields": {
+                                        "rect": { "x": 6, "y": 0, "width": 534, "height": 38 },
+                                        "style": {
+                                            "fontColor": "$FontColorGoldYellow",
+                                            "pointSize": "$SmallFontSize",
+                                            "spacing": "$MinimumSpacing",
+                                            "alignment": { "h": "left", "v": "center" },
+                                            "dropShadow": "$DefaultDropShadow",
+                                        },
+                                    },
+                                },
+                                {
+                                    "type": "TextBoxWidget", "name": "PlayerDescription",
+                                    "fields": {
+                                        "rect": { "x": 6, "y": 38, "width": 534, "height": 38 },
+                                        "style": {
+                                            "fontColor": "$FontColorWhite",
+                                            "pointSize": "$SmallFontSize",
+                                            "alignment": { "h": "left", "v": "center" },
+                                            "dropShadow": "$DefaultDropShadow",
+                                        },
+                                    },
+                                },
+                            ]
+                        },
+                    ]
+                },
+                {
+                    "type": "ScrollControllerWidget", "name": "PlayerListScrollBar",
+                    "fields": { "viewName": "PlayersList" }
+                },
+            ]
+        },
+        {
+            "type": "Widget", "name": "GameFilterContainer",
+            "fields": {
+                "rect": { "x": 742, "y": 502 }
+            },
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "DifficultyTitle",
+                    "fields": { 
+                        "rect": { "x": 80, "y": 20, "width": 372, "height": 60 }, 
+                        "text": "@OptionsMenuGameDifficulty",
+                        "style": {
+                            "fontColor": "$FontColorGold", 
+                            "pointSize": "$MediumFontSize",
+                            "options": { "newlineHandling": "standard" },
+                            "alignment": { "h": "center", "v": "center" },
+                        },
+                    },
+                },
+                {
+                    "type": "TextBoxWidget", "name": "NormalDifficultyTitle",
+                    "fields": { 
+                        "rect": { "x": 80, "y": 86, "width": 320, "height": 54 }, 
+                        "text": "@strCreateGameNormalText",
+                        "style": {
+                            "fontColor": "$FontColorWhite", 
+                            "pointSize": "$SmallFontSize",
+                            "alignment": { "h": "left", "v": "center" },
+                        },
+                    },
+                },
+                {
+                    "type": "ToggleButtonWidget", "name": "NormalDifficulty",
+                    "fields": {
+                        "rect": { "x": 400, "y": 80 },
+                        "filename": "Lobby\\CreateGame\\CreateGame_AdvancedCheckbox",
+                        "focusIndicatorPadding": "$OptionsToggleFocusIndicatorPadding",
+                        "focusIndicatorFilename": "$OptionsToggleFocusIndicatorFilename",
+                        "focusIndicatorOffset": { "x": 0, "y": -3 },
+                        "untoggledFrame": 0,
+                        "untoggledPressedFrame": 1,
+                        "untoggledHoveredFrame": 3,
+                        "untoggledDisabledFrame": 2,
+                        "toggledFrame": 4,
+                        "toggledPressedFrame": 5,
+                        "toggledHoveredFrame": 6,
+                        "onClickMessage": "GamesList:SelectDifficulty:0",
+                        "navigation": {
+                            "down": { "name": "NightmareDifficulty" },
+                            "left": { "name": "GamesList" },
+                        }
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "NightmareDifficultyTitle",
+                    "fields": { 
+                        "rect": { "x": 80, "y": 166, "width": 320, "height": 54 }, 
+                        "text": "@strCreateGameNightmareText",
+                        "style": {
+                            "fontColor": "$FontColorWhite", 
+                            "pointSize": "$SmallFontSize",
+                            "alignment": { "h": "left", "v": "center" },
+                        },
+                    },
+                },
+                {
+                    "type": "ToggleButtonWidget", "name": "NightmareDifficulty",
+                    "fields": {
+                        "rect": { "x": 400, "y": 160 },
+                        "filename": "Lobby\\CreateGame\\CreateGame_AdvancedCheckbox",
+                        "focusIndicatorPadding": "$OptionsToggleFocusIndicatorPadding",
+                        "focusIndicatorFilename": "$OptionsToggleFocusIndicatorFilename",
+                        "focusIndicatorOffset": { "x": 0, "y": -3 },
+                        "untoggledFrame": 0,
+                        "untoggledPressedFrame": 1,
+                        "untoggledHoveredFrame": 3,
+                        "untoggledDisabledFrame": 2,
+                        "toggledFrame": 4,
+                        "toggledPressedFrame": 5,
+                        "toggledHoveredFrame": 6,
+                        "onClickMessage": "GamesList:SelectDifficulty:1",
+                        "navigation": {
+                            "up": { "name": "NormalDifficulty" },
+                            "down": { "name": "HellDifficulty" },
+                            "left": { "name": "GamesList" },
+                        }
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "HellDifficultyTitle",
+                    "fields": { 
+                        "rect": { "x": 80, "y": 246, "width": 320, "height": 54 }, 
+                        "text": "@strCreateGameHellText",
+                        "style": {
+                            "fontColor": "$FontColorWhite", 
+                            "pointSize": "$SmallFontSize",
+                            "alignment": { "h": "left", "v": "center" },
+                        },
+                    },
+                },
+                {
+                    "type": "ToggleButtonWidget", "name": "HellDifficulty",
+                    "fields": {
+                        "rect": { "x": 400, "y": 240 },
+                        "filename": "Lobby\\CreateGame\\CreateGame_AdvancedCheckbox",
+                        "focusIndicatorPadding": "$OptionsToggleFocusIndicatorPadding",
+                        "focusIndicatorFilename": "$OptionsToggleFocusIndicatorFilename",
+                        "focusIndicatorOffset": { "x": 0, "y": -3 },
+                        "untoggledFrame": 0,
+                        "untoggledPressedFrame": 1,
+                        "untoggledHoveredFrame": 3,
+                        "untoggledDisabledFrame": 2,
+                        "toggledFrame": 4,
+                        "toggledPressedFrame": 5,
+                        "toggledHoveredFrame": 6,
+                        "onClickMessage": "GamesList:SelectDifficulty:2",
+                        "navigation": {
+                            "up": { "name": "NightmareDifficulty" },
+                            "left": { "name": "GamesList" },
+                            "down": { "name": "PingFilter" },
+                        }
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "MinPingTitle",
+                    "fields": { 
+                        "rect": { "x": 80, "y": 340, "width": 372, "height": 60 }, 
+                        "text": "@FilterPingTitle",
+                        "style": {
+                            "fontColor": "$FontColorGold", 
+                            "pointSize": "$MediumFontSize",
+                            "options": { "newlineHandling": "standard" },
+                            "alignment": { "h": "center", "v": "center" },
+                        },
+                    },
+                },
+                {
+                    "type": "CarouselWidget", "name": "PingFilter",
+                    "fields": {
+                        "rect": { "x": 80, "y": 400, "width": 372, "height": 60 },
+                        "focusIndicatorPadding": { "left": 6, "right": 6 },
+                        "focusIndicatorFilename": "Controller/HoverImages/CarouselNarrow_Hover",
+                        "states": [ "ExcellentPing", "GoodPlusPing", "FairPlusPing", "AnyPing" ],
+                        "fontType": "8ptE",
+                        "onUpdateMessage": "GamesList:SetPingFilter",
+                        "style": "$StyleSettingsCarousel",
+                        "style": {
+                            "options": { "pipeCharacterBehavior" : "handle" },
+                        },
+                        "enabledColor" : "$CarouselEnabledColor",
+                        "disabledColor" : "$CarouselDisabledColor",
+                        "wrapAround": false,
+                        "tooltipString": "@FilterPingTooltip",
+                        "tooltipStyle": {
+                            "fontStyle": {
+                                "options": { "newlineHandling": "standard" },
+                            },
+                            "showAfterDelay": true,
+                        },
+                        "navigation": {
+                            "up": { "name": "HellDifficulty" },
+                            "left": { "name": "GamesList" },
+                            "down": { "name": "ResetFiltersButton" }
+                        }
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "GameNameFilterTitle",
+                    "fields": { 
+                        "rect": { "x": 80, "y": 740, "width": 372, "height": 60 }, 
+                        "text": "@GameNameFilter",
+                        "style": {
+                            "fontColor": "$FontColorGold", 
+                            "pointSize": "$MediumFontSize",
+                            "options": { "newlineHandling": "standard" },
+                            "alignment": { "h": "center", "v": "center" },
+                        },
+                    },
+                },
+                {
+                    "type": "TextBoxWidget", "name": "GameNameFilterText",
+                    "fields": {
+                        "rect": { "x": 2, "y": 810, "width": 540, "height": 100 },
+                        "style": {
+                            "fontColor": "$LightButtonTextColor", 
+                            "pointSize": "$SmallFontSize",
+                            "dropShadow": "$DefaultDropShadow",
+                            "alignment": { "h": "center", "v": "center" },
+                            "spacing": { "kerning": 0.9, "leading": 0.95 },
+                            "options": { "lineWrap": true },
+                        },
+                    }
+                },
+                {
+                    "type": "ButtonWidget", "name": "ResetFiltersButton",
+                    "fields": {
+                        "rect": { "x": 0, "y": 550, "scale": 0.95 },
+                        "filename": "Controller\\Lobby\\Play\\ConsoleMatchmaking_DifficultyButton",
+                        "onClickMessage": "GamesList:ResetFilters",
+                        "focusIndicatorFilename": "Controller/HoverImages/MatchmakingDifficulty_Hover",
+                        "textString": "@ResetFilters",
+                        "text/style": "$StyleFEButtonText",
+                        "textColor": "$LightButtonTextColor",
+                        "disabledFrame": 2,
+                        "hoveredFrame": 3,
+                        "tooltipString": "@ResetFiltersTooltip",
+                        "tooltipStyle": {
+                            "fontStyle": {
+                                "options": { "newlineHandling": "standard" },
+                            },
+                            "showAfterDelay": true,
+                        },
+                        "navigation": {
+                            "up": { "name": "PingFilter" },
+                            "left": { "name": "GamesList" },
+                        }
+                    }
+                },
+            ],
+        },
+        {
+            "type": "RectangleWidget", "name": "PlayerInfoContainer",
+            "fields": {
+                "anchor": {"x": 0.5 },
+                "rect": { "x": 536, "y": 1468, "width": 841, "height": 246 },
+                "color": [ 0.0, 0.0, 0.0, 0.0 ],
+            },
+            "children": [
+                {
+                    "type": "RectangleWidget", "name": "SelectedCharacterBackground",
+                    "fields": {
+                        "rect": { "x": 20, "y": 20, "width": 802, "height": 196 },
+                        "color": [ 0.0, 0.0, 0.0, 0.75 ],
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "Title",
+                    "fields": {
+                        "rect": { "x": 32, "y": 55, "width": 720 },
+                        "fontType": "16pt",
+                        "style": {
+                            "pointSize": "$XMediumFontSize",
+                            "fontColor": "$CharacterListDetailsColor",
+                            "spacing": "$ReducedSpacing",
+                            "alignment": { "h": "left", "v": "center" },
+                            "dropShadow": "$DefaultDropShadow"
+                        },
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "Name",
+                    "fields": {
+                        "rect": { "x": 32, "y": 120, "width": 720 },
+                        "fontType": "16pt",
+                        "style": {
+                            "fontColor": "$FontColorWhite",
+                            "pointSize": "$LargeFontSize",
+                            "spacing": "$MinimumSpacing",
+                            "alignment": { "h": "left", "v": "center" },
+                            "dropShadow": "$DefaultDropShadow"
+                        },
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "Level&Class",
+                    "fields": {
+                        "rect": { "x": 32, "y": 175, "width": 720 },
+                        "fontType": "16pt",
+                        "style": {
+                            "fontColor": "$CharacterListDetailsColor",
+                            "pointSize": "$XMediumFontSize",
+                            "spacing": "$ReducedSpacing",
+                            "alignment": { "h": "left", "v": "center" },
+                            "dropShadow": "$DefaultDropShadow"
+                        },
+                    }
+                },
+                {
+                    "type": "ImageWidget", "name": "LadderIcon",
+                    "fields": {
+                        "rect": { "x": 640, "y": 20 },
+                        "filename": "FrontEnd\\HD\\Final\\FrontEnd_LadderIconSmall"
+                    },
+                },
+                {
+                    "type": "ImageWidget", "name": "ClassicIcon",
+                    "fields": {
+                        "rect": { "x": 755, "y": 20 },
+                        "filename": "FrontEnd\\HD\\Final\\FrontEnd_ClassicIconSmall"
+                    },
+                },
+                {
+                    "type": "ImageWidget", "name": "HardcoreIcon",
+                    "fields": {
+                        "rect": { "x": 697, "y": 20 },
+                        "filename": "FrontEnd\\HD\\Final\\FrontEnd_HardcoreIconSmall"
+                    },
+                },
+            ]
+        },
+    ]
+}

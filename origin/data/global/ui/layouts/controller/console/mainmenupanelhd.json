@@ -1,0 +1,328 @@
+{
+    "basedOn": "Controller/MainMenuPanelHD.json",
+    "type": "MainMenuHDPanel", "name": "MainMenuPanel",
+    "fields": {
+        "shiftStatusIconPosition1": { "x": 755, "y": 20 },
+        "shiftStatusIconPosition2": { "x": 700, "y": 20 },
+    },
+    "children": [
+        {
+            "type": "Camera3DWidget", "name": "Act1Camera",
+        },
+        {
+            "type": "Camera3DWidget", "name": "Act2Camera",
+        },
+        {
+            "type": "Camera3DWidget", "name": "Act3Camera",
+        },
+        {
+            "type": "Camera3DWidget", "name": "Act4Camera",
+        },
+        {
+            "type": "Camera3DWidget", "name": "Act5Camera",
+        },
+        {
+            "type": "PlayerLoaderWidget", "name": "PreloadAmazon",
+        },
+        {
+            "type": "PlayerLoaderWidget", "name": "PreloadSorceress",
+        },
+        {
+            "type": "PlayerLoaderWidget", "name": "PreloadNecromancer",
+        },
+        {
+            "type": "PlayerLoaderWidget", "name": "PreloadPaladin",
+        },
+        {
+            "type": "PlayerLoaderWidget", "name": "PreloadBarbarian",
+        },
+        {
+            "type": "PlayerLoaderWidget", "name": "PreloadDruid",
+        },
+        {
+            "type": "PlayerLoaderWidget", "name": "PreloadAssassin",
+        },
+        {
+            "type": "PlayerLoaderWidget", "name": "Player",
+        },
+        {
+            "type": "PlayerMoverWidget", "name": "Act1Player",
+        },
+        {
+            "type": "PlayerMoverWidget", "name": "Act2Player",
+        },
+        {
+            "type": "PlayerMoverWidget", "name": "Act3Player",
+        },
+        {
+            "type": "PlayerMoverWidget", "name": "Act4Player",
+        },
+        {
+            "type": "PlayerMoverWidget", "name": "Act5Player",
+        },
+        {
+            "type": "RectangleWidget", "name": "PlayerInfoContainer",
+            "fields": {
+                "anchor": {"x": 0.5},
+                "rect": { "x": 640, "y": 855, "width": 841, "height": 200 },
+                "color": [ 0.0, 0.0, 0.0, 0.0 ],
+            },
+            "children": [
+				{
+                    "type": "TextBoxWidget", "name": "UsabilityWarning",
+                    "fields": {
+                        "rect": { "x": 0, "y": -420, "width": 841 },
+                        "fontType": "16pt",
+                        "style": {
+                            "pointSize": "$MediumFontSize",
+                            "alignment": { "h": "center", "v": "center" },
+                            "dropShadow": "$DefaultDropShadow",
+                            "spacing": "$ReducedSpacing",
+                            "fontColor" : "$CharacterListDetailsColor"
+                        },
+						"text": "@GameJoinDoesNotMeetRequirements"
+                    }
+                },
+				{
+                    "type": "TextBoxWidget", "name": "LevelRequirement",
+                    "fields": {
+                        "rect": { "x": 0, "y": -360, "width": 841 },
+                        "fontType": "16pt",
+                        "style": {
+                            "pointSize": "$MediumFontSize",
+                            "alignment": { "h": "center", "v": "center" },
+                            "dropShadow": "$DefaultDropShadow",
+                            "spacing": "$ReducedSpacing",
+                            "fontColor" : "$CharacterListDetailsColor"
+                        },
+						"text": "You cannot use this character"
+                    }
+                },
+				{
+                    "type": "TextBoxWidget", "name": "DifficultyRequirement",
+                    "fields": {
+                        "rect": { "x": 0, "y": -300, "width": 841 },
+                        "fontType": "16pt",
+                        "style": {
+                            "pointSize": "$MediumFontSize",
+                            "alignment": { "h": "center", "v": "center" },
+                            "dropShadow": "$DefaultDropShadow",
+                            "spacing": "$ReducedSpacing",
+                            "fontColor" : "$CharacterListDetailsColor"
+                        },
+						"text": "You cannot use this character"
+                    }
+                },
+				{
+                    "type": "TextBoxWidget", "name": "LadderRequirement",
+                    "fields": {
+                        "rect": { "x": 0, "y": -240, "width": 841 },
+                        "fontType": "16pt",
+                        "style": {
+                            "pointSize": "$MediumFontSize",
+                            "alignment": { "h": "center", "v": "center" },
+                            "dropShadow": "$DefaultDropShadow",
+                            "spacing": "$ReducedSpacing",
+                            "fontColor" : "$CharacterListDetailsColor"
+                        },
+						"text": "You cannot use this character"
+                    }
+                },
+				{
+                    "type": "TextBoxWidget", "name": "HardcoreRequirement",
+                    "fields": {
+                        "rect": { "x": 0, "y": -180, "width": 841 },
+                        "fontType": "16pt",
+                        "style": {
+                            "pointSize": "$MediumFontSize",
+                            "alignment": { "h": "center", "v": "center" },
+                            "dropShadow": "$DefaultDropShadow",
+                            "spacing": "$ReducedSpacing",
+                            "fontColor" : "$CharacterListDetailsColor"
+                        },
+						"text": "You cannot use this character"
+                    }
+                },
+				{
+                    "type": "TextBoxWidget", "name": "ExpansionRequirement",
+                    "fields": {
+                        "rect": { "x": 0, "y": -120, "width": 841 },
+                        "fontType": "16pt",
+                        "style": {
+                            "pointSize": "$MediumFontSize",
+                            "alignment": { "h": "center", "v": "center" },
+                            "dropShadow": "$DefaultDropShadow",
+                            "spacing": "$ReducedSpacing",
+                            "fontColor" : "$CharacterListDetailsColor"
+                        },
+						"text": "You cannot use this character"
+                    }
+                },
+				{
+                    "type": "TextBoxWidget", "name": "OnlineRequirement",
+                    "fields": {
+                        "rect": { "x": 0, "y": -60, "width": 841 },
+                        "fontType": "16pt",
+                        "style": {
+                            "pointSize": "$MediumFontSize",
+                            "alignment": { "h": "center", "v": "center" },
+                            "dropShadow": "$DefaultDropShadow",
+                            "spacing": "$ReducedSpacing",
+                            "fontColor" : "$CharacterListDetailsColor"
+                        },
+						"text": "@GameJoinOnlineCharacter"
+                    }
+                },
+                {
+                    "type" : "ImageWidget", "Name": "SelectedCharacterBackground",
+                    "fields": {
+                        "rect": { "x": 0, "y": 0, "width": 841 },
+                        "filename": "Controller/FrontEnd/MainMenu/Console_SelectedCharacter_Card_BG"
+                    }
+                },
+                {
+                    "type" : "ImageWidget", "Name": "GameTypeBackground",
+                    "fields": {
+                        "rect": { "x": -148, "y": 138, "width": 841 },
+                        "anchor": { "x": 0.5, "y": 0.5 },
+                        "filename": "Controller/FrontEnd/MainMenu/Console_GameType_Background"
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "GameType",
+                    "fields": {
+                        "rect": { "x": 0, "y": 260, "width": 841 },
+                        "fontType": "16pt",
+                        "style": {
+                            "pointSize": "$MediumFontSize",
+                            "alignment": { "h": "center", "v": "center" },
+                            "dropShadow": "$DefaultDropShadow",
+                            "spacing": "$ReducedSpacing",
+                            "fontColor" : "$FontColorDarkGrayBlue"
+                        },
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "Title",
+                    "fields": {
+                        "rect": { "x": 32, "y": 55, "width": 720 },
+                        "fontType": "16pt",
+                        "style": {
+                            "pointSize": "$XMediumFontSize",
+                            "fontColor": "$CharacterListDetailsColor",
+                            "spacing": "$ReducedSpacing",
+                            "alignment": { "h": "left", "v": "center" },
+                            "dropShadow": "$DefaultDropShadow"
+                        },
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "Name",
+                    "fields": {
+                        "rect": { "x": 32, "y": 120, "width": 720 },
+                        "fontType": "16pt",
+                        "style": {
+                            "fontColor": "$FontColorWhite",
+                            "pointSize": "$LargeFontSize",
+                            "spacing": "$MinimumSpacing",
+                            "alignment": { "h": "left", "v": "center" },
+                            "dropShadow": "$DefaultDropShadow"
+                        },
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "Level&Class",
+                    "fields": {
+                        "rect": { "x": 32, "y": 175, "width": 720 },
+                        "fontType": "16pt",
+                        "style": {
+                            "fontColor": "$CharacterListDetailsColor",
+                            "pointSize": "$XMediumFontSize",
+                            "spacing": "$ReducedSpacing",
+                            "alignment": { "h": "left", "v": "center" },
+                            "dropShadow": "$DefaultDropShadow"
+                        },
+                    }
+                },
+                {
+                    "type": "ImageWidget", "name": "LadderIcon",
+                    "fields": {
+                        "rect": { "x": 640, "y": 20 },
+                        "filename": "FrontEnd\\HD\\Final\\FrontEnd_LadderIconSmall"
+                    },
+                    "children": [
+                        {
+                            "type": "FocusableWidget", "name": "LadderIconTooltip",
+                            "fields": {
+                                "fitToParent": true,
+                                "tooltipString": "@strButtonLadder",
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "ImageWidget", "name": "ClassicIcon",
+                    "fields": {
+                        "rect": { "x": 755, "y": 20 },
+                        "filename": "FrontEnd\\HD\\Final\\FrontEnd_ClassicIconSmall"
+                    },
+                    "children": [
+                        {
+                            "type": "FocusableWidget", "name": "ClassicIconTooltip",
+                            "fields": {
+                                "fitToParent": true,
+                                "tooltipString": "@Classic",
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "ImageWidget", "name": "HardcoreIcon",
+                    "fields": {
+                        "rect": { "x": 697, "y": 20 },
+                        "filename": "FrontEnd\\HD\\Final\\FrontEnd_HardcoreIconSmall"
+                    },
+                    "children": [
+                        {
+                            "type": "FocusableWidget", "name": "HardcoreIconTooltip",
+                            "fields": {
+                                "fitToParent": true,
+                                "tooltipString": "@strHardcore",
+                            }
+                        }
+                    ]
+                },
+            ]
+        },
+        {
+            "type": "RectangleWidget", "name": "LegendBackground",
+            "fields": {
+                "anchor": {"x": 0.5},
+                "rect": { "x": -889, "y": 1922, "width": 1777, "height": 130 },
+                "color": [ 0.0, 0.0, 0.0, 0.5 ],
+            },
+            "children": [
+                {
+                    "type": "ButtonLegendWidget", "name": "MainMenuLegend",
+                    "fields": {
+                        "fitToParent": true,
+                        "text": {
+                            "style": "$StyleButtonLegend",
+                            "style": {
+                                "fontColor": "$FontColorLightGold",
+                                "dropShadow":  "$DefaultDropShadow",
+                                "spacing": { "leading": 1.4 }
+                            }
+                        },
+                        "presets": [
+                            {
+                                "action": "option2",
+                                "description": "@ControllerPromptChangeCharacter",
+                            },
+                        ],
+                    }
+                }
+            ]
+        },
+    ]
+}

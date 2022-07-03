@@ -1,0 +1,138 @@
+{
+    "basedOn": "CinematicsModalHD.json",
+    "type": "CinematicsModal", "name": "CinematicsModal",
+    "fields": {
+        "defaultWidget": "Option0",
+    },
+    "children": [
+        {
+            "type": "GridImageWidget", "name": "Background",
+        },
+        {
+            "type": "TextBoxWidget", "name": "Title",
+        },
+        {
+            "type": "ButtonWidget", "name": "Option0",
+            "fields": {
+                "focusIndicatorFilename": "Controller/HoverImages/Cinematics_Hover",
+                "focusIndicatorOffset": { "x": 7, "y": 0 },
+                "navigation": {
+                    "down": { "name": "Option1" }
+                }
+            }
+        },
+        {
+            "type": "ButtonWidget", "name": "Option1",
+            "fields": {
+                "focusIndicatorFilename": "Controller/HoverImages/Cinematics_Hover",
+                "focusIndicatorOffset": { "x": 7, "y": 0 },
+                "navigation": {
+                    "up": { "name": "Option0" },
+                    "down": { "name": "Option2" }
+                }
+            }
+        },
+        {
+            "type": "ButtonWidget", "name": "Option2",
+            "fields": {
+                "focusIndicatorFilename": "Controller/HoverImages/Cinematics_Hover",
+                "focusIndicatorOffset": { "x": 7, "y": 0 },
+                "navigation": {
+                    "up": { "name": "Option1" },
+                    "down": { "name": "Option3" }
+                }
+            }
+        },
+        {
+            "type": "ButtonWidget", "name": "Option3",
+            "fields": {
+                "focusIndicatorFilename": "Controller/HoverImages/Cinematics_Hover",
+                "focusIndicatorOffset": { "x": 7, "y": 0 },
+                "navigation": {
+                    "up": { "name": "Option2" },
+                    "down": { "name": "Option4" }
+                }
+            }
+        },
+        {
+            "type": "ButtonWidget", "name": "Option4",
+            "fields": {
+                "focusIndicatorFilename": "Controller/HoverImages/Cinematics_Hover",
+                "focusIndicatorOffset": { "x": 7, "y": 0 },
+                "navigation": {
+                    "up": { "name": "Option3" },
+                    "down": { "name": "Option5" }
+                }
+            }
+        },
+        {
+            "type": "ButtonWidget", "name": "Option5",
+            "fields": {
+                "focusIndicatorFilename": "Controller/HoverImages/Cinematics_Hover",
+                "focusIndicatorOffset": { "x": 7, "y": 0 },
+                "navigation": {
+                    "up": { "name": "Option4" },
+                    "down": { "name": "Option6" }
+                }
+            }
+        },
+        {
+            "type": "ButtonWidget", "name": "Option6",
+            "fields": {
+                "focusIndicatorFilename": "Controller/HoverImages/Cinematics_Hover",
+                "focusIndicatorOffset": { "x": 7, "y": 0 },
+                "navigation": {
+                    "up": { "name": "Option5" },
+                    "down": { "name": "LegacyCheckbox" }
+                }
+            }
+        },
+        {
+            "type": "ToggleButtonWidget", "name": "LegacyCheckbox",
+            "fields": {
+                "focusIndicatorPadding": "$OptionsToggleFocusIndicatorPadding",
+                "focusIndicatorFilename": "$OptionsToggleFocusIndicatorFilename",
+                "focusIndicatorOffset": { "x": 0, "y": -4 },
+                "navigation": {
+                    "up": { "name": "Option6" }
+                }
+            },
+        },
+        {
+            "type": "TextBoxWidget", "name": "LegacyCinematicsText",
+        },
+        {
+            "type": "RectangleWidget", "name": "LegendBackground",
+            "fields": {
+                "rect": { "x": -120, "y": 1526, "width": 1400, "height": 130 },
+                "color": [ 0.0, 0.0, 0.0, 0.5 ],
+            },
+            "children": [
+                {
+                    "type": "ButtonLegendWidget", "name": "MainMenuLegend",
+                    "fields": {
+                        "fitToParent": true,
+                        "text": {
+                            "style": "$StyleButtonLegend",
+                            "style": {
+                                "fontColor": "$FontColorLightGold",
+                                "dropShadow":  "$DefaultDropShadow",
+                                "spacing": { "leading": 1.4 }
+                            }
+                        },
+                        "presets": [
+                            {
+                                "action": "select",
+                                "description": "@ControllerPromptSelectCharacter",
+                            },
+                            {
+                                "action": "back",
+                                "description": "@ControllerPromptModalCancel",
+                            },
+                        ],
+                    }
+                }
+            ]
+        },
+    ]
+}

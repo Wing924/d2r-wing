@@ -1,0 +1,58 @@
+{
+    "basedOn": "AccountLinkingModalHD.json",
+    "type": "AccountLinkingModal", "name": "AccountLinkingModal",
+    "fields": {
+        "defaultWidget": "Ok",
+    },
+    "children": [
+        {
+            "type": "ClickCatcherWidget", "name": "ClickCatcher",
+        },
+        {
+            "type": "RectangleWidget", "name": "backgroundShading",
+        },
+        {
+            "type": "NineTileImageWidget", "name": "Title",
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "TitleText",
+                },
+            ]
+        },
+        {
+            "type": "NineTileImageWidget", "name": "TextTile",
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "ActiveUserName",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "Description",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "UserCode",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "Url",
+                },
+            ]
+        },
+        {
+            "type": "ButtonWidget", "name": "Cancel",
+            "children": [
+                {
+                    "type": "ButtonLegendWidget", "name": "CancelLegend",
+                    "fields": {
+                        "anchor": { "x": 0.5, "y": 1.0 },
+                        "focusIndicatorFilename": "Controller/HoverImages/ModalButton_Hover",
+                        "text": { "style": "$StyleButtonLegend" },
+                        "presets": [
+                            {
+                              "action": "select",
+                            },
+                        ],
+                    }
+                },
+            ]
+        }
+    ]
+}

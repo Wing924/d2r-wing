@@ -1,0 +1,73 @@
+{
+    "basedOn": "BugPanelHD.json",
+    "type": "BugPanel", "name": "BugPanel",
+    "children": [
+        {
+            "type": "ClickCatcherWidget", "name": "BugClickCatcher",
+        },
+        {
+            "type": "Widget", "name": "BugParent",
+            "fields": {
+                "rect": { "x": -438, "y": -510 },
+                "anchor": { "x": 0.5, "y": 0.5 },
+            },
+            "children": [
+                {
+                    "type": "NineTileImageWidget", "name": "BugTitleTile",
+                    "children": [
+                        {
+                            "type": "TextBoxWidget", "name": "BugBuildText",
+                        },
+                    ]
+                },
+                {
+                    "type": "NineTileImageWidget", "name": "BugDescriptionTile",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "ReportTypeLabel",
+                },
+                {
+                    "type": "DropdownListWidget", "name": "ReportType",
+                    "fields": {
+                        "navigation": {
+                            "down": { "name": "BugDescription" },
+                        }
+                    },
+                },
+                {
+                    "type": "TextBoxWidget", "name": "ErrorLabel",
+                },
+                {
+                    "type": "RectangleWidget", "name": "DescriptionBackgroundBox",
+                },
+                {
+                    "type": "InputTextBoxWidget", "name": "BugDescription",
+                    "fields": {
+                        "navigation": {
+                            "up": { "name": "ReportType" },
+                            "down": { "name": "Ok" },
+                        }
+                    }
+                },
+                {
+                    "type": "ButtonWidget", "name": "Ok",
+                    "fields": {
+                        "navigation": {
+                            "up": { "name": "BugDescription" },
+                            "right": { "name": "Cancel" },
+                        }
+                    }
+                },
+                {
+                    "type": "ButtonWidget", "name": "Cancel",
+                    "fields": {
+                        "navigation": {
+                            "up": { "name": "BugDescription" },
+                            "left": { "name": "Ok" },
+                        }
+                    }
+                }
+            ]
+        },
+    ]
+}
