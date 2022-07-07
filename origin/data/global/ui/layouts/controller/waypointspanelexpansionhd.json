@@ -1,0 +1,40 @@
+{
+    "basedOn": "Controller/WaypointsPanelOriginalHD.json",
+    "type": "WaypointsPanel", "name": "WaypointsPanelExpansion",
+    "children": [
+        {
+            "type": "ClickCatcherWidget", "name": "ClickCatcher",
+        },
+        {
+            "type": "ImageWidget", "name": "Background",
+        },
+        {
+            "type": "TabBarWidget", "name": "Tabs",
+            "fields": {
+                "filename": "Controller/Panel/Waypoints/V2/WaypointsTab",
+                "tabSize": { "x": 315, "y": 121 },
+                "tabCount": 5,
+                "inactiveFrames": [ 1, 1, 1, 1, 1 ],
+                "activeFrames": [ 0, 0, 0, 0, 0 ],
+            }
+        },
+        // waypoint button templates
+        {
+            "type": "Widget", "name": "Templates",
+            "children": [
+                {
+                    "type": "ButtonWidget", "name": "UnselectableButtonTemplate",
+                },
+                {
+                    "type": "ImageWidget", "name": "SelectableButton",
+                },
+                {
+                    "type": "ImageWidget", "name": "CurrentButton",
+                }
+            ]
+        },
+        {
+            "type": "ImageWidget", "name": "Overlay",
+        },
+    ]
+}

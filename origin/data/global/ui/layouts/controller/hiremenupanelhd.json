@@ -1,0 +1,151 @@
+{
+    "basedOn": "HireMenuPanelHD.json",
+    "type": "HireMenuPanel", "name": "HireMenuPanel",
+    "fields": {
+        "rect": { "x": -896, "y": -580, "width": 1796, "height": 1404 },
+    },
+    "children": [
+        {
+            "type": "ClickCatcherWidget", "name": "LeftClickCatcher",
+            "fields": {
+                "rect": [ 0, 0, 0, 0 ],
+                "fitToParent": true
+            }
+        },
+        {
+            "type": "ImageWidget", "name": "BackgroundImage",
+            "fields": {
+                "filename": "Controller/Panel/HirelingVendorPanel/V2/HirelingVendorBG",
+            }
+        },
+        {
+            "type": "ImageWidget", "name": "GoldIcon",
+            "fields": {
+                "rect": { "x": 741, "y": 1192 },
+                "filename": "PANEL/Inventory/Button",
+            },
+        },
+        {
+            "type": "TextBoxWidget", "name": "GoldText",
+            "fields": {
+                "rect": { "x": 795, "y": 1193, "width": 240, "height": 50 },
+                "text": "Template",
+                "style": "$StyleGoldAmount",
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "NoHiresAlert",
+            "fields": {
+                "rect": { "x": 21, "y": 20, "width": 1755, "height": 1031 },
+                "style": {
+                    "fontColor": "$FontColorWhite",
+                    "pointSize": "$LargeFontSize",
+                    "alignment": { "h": "center", "v": "center" },
+                },
+            }
+        },
+        {
+            "type": "ListWidget", "name": "ListContainer",
+            "fields": {
+                "rect": { "x": 23, "y": 10, "width": 1755, "height": 1031 },
+                "direction": "vertical",
+                "itemSelectionMessage": "DialogMessage:HireMenuSelection",
+                "selectorName": "Selection",
+            },
+            "children": [
+                {
+                    "type": "ListItemWidget", "name": "OptionTemplate",
+                    "fields": {
+                        "rect": { "x": 0, "y": 10, "width": 1755, "height": 102 },
+                        "focusIndicatorFilename": "Controller/HoverImages/HirelingListItem_Hover",
+                        "focusIndicatorOffset": { "x": 0, "y": 0 },
+                    },
+                    "children": [
+                        {
+                            "type": "ImageWidget", "name": "DialogBackground",
+                            "fields": {
+                                "filename": "Controller/Panel/HirelingVendorPanel/V2/HirelingListItem_BG",
+                            }
+                        },
+                        {
+                            "type": "TextBoxWidget", "name": "HireName",
+                            "fields": {
+                                "rect": { "x": 50, "y": 0, "width": 300, "height": 100 },
+                                "style": {
+                                    "pointSize": "$MediumFontSize",
+                                    "alignment": { "h": "left", "v": "center" },
+                                }
+                            }
+                        },
+                        {
+                            "type": "TextBoxWidget", "name": "HireLevel",
+                            "fields": {
+                                "rect": { "x": 714, "y": 0, "width": 300, "height": 100 },
+                                "text": "@strchrlvl ",
+                                "style": {
+                                    "pointSize": "$MediumFontSize",
+                                    "alignment": { "h": "center", "v": "center" },
+                                }
+                            }
+                        },
+                        {
+                            "type": "HirelingSkillIconWidget", "name": "Skill0",
+                            "fields": {
+                                "rect": { "x": 1200, "y": 20, "scale": 0.50 },
+                                "skillIconFilename": "Spells/Hireables/HrSkillIcon"
+                            }
+                        },
+                        {
+                            "type": "HirelingSkillIconWidget", "name": "Skill1",
+                            "fields": {
+                                "rect": { "x": 1280, "y": 20, "scale": 0.50 },
+                                "skillIconFilename": "Spells/Hireables/HrSkillIcon"
+                            }
+                        },
+                        {
+                            "type": "HirelingSkillIconWidget", "name": "Skill2",
+                            "fields": {
+                                "rect": { "x": 1360, "y": 20, "scale": 0.50 },
+                                "skillIconFilename": "Spells/Hireables/HrSkillIcon"
+                            }
+                        },
+                        {
+                            "type": "Widget", "name": "CostContainer",
+                            "fields": {
+                                "rect": { "x": 1471, "y": 4, "width": 283, "height": 100 },
+                            },
+                            "children": [
+                                {
+                                    "type": "ImageWidget", "name": "CostImage",
+                                    "fields": {
+                                        "rect": { "x": 30, "y": 25 },
+                                        "filename": "PANEL\\Modals\\Gold_Drop_Coins",
+                                    }
+                                },
+                                {
+                                    "type": "TextBoxWidget", "name": "HireCost",
+                                    "fields": {
+                                        "rect": { "x": -155, "y": 0, "width": 400, "height": 100 },
+                                        "text": "99,999",
+                                        "style": {
+                                            "pointSize": "$MediumFontSize",
+                                            "alignment": { "h": "right", "v": "center" },
+                                        }
+                                    }
+                                },
+                            ]
+                        },
+                    ]
+                },
+                {
+                    "type": "ImageWidget", "name": "Selection",
+                    "fields": {
+                        "rect": {"x": 0, "y": 0},
+                        "filename": "Controller/Panel/HirelingVendorPanel/V2/Hireling_Selector"
+                    }
+                }
+            ]
+        },
+
+    ]
+}

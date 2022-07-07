@@ -24,9 +24,9 @@ id	zhTW	prefix	newName	suffix	color
 2202	鑑定卷軸		(null)
 2207	精力藥水		(null)
 2208	解毒藥水		解毒		gray
-2209	活力藥水		小紫
+2209	活力藥水		(null)
 2210	全效活力藥水		大紫		pink
-2211	融冰藥水		融冰		gray
+2211	融冰藥水		(null)
 2212	護身符	★		★
 2214	戒指	★		★
 2215	金幣		金
@@ -34,27 +34,48 @@ id	zhTW	prefix	newName	suffix	color
 2220	弩箭				gray
 2221	鑰匙		(null)		gray
 2222	鑰匙		(null)		gray
+2236	碎裂紫寶石				dark-red
+2237	瑕疵紫寶石				dark-red
+2238	紫寶石				dark-red
 2239	無瑕紫寶石				red
 2240	完美紫寶石				red
+2241	碎裂黃寶石				dark-red
+2242	瑕疵黃寶石				dark-red
+2243	黃寶石				dark-red
 2244	無瑕黃寶石				red
 2245	完美黃寶石				red
+2246	碎裂藍寶石				dark-red
+2247	瑕疵藍寶石				dark-red
+2248	藍寶石				dark-red
 2249	無瑕藍寶石				red
 2250	完美藍寶石				red
+2251	碎裂綠寶石				dark-red
+2252	瑕疵綠寶石				dark-red
 2253	無瑕綠寶石				red
+2254	綠寶石				dark-red
 2255	完美綠寶石				red
+2256	碎裂紅寶石				dark-red
+2257	瑕疵紅寶石				dark-red
+2258	紅寶石				dark-red
 2259	無瑕紅寶石				red
 2260	完美紅寶石				red
+2261	碎裂鑽石				dark-red
+2262	瑕疵鑽石				dark-red
+2263	鑽石				dark-red
 2264	無瑕鑽石				red
 2265	完美鑽石				red
 2266	弱效生命藥水		(null)
 2267	輕效生命藥水		(null)
 2268	生命藥水		(null)
 2269	強效生命藥水		(null)
-2270	特效生命藥水		超紅
+2270	特效生命藥水		超紅		gray
 2271	弱效法力藥水		(null)
 2272	輕效法力藥水		(null)
 2273	法力藥水		(null)
 2274	強效法力藥水		(null)
-2275	特效法力藥水		超藍
+2275	特效法力藥水		超藍		gray
+2277	碎裂骷髏石				dark-red
+2278	瑕疵骷髏石				dark-red
+2279	骷髏石				dark-red
 2280	無瑕骷髏石				red
 2281	完美骷髏石				red

@@ -1,0 +1,71 @@
+{
+    "basedOn": "ColorBlindCalibrationPanelHD.json",
+    "type": "ColorBlindCalibrationPanel", "name": "ColorBlindCalibrationPanel",
+    "fields": {
+		"defaultWidget": "ColorBlindMode",
+    },
+    "children": [
+        {
+            "type": "RectangleWidget", "name": "Background",
+            "children": [
+				{
+					"type": "ClickCatcherWidget", "name": "ClickCatcher",
+				},
+			]
+        },
+        // Image for calibration
+		{
+			"type": "ImageWidget", "name": "CalibrationImage",
+		},
+		{
+            "type": "TextBoxWidget", "name": "Title",
+			"children": [
+				{
+					"type": "ImageWidget", "name": "Divider",
+				},
+			]
+        },
+        {
+            "type": "TextBoxWidget", "name": "ColorBlindModeText",
+        },
+        {
+            "type": "CarouselWidget", "name": "ColorBlindMode",
+            "fields": {
+                "navigation": {
+                    "down": { "name": "ColorBlindStrength" },
+                },
+            },
+        },
+        {
+            "type": "TextBoxWidget", "name": "ColorBlindStrengthText",
+        },
+        {
+            "type": "SettingsSliderWidget", "name": "ColorBlindStrength",
+            "fields": {
+                "navigation": {
+                    "up": { "name": "ColorBlindMode" },
+                },
+            },
+        },
+        {
+            "type": "ButtonLegendWidget", "name": "Legend",
+            "fields": {
+                "anchor": { "x": 0.5, "y": 0 },
+                "rect": { "x": -975, "y": 1800, "width": 1950, "height": 103 },
+                "text": { "style": "$StyleButtonLegend",
+                          "style/fontColor": "$FontColorWhite", 
+                },
+                "presets": [
+                    {
+                        "action": "select",
+                        "description": "@SaveAndCloseCalibration",
+                    },
+                    {
+                        "action": "back",
+                        "description": "@close",
+                    },
+                ],
+            },
+        },
+    ]
+}

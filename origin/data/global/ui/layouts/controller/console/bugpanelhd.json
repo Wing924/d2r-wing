@@ -1,0 +1,116 @@
+{
+    "basedOn": "BugPanelHD.json",
+    "type": "BugPanel", "name": "BugPanel",
+    "fields": {
+        "defaultWidget": "Ok",
+        "useHoldToConfirm": true,
+        "onReportComplete": "GamesList:GameNameReported",
+        "showThanksForReportingBox": false,
+    },
+    "children": [
+        {
+            "type": "Widget", "name": "BugParent",
+            "fields": {
+                "rect": { "x": -626, "y": -296 },
+                "anchor": { "x": 0.5, "y": 0.5 },
+            },
+            "children": [
+                {
+                    "type": "ImageWidget", "name": "Background",
+                    "fields": {
+                        "filename": "PANEL\\Modals\\Modal_BG_XL"
+                    },
+                    "children": [
+                        {
+                            "type": "TextBoxWidget", "name": "ReportTitle",
+                            "fields": {
+                                "anchor": { "x": 0.5 },
+                                "rect": { "y": 60 },
+                                "text": "@ReportOffensiveGameNameTitle",
+                                "style": {
+                                    "pointSize": "$LargeFontSize",
+                                    "alignment": { "v": "center", "h": "center" },
+                                    "fontColor": "$FontColorGold",
+                                }
+                            }
+                        },
+                    ]
+                },
+                {
+                    "type": "TextBoxWidget", "name": "ReportConfirmation",
+                    "fields": {
+                        "rect": { "x": 80, "y": 100, "width": 1100, "height": 240 },
+                        "text": "@ReportOffensiveGameNameQuestion",
+                        "style": {
+                            "fontColor": "$FontColorGold",
+                            "pointSize": "$MediumLargeFontSize",
+                            "alignment": { "h": "center", "v": "center" },
+                            "options": {
+                                "newlineHandling": "standard",
+                                "lineWrap": true
+                            }
+                        }
+                    }
+                },
+                {
+                    "type": "ButtonWidget", "name": "Ok",
+                    "fields": {
+                        "rect": { "x": 160, "y": 360 },
+                        "filename": "FrontEnd\\HD\\Final\\FrontEnd_ButtonSmall",
+                        "textString": "@Submit",
+                        "textColor": "$LightButtonTextColor",
+                        "text/style" : "$StyleFEButtonText",
+                        "pressedFrame": 1,
+                        "hoveredFrame": 0,
+                        "disabledFrame": 2,
+                        "focusIndicatorVisible": false,
+                    },
+                    "children": [
+                        {
+                            "type": "ButtonLegendWidget", "name": "ConfirmLegend",
+                            "fields": {
+                                "anchor": { "x": 0.5, "y": 1.0 },
+                                "text": { "style": "$StyleButtonLegend" },
+                                "presets": [
+                                    {
+                                      "action": "select",
+                                    },
+                                ],
+                            }
+                        },
+                    ]
+                },
+                {
+                    "type": "ButtonWidget", "name": "Cancel",
+                    "fields": {
+                        "rect": { "x": 720, "y": 360 },
+                        "filename": "FrontEnd\\HD\\Final\\FrontEnd_ButtonSmall",
+                        "textString": "@cancel",
+                        "textColor": "$LightButtonTextColor",
+                        "text/style" : "$StyleFEButtonText",
+                        "onClickMessage": "PanelManager:ClosePanel:BugPanel",
+                        "acceptsEscKeyEverywhere": true,
+                        "pressedFrame": 1,
+                        "hoveredFrame": 3,
+                        "disabledFrame": 2,
+                        "focusIndicatorVisible": false,
+                    },
+                    "children": [
+                        {
+                            "type": "ButtonLegendWidget", "name": "DismissLegend",
+                            "fields": {
+                                "anchor": { "x": 0.5, "y": 1.0 },
+                                "text": { "style": "$StyleButtonLegend" },
+                                "presets": [
+                                    {
+                                      "action": "back",
+                                    },
+                                ],
+                            }
+                        },
+                    ]
+                }
+            ]
+        },
+    ]
+}

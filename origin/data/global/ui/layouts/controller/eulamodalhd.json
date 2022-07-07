@@ -1,0 +1,80 @@
+{
+    "basedOn": "EULAModalHD.json",
+    "type": "EULAModal", "name": "EULAModal",
+    "fields": {
+        "fitToParent": true,
+        "defaultWidget": "ScrollController"
+    },
+    "children": [
+        {
+            "type": "ClickCatcherWidget", "name": "ClickCatcher",
+        },
+        {
+            "type": "RectangleWidget", "name": "backgroundShading",
+        },
+        {
+            "type": "NineTileImageWidget", "name": "EULATitleTile",
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "Title",
+                },
+            ]
+        },
+        {
+            "type": "NineTileImageWidget", "name": "EULADocumentTile",
+            "children": [
+                {
+                    "type": "ImageWidget", "name": "ScrollBarBackground",
+                    "children": [
+                        {
+                            "type": "ScrollControllerWidget", "name": "ScrollController",
+
+                        },
+                    ]
+                },
+                {
+                    "type": "ScrollViewWidget", "name": "ScrollView",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "EULAText",
+                },
+            ]
+        },
+        {
+            "type": "ButtonWidget", "name": "Accept",
+            "children": [
+                {
+                    "type": "ButtonLegendWidget", "name": "AcceptLegend",
+                    "fields": {
+                        "anchor": { "x": 0.5, "y": 1.0 },
+                        "focusIndicatorFilename": "Controller/HoverImages/ModalButton_Hover",
+                        "text": { "style": "$StyleButtonLegend" },
+                        "presets": [
+                            {
+                              "action": "select",
+                            },
+                        ],
+                    }
+                },
+            ]
+        },
+        {
+            "type": "ButtonWidget", "name": "Cancel",
+            "children": [
+                {
+                    "type": "ButtonLegendWidget", "name": "CancelLegend",
+                    "fields": {
+                        "anchor": { "x": 0.5, "y": 1.0 },
+                        "focusIndicatorFilename": "Controller/HoverImages/ModalButton_Hover",
+                        "text": { "style": "$StyleButtonLegend" },
+                        "presets": [
+                            {
+                              "action": "back",
+                            },
+                        ],
+                    }
+                },
+            ]
+        }
+    ]
+}

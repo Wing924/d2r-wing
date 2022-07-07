@@ -1,0 +1,12 @@
+{
+    "type": "FocusManager", "name": "FocusManager",
+    "children": [
+        {
+            "type": "RectangleWidget", "name": "FocusIndicator",
+                "fields": {
+                    "color": { "a": 0 }, 
+                    "borderColor": { "r": 255, "g": 255, "b": 0, "a": 255 },
+            },
+        },
+    ],
+}

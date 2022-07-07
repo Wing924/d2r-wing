@@ -1,0 +1,123 @@
+{
+    "basedOn": "TradeLayoutHD.json",
+    "type": "TradePanel", "name": "TradeLayout",
+    "fields": {
+        "rect": "$ConsoleLeftPanelRect",
+        "defaultWidget": "grid_us",
+    },
+    "children": [
+        {
+            "type": "ClickCatcherWidget", "name": "click_catcher",
+        },
+        {
+            "type": "ImageWidget", "name": "background",
+            "fields": {
+                "rect": {"x": 112, "y": 0.0},
+                "filename": "Controller/Panel/Trade/V2/TradeBG",
+            },
+        },
+        {
+            "type": "TextBoxWidget", "name": "name_them",
+            "fields": {
+                "rect": { "x": 241, "y": 92, "width": 500, "height": 70 },
+                "style": {
+                    "pointSize": "$SmallFontSize",
+                    "spacing": "$ReducedSpacing"
+                },
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "gold_amount_them",
+            "fields": {
+                "rect": { "x": 811, "y": 98, "width": 295, "height": 60 },
+                "style": {
+                    "pointSize": "$MediumFontSize",
+                    "spacing": "$ReducedSpacing"
+                },
+            },
+            "children": [
+                {
+                    "type": "FocusableWidget", "name": "Tooltip",
+                }
+            ]
+        },
+        {
+            "type": "InventoryGridWidget", "name": "grid_them",
+            "fields": {
+                "rect": { "x": 160, "y": 232 },
+                "gemSocketFilename": "PANEL\\gemsocket",
+                "navigation": {
+                    "right": { "panelBoundary": true },
+                    "down": { "name": "grid_us" },
+                },
+            },
+        },
+        {
+            "type": "TextBoxWidget", "name": "name_us",
+            "fields": {
+                "rect": { "x": 241, "y": 1249, "width": 500, "height": 70 },
+                "style": {
+                    "pointSize": "$SmallFontSize",
+                    "spacing": "$ReducedSpacing"
+                },
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "gold_amount_us",
+            "fields": {
+                "rect": { "x": 811, "y": 1256, "width": 295, "height": 60 },
+                "style": {
+                    "pointSize": "$MediumFontSize",
+                    "spacing": "$ReducedSpacing"
+                },
+            },
+            "children": [
+                {
+                    "type": "FocusableWidget", "name": "Tooltip",
+                }
+            ]
+        },
+        {
+            "type": "InventoryGridWidget", "name": "grid_us",
+            "fields": {
+                "rect": { "x": 160, "y": 786 },
+                "gemSocketFilename": "PANEL\\gemsocket",
+                "navigation": {
+                    "right": { "panelBoundary": true },
+                    "up": { "name": "grid_them" },
+                    "down": { "name": "ready_us" },
+                },
+            },
+        },
+        {
+            "type": "ButtonWidget", "name": "ready_them",
+            "fields": {
+                "rect": { "x": 132, "y": 90, },
+                "filename": "PANEL\\Trade\\AcceptButton",
+                "focusIndicatorFilename": "Controller/HoverImages/AcceptTrade_Hover",
+                "focusIndicatorOffset": { "x": 1, "y": 0 },
+                "focusOnMouseOver": false,
+            },
+        },
+        {
+            "type": "ButtonWidget", "name": "ready_us",
+            "fields": {
+                "rect": { "x": 132, "y": 1248 },
+                "filename": "PANEL\\Trade\\AcceptButton",
+                "focusIndicatorFilename": "Controller/HoverImages/AcceptTrade_Hover",
+                "focusIndicatorOffset": { "x": 1, "y": 0 },
+                "navigation": {
+                    "right": { "panelBoundary": true },
+                    "up": { "name": "grid_us" },
+                },
+            },
+        },
+        {
+            "type": "ButtonWidget", "name": "close",
+            "fields": {
+                "rect": { "x": 275, "y": 384 },
+                "filename": "PANEL\\buysellbtn",
+            },
+        },
+    ]
+}

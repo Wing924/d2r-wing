@@ -1,0 +1,56 @@
+{
+    "basedOn": "LoadScreenPanelHD.json",
+    "type": "LoadScreenPanel", "name": "LoadScreenPanel",
+    "children": [
+        {
+            "type": "RectangleWidget", "name": "LoadBackground",
+        },
+        {
+            "type": "ImageWidget", "name": "LoadingScreenImage",
+        },
+        {
+            "type": "RectangleWidget", "name": "LoadingBarBorder",
+        },
+        {
+            "type": "ProgressBarWidget", "name": "LoadingBar",
+        },
+        {
+            "type": "TextBoxWidget", "name": "Loading"
+        },
+        {
+            "type": "AnimatedImageWidget", "name": "FullGlow",
+            "fields": {
+                "anchor": { "x": 1.0, "y": 1.0 },
+                "rect": { "x": -400, "y": -400, "scale": 0.5 },
+                "filename": "LogoAnimation/FullGlow_PC",
+                "fps": 20,
+            },
+        },
+        {
+            "type": "AnimatedImageWidget", "name": "Logo",
+            "fields": {
+                "anchor": { "x": 1.0, "y": 1.0 },
+                "rect": { "x": -399, "y": -392, "scale": 0.5 },
+                "filename": "LogoAnimation/LogoAnimation",
+                "fps": 20,
+            },
+        },
+        {
+            "type": "ImageWidget", "name": "ResurrectedText",
+            "fields": {
+                "anchor": { "x": 1.0, "y": 1.0 },
+                "rect": { "x": -370, "y": -226, "scale": 0.5 },
+                "filename": "LogoAnimation/ResurrectedText",
+            },
+        },
+        {
+            "type": "AnimatedImageWidget", "name": "BottomFlames",
+            "fields": {
+                "anchor": { "x": 1.0, "y": 1.0 },
+                "rect": { "x": -319, "y": -208, "scale": 0.5 },
+                "filename": "LogoAnimation/Logo_BottomFlame",
+                "fps": 20,
+            },
+        },
+    ]
+}

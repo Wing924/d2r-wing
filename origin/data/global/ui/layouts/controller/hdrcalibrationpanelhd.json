@@ -1,0 +1,93 @@
+{
+    "basedOn": "HDRCalibrationPanelHD.json",
+    "type": "HDRCalibrationPanel", "name": "HDRCalibrationPanel",
+    "children": [
+        {
+            "type": "RectangleWidget", "name": "Background",
+            "children": [
+				{
+					"type": "ClickCatcherWidget", "name": "ClickCatcher",
+				},
+			]
+        },
+		// Image for calibration
+		{
+			"type": "ImageWidget", "name": "CalibrationImage",
+		},
+		{
+            "type": "TextBoxWidget", "name": "Title",
+			"children": [
+				{
+					"type": "ImageWidget", "name": "Divider",
+				},
+			]
+        },
+        {
+            "type": "TableWidget", "name": "OptionsTable",
+            "children": [
+                {
+                    "type": "TableRowWidget", "name": "Row PaperWhiteNits",
+                    "children": [
+                        {
+                            "type": "TextBoxWidget", "name": "BrightnessText",
+                        },
+                        {
+                            "type": "SettingsSliderWidget", "name": "PaperWhiteNits",
+                        }
+                    ]
+                },                
+                { 
+                    "type": "TableRowWidget", "name": "Row MaxLuminance",
+                    "children": [
+                        {
+                            "type": "TextBoxWidget", "name": "MaxLuminanceText",
+                        },
+                        {
+                            "type": "SettingsSliderWidget", "name": "MaxLuminance",
+                        }
+                    ]
+                },
+                {
+                    "type": "TableRowWidget", "name": "Row HDRContrast",
+                    "children": [
+                        {
+                            "type": "TextBoxWidget", "name": "ContrastText",
+                        },
+                        {
+                            "type": "SettingsSliderWidget", "name": "HDRContrast",
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "RectangleWidget", "name": "LegendBackground",
+            "fields": {
+                "anchor": {"x": 0.5},
+                "rect": { "x": -715, "y": 1800, "width": 1400, "height": 130 },
+                "color": [ 0.0, 0.0, 0.0, 0.5 ],
+            },
+            "children": [
+                {
+                    "type": "ButtonLegendWidget", "name": "Legend",
+                    "fields": {
+                        "fitToParent": true,
+                        "text": { "style": "$StyleButtonLegend",
+                                  "style/fontColor": "$FontColorWhite", 
+                        },
+                        "presets": [
+                            {
+                                "action": "select",
+                                "description": "@SaveAndCloseCalibration",
+                            },
+                            {
+                                "action": "back",
+                                "description": "@close",
+                            },
+                        ],
+                    },
+                },
+            ]
+        },
+    ]
+}

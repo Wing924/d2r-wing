@@ -1,0 +1,74 @@
+{
+    "basedOn": "MessageLogPanel_800x600HD.json",
+    "type": "MessageLogPanel", "name": "MessageLogPanel",
+    "fields": {
+        "priority": 0,
+        "anchor": { "x": 0.5 },
+        "rect": "$MessageLogPanelRect",
+        "defaultWidget": "ScrollBar",
+    },
+    "children": [
+        {
+            "type": "ClickCatcherWidget", "name": "ClickCatcher",
+        },
+        {
+            "type": "ImageWidget", "name": "Background",
+            "fields": {
+                "filename": "Controller/panel/MessageLog/V2/MessageLogBG",
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "title",
+            "fields": {
+                "rect": { "x": 6, "y": 8, "width": 1766, "height": 86 },
+                "style": "$StyleTitleBlock",
+                "text": "@strMsgLog",
+            },
+        },
+        {
+            "type": "ChatListWidget", "name": "ListContainer",
+            "fields": {
+            	"rect": { "x": 6, "y": 106, "width": 1771, "height": 1294 },
+    	    },
+            "children": [
+                {
+                    "type": "ListItemWidget", "name": "ChatEntryTemplate",
+                    "fields": {
+                        "rect": { "x": 10, "y": 0, "width": 0, "height": 50 },
+                    },
+                    "children": [
+                        {
+                            "type": "TextBoxWithLinksWidget", "name": "MessageText",
+                            "fields": {
+                                "rect": { "x": 0, "y": 0, "width": 1700, "height": 50 },
+                                "fitToParent": false,
+                                "focusOnMouseOver": true
+                            }
+                        },
+                    ]
+                },
+            ]
+        },
+        {
+            "type": "ImageWidget", "name": "ScrollBarBackground",
+            "fields": {
+                "rect": { "x": 1724, "y": 131 },
+                "filename": "Controller/panel/MessageLog/V2/MessageLog_Scrollbar",
+            },
+            "children": [
+                {
+                    "type": "ScrollControllerWidget", "name": "ScrollBar",
+                    "fields": {
+                        "rect": { "x": 5, "y": 31, "width": 24, "height": 1203 },
+                        "upArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollUpBtn",
+                        "downArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollDownBtn",
+                        "barFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollIndicator",
+                        "viewName": "ListContainer",
+                        "focusOnMouseOver": false,
+                        "focusIndicatorVisible": false,
+                    }
+                },
+            ]
+        },
+    ]
+}

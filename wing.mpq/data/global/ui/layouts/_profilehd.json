@@ -236,6 +236,12 @@
     "g": 70,
     "r": 252
   },
+  "FontColorSocketedEtherealColor": {
+    "a": 255,
+    "b": 128,
+    "g": 128,
+    "r": 255
+  },
   "FontColorTransparent": {
     "a": 0,
     "b": 0,
@@ -1037,7 +1043,7 @@
   "TooltipStyle": {
     "CraftedColor": "$FontColorOrange",
     "DefaultColor": "$FontColorWhite",
-    "EtherealColor": "$FontColorGrey",
+    "EtherealColor": "$FontColorSocketedEtherealColor",
     "EventItemsColor": "$FontColorOrange",
     "GoldColor": "$FontColorWhite",
     "HealthPotionColor": "$FontColorWhite",
@@ -1048,7 +1054,7 @@
     "RejuvPotionColor": "$FontColorWhite",
     "RuneColor": "$FontColorOrange",
     "SetColor": "$FontColorGreen",
-    "SocketedColor": "$FontColorGrey",
+    "SocketedColor": "$FontColorSocketedEtherealColor",
     "TemperedColor": "$FontColorDarkGreen",
     "UniqueColor": "$FontColorGoldYellow",
     "backgroundColor": [

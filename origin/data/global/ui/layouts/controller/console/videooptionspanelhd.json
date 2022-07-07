@@ -1,0 +1,182 @@
+{
+    "basedOn": "VideoOptionsPanelHD.json",
+    "type": "VideoOptionsPanel", "name": "VideoOptionsPanel",
+    "children": [
+        {
+            "type": "ImageWidget", "name": "ScrollBarBackground",
+            "children": [
+                {
+                    "type": "ScrollControllerWidget", "name": "ScrollController",
+                },
+            ]
+        },
+        {
+            "type": "ScrollViewWidget", "name": "ScrollView",
+            "children": [
+                {
+                    "type": "TableWidget", "name": "OptionsTable",
+                    "children": [
+                        {
+                            "type": "TableRowWidget", "name": "Row Video Options",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "Video Options",
+                                    "children": [
+                                        {
+                                            "type": "ImageWidget", "name": "Divider",
+                                        },
+                                    ]
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row GammaCalibration",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "GammaCalibrationText",
+                                },
+                                {
+                                    "type": "ButtonWidget", "name": "GammaCalibration",
+                                    "fields": {
+                                        "tooltipIsTopAligned": false,
+                                        "focusIndicatorFilename": "Controller/HoverImages/FrontEndButtonSmall_Hover",
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row ScreenSpaceCalibration",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ScreenSpaceCalibrationText",
+                                },
+                                {
+                                    "type": "ButtonWidget", "name": "ScreenSpaceCalibration",
+                                    "fields": {
+                                        "tooltipIsTopAligned": false,
+                                        "focusIndicatorFilename": "Controller/HoverImages/FrontEndButtonSmall_Hover",
+                                    },
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row GraphicsMode",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "GraphicsModeText",
+                                    "fields": {
+                                        "text": "@GraphicsMode",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                },
+                                {
+                                    "type": "CarouselWidget", "name": "GraphicsMode",
+                                    "fields": {
+                                        "rect": "$OptionsCarouselRect",
+                                        "focusIndicatorPadding": "$OptionsCarouselFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsCarouselFocusIndicatorFilename",
+                                        "states": [ "GraphicsModeQuality", "GraphicsModePerformance" ],
+                                        "fontType": "8ptE",
+                                        "onUpdateMessage": "OptionsPanelMessage:SetGraphicsMode",
+                                        "style": "$StyleSettingsCarousel",
+                                        "enabledColor" : "$CarouselEnabledColor",
+                                        "disabledColor" : "$CarouselDisabledColor",
+                                        "tooltipString": "@OptionsMenuGraphicsModeTooltip",
+                                        "tooltipStyle": {
+                                            "fontStyle": {
+                                                "options": { "newlineHandling": "standard" },
+                                            },
+                                            "showAfterDelay": true,
+                                        },
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row Legacy Video Options",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "Legacy Video Options",
+                                    "children": [
+                                        {
+                                            "type": "ImageWidget", "name": "Divider",
+                                        },
+                                    ]
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row Resolution",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ResolutionText",
+                                },
+                                {
+                                    "type": "CarouselWidget", "name": "Resolution",
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row LightingQuality",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "LightingQualityText",
+                                },
+                                {
+                                    "type": "CarouselWidget", "name": "LightingQuality",
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row BlendedShadows",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "BlendedShadowsText",
+                                },
+                                {
+                                    "type": "ToggleButtonWidget", "name": "BlendedShadows",
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row Perspective",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "PerspectiveText",
+                                },
+                                {
+                                    "type": "ToggleButtonWidget", "name": "Perspective",
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row Contrast",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ContrastText",
+                                },
+                                {
+                                    "type": "SettingsSliderWidget", "name": "Contrast",
+                                },
+                            ]
+                        },
+						{
+                            "type": "TableRowWidget", "name": "Row LegacyGraphicsMode",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "LegacyGraphicsModeText",
+                                },
+                                {
+                                    "type": "CarouselWidget", "name": "LegacyGraphicsMode",
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row Spacer",
+                        },
+                    ]
+                }
+            ]
+        }
+    ]
+}

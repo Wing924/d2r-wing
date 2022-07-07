@@ -1,0 +1,39 @@
+{
+    "basedOn": "RenameCharacterModalHD.json",
+    "type": "RenameCharacterModal", "name": "RenameCharacterModal",
+    "children": [
+        {
+            "type": "NineTileImageWidget", "name": "Background",
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "RenameMessage",
+                },
+                {
+                    "type": "ImageWidget", "name": "InputBackground",
+                    "children": [
+                        {
+                            "type": "InputTextBoxWidget", "name": "RenameInput",
+                        },
+                    ]
+                },
+                {
+                    "type":"ButtonWidget", "name": "ConfirmButton",
+                    "children": [
+                        {
+                            "type": "ButtonLegendWidget", "name": "ConfirmLegend",
+                            "fields": {
+                                "anchor": { "x": 0.5, "y": 1.0 },
+                                "text": { "style": "$StyleButtonLegend" },
+                                "presets": [
+                                    {
+                                      "action": "pause",
+                                    },
+                                ],
+                            }
+                        },
+                    ]
+                },
+            ]
+        },
+    ]
+}

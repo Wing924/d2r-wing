@@ -1,0 +1,32 @@
+{
+    "basedOn": "Controller/CharacterDifficultyModalHD.json",
+    "type": "CharacterDifficultyModal", "name": "CharacterDifficultyModal",
+    "children": [
+        {
+            "type": "ImageWidget", "name": "Frame",
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "Prompt",
+                },
+                {
+                    "type": "ButtonWidget", "name": "Normal",
+                    "fields": {
+                        "onClickMessage": "MainMenuHD:LoadCharacter:0",
+                    }
+                },
+                {
+                    "type": "ButtonWidget", "name": "Nightmare",
+                    "fields": {
+                        "onClickMessage": "MainMenuHD:LoadCharacter:1",
+                    }
+                },
+                {
+                    "type": "ButtonWidget", "name": "Hell",
+                    "fields": {
+                        "onClickMessage": "MainMenuHD:LoadCharacter:2",
+                    }
+                },
+            ]
+        },
+    ]
+}

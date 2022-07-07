@@ -1,0 +1,50 @@
+{
+    "basedOn": "ConfirmationModalHD.json",
+    "type": "ConfirmationModal", "name": "ConfirmationModal",
+    "children": [
+        {
+            "type": "ImageWidget", "name": "Frame",
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "Prompt",
+                },
+                {
+                    "type": "ButtonWidget", "name": "Confirm",
+                    "children": [
+                        {
+                            "type": "ButtonLegendWidget", "name": "ConfirmLegend",
+                            "fields": {
+                                "anchor": { "x": 0.5, "y": 1.0 },
+                                "focusIndicatorFilename": "Controller/HoverImages/ModalButton_Hover",
+                                "text": { "style": "$StyleButtonLegend" },
+                                "presets": [
+                                    {
+                                      "action": "select",
+                                    },
+                                ],
+                            }
+                        },
+                    ]
+                },
+                {
+                    "type": "ButtonWidget", "name": "Dismiss",
+                    "children": [
+                        {
+                            "type": "ButtonLegendWidget", "name": "DismissLegend",
+                            "fields": {
+                                "anchor": { "x": 0.5, "y": 1.0 },
+                                "focusIndicatorFilename": "Controller/HoverImages/ModalButton_Hover",
+                                "text": { "style": "$StyleButtonLegend" },
+                                "presets": [
+                                    {
+                                      "action": "back",
+                                    },
+                                ],
+                            }
+                        },
+                    ]
+                },
+            ]
+        },
+    ]
+}

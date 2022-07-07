@@ -1,0 +1,115 @@
+{
+    "basedOn": "Controller/CharacterSelectPanelHD.json",
+    "type": "CharacterSelectPanel", "name": "CharacterSelectPanel",
+    "fields": {
+        "anchor": { "x": 0.0 },
+    },
+    "children": [
+        {
+            "type": "ImageWidget", "name": "Background",
+            "fields": {
+                "rect": { "x": 0, "y": 0 },
+                 "filename" : "Controller/FrontEnd/MainMenu/Console_CharacterList_BG"
+            },
+            "children": [
+                {
+                    "type": "ListWidget", "name": "CharacterList",
+                    "fields":{
+                        "rect": { "x": 76, "y": 78, "height": 2011 },
+                    },
+                    "children": [
+                        // character list
+                        {
+                            "type": "ListItemWidget", "name": "CharacterTemplate",
+                            "fields": {
+                                "navigation": {
+                                    "left": { "panelBoundary": true },
+                                    "right": { "panelBoundary": true },
+                                },
+                            },
+                            "children": [
+                                {
+                                    "type": "ImageWidget", "name": "Background",
+                                },
+                                {
+                                    "type": "TextBoxWidget", "name": "Title",
+                                },
+                                {
+                                    "type": "TextBoxWidget", "name": "Name",
+                                },
+                                {
+                                    "type": "TextBoxWidget", "name": "Level&Class",
+                                },
+                                {
+                                    "type": "ImageWidget", "name": "LadderIcon",
+                                },
+                                {
+                                    "type": "ImageWidget", "name": "ClassicIcon",
+                                },
+                                {
+                                    "type": "ImageWidget", "name": "HardcoreIcon",
+                                },
+                            ]
+                        },
+                        {
+                            "type": "ImageWidget", "name": "Selection",
+                        },
+                    ]
+                },
+                {
+                    "type": "ImageWidget", "name": "BackgroundCover",
+                    "children": [
+                        {
+                            "type": "ButtonWidget", "name": "Local",
+                            "fields": { 
+                                "rect": { "x": 142, "y": 55 },
+                            }
+                        },
+                        {
+                            "type": "TextBoxWidget", "name": "LeftPrompt",
+                            "fields": {
+                                "rect": { "x": 287, "y": 133 },
+                                "text": "\uE019",
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget", "name": "Online",
+                            "fields": { 
+                                "rect": { "x": 558, "y": 55 },
+                            }
+                        },
+                        {
+                            "type": "TextBoxWidget", "name": "RightPrompt",
+                            "fields": {
+                                "rect": { "x": 781, "y": 133 },
+                                "text": "\uE01A",
+                            }
+                        },
+                        {
+                            "type": "TabBarWidget", "name": "Tabs",
+                        },
+                        {
+                            "type": "ImageWidget", "name": "ScrollBarBackground",
+                            "fields": {
+                                "rect": { "x": 765, "y": 39 },
+                                "filename": "Controller/FrontEnd/MainMenu/Console_CharacterList_Scrollbar",
+                            },
+                            "children": [
+                                {
+                                    "type": "ScrollControllerWidget", "name": "ScrollBar",
+                                    "fields": {
+                                        "rect": { "y": 31, "height": 1950 },
+                                        "upArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollUpBtn",
+                                        "downArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollDownBtn",
+                                        "barFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollIndicator",
+                                        "viewName": "CharacterList",
+                                    }
+                                },
+                            ]
+                        },
+                    ]
+                },
+            ]
+        },
+    ]
+}
