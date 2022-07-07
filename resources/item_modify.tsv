@@ -26,7 +26,7 @@ id	zhTW	prefix	newName	suffix	color
 2208	解毒藥水		解毒		gray
 2209	活力藥水		(null)
 2210	全效活力藥水		大紫		pink
-2211	融冰藥水		融冰		gray
+2211	融冰藥水		(null)
 2212	護身符	★		★
 2214	戒指	★		★
 2215	金幣		金
@@ -74,5 +74,8 @@ id	zhTW	prefix	newName	suffix	color
 2273	法力藥水		(null)
 2274	強效法力藥水		(null)
 2275	特效法力藥水		超藍		gray
+2277	碎裂骷髏石				dark-red
+2278	瑕疵骷髏石				dark-red
+2279	骷髏石				dark-red
 2280	無瑕骷髏石				red
 2281	完美骷髏石				red

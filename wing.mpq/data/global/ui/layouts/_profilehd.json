@@ -238,8 +238,8 @@
   },
   "FontColorSocketedEtherealColor": {
     "a": 255,
-    "b": 193,
-    "g": 182,
+    "b": 128,
+    "g": 128,
     "r": 255
   },
   "FontColorTransparent": {

@@ -1,8 +1,8 @@
 {
     "FontColorSocketedEtherealColor": {
         "r": 255,
-        "g": 182,
-        "b": 193,
+        "g": 128,
+        "b": 128,
         "a": 255
     },
     "TooltipStyle": {
