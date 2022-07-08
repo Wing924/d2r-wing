@@ -1,6 +1,6 @@
 # CHANGE-LOG
 
-## Unreleased
+## v1.3.0
 
 ### Changes
 

@@ -50,6 +50,11 @@ pipelines:
       {{- index .data.tc .tc }}
       {{- index .data.socket .socket }}
 
+  - name: add uniq-set info
+    resource: resources/generated/uniq-set.tsv
+    template: |-
+      {{ .zhTW -}} ({{ .qlvl }})
+
   - name: add MAX
     resource: resources/item_max.tsv
     lookup_string_files:
