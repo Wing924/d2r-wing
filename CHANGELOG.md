@@ -1,5 +1,11 @@
 # CHANGE-LOG
 
+## Unreleased
+
+### New Features
+
+- 巴尔召唤的假巴尔改名为“巴尔(假)”，便于区分真假巴尔
+
 ## v1.3.0
 
 ### Changes
