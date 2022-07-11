@@ -1,7 +1,7 @@
 data:
   grade:
-    normal: 普
-    exceptional: 擴
+    normal: '|普'
+    exceptional: '|擴'
     elite: 【精】
   weight:
     light: 輕
@@ -40,7 +40,7 @@ pipelines:
   - name: add equip info
     resource: resources/generated/equip.tsv
     template: |-
-      {{ .zhTW -}} |
+      {{ .zhTW -}}
       {{- index .data.grade .grade }}
       {{- index .data.weight .weight }}
       {{- with .speed -}} 〔 {{- . -}} 〕 {{- end }}
