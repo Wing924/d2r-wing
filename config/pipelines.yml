@@ -50,6 +50,11 @@ pipelines:
       {{- index .data.tc .tc }}
       {{- index .data.socket .socket }}
 
+  - name: staff mods
+    resource: resources/generated/staff-mods.tsv
+    template: |-
+      {{ .zhTW -}} *
+
   - name: add MAX
     resource: resources/item_max.tsv
     lookup_string_files:
