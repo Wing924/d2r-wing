@@ -1,6 +1,6 @@
 # CHANGE-LOG
 
-## Unreleased
+## v1.4.0-rc1
 
 ### New Features
 
