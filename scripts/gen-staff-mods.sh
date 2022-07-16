@@ -8,38 +8,37 @@ tmpdir="$(mktemp -d)"
 trap 'rm -rf $tmpdir' EXIT
 
 sql='
-SELECT
-    n.id,
-    n.ZhTW,
-    a.category,
-    a.type,
-    CASE
-        WHEN gemsockets > 0 THEN
-            MIN(gemsockets, invwidth*invheight)
-        ELSE
-            ""
-    END socket
-FROM names n
-    JOIN (
-        SELECT "armo" category, namestr, code, normcode, ubercode, ultracode, type, maxac max, speed, gemsockets, invwidth, invheight, level
-        FROM armor
-        UNION
-        SELECT "weap" category, namestr, code, normcode, ubercode, ultracode, type, "" max, speed, gemsockets, invwidth, invheight, level
-        FROM weapons
-    ) a
-        ON a.namestr = n.Key
+SELECT * FROM (
+    SELECT
+        n.id,
+        n.ZhTW,
+        a.category,
+        a.type,
+        MIN(gemsockets, invwidth*invheight) socket
+    FROM names n
+        JOIN (
+            SELECT "armo" category, namestr, code, normcode, ubercode, ultracode, type, maxac max, speed, gemsockets, invwidth, invheight, level
+            FROM armor
+            UNION
+            SELECT "weap" category, namestr, code, normcode, ubercode, ultracode, type, "" max, speed, gemsockets, invwidth, invheight, level
+            FROM weapons
+        ) a
+            ON a.namestr = n.Key
+    WHERE
+        gemsockets > 0
+    )
 WHERE
-     (a.type = "h2h2" AND gemsockets = 3) -- asn 爪
-  OR (a.type = "scep" AND gemsockets = 5) -- pal 权杖
-  OR (a.type = "wand" AND gemsockets = 2) -- nec 魔杖
-  OR (a.type = "staf" AND gemsockets >= 4) -- sor 法杖
-  OR a.type IN (
+     (type = "h2h2" AND socket = 3) -- asn 爪
+  OR (type = "scep" AND socket = 5) -- pal 权杖
+  OR (type = "wand" AND socket = 2) -- nec 魔杖
+  OR (type = "staf" AND socket >= 4) -- sor 法杖
+  OR type IN (
     "phlm", -- bar 头 (3s)
     "pelt", -- dru 头 (3s)
     "orb", -- sor 法球 (电棒)
     "head" -- nec 头颅 (2s)
   )
-ORDER BY category, type
+ORDER BY category, type, id
 '
 
 scripts/json-to-tsv.sh origin/data/local/lng/strings/item-names.json > "$tmpdir/names.tsv"
