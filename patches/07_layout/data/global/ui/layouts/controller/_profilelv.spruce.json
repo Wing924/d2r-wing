@@ -1,0 +1,12 @@
+{
+  "FontColorSocketedEtherealColor": {
+    "r": 255,
+    "g": 128,
+    "b": 128,
+    "a": 255
+  },
+  "TooltipStyle": {
+    "SocketedColor": "$FontColorSocketedEtherealColor",
+    "EtherealColor": "$FontColorSocketedEtherealColor"
+  }
+}
