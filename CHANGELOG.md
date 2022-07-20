@@ -1,6 +1,6 @@
 # CHANGE-LOG
 
-## v1.4.0-rc
+## v1.4.0
 
 ### New Features
 
