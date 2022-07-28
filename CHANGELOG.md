@@ -1,5 +1,15 @@
 # CHANGE-LOG
 
+## Unreleased
+
+### Improvements
+
+- 巴尔召唤的假巴尔改名为“巴尔（幻象）”
+
+### Bugfixes
+
+- 修复了A5的崔斯特姆（k6最后的3boss）的场景等级显示
+
 ## v1.4.0
 
 ### New Features
