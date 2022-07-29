@@ -10,7 +10,8 @@ import (
 	"os"
 )
 
-var inFile = flag.String("in", "-", "input string JOSN file")
+var format = flag.String("fmt", "json", "input format (json|plain)")
+var inFile = flag.String("in", "-", "input file")
 
 func main() {
 	log.SetFlags(0)
@@ -21,25 +22,35 @@ func main() {
 		os.Exit(1)
 	}
 
-	entries := enc.ReadStringsJSON(*inFile)
-
 	t2s, err := opencc.New("t2s")
 	if err != nil {
 		panic(err)
 	}
 
-	for i, e := range entries {
-		txt, err := t2s.Convert(e.ZhTW)
+	switch *format {
+	case "json":
+		entries := enc.ReadStringsJSON(*inFile)
+
+		for i, e := range entries {
+			txt, err := t2s.Convert(e.ZhTW)
+			if err != nil {
+				panic(err)
+			}
+			e.ZhTW = txt
+			entries[i] = e
+		}
+
+		out, err := json.MarshalIndent(entries, "", "  ")
 		if err != nil {
 			panic(err)
 		}
-		e.ZhTW = txt
-		entries[i] = e
+		fmt.Println(string(out))
+	case "plain":
+		content := enc.ReadFileWithBOM(*inFile)
+		sc, err := t2s.Convert(string(content))
+		if err != nil {
+			panic(err)
+		}
+		fmt.Println(sc)
 	}
-
-	out, err := json.MarshalIndent(entries, "", "  ")
-	if err != nil {
-		panic(err)
-	}
-	fmt.Println(string(out))
 }

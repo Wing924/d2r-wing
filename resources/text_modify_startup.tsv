@@ -1,6 +1,7 @@
 id	Key	zhTW	prefix	newName	suffix
 844	Sewers Level 2	下水道第二層			 A2:[13|43|74] A3:[24|53|85]
 845	Sewers Level 1	下水道第一層			 A2:[13|43|74] A3:[23|52|85]
+5018	Tristram	崔斯特姆			 A1:[6|39|76] A5:[50|75|83]
 1711	HiqualityFormat	%0%1		%1 %0
 1727	Hiquality	特等的		[特等]
 27186	DiabloCloneMessageTierOne	恐懼默默凝視聖休亞瑞。	【1/6】
@@ -9,4 +10,4 @@ id	Key	zhTW	prefix	newName	suffix
 27189	DiabloCloneMessageTierFour	恐懼蔓延整個聖休亞瑞。	【4/6】
 27190	DiabloCloneMessageTierFive	恐懼即將現身聖休亞瑞。	【5/6】
 27191	DiabloCloneSpawnMessage	迪亞布羅入侵聖休亞瑞了！	【6/6】
-21859	巴尔				(假)
+21859	巴尔				(幻象)

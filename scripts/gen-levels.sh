@@ -21,9 +21,9 @@ FROM levels l
     JOIN oldstr o ON o.id = s.id
 WHERE
     `MonLvlEx(H)` != ""
-    AND l.Name != "Act 5 - Pandemonium Finale"
     AND l.`*StringName` != "Sewers Level 1"
     AND l.`*StringName` != "Sewers Level 2"
+    AND l.`*StringName` != "Tristram"
 ORDER BY s.id
 '
 
