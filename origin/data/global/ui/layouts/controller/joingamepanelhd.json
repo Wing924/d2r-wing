@@ -44,12 +44,25 @@
             ]
         },
         {
-            "type": "ButtonWidget", "name": "Refresh",
+            "type": "ThreeStateButtonWidget", "name": "DesecratedCheckbox",
             "fields": {
                 "focusIndicatorFilename": "Controller/HoverImages/Checkbox_Hover",
                 "focusIndicatorOffset": { "x": 0, "y": -3 },
                 "navigation": {
                     "left": { "name": "DifficultyDropdown" },
+                    "right": { "name": "Refresh" },
+                    "down": { "name": "down" },
+                    "up": { "name": "PasswordInput" }
+                }
+            }
+        },
+        {
+            "type": "ButtonWidget", "name": "Refresh",
+            "fields": {
+                "focusIndicatorFilename": "Controller/HoverImages/Checkbox_Hover",
+                "focusIndicatorOffset": { "x": 0, "y": -3 },
+                "navigation": {
+                    "left": { "name": "DesecratedCheckbox" },
                     "right": { "panelBoundary": true },
                     "down": { "name": "down" },
                     "up": { "name": "PasswordInput" }
@@ -84,7 +97,13 @@
                             "type": "TextBoxWidget", "name": "GameName",
                         },
                         {
+                            "type": "ImageWidget", "name": "DesecratedIndicator",
+                        },
+                        {
                             "type": "TextBoxWidget", "name": "PlayerCount",
+                        },
+                        {
+                            "type": "ImageWidget", "name": "PingIndicator",
                         }
                     ]
                 },
@@ -239,7 +258,7 @@
                         "navigation": {
                             "up": { "name": "PasswordInput" },
                             "left": { "name": "SearchInput" },
-                            "right": { "name": "Refresh" },
+                            "right": { "name": "DesecratedCheckbox" },
                             "down": { "name": "down" },
                         }
                     }

@@ -7,6 +7,7 @@
         "showAutomapGameName": true,
         "showAutomapGamePassword": true,
         "showAutomapAreaName": true,
+        "showAutomapDesecratedLevel": true,
         "showAutomapGameVersion": true,
         "showAutomapGameDifficulty": true,
         "showAutomapGameIPAddress": true,

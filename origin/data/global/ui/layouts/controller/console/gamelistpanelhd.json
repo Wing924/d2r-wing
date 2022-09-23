@@ -48,6 +48,19 @@
             },
         },
         {
+            "type": "TextBoxWidget", "name": "DesecratedTitle",
+            "fields": {
+                "rect": { "x": -430, "y": 450, "width": 320, "height": 44 },
+                "text": "@GameListDesecratedColumnTitle",
+                "style": {
+                    "fontColor": "$FontColorLightGray",
+                    "pointSize": "$SmallFontSize",
+                    "dropShadow": "$DefaultDropShadow",
+                    "alignment": { "v": "center" },
+                },
+            },
+        },
+        {
             "type": "TextBoxWidget", "name": "DifficultyTitle",
             "fields": {
                 "rect": { "x": -20, "y": 450, "width": 320, "height": 44 },
@@ -121,6 +134,13 @@
                                     "alignment": { "h": "left", "v": "center" },
                                     "dropShadow": "$DefaultDropShadow",
                                 },
+                            },
+                        },
+                        {
+                            "type": "ImageWidget", "name": "DesecratedIndicator",
+                            "fields": {
+                                "rect": { "x": 926, "y": 0, "width": 60, "height": 60 },
+                                "filename": "Controller/Lobby/GameList/GameList_DesecratedIndicator"
                             },
                         },
                         {
@@ -462,6 +482,50 @@
                         "navigation": {
                             "up": { "name": "NightmareDifficulty" },
                             "left": { "name": "GamesList" },
+                            "down": { "name": "DesecratedZonesFilter" },
+                        }
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "DesecratedZonesTitle",
+                    "fields": { 
+                        "rect": { "x": 80, "y": 340, "width": 372, "height": 60 }, 
+                        "text": "@GameListDesecratedFilterTitle",
+                        "style": {
+                            "fontColor": "$FontColorGold", 
+                            "pointSize": "$MediumFontSize",
+                            "options": { "newlineHandling": "standard" },
+                            "alignment": { "h": "center", "v": "center" },
+                        },
+                    },
+                },
+                {
+                    "type": "CarouselWidget", "name": "DesecratedZonesFilter",
+                    "fields": {
+                        "rect": { "x": 80, "y": 400, "width": 372, "height": 60 },
+                        "focusIndicatorPadding": { "left": 6, "right": 6 },
+                        "focusIndicatorFilename": "Controller/HoverImages/CarouselNarrow_Hover",
+                        "states": [ "GameListDesecratedFilterNone", "GameListDesecratedFilterAll", "GameListDesecratedFilterOnly" ],
+                        "fontType": "8ptE",
+                        "onUpdateMessage": "GamesList:SetDesecratedZonesFilter",
+                        "style": "$StyleSettingsCarousel",
+                        "style": {
+                            "options": { "pipeCharacterBehavior" : "handle" },
+                        },
+                        "enabledColor" : "$CarouselEnabledColor",
+                        "disabledColor" : "$CarouselDisabledColor",
+                        "wrapAround": false,
+                        "tooltipString": "@FindGameTooltipDesecratedCarousel",
+                        "disabledTooltipString": "@TerrorZonesNotAvailable",
+                        "tooltipStyle": {
+                            "fontStyle": {
+                                "options": { "newlineHandling": "standard" },
+                            },
+                            "showAfterDelay": true,
+                        },
+                        "navigation": {
+                            "up": { "name": "HellDifficulty" },
+                            "left": { "name": "GamesList" },
                             "down": { "name": "PingFilter" },
                         }
                     }
@@ -469,7 +533,7 @@
                 {
                     "type": "TextBoxWidget", "name": "MinPingTitle",
                     "fields": { 
-                        "rect": { "x": 80, "y": 340, "width": 372, "height": 60 }, 
+                        "rect": { "x": 80, "y": 488, "width": 372, "height": 60 }, 
                         "text": "@FilterPingTitle",
                         "style": {
                             "fontColor": "$FontColorGold", 
@@ -482,7 +546,7 @@
                 {
                     "type": "CarouselWidget", "name": "PingFilter",
                     "fields": {
-                        "rect": { "x": 80, "y": 400, "width": 372, "height": 60 },
+                        "rect": { "x": 80, "y": 548, "width": 372, "height": 60 },
                         "focusIndicatorPadding": { "left": 6, "right": 6 },
                         "focusIndicatorFilename": "Controller/HoverImages/CarouselNarrow_Hover",
                         "states": [ "ExcellentPing", "GoodPlusPing", "FairPlusPing", "AnyPing" ],
@@ -503,7 +567,7 @@
                             "showAfterDelay": true,
                         },
                         "navigation": {
-                            "up": { "name": "HellDifficulty" },
+                            "up": { "name": "DesecratedZonesFilter" },
                             "left": { "name": "GamesList" },
                             "down": { "name": "ResetFiltersButton" }
                         }
@@ -512,12 +576,12 @@
                 {
                     "type": "TextBoxWidget", "name": "GameNameFilterTitle",
                     "fields": { 
-                        "rect": { "x": 80, "y": 740, "width": 372, "height": 60 }, 
+                        "rect": { "x": 10, "y": 828, "width": 520, "height": 60 }, 
                         "text": "@GameNameFilter",
                         "style": {
                             "fontColor": "$FontColorGold", 
                             "pointSize": "$MediumFontSize",
-                            "options": { "newlineHandling": "standard" },
+                            "options": { "newlineHandling": "standard", "lineWrap": true },
                             "alignment": { "h": "center", "v": "center" },
                         },
                     },
@@ -525,7 +589,7 @@
                 {
                     "type": "TextBoxWidget", "name": "GameNameFilterText",
                     "fields": {
-                        "rect": { "x": 2, "y": 810, "width": 540, "height": 100 },
+                        "rect": { "x": 2, "y": 888, "width": 540, "height": 100 },
                         "style": {
                             "fontColor": "$LightButtonTextColor", 
                             "pointSize": "$SmallFontSize",
@@ -539,7 +603,7 @@
                 {
                     "type": "ButtonWidget", "name": "ResetFiltersButton",
                     "fields": {
-                        "rect": { "x": 0, "y": 550, "scale": 0.95 },
+                        "rect": { "x": 0, "y": 698, "scale": 0.95 },
                         "filename": "Controller\\Lobby\\Play\\ConsoleMatchmaking_DifficultyButton",
                         "onClickMessage": "GamesList:ResetFilters",
                         "focusIndicatorFilename": "Controller/HoverImages/MatchmakingDifficulty_Hover",

@@ -218,24 +218,6 @@
       },
       {
         "path": "data/hd/character/player/amazon/textures/amazon_head_orm.texture"
-      },
-      {
-        "path": "data/hd/character/player/amazon/textures/Amazon_Light_Pants_mat_alb.texture"
-      },
-      {
-        "path": "data/hd/character/player/amazon/textures/Amazon_Light_Pants_mat_nrm.texture"
-      },
-      {
-        "path": "data/hd/character/player/amazon/textures/Amazon_Light_Pants_mat_orm.texture"
-      },
-      {
-        "path": "data/hd/character/player/amazon/textures/amazon_pants_med_alb.texture"
-      },
-      {
-        "path": "data/hd/character/player/amazon/textures/amazon_pants_med_nrm.texture"
-      },
-      {
-        "path": "data/hd/character/player/amazon/textures/amazon_pants_med_orm.texture"
       }
     ],
     "variantdata": []

@@ -8,6 +8,7 @@
         "actToggleStrings": [ "CustomButton", "Act1Button", "Act2Button", "Act3Button", "Act4Button", "Act5Button", "BossesButton", "ZonesButton", "OtherButton" ],
         "selectedActFontColor": "$FontColorWhite",
         "unselectedActFontColor": "$FontColorGold",
+        "disabledActFontColor": "$FontColorGray",
         "questButtonFocusIndicatorFilename": "Controller/HoverImages/Quest_Hover",
         "questButtonFocusIndicatorOffset": { "x": 0, "y": -30 },
         "option1Legend": "@LobbyCreateGame",
@@ -23,9 +24,16 @@
             },
         },
         {
+            "type": "ImageWidget", "name": "MagnifyingGlass",
+            "fields": {
+                "rect": { "x": -1312, "y": 334 },
+                "filename": "Controller\\Lobby\\Play\\Create_icon"
+            },
+        },
+        {
             "type": "TextBoxWidget", "name": "GameCreatorTitle",
             "fields": { 
-                "rect": { "x": -1300, "y": 332, "width": 670, "height": 75 }, 
+                "rect": { "x": -1240, "y": 332, "width": 670, "height": 75 }, 
                 "text": "@GameCreatorAction",
                 "style": {
                     "fontColor": "$FontColorGold", 
@@ -1314,8 +1322,48 @@
                 "navigation": {
                     "left": { "name": "CustomButton" },
                     "up": { "name": "CharacterDifferenceToggle" },
+                    "down": { "name": "DesecratedZonesToggle" }
                 },
             }
+        },
+        {
+            "type": "TextBoxWidget", "name": "DesecratedZonesTitle",
+            "fields":
+            {
+                "rect": { "x": 710, "y": 1270, "width": 500, "height": 44 },
+                "fontType": "16pt",
+                "text": "@CreateGameSettingTerrorZonesEnabled",
+                "style": {
+                    "fontColor": "$FontColorGoldYellow",
+                    "pointSize": "$MediumFontSize",
+                    "dropShadow": "$DefaultDropShadow",
+                    "alignment": { "v": "center" },
+                },
+            },
+        },
+        {
+            "type": "ToggleButtonWidget", "name": "DesecratedZonesToggle",
+            "fields": {
+                "rect": { "x": 1160, "y": 1262 },
+                "filename": "Lobby\\CreateGame\\CreateGame_AdvancedCheckbox",
+                "focusIndicatorPadding": "$OptionsToggleFocusIndicatorPadding",
+                "focusIndicatorFilename": "$OptionsToggleFocusIndicatorFilename",
+                "focusIndicatorOffset": { "x": 0, "y": -3 },
+                "untoggledFrame": 0,
+                "untoggledPressedFrame": 1,
+                "untoggledHoveredFrame": 3,
+                "untoggledDisabledFrame": 2,
+                "toggledFrame": 4,
+                "toggledPressedFrame": 5,
+                "toggledHoveredFrame": 6,
+                "tooltipString": "@TerrorZonesEnabledTooltip",
+                "disabledTooltipString": "@TerrorZonesNotAvailable",
+                "acceptsReturnKey": true,
+                "navigation": {
+                    "up": { "name": "MaxLevelDifferenceInput" },
+                    "left": { "name": "CustomButton" },
+                },
+            },
         },
         // Title/Description Text Boxes - Center/Bottom Section
         {

@@ -29,6 +29,11 @@
             "children": [
                 {
                     "type": "ButtonWidget", "name": "UnselectableButtonTemplate",
+                    "children": [
+                        {
+                            "type": "ImageWidget", "name": "TerrorZone",
+                        },
+                    ]
                 },
                 {
                     "type": "ImageWidget", "name": "SelectableButton",

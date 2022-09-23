@@ -10,7 +10,7 @@ Brute			Attack Enemy / Circle Walk (% Chance) 	"Attack1 (% Chance), else Attack2
 SandRaider	Regroup Life % threshold	Circle Walk (% Chance)	Attack Enemy (% Chance)	Approach Enemy (% Chance)	Charge time (Frames)	"Charge overlay (1 = blue, else red)"	"Attack1 (% Chance), else Attack2"		0
 Wraith	Approach Enemy (% Chance)	AI Delay (Frames)	Attack Enemy (% Chance)						0
 CorruptRogue	Approach Enemy (% Chance)	AI Delay (Frames)	Attack Enemy (% Chance)	Run Velocity	Run During Approach (% Chance)				0
-Baboon	Hurt State (Life % threshold)	Circle Walk (% Chance)	Attack Enemy (% Chance)	"Attack1 (% Chance), else Attack2"	"""hpregen"" bonus when hurt"				0
+Baboon	Hurt State (Life % threshold)	Circle Walk (% Chance)	Attack Enemy (% Chance)	"Attack1 (% Chance), else Attack2"	hpregen bonus when hurt				0
 Goatman	Approach Enemy (% Chance)	AI Delay (Frames)	Attack Enemy (% Chance)						0
 FallenShaman	Issue Attack Command / Resurrect (Skill1) (% Chance)	Fireball (Skill2) (% Chance)	Attack Enemy / Circle Walk (% Chance) 	Ally Corpse Search Range	Fireball (Skill2) Search Range				0
 QuillRat	Activate Range	Attack2 (% Chance)		Walk Away Range					0
@@ -60,7 +60,7 @@ TentacleHead	Attack1 (% Chance)	Submerge (% Chance)	Submerge AI Delay (Frames)	E
 Navi									0
 BloodRaven									0
 GoodNpcRanged									0
-Hireable									0
+Hireable	"Range type (1=ranged, 2=melee, 3=hybrid)"	Skill to use as a basic attack	Monster Mode to use for non-skill basic attack	If hireable bonus damage should be applied to missiles					0
 TownRogue									0
 GargoyleTrap	Skill1 Range	Skill1 (% Chance)	Skill1 AI Delay (Frames)	AI Delay (Frames)					0
 SkeletonMage	Attack1 (% Chance)	Approach Enemy (Range)	Approach Enemy (% Chance)	Walk Away Range	Walk Away (% Chance)	Attack1 (% Chance)	Circle Walk (% Chance)	AI Delay (Frames)	0

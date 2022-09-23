@@ -11384,3 +11384,7 @@ worldstonechip_hd3	11381		sfx/ambient/event-3d_hd	ambient\event\worldstonechip_h
 cicada_loop_hd1	11382		sfx/ambient/event-3d_hd	ambient\event\cicada_loop_1_hd.flac	0	0	0	1	0	127	179	95	105	3	0	0	50	50	0	0	0	0	3	0	90	20	0	0	0	0	0	-1	-1	-1	0	0	
 cicada_loop_hd2	11383		sfx/ambient/event-3d_hd	ambient\event\cicada_loop_2_hd.flac	0	0	0	1	0	127	179	95	105	0	0	0	50	50	0	0	0	0	3	0	90	20	0	0	0	0	0	-1	-1	-1	0	0	
 cicada_loop_hd3	11384		sfx/ambient/event-3d_hd	ambient\event\cicada_loop_3_hd.flac	0	0	0	1	0	127	179	95	105	0	0	0	50	50	0	0	0	0	3	0	90	20	0	0	0	0	0	-1	-1	-1	0	0	
+desecrated_enter	11385	desecrated_enter_hd	sfx/ambient/event-3d_sd	quest\desecrated_enter.flac	0	0	0	0	0	255	255	100	100	0	0	0	0	0	1	0	0	0	4	15	0	255	1	0	0	1	0	-1	-1	-1	0	0	
+desecrated_enter_hd	11386		sfx/ambient/event-3d_hd	quest\desecrated_enter_hd.flac	0	0	0	0	0	255	255	100	100	0	0	0	0	0	1	0	0	0	4	25	60	255	1	0	0	1	0	-1	-1	-1	0	0	
+music_desecrated	11387	music_desecrated_hd	music_sd	common\options.flac	0	1	0	0	0	127	127	100	100	0	0	1	125	125	1	0	0	0	0	25	0	255	1	1	0	0	1	-1	-1	-1	0	0	
+music_desecrated_hd	11388		music_hd	common\options_hd.flac	0	1	0	0	0	127	127	100	100	0	0	1	125	125	1	0	0	0	0	100	0	255	1	1	0	0	1	-1	-1	-1	0	0	

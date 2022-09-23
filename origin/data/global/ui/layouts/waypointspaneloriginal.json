@@ -6,7 +6,9 @@
         "buttonOffset": 36,
         "selectableFontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
         "selectableFrames": [3,4],
+        "defaultFontColor": { "r": 105, "g": 105, "b": 105, "a": 255 },
         "currentFontColor": { "r": 105, "g": 105, "b": 255, "a": 255 },
+        "terrorZoneFontColor": { "r": 135, "g": 82, "b": 161, "a": 255 }
     },
     "children": [
         {

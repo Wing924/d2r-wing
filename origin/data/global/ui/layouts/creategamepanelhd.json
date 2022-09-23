@@ -188,7 +188,7 @@
                 {
                     "type": "TextBoxWidget", "name": "MaxPlayers",
                     "fields": {
-                        "rect": { "x": 200, "y": 633 },
+                        "rect": { "x": 200, "y": 623 },
                         "fontType": "16pt",
                         "text": "@OptionsMenuMaxPlayers",
                         "style": {
@@ -201,14 +201,14 @@
                 {
                     "type": "ImageWidget", "name": "MaxPlayerCounter",
                     "fields": {
-                        "rect": { "x": 810, "y": 620 },
+                        "rect": { "x": 810, "y": 610 },
                         "filename": "$SettingsNumericBackgroundImage",
                     },
                 },
                 {
                     "type": "NumericInputTextBoxWidget", "name": "MaxPlayersInput",
                     "fields": {
-                        "rect": { "x": 837, "y": 623, "width": 60, "height": 56 },
+                        "rect": { "x": 837, "y": 613, "width": 60, "height": 56 },
                         "backgroundColor": "$FontColorTransparent",
                         "minValue": 1,
                         "maxValue": 8,
@@ -230,7 +230,7 @@
                 {
               	    "type": "ImageWidget", "name": "MaxLevelCounter",
                     "fields": {
-                        "rect": { "x": 810, "y": 719 },
+                        "rect": { "x": 810, "y": 699 },
                         "filename": "$SettingsNumericBackgroundImage"
                     },
                 },
@@ -238,7 +238,7 @@
                     "type": "TextBoxWidget", "name": "MaxLevelDifference",
                     "fields":
                     {
-                        "rect": { "x": 300, "y": 730, "width": 500, "height": 44 },
+                        "rect": { "x": 300, "y": 710, "width": 500, "height": 44 },
                         "fontType": "16pt",
                         "text": "@LobbyCreateGamePanelCharacterLevelDifference",
                         "style": {
@@ -252,7 +252,7 @@
                 {
                     "type": "ToggleButtonWidget", "name": "CharacterDifferenceToggle",
                     "fields": {
-                        "rect": { "x": 200, "y": 719 },
+                        "rect": { "x": 200, "y": 699 },
                         "filename": "Lobby\\CreateGame\\CreateGame_AdvancedCheckbox",
                         "untoggledFrame": 0,
                         "untoggledPressedFrame": 1,
@@ -269,7 +269,7 @@
                 {
                     "type": "NumericInputTextBoxWidget", "name": "MaxLevelDifferenceInput",
                     "fields": {
-                        "rect": { "x": 828, "y": 722, "width": 60, "height": 56 },
+                        "rect": { "x": 828, "y": 702, "width": 60, "height": 56 },
                         "backgroundColor": "$FontColorTransparent",
                         "disabledFontColor": "$FontColorGrey",
                         "minValue": 0,
@@ -294,7 +294,7 @@
         {
             "type": "ToggleButtonWidget", "name": "AllowBnetFriendsJoinCheckbox",
             "fields": {
-                "rect": { "x": 200, "y": 819 },
+                "rect": { "x": 200, "y": 789 },
                 "filename": "Lobby\\CreateGame\\CreateGame_AdvancedCheckbox",
                 "untoggledFrame": 0,
                 "untoggledPressedFrame": 1,
@@ -328,7 +328,7 @@
         {
             "type": "ToggleButtonWidget", "name": "ItemSpacingCheckbox",
             "fields": {
-                "rect": { "x": 200, "y": 919 },
+                "rect": { "x": 200, "y": 879 },
                 "filename": "Lobby\\CreateGame\\CreateGame_AdvancedCheckbox",
                 "untoggledFrame": 0,
                 "untoggledPressedFrame": 1,
@@ -360,9 +360,43 @@
             ]
         },
         {
+            "type": "ToggleButtonWidget", "name": "DesecratedZonesCheckbox",
+            "fields": {
+                "rect": { "x": 200, "y": 969 },
+                "filename": "Lobby\\CreateGame\\CreateGame_AdvancedCheckbox",
+                "untoggledFrame": 0,
+                "untoggledPressedFrame": 1,
+                "untoggledHoveredFrame": 3,
+                "untoggledDisabledFrame": 2,
+                "toggledFrame": 4,
+                "toggledPressedFrame": 5,
+                "toggledHoveredFrame": 6,
+                "tooltipString": "@TerrorZonesEnabledTooltip",
+                "disabledTooltipString": "@TerrorZonesNotAvailable",
+                "acceptsReturnKey": true,
+                "onClickMessage": "CreateGame:CacheDesecratedZonesEnabled"
+            },
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "ToggleDescriptionText",
+                    "fields": {
+                        "rect": { "x": 100, "y": 15, "width": 500, "height": 44 },
+                        "fontType": "16pt",
+                        "text": "@CreateGameSettingTerrorZonesEnabled",
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "pointSize": "$MediumFontSize",
+                            "dropShadow": "$DefaultDropShadow",
+                            "alignment": { "v": "center" },
+                        },
+                    },
+                }
+            ]
+        },
+        {
             "type": "ButtonWidget", "name": "CreateGameButton",
             "fields": {
-                "rect": { "x": 332, "y": 1028 },
+                "rect": { "x": 332, "y": 1068 },
                 "filename": "FrontEnd\\HD\\Final\\FrontEnd_ButtonMed",
                 "textString": "@LobbyCreateGame",
                 "onClickMessage": "CreateGame:CreateGame",
