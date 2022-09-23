@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+### New Features
+
+- 添加全局光源，再也不怕地洞太黑看不见了
+
 ### Improvements
 
 - 巴尔召唤的假巴尔改名为“巴尔（幻象）”
