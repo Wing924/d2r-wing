@@ -5030,5 +5030,22 @@
     "ptBR": "Abrir Cubo",
     "ruRU": "Открыть куб",
     "zhCN": "打开魔盒"
-  }
+  },
+  {
+    "id": 27336,
+    "Key": "DesecratedIcon",
+    "enUS": "\uE037",
+    "zhTW": "\uE037",
+    "deDE": "\uE037",
+    "esES": "\uE037",
+    "frFR": "\uE037",
+    "itIT": "\uE037",
+    "koKR": "\uE037",
+    "plPL": "\uE037",
+    "esMX": "\uE037",
+    "jaJP": "\uE037",
+    "ptBR": "\uE037",
+    "ruRU": "\uE037",
+    "zhCN": "\uE037"
+  },
 ]

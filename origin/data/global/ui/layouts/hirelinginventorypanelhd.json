@@ -3,11 +3,35 @@
     "fields": {
         "rect": "$LeftPanelRect",
         "anchor": "$LeftPanelAnchor",
-        "bowBackgroundFilename": "PANEL\\Hireling\\HireablePanel\\Hireables_Paperdoll_Bow",
-        "spearBackgroundFilename": "PANEL\\Hireling\\HireablePanel\\Hireables_Paperdoll_Spear",
-        "longswordBackgroundFilename": "PANEL\\Hireling\\HireablePanel\\Hireables_Paperdoll_LongSword",
-        "shieldBackgroundFilename": "PANEL\\Hireling\\HireablePanel\\Hireables_Paperdoll_Shield",
-        "twoHandSwordBackgroundFilename": "PANEL\\Hireling\\HireablePanel\\Hireables_Paperdoll_2HSword",
+        "slotBackgroundFilename": "PANEL\\Hireling\\HireablePanel\\Hireables_Paperdoll",
+        // limited to 20 overrides
+        "slotBackgroundOverrides": [
+            {
+                "monsterClass": 271,
+                "rightBackgroundFrame": 0,
+                "leftBackgroundFrame": 0,
+            },
+            {
+                "monsterClass": 338,
+                "rightBackgroundFrame": 1,
+                "leftBackgroundFrame": 1,
+            },
+            {
+                "monsterClass": 359,
+                "rightBackgroundFrame": 2,
+                "leftBackgroundFrame": 3,
+            },
+            {
+                "monsterClass": 560,
+                "rightBackgroundFrame": 4,
+                "leftBackgroundFrame": 4,
+            },
+            {
+                "monsterClass": 561,
+                "rightBackgroundFrame": 2,
+                "leftBackgroundFrame": 2,
+            },
+        ]
     },
     "children": [
         {

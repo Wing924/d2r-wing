@@ -306,6 +306,44 @@
                             ]
                         },
                         {
+                            "type": "TableRowWidget", "name": "Row DesecratedZonesEnabled",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "DesecratedZonesEnabledText",
+                                    "fields": {
+                                        "text": "@TerrorZonesEnabled",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                },
+                                {
+                                    "type": "ToggleButtonWidget", "name": "DesecratedZonesEnabled",
+                                    "fields": {
+                                        "rect": "$OptionsToggleRect",
+                                        "sound": "cursor_menu_select_hd",
+                                        "focusIndicatorPadding": "$OptionsToggleFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsToggleFocusIndicatorFilename",
+                                        "filename": "Lobby\\CreateGame\\CreateGame_AdvancedCheckbox",
+                                        "focusIndicatorOffset": { "x": 0, "y": -4 },
+                                        "untoggledFrame": 0,
+                                        "untoggledPressedFrame": 1,
+                                        "untoggledHoveredFrame": 3,
+                                        "untoggledDisabledFrame": 2,
+                                        "toggledFrame": 4,
+                                        "toggledPressedFrame": 5,
+                                        "toggledHoveredFrame": 6,
+                                        "onClickMessage": "OptionsPanelMessage:SetDesecratedZonesEnabled",
+                                        "tooltipString": "@TerrorZonesEnabledTooltip",
+                                        "tooltipStyle": {
+                                            "fontStyle": {
+                                                "options": { "newlineHandling": "standard" },
+                                            },
+                                            "showAfterDelay": true,
+                                        }
+                                    },
+                                },
+                            ]
+                        },
+                        {
                             "type": "TableRowWidget", "name": "Row OnlineSettingsEffectNote",
                             "children": [
                                 {

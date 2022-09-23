@@ -3,11 +3,9 @@
     "fields": {
         "rect": {"x": -320, "y": -240, "width": 320, "height": 432 },
         "anchor": "$LeftPanelAnchor",
-        "bowBackgroundFilename": "PANEL\\inv_weapons",
-        "spearBackgroundFilename": "PANEL\\inv_weapons",
-        "longswordBackgroundFilename": "PANEL\\inv_weapons",
-        "shieldBackgroundFilename": "PANEL\\inv_weapons",
-        "twoHandSwordBackgroundFilename": "PANEL\\inv_weapons",
+        "slotBackgroundFilename": "PANEL\\inv_weapons",
+        // limited to 20 overrides
+        "slotBackgroundOverrides": [ ]
     },
     "children": [
         {

@@ -4,6 +4,7 @@
         "priority": -100,
         "anchor": { "x": 0.5, "y": 0.25 },
         "displaySeconds": 2.5,
+        "desecratedDisplaySeconds": 4.0,
         "denOfEvilQuestHack": "@EnteringTheDenOfEvilInQuest"
     },
     "children": [
@@ -13,6 +14,18 @@
                 "style": {
                     "pointSize": 54,
                     "fontColor": { "r": 200, "g": 20, "b": 0 },
+                    "alignment": { "h": "center", "v": "bottom" },
+                    "dropShadow":  "$DefaultDropShadow"
+                }
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "DesecratedText",
+            "fields": {
+                "rect": { "y": 100 },
+                "style": {
+                    "pointSize": 54,
+                    "fontColor": { "r": 128, "g": 0, "b": 128 },
                     "alignment": { "h": "center", "v": "bottom" },
                     "dropShadow":  "$DefaultDropShadow"
                 }

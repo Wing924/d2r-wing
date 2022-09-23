@@ -185,6 +185,24 @@
                 "focusIndicatorOffset": { "x": 0, "y": -3 },
                 "navigation": {
                     "up": { "name": "AllowBnetFriendsJoinCheckbox" },
+                    "down": { "name": "DesecratedZonesCheckbox" },
+                    "left": { "panelBoundary": true },
+                },
+            },
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "ToggleDescriptionText",
+                }
+            ]
+        },
+        {
+            "type": "ToggleButtonWidget", "name": "DesecratedZonesCheckbox",
+            "fields": {
+                "focusIndicatorPadding": "$OptionsToggleFocusIndicatorPadding",
+                "focusIndicatorFilename": "$OptionsToggleFocusIndicatorFilename",
+                "focusIndicatorOffset": { "x": 0, "y": -3 },
+                "navigation": {
+                    "up": { "name": "ItemSpacingCheckbox" },
                     "down": { "name": "CreateGameButton" },
                     "left": { "panelBoundary": true },
                 },

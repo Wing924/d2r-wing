@@ -1888,5 +1888,35 @@
   "normal": "torch/torch",
   "uber": "torch/torch",
   "ultra": "torch/torch"
+} },
+  { "cold_rupture": {
+  "normal": "charm/charm_large",
+  "uber": "charm/charm_large",
+  "ultra": "charm/charm_large"
+} },
+  { "flame_rift": {
+  "normal": "charm/charm_large",
+  "uber": "charm/charm_large",
+  "ultra": "charm/charm_large"
+} },
+  { "crack_of_the_heavens": {
+  "normal": "charm/charm_large",
+  "uber": "charm/charm_large",
+  "ultra": "charm/charm_large"
+} },
+  { "rotting_fissure": {
+  "normal": "charm/charm_large",
+  "uber": "charm/charm_large",
+  "ultra": "charm/charm_large"
+} },
+  { "bone_break": {
+  "normal": "charm/charm_large",
+  "uber": "charm/charm_large",
+  "ultra": "charm/charm_large"
+} },
+  { "black_cleft": {
+  "normal": "charm/charm_large",
+  "uber": "charm/charm_large",
+  "ultra": "charm/charm_large"
 } }
 ]
