@@ -1,6 +1,6 @@
 # CHANGE-LOG
 
-## Unreleased
+## v1.5.0 (d2r 2.5.0)
 
 ### Updates
 
