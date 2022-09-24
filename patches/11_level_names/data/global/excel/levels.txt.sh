@@ -6,7 +6,7 @@ function replace_field(idx, str,  i) {
         printf("%s\t", $i);
     }
     printf(str);
-    for (i = idx+1; i < NF; i++) {
+    for (i = idx+1; i <= NF; i++) {
         printf("\t%s", $i);
     }
     printf("\n");
