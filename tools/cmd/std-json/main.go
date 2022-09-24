@@ -2,18 +2,13 @@ package main
 
 import (
 	"fmt"
-	"io"
-	"os"
-
+	"github.com/Wing924/d2r-wing/tools/lib/enc"
 	"github.com/tailscale/hujson"
 )
 
 func main() {
-	content, err := io.ReadAll(os.Stdin)
-	if err != nil {
-		panic(err)
-	}
-	content, err = hujson.Standardize(content)
+	content := enc.ReadFileWithBOM("-")
+	content, err := hujson.Standardize(content)
 	if err != nil {
 		panic(err)
 	}

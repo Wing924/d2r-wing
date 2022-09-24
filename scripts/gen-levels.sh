@@ -11,27 +11,23 @@ sql='
 SELECT DISTINCT
     s.id,
     s.Key,
-    o.zhTW old_zhTW,
+    l.Name,
     s.zhTW,
     MonLvlEx normal,
     `MonLvlEx(N)` nightmare,
     `MonLvlEx(H)` hell
 FROM levels l
-    JOIN str s ON l.`*StringName` = s.Key OR l.`*StringName` = s.enUS
-    JOIN oldstr o ON o.id = s.id
+    LEFT JOIN str s ON l.LevelName = s.Key
 WHERE
     `MonLvlEx(H)` != ""
-    AND l.`*StringName` != "Sewers Level 1"
-    AND l.`*StringName` != "Sewers Level 2"
-    AND l.`*StringName` != "Tristram"
 ORDER BY s.id
 '
 
-scripts/json-to-tsv.sh origin/data/local/lng/strings/levels.json > "$tmpdir/str.tsv"
-scripts/json-to-tsv.sh origin/data/local/lng/strings-legacy/levels.json > "$tmpdir/oldstr.tsv"
+patches/11_level_names/data/global/excel/levels.txt.sh < origin/data/global/excel/levels.txt > "$tmpdir/levels.txt"
+build/bin/jsonpatch origin/data/local/lng/strings/levels.json patches/11_level_names/data/local/lng/strings/levels.jsonpatch.json > "$tmpdir/levels.json"
+scripts/json-to-tsv.sh "$tmpdir/levels.json" > "$tmpdir/str.tsv"
 
 textql -header -dlm=tab -output-dlm=tab -output-header \
     -sql "$sql" \
-    origin/data/global/excel/levels.txt \
-    "$tmpdir/str.tsv" \
-    "$tmpdir/oldstr.tsv"
+    "$tmpdir/levels.txt" \
+    "$tmpdir/str.tsv"

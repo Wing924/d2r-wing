@@ -36,6 +36,7 @@ patches:
   - patches/07_layout
   - patches/09_better_arrow
   - patches/10_global_light
+  - patches/11_level_names
 
 pipelines:
   - name: add equip info
