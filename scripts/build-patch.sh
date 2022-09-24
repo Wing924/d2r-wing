@@ -36,6 +36,7 @@ apply_exec() {
   dst="$3"
   dst_new="$dst.new"
 
+  ls -l "$patch"
   "$patch" < "$origin" > "$dst_new"
   mv "$dst_new" "$dst"
 }
@@ -100,7 +101,6 @@ while IFS= read -r -d '' patch_file; do
     apply_spruce "$origin_file" "$patch_file" "$dst_file"
     ;;
   *.jsonpatch.json)
-    ls -l $patch_file
     apply_jsonpatch "$origin_file" "$patch_file" "$dst_file"
     ;;
   *)
