@@ -36,7 +36,7 @@ apply_exec() {
   dst="$3"
   dst_new="$dst.new"
 
-  ls -l "$patch"
+  chmod u+x "$patch"
   "$patch" < "$origin" > "$dst_new"
   mv "$dst_new" "$dst"
 }
