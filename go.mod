@@ -4,6 +4,7 @@ go 1.18
 
 require (
 	github.com/Masterminds/sprig/v3 v3.2.2
+	github.com/evanphx/json-patch/v5 v5.6.0
 	github.com/liuzl/da v0.0.0-20180704015230-14771aad5b1d
 	github.com/mattn/go-sqlite3 v1.14.13
 	github.com/stretchr/testify v1.7.1
@@ -24,6 +25,7 @@ require (
 	github.com/liuzl/cedar-go v0.0.0-20170805034717-80a9c64b256d // indirect
 	github.com/mitchellh/copystructure v1.0.0 // indirect
 	github.com/mitchellh/reflectwalk v1.0.0 // indirect
+	github.com/pkg/errors v0.9.1 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/shopspring/decimal v1.2.0 // indirect
 	github.com/spf13/cast v1.3.1 // indirect

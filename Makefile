@@ -58,14 +58,14 @@ $(TOOLDIR)/%:
 # build Traditional Chinese strings
 $(TCDIR)/data/local/lng/strings/%.json: $(ORIGINDIR)/data/local/lng/strings/%.json
 	mkdir -p $(@D)
-	$(TOOLDIR)/gen-strings -config $(CONFIG_FILE) < $< > $@
+	$(TOOLDIR)/gen-strings -config $(CONFIG_FILE) < <(scripts/read-origin.sh $<) > $@
 
 # convert Traditional Chinese to Simplified Chinese
 $(SCDIR)/data/local/lng/strings/%.json: $(TCDIR)/data/local/lng/strings/%.json
 	mkdir -p $(@D)
 	$(TOOLDIR)/t2s -in $< > $@
 
-patches: $(TOOLDIR)/std-json $(CONFIG_FILE)
+patches: $(TOOLDIR)/std-json $(TOOLDIR)/jsonpatch $(CONFIG_FILE)
 	scripts/build-patch-all.sh $(CONFIG_FILE) $(ORIGINDIR) $(COMMONDIR)
 
 $(CONFIG_FILE): config/pipelines.yml config/pipelines_$(MODE).yml
@@ -83,7 +83,7 @@ publish:
 
 # generate resources
 
-gen: clean-gen gen-zhTW-diff $(GENERATED_RES_FILES)
+gen: clean-gen $(TOOLDIR)/jsonpatch gen-zhTW-diff $(GENERATED_RES_FILES)
 
 gen-zhTW-diff: $(ZHTW_DIFF_FILES)
 

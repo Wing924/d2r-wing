@@ -3,6 +3,7 @@
 set -eu
 
 std_json=build/bin/std-json
+jsonpatch=build/bin/jsonpatch
 
 cd "$(git rev-parse --show-toplevel)"
 
@@ -52,6 +53,19 @@ apply_spruce() {
   mv "$dst_new" "$dst"
 }
 
+apply_jsonpatch() {
+  local origin patch dst
+  origin="$1"
+  patch="$2"
+  dst="$3"
+  dst_new="$dst.new"
+
+  std_origin="$tmpdir/origin.json"
+  $std_json < "$origin" > "$std_origin"
+  $jsonpatch "$std_origin" "$patch" | jq > "$dst_new"
+  mv "$dst_new" "$dst"
+}
+
 apply_copy() {
   local src dst
   src="$1"
@@ -67,6 +81,8 @@ while IFS= read -r -d '' patch_file; do
   filepath="${filepath%.sh}"
   if [[ "$filepath" == *.spruce.json ]]; then
     filepath="${filepath%.spruce.json}.json"
+  elif [[ "$filepath" == *.jsonpatch.json ]]; then
+    filepath="${filepath%.jsonpatch.json}.json"
   fi
   origin_file="$origin_dir/$filepath"
   dst_file="$out_dir/$filepath"
@@ -82,6 +98,9 @@ while IFS= read -r -d '' patch_file; do
     ;;
   *.spruce.json)
     apply_spruce "$origin_file" "$patch_file" "$dst_file"
+    ;;
+  *.jsonpatch.json)
+    apply_jsonpatch "$origin_file" "$patch_file" "$dst_file"
     ;;
   *)
     apply_copy "$patch_file" "$dst_file"
