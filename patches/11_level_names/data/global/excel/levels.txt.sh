@@ -11,6 +11,7 @@ function replace_field(idx, str,  i) {
     }
     printf("\n");
 }
+
 {
     switch ($1) {
     case "Act 2 - Sewer 1 A":
