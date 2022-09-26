@@ -24,7 +24,7 @@ ORDER BY s.id
 '
 
 patches/11_level_names/data/global/excel/levels.txt.sh < origin/data/global/excel/levels.txt > "$tmpdir/levels.txt"
-build/bin/jsonpatch origin/data/local/lng/strings/levels.json patches/11_level_names/data/local/lng/strings/levels.jsonpatch.json > "$tmpdir/levels.json"
+patches/11_level_names/data/local/lng/strings/levels.json.sh < origin/data/local/lng/strings/levels.json  > "$tmpdir/levels.json"
 scripts/json-to-tsv.sh "$tmpdir/levels.json" > "$tmpdir/str.tsv"
 
 textql -header -dlm=tab -output-dlm=tab -output-header \

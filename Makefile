@@ -17,7 +17,7 @@ CONFIG_FILE					= $(BUILDDIR)/config-$(MODE).yml
 
 LEGACY_STRINGS_FILES		= bnet.json item-gems.json item-modifiers.json item-nameaffixes.json item-names.json item-runes.json keybinds.json levels.json mercenaries.json monsters.json npcs.json objects.json quests.json shrines.json skills.json ui.json vo.json
 STRINGS_FILES				= commands.json presence-states.json ui-controller.json $(LEGACY_STRINGS_FILES)
-GENERATED_RES				= equip levels runes uniq-set staff-mods
+GENERATED_RES				= equip levels runes uniq-set staff-mods levelgroup-res
 PATCHES						= $(wildcard $(PATCHDIR)/*)
 
 # origin/data/local/lng/strings/XXX.json
@@ -83,7 +83,7 @@ publish:
 
 # generate resources
 
-gen: clean-gen $(TOOLDIR)/jsonpatch gen-zhTW-diff $(GENERATED_RES_FILES)
+gen: clean-gen gen-zhTW-diff $(GENERATED_RES_FILES)
 
 gen-zhTW-diff: $(ZHTW_DIFF_FILES)
 

@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+### New Features
+
+- 恐怖地带（TZ）的说明添加了怪物的免疫信息
+
 ### Improvements
 
 - 分开了崔斯特姆和下水道的等级显示

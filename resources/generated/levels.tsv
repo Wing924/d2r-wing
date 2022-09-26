@@ -122,9 +122,9 @@ id	Key	Name	zhTW	normal	nightmare	hell
 22665	The Worldstone Keep Level 3	Act 5 - Baal Temple 3	世界之石要塞第三層	42	66	85
 22666	The Worldstone Chamber	Act 5 - World Stone	世界之石大殿	43	66	85
 22667	Throne of Destruction	Act 5 - Throne Room	毀滅王座	43	66	85
-100844	act2 Sewers Level 2	Act 2 - Sewer 1 B	下水道第二層	13	43	74
-100845	act2 Sewers Level 1	Act 2 - Sewer 1 A	下水道第一層	13	43	74
-105018	act1 Tristram	Act 1 - Tristram	崔斯特姆	6	39	76
-110844	act3 Sewers Level 2	Act 3 - Sewer 2	下水道第二層	24	53	85
-110845	act3 Sewers Level 1	Act 3 - Sewer 1	下水道第一層	23	52	85
-115018	act5 Tristram	Act 5 - Pandemonium Finale	崔斯特姆	50	75	83
+115018	act1 Tristram	Act 1 - Tristram	崔斯特姆	6	39	76
+120844	act2 Sewers Level 2	Act 2 - Sewer 1 B	下水道第二層	13	43	74
+120845	act2 Sewers Level 1	Act 2 - Sewer 1 A	下水道第一層	13	43	74
+130844	act3 Sewers Level 2	Act 3 - Sewer 2	下水道第二層	24	53	85
+130845	act3 Sewers Level 1	Act 3 - Sewer 1	下水道第一層	23	52	85
+155018	act5 Tristram	Act 5 - Pandemonium Finale	崔斯特姆	50	75	83
