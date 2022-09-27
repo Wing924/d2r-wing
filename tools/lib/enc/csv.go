@@ -6,6 +6,7 @@ import (
 	"golang.org/x/exp/slices"
 	"log"
 	"strconv"
+	"strings"
 )
 
 type CSVMap = map[int]map[string]string
@@ -31,7 +32,7 @@ func ReadCSVAsMap(filename string) CSVMap {
 				continue
 			}
 			if i < len(row) {
-				data[header[i]] = row[i]
+				data[header[i]] = normalizeCell(row[i])
 			} else {
 				data[header[i]] = ""
 			}
@@ -39,6 +40,22 @@ func ReadCSVAsMap(filename string) CSVMap {
 		result[id] = data
 	}
 	return result
+}
+
+func normalizeCell(s string) string {
+	if !strings.Contains(s, `\n`) {
+		return s
+	}
+	hasSlashSlashN := false
+	if !strings.Contains(s, `\\n`) {
+		hasSlashSlashN = true
+		s = strings.ReplaceAll(s, `\\n`, `{slash_slash_n}`)
+	}
+	s = strings.ReplaceAll(s, `\n`, "\n")
+	if hasSlashSlashN {
+		s = strings.ReplaceAll(s, `{slash_slash_n}`, `\\n`)
+	}
+	return s
 }
 
 //func ReadCSVAsTable(filename string) []map[string]string {
