@@ -43,6 +43,8 @@ SELECT
     lg.GroupName levelGroup,
     l.LevelName levelName,
     ms.NameStr monster,
+    \`MonDen(H)\` monDen,
+    (\`MonUMin(H)\` + \`MonUMax(H)\`)/2.0 monUniq,
     COALESCE(ms.demon, ms.lUndead, ms.hUndead, 0) demon_undead,
     IFNULL(ms.\`ResDm(H)\`, 0) DR,
     IFNULL(ms.\`ResMa(H)\`, 0) MR,
@@ -56,11 +58,13 @@ FROM levels l
     JOIN monstats ms ON lm.monId = ms.Id
 "
 
-# sql="$subquery"
+
 sql="SELECT
     str.id id,
     levelGroup,
     str.zhTW groupName,
+    AVG(monDen) avgMonDen,
+    AVG(monUniq) avgMonUniq,
     MAX(FR) maxFR,
     MAX(LR) maxLR,
     MAX(CR) maxCR,
@@ -72,6 +76,8 @@ FROM ($subquery) s
     JOIN str ON s.levelGroup = str.Key
 GROUP BY str.id, levelGroup, groupName
 ORDER BY str.id"
+
+# sql="$subquery"
 
 patches/12_levelgroup_res/data/global/excel/levelgroups.txt.sh < origin/data/global/excel/levelgroups.txt > "$tmpdir/levelgroups.txt"
 scripts/json-to-tsv.sh <(patches/12_levelgroup_res/data/local/lng/strings/levels.json.sh < origin/data/local/lng/strings/levels.json) > "$tmpdir/str.tsv"

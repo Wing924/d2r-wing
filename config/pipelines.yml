@@ -110,18 +110,18 @@ pipelines:
       {{ .zhTW }} [{{ .normal }}|{{ .nightmare }}|{{ .hell }}]
 
   - name: add level group res
-    resource: resources/generated/levelgroup-res.tsv
+    resource: resources/generated/levelgroup.tsv
     template: |-
       {{ .zhTW }} ÿc5(免疫:
       {{- if or (ge (atoi .maxFR) 100) (ge (atoi .maxLR) 100) (ge (atoi .maxCR) 100) (ge (atoi .maxPR) 100) (ge (atoi .maxDR) 100) (ge (atoi .maxMR) 100) }}
         {{- if and (ge (atoi .maxFR) 100) (ge (atoi .maxLR) 100) (ge (atoi .maxCR) 100) (ge (atoi .maxPR) 100) (ge (atoi .maxDR) 100) (ge (atoi .maxMR) 100) -}}
           全部
         {{- else }}
-          {{- if ge (atoi .maxFR) 100 -}} ÿc1火 {{- if ge (atoi .maxFR) 118 -}} * {{- end -}} {{- end -}}
-          {{- if ge (atoi .maxLR) 100 -}} ÿc9電 {{- if ge (atoi .maxLR) 118 -}} * {{- end -}} {{- end -}}
-          {{- if ge (atoi .maxCR) 100 -}} ÿc3冰 {{- if ge (atoi .maxCR) 118 -}} * {{- end -}} {{- end -}}
-          {{- if ge (atoi .maxPR) 100 -}} ÿc2毒 {{- if ge (atoi .maxPR) 111 -}} * {{- end -}} {{- end -}}
-          {{- if ge (atoi .maxDR) 100 -}} ÿc4物 {{- if ge (atoi .maxDR) 110 -}} * {{- end -}} {{- end -}}
+          {{- if ge (atoi .maxFR) 100 -}} ÿc1火 {{- if gt (atoi .maxFR) 117 -}} * {{- end -}} {{- end -}}
+          {{- if ge (atoi .maxLR) 100 -}} ÿc9電 {{- if gt (atoi .maxLR) 117 -}} * {{- end -}} {{- end -}}
+          {{- if ge (atoi .maxCR) 100 -}} ÿc3冰 {{- if gt (atoi .maxCR) 117 -}} * {{- end -}} {{- end -}}
+          {{- if ge (atoi .maxPR) 100 -}} ÿc2毒 {{- if gt (atoi .maxPR) 111 -}} * {{- end -}} {{- end -}}
+          {{- if ge (atoi .maxDR) 100 -}} ÿc4物 {{- if gt (atoi .maxDR) 110 -}} * {{- end -}} {{- end -}}
           {{- if ge (atoi .maxMR) 100 -}} ÿc8魔* {{- end -}}
         {{- end }}
       {{- else -}}
