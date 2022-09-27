@@ -7,55 +7,70 @@ cd "$(git rev-parse --show-toplevel)"
 tmpdir="$(mktemp -d)"
 trap 'rm -rf $tmpdir' EXIT
 
-subquery=''
-
-for i in $(seq 1 25); do
+lvl_mon=''
+for ((i=1; i<=25; i++)); do
     if [[ $i -gt 1 ]]; then
-        subquery+='UNION'
+        lvl_mon+='UNION'
     fi
-    subquery+="
+    lvl_mon+="
     SELECT
-        SUBSTR(l.Name, 5, 1) act,
-        s.id,
-        lg.GroupName GroupKey,
-        s.zhTW lvlName,
-        mn.zhTW monName,
-        ifnull(mt.type, '') || ',' || ifnull(mt.equiv1, '') || ',' || ifnull(mt.equiv2, '') LIKE '%undead%' undead,
-        ifnull(mt.type, '') || ',' || ifnull(mt.equiv1, '') || ',' || ifnull(mt.equiv2, '') LIKE '%demon%' demon,
-        coalesce(m.\`ResDm(H)\`, 0) DR,
-        coalesce(m.\`ResMa(H)\`, 0) MR,
-        coalesce(m.\`ResFi(H)\`, 0) FR,
-        coalesce(m.\`ResLi(H)\`, 0) LR,
-        coalesce(m.\`ResCo(H)\`, 0) CR,
-        coalesce(m.\`ResPo(H)\`, 0) PR
+        l.Name,
+        m.Id monId
     FROM levels l
-        JOIN str s ON l.LevelName = s.Key
         JOIN monstats m ON l.nmon$i = m.Id
-        JOIN monsters mn ON m.NameStr = mn.Key
-        JOIN levelgroups lg ON l.LevelGroup = lg.Name
-        LEFT JOIN montype mt ON m.MonType = mt.type
+    UNION
+    SELECT
+        l.Name,
+        m1.Id monId
+    FROM levels l
+        JOIN monstats m ON l.nmon$i = m.Id
+        JOIN monstats m1 ON m.minion1 = m1.Id
+    UNION
+    SELECT
+        l.Name,
+        m2.Id monId
+    FROM levels l
+        JOIN monstats m ON l.nmon$i = m.Id
+        JOIN monstats m2 ON m.minion2 = m2.Id
     "
 done
+lvl_mon+="
+ORDER BY l.Name"
 
-subquery+="
-ORDER BY act, s.id"
+subquery="
+SELECT
+    l.Name,
+    lg.GroupName levelGroup,
+    l.LevelName levelName,
+    ms.NameStr monster,
+    COALESCE(ms.demon, ms.lUndead, ms.hUndead, 0) demon_undead,
+    IFNULL(ms.\`ResDm(H)\`, 0) DR,
+    IFNULL(ms.\`ResMa(H)\`, 0) MR,
+    IFNULL(ms.\`ResFi(H)\`, 0) FR,
+    IFNULL(ms.\`ResLi(H)\`, 0) LR,
+    IFNULL(ms.\`ResCo(H)\`, 0) CR,
+    IFNULL(ms.\`ResPo(H)\`, 0) PR
+FROM levels l
+    JOIN levelgroups lg ON l.LevelGroup = lg.Name
+    JOIN ($lvl_mon) lm ON l.Name = lm.Name
+    JOIN monstats ms ON lm.monId = ms.Id
+"
 
-sql="$subquery"
+# sql="$subquery"
 sql="SELECT
-    str.id,
-    GroupKey,
-    str.zhTW GroupName,
+    str.id id,
+    levelGroup,
+    str.zhTW groupName,
     MAX(FR) maxFR,
     MAX(LR) maxLR,
     MAX(CR) maxCR,
     MAX(PR) maxPR,
     MAX(DR) maxDR,
     MAX(MR) maxMR,
-    MIN(undead+demon) < 1 not_undead_demon
-
+    MIN(demon_undead) demon_undead
 FROM ($subquery) s
-    JOIN str ON s.GroupKey = str.Key
-GROUP BY str.id, GroupKey, GroupName
+    JOIN str ON s.levelGroup = str.Key
+GROUP BY str.id, levelGroup, groupName
 ORDER BY str.id"
 
 patches/12_levelgroup_res/data/global/excel/levelgroups.txt.sh < origin/data/global/excel/levelgroups.txt > "$tmpdir/levelgroups.txt"

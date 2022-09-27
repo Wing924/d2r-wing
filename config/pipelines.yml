@@ -114,17 +114,21 @@ pipelines:
     template: |-
       {{ .zhTW }} ÿc0(免疫:
       {{- if or (ge (atoi .maxFR) 100) (ge (atoi .maxLR) 100) (ge (atoi .maxCR) 100) (ge (atoi .maxPR) 100) (ge (atoi .maxDR) 100) (ge (atoi .maxMR) 100) }}
-        {{- if ge (atoi .maxFR) 100 -}} ÿc1火 {{- end -}}
-        {{- if ge (atoi .maxLR) 100 -}} ÿc9電 {{- end -}}
-        {{- if ge (atoi .maxCR) 100 -}} ÿc3冰 {{- end -}}
-        {{- if ge (atoi .maxPR) 100 -}} ÿc2毒 {{- end -}}
-        {{- if ge (atoi .maxDR) 100 -}} ÿc8物 {{- end -}}
-        {{- if ge (atoi .maxMR) 100 -}} ÿc8魔 {{- end -}}
+        {{- if and (ge (atoi .maxFR) 100) (ge (atoi .maxLR) 100) (ge (atoi .maxCR) 100) (ge (atoi .maxPR) 100) (ge (atoi .maxDR) 100) (ge (atoi .maxMR) 100) -}}
+          全部
+        {{- else }}
+          {{- if ge (atoi .maxFR) 100 -}} ÿc1火 {{- end -}}
+          {{- if ge (atoi .maxLR) 100 -}} ÿc9電 {{- end -}}
+          {{- if ge (atoi .maxCR) 100 -}} ÿc3冰 {{- end -}}
+          {{- if ge (atoi .maxPR) 100 -}} ÿc2毒 {{- end -}}
+          {{- if ge (atoi .maxDR) 100 -}} ÿc4物 {{- end -}}
+          {{- if ge (atoi .maxMR) 100 -}} ÿc8魔 {{- end -}}
+        {{- end }}
       {{- else -}}
         無
       {{- end -}}
       ÿc0
-      {{- if eq .not_undead_demon "1" -}} ，天拳可 {{- end -}}
+      {{- if eq .demon_undead "1" -}} ，只有不死惡魔 {{- end -}}
       )
 
   - name: modify text
