@@ -128,7 +128,7 @@
         {
           "filename": "data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light.particles",
           "hardKillOnDestroy": false,
-          "name": "entity_vfx_dfcnmod",
+          "name": "entity_vfx_gousemyideaandshareyourfilthymods",
           "type": "VfxDefinitionComponent"
         }
       ],
@@ -139,28 +139,7 @@
     {
       "components": [
         {
-          "inheritOnlyPosition": false,
-          "name": "component_transform1",
-          "orientation": {
-            "w": 1,
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "position": {
-            "x": 0,
-            "y": 10,
-            "z": 0
-          },
-          "scale": {
-            "x": 1,
-            "y": 1,
-            "z": 1
-          },
-          "type": "TransformDefinitionComponent"
-        },
-        {
-          "filename": "data/hd/vfx/particles/missiles/holy_bolt_missile/fx_holybolt_missile.particles",
+          "filename": "data/hd/vfx/particles/overlays/paladin/aura_fanatic/aura_fanatic.particles",
           "hardKillOnDestroy": false,
           "name": "entity_root_VfxDefinition",
           "type": "VfxDefinitionComponent"
@@ -196,7 +175,7 @@
         {
           "filename": "data/hd/vfx/particles/overlays/common/valkyriestart/valkriestart_overlay.particles",
           "hardKillOnDestroy": false,
-          "name": "entity_vfx_dfcnmod",
+          "name": "entity_vfx_gousemyideaandshareyourfilthymods",
           "type": "VfxDefinitionComponent"
         }
       ],
