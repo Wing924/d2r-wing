@@ -94,6 +94,7 @@ func generateTemplateData(cfg *Config, row map[string]string, entry model.Entry)
 	}
 	data["Key"] = entry.Key
 	data["zhTW"] = entry.ZhTW
+	data["enUS"] = entry.EnUS
 	return data
 }
 
