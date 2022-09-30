@@ -46,6 +46,12 @@ pipelines:
       {{ .enUS }}
       {{ .zhTW }}
 
+  - name: add English name (base)
+    resource: resources/generated/equip.tsv
+    template: |-
+      {{ .enUS }}
+      {{ .zhTW }}
+
   - name: add equip info
     resource: resources/generated/equip.tsv
     template: |-
