@@ -46,8 +46,8 @@ pipelines:
       {{ .enUS }}
       {{ .zhTW }}
 
-  - name: add English name (base)
-    resource: resources/generated/equip.tsv
+  - name: add English name (runewords)
+    resource: resources/generated/runewords.tsv
     template: |-
       {{ .enUS }}
       {{ .zhTW }}
