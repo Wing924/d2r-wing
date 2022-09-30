@@ -1,0 +1,211 @@
+id	Key	enUS	zhTW
+4397	skillname6	Magic Arrow	魔法箭
+4401	skillname7	Fire Arrow	火焰箭
+4405	skillname8	Inner Sight	心靈視野
+4409	skillname9	Critical Strike	致命攻勢
+4413	skillname10	Jab	戳刺
+4417	skillname11	Cold Arrow	冷霜箭
+4421	skillname12	Multiple Shot	多重箭
+4425	skillname13	Dodge	閃躲
+4429	skillname14	Power Strike	充能強擊
+4433	skillname15	Poison Javelin	劇毒標槍
+4437	skillname16	Exploding Arrow	爆裂箭
+4441	skillname17	Slow Missiles	緩箭術
+4445	skillname18	Avoid	閃身
+4449	skillname19	Impale	穿刺
+4453	skillname20	Lightning Bolt	閃電槍
+4457	skillname21	Ice Arrow	寒冰箭
+4461	skillname22	Guided Arrow	導引箭
+4465	skillname23	Penetrate	精準攻勢
+4469	skillname24	Charged Strike	聚能強擊
+4473	skillname25	Plague Javelin	瘟疫標槍
+4477	skillname26	Strafe	掃射
+4481	skillname27	Immolation Arrow	熾炎箭
+4485	skillname28	Decoy	替身
+4489	skillname29	Evade	閃避
+4493	skillname30	Fend	疾刺
+4497	skillname31	Freezing Arrow	冰凍箭
+4501	skillname32	Valkyrie	女武神
+4505	skillname33	Pierce	貫穿攻勢
+4509	skillname34	Lightning Strike	閃電強擊
+4513	skillname35	Lightning Fury	閃電烈怒
+4517	skillname36	Fire Bolt	火焰彈
+4521	skillname37	Warmth	暖流
+4525	skillname38	Charged Bolt	電能彈
+4529	skillname39	Ice Bolt	寒冰彈
+4533	skillname40	Frozen Armor	冰封甲
+4537	skillname41	Inferno	煉獄之火
+4541	skillname42	Static Field	靜電力場
+4545	skillname43	Telekinesis	心靈傳動
+4549	skillname44	Frost Nova	冰霜新星
+4553	skillname45	Ice Blast	寒冰球
+4557	skillname46	Blaze	熾烈之徑
+4561	skillname47	Fire Ball	火球術
+4565	skillname48	Nova	閃電新星
+4569	skillname49	Lightning	閃電箭
+4573	skillname50	Shiver Armor	碎冰甲
+4577	skillname51	Fire Wall	火牆術
+4581	skillname52	Enchant	附魔
+4585	skillname53	Chain Lightning	連鎖閃電
+4589	skillname54	Teleport	傳送術
+4593	skillname55	Glacial Spike	冰川之槍
+4597	skillname56	Meteor	隕石術
+4601	skillname57	Thunder Storm	雷電風暴
+4605	skillname58	Energy Shield	能量護盾
+4609	skillname59	Blizzard	暴風雪
+4613	skillname60	Chilling Armor	寒冰甲
+4617	skillsname61	Fire Mastery	火焰專精
+4621	skillname62	Hydra	多頭蛇
+4625	skillname63	Lightning Mastery	閃電專精
+4629	skillname64	Frozen Orb	冰封球
+4633	skillname65	Cold Mastery	冰寒專精
+4637	skillname66	Amplify Damage	傷害加深
+4641	skillname67	Teeth	剔骨之牙
+4645	skillname68	Bone Armor	骸骨護甲
+4649	skillname69	Skeleton Mastery	骷髏專精
+4653	skillname70	Raise Skeleton	復生骷髏
+4657	skillname71	Dim Vision	昏暗視野
+4661	skillname72	Weaken	削弱
+4665	skillname73	Poison Dagger	淬毒匕首
+4669	skillname74	Corpse Explosion	屍爆
+4673	skillname75	Clay Golem	黏土魔像
+4677	skillname76	Iron Maiden	攻擊反噬
+4681	skillname77	Terror	恐懼
+4685	skillname78	Bone Wall	骨牆
+4689	skillname79	Golem Mastery	魔像專精
+4693	skillname80	Raise Skeletal Mage	復生骷髏法師
+4697	skillname81	Confuse	混亂
+4701	skillname82	Life Tap	偷取生命
+4705	skillname83	Poison Explosion	毒爆
+4709	skillname84	Bone Spear	骨矛
+4713	skillname85	Blood Golem	鮮血魔像
+4717	skillname86	Attract	致命吸引
+4721	skillname87	Decrepify	衰老
+4725	skillname88	Bone Prison	骨牢
+4729	skillname89	Summon Resist	召喚物抗性
+4733	skillname90	Iron Golem	鋼鐵魔像
+4737	skillname91	Lower Resist	降低抗性
+4741	skillname92	Poison Nova	劇毒新星
+4745	skillname93	Bone Spirit	骸骨之魂
+4749	skillname94	Fire Golem	火焰魔像
+4753	skillname95	Revive	重生
+4757	skillname96	Sacrifice	犧牲打擊
+4761	skillname97	Smite	盾牌重擊
+4765	skillname98	Might	力量
+4769	skillname99	Prayer	祈禱
+4773	skillname100	Resist Fire	抗火
+4777	skillname101	Holy Bolt	聖光彈
+4781	skillname102	Holy Fire	神聖火焰
+4785	skillname103	Thorns	荊棘
+4789	skillname104	Defiance	反抗
+4793	skillname105	Resist Cold	抗寒
+4797	skillname106	Zeal	熱忱打擊
+4801	skillname107	Charge	衝鋒打擊
+4805	skillname108	Blessed Aim	精準祝福
+4809	skillname109	Cleansing	淨化
+4813	skillname110	Resist Lightning	抗電
+4817	skillname111	Vengeance	復仇打擊
+4821	skillname112	Blessed Hammer	祝福之鎚
+4825	skillname113	Concentration	專注
+4829	skillname114	Holy Freeze	神聖冰凍
+4833	skillname115	Vigor	活力
+4837	skillname116	Conversion	招降打擊
+4841	skillname117	Holy Shield	神聖之盾
+4845	skillname118	Holy Shock	神聖電擊
+4849	skillname119	Sanctuary	庇護
+4853	skillname120	Meditation	冥想
+4857	skillname121	Fist of the Heavens	天堂之拳
+4861	skillname122	Fanaticism	狂熱
+4865	skillname123	Conviction	信念
+4869	skillname124	Redemption	救贖
+4873	skillname125	Salvation	聖護
+4877	skillname126	Bash	猛擊
+4881	skillname127	Blade Mastery	利刃專精
+4885	skillname128	Axe Mastery	斧術專精
+4889	skillname129	Mace Mastery	釘鎚專精
+4893	skillname130	Howl	狂嗥
+4897	skillname131	Find Potion	尋找藥水
+4901	skillname132	Leap	跳躍
+4905	skillname133	Double Swing	雙手揮擊
+4909	skillname134	Polearm Mastery	長武專精
+4913	skillname135	Throwing Mastery	投擲專精
+4917	skillname136	Spear Mastery	長矛專精
+4921	skillname137	Taunt	嘲諷
+4925	skillname138	Shout	大吼
+4929	skillname139	Stun	擊昏
+4933	skillname140	Double Throw	雙手投擲
+4937	skillname141	Increased Stamina	提高精力
+4941	skillname142	Find Item	尋找物品
+4945	skillname143	Leap Attack	躍擊
+4949	skillname144	Concentrate	專注打擊
+4953	skillname145	Iron Skin	鋼鐵之膚
+4957	skillname146	Battle Cry	戰鬥怒吼
+4961	skillname147	Frenzy	狂亂連擊
+4965	skillname148	Increased Speed	提高速度
+4969	skillname149	Battle Orders	戰鬥命令
+4973	skillname150	Grim Ward	恐怖圖騰
+4977	skillname151	Whirlwind	旋風斬
+4981	skillname152	Berserk	狂暴之擊
+4985	skillname153	Natural Resistance	自然抵抗
+4989	skillname154	War Cry	戰爭狂嘯
+4993	skillname155	Battle Command	戰鬥指揮
+10997	Skillname224	Werewolf	狼人變化
+22038	Skillname222	Raven	掠鴉
+22042	Skillname223	Poison Creeper	劇毒藤蔓
+22050	Skillname225	Lycanthropy	變形術
+22054	Skillname226	Firestorm	火焰風暴
+22058	Skillname227	Oak Sage	橡木智者
+22062	Skillname228	Summon Spirit Wolf	召喚幽靈狼
+22066	Skillname229	Werebear	熊人變化
+22070	Skillname230	Molten Boulder	熔火巨石
+22074	Skillname231	Arctic Blast	極地寒風
+22078	Skillname232	Carrion Vine	食屍藤蔓
+22082	Skillname233	Feral Rage	野性狂暴
+22086	Skillname234	Maul	槌擊
+22090	Skillname235	Fissure	裂地之火
+22094	Skillname236	Cyclone Armor	氣旋護甲
+22098	Skillname237	Heart of Wolverine	狼獾之心
+22102	Skillname238	Summon Dire Wolf	召喚恐狼
+22106	Skillname239	Rabies	狂犬撕咬
+22110	Skillname240	Fire Claws	烈焰爪擊
+22114	Skillname241	Twister	旋風術
+22118	Skillname242	Solar Creeper	太陽藤蔓
+22122	Skillname243	Hunger	飢餓噬咬
+22126	Skillname244	Shock Wave	震波衝擊
+22130	Skillname245	Volcano	火山噴發
+22134	Skillname246	Tornado	龍捲風
+22138	Skillname247	Spirit of Barbs	荊棘之靈
+22142	Skillname248	Summon Grizzly	召喚灰熊
+22146	Skillname249	Fury	狂怒連擊
+22150	Skillname250	Armageddon	毀天滅地
+22154	Skillname251	Hurricane	颶風術
+22158	Skillname252	Fire Blast	火焰轟擊
+22162	Skillname253	Claw Mastery	利爪專精
+22166	Skillname254	Psychic Hammer	心靈之鎚
+22170	Skillname255	Tiger Strike	猛虎擊
+22174	Skillname256	Dragon Talon	龍爪踢
+22178	Skillname257	Shock Web	雷電網
+22182	Skillname258	Blade Sentinel	戒衛旋刃
+22186	Skillname259	Burst of Speed	速度爆發
+22190	Skillname260	Fists of Fire	烈火拳
+22194	Skillname261	Dragon Claw	雙龍爪
+22198	Skillname262	Charged Bolt Sentry	電能衛哨
+22202	Skillname263	Wake of Fire	焰痕衛哨
+22206	Skillname264	Weapon Block	武器格擋
+22210	Skillname265	Cloak of Shadows	魔影斗蓬
+22214	Skillname266	Cobra Strike	靈蛇擊
+22218	Skillname267	Blade Fury	狂怒旋刃
+22222	Skillname268	Fade	影散
+22226	Skillname269	Shadow Warrior	暗影戰士
+22230	Skillname270	Claws of Thunder	雷電爪
+22234	Skillname271	Dragon Tail	龍擺尾
+22238	Skillname272	Lightning Sentry	雷光衛哨
+22242	Skillname273	Wake of Inferno	獄火衛哨
+22246	Skillname274	Mind Blast	心靈震爆
+22250	Skillname275	Blades of Ice	寒冰刃
+22254	Skillname276	Dragon Flight	翔龍腳
+22258	Skillname277	Death Sentry	死亡衛哨
+22262	Skillname278	Blade Shield	利刃之盾
+22266	Skillname279	Venom	淬毒
+22270	Skillname280	Shadow Master	暗影宗師
+22274	Skillname281	Phoenix Strike	鳳凰擊

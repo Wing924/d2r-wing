@@ -40,14 +40,25 @@ patches:
   - patches/12_levelgroup_res
 
 pipelines:
-  - name: add English name (uniq/set)
+  - name: add English name (uniq/set items)
     resource: resources/generated/uniq-set.tsv
+    template: |-
+      {{ .enUS }}
+      {{ .zhTW }}
+
+  - name: add English name (set)
+    resource: resources/generated/sets.tsv
     template: |-
       {{ .enUS }}
       {{ .zhTW }}
 
   - name: add English name (runewords)
     resource: resources/generated/runewords.tsv
+    template: |-
+      {{ .enUS }}
+      {{ .zhTW }}
+  - name: add English name (skills)
+    resource: resources/generated/skills.tsv
     template: |-
       {{ .enUS }}
       {{ .zhTW }}
