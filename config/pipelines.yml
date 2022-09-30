@@ -24,7 +24,7 @@ data:
     orange: "ÿc8"
     yellow: "ÿc9"
     pink: "ÿc;"
-    dark-red: "ÿcS"
+    dark_red: "ÿcS"
 
 patches:
   - patches/01_runes_sound
@@ -102,6 +102,19 @@ pipelines:
     template: |-
       [{{ lookupString .max }}]
       {{ .zhTW }}
+
+  - name: modify gems
+    resource: resources/generated/gems.tsv
+    template: |-
+      {{- if .inRune | and (lt (int .inRune) 20) -}}
+        ÿc5[+ {{- .qty -}} x# {{- .inRune -}} =# {{- .outRune -}} ]
+      {{ end -}}
+      {{- if contains .rank "45" -}}
+        ÿc1★ {{- .zhTW -}} ★
+      {{- else -}}
+        ÿcS {{- .zhTW -}}
+      {{- end -}}
+      ÿc0
 
   - name: modify item
     resource: resources/item_modify.tsv
