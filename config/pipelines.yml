@@ -107,7 +107,7 @@ pipelines:
     resource: resources/generated/gems.tsv
     template: |-
       {{- if .inRune | and (lt (int .inRune) 20) -}}
-        ÿc5[+ {{- .qty -}} x# {{- .inRune -}} =# {{- .outRune -}} ]
+        ÿc5[+ {{- .qty -}} x# {{- .inRune -}} ]
       {{ end -}}
       {{- if contains .rank "45" -}}
         ÿc1★ {{- .zhTW -}} ★
