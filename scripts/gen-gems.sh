@@ -26,15 +26,14 @@ SELECT
       WHEN g.name LIKE 'Chipped %' THEN 1
       ELSE 3
     END rank,
-    g.name,
     SUBSTR(c.\`input 1\`,9, 1) qty,
     SUBSTR(c.\`input 1\`,2, 2) inRune,
     SUBSTR(c.output, 2, 2) outRune
-
 FROM ($sub) s
-    JOIN gems g ON g.code = s.Key
+    JOIN gems g
+      ON g.code = s.Key
     LEFT JOIN cubemain c
-      ON s.Key = c.\`input 2\`
+      ON s.Key = c.\`input 2\` AND c.output LIKE 'r__'
 WHERE
   g.letter IS NULL
 ORDER BY s.id

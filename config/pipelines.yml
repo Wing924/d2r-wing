@@ -106,8 +106,8 @@ pipelines:
   - name: modify gems
     resource: resources/generated/gems.tsv
     template: |-
-      {{- if .inRune -}}
-        ÿc5[+ {{- .qty -}} x# {{- .inRune -}} = #{{- .outRune -}} ]
+      {{- if .inRune | and (lt (int .inRune) 20) -}}
+        ÿc5[+ {{- .qty -}} x# {{- .inRune -}} =# {{- .outRune -}} ]
       {{ end -}}
       {{- if contains .rank "45" -}}
         ÿc1★ {{- .zhTW -}} ★
