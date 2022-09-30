@@ -40,6 +40,12 @@ patches:
   - patches/12_levelgroup_res
 
 pipelines:
+  - name: add English name (uniq/set)
+    resource: resources/generated/uniq-set.tsv
+    template: |-
+      {{ .enUS }}
+      {{ .zhTW }}
+
   - name: add equip info
     resource: resources/generated/equip.tsv
     template: |-
