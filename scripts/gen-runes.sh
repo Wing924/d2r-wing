@@ -19,6 +19,7 @@ SELECT
     s.id,
     o.zhTW old_zhTW,
     s.zhTW,
+    RTRIM(s.enUS, " Rune") enName,
     CAST(SUBSTR(s.Key, 2, 2) AS INT) num,
     SUBSTR(c.`input 1`,-1,1) recipeQty,
     i.zhTW recipeGem

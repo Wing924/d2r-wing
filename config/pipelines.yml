@@ -52,11 +52,17 @@ pipelines:
       {{ .enUS }}
       {{ .zhTW }}
 
+  - name: add English name (runes)
+    resource: resources/generated/runes.tsv
+    template: |-
+      {{ .zhTW }} {{ .enName }}
+
   - name: add English name (runewords)
     resource: resources/generated/runewords.tsv
     template: |-
       {{ .enUS }}
       {{ .zhTW }}
+
   - name: add English name (skills)
     resource: resources/generated/skills.tsv
     template: |-
