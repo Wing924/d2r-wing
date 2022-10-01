@@ -66,8 +66,7 @@ pipelines:
   - name: add English name (skills)
     resource: resources/generated/skills.tsv
     template: |-
-      {{ .enUS }}
-      {{ .zhTW }}
+      {{ .zhTW }}({{ .enUS }})
 
   - name: add equip info
     resource: resources/generated/equip.tsv
