@@ -127,8 +127,8 @@ pipelines:
     template: |-
       {{- if .inRune | and (lt (int .inRune) 20) -}}
         ÿc5[升級# {{- .inRune -}} ]
-      {{- end }}
-      {{ if contains .rank "45" -}}
+      {{ end }}
+      {{- if contains .rank "45" -}}
         ÿc1★ {{- .zhTW -}} ★
       {{- else -}}
         ÿcS {{- .zhTW -}}
