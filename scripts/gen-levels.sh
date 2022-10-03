@@ -11,7 +11,7 @@ sql='
 SELECT DISTINCT
     s.id,
     s.Key,
-    l.Name,
+    SUBSTR(l.Name, 5, 1) act,
     s.zhTW,
     MonLvlEx normal,
     `MonLvlEx(N)` nightmare,
@@ -20,7 +20,7 @@ FROM levels l
     LEFT JOIN str s ON l.LevelName = s.Key
 WHERE
     `MonLvlEx(H)` != ""
-ORDER BY s.id
+ORDER BY act, s.id
 '
 
 patches/11_level_names/data/global/excel/levels.txt.sh < origin/data/global/excel/levels.txt > "$tmpdir/levels.txt"

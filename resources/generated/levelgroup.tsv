@@ -1,87 +1,95 @@
-id	levelGroup	groupName	avgMonDen	avgMonUniq	maxFR	maxLR	maxCR	maxPR	maxDR	maxMR	demon_undead
-215018	act1 Tristram LG	崔斯特姆	520	5.5	110	110	40	100	50	0	1
-215023	act1 Cathedral LG	大教堂	680	3	125	105	60	75	100	50	1
-215024	act1 Inner Cloister LG	內側迴廊	720	2	125	115	40	75	33	0	1
-215028	act1 Barracks LG	兵營	680	7	120	33	140	105	50	50	1
-215029	act1 Outer Cloister LG	外側迴廊	600	2.5	120	33	140	20	50	20	0
-215030	act1 Monastery Gate LG	修道院大門	600	1.5	33	115	130	105	40	20	1
-215036	act1 Forgotten Tower LG	遺忘之塔	1024	3.5	120	110	50	75	100	50	1
-215037	act1 Mausoleum LG	大陵墓	1056	4.5	0	110	0	75	50	0	1
-215038	act1 Crypt LG	墓地	1056	4.5	0	110	0	75	50	0	1
-215039	act1 Burial Grounds LG	埋骨之地	520		0	110	0	75	50	0	1
-215048	act1 Den of Evil LG	邪惡洞窟	600		100	0	120	75	50	0	0
-215049	act1 Tamoe Highland LG	泰摩高地	520	8	100	110	130	105	50	20	0
-215050	act1 Black Marsh LG	黑色荒地	520	8	110	110	120	100	50	0	0
-215051	act1 Dark Wood LG	黑暗森林	520	8	110	33	120	100	50	20	0
-215052	act1 Stony Field LG	亂石曠野	520	8	25	110	100	75	50	0	0
-215053	act1 Cold Plains LG	冰冷之原	520	8	100	100	100	25	50	20	0
-215054	act1 Blood Moor LG	鮮血荒地	520	8	100	0	120	75	50	0	0
-220824	act2 Arcane Sanctuary LG	秘法聖殿	990	8	110	25	110	75	100	50	1
-220825	act2 Duriel's Lair LG	塔拉夏的密室	2200	1	100	115	140	105	100	100	0
-220826	act2 Tal Rasha's Tomb LG	塔拉夏的古墓	2200	8	100	115	140	105	100	100	0
-220827	act2 Ancient Tunnels LG	古代通道	680	7	110	115	33	105	50	100	0
-220846	act2 Canyon of the Magi LG	賢者之谷	880	8	105	115	140	115	66	0	0
-220847	act2 Valley of Snakes LG	群蛇峽谷	880	8	100	33	120	105	50	100	0
-220848	act2 Lost City LG	失落古城	880	8	105	100	100	75	50	100	0
-220849	act2 Far Oasis LG	遙遠的綠洲	880	8	33	105	0	105	100	0	0
-220850	act2 Dry Hills LG	乾土高地	880	8	100	100	100	25	15	0	0
-220851	act2 Rocky Waste LG	碎石荒地	880	8	100	100	120	110	50	0	0
-220853	act2 Maggot Lair LG	蛆蟲巢穴	990	5.166666666666667	33	110	0	110	100	0	0
-220854	act2 Claw Viper Temple LG	利爪蛇魔神殿	2200	4.25	100	33	120	105	50	100	0
-220855	act2 Halls of the Dead LG	死亡之殿	2200	5.166666666666667	100	100	140	100	50	25	0
-220856	act2 Stony Tomb LG	古老石墓	2200	6	0	120	15	75	50	70	0
-220857	act2 Palace Cellar LG	皇宮地窖	2200	6	115	115	50	110	55	75	0
-220858	act2 Harem LG	後宮	2200		115	100	170	110	55	75	0
-230798	act3 Disused Reliquary LG	廢棄的聖殿	990	2	105	120	130	60	50	70	0
-230799	act3 Ruined Fane LG	荒廢的寺院	990	2	105	120	130	60	50	70	0
-230800	act3 Forgotten Temple LG	遺忘神殿	990	2	105	120	130	60	50	70	0
-230801	act3 Forgotten Reliquary LG	遺忘的聖殿	990	4	120	33	150	65	50	100	0
-230802	act3 Disused Fane LG	廢棄的寺院	990	4	120	33	150	65	50	100	0
-230803	act3 Ruined Temple LG	荒廢的神殿	990	4	120	33	150	65	50	100	0
-230810	act3 Spider Cave LG	蜘蛛巢穴	700	7	115	110	0	120	66	25	0
-230811	act3 Spider Cavern LG	蜘蛛洞窟	700	4.5	115	110	0	120	66	25	0
-230812	act3 Travincal LG	崔凡克	325	7	33	100	160	50	35	0	0
-230813	act3 Kurast Causeway LG	庫拉斯特堤道	325	8	50	110	160	33	50	0	0
-230814	act3 Upper Kurast LG	庫拉斯特上層	325	8	25	100	140	25	25	0	0
-230815	act3 Kurast Bazaar LG	庫拉斯特市集	325	8	100	70	140	20	100	0	0
-230816	act3 Lower Kurast LG	庫拉斯特下層	325	8	100	105	50	25	45	0	0
-230817	act3 Flayer Jungle LG	剝皮叢林	650	12.5	120	110	140	110	25	25	0
-230818	act3 Great Marsh LG	大沼澤	650	12.5	110	100	130	75	60	25	0
-230819	act3 Spider Forest LG	蜘蛛森林	650	12.5	50	105	120	105	45	0	0
-230821	act3 Durance of Hate LG	憎恨囚牢	800	6	50	100	140	120	55	0	1
-230822	act3 Flayer Dungeon LG	剝皮地牢	700	4.333333333333333	120	110	140	110	100	50	0
-230823	act3 Swampy Pit LG	沼澤地穴	700	5.714285714285714	110	110	75	120	60	25	0
-237281	act1 Cave LG	洞穴	600	4.75	25	110	25	75	50	0	1
-237282	act1 Underground Passage LG	地底通道	600	5.5	110	110	120	100	40	20	1
-237283	act1 Hole LG	地洞	600	4.75	110	110	120	25	50	0	0
-237284	act1 Pit LG	地穴	600	4.75	120	110	130	75	33	20	1
-237285	act1 Jail LG	監牢	680	7	125	105	75	105	100	50	1
-237286	act1 Catacombs LG	地下墓穴	680	7	125	105	150	75	50	0	0
-237338	act1 MooMooFarmGroup LG	ÿc8不存在的關卡ÿc0	800	7	50	50	50	33	50	33	0
-240789	act4 Chaos Sanctum LG	混沌魔殿	800	6.5	130	100	180	75	50	25	1
-240791	act4 River of Flame LG	火焰之河	800	6.5	120	100	160	125	66	0	0
-240792	act4 Outer Steppes LG	外圍荒原	800	9	130	100	140	100	66	0	0
-240793	act4 Plains of Despair LG	絕望平原	800	9	130	110	140	100	80	0	1
-240794	act4 City of the Damned LG	罪罰之城	800	9	120	120	150	105	66	25	0
-247287	act2 Lut Gholein Sewers LG	魯高因下水道	680	7	110	50	100	110	50	0	0
-257288	act3 Kurast Sewers LG	庫拉斯特下水道	650	6.5	50	120	100	120	50	100	0
-261155	act5 Pandemonium Run 1 LG	魔母巢穴	1056	4.5	66	100	155	66	40	66	1
-261156	act5 Pandemonium Run 2 LG	遺忘沙漠	880	8	120	100	50	105	100	0	0
-261157	act5 Pandemonium Run 3 LG	苦痛熔爐	800	3.5	145	145	160	145	50	145	1
-271865	act5 Hell1 LG	亞巴頓	800	7	140	100	145	140	100	75	0
-271866	act5 Hell2 LG	冥河地穴	800	7	140	50	155	110	100	100	0
-271867	act5 Hell3 LG	煉獄地穴	700	7	140	100	160	120	75	50	0
-272647	act5 Bloody Foothills LG	血腥丘陵	650	5	110	100	130	100	66	50	0
-272648	act5 Rigid Highlands LG	冰凍高地	450	10	115	100	150	100	75	25	0
-272649	act5 Arreat Plateau LG	亞瑞特高原	350	10	125	120	160	110	50	75	0
-272650	act5 Crystalized Cavern Level 1 LG	水晶通道	700	8	120	90	160	110	100	50	0
-272651	act5 Cellar of Pity LG	冰凍之河	800	7	66	100	160	110	100	66	0
-272652	act5 Crystalized Cavern Level 2 LG	冰河小徑	700	8	140	100	160	110	100	70	0
-272653	act5 Echo Chamber LG	漂泊者洞窟	600	7	140	100	170	110	100	66	0
-272654	act5 Tundra Wastelands LG	冰凍苔原	550	10	120	120	165	120	100	50	0
-272655	act5 Glacial Caves Level 1 LG	先祖之路	650	8	75	100	170	110	75	75	0
-272656	act5 Glacial Caves Level 2 LG	冰窖	650	7	70	100	170	120	100	66	0
-272657	act5 Rocky Summit LG	亞瑞特山巔	0		110	100	150	50	40	0	0
-272667	act5 Throne of Destruction LG	毀滅王座	700	4.5	145	100	160	115	90	100	0
-277289	act5 Temple Halls LG	神殿大廳	700	6.5	120	100	170	130	100	100	0
-277290	act5 The Worldstone Keep LG	世界之石要塞	700	7	140	130	160	130	100	100	0
+id	act	levelGroup	groupName	avgMonDen	avgMonUniq	maxFR	maxLR	maxCR	maxPR	maxDR	maxMR	demon_undead
+5018	1	Tristram	崔斯特姆	520	5.5	110	110	40	100	50	0	1
+5023	1	Cathedral	大教堂	680	3	125	105	60	75	100	50	1
+5024	1	Inner Cloister	內側迴廊	720	2	125	115	40	75	33	0	1
+5028	1	Barracks	兵營	680	7	120	33	140	105	50	50	1
+5029	1	Outer Cloister	外側迴廊	600	2.5	120	33	140	20	50	20	0
+5030	1	Monastery Gate	修道院大門	600	1.5	33	115	130	105	40	20	1
+5036	1	Forgotten Tower	遺忘之塔	975.2380952380952	3.5	120	110	50	75	100	50	0
+5037	1	Mausoleum	大陵墓	1056	4.5	0	110	0	75	50	0	1
+5038	1	Crypt	墓地	1056	4.5	0	110	0	75	50	0	1
+5039	1	Burial Grounds	埋骨之地	520		0	110	0	75	50	0	1
+5048	1	Den of Evil	邪惡洞窟	600		100	0	120	75	50	0	0
+5049	1	Tamoe Highland	泰摩高地	520	8	100	110	130	105	50	20	0
+5050	1	Black Marsh	黑色荒地	520	8	110	110	120	100	50	0	0
+5051	1	Dark Wood	黑暗森林	520	8	110	33	120	100	50	20	0
+5052	1	Stony Field	亂石曠野	520	8	25	110	100	75	50	0	0
+5053	1	Cold Plains	冰冷之原	520	8	100	100	100	25	50	20	0
+5054	1	Blood Moor	鮮血荒地	520	8	100	0	120	75	50	0	0
+5055	1	Rogue Encampment	俠盜營地	0		0	0	0	0	0	0	0
+27281	1	Cave	洞穴	600	4.75	25	110	25	75	50	0	1
+27282	1	Underground Passage	地底通道	600	5.5	110	110	120	100	40	20	1
+27283	1	Hole	地洞	600	4.75	110	110	120	25	50	0	0
+27284	1	Pit	地穴	600	4.75	120	110	130	75	33	20	1
+27285	1	Jail	監牢	680	7	125	105	75	105	100	50	1
+27286	1	Catacombs	地下墓穴	680	7	125	105	150	75	50	0	0
+27338	1	MooMooFarmGroup	ÿc8不存在的關卡ÿc0	800	7	50	50	50	33	50	33	0
+824	2	Arcane Sanctuary	秘法聖殿	990	8	110	25	110	75	100	50	1
+825	2	Duriel's Lair	塔拉夏的密室	2200	1	100	115	140	105	100	100	0
+826	2	Tal Rasha's Tomb	塔拉夏的古墓	2200	8	100	115	140	105	100	100	0
+827	2	Ancient Tunnels	古代通道	680	7	110	115	33	105	50	100	0
+846	2	Canyon of the Magi	賢者之谷	880	8	105	115	140	115	66	0	0
+847	2	Valley of Snakes	群蛇峽谷	880	8	100	33	120	105	50	100	0
+848	2	Lost City	失落古城	880	8	105	100	100	75	50	100	0
+849	2	Far Oasis	遙遠的綠洲	880	8	33	105	0	105	100	0	0
+850	2	Dry Hills	乾土高地	880	8	100	100	100	25	15	0	0
+851	2	Rocky Waste	碎石荒地	880	8	100	100	120	110	50	0	0
+852	2	Lut Gholein	魯高因	0		0	0	0	0	0	0	0
+853	2	Maggot Lair	蛆蟲巢穴	990	5.166666666666667	33	110	0	110	100	0	0
+854	2	Claw Viper Temple	利爪蛇魔神殿	2200	4.25	100	33	120	105	50	100	0
+855	2	Halls of the Dead	死亡之殿	2200	5.166666666666667	100	100	140	100	50	25	0
+856	2	Stony Tomb	古老石墓	2200	6	0	120	15	75	50	70	0
+857	2	Palace Cellar	皇宮地窖	2200	6	115	115	50	110	55	75	0
+858	2	Harem	後宮	1833.3333333333333		115	100	170	110	55	75	0
+27287	2	Lut Gholein Sewers	魯高因下水道	680	7	110	50	100	110	50	0	0
+798	3	Disused Reliquary	廢棄的聖殿	990	2	105	120	130	60	50	70	0
+799	3	Ruined Fane	荒廢的寺院	990	2	105	120	130	60	50	70	0
+800	3	Forgotten Temple	遺忘神殿	990	2	105	120	130	60	50	70	0
+801	3	Forgotten Reliquary	遺忘的聖殿	990	4	120	33	150	65	50	100	0
+802	3	Disused Fane	廢棄的寺院	990	4	120	33	150	65	50	100	0
+803	3	Ruined Temple	荒廢的神殿	990	4	120	33	150	65	50	100	0
+810	3	Spider Cave	蜘蛛巢穴	700	7	115	110	0	120	66	25	0
+811	3	Spider Cavern	蜘蛛洞窟	700	4.5	115	110	0	120	66	25	0
+812	3	Travincal	崔凡克	325	7	33	100	160	50	35	0	0
+813	3	Kurast Causeway	庫拉斯特堤道	325	8	50	110	160	33	50	0	0
+814	3	Upper Kurast	庫拉斯特上層	325	8	25	100	140	25	25	0	0
+815	3	Kurast Bazaar	庫拉斯特市集	325	8	100	70	140	20	100	0	0
+816	3	Lower Kurast	庫拉斯特下層	325	8	100	105	50	25	45	0	0
+817	3	Flayer Jungle	剝皮叢林	650	12.5	120	110	140	110	25	25	0
+818	3	Great Marsh	大沼澤	650	12.5	110	100	130	75	60	25	0
+819	3	Spider Forest	蜘蛛森林	650	12.5	50	105	120	105	45	0	0
+820	3	Kurast Docktown	庫拉斯特港口	0		0	0	0	0	0	0	0
+821	3	Durance of Hate	憎恨囚牢	800	6	50	100	140	120	55	0	1
+822	3	Flayer Dungeon	剝皮地牢	700	4.333333333333333	120	110	140	110	100	50	0
+823	3	Swampy Pit	沼澤地穴	700	5.714285714285714	110	110	75	120	60	25	0
+27288	3	Kurast Sewers	庫拉斯特下水道	650	6.5	50	120	100	120	50	100	0
+789	4	Chaos Sanctum	混沌魔殿	800	6.5	130	100	180	75	50	25	1
+790	4	The Pandemonium Fortress	混沌界要塞	0		0	0	0	0	0	0	0
+791	4	River of Flame	火焰之河	800	6.5	120	100	160	125	66	0	0
+792	4	Outer Steppes	外圍荒原	800	9	130	100	140	100	66	0	0
+793	4	Plains of Despair	絕望平原	800	9	130	110	140	100	80	0	1
+794	4	City of the Damned	罪罰之城	800	9	120	120	150	105	66	25	0
+5018	5	Tristram	崔斯特姆	0	3	0	0	0	0	0	0	0
+11155	5	Pandemonium Run 1	魔母巢穴	1056	4.5	66	100	155	66	40	66	1
+11156	5	Pandemonium Run 2	遺忘沙漠	880	8	120	100	50	105	100	0	0
+11157	5	Pandemonium Run 3	苦痛熔爐	800	3.5	145	145	160	145	50	145	1
+21865	5	Hell1	亞巴頓	800	7	140	100	145	140	100	75	0
+21866	5	Hell2	冥河地穴	800	7	140	50	155	110	100	100	0
+21867	5	Hell3	煉獄地穴	700	7	140	100	160	120	75	50	0
+22646	5	Harrogath	哈洛加斯	0		0	0	0	0	0	0	0
+22647	5	Bloody Foothills	血腥丘陵	650	5	110	100	130	100	66	50	0
+22648	5	Rigid Highlands	冰凍高地	450	10	115	100	150	100	75	25	0
+22649	5	Arreat Plateau	亞瑞特高原	350	10	125	120	160	110	50	75	0
+22650	5	Crystalized Cavern Level 1	水晶通道	700	8	120	90	160	110	100	50	0
+22651	5	Cellar of Pity	冰凍之河	800	7	66	100	160	110	100	66	0
+22652	5	Crystalized Cavern Level 2	冰河小徑	700	8	140	100	160	110	100	70	0
+22653	5	Echo Chamber	漂泊者洞窟	600	7	140	100	170	110	100	66	0
+22654	5	Tundra Wastelands	冰凍苔原	550	10	120	120	165	120	100	50	0
+22655	5	Glacial Caves Level 1	先祖之路	650	8	75	100	170	110	75	75	0
+22656	5	Glacial Caves Level 2	冰窖	650	7	70	100	170	120	100	66	0
+22657	5	Rocky Summit	亞瑞特山巔	0		110	100	150	50	40	0	0
+22658	5	Nihlathaks Temple	尼拉塞克的神殿	0		0	0	0	0	0	0	0
+22666	5	The Worldstone Chamber	世界之石大殿	0		0	0	0	0	0	0	0
+22667	5	Throne of Destruction	毀滅王座	700	4.5	145	100	160	115	90	100	0
+27289	5	Temple Halls	神殿大廳	700	6.5	120	100	170	130	100	100	0
+27290	5	The Worldstone Keep	世界之石要塞	700	7	140	130	160	130	100	100	0

@@ -38,8 +38,28 @@ patches:
   - patches/10_global_light
   - patches/11_level_names
   - patches/12_levelgroup_res
+  - patches/13_base_item_desc
 
 pipelines:
+  - name: add English name and detailed info (base item)
+    resource: resources/generated/equip.tsv
+    id_delta: '100000'
+    key_template: 'base_info_{{ .code }}'
+    template: |-
+      ÿc5[qlvl: {{- .qlvls -}}
+      {{- if .min -}}
+        {{- if eq .min .max -}}
+          ,防禦:{{ .min }}/e{{ .minEth }}
+        {{- else -}}
+          ,防禦:{{ .min }}-{{ .max }}/e{{ .minEth }}-e{{ .maxEth }}
+        {{- end }}
+      {{- end }}
+      {{- if .range -}}
+        ,範圍:{{ .range }}
+      {{- end -}}
+      ]
+      {{ .enUS }}ÿc0
+
   - name: add English name (uniq/set items)
     resource: resources/generated/uniq-set.tsv
     template: |-
@@ -106,8 +126,8 @@ pipelines:
     resource: resources/generated/gems.tsv
     template: |-
       {{- if .inRune | and (lt (int .inRune) 20) -}}
-        ÿc5[+ {{- .qty -}} x# {{- .inRune -}} ]
-      {{ end -}}
+        ÿc5[升級# {{- .inRune -}} ]
+      {{ end }}
       {{- if contains .rank "45" -}}
         ÿc1★ {{- .zhTW -}} ★
       {{- else -}}
@@ -145,28 +165,32 @@ pipelines:
         {{- .zhTW }}#{{ printf "%02d" $num }}
       {{- end }}
 
+  - name: add level group res
+    resource: resources/generated/levelgroup.tsv
+    id_delta: '2{{ .act }}0000'
+    key_template: 'act{{ .act }} {{ .levelGroup }} LG'
+    template: |-
+      {{ .zhTW }}
+      {{- if ne .avgMonDen "0" }} ÿc5(免疫:
+        {{- if or (ge (atoi .maxFR) 100) (ge (atoi .maxLR) 100) (ge (atoi .maxCR) 100) (ge (atoi .maxPR) 100) (ge (atoi .maxDR) 100) (ge (atoi .maxMR) 100) }}
+          {{- if ge (atoi .maxFR) 100 -}} ÿc1火 {{- if ge (atoi .maxFR) 117 -}} * {{- end -}} {{- end -}}
+          {{- if ge (atoi .maxLR) 100 -}} ÿc9電 {{- if ge (atoi .maxLR) 117 -}} * {{- end -}} {{- end -}}
+          {{- if ge (atoi .maxCR) 100 -}} ÿc3冰 {{- if ge (atoi .maxCR) 117 -}} * {{- end -}} {{- end -}}
+          {{- if ge (atoi .maxPR) 100 -}} ÿc2毒 {{- if ge (atoi .maxPR) 111 -}} * {{- end -}} {{- end -}}
+          {{- if ge (atoi .maxDR) 100 -}} ÿc4物 {{- if ge (atoi .maxDR) 110 -}} * {{- end -}} {{- end -}}
+          {{- if ge (atoi .maxMR) 100 -}} ÿc8魔* {{- end -}}
+        {{- else -}}
+          ÿc0無
+        {{- end -}}
+        ÿc5
+        {{- if eq .demon_undead "1" -}} ,只有不死惡魔 {{- end -}}
+        )
+      {{- end }}
+
   - name: add map levels
     resource: resources/generated/levels.tsv
     template: |-
       {{ .zhTW }} [{{ .normal }}|{{ .nightmare }}|{{ .hell }}]
-
-  - name: add level group res
-    resource: resources/generated/levelgroup.tsv
-    template: |-
-      {{ .zhTW }} ÿc5(免疫:
-      {{- if or (ge (atoi .maxFR) 100) (ge (atoi .maxLR) 100) (ge (atoi .maxCR) 100) (ge (atoi .maxPR) 100) (ge (atoi .maxDR) 100) (ge (atoi .maxMR) 100) }}
-        {{- if ge (atoi .maxFR) 100 -}} ÿc1火 {{- if ge (atoi .maxFR) 117 -}} * {{- end -}} {{- end -}}
-        {{- if ge (atoi .maxLR) 100 -}} ÿc9電 {{- if ge (atoi .maxLR) 117 -}} * {{- end -}} {{- end -}}
-        {{- if ge (atoi .maxCR) 100 -}} ÿc3冰 {{- if ge (atoi .maxCR) 117 -}} * {{- end -}} {{- end -}}
-        {{- if ge (atoi .maxPR) 100 -}} ÿc2毒 {{- if ge (atoi .maxPR) 111 -}} * {{- end -}} {{- end -}}
-        {{- if ge (atoi .maxDR) 100 -}} ÿc4物 {{- if ge (atoi .maxDR) 110 -}} * {{- end -}} {{- end -}}
-        {{- if ge (atoi .maxMR) 100 -}} ÿc8魔* {{- end -}}
-      {{- else -}}
-        ÿc0無
-      {{- end -}}
-      ÿc5
-      {{- if eq .demon_undead "1" -}} ,只有不死惡魔 {{- end -}}
-      )
 
   - name: modify text
     resource: resources/text_modify.tsv

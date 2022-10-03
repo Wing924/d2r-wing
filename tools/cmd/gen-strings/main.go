@@ -8,7 +8,9 @@ import (
 	"github.com/Wing924/d2r-wing/tools/lib/enc"
 	"github.com/Wing924/d2r-wing/tools/lib/model"
 	"go.uber.org/zap"
+	"golang.org/x/exp/slices"
 	"os"
+	"strconv"
 	"text/template"
 )
 
@@ -31,7 +33,10 @@ func main() {
 
 	entries := enc.ReadStringsJSON("-")
 	cfg := LoadConfig(*config)
-	processPipeline(entries, cfg)
+	entries = processPipeline(entries, cfg)
+	slices.SortFunc(entries, func(a, b model.Entry) bool {
+		return a.ID < b.ID
+	})
 	writeJSON(entries)
 }
 
@@ -43,46 +48,88 @@ func writeJSON(entries []model.Entry) {
 	fmt.Println(string(out))
 }
 
-func processPipeline(entries []model.Entry, cfg *Config) {
-	var resources []enc.CSVMap
-	var templates []*template.Template
+func processPipeline(entries []model.Entry, cfg *Config) []model.Entry {
+	var resources []enc.CSVTable
+	var idTemplates []*template.Template
+	var keyTemplates []*template.Template
+	var textTemplates []*template.Template
 
 	for _, pip := range cfg.Pipelines {
 		logger.Debugw("prepare pipeline", "pipeline", pip.Name)
-		res := enc.ReadCSVAsMap(pip.Resource)
+		res := enc.ReadCSVAsTable(pip.Resource)
 		var lookupEntries []model.Entry
 		for _, file := range pip.LookupStringFiles {
 			lookupEntries = append(lookupEntries, enc.ReadStringsJSON(file)...)
 		}
 		funcs := CreateFuncs(lookupEntries)
-		tmpl := template.Must(template.New("").Funcs(funcs).Parse(pip.Template))
+
+		idTmpl := template.Must(template.New("").Funcs(funcs).Parse(pip.IdDelta))
+		keyTmpl := template.Must(template.New("").Funcs(funcs).Parse(pip.KeyTemplate))
+		textTmpl := template.Must(template.New("").Funcs(funcs).Parse(pip.Template))
+
 		resources = append(resources, res)
-		templates = append(templates, tmpl)
+		idTemplates = append(idTemplates, idTmpl)
+		keyTemplates = append(keyTemplates, keyTmpl)
+		textTemplates = append(textTemplates, textTmpl)
 	}
 
-	for i, entry := range entries {
+	for i := 0; i < len(entries); i++ {
+		entry := entries[i]
 		oldText := entry.ZhTW
 		for j, pip := range cfg.Pipelines {
 			res := resources[j]
-			row, ok := res[entry.ID]
+
+			rows, ok := res[entry.ID]
 			if !ok {
 				continue
 			}
-			logger.Debugw("process pipeline", "pipeline", pip.Name)
-			data := generateTemplateData(cfg, row, entry)
+			for _, row := range rows {
+				logger.Debugw("process pipeline", "pipeline", pip.Name)
+				data := generateTemplateData(cfg, row, entry)
 
-			out := bytes.NewBuffer(nil)
+				out := bytes.NewBuffer(nil)
 
-			if err := templates[j].Execute(out, data); err != nil {
-				panic(err)
+				if err := textTemplates[j].Execute(out, data); err != nil {
+					panic(err)
+				}
+				newText := out.String()
+				if newText == "(ignore)" {
+					continue
+				}
+
+				if pip.IdDelta == "" {
+					if oldText != newText {
+						logger.Infof("Replace %q\t->\t%q", oldText, newText)
+						entry.ZhTW = newText
+						entries[i] = entry
+					}
+				} else {
+					keyOut := bytes.NewBuffer(nil)
+					if err := keyTemplates[j].Execute(keyOut, data); err != nil {
+						panic(err)
+					}
+
+					idDeltaOut := bytes.NewBuffer(nil)
+					if err := idTemplates[j].Execute(idDeltaOut, data); err != nil {
+						panic(err)
+					}
+					idDelta, err := strconv.Atoi(idDeltaOut.String())
+					if err != nil {
+						panic(err)
+					}
+
+					newEntry := entry
+					newEntry.Key = keyOut.String()
+					newEntry.ID += idDelta
+					newEntry.ZhTW = newText
+					entries = append(entries, newEntry)
+					logger.Infof("New entry #%d %q\t->\t%q", newEntry.ID, newEntry.Key, newText)
+				}
 			}
-			entry.ZhTW = out.String()
-		}
-		if oldText != entry.ZhTW {
-			logger.Infof("Replace %q\t->\t%q", oldText, entry.ZhTW)
-			entries[i] = entry
 		}
 	}
+
+	return entries
 }
 
 func generateTemplateData(cfg *Config, row map[string]string, entry model.Entry) map[string]any {

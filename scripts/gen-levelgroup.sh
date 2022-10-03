@@ -54,13 +54,13 @@ SELECT
     IFNULL(ms.\`ResPo(H)\`, 0) PR
 FROM levels l
     JOIN levelgroups lg ON l.LevelGroup = lg.Name
-    JOIN ($lvl_mon) lm ON l.Name = lm.Name
-    JOIN monstats ms ON lm.monId = ms.Id
+    LEFT JOIN ($lvl_mon) lm ON l.Name = lm.Name
+    LEFT JOIN monstats ms ON lm.monId = ms.Id
 "
-
 
 sql="SELECT
     str.id id,
+    SUBSTR(s.Name, 5, 1) act,
     levelGroup,
     str.zhTW groupName,
     AVG(monDen) avgMonDen,
@@ -74,19 +74,18 @@ sql="SELECT
     MIN(demon_undead) demon_undead
 FROM ($subquery) s
     JOIN str ON s.levelGroup = str.Key
-GROUP BY str.id, levelGroup, groupName
-ORDER BY str.id"
+GROUP BY act, str.id, levelGroup, groupName
+ORDER BY act, str.id"
 
 # sql="$subquery"
 
-patches/12_levelgroup_res/data/global/excel/levelgroups.txt.sh < origin/data/global/excel/levelgroups.txt > "$tmpdir/levelgroups.txt"
-scripts/json-to-tsv.sh <(patches/12_levelgroup_res/data/local/lng/strings/levels.json.sh < origin/data/local/lng/strings/levels.json) > "$tmpdir/str.tsv"
+scripts/json-to-tsv.sh origin/data/local/lng/strings/levels.json > "$tmpdir/str.tsv"
 scripts/json-to-tsv.sh origin/data/local/lng/strings/monsters.json > "$tmpdir/monsters.tsv"
 
 textql -header -dlm=tab -output-dlm=tab -output-header \
     -sql "$sql" \
     origin/data/global/excel/levels.txt \
-    "$tmpdir/levelgroups.txt" \
+    origin/data/global/excel/levelgroups.txt \
     origin/data/global/excel/monstats.txt \
     origin/data/global/excel/montype.txt \
     "$tmpdir/str.tsv" \

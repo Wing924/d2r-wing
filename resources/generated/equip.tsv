@@ -1,494 +1,494 @@
-id	Key	old_zhTW	zhTW	category	type	grade	weight	speed	socket	max	maxEth	qlvls	tc
-1930	cap	帽子	便帽	armo	helm	normal			2	5	7	1	3
-1931	skp	骷髏帽	顱帽	armo	helm	normal			2	11	16	5	6
-1932	hlm	頭盔	頭盔	armo	helm	normal			2	18	27	11	12
-1933	fhl	高級頭盔	全罩盔	armo	helm	normal			2	26	39	15	15
-1934	ghm	卓越頭盔	重盔	armo	helm	normal			3	35	52	23	24
-1935	crn	皇冠	王冠	armo	helm	normal			3	45	67	29	30
-1936	msk	面具	面具	armo	helm	normal			3	27	40	19	21
-1937	qui	布甲	棉布甲	armo	tors	normal	light		2	11	16	1	3
-1938	lea	皮甲	皮革甲	armo	tors	normal	light		2	17	25	3	3
-1939	hla	硬皮甲	硬皮甲	armo	tors	normal	light		2	24	36	5	6
-1940	stu	鑲嵌甲	鑲釘皮甲	armo	tors	normal	light		2	35	52	8	9
-1941	rng	鎖環甲	環甲	armo	tors	normal	medium		3	48	72	11	12
-1942	scl	鱗甲	鱗甲	armo	tors	normal	heavy		2	60	90	13	15
-1943	chn	鎖子甲	鎖鍊甲	armo	tors	normal	medium		2	75	112	15	15
-1944	brs	胸甲	胸鎧	armo	tors	normal	light		3	68	102	18	18
-1945	spl	板甲	板甲	armo	tors	normal	medium		2	95	142	20	21
-1946	plt	鎧甲	鎧甲	armo	tors	normal	heavy		2	116	174	24	24
-1947	fld	實戰鎧甲	野戰鎧甲	armo	tors	normal	medium		2	105	157	28	30
-1948	gth	哥德戰甲	哥德鎧甲	armo	tors	normal	medium		4	135	202	32	33
-1949	ful	高級戰甲	全身鎧甲	armo	tors	normal	heavy		4	161	241	37	39
-1950	aar	古代裝甲	上古鎧甲	armo	tors	normal	medium		4	233	349	40	42
-1951	ltp	輕型裝甲	輕型鎧甲	armo	tors	normal	light		3	107	160	35	36
-1952	buc	圓盾	小圓盾	armo	shie	normal	light		1	6	9	1	3
-1953	sml	小盾牌	小型盾	armo	shie	normal	light		2	10	15	5	6
-1954	lrg	大盾牌	大型盾	armo	shie	normal	medium		3	14	21	11	12
-1955	kit	輕盾	鳶盾	armo	shie	normal	light		3	18	27	15	15
-1956	tow	塔盾	塔盾	armo	shie	normal	heavy		3	25	37	22	24
-1957	gts	哥德盾牌	哥德盾	armo	shie	normal	medium		3	35	52	30	30
-1958	lgl	皮手套	皮革手套	armo	glov	normal				3	4	3	3
-1959	vgl	重手套	厚皮手套	armo	glov	normal				6	9	7	9
-1960	mgl	鎖鍊手套	鍊甲手套	armo	glov	normal				9	13	12	12
-1961	tgl	輕型鐵手套	輕型護手	armo	glov	normal				11	16	20	21
-1962	hgl	鐵手套	鋼鐵護手	armo	glov	normal				15	22	27	27
-1963	lbt	皮靴	皮靴	armo	boot	normal				3	4	3	3
-1964	vbt	重靴	重靴	armo	boot	normal				6	9	7	9
-1965	mbt	鎖鍊靴	鎖鍊靴	armo	boot	normal				9	13	12	12
-1966	tbt	輕型金屬靴	輕鎧靴	armo	boot	normal				11	16	20	21
-1967	hbt	護脛	護脛	armo	boot	normal				15	22	27	27
-1968	lbl	飾帶	束帶	armo	belt	normal				2	3	3	3
-1969	vbl	輕扣帶	輕腰帶	armo	belt	normal				3	4	7	9
-1970	mbl	扣帶	腰帶	armo	belt	normal				5	7	12	12
-1971	tbl	重扣帶	厚腰帶	armo	belt	normal				6	9	20	21
-1972	hbl	金屬扣帶	鎧甲腰帶	armo	belt	normal				11	16	27	27
-1973	bhm	白骨頭盔	骸骨頭盔	armo	helm	normal			2	36	54	22	24
-1974	bsh	白骨盾牌	骨盾	armo	shie	normal	light		2	30	45	19	21
-1975	spk	尖刺盾牌	尖刺盾	armo	shie	normal	light		2	25	37	11	12
-1976	hax	手斧	手斧	weap	axe	normal		0	2		0	3	3
-1977	axe	斧	斧	weap	axe	normal		10	4		0	7	9
-1978	2ax	雙刃斧	雙刃斧	weap	axe	normal		10	5		0	13	15
-1979	mpi	軍用鍬	軍用鎬	weap	axe	normal		-10	6		0	19	21
-1980	wax	巨戰斧	征戰斧	weap	axe	normal		0	6		0	25	27
-1981	lax	巨斧	重斧	weap	axe	normal		-10	4		0	6	6
-1982	bax	闊斧	闊斧	weap	axe	normal		0	5		0	12	12
-1983	btx	戰鬥斧	戰斧	weap	axe	normal		10	5		0	17	18
-1984	gax	卓越之斧	巨斧	weap	axe	normal		-10	6		0	23	24
-1985	gix	大斧	巨人斧	weap	axe	normal		10	6		0	27	27
-1986	wnd	法杖	魔杖	weap	wand	normal		0	1		0	2	3
-1987	ywn	紫杉之杖	紫杉魔杖	weap	wand	normal		10	1		0	12	12
-1988	bwn	骨杖	骸骨魔杖	weap	wand	normal		-20	2		0	18	18
-1989	gwn	殘酷之杖	陰森魔杖	weap	wand	normal		0	2		0	26	27
-1990	clb	木棒	短棒	weap	club	normal		-10	2		0	1	3
-1991	scp	權杖	權杖	weap	scep	normal		0	2		0	3	3
-1992	gsc	雄偉權杖	莊嚴權杖	weap	scep	normal		10	3		0	15	15
-1993	wsp	巨戰權杖	征戰權杖	weap	scep	normal		-10	5		0	21	21
-1994	spc	狼牙棒	狼牙棒	weap	club	normal		0	2		0	4	6
-1995	mac	釘頭錘	釘鎚	weap	mace	normal		0	2		0	8	9
-1996	mst	流星鎚	釘頭鎚	weap	mace	normal		10	3		0	13	15
-1997	fla	連枷	連枷	weap	mace	normal		-10	5		0	19	21
-1998	whm	巨戰鐵鎚	戰鎚	weap	hamm	normal		20	4		0	25	27
-1999	mau	大木棍	重鎚	weap	hamm	normal		10	6		0	21	21
-2000	gma	卓越巨棍	巨型重鎚	weap	hamm	normal		20	6		0	32	33
-2001	ssd	短劍	短劍	weap	swor	normal		0	2		0	1	3
-2002	scm	彎刀	彎刀	weap	swor	normal		-20	2		0	5	6
-2003	sbr	軍刀	軍刀	weap	swor	normal		-10	2		0	8	9
-2004	flc	彎形大刀	彎刃大刀	weap	swor	normal		20	2		0	11	12
-2005	crs	水晶劍	水晶劍	weap	swor	normal		0	6		0	11	12
-2006	bsd	闊劍	闊劍	weap	swor	normal		0	4		0	15	15
-2007	lsd	長劍	長劍	weap	swor	normal		-10	4		0	20	21
-2008	wsd	巨戰之劍	征戰劍	weap	swor	normal		0	3		0	27	27
-2009	2hs	雙手劍	雙手劍	weap	swor	normal		0	3		0	10	12
-2010	clm	雙刃大刀	闊刃大劍	weap	swor	normal		10	4		0	17	18
-2011	gis	大劍	大劍	weap	swor	normal		0	4		0	21	21
-2012	bsw	巨劍	重劍	weap	swor	normal		10	4		0	24	24
-2013	flb	雙手飾劍	焰形劍	weap	swor	normal		-10	5		0	27	27
-2014	gsd	卓越之劍	巨劍	weap	swor	normal		10	6		0	33	33
-2015	dgr	匕首	匕首	weap	knif	normal		-20	1		0	3	3
-2016	dir	長匕首	長匕首	weap	knif	normal		0	1		0	9	9
-2017	kri	波形刀	波刃匕首	weap	knif	normal		-20	3		0	17	18
-2018	bld	短刀	利刃匕首	weap	knif	normal		-10	2		0	23	24
-2019	tkf	飛刀	飛刀	weap	tkni	normal		0			0	2	3
-2020	tax	飛斧	飛斧	weap	taxe	normal		10			0	7	9
-2021	bkf	平衡小刀	平衡飛刀	weap	tkni	normal		-20			0	13	15
-2022	bal	平衡斧	平衡飛斧	weap	taxe	normal		-10			0	16	18
-2023	jav	標槍	標槍	weap	jave	normal		-10			0	1	3
-2024	pil	短鏢槍	長標槍	weap	jave	normal		0			0	10	12
-2025	ssp	短矛	短矛	weap	jave	normal		10			0	15	15
-2026	glv	大長刀	長刃槍	weap	jave	normal		20			0	23	24
-2027	tsp	飛矛	飛矛	weap	jave	normal		-10			0	29	30
-2028	spr	長矛	長矛	weap	spea	normal		-10	3		0	5	6
-2029	tri	三叉戟	三叉戟	weap	spea	normal		0	4		0	9	9
-2030	brn	叉	三叉槍	weap	spea	normal		-20	5		0	16	18
-2031	spt	大戰戟	勾刃槍	weap	spea	normal		0	6		0	20	21
-2032	pik	矛	步戰矛	weap	spea	normal		20	6		0	24	24
-2033	bar	大砍刀	月牙砍刀	weap	pole	normal		10	3		0	5	6
-2034	vou	鉤鐮槍	槍斧	weap	pole	normal		0	4		0	11	12
-2035	scy	鐮刀	鐮刀	weap	pole	normal		-10	5		0	15	15
-2036	pax	長柄戰斧	長柄斧	weap	pole	normal		10	5		0	21	21
-2037	hal	長戟	長戟	weap	pole	normal		0	6		0	29	30
-2038	wsc	巨戰鐮刀	征戰鐮刀	weap	pole	normal		-10	6		0	34	36
-2039	sst	短棍	短杖	weap	staf	normal		-10	2		0	1	3
-2040	lst	長棍	長杖	weap	staf	normal		0	3		0	8	9
-2041	cst	多節棍	木節法杖	weap	staf	normal		10	4		0	12	12
-2042	bst	戰鬥法杖	戰鬥法杖	weap	staf	normal		0	4		0	17	18
-2043	wst	巨戰法杖	征戰法杖	weap	staf	normal		20	6		0	24	24
-2044	sbw	短弓	短弓	weap	bow	normal		5	3		0	1	3
-2045	hbw	獵弓	獵弓	weap	bow	normal		-10	4		0	5	6
-2046	lbw	長弓	長弓	weap	bow	normal		0	5		0	8	9
-2047	cbw	組合弓	複合弓	weap	bow	normal		-10	4		0	12	12
-2048	sbb	短戰鬥弓	戰鬥短弓	weap	bow	normal		0	5		0	18	18
-2049	lbb	長戰鬥弓	戰鬥長弓	weap	bow	normal		10	6		0	23	24
-2050	swb	短巨戰弓	征戰短弓	weap	bow	normal		0	5		0	27	27
-2051	lwb	長巨戰弓	征戰長弓	weap	bow	normal		10	6		0	31	33
-2052	lxb	輕十字弓	輕弩	weap	xbow	normal		-10	3		0	6	6
-2053	mxb	十字弓	弩	weap	xbow	normal		0	4		0	15	15
-2054	hxb	重十字弓	重弩	weap	xbow	normal		10	6		0	24	24
-2055	rxb	連射十字弓	連弩	weap	xbow	normal		-40	5		0	33	33
-2056	xpk	倒刺護盾	倒刺盾	armo	shie	exceptional	light		2	78	117	42	42
-2057	xsh	冷酷之盾	陰森盾牌	armo	shie	exceptional	light		2	150	225	48	48
-2058	xh9	殘酷頭盔	陰森頭盔	armo	helm	exceptional			2	125	187	50	51
-2059	zhb	巨戰腰帶	征戰腰帶	armo	belt	exceptional				52	78	54	54
-2060	ztb	戰場腰帶	戰鬥腰帶	armo	belt	exceptional				42	63	49	51
-2061	zmb	織網腰帶	鐵網腰帶	armo	belt	exceptional				40	60	43	45
-2062	zvb	鯊皮腰帶	鯊皮腰帶	armo	belt	exceptional				36	54	39	39
-2063	zlb	魔皮勳帶	魔皮束帶	armo	belt	exceptional				34	51	36	36
-2064	xhb	巨戰之靴	征戰靴	armo	boot	exceptional				53	79	54	54
-2065	xtb	戰場之靴	戰鬥靴	armo	boot	exceptional				47	70	49	51
-2066	xmb	織網之靴	鐵網靴	armo	boot	exceptional				44	66	43	45
-2067	xvb	鯊皮之靴	鯊皮靴	armo	boot	exceptional				39	58	39	39
-2068	xlb	魔皮靴	魔皮長靴	armo	boot	exceptional				35	52	36	36
-2070	xtg	戰場手套	戰鬥護手	armo	glov	exceptional				47	70	49	51
-2071	xmg	重型手鐲	重型護腕	armo	glov	exceptional				44	66	43	45
-2072	xvg	鯊魚皮套	鯊皮手套	armo	glov	exceptional				39	58	39	39
-2073	xlg	魔皮手套	魔皮手套	armo	glov	exceptional				35	52	33	33
-2074	xts	古代之盾	上古盾	armo	shie	exceptional	medium		3	93	139	56	57
-2075	xow	大盾	大盾	armo	shie	exceptional	heavy		3	78	117	50	51
-2076	xit	龍盾	龍盾	armo	shie	exceptional	light		3	67	100	45	45
-2077	xrg	鱗盾	大圓盾	armo	shie	exceptional	medium		3	61	91	42	42
-2078	xml	圓型盾	圓型盾	armo	shie	exceptional	light		2	55	82	37	39
-2079	xuc	防禦盾	防禦盾	armo	shie	exceptional	light		1	49	73	34	36
-2080	xtp	法師鎧甲	法師鎧甲	armo	tors	exceptional	light		3	261	391	60	60
-2081	xar	華麗戰甲	華麗戰甲	armo	tors	exceptional	medium		4	450	675	64	66
-2082	xul	混沌戰甲	混沌戰甲	armo	tors	exceptional	heavy		4	342	513	61	63
-2083	xth	凸紋戰甲	雕紋戰甲	armo	tors	exceptional	medium		4	303	454	58	60
-2084	xld	鯊齒戰甲	鯊齒戰甲	armo	tors	exceptional	medium		3	258	387	55	57
-2085	xlt	聖堂武士外袍	聖堂騎士戰甲	armo	tors	exceptional	heavy		3	274	411	52	54
-2086	xpl	羅瑟戰甲	赤褐戰甲	armo	tors	exceptional	medium		3	243	364	49	51
-2087	xrs	護胸甲	護胸甲	armo	tors	exceptional	light		3	202	303	47	48
-2088	xhn	織網戰甲	鐵網戰甲	armo	tors	exceptional	medium		3	213	319	45	45
-2089	xcl	提格萊特戰甲	鎖鱗戰甲	armo	tors	exceptional	heavy		3	190	285	43	45
-2090	xng	連扣戰甲	鍊扣戰甲	armo	tors	exceptional	medium		3	172	258	42	42
-2091	xtu	攀繞戰甲	格網護甲	armo	tors	exceptional	light		2	153	229	40	42
-2092	xla	魔皮戰甲	魔皮護甲	armo	tors	exceptional	light		2	136	204	37	39
-2093	xea	海蛇皮甲	海蛇皮甲	armo	tors	exceptional	light		2	126	189	36	36
-2094	xui	鬼魂戰甲	鬼魂戰衣	armo	tors	exceptional	light		2	117	175	34	36
-2095	xsk	死亡面具	死亡面具	armo	helm	exceptional			3	86	129	48	48
-2096	xrn	巨皇冠	莊嚴王冠	armo	helm	exceptional			3	113	169	55	57
-2098	xhl	輕鋼盔	輕盔	armo	helm	exceptional			2	84	126	45	45
-2099	xlm	無頰頭盔	兜盔	armo	helm	exceptional			2	72	108	42	42
-2100	xkp	輕便頭盔	便盔	armo	helm	exceptional			2	62	93	37	39
-2101	xap	戰帽	戰帽	armo	helm	exceptional			2	53	79	34	36
-2102	8rx	巧工弩	諸葛弩	weap	xbow	exceptional		-60	5		0	54	54
-2103	8hx	弩弓	砲弩	weap	xbow	exceptional		10	6		0	47	48
-2104	8mx	攻城十字弓	攻城弩	weap	xbow	exceptional		0	4		0	40	42
-2105	8lx	石弓	鋼弩	weap	xbow	exceptional		-10	3		0	34	36
-2106	8lw	哥德弓	哥德弓	weap	bow	exceptional		10	6		0	52	54
-2107	8sw	符文之弓	符文弓	weap	bow	exceptional		0	5		0	49	51
-2108	8l8	長攻城弓	攻城長弓	weap	bow	exceptional		10	6		0	46	48
-2109	8s8	短攻城弓	攻城短弓	weap	bow	exceptional		0	5		0	43	45
-2110	8cb	雙弓	雙曲弓	weap	bow	exceptional		-10	4		0	39	39
-2111	8lb	杉木弓	杉木弓	weap	bow	exceptional		0	5		0	35	36
-2112	8hb	剃刀之弓	剃刀弓	weap	bow	exceptional		-10	4		0	33	33
-2113	8sb	鋒銳之弓	銳弓	weap	bow	exceptional		5	3		0	30	30
-2114	8ws	符文之棍	符文法杖	weap	staf	exceptional		20	6		0	47	48
-2115	8bs	哥德之棍	哥德法杖	weap	staf	exceptional		0	4		0	42	42
-2116	8cs	杉木之棍	杉木法杖	weap	staf	exceptional		10	4		0	38	39
-2117	8ls	六尺棍	長棍	weap	staf	exceptional		0	3		0	35	36
-2118	8ss	喬木棒	棍杖	weap	staf	exceptional		-10	2		0	30	30
-2119	9wc	殘酷鐮刀	陰森鐮刀	weap	pole	exceptional		-10	6		0	55	57
-2120	9h9	雙鋒戰戟	渡鴉喙	weap	pole	exceptional		0	6		0	51	51
-2121	9pa	戰戟	闊頭槍	weap	pole	exceptional		10	5		0	35	36
-2122	9s8	戰鬥鐮刀	戰鬥鐮刀	weap	pole	exceptional		-10	5		0	40	42
-2123	9vo	比爾長刀	長柄鍥	weap	pole	exceptional		0	4		0	37	39
-2124	9b7	羅佳柏斧	鉤斧	weap	pole	exceptional		10	3		0	33	33
-2125	9p9	長槍	長槍	weap	spea	exceptional		20	6		0	47	48
-2126	9st	三叉長槍	三尖槍	weap	spea	exceptional		0	6		0	44	45
-2127	9br	巨戰之叉	征戰軍叉	weap	spea	exceptional		-20	5		0	41	42
-2128	9tr	魔鬼之叉	矛叉	weap	spea	exceptional		0	4		0	36	36
-2129	9sr	巨戰長矛	征戰長矛	weap	spea	exceptional		-10	3		0	33	33
-2130	9ts	魚叉	魚叉	weap	jave	exceptional		-10			0	51	51
-2131	9gl	闊針長矛	尖刃槍	weap	jave	exceptional		20			0	46	48
-2132	9s9	銳矛	銳矛標槍	weap	jave	exceptional		10			0	40	42
-2133	9pi	卓越標槍	重型標槍	weap	jave	exceptional		0			0	37	39
-2134	9ja	巨戰標槍	征戰標槍	weap	jave	exceptional		-10			0	30	30
-2135	9b8	短戰戟	投斧	weap	taxe	exceptional		-10			0	41	42
-2136	9bk	巨戰飛鏢	征戰飛鏢	weap	tkni	exceptional		-20			0	39	39
-2137	9ta	法蘭飛斧	法蘭西飛斧	weap	taxe	exceptional		10			0	34	36
-2138	9tk	戰鬥飛鏢	戰鬥飛鏢	weap	tkni	exceptional		0			0	31	33
-2140	9kr	強波刀	闊身短劍	weap	knif	exceptional		-20	3		0	42	42
-2141	9di	詩歌匕首	圓柄匕首	weap	knif	exceptional		0	1		0	36	36
-2142	9dg	銳匕	刺擊短劍	weap	knif	exceptional		-20	1		0	31	33
-2143	9gd	死刑之劍	處刑劍	weap	swor	exceptional		10	6		0	54	54
-2144	9fb	瑞韓德之劍	日耳曼大劍	weap	swor	exceptional		-10	5		0	49	51
-2145	9gs	長牙劍	長牙劍	weap	swor	exceptional		0	4		0	45	45
-2146	9cm	雙刃鐮	達西安長刀	weap	swor	exceptional		10	4		0	42	42
-2147	92h	斬鐵劍	雙手重劍	weap	swor	exceptional		0	3		0	37	39
-2148	9wd	古代之劍	上古劍	weap	swor	exceptional		0	3		0	49	51
-2149	9ls	符文劍	符文劍	weap	swor	exceptional		-10	4		0	44	45
-2150	9bs	戰鬥劍	戰鬥長劍	weap	swor	exceptional		0	4		0	40	42
-2151	9cr	空間之刃	次元刃	weap	swor	exceptional		0	6		0	37	39
-2152	9fc	圓月彎刀	印度彎刀	weap	swor	exceptional		20	2		0	37	39
-2153	9sb	虛偽之刃	波斯彎刀	weap	swor	exceptional		-10	2		0	35	36
-2154	9sm	微彎劍	水手刀	weap	swor	exceptional		-30	2		0	43	45
-2155	9ss	羅馬短劍	羅馬短劍	weap	swor	exceptional		0	2		0	30	30
-2156	9gm	戰槌	長柄戰鎚	weap	hamm	exceptional		20	6		0	53	54
-2157	9m9	巨戰木棍	征戰重鎚	weap	hamm	exceptional		10	6		0	45	45
-2158	9wh	戰鬥鐵鎚	戰鬥鐵鎚	weap	hamm	exceptional		20	4		0	48	48
-2159	9fl	鐵皮鞭	刑罪連枷	weap	mace	exceptional		-10	5		0	43	45
-2160	9mt	鋸齒流星鎚	鋸齒釘頭鎚	weap	mace	exceptional		10	3		0	39	39
-2161	9ma	凸緣釘頭錘	凸緣釘鎚	weap	mace	exceptional		0	2		0	35	36
-2162	9sp	倒鉤鎚	倒刺棍棒	weap	club	exceptional		0	3		0	32	33
-2163	9ws	神屬權杖	聖恩權杖	weap	scep	exceptional		-10	5		0	45	45
-2164	9qs	聖水噴杖	聖水禮杖	weap	scep	exceptional		10	3		0	40	42
-2165	9sc	符文權杖	符文權杖	weap	scep	exceptional		0	2		0	31	33
-2166	9cl	棍棒	鬥棍	weap	club	exceptional		-10	2		0	30	30
-2167	9gw	墓地之杖	墓地魔杖	weap	wand	exceptional		0	2		0	49	51
-2168	9bw	古墓之杖	古墓魔杖	weap	wand	exceptional		-20	2		0	43	45
-2169	9yw	淨化之杖	石木魔杖	weap	wand	exceptional		10	2		0	38	39
-2170	9wn	燒焦之杖	焦木魔杖	weap	wand	exceptional		0	1		0	31	33
-2171	9gi	古代之斧	上古斧	weap	axe	exceptional		10	6		0	51	51
-2172	9ga	哥德之斧	哥德斧	weap	axe	exceptional		-10	6		0	46	48
-2173	9bt	戰鬥斧	長戰斧	weap	axe	exceptional		10	5		0	42	42
-2174	9ba	鉤斧	鉤斧	weap	axe	exceptional		0	5		0	38	39
-2175	9la	軍斧	軍斧	weap	axe	exceptional		-10	4		0	34	36
-2176	9wa	納卡	那伽斧	weap	axe	exceptional		0	6		0	48	48
-2177	9mp	喙鉗	鴉嘴鎬	weap	axe	exceptional		-10	6		0	43	45
-2178	92a	強化雙斧	雙面斧	weap	axe	exceptional		10	5		0	39	39
-2179	9ax	切肉斧	斬斧	weap	axe	exceptional		10	4		0	34	36
-2180	9ha	小斧	短斧	weap	axe	exceptional		0	2		0	31	33
-2181	9b9	哥德劍	哥德劍	weap	swor	exceptional		10	4		0	48	48
-10021	xhm	翼盔	翼盔	armo	helm	exceptional			3	98	147	51	51
-11006	neg	地獄爪牙之骨	地獄爪牙顱骨	armo	head	elite			2	141	211	67	69
-11010	7wa	狂戰士斧	狂戰斧	weap	axe	elite		0	6		0	85	87
-11012	xhg	巨戰手套	征戰護手	armo	glov	exceptional				53	79	54	54
-11028	9bl	小劍	窄刃匕首	weap	knif	exceptional		-10	2		0	46	48
-20181	ktr	拳劍	拳刃	weap	h2h	normal		-10	2		0	1	3
-20182	wrb	腕刃	腕刃	weap	h2h	normal		0	2		0	9	9
-20183	ces	腰刀	刃拳	weap	h2h	normal		0	2		0	15	15
-20184	clw	爪	爪	weap	h2h	normal		-10	3		0	18	18
-20185	btl	刃爪	刃爪	weap	h2h	normal		-20	3		0	21	21
-20186	skr	剪咬刃	剪刃	weap	h2h	normal		-10	3		0	24	24
-20187	9ar	格鬥刃	格鬥刃	weap	h2h	exceptional		0	3		0	28	30
-20188	9wb	腕刺	腕刺	weap	h2h	exceptional		-10	2		0	32	33
-20189	9xf	格鬥爪	格鬥爪	weap	h2h	exceptional		10	2		0	36	36
-20190	9cs	手鐮	手鐮	weap	h2h2	exceptional		-10	2		0	41	42
-20191	9lw	巨爪	巨爪	weap	h2h2	exceptional		-20	3		0	45	45
-20192	9tw	巨鷹爪	巨鷹爪	weap	h2h2	exceptional		-30	3		0	50	51
-20193	9qr	格鬥剪	格鬥剪刃	weap	h2h2	exceptional		0	3		0	54	54
-20194	7ar	近身刃	穿擊拳刃	weap	h2h2	elite		0	3		0	59	60
-20195	7wb	腕劍	腕劍	weap	h2h2	elite		-10	3		0	62	63
-20196	7xf	戰拳	征戰拳套	weap	h2h2	elite		10	2		0	68	69
-20197	7cs	鬥腰刀	戰鬥刃拳	weap	h2h2	elite		-10	2		0	73	75
-20198	7lw	猛禽爪	蠻獸爪	weap	h2h2	elite		-20	3		0	78	78
-20199	7tw	符紋爪	符紋爪	weap	h2h2	elite		-30	3		0	81	81
-20200	7qr	近身剪	穿擊剪刃	weap	h2h2	elite		0	3		0	85	87
-20201	7ha	戰鉞 	輕斧	weap	axe	elite		0	2		0	54	54
-20202	7ax	彎月斧	彎月斧	weap	axe	elite		10	4		0	61	63
-20203	72a	雙頭斧	雙頭斧	weap	axe	elite		10	5		0	70	72
-20204	7mp	戰刺	征戰鎬	weap	axe	elite		-10	6		0	79	81
-20206	7la	猛禽斧	蠻野斧	weap	axe	elite		-15	4		0	57	57
-20207	7ba	銀刃斧	銀刃斧	weap	axe	elite		0	5		0	65	66
-20208	7bt	斬首斧	斬首斧	weap	axe	elite		10	5		0	73	75
-20209	7ga	豪傑斧	豪傑斧	weap	axe	elite		-10	6		0	82	84
-20210	7gi	榮光之斧	榮光斧	weap	axe	elite		10	6		0	85	87
-20211	7wn	洗鍊法杖	拋光魔杖	weap	wand	elite		0	2		0	55	57
-20212	7yw	鬼魂法杖	鬼魂魔杖	weap	wand	elite		10	2		0	65	66
-20213	7bw	巫妖法杖	巫妖魔杖	weap	wand	elite		-20	2		0	75	75
-20214	7gw	破隱法杖	埋骨魔杖	weap	wand	elite		0	2		0	86	87
-20215	7cl	戰儀杖	打擊棍	weap	club	elite		-10	2		0	52	54
-20216	7sc	強威權杖	強威權杖	weap	scep	elite		0	2		0	62	63
-20217	7qs	熾天使法杖	熾天使節杖	weap	scep	elite		10	3		0	76	78
-20218	7ws	神使之杖	神使權杖	weap	scep	elite		-10	5		0	85	87
-20219	7sp	暴君之棒	暴君棍棒	weap	club	elite		0	3		0	57	57
-20220	7ma	強化釘頭錘	強化釘鎚	weap	mace	elite		0	2		0	63	63
-20221	7mt	惡魔流星錘	妖鬼釘頭鎚	weap	mace	elite		10	3		0	70	72
-20222	7fl	天罰之錘	罪罰連枷	weap	mace	elite		-10	5		0	76	78
-20223	7wh	傳說之鎚	傳說戰鎚	weap	hamm	elite		20	4		0	82	84
-20224	7m7	食人魔之錘	巨魔重鎚	weap	hamm	elite		10	6		0	69	69
-20225	7gm	雷錘	雷霆重鎚	weap	hamm	elite		20	6		0	85	87
-20226	7ss	短劍	法卡塔劍	weap	swor	elite		0	2		0	56	57
-20227	7sm	土耳其劍	土耳其彎刀	weap	swor	elite		-20	2		0	61	63
-20228	7sb	優雅之劍	典雅彎刀	weap	swor	elite		-10	2		0	63	63
-20229	7fc	九頭蛇刃	多頭蛇刃	weap	swor	elite		10	2		0	69	69
-20230	7cr	幻化之刃	幻化之刃	weap	swor	elite		-30	6		0	73	75
-20231	7bs	征服之劍	征服之劍	weap	swor	elite		0	4		0	78	78
-20232	7ls	神秘之劍	絕秘劍	weap	swor	elite		-10	4		0	82	84
-20233	7wd	秘儀之劍	秘儀劍	weap	swor	elite		0	3		0	85	87
-20234	72h	傳說之劍	傳說劍	weap	swor	elite		-15	3		0	59	60
-20235	7cm	高地之劍	高地劍	weap	swor	elite		-5	4		0	66	66
-20236	7gs	炎魔之刃	炎魔之刃	weap	swor	elite		0	4		0	71	72
-20237	7b7	冠軍之劍	豪傑大劍	weap	swor	elite		-10	4		0	77	78
-20238	7fb	巨神之劍	巨神劍	weap	swor	elite		10	5		0	80	81
-20239	7gd	巨神之刃	巨神刃	weap	swor	elite		5	6		0	85	87
-20240	7dg	骸骨小刀	骸骨小刀	weap	knif	elite		-20	1		0	58	60
-20241	7di	秘銀小刀	秘銀尖刀	weap	knif	elite		0	1		0	70	72
-20242	7kr	齒緣小刀	尖齒小刀	weap	knif	elite		-20	3		0	83	84
-20243	7bl	傳說尖刺	傳說尖刀	weap	knif	elite		-10	2		0	85	87
-20244	7tk	飛刀	高速飛刀	weap	tkni	elite		0			0	64	66
-20245	7ta	飛斧	高速飛斧	weap	taxe	elite		10			0	56	57
-20246	7bk	翼刀	刃翼飛刀	weap	tkni	elite		-20			0	77	78
-20247	7b8	翼斧	刃翼飛斧	weap	taxe	elite		-10			0	80	81
-20248	7ja	亥伯龍之槍	亥伯龍標槍	weap	jave	elite		-10			0	54	54
-20249	7pi	冥河標槍	冥河標槍	weap	jave	elite		0			0	62	63
-20250	7s7	炎魔長矛	炎魔長矛	weap	jave	elite		10			0	71	72
-20251	7gl	鬼魂尖槍	鬼魂刃槍	weap	jave	elite		20			0	79	81
-20252	7ts	翼魚叉	飛翼魚叉	weap	jave	elite		-10			0	85	87
-20253	7sr	亥伯龍之矛	亥伯龍矛	weap	spea	elite		-10	3		0	58	60
-20254	7tr	冥河之槍	冥河戰矛	weap	spea	elite		0	4		0	66	66
-20255	7br	刺人槍	捕人叉	weap	spea	elite		-20	5		0	74	75
-20256	7st	鬼魂之矛	鬼魂長矛	weap	spea	elite		0	6		0	83	84
-20257	7p7	戰槍	征戰長槍	weap	spea	elite		20	6		0	85	87
-20258	7o7	食人魔之斧	巨魔斧	weap	pole	elite		0	3		0	60	60
-20259	7vo	巨神之斧	巨神長柄斧	weap	pole	elite		10	4		0	64	66
-20260	7s8	銳利之斧	斬鐮	weap	pole	elite		-10	5		0	71	72
-20261	7pa	神秘之斧	絕秘斧	weap	pole	elite		10	5		0	79	81
-20262	7h7	巨長斧	巨型長柄斧	weap	pole	elite		0	6		0	84	84
-20263	7wc	鮫尾巨斧	巨型斬鐮	weap	pole	elite		-10	6		0	85	87
-20264	6ss	手杖	手杖	weap	staf	elite		-10	2		0	58	60
-20265	6ls	鐘乳石之杖	鐘乳石杖	weap	staf	elite		10	3		0	66	66
-20266	6cs	長老之杖	長者法杖	weap	staf	elite		0	4		0	74	75
-20267	6bs	樹皮之杖	節瘤木杖	weap	staf	elite		0	4		0	83	84
-20268	6ws	執政官之杖	統御者法杖	weap	staf	elite		10	6		0	85	87
-20269	6sb	蜘蛛弓	蜘蛛弓	weap	bow	elite		5	3		0	55	57
-20270	6hb	刀鋒弓	刀鋒弓	weap	bow	elite		-10	4		0	60	60
-20271	6lb	陰影弓	暗影弓	weap	bow	elite		0	5		0	63	63
-20272	6cb	巨弓	巨弓	weap	bow	elite		-10	4		0	68	69
-20273	6s7	鑽石弓	鑽石弓	weap	bow	elite		0	5		0	72	72
-20274	6l7	十字軍之弓	聖教軍長弓	weap	bow	elite		10	6		0	77	78
-20275	6sw	庇護之弓	庇護弓	weap	bow	elite		0	5		0	80	81
-20276	6lw	九頭蛇弓	多頭蛇弓	weap	bow	elite		10	6		0	85	87
-20277	6lx	彈丸弓	彈丸弩	weap	xbow	elite		-10	3		0	57	57
-20278	6mx	蛇魔女十字弓	蛇魔弩	weap	xbow	elite		0	4		0	67	69
-20279	6hx	巨神十字弓	巨神弩	weap	xbow	elite		10	6		0	75	75
-20280	6rx	惡魔十字弓	惡魔弩	weap	xbow	elite		-60	5		0	84	84
-20281	ob1	鷹之法珠	鷹之法珠	weap	orb	normal		-10	2		0	1	3
-20282	ob2	神聖天球	神聖天球	weap	orb	normal		-10	2		0	8	9
-20283	ob3	攏煙之球	攏煙之球	weap	orb	normal		0	2		0	12	12
-20284	ob4	握扣法珠	握扣法珠	weap	orb	normal		0	2		0	17	18
-20292	am1	男性之弓	獵鹿弓	weap	abow	normal		0	5		0	18	18
-20293	am2	反射之弓	反射弓	weap	abow	normal		10	5		0	27	27
-20294	am3	女士之矛	女戰長矛	weap	aspe	normal		0	6		0	18	18
-20295	am4	女士長矛	女戰長槍	weap	aspe	normal		10	6		0	27	27
-20296	am5	女士鏢槍	女戰標槍	weap	ajav	normal		-10			0	23	24
-20297	ob6	靈光法珠	靈光法珠	weap	orb	exceptional		-10	2		0	32	33
-20298	ob7	水晶天球	水晶天球	weap	orb	exceptional		-10	2		0	37	39
-20299	ob8	雲霧之球	雲霧之球	weap	orb	exceptional		0	2		0	41	42
-20300	ob9	閃耀之球	閃耀之球	weap	orb	exceptional		0	2		0	46	48
-20301	oba	渦流水晶	渦流水晶	weap	orb	exceptional		10	3		0	50	51
-20302	am6	灰木之弓	梣木弓	weap	abow	exceptional		0	5		0	39	39
-20303	am7	祭典之弓	儀禮弓	weap	abow	exceptional		10	5		0	47	48
-20304	am8	祭典之矛	儀禮長矛	weap	aspe	exceptional		0	6		0	43	45
-20305	am9	祭典之長矛	儀禮長槍	weap	aspe	exceptional		20	6		0	51	51
-20306	ama	祭典之鏢槍	儀禮標槍	weap	ajav	exceptional		-10			0	35	36
-20307	obb	天堂之石	天堂之石	weap	orb	elite		-10	2		0	59	60
-20308	obc	怪異之球	異能法珠	weap	orb	elite		-10	2		0	67	69
-20309	obd	惡魔之心	惡魔心石	weap	orb	elite		0	2		0	75	75
-20310	obe	漩渦球	漩渦法珠	weap	orb	elite		0	2		0	84	84
-20311	obf	次元碎片	次元法珠	weap	orb	elite		10	3		0	85	87
-20312	amb	女族長之弓	女傑之弓	weap	abow	elite		-10	5		0	53	54
-20313	amc	大院長之弓	主母之弓	weap	abow	elite		10	5		0	78	78
-20314	amd	女族長之矛	女傑長矛	weap	aspe	elite		0	6		0	61	63
-20315	ame	女族長之長矛	女傑長槍	weap	aspe	elite		20	6		0	81	81
-20316	amf	女族長之鏢槍	女傑標槍	weap	ajav	elite		-10			0	65	66
-20317	dr4	獵鷹面具	獵鷹面具	armo	pelt	normal			3	28	42	20	21
-20318	dr2	飛鷹頭盔	飛鷹頭盔	armo	pelt	normal			3	15	22	8	9
-20319	dr3	鹿角	巨角獸帽	armo	pelt	normal			3	24	36	16	18
-20320	dr1	狼頭	狼頭獸帽	armo	pelt	normal			3	11	16	4	6
-20321	dr5	靈魂狼頭面具	靈狼面具	armo	pelt	normal			3	35	52	24	24
-20322	ba1	顎骨帽	顎骨帽	armo	phlm	normal			3	15	22	4	6
-20323	ba2	尖牙盔	尖牙頭盔	armo	phlm	normal			3	20	30	8	9
-20324	ba3	角盔	尖角頭盔	armo	phlm	normal			3	30	45	16	18
-20325	ba4	突擊盔	突擊頭盔	armo	phlm	normal			3	35	52	20	21
-20326	ba5	復仇者之盔	復仇者護盔	armo	phlm	normal			3	50	75	24	24
-20327	pa1	小盾	小盾	armo	ashd	normal	light		4	12	18	4	6
-20328	pa2	輕圓盾	輕圓盾	armo	ashd	normal	light		4	18	27	8	9
-20329	pa3	紋章盾	紋章盾	armo	ashd	normal	light		4	26	39	16	18
-20330	pa4	艾文之盾	艾文之盾	armo	ashd	normal	light		4	36	54	20	21
-20331	pa5	皇冠之盾	冠冕之盾	armo	ashd	normal	light		4	40	60	24	24
-20332	ne1	防腐之首	防腐頭顱	armo	head	normal			2	5	7	4	6
-20333	ne2	僵屍之首	殭屍頭顱	armo	head	normal			2	8	12	8	9
-20334	ne3	揭露者之首	解繃者頭顱	armo	head	normal			2	10	15	16	18
-20335	ne4	石像鬼之首	石像鬼頭顱	armo	head	normal			2	16	24	20	21
-20336	ne5	惡魔之首	惡魔頭顱	armo	head	normal			2	20	30	24	24
-20337	ci0	頭飾	頭環	armo	circ	normal			2	30	45	24	24
-20338	ci1	寶冠	寶冠	armo	circ	normal			2	40	60	52	54
-20339	ci2	三重冠	頭冠	armo	circ	exceptional			3	50	75	70	72
-20340	ci3	權冠	權冠	armo	circ	elite			3	60	90	85	87
-20341	uap	軍帽	軍帽	armo	helm	elite			2	141	211	58	60
-20342	ukp	九頭蛇頭蓋骨圓帽	多頭蛇顱盔	armo	helm	elite			2	145	217	63	63
-20343	ulm	活動頭盔	覆頰盔	armo	helm	elite			2	149	223	68	69
-20344	uhl	巨貝頭盔	巨螺盔	armo	helm	elite			2	154	231	54	54
-20345	uhm	螺旋頭盔	巨角頭盔	armo	helm	elite			3	159	238	79	81
-20346	urn	頭冠	日冕之冠	armo	helm	elite			3	165	247	85	87
-20347	usk	惡魔頭蓋骨面具	惡魔頭骨	armo	helm	elite			3	154	231	74	75
-20348	uui	灰暮罩衣	灰暮罩衣	armo	tors	elite	light		4	467	700	65	66
-20349	uea	古龍皮	龍皮甲	armo	tors	elite	light		4	470	705	67	69
-20350	ula	聖甲蟲殼皮甲	聖甲蟲殼皮甲	armo	tors	elite	light		4	474	711	68	69
-20351	utu	線羊毛皮甲	鋼線毛皮甲	armo	tors	elite	light		4	481	721	70	72
-20352	ung	鑽石鎖子甲	鑽石鎖甲	armo	tors	elite	medium		4	489	733	72	72
-20353	ucl	甲殼鎧鱗甲	綴鱗戰甲	armo	tors	elite	heavy		4	496	744	73	75
-20354	uhn	骸骨鏈甲	骸骨網甲	armo	tors	elite	medium		4	505	757	62	63
-20355	urs	巨型鱗鎧胸甲	鱗鎧胸甲	armo	tors	elite	light		4	501	751	75	75
-20356	upl	炎魔皮板甲	炎魔皮板甲	armo	tors	elite	medium		4	517	775	76	78
-20357	ult	地獄鍛甲	地獄鍛甲	armo	tors	elite	heavy		4	530	795	78	78
-20358	uld	海妖殼甲	海怪之殼	armo	tors	elite	medium		4	523	784	81	81
-20359	uth	漆甲	漆護鎧甲	armo	tors	elite	medium		4	541	811	82	84
-20360	uul	陰影鎧甲	暗影鎧甲	armo	tors	elite	heavy		4	557	835	83	84
-20361	uar	神聖盔甲	神聖戰甲	armo	tors	elite	medium		4	600	900	85	87
-20362	utp	執政官鎧甲	統御者鎧甲	armo	tors	elite	light		4	524	786	84	84
-20363	uuc	防寒圓盾	斗盾	armo	shie	elite	light		2	110	165	58	60
-20364	uml	月精靈護盾	圓月盾	armo	shie	elite	light		2	123	184	61	63
-20365	urg	亥伯龍盾	亥伯龍盾	armo	shie	elite	medium		3	135	202	64	66
-20366	uit	統治者大盾	君主盾	armo	shie	elite	light		4	148	222	72	72
-20367	uow	塔盾	禦塔盾	armo	shie	elite	heavy		4	161	241	79	81
-20368	uts	保護盾牌	庇護盾	armo	shie	elite	medium		4	170	255	84	84
-20369	ulg	荊棘連指手套	荊棘手套	armo	glov	elite				62	93	57	57
-20370	uvg	吸血鬼骸骨手套	吸血鬼骸骨手套	armo	glov	elite				65	97	63	63
-20371	umg	吸血鬼手套	護臂	armo	glov	elite				67	100	69	69
-20372	utg	十字軍鐵手套	聖教軍護手	armo	glov	elite				68	102	76	78
-20373	uhg	食人魔鐵手套	巨魔護手	armo	glov	elite				71	106	85	87
-20374	ulb	飛龍皮靴	龍皮靴	armo	boot	elite				62	93	60	60
-20375	uvb	聖甲蟲殼靴	聖甲蟲殼皮靴	armo	boot	elite				65	97	66	66
-20376	umb	骸骨靴	骸骨網靴	armo	boot	elite				67	100	72	72
-20377	utb	鏡化靴	幻鏡戰靴	armo	boot	elite				68	102	81	81
-20378	uhb	極速靴	勇士護脛	armo	boot	elite				71	106	85	87
-20379	ulc	蛛網腰帶	蛛網束帶	armo	belt	elite				62	93	61	63
-20380	uvc	吸血鬼燎牙腰帶	吸血鬼牙腰帶	armo	belt	elite				63	94	68	69
-20381	umc	秘銀腰帶	秘銀腰帶	armo	belt	elite				65	97	75	75
-20382	utc	洞穴巨魔腰帶	食人妖腰帶	armo	belt	elite				66	99	82	84
-20383	uhc	巨神腰帶	巨神腰帶	armo	belt	elite				71	106	85	87
-20384	uh9	骸骨面罩	骸骨面罩	armo	helm	elite			3	157	235	84	84
-20385	ush	洞穴巨魔巢穴骨盾	食人妖骨盾	armo	shie	elite	light		3	173	259	76	78
-20386	upk	刀刃刺盾	刀刃刺盾	armo	shie	elite	light		3	163	244	68	69
-20387	dr9	神聖羽毛頭帶	聖羽頭飾	armo	pelt	exceptional			3	87	130	50	51
-20388	dr7	獅鷲獸頭帶	獅鷲獸頭飾	armo	pelt	exceptional			3	68	102	40	42
-20389	dr8	獵人的偽裝	獵人面罩	armo	pelt	exceptional			3	81	121	46	48
-20390	dr6	阿爾發頭盔	猛狼頭盔	armo	pelt	exceptional			3	62	93	35	36
-20391	dra	圖騰面具狼盔	圖騰面具	armo	pelt	exceptional			3	98	147	55	57
-20392	ba6	顎骨面甲	顎骨面甲	armo	phlm	exceptional			3	68	102	33	33
-20393	ba7	獅頭尖盔	獅牙頭盔	armo	phlm	exceptional			3	75	112	38	39
-20394	ba8	狂怒面具刺盔	狂怒面具	armo	phlm	exceptional			3	90	135	44	45
-20395	ba9	蠻族頭盔	凶蠻頭盔	armo	phlm	exceptional			3	98	147	49	51
-20396	baa	殺手防護面甲	殺手護盔	armo	phlm	exceptional			3	120	180	54	54
-20397	pa6	亞克南圓盾	阿卡拉圓盾	armo	ashd	exceptional	light		4	125	187	35	36
-20398	pa7	亞克南輕圓盾	阿卡拉輕圓盾	armo	ashd	exceptional	light		4	137	205	40	42
-20399	pa8	防護者盾牌	守護之盾	armo	ashd	exceptional	light		4	153	229	46	48
-20400	pa9	飾金盾牌	金紋盾	armo	ashd	exceptional	light		4	168	252	51	51
-20401	paa	皇家盾牌	皇家盾	armo	ashd	exceptional	light		4	181	271	55	57
-20402	ne6	木乃伊印記	木乃伊首級	armo	head	exceptional			2	48	72	33	33
-20403	ne7	物神印記	鬼娃首級	armo	head	exceptional			2	52	78	39	39
-20404	ne8	司事印記	司事首級	armo	head	exceptional			2	55	82	45	45
-20405	ne9	領唱者印記	領唱者首級	armo	head	exceptional			2	64	96	49	51
-20406	nea	祭司印記	祭司首級	armo	head	exceptional			2	70	105	54	54
-20407	dre	天空之靈	天翔靈獸帽	armo	pelt	elite			3	155	232	83	84
-20408	drc	太陽之靈	日陽靈獸帽	armo	pelt	elite			3	147	220	69	69
-20409	drd	大地之靈	地土靈獸帽	armo	pelt	elite			3	152	228	76	78
-20410	drb	血腥之靈	血系靈獸帽	armo	pelt	elite			3	145	217	62	63
-20411	drf	幽夢之靈	幽夢靈獸帽	armo	pelt	elite			3	159	238	85	87
-20412	bab	屠殺頭盔	屠殺頭盔	armo	phlm	elite			3	147	220	60	60
-20413	bac	暴怒面甲	暴怒面甲	armo	phlm	elite			3	150	225	66	66
-20414	bad	毀滅者頭盔	毀滅者頭盔	armo	phlm	elite			3	156	234	73	75
-20415	bae	征服者皇冠面甲	征服者盔冠	armo	phlm	elite			3	159	238	80	81
-20416	baf	守護者皇冠面甲	守護者盔冠	armo	phlm	elite			3	168	252	85	87
-20417	pab	神聖小盾	神聖小盾	armo	ashd	elite	light		4	158	237	63	63
-20418	pac	神聖輕圓盾	神聖輕圓盾	armo	ashd	elite	light		4	164	246	70	72
-20419	pae	撒卡蘭姆盾牌	撒卡蘭姆盾	armo	ashd	elite	light		4	193	289	82	84
-20420	paf	旋風盾	渦旋盾	armo	ashd	elite	light		4	225	337	85	87
-20421	neb	隨侍之骨	僕從顱骨	armo	head	elite			2	139	208	59	60
-20423	ned	監視者之骨	督軍顱骨	armo	head	elite			2	142	213	66	66
-20424	nee	女妖之骨	魅魔顱骨	armo	head	elite			2	146	219	81	81
-20425	nef	血王之骨	鮮血之王顱骨	armo	head	elite			2	148	222	85	87
-21778	ob5	傑瑞德之石	傑瑞德之石	weap	orb	normal		10	3		0	24	24
-21779	pad	庫拉斯特之盾	庫拉斯特盾	armo	ashd	elite	light		4	172	258	74	75
-21780	axf	斧手	斧手	weap	h2h	normal		10	2		0	12	12
+id	Key	zhTW	enUS	code	category	type	grade	weight	speed	range	socket	min	max	minEth	maxEth	qlvls	tc
+1930	cap	便帽	Cap	cap	armo	helm	normal				2	3	5	4	7	1	3
+1931	skp	顱帽	Skull Cap	skp	armo	helm	normal				2	8	11	12	16	5	6
+1932	hlm	頭盔	Helm	hlm	armo	helm	normal				2	15	18	22	27	11	12
+1933	fhl	全罩盔	Full Helm	fhl	armo	helm	normal				2	23	26	34	39	15	15
+1934	ghm	重盔	Great Helm	ghm	armo	helm	normal				3	30	35	45	52	23	24
+1935	crn	王冠	Crown	crn	armo	helm	normal				3	25	45	37	67	29	30
+1936	msk	面具	Mask	msk	armo	helm	normal				3	9	27	13	40	19	21
+1937	qui	棉布甲	Quilted Armor	qui	armo	tors	normal	light			2	8	11	12	16	1	3
+1938	lea	皮革甲	Leather Armor	lea	armo	tors	normal	light			2	14	17	21	25	3	3
+1939	hla	硬皮甲	Hard Leather Armor	hla	armo	tors	normal	light			2	21	24	31	36	5	6
+1940	stu	鑲釘皮甲	Studded Leather	stu	armo	tors	normal	light			2	32	35	48	52	8	9
+1941	rng	環甲	Ring Mail	rng	armo	tors	normal	medium			3	45	48	67	72	11	12
+1942	scl	鱗甲	Scale Mail	scl	armo	tors	normal	heavy			2	57	60	85	90	13	15
+1943	chn	鎖鍊甲	Chain Mail	chn	armo	tors	normal	medium			2	72	75	108	112	15	15
+1944	brs	胸鎧	Breast Plate	brs	armo	tors	normal	light			3	65	68	97	102	18	18
+1945	spl	板甲	Splint Mail	spl	armo	tors	normal	medium			2	90	95	135	142	20	21
+1946	plt	鎧甲	Plate Mail	plt	armo	tors	normal	heavy			2	108	116	162	174	24	24
+1947	fld	野戰鎧甲	Field Plate	fld	armo	tors	normal	medium			2	101	105	151	157	28	30
+1948	gth	哥德鎧甲	Gothic Plate	gth	armo	tors	normal	medium			4	128	135	192	202	32	33
+1949	ful	全身鎧甲	Full Plate Mail	ful	armo	tors	normal	heavy			4	150	161	225	241	37	39
+1950	aar	上古鎧甲	Ancient Armor	aar	armo	tors	normal	medium			4	218	233	327	349	40	42
+1951	ltp	輕型鎧甲	Light Plate	ltp	armo	tors	normal	light			3	90	107	135	160	35	36
+1952	buc	小圓盾	Buckler	buc	armo	shie	normal	light			1	4	6	6	9	1	3
+1953	sml	小型盾	Small Shield	sml	armo	shie	normal	light			2	8	10	12	15	5	6
+1954	lrg	大型盾	Large Shield	lrg	armo	shie	normal	medium			3	12	14	18	21	11	12
+1955	kit	鳶盾	Kite Shield	kit	armo	shie	normal	light			3	16	18	24	27	15	15
+1956	tow	塔盾	Tower Shield	tow	armo	shie	normal	heavy			3	22	25	33	37	22	24
+1957	gts	哥德盾	Gothic Shield	gts	armo	shie	normal	medium			3	30	35	45	52	30	30
+1958	lgl	皮革手套	Leather Gloves	lgl	armo	glov	normal					2	3	3	4	3	3
+1959	vgl	厚皮手套	Heavy Gloves	vgl	armo	glov	normal					5	6	7	9	7	9
+1960	mgl	鍊甲手套	Chain Gloves	mgl	armo	glov	normal					8	9	12	13	12	12
+1961	tgl	輕型護手	Light Gauntlets	tgl	armo	glov	normal					9	11	13	16	20	21
+1962	hgl	鋼鐵護手	Gauntlets	hgl	armo	glov	normal					12	15	18	22	27	27
+1963	lbt	皮靴	Boots	lbt	armo	boot	normal					2	3	3	4	3	3
+1964	vbt	重靴	Heavy Boots	vbt	armo	boot	normal					5	6	7	9	7	9
+1965	mbt	鎖鍊靴	Chain Boots	mbt	armo	boot	normal					8	9	12	13	12	12
+1966	tbt	輕鎧靴	Light Plated Boots	tbt	armo	boot	normal					9	11	13	16	20	21
+1967	hbt	護脛	Greaves	hbt	armo	boot	normal					12	15	18	22	27	27
+1968	lbl	束帶	Sash	lbl	armo	belt	normal					2	2	3	3	3	3
+1969	vbl	輕腰帶	Light Belt	vbl	armo	belt	normal					3	3	4	4	7	9
+1970	mbl	腰帶	Belt	mbl	armo	belt	normal					5	5	7	7	12	12
+1971	tbl	厚腰帶	Heavy Belt	tbl	armo	belt	normal					6	6	9	9	20	21
+1972	hbl	鎧甲腰帶	Plated Belt	hbl	armo	belt	normal					8	11	12	16	27	27
+1973	bhm	骸骨頭盔	Bone Helm	bhm	armo	helm	normal				2	33	36	49	54	22	24
+1974	bsh	骨盾	Bone Shield	bsh	armo	shie	normal	light			2	10	30	15	45	19	21
+1975	spk	尖刺盾	Spiked Shield	spk	armo	shie	normal	light			2	15	25	22	37	11	12
+1976	hax	手斧	Hand Axe	hax	weap	axe	normal		0	1	2			0	0	3	3
+1977	axe	斧	Axe	axe	weap	axe	normal		10	2	4			0	0	7	9
+1978	2ax	雙刃斧	Double Axe	2ax	weap	axe	normal		10	2	5			0	0	13	15
+1979	mpi	軍用鎬	Military Pick	mpi	weap	axe	normal		-10	2	6			0	0	19	21
+1980	wax	征戰斧	War Axe	wax	weap	axe	normal		0	3	6			0	0	25	27
+1981	lax	重斧	Large Axe	lax	weap	axe	normal		-10	2	4			0	0	6	6
+1982	bax	闊斧	Broad Axe	bax	weap	axe	normal		0	2	5			0	0	12	12
+1983	btx	戰斧	Battle Axe	btx	weap	axe	normal		10	2	5			0	0	17	18
+1984	gax	巨斧	Great Axe	gax	weap	axe	normal		-10	3	6			0	0	23	24
+1985	gix	巨人斧	Giant Axe	gix	weap	axe	normal		10	4	6			0	0	27	27
+1986	wnd	魔杖	Wand	wnd	weap	wand	normal		0	1	1			0	0	2	3
+1987	ywn	紫杉魔杖	Yew Wand	ywn	weap	wand	normal		10	1	1			0	0	12	12
+1988	bwn	骸骨魔杖	Bone Wand	bwn	weap	wand	normal		-20	1	2			0	0	18	18
+1989	gwn	陰森魔杖	Grim Wand	gwn	weap	wand	normal		0	1	2			0	0	26	27
+1990	clb	短棒	Club	clb	weap	club	normal		-10	1	2			0	0	1	3
+1991	scp	權杖	Scepter	scp	weap	scep	normal		0	1	2			0	0	3	3
+1992	gsc	莊嚴權杖	Grand Scepter	gsc	weap	scep	normal		10	2	3			0	0	15	15
+1993	wsp	征戰權杖	War Scepter	wsp	weap	scep	normal		-10	2	5			0	0	21	21
+1994	spc	狼牙棒	Spiked Club	spc	weap	club	normal		0	2	2			0	0	4	6
+1995	mac	釘鎚	Mace	mac	weap	mace	normal		0	1	2			0	0	8	9
+1996	mst	釘頭鎚	Morning Star	mst	weap	mace	normal		10	2	3			0	0	13	15
+1997	fla	連枷	Flail	fla	weap	mace	normal		-10	3	5			0	0	19	21
+1998	whm	戰鎚	War Hammer	whm	weap	hamm	normal		20	1	4			0	0	25	27
+1999	mau	重鎚	Maul	mau	weap	hamm	normal		10	2	6			0	0	21	21
+2000	gma	巨型重鎚	Great Maul	gma	weap	hamm	normal		20	3	6			0	0	32	33
+2001	ssd	短劍	Short Sword	ssd	weap	swor	normal		0	1	2			0	0	1	3
+2002	scm	彎刀	Scimitar	scm	weap	swor	normal		-20	1	2			0	0	5	6
+2003	sbr	軍刀	Sabre	sbr	weap	swor	normal		-10	1	2			0	0	8	9
+2004	flc	彎刃大刀	Falchion	flc	weap	swor	normal		20	1	2			0	0	11	12
+2005	crs	水晶劍	Crystal Sword	crs	weap	swor	normal		0	2	6			0	0	11	12
+2006	bsd	闊劍	Broad Sword	bsd	weap	swor	normal		0	1	4			0	0	15	15
+2007	lsd	長劍	Long Sword	lsd	weap	swor	normal		-10	2	4			0	0	20	21
+2008	wsd	征戰劍	War Sword	wsd	weap	swor	normal		0	2	3			0	0	27	27
+2009	2hs	雙手劍	Two-Handed Sword	2hs	weap	swor	normal		0	3	3			0	0	10	12
+2010	clm	闊刃大劍	Claymore	clm	weap	swor	normal		10	3	4			0	0	17	18
+2011	gis	大劍	Giant Sword	gis	weap	swor	normal		0	3	4			0	0	21	21
+2012	bsw	重劍	Bastard Sword	bsw	weap	swor	normal		10	2	4			0	0	24	24
+2013	flb	焰形劍	Flamberge	flb	weap	swor	normal		-10	3	5			0	0	27	27
+2014	gsd	巨劍	Great Sword	gsd	weap	swor	normal		10	3	6			0	0	33	33
+2015	dgr	匕首	Dagger	dgr	weap	knif	normal		-20	1	1			0	0	3	3
+2016	dir	長匕首	Dirk	dir	weap	knif	normal		0	1	1			0	0	9	9
+2017	kri	波刃匕首	Kris	kri	weap	knif	normal		-20	1	3			0	0	17	18
+2018	bld	利刃匕首	Blade	bld	weap	knif	normal		-10	1	2			0	0	23	24
+2019	tkf	飛刀	Throwing Knife	tkf	weap	tkni	normal		0	1				0	0	2	3
+2020	tax	飛斧	Throwing Axe	tax	weap	taxe	normal		10	1				0	0	7	9
+2021	bkf	平衡飛刀	Balanced Knife	bkf	weap	tkni	normal		-20	1				0	0	13	15
+2022	bal	平衡飛斧	Balanced Axe	bal	weap	taxe	normal		-10	1				0	0	16	18
+2023	jav	標槍	Javelin	jav	weap	jave	normal		-10	3				0	0	1	3
+2024	pil	長標槍	Pilum	pil	weap	jave	normal		0	3				0	0	10	12
+2025	ssp	短矛	Short Spear	ssp	weap	jave	normal		10	3				0	0	15	15
+2026	glv	長刃槍	Glaive	glv	weap	jave	normal		20	3				0	0	23	24
+2027	tsp	飛矛	Throwing Spear	tsp	weap	jave	normal		-10	3				0	0	29	30
+2028	spr	長矛	Spear	spr	weap	spea	normal		-10	4	3			0	0	5	6
+2029	tri	三叉戟	Trident	tri	weap	spea	normal		0	4	4			0	0	9	9
+2030	brn	三叉槍	Brandistock	brn	weap	spea	normal		-20	5	5			0	0	16	18
+2031	spt	勾刃槍	Spetum	spt	weap	spea	normal		0	5	6			0	0	20	21
+2032	pik	步戰矛	Pike	pik	weap	spea	normal		20	5	6			0	0	24	24
+2033	bar	月牙砍刀	Bardiche	bar	weap	pole	normal		10	3	3			0	0	5	6
+2034	vou	槍斧	Voulge	vou	weap	pole	normal		0	3	4			0	0	11	12
+2035	scy	鐮刀	Scythe	scy	weap	pole	normal		-10	2	5			0	0	15	15
+2036	pax	長柄斧	Poleaxe	pax	weap	pole	normal		10	4	5			0	0	21	21
+2037	hal	長戟	Halberd	hal	weap	pole	normal		0	5	6			0	0	29	30
+2038	wsc	征戰鐮刀	War Scythe	wsc	weap	pole	normal		-10	5	6			0	0	34	36
+2039	sst	短杖	Short Staff	sst	weap	staf	normal		-10	2	2			0	0	1	3
+2040	lst	長杖	Long Staff	lst	weap	staf	normal		0	2	3			0	0	8	9
+2041	cst	木節法杖	Gnarled Staff	cst	weap	staf	normal		10	2	4			0	0	12	12
+2042	bst	戰鬥法杖	Battle Staff	bst	weap	staf	normal		0	2	4			0	0	17	18
+2043	wst	征戰法杖	War Staff	wst	weap	staf	normal		20	2	6			0	0	24	24
+2044	sbw	短弓	Short Bow	sbw	weap	bow	normal		5	1	3			0	0	1	3
+2045	hbw	獵弓	Hunter's Bow	hbw	weap	bow	normal		-10	1	4			0	0	5	6
+2046	lbw	長弓	Long Bow	lbw	weap	bow	normal		0	1	5			0	0	8	9
+2047	cbw	複合弓	Composite Bow	cbw	weap	bow	normal		-10	1	4			0	0	12	12
+2048	sbb	戰鬥短弓	Short Battle Bow	sbb	weap	bow	normal		0	1	5			0	0	18	18
+2049	lbb	戰鬥長弓	Long Battle Bow	lbb	weap	bow	normal		10	1	6			0	0	23	24
+2050	swb	征戰短弓	Short War Bow	swb	weap	bow	normal		0	1	5			0	0	27	27
+2051	lwb	征戰長弓	Long War Bow	lwb	weap	bow	normal		10	1	6			0	0	31	33
+2052	lxb	輕弩	Light Crossbow	lxb	weap	xbow	normal		-10	1	3			0	0	6	6
+2053	mxb	弩	Crossbow	mxb	weap	xbow	normal		0	1	4			0	0	15	15
+2054	hxb	重弩	Heavy Crossbow	hxb	weap	xbow	normal		10	1	6			0	0	24	24
+2055	rxb	連弩	Repeating Crossbow	rxb	weap	xbow	normal		-40	1	5			0	0	33	33
+2056	xpk	倒刺盾	Barbed Shield	xpk	armo	shie	exceptional	light			2	58	78	87	117	42	42
+2057	xsh	陰森盾牌	Grim Shield	xsh	armo	shie	exceptional	light			2	50	150	75	225	48	48
+2058	xh9	陰森頭盔	Grim Helm	xh9	armo	helm	exceptional				2	60	125	90	187	50	51
+2059	zhb	征戰腰帶	War Belt	zhb	armo	belt	exceptional					41	52	61	78	54	54
+2060	ztb	戰鬥腰帶	Battle Belt	ztb	armo	belt	exceptional					37	42	55	63	49	51
+2061	zmb	鐵網腰帶	Mesh Belt	zmb	armo	belt	exceptional					35	40	52	60	43	45
+2062	zvb	鯊皮腰帶	Sharkskin Belt	zvb	armo	belt	exceptional					31	36	46	54	39	39
+2063	zlb	魔皮束帶	Demonhide Sash	zlb	armo	belt	exceptional					29	34	43	51	36	36
+2064	xhb	征戰靴	War Boots	xhb	armo	boot	exceptional					43	53	64	79	54	54
+2065	xtb	戰鬥靴	Battle Boots	xtb	armo	boot	exceptional					39	47	58	70	49	51
+2066	xmb	鐵網靴	Mesh Boots	xmb	armo	boot	exceptional					37	44	55	66	43	45
+2067	xvb	鯊皮靴	Sharkskin Boots	xvb	armo	boot	exceptional					33	39	49	58	39	39
+2068	xlb	魔皮長靴	Demonhide Boots	xlb	armo	boot	exceptional					28	35	42	52	36	36
+2070	xtg	戰鬥護手	Battle Gauntlets	xtg	armo	glov	exceptional					39	47	58	70	49	51
+2071	xmg	重型護腕	Heavy Bracers	xmg	armo	glov	exceptional					37	44	55	66	43	45
+2072	xvg	鯊皮手套	Sharkskin Gloves	xvg	armo	glov	exceptional					33	39	49	58	39	39
+2073	xlg	魔皮手套	Demonhide Gloves	xlg	armo	glov	exceptional					28	35	42	52	33	33
+2074	xts	上古盾	Ancient Shield	xts	armo	shie	exceptional	medium			3	80	93	120	139	56	57
+2075	xow	大盾	Pavise	xow	armo	shie	exceptional	heavy			3	68	78	102	117	50	51
+2076	xit	龍盾	Dragon Shield	xit	armo	shie	exceptional	light			3	59	67	88	100	45	45
+2077	xrg	大圓盾	Scutum	xrg	armo	shie	exceptional	medium			3	53	61	79	91	42	42
+2078	xml	圓型盾	Round Shield	xml	armo	shie	exceptional	light			2	47	55	70	82	37	39
+2079	xuc	防禦盾	Defender	xuc	armo	shie	exceptional	light			1	41	49	61	73	34	36
+2080	xtp	法師鎧甲	Mage Plate	xtp	armo	tors	exceptional	light			3	225	261	337	391	60	60
+2081	xar	華麗戰甲	Ornate Plate	xar	armo	tors	exceptional	medium			4	417	450	625	675	64	66
+2082	xul	混沌戰甲	Chaos Armor	xul	armo	tors	exceptional	heavy			4	315	342	472	513	61	63
+2083	xth	雕紋戰甲	Embossed Plate	xth	armo	tors	exceptional	medium			4	282	303	423	454	58	60
+2084	xld	鯊齒戰甲	Sharktooth Armor	xld	armo	tors	exceptional	medium			3	242	258	363	387	55	57
+2085	xlt	聖堂騎士戰甲	Templar Coat	xlt	armo	tors	exceptional	heavy			3	252	274	378	411	52	54
+2086	xpl	赤褐戰甲	Russet Armor	xpl	armo	tors	exceptional	medium			3	225	243	337	364	49	51
+2087	xrs	護胸甲	Cuirass	xrs	armo	tors	exceptional	light			3	188	202	282	303	47	48
+2088	xhn	鐵網戰甲	Mesh Armor	xhn	armo	tors	exceptional	medium			3	198	213	297	319	45	45
+2089	xcl	鎖鱗戰甲	Tigulated Mail	xcl	armo	tors	exceptional	heavy			3	176	190	264	285	43	45
+2090	xng	鍊扣戰甲	Linked Mail	xng	armo	tors	exceptional	medium			3	158	172	237	258	42	42
+2091	xtu	格網護甲	Trellised Armor	xtu	armo	tors	exceptional	light			2	138	153	207	229	40	42
+2092	xla	魔皮護甲	Demonhide Armor	xla	armo	tors	exceptional	light			2	122	136	183	204	37	39
+2093	xea	海蛇皮甲	Serpentskin Armor	xea	armo	tors	exceptional	light			2	111	126	166	189	36	36
+2094	xui	鬼魂戰衣	Ghost Armor	xui	armo	tors	exceptional	light			2	102	117	153	175	34	36
+2095	xsk	死亡面具	Death Mask	xsk	armo	helm	exceptional				3	54	86	81	129	48	48
+2096	xrn	莊嚴王冠	Grand Crown	xrn	armo	helm	exceptional				3	78	113	117	169	55	57
+2098	xhl	輕盔	Basinet	xhl	armo	helm	exceptional				2	75	84	112	126	45	45
+2099	xlm	兜盔	Casque	xlm	armo	helm	exceptional				2	63	72	94	108	42	42
+2100	xkp	便盔	Sallet	xkp	armo	helm	exceptional				2	52	62	78	93	37	39
+2101	xap	戰帽	War Hat	xap	armo	helm	exceptional				2	45	53	67	79	34	36
+2102	8rx	諸葛弩	Chu-Ko-Nu	8rx	weap	xbow	exceptional		-60	1	5			0	0	54	54
+2103	8hx	砲弩	Ballista	8hx	weap	xbow	exceptional		10	1	6			0	0	47	48
+2104	8mx	攻城弩	Siege Crossbow	8mx	weap	xbow	exceptional		0	1	4			0	0	40	42
+2105	8lx	鋼弩	Arbalest	8lx	weap	xbow	exceptional		-10	1	3			0	0	34	36
+2106	8lw	哥德弓	Gothic Bow	8lw	weap	bow	exceptional		10	1	6			0	0	52	54
+2107	8sw	符文弓	Rune Bow	8sw	weap	bow	exceptional		0	1	5			0	0	49	51
+2108	8l8	攻城長弓	Large Siege Bow	8l8	weap	bow	exceptional		10	1	6			0	0	46	48
+2109	8s8	攻城短弓	Short Siege Bow	8s8	weap	bow	exceptional		0	1	5			0	0	43	45
+2110	8cb	雙曲弓	Double Bow	8cb	weap	bow	exceptional		-10	1	4			0	0	39	39
+2111	8lb	杉木弓	Cedar Bow	8lb	weap	bow	exceptional		0	1	5			0	0	35	36
+2112	8hb	剃刀弓	Razor Bow	8hb	weap	bow	exceptional		-10	1	4			0	0	33	33
+2113	8sb	銳弓	Edge Bow	8sb	weap	bow	exceptional		5	1	3			0	0	30	30
+2114	8ws	符文法杖	Rune Staff	8ws	weap	staf	exceptional		20	2	6			0	0	47	48
+2115	8bs	哥德法杖	Gothic Staff	8bs	weap	staf	exceptional		0	2	4			0	0	42	42
+2116	8cs	杉木法杖	Cedar Staff	8cs	weap	staf	exceptional		10	2	4			0	0	38	39
+2117	8ls	長棍	Quarterstaff	8ls	weap	staf	exceptional		0	2	3			0	0	35	36
+2118	8ss	棍杖	Jo Staff	8ss	weap	staf	exceptional		-10	2	2			0	0	30	30
+2119	9wc	陰森鐮刀	Grim Scythe	9wc	weap	pole	exceptional		-10	5	6			0	0	55	57
+2120	9h9	渡鴉喙	Bec-de-Corbin	9h9	weap	pole	exceptional		0	5	6			0	0	51	51
+2121	9pa	闊頭槍	Partizan	9pa	weap	pole	exceptional		10	4	5			0	0	35	36
+2122	9s8	戰鬥鐮刀	Battle Scythe	9s8	weap	pole	exceptional		-10	2	5			0	0	40	42
+2123	9vo	長柄鍥	Bill	9vo	weap	pole	exceptional		0	3	4			0	0	37	39
+2124	9b7	鉤斧	Lochaber Axe	9b7	weap	pole	exceptional		10	3	3			0	0	33	33
+2125	9p9	長槍	Lance	9p9	weap	spea	exceptional		20	5	6			0	0	47	48
+2126	9st	三尖槍	Yari	9st	weap	spea	exceptional		0	5	6			0	0	44	45
+2127	9br	征戰軍叉	War Fork	9br	weap	spea	exceptional		-20	5	5			0	0	41	42
+2128	9tr	矛叉	Fuscina	9tr	weap	spea	exceptional		0	4	4			0	0	36	36
+2129	9sr	征戰長矛	War Spear	9sr	weap	spea	exceptional		-10	4	3			0	0	33	33
+2130	9ts	魚叉	Harpoon	9ts	weap	jave	exceptional		-10	3				0	0	51	51
+2131	9gl	尖刃槍	Spiculum	9gl	weap	jave	exceptional		20	3				0	0	46	48
+2132	9s9	銳矛標槍	Simbilan	9s9	weap	jave	exceptional		10	3				0	0	40	42
+2133	9pi	重型標槍	Great Pilum	9pi	weap	jave	exceptional		0	3				0	0	37	39
+2134	9ja	征戰標槍	War Javelin	9ja	weap	jave	exceptional		-10	3				0	0	30	30
+2135	9b8	投斧	Hurlbat	9b8	weap	taxe	exceptional		-10	1				0	0	41	42
+2136	9bk	征戰飛鏢	War Dart	9bk	weap	tkni	exceptional		-20	1				0	0	39	39
+2137	9ta	法蘭西飛斧	Francisca	9ta	weap	taxe	exceptional		10	1				0	0	34	36
+2138	9tk	戰鬥飛鏢	Battle Dart	9tk	weap	tkni	exceptional		0	1				0	0	31	33
+2140	9kr	闊身短劍	Cinquedeas	9kr	weap	knif	exceptional		-20	1	3			0	0	42	42
+2141	9di	圓柄匕首	Rondel	9di	weap	knif	exceptional		0	1	1			0	0	36	36
+2142	9dg	刺擊短劍	Poignard	9dg	weap	knif	exceptional		-20	1	1			0	0	31	33
+2143	9gd	處刑劍	Executioner Sword	9gd	weap	swor	exceptional		10	3	6			0	0	54	54
+2144	9fb	日耳曼大劍	Zweihander	9fb	weap	swor	exceptional		-10	3	5			0	0	49	51
+2145	9gs	長牙劍	Tusk Sword	9gs	weap	swor	exceptional		0	3	4			0	0	45	45
+2146	9cm	達西安長刀	Dacian Falx	9cm	weap	swor	exceptional		10	3	4			0	0	42	42
+2147	92h	雙手重劍	Espandon	92h	weap	swor	exceptional		0	3	3			0	0	37	39
+2148	9wd	上古劍	Ancient Sword	9wd	weap	swor	exceptional		0	2	3			0	0	49	51
+2149	9ls	符文劍	Rune Sword	9ls	weap	swor	exceptional		-10	2	4			0	0	44	45
+2150	9bs	戰鬥長劍	Battle Sword	9bs	weap	swor	exceptional		0	1	4			0	0	40	42
+2151	9cr	次元刃	Dimensional Blade	9cr	weap	swor	exceptional		0	2	6			0	0	37	39
+2152	9fc	印度彎刀	Tulwar	9fc	weap	swor	exceptional		20	1	2			0	0	37	39
+2153	9sb	波斯彎刀	Shamshir	9sb	weap	swor	exceptional		-10	1	2			0	0	35	36
+2154	9sm	水手刀	Cutlass	9sm	weap	swor	exceptional		-30	1	2			0	0	43	45
+2155	9ss	羅馬短劍	Gladius	9ss	weap	swor	exceptional		0	1	2			0	0	30	30
+2156	9gm	長柄戰鎚	Martel de Fer	9gm	weap	hamm	exceptional		20	3	6			0	0	53	54
+2157	9m9	征戰重鎚	War Club	9m9	weap	hamm	exceptional		10	2	6			0	0	45	45
+2158	9wh	戰鬥鐵鎚	Battle Hammer	9wh	weap	hamm	exceptional		20	1	4			0	0	48	48
+2159	9fl	刑罪連枷	Knout	9fl	weap	mace	exceptional		-10	3	5			0	0	43	45
+2160	9mt	鋸齒釘頭鎚	Jagged Star	9mt	weap	mace	exceptional		10	2	3			0	0	39	39
+2161	9ma	凸緣釘鎚	Flanged Mace	9ma	weap	mace	exceptional		0	1	2			0	0	35	36
+2162	9sp	倒刺棍棒	Barbed Club	9sp	weap	club	exceptional		0	2	3			0	0	32	33
+2163	9ws	聖恩權杖	Divine Scepter	9ws	weap	scep	exceptional		-10	2	5			0	0	45	45
+2164	9qs	聖水禮杖	Holy Water Sprinkler	9qs	weap	scep	exceptional		10	2	3			0	0	40	42
+2165	9sc	符文權杖	Rune Scepter	9sc	weap	scep	exceptional		0	1	2			0	0	31	33
+2166	9cl	鬥棍	Cudgel	9cl	weap	club	exceptional		-10	1	2			0	0	30	30
+2167	9gw	墓地魔杖	Grave Wand	9gw	weap	wand	exceptional		0	1	2			0	0	49	51
+2168	9bw	古墓魔杖	Tomb Wand	9bw	weap	wand	exceptional		-20	1	2			0	0	43	45
+2169	9yw	石木魔杖	Petrified Wand	9yw	weap	wand	exceptional		10	1	2			0	0	38	39
+2170	9wn	焦木魔杖	Burnt Wand	9wn	weap	wand	exceptional		0	1	1			0	0	31	33
+2171	9gi	上古斧	Ancient Axe	9gi	weap	axe	exceptional		10	4	6			0	0	51	51
+2172	9ga	哥德斧	Gothic Axe	9ga	weap	axe	exceptional		-10	3	6			0	0	46	48
+2173	9bt	長戰斧	Tabar	9bt	weap	axe	exceptional		10	2	5			0	0	42	42
+2174	9ba	鉤斧	Bearded Axe	9ba	weap	axe	exceptional		0	2	5			0	0	38	39
+2175	9la	軍斧	Military Axe	9la	weap	axe	exceptional		-10	2	4			0	0	34	36
+2176	9wa	那伽斧	Naga	9wa	weap	axe	exceptional		0	3	6			0	0	48	48
+2177	9mp	鴉嘴鎬	Crowbill	9mp	weap	axe	exceptional		-10	2	6			0	0	43	45
+2178	92a	雙面斧	Twin Axe	92a	weap	axe	exceptional		10	2	5			0	0	39	39
+2179	9ax	斬斧	Cleaver	9ax	weap	axe	exceptional		10	2	4			0	0	34	36
+2180	9ha	短斧	Hatchet	9ha	weap	axe	exceptional		0	1	2			0	0	31	33
+2181	9b9	哥德劍	Gothic Sword	9b9	weap	swor	exceptional		10	2	4			0	0	48	48
+10021	xhm	翼盔	Winged Helm	xhm	armo	helm	exceptional				3	85	98	127	147	51	51
+11006	neg	地獄爪牙顱骨	Hellspawn Skull	neg	armo	head	elite				2	96	141	144	211	67	69
+11010	7wa	狂戰斧	Berserker Axe	7wa	weap	axe	elite		0	3	6			0	0	85	87
+11012	xhg	征戰護手	War Gauntlets	xhg	armo	glov	exceptional					43	53	64	79	54	54
+11028	9bl	窄刃匕首	Stiletto	9bl	weap	knif	exceptional		-10	1	2			0	0	46	48
+20181	ktr	拳刃	Katar	ktr	weap	h2h	normal		-10	2	2			0	0	1	3
+20182	wrb	腕刃	Wrist Blade	wrb	weap	h2h	normal		0	2	2			0	0	9	9
+20183	ces	刃拳	Cestus	ces	weap	h2h	normal		0	2	2			0	0	15	15
+20184	clw	爪	Claws	clw	weap	h2h	normal		-10	2	3			0	0	18	18
+20185	btl	刃爪	Blade Talons	btl	weap	h2h	normal		-20	2	3			0	0	21	21
+20186	skr	剪刃	Scissors Katar	skr	weap	h2h	normal		-10	2	3			0	0	24	24
+20187	9ar	格鬥刃	Quhab	9ar	weap	h2h	exceptional		0	2	3			0	0	28	30
+20188	9wb	腕刺	Wrist Spike	9wb	weap	h2h	exceptional		-10	2	2			0	0	32	33
+20189	9xf	格鬥爪	Fascia	9xf	weap	h2h	exceptional		10	2	2			0	0	36	36
+20190	9cs	手鐮	Hand Scythe	9cs	weap	h2h2	exceptional		-10	2	2			0	0	41	42
+20191	9lw	巨爪	Greater Claws	9lw	weap	h2h2	exceptional		-20	2	3			0	0	45	45
+20192	9tw	巨鷹爪	Greater Talons	9tw	weap	h2h2	exceptional		-30	2	3			0	0	50	51
+20193	9qr	格鬥剪刃	Scissors Quhab	9qr	weap	h2h2	exceptional		0	2	3			0	0	54	54
+20194	7ar	穿擊拳刃	Suwayyah	7ar	weap	h2h2	elite		0	2	3			0	0	59	60
+20195	7wb	腕劍	Wrist Sword	7wb	weap	h2h2	elite		-10	2	3			0	0	62	63
+20196	7xf	征戰拳套	War Fist	7xf	weap	h2h2	elite		10	2	2			0	0	68	69
+20197	7cs	戰鬥刃拳	Battle Cestus	7cs	weap	h2h2	elite		-10	2	2			0	0	73	75
+20198	7lw	蠻獸爪	Feral Claws	7lw	weap	h2h2	elite		-20	2	3			0	0	78	78
+20199	7tw	符紋爪	Runic Talons	7tw	weap	h2h2	elite		-30	2	3			0	0	81	81
+20200	7qr	穿擊剪刃	Scissors Suwayyah	7qr	weap	h2h2	elite		0	2	3			0	0	85	87
+20201	7ha	輕斧	Tomahawk	7ha	weap	axe	elite		0	1	2			0	0	54	54
+20202	7ax	彎月斧	Small Crescent	7ax	weap	axe	elite		10	2	4			0	0	61	63
+20203	72a	雙頭斧	Ettin Axe	72a	weap	axe	elite		10	2	5			0	0	70	72
+20204	7mp	征戰鎬	War Spike	7mp	weap	axe	elite		-10	2	6			0	0	79	81
+20206	7la	蠻野斧	Feral Axe	7la	weap	axe	elite		-15	3	4			0	0	57	57
+20207	7ba	銀刃斧	Silver-edged Axe	7ba	weap	axe	elite		0	3	5			0	0	65	66
+20208	7bt	斬首斧	Decapitator	7bt	weap	axe	elite		10	3	5			0	0	73	75
+20209	7ga	豪傑斧	Champion Axe	7ga	weap	axe	elite		-10	3	6			0	0	82	84
+20210	7gi	榮光斧	Glorious Axe	7gi	weap	axe	elite		10	4	6			0	0	85	87
+20211	7wn	拋光魔杖	Polished Wand	7wn	weap	wand	elite		0	1	2			0	0	55	57
+20212	7yw	鬼魂魔杖	Ghost Wand	7yw	weap	wand	elite		10	1	2			0	0	65	66
+20213	7bw	巫妖魔杖	Lich Wand	7bw	weap	wand	elite		-20	1	2			0	0	75	75
+20214	7gw	埋骨魔杖	Unearthed Wand	7gw	weap	wand	elite		0	1	2			0	0	86	87
+20215	7cl	打擊棍	Truncheon	7cl	weap	club	elite		-10	1	2			0	0	52	54
+20216	7sc	強威權杖	Mighty Scepter	7sc	weap	scep	elite		0	1	2			0	0	62	63
+20217	7qs	熾天使節杖	Seraph Rod	7qs	weap	scep	elite		10	2	3			0	0	76	78
+20218	7ws	神使權杖	Caduceus	7ws	weap	scep	elite		-10	2	5			0	0	85	87
+20219	7sp	暴君棍棒	Tyrant Club	7sp	weap	club	elite		0	2	3			0	0	57	57
+20220	7ma	強化釘鎚	Reinforced Mace	7ma	weap	mace	elite		0	1	2			0	0	63	63
+20221	7mt	妖鬼釘頭鎚	Devil Star	7mt	weap	mace	elite		10	2	3			0	0	70	72
+20222	7fl	罪罰連枷	Scourge	7fl	weap	mace	elite		-10	3	5			0	0	76	78
+20223	7wh	傳說戰鎚	Legendary Mallet	7wh	weap	hamm	elite		20	2	4			0	0	82	84
+20224	7m7	巨魔重鎚	Ogre Maul	7m7	weap	hamm	elite		10	2	6			0	0	69	69
+20225	7gm	雷霆重鎚	Thunder Maul	7gm	weap	hamm	elite		20	3	6			0	0	85	87
+20226	7ss	法卡塔劍	Falcata	7ss	weap	swor	elite		0	1	2			0	0	56	57
+20227	7sm	土耳其彎刀	Ataghan	7sm	weap	swor	elite		-20	1	2			0	0	61	63
+20228	7sb	典雅彎刀	Elegant Blade	7sb	weap	swor	elite		-10	1	2			0	0	63	63
+20229	7fc	多頭蛇刃	Hydra Edge	7fc	weap	swor	elite		10	1	2			0	0	69	69
+20230	7cr	幻化之刃	Phase Blade	7cr	weap	swor	elite		-30	2	6			0	0	73	75
+20231	7bs	征服之劍	Conquest Sword	7bs	weap	swor	elite		0	1	4			0	0	78	78
+20232	7ls	絕秘劍	Cryptic Sword	7ls	weap	swor	elite		-10	2	4			0	0	82	84
+20233	7wd	秘儀劍	Mythical Sword	7wd	weap	swor	elite		0	2	3			0	0	85	87
+20234	72h	傳說劍	Legend Sword	72h	weap	swor	elite		-15	3	3			0	0	59	60
+20235	7cm	高地劍	Highland Blade	7cm	weap	swor	elite		-5	3	4			0	0	66	66
+20236	7gs	炎魔之刃	Balrog Blade	7gs	weap	swor	elite		0	3	4			0	0	71	72
+20237	7b7	豪傑大劍	Champion Sword	7b7	weap	swor	elite		-10	3	4			0	0	77	78
+20238	7fb	巨神劍	Colossus Sword	7fb	weap	swor	elite		10	3	5			0	0	80	81
+20239	7gd	巨神刃	Colossus Blade	7gd	weap	swor	elite		5	3	6			0	0	85	87
+20240	7dg	骸骨小刀	Bone Knife	7dg	weap	knif	elite		-20	1	1			0	0	58	60
+20241	7di	秘銀尖刀	Mithril Point	7di	weap	knif	elite		0	1	1			0	0	70	72
+20242	7kr	尖齒小刀	Fanged Knife	7kr	weap	knif	elite		-20	1	3			0	0	83	84
+20243	7bl	傳說尖刀	Legend Spike	7bl	weap	knif	elite		-10	1	2			0	0	85	87
+20244	7tk	高速飛刀	Flying Knife	7tk	weap	tkni	elite		0	1				0	0	64	66
+20245	7ta	高速飛斧	Flying Axe	7ta	weap	taxe	elite		10	1				0	0	56	57
+20246	7bk	刃翼飛刀	Winged Knife	7bk	weap	tkni	elite		-20	1				0	0	77	78
+20247	7b8	刃翼飛斧	Winged Axe	7b8	weap	taxe	elite		-10	1				0	0	80	81
+20248	7ja	亥伯龍標槍	Hyperion Javelin	7ja	weap	jave	elite		-10	3				0	0	54	54
+20249	7pi	冥河標槍	Stygian Pilum	7pi	weap	jave	elite		0	3				0	0	62	63
+20250	7s7	炎魔長矛	Balrog Spear	7s7	weap	jave	elite		10	3				0	0	71	72
+20251	7gl	鬼魂刃槍	Ghost Glaive	7gl	weap	jave	elite		20	3				0	0	79	81
+20252	7ts	飛翼魚叉	Winged Harpoon	7ts	weap	jave	elite		-10	3				0	0	85	87
+20253	7sr	亥伯龍矛	Hyperion Spear	7sr	weap	spea	elite		-10	4	3			0	0	58	60
+20254	7tr	冥河戰矛	Stygian Pike	7tr	weap	spea	elite		0	4	4			0	0	66	66
+20255	7br	捕人叉	Mancatcher	7br	weap	spea	elite		-20	5	5			0	0	74	75
+20256	7st	鬼魂長矛	Ghost Spear	7st	weap	spea	elite		0	5	6			0	0	83	84
+20257	7p7	征戰長槍	War Pike	7p7	weap	spea	elite		20	5	6			0	0	85	87
+20258	7o7	巨魔斧	Ogre Axe	7o7	weap	pole	elite		0	3	3			0	0	60	60
+20259	7vo	巨神長柄斧	Colossus Voulge	7vo	weap	pole	elite		10	3	4			0	0	64	66
+20260	7s8	斬鐮	Thresher	7s8	weap	pole	elite		-10	2	5			0	0	71	72
+20261	7pa	絕秘斧	Cryptic Axe	7pa	weap	pole	elite		10	4	5			0	0	79	81
+20262	7h7	巨型長柄斧	Great Poleaxe	7h7	weap	pole	elite		0	5	6			0	0	84	84
+20263	7wc	巨型斬鐮	Giant Thresher	7wc	weap	pole	elite		-10	5	6			0	0	85	87
+20264	6ss	手杖	Walking Stick	6ss	weap	staf	elite		-10	2	2			0	0	58	60
+20265	6ls	鐘乳石杖	Stalagmite	6ls	weap	staf	elite		10	2	3			0	0	66	66
+20266	6cs	長者法杖	Elder Staff	6cs	weap	staf	elite		0	2	4			0	0	74	75
+20267	6bs	節瘤木杖	Shillelagh	6bs	weap	staf	elite		0	2	4			0	0	83	84
+20268	6ws	統御者法杖	Archon Staff	6ws	weap	staf	elite		10	2	6			0	0	85	87
+20269	6sb	蜘蛛弓	Spider Bow	6sb	weap	bow	elite		5	1	3			0	0	55	57
+20270	6hb	刀鋒弓	Blade Bow	6hb	weap	bow	elite		-10	1	4			0	0	60	60
+20271	6lb	暗影弓	Shadow Bow	6lb	weap	bow	elite		0	1	5			0	0	63	63
+20272	6cb	巨弓	Great Bow	6cb	weap	bow	elite		-10	1	4			0	0	68	69
+20273	6s7	鑽石弓	Diamond Bow	6s7	weap	bow	elite		0	1	5			0	0	72	72
+20274	6l7	聖教軍長弓	Crusader Bow	6l7	weap	bow	elite		10	1	6			0	0	77	78
+20275	6sw	庇護弓	Ward Bow	6sw	weap	bow	elite		0	1	5			0	0	80	81
+20276	6lw	多頭蛇弓	Hydra Bow	6lw	weap	bow	elite		10	1	6			0	0	85	87
+20277	6lx	彈丸弩	Pellet Bow	6lx	weap	xbow	elite		-10	1	3			0	0	57	57
+20278	6mx	蛇魔弩	Gorgon Crossbow	6mx	weap	xbow	elite		0	1	4			0	0	67	69
+20279	6hx	巨神弩	Colossus Crossbow	6hx	weap	xbow	elite		10	1	6			0	0	75	75
+20280	6rx	惡魔弩	Demon Crossbow	6rx	weap	xbow	elite		-60	1	5			0	0	84	84
+20281	ob1	鷹之法珠	Eagle Orb	ob1	weap	orb	normal		-10	1	2			0	0	1	3
+20282	ob2	神聖天球	Sacred Globe	ob2	weap	orb	normal		-10	1	2			0	0	8	9
+20283	ob3	攏煙之球	Smoked Sphere	ob3	weap	orb	normal		0	1	2			0	0	12	12
+20284	ob4	握扣法珠	Clasped Orb	ob4	weap	orb	normal		0	1	2			0	0	17	18
+20292	am1	獵鹿弓	Stag Bow	am1	weap	abow	normal		0	1	5			0	0	18	18
+20293	am2	反射弓	Reflex Bow	am2	weap	abow	normal		10	1	5			0	0	27	27
+20294	am3	女戰長矛	Maiden Spear	am3	weap	aspe	normal		0	5	6			0	0	18	18
+20295	am4	女戰長槍	Maiden Pike	am4	weap	aspe	normal		10	5	6			0	0	27	27
+20296	am5	女戰標槍	Maiden Javelin	am5	weap	ajav	normal		-10	3				0	0	23	24
+20297	ob6	靈光法珠	Glowing Orb	ob6	weap	orb	exceptional		-10	1	2			0	0	32	33
+20298	ob7	水晶天球	Crystalline Globe	ob7	weap	orb	exceptional		-10	1	2			0	0	37	39
+20299	ob8	雲霧之球	Cloudy Sphere	ob8	weap	orb	exceptional		0	1	2			0	0	41	42
+20300	ob9	閃耀之球	Sparkling Ball	ob9	weap	orb	exceptional		0	1	2			0	0	46	48
+20301	oba	渦流水晶	Swirling Crystal	oba	weap	orb	exceptional		10	1	3			0	0	50	51
+20302	am6	梣木弓	Ashwood Bow	am6	weap	abow	exceptional		0	1	5			0	0	39	39
+20303	am7	儀禮弓	Ceremonial Bow	am7	weap	abow	exceptional		10	1	5			0	0	47	48
+20304	am8	儀禮長矛	Ceremonial Spear	am8	weap	aspe	exceptional		0	5	6			0	0	43	45
+20305	am9	儀禮長槍	Ceremonial Pike	am9	weap	aspe	exceptional		20	5	6			0	0	51	51
+20306	ama	儀禮標槍	Ceremonial Javelin	ama	weap	ajav	exceptional		-10	3				0	0	35	36
+20307	obb	天堂之石	Heavenly Stone	obb	weap	orb	elite		-10	1	2			0	0	59	60
+20308	obc	異能法珠	Eldritch Orb	obc	weap	orb	elite		-10	1	2			0	0	67	69
+20309	obd	惡魔心石	Demon Heart	obd	weap	orb	elite		0	1	2			0	0	75	75
+20310	obe	漩渦法珠	Vortex Orb	obe	weap	orb	elite		0	1	2			0	0	84	84
+20311	obf	次元法珠	Dimensional Shard	obf	weap	orb	elite		10	1	3			0	0	85	87
+20312	amb	女傑之弓	Matriarchal Bow	amb	weap	abow	elite		-10	1	5			0	0	53	54
+20313	amc	主母之弓	Grand Matron Bow	amc	weap	abow	elite		10	1	5			0	0	78	78
+20314	amd	女傑長矛	Matriarchal Spear	amd	weap	aspe	elite		0	5	6			0	0	61	63
+20315	ame	女傑長槍	Matriarchal Pike	ame	weap	aspe	elite		20	5	6			0	0	81	81
+20316	amf	女傑標槍	Matriarchal Javelin	amf	weap	ajav	elite		-10	3				0	0	65	66
+20317	dr4	獵鷹面具	Falcon Mask	dr4	armo	pelt	normal				3	12	28	18	42	20	21
+20318	dr2	飛鷹頭盔	Hawk Helm	dr2	armo	pelt	normal				3	4	15	6	22	8	9
+20319	dr3	巨角獸帽	Antlers	dr3	armo	pelt	normal				3	18	24	27	36	16	18
+20320	dr1	狼頭獸帽	Wolf Head	dr1	armo	pelt	normal				3	8	11	12	16	4	6
+20321	dr5	靈狼面具	Spirit Mask	dr5	armo	pelt	normal				3	22	35	33	52	24	24
+20322	ba1	顎骨帽	Jawbone Cap	ba1	armo	phlm	normal				3	10	15	15	22	4	6
+20323	ba2	尖牙頭盔	Fanged Helm	ba2	armo	phlm	normal				3	15	20	22	30	8	9
+20324	ba3	尖角頭盔	Horned Helm	ba3	armo	phlm	normal				3	25	30	37	45	16	18
+20325	ba4	突擊頭盔	Assault Helmet	ba4	armo	phlm	normal				3	30	35	45	52	20	21
+20326	ba5	復仇者護盔	Avenger Guard	ba5	armo	phlm	normal				3	35	50	52	75	24	24
+20327	pa1	小盾	Targe	pa1	armo	ashd	normal	light			4	8	12	12	18	4	6
+20328	pa2	輕圓盾	Rondache	pa2	armo	ashd	normal	light			4	10	18	15	27	8	9
+20329	pa3	紋章盾	Heraldic Shield	pa3	armo	ashd	normal	light			4	16	26	24	39	16	18
+20330	pa4	艾文之盾	Aerin Shield	pa4	armo	ashd	normal	light			4	26	36	39	54	20	21
+20331	pa5	冠冕之盾	Crown Shield	pa5	armo	ashd	normal	light			4	30	40	45	60	24	24
+20332	ne1	防腐頭顱	Preserved Head	ne1	armo	head	normal				2	2	5	3	7	4	6
+20333	ne2	殭屍頭顱	Zombie Head	ne2	armo	head	normal				2	4	8	6	12	8	9
+20334	ne3	解繃者頭顱	Unraveller Head	ne3	armo	head	normal				2	6	10	9	15	16	18
+20335	ne4	石像鬼頭顱	Gargoyle Head	ne4	armo	head	normal				2	10	16	15	24	20	21
+20336	ne5	惡魔頭顱	Demon Head	ne5	armo	head	normal				2	15	20	22	30	24	24
+20337	ci0	頭環	Circlet	ci0	armo	circ	normal				2	20	30	30	45	24	24
+20338	ci1	寶冠	Coronet	ci1	armo	circ	normal				2	30	40	45	60	52	54
+20339	ci2	頭冠	Tiara	ci2	armo	circ	exceptional				3	40	50	60	75	70	72
+20340	ci3	權冠	Diadem	ci3	armo	circ	elite				3	50	60	75	90	85	87
+20341	uap	軍帽	Shako	uap	armo	helm	elite				2	98	141	147	211	58	60
+20342	ukp	多頭蛇顱盔	Hydraskull	ukp	armo	helm	elite				2	101	145	151	217	63	63
+20343	ulm	覆頰盔	Armet	ulm	armo	helm	elite				2	105	149	157	223	68	69
+20344	uhl	巨螺盔	Giant Conch	uhl	armo	helm	elite				2	110	154	165	231	54	54
+20345	uhm	巨角頭盔	Spired Helm	uhm	armo	helm	elite				3	114	159	171	238	79	81
+20346	urn	日冕之冠	Corona	urn	armo	helm	elite				3	111	165	166	247	85	87
+20347	usk	惡魔頭骨	Demonhead	usk	armo	helm	elite				3	101	154	151	231	74	75
+20348	uui	灰暮罩衣	Dusk Shroud	uui	armo	tors	elite	light			4	361	467	541	700	65	66
+20349	uea	龍皮甲	Wyrmhide	uea	armo	tors	elite	light			4	364	470	546	705	67	69
+20350	ula	聖甲蟲殼皮甲	Scarab Husk	ula	armo	tors	elite	light			4	369	474	553	711	68	69
+20351	utu	鋼線毛皮甲	Wire Fleece	utu	armo	tors	elite	light			4	375	481	562	721	70	72
+20352	ung	鑽石鎖甲	Diamond Mail	ung	armo	tors	elite	medium			4	383	489	574	733	72	72
+20353	ucl	綴鱗戰甲	Loricated Mail	ucl	armo	tors	elite	heavy			4	390	496	585	744	73	75
+20354	uhn	骸骨網甲	Boneweave	uhn	armo	tors	elite	medium			4	399	505	598	757	62	63
+20355	urs	鱗鎧胸甲	Great Hauberk	urs	armo	tors	elite	light			4	395	501	592	751	75	75
+20356	upl	炎魔皮板甲	Balrog Skin	upl	armo	tors	elite	medium			4	410	517	615	775	76	78
+20357	ult	地獄鍛甲	Hellforge Plate	ult	armo	tors	elite	heavy			4	421	530	631	795	78	78
+20358	uld	海怪之殼	Kraken Shell	uld	armo	tors	elite	medium			4	417	523	625	784	81	81
+20359	uth	漆護鎧甲	Lacquered Plate	uth	armo	tors	elite	medium			4	433	541	649	811	82	84
+20360	uul	暗影鎧甲	Shadow Plate	uul	armo	tors	elite	heavy			4	446	557	669	835	83	84
+20361	uar	神聖戰甲	Sacred Armor	uar	armo	tors	elite	medium			4	487	600	730	900	85	87
+20362	utp	統御者鎧甲	Archon Plate	utp	armo	tors	elite	light			4	410	524	615	786	84	84
+20363	uuc	斗盾	Heater	uuc	armo	shie	elite	light			2	95	110	142	165	58	60
+20364	uml	圓月盾	Luna	uml	armo	shie	elite	light			2	108	123	162	184	61	63
+20365	urg	亥伯龍盾	Hyperion	urg	armo	shie	elite	medium			3	119	135	178	202	64	66
+20366	uit	君主盾	Monarch	uit	armo	shie	elite	light			4	133	148	199	222	72	72
+20367	uow	禦塔盾	Aegis	uow	armo	shie	elite	heavy			4	145	161	217	241	79	81
+20368	uts	庇護盾	Ward	uts	armo	shie	elite	medium			4	153	170	229	255	84	84
+20369	ulg	荊棘手套	Bramble Mitts	ulg	armo	glov	elite					54	62	81	93	57	57
+20370	uvg	吸血鬼骸骨手套	Vampirebone Gloves	uvg	armo	glov	elite					56	65	84	97	63	63
+20371	umg	護臂	Vambraces	umg	armo	glov	elite					59	67	88	100	69	69
+20372	utg	聖教軍護手	Crusader Gauntlets	utg	armo	glov	elite					59	68	88	102	76	78
+20373	uhg	巨魔護手	Ogre Gauntlets	uhg	armo	glov	elite					62	71	93	106	85	87
+20374	ulb	龍皮靴	Wyrmhide Boots	ulb	armo	boot	elite					54	62	81	93	60	60
+20375	uvb	聖甲蟲殼皮靴	Scarabshell Boots	uvb	armo	boot	elite					56	65	84	97	66	66
+20376	umb	骸骨網靴	Boneweave Boots	umb	armo	boot	elite					59	67	88	100	72	72
+20377	utb	幻鏡戰靴	Mirrored Boots	utb	armo	boot	elite					59	68	88	102	81	81
+20378	uhb	勇士護脛	Myrmidon Greaves	uhb	armo	boot	elite					62	71	93	106	85	87
+20379	ulc	蛛網束帶	Spiderweb Sash	ulc	armo	belt	elite					55	62	82	93	61	63
+20380	uvc	吸血鬼牙腰帶	Vampirefang Belt	uvc	armo	belt	elite					56	63	84	94	68	69
+20381	umc	秘銀腰帶	Mithril Coil	umc	armo	belt	elite					58	65	87	97	75	75
+20382	utc	食人妖腰帶	Troll Belt	utc	armo	belt	elite					59	66	88	99	82	84
+20383	uhc	巨神腰帶	Colossus Girdle	uhc	armo	belt	elite					61	71	91	106	85	87
+20384	uh9	骸骨面罩	Bone Visage	uh9	armo	helm	elite				3	100	157	150	235	84	84
+20385	ush	食人妖骨盾	Troll Nest	ush	armo	shie	elite	light			3	158	173	237	259	76	78
+20386	upk	刀刃刺盾	Blade Barrier	upk	armo	shie	elite	light			3	147	163	220	244	68	69
+20387	dr9	聖羽頭飾	Sacred Feathers	dr9	armo	pelt	exceptional				3	58	87	87	130	50	51
+20388	dr7	獅鷲獸頭飾	Griffon Headdress	dr7	armo	pelt	exceptional				3	46	68	69	102	40	42
+20389	dr8	獵人面罩	Hunter's Guise	dr8	armo	pelt	exceptional				3	67	81	100	121	46	48
+20390	dr6	猛狼頭盔	Alpha Helm	dr6	armo	pelt	exceptional				3	52	62	78	93	35	36
+20391	dra	圖騰面具	Totemic Mask	dra	armo	pelt	exceptional				3	73	98	109	147	55	57
+20392	ba6	顎骨面甲	Jawbone Visor	ba6	armo	phlm	exceptional				3	55	68	82	102	33	33
+20393	ba7	獅牙頭盔	Lion Helm	ba7	armo	phlm	exceptional				3	63	75	94	112	38	39
+20394	ba8	狂怒面具	Rage Mask	ba8	armo	phlm	exceptional				3	78	90	117	135	44	45
+20395	ba9	凶蠻頭盔	Savage Helmet	ba9	armo	phlm	exceptional				3	85	98	127	147	49	51
+20396	baa	殺手護盔	Slayer Guard	baa	armo	phlm	exceptional				3	93	120	139	180	54	54
+20397	pa6	阿卡拉圓盾	Akaran Targe	pa6	armo	ashd	exceptional	light			4	101	125	151	187	35	36
+20398	pa7	阿卡拉輕圓盾	Akaran Rondache	pa7	armo	ashd	exceptional	light			4	113	137	169	205	40	42
+20399	pa8	守護之盾	Protector Shield	pa8	armo	ashd	exceptional	light			4	129	153	193	229	46	48
+20400	pa9	金紋盾	Gilded Shield	pa9	armo	ashd	exceptional	light			4	144	168	216	252	51	51
+20401	paa	皇家盾	Royal Shield	paa	armo	ashd	exceptional	light			4	156	181	234	271	55	57
+20402	ne6	木乃伊首級	Mummified Trophy	ne6	armo	head	exceptional				2	38	48	57	72	33	33
+20403	ne7	鬼娃首級	Fetish Trophy	ne7	armo	head	exceptional				2	41	52	61	78	39	39
+20404	ne8	司事首級	Sexton Trophy	ne8	armo	head	exceptional				2	44	55	66	82	45	45
+20405	ne9	領唱者首級	Cantor Trophy	ne9	armo	head	exceptional				2	50	64	75	96	49	51
+20406	nea	祭司首級	Hierophant Trophy	nea	armo	head	exceptional				2	58	70	87	105	54	54
+20407	dre	天翔靈獸帽	Sky Spirit	dre	armo	pelt	elite				3	103	155	154	232	83	84
+20408	drc	日陽靈獸帽	Sun Spirit	drc	armo	pelt	elite				3	98	147	147	220	69	69
+20409	drd	地土靈獸帽	Earth Spirit	drd	armo	pelt	elite				3	107	152	160	228	76	78
+20410	drb	血系靈獸帽	Blood Spirit	drb	armo	pelt	elite				3	101	145	151	217	62	63
+20411	drf	幽夢靈獸帽	Dream Spirit	drf	armo	pelt	elite				3	109	159	163	238	85	87
+20412	bab	屠殺頭盔	Carnage Helm	bab	armo	phlm	elite				3	102	147	153	220	60	60
+20413	bac	暴怒面甲	Fury Visor	bac	armo	phlm	elite				3	105	150	157	225	66	66
+20414	bad	毀滅者頭盔	Destroyer Helm	bad	armo	phlm	elite				3	111	156	166	234	73	75
+20415	bae	征服者盔冠	Conqueror Crown	bae	armo	phlm	elite				3	114	159	171	238	80	81
+20416	baf	守護者盔冠	Guardian Crown	baf	armo	phlm	elite				3	117	168	175	252	85	87
+20417	pab	神聖小盾	Sacred Targe	pab	armo	ashd	elite	light			4	126	158	189	237	63	63
+20418	pac	神聖輕圓盾	Sacred Rondache	pac	armo	ashd	elite	light			4	138	164	207	246	70	72
+20419	pae	撒卡蘭姆盾	Zakarum Shield	pae	armo	ashd	elite	light			4	169	193	253	289	82	84
+20420	paf	渦旋盾	Vortex Shield	paf	armo	ashd	elite	light			4	182	225	273	337	85	87
+20421	neb	僕從顱骨	Minion Skull	neb	armo	head	elite				2	95	139	142	208	59	60
+20423	ned	督軍顱骨	Overseer Skull	ned	armo	head	elite				2	98	142	147	213	66	66
+20424	nee	魅魔顱骨	Succubus Skull	nee	armo	head	elite				2	100	146	150	219	81	81
+20425	nef	鮮血之王顱骨	Bloodlord Skull	nef	armo	head	elite				2	103	148	154	222	85	87
+21778	ob5	傑瑞德之石	Jared's Stone	ob5	weap	orb	normal		10	1	3			0	0	24	24
+21779	pad	庫拉斯特盾	Kurast Shield	pad	armo	ashd	elite	light			4	154	172	231	258	74	75
+21780	axf	斧手	Hatchet Hands	axf	weap	h2h	normal		10	2	2			0	0	12	12
