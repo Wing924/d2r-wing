@@ -18,6 +18,8 @@ type (
 		Name              string   `yaml:"name"`
 		Resource          string   `yaml:"resource"`
 		LookupStringFiles []string `yaml:"lookup_string_files"`
+		IdDelta           string   `yaml:"id_delta"`
+		KeyTemplate       string   `yaml:"key_template"`
 		Template          string   `yaml:"template"`
 	}
 )

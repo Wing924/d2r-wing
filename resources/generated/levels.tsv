@@ -1,130 +1,124 @@
-id	Key	Name	zhTW	normal	nightmare	hell
-788	Moo Moo Farm	Act 1 - Moo Moo Farm	秘密乳牛關	28	64	81
-789	Chaos Sanctum	Act 4 - Diablo 1	混沌魔殿	28	58	85
-791	River of Flame	Act 4 - Lava 1	火焰之河	27	57	85
-792	Outer Steppes	Act 4 - Mesa 1	外圍荒原	26	56	82
-793	Plains of Despair	Act 4 - Mesa 2	絕望平原	26	56	83
-794	City of the Damned	Act 4 - Mesa 3	罪罰之城	27	57	84
-795	Durance of Hate Level 3	Act 3 - Mephisto 3	憎恨囚牢第三層	25	55	83
-796	Durance of Hate Level 2	Act 3 - Mephisto 2	憎恨囚牢第二層	25	55	83
-797	Durance of Hate Level 1	Act 3 - Mephisto 1	憎恨囚牢第一層	25	55	83
-798	Disused Reliquary	Act 3 - Temple 6	廢棄的聖殿	24	54	85
-799	Ruined Fane	Act 3 - Temple 5	荒廢的寺院	24	54	85
-800	Forgotten Temple	Act 3 - Temple 4	遺忘神殿	24	54	85
-801	Forgotten Reliquary	Act 3 - Temple 3	遺忘的聖殿	23	53	85
-802	Disused Fane	Act 3 - Temple 2	廢棄的寺院	23	53	85
-803	Ruined Temple	Act 3 - Temple 1	荒廢的神殿	23	53	85
-804	Flayer Dungeon Level 3	Act 3 - Dungeon 2 Treasure	剝皮地牢第三層	22	51	83
-805	Flayer Dungeon Level 2	Act 3 - Dungeon 2 B	剝皮地牢第二層	22	51	82
-806	Flayer Dungeon Level 1	Act 3 - Dungeon 2 A	剝皮地牢第一層	22	51	81
-807	Swampy Pit Level 3	Act 3 - Dungeon 1 Treasure	沼澤地穴第三層	21	51	85
-808	Swampy Pit Level 2	Act 3 - Dungeon 1 B	沼澤地穴第二層	21	51	85
-809	Swampy Pit Level 1	Act 3 - Dungeon 1 A	沼澤地穴第一層	21	51	85
-810	Spider Cave	Act 3 - Spider 1	蜘蛛巢穴	21	50	85
-811	Spider Cavern	Act 3 - Spider 2	蜘蛛洞窟	21	50	79
-812	Travincal	Act 3 - Travincal	崔凡克	24	54	82
-813	Kurast Causeway	Act 3 - Kurast 4	庫拉斯特堤道	24	53	81
-814	Upper Kurast	Act 3 - Kurast 3	庫拉斯特上層	23	52	81
-815	Kurast Bazaar	Act 3 - Kurast 2	庫拉斯特市集	22	52	81
-816	Lower Kurast	Act 3 - Kurast 1	庫拉斯特下層	22	52	80
-817	Flayer Jungle	Act 3 - Jungle 3	剝皮叢林	22	50	80
-818	Great Marsh	Act 3 - Jungle 2	大沼澤	21	50	80
-819	Spider Forest	Act 3 - Jungle 1	蜘蛛森林	21	49	79
-824	Arcane Sanctuary	Act 2 - Arcane	秘法聖殿	14	48	79
-825	Duriel's Lair	Act 2 - Duriel's Lair	塔拉夏的密室	17	49	80
-826	Tal Rasha's Tomb	Act 2 - Tomb Tal 1	塔拉夏的古墓	17	49	80
-826	Tal Rasha's Tomb	Act 2 - Tomb Tal 2	塔拉夏的古墓	17	49	80
-826	Tal Rasha's Tomb	Act 2 - Tomb Tal 3	塔拉夏的古墓	17	49	80
-826	Tal Rasha's Tomb	Act 2 - Tomb Tal 4	塔拉夏的古墓	17	49	80
-826	Tal Rasha's Tomb	Act 2 - Tomb Tal 5	塔拉夏的古墓	17	49	80
-826	Tal Rasha's Tomb	Act 2 - Tomb Tal 6	塔拉夏的古墓	17	49	80
-826	Tal Rasha's Tomb	Act 2 - Tomb Tal 7	塔拉夏的古墓	17	49	80
-827	Ancient Tunnels	Act 2 - Sewer 2 A	古代通道	17	46	85
-828	Maggot Lair Level 3	Act 2 - Lair 1 Treasure	蛆蟲巢穴第三層	17	46	85
-829	Maggot Lair Level 2	Act 2 - Lair 1 B	蛆蟲巢穴第二層	17	45	84
-830	Maggot Lair Level 1	Act 2 - Lair 1 A	蛆蟲巢穴第一層	17	45	84
-831	Claw Viper Temple Level 2	Act 2 - Tomb 3 Treasure	利爪蛇魔神殿第二層	14	47	83
-832	Halls of the Dead Level 3	Act 2 - Tomb 2 Treasure	死亡之殿第三層	13	45	82
-833	Stony Tomb Level 2	Act 2 - Tomb 1 Treasure	古老石墓第二層	12	44	85
-834	Claw Viper Temple Level 1	Act 2 - Tomb 3 A	利爪蛇魔神殿第一層	14	47	82
-835	Halls of the Dead Level 2	Act 2 - Tomb 2 B	死亡之殿第二層	13	45	81
-836	Halls of the Dead Level 1	Act 2 - Tomb 2 A	死亡之殿第一層	12	44	79
-837	Stony Tomb Level 1	Act 2 - Tomb 1 A	古老石墓第一層	12	44	85
-838	Palace Cellar Level 3	Act 2 - Basement 3	皇宮地窖第三層	13	48	78
-839	Palace Cellar Level 2	Act 2 - Basement 2	皇宮地窖第二層	13	47	78
-840	Palace Cellar Level 1	Act 2 - Basement 1	皇宮地窖第一層	13	47	78
-841	Harem Level 2	Act 2 - Corrupt Harem 1	後宮第二層	13	47	78
-843	Sewers Level 3	Act 2 - Sewer 1 C	下水道第三層	14	44	75
-846	Canyon of the Magi	Act 2 - Valley of the Kings	賢者之谷	16	48	79
-847	Valley of Snakes	Act 2 - Desert 5	群蛇峽谷	18	46	77
-848	Lost City	Act 2 - Desert 4	失落古城	17	46	77
-849	Far Oasis	Act 2 - Desert 3	遙遠的綠洲	16	45	76
-850	Dry Hills	Act 2 - Desert 2	乾土高地	15	44	76
-851	Rocky Waste	Act 2 - Desert 1	碎石荒地	14	43	75
-5019	Catacombs Level 4	Act 1 - Catacombs 4	地下墓穴第四層	12	43	73
-5020	Catacombs Level 3	Act 1 - Catacombs 3	地下墓穴第三層	12	43	73
-5021	Catacombs Level 2	Act 1 - Catacombs 2	地下墓穴第二層	11	42	73
-5022	Catacombs Level 1	Act 1 - Catacombs 1	地下墓穴第一層	11	42	72
-5023	Cathedral	Act 1 - Cathedral	大教堂	11	42	72
-5024	Inner Cloister	Act 1 - Courtyard 2	內側迴廊	10	41	72
-5025	Jail Level 3	Act 1 - Jail 3	監牢第三層	10	41	71
-5026	Jail Level 2	Act 1 - Jail 2	監牢第二層	10	41	71
-5027	Jail Level 1	Act 1 - Jail 1	監牢第一層	10	41	71
-5028	Barracks	Act 1 - Barracks	兵營	9	40	70
-5029	Outer Cloister	Act 1 - Courtyard 1	外側迴廊	9	40	70
-5030	Monastery Gate	Act 1 - Monastery	修道院大門	8	40	70
-5031	Tower Cellar Level 5	Act 1 - Crypt 3 E	高塔地牢第五層	7	42	79
-5032	Tower Cellar Level 4	Act 1 - Crypt 3 D	高塔地牢第四層	7	41	78
-5033	Tower Cellar Level 3	Act 1 - Crypt 3 C	高塔地牢第三層	7	40	77
-5034	Tower Cellar Level 2	Act 1 - Crypt 3 B	高塔地牢第二層	7	39	76
-5035	Tower Cellar Level 1	Act 1 - Crypt 3 A	高塔地牢第一層	7	38	75
-5037	Mausoleum	Act 1 - Crypt 2 A	大陵墓	3	37	85
-5038	Crypt	Act 1 - Crypt 1 A	墓地	3	37	83
-5039	Burial Grounds	Act 1 - Graveyard	埋骨之地	3	36	80
-5040	Pit Level 2	Act 1 - Cave 5 Treasure	地穴第二層	7	40	85
-5041	Hole Level 2	Act 1 - Cave 4 Treasure	地洞第二層	5	39	81
-5042	Underground Passage Level 2	Act 1 - Cave 3 Treasure	地底通道第二層	4	38	85
-5043	Cave Level 2	Act 1 - Cave 2 Treasure	洞穴第二層  洞穴	2	37	78
-5044	Pit Level 1	Act 1 - Cave 5	地穴第一層	7	39	85
-5045	Hole Level 1	Act 1 - Cave 4	地洞第一層	5	38	80
-5046	Underground Passage Level 1	Act 1 - Cave 3	地底通道第一層	4	37	69
-5047	Cave Level 1	Act 1 - Cave 2	洞穴第一層	2	36	77
-5048	Den of Evil	Act 1 - Cave 1	邪惡洞窟	1	36	79
-5049	Tamoe Highland	Act 1 - Wilderness 6	泰摩高地	8	39	69
-5050	Black Marsh	Act 1 - Wilderness 5	黑色荒地	6	38	69
-5051	Dark Wood	Act 1 - Wilderness 4	黑暗森林	5	38	68
-5052	Stony Field	Act 1 - Wilderness 3	亂石曠野	4	37	68
-5053	Cold Plains	Act 1 - Wilderness 2	冰冷之原	2	36	68
-5054	Blood Moor	Act 1 - Wilderness 1	鮮血荒地	1	36	67
-11155	Pandemonium Run 1	Act 5 - Pandemonium 1	魔母巢穴	50	75	83
-11156	Pandemonium Run 2	Act 5 - Pandemonium 2	遺忘沙漠	50	75	83
-11157	Pandemonium Run 3	Act 5 - Pandemonium 3	苦痛熔爐	50	75	83
-21865	Hell1	Act 5 - Hell 1	亞巴頓	39	60	85
-21866	Hell2	Act 5 - Hell 2	冥河地穴	39	61	85
-21867	Hell3	Act 5 - Hell 3	煉獄地穴	39	62	85
-22647	Bloody Foothills	Act 5 - Siege 1	血腥丘陵	24	58	80
-22648	Rigid Highlands	Act 5 - Barricade 1	冰凍高地	25	59	81
-22649	Arreat Plateau	Act 5 - Barricade 2	亞瑞特高原	26	60	81
-22650	Crystalized Cavern Level 1	Act 5 - Ice Cave 1	水晶通道	29	61	82
-22651	Cellar of Pity	Act 5 - Ice Cave 1A	冰凍之河	29	61	83
-22652	Crystalized Cavern Level 2	Act 5 - Ice Cave 2	冰河小徑	29	61	83
-22653	Echo Chamber	Act 5 - Ice Cave 2A	漂泊者洞窟	29	61	85
-22654	Tundra Wastelands	Act 5 - Barricade Snow	冰凍苔原	27	60	81
-22655	Glacial Caves Level 1	Act 5 - Ice Cave 3	先祖之路	29	62	82
-22656	Glacial Caves Level 2	Act 5 - Ice Cave 3A	冰窖	29	62	85
-22657	Rocky Summit	Act 5 - Mountain Top	亞瑞特山巔	37	68	87
-22658	Nihlathaks Temple	Act 5 - Temple Entrance	尼拉塞克的神殿	32	63	83
-22659	Halls of Anguish	Act 5 - Temple 1	怨慟之廳	33	63	83
-22660	Halls of Death's Calling	Act 5 - Temple 2	苦痛之廳	34	64	84
-22662	Halls of Vaught	Act 5 - Temple Boss	沃特之廳	36	64	84
-22663	The Worldstone Keep Level 1	Act 5 - Baal Temple 1	世界之石要塞第一層	39	65	85
-22664	The Worldstone Keep Level 2	Act 5 - Baal Temple 2	世界之石要塞第二層	40	65	85
-22665	The Worldstone Keep Level 3	Act 5 - Baal Temple 3	世界之石要塞第三層	42	66	85
-22666	The Worldstone Chamber	Act 5 - World Stone	世界之石大殿	43	66	85
-22667	Throne of Destruction	Act 5 - Throne Room	毀滅王座	43	66	85
-115018	act1 Tristram	Act 1 - Tristram	崔斯特姆	6	39	76
-120844	act2 Sewers Level 2	Act 2 - Sewer 1 B	下水道第二層	13	43	74
-120845	act2 Sewers Level 1	Act 2 - Sewer 1 A	下水道第一層	13	43	74
-130844	act3 Sewers Level 2	Act 3 - Sewer 2	下水道第二層	24	53	85
-130845	act3 Sewers Level 1	Act 3 - Sewer 1	下水道第一層	23	52	85
-155018	act5 Tristram	Act 5 - Pandemonium Finale	崔斯特姆	50	75	83
+id	Key	act	zhTW	normal	nightmare	hell
+788	Moo Moo Farm	1	秘密乳牛關	28	64	81
+5019	Catacombs Level 4	1	地下墓穴第四層	12	43	73
+5020	Catacombs Level 3	1	地下墓穴第三層	12	43	73
+5021	Catacombs Level 2	1	地下墓穴第二層	11	42	73
+5022	Catacombs Level 1	1	地下墓穴第一層	11	42	72
+5023	Cathedral	1	大教堂	11	42	72
+5024	Inner Cloister	1	內側迴廊	10	41	72
+5025	Jail Level 3	1	監牢第三層	10	41	71
+5026	Jail Level 2	1	監牢第二層	10	41	71
+5027	Jail Level 1	1	監牢第一層	10	41	71
+5028	Barracks	1	兵營	9	40	70
+5029	Outer Cloister	1	外側迴廊	9	40	70
+5030	Monastery Gate	1	修道院大門	8	40	70
+5031	Tower Cellar Level 5	1	高塔地牢第五層	7	42	79
+5032	Tower Cellar Level 4	1	高塔地牢第四層	7	41	78
+5033	Tower Cellar Level 3	1	高塔地牢第三層	7	40	77
+5034	Tower Cellar Level 2	1	高塔地牢第二層	7	39	76
+5035	Tower Cellar Level 1	1	高塔地牢第一層	7	38	75
+5037	Mausoleum	1	大陵墓	3	37	85
+5038	Crypt	1	墓地	3	37	83
+5039	Burial Grounds	1	埋骨之地	3	36	80
+5040	Pit Level 2	1	地穴第二層	7	40	85
+5041	Hole Level 2	1	地洞第二層	5	39	81
+5042	Underground Passage Level 2	1	地底通道第二層	4	38	85
+5043	Cave Level 2	1	洞穴第二層  洞穴	2	37	78
+5044	Pit Level 1	1	地穴第一層	7	39	85
+5045	Hole Level 1	1	地洞第一層	5	38	80
+5046	Underground Passage Level 1	1	地底通道第一層	4	37	69
+5047	Cave Level 1	1	洞穴第一層	2	36	77
+5048	Den of Evil	1	邪惡洞窟	1	36	79
+5049	Tamoe Highland	1	泰摩高地	8	39	69
+5050	Black Marsh	1	黑色荒地	6	38	69
+5051	Dark Wood	1	黑暗森林	5	38	68
+5052	Stony Field	1	亂石曠野	4	37	68
+5053	Cold Plains	1	冰冷之原	2	36	68
+5054	Blood Moor	1	鮮血荒地	1	36	67
+115018	act1 Tristram	1	崔斯特姆	6	39	76
+824	Arcane Sanctuary	2	秘法聖殿	14	48	79
+825	Duriel's Lair	2	塔拉夏的密室	17	49	80
+826	Tal Rasha's Tomb	2	塔拉夏的古墓	17	49	80
+827	Ancient Tunnels	2	古代通道	17	46	85
+828	Maggot Lair Level 3	2	蛆蟲巢穴第三層	17	46	85
+829	Maggot Lair Level 2	2	蛆蟲巢穴第二層	17	45	84
+830	Maggot Lair Level 1	2	蛆蟲巢穴第一層	17	45	84
+831	Claw Viper Temple Level 2	2	利爪蛇魔神殿第二層	14	47	83
+832	Halls of the Dead Level 3	2	死亡之殿第三層	13	45	82
+833	Stony Tomb Level 2	2	古老石墓第二層	12	44	85
+834	Claw Viper Temple Level 1	2	利爪蛇魔神殿第一層	14	47	82
+835	Halls of the Dead Level 2	2	死亡之殿第二層	13	45	81
+836	Halls of the Dead Level 1	2	死亡之殿第一層	12	44	79
+837	Stony Tomb Level 1	2	古老石墓第一層	12	44	85
+838	Palace Cellar Level 3	2	皇宮地窖第三層	13	48	78
+839	Palace Cellar Level 2	2	皇宮地窖第二層	13	47	78
+840	Palace Cellar Level 1	2	皇宮地窖第一層	13	47	78
+841	Harem Level 2	2	後宮第二層	13	47	78
+843	Sewers Level 3	2	下水道第三層	14	44	75
+846	Canyon of the Magi	2	賢者之谷	16	48	79
+847	Valley of Snakes	2	群蛇峽谷	18	46	77
+848	Lost City	2	失落古城	17	46	77
+849	Far Oasis	2	遙遠的綠洲	16	45	76
+850	Dry Hills	2	乾土高地	15	44	76
+851	Rocky Waste	2	碎石荒地	14	43	75
+120844	act2 Sewers Level 2	2	下水道第二層	13	43	74
+120845	act2 Sewers Level 1	2	下水道第一層	13	43	74
+795	Durance of Hate Level 3	3	憎恨囚牢第三層	25	55	83
+796	Durance of Hate Level 2	3	憎恨囚牢第二層	25	55	83
+797	Durance of Hate Level 1	3	憎恨囚牢第一層	25	55	83
+798	Disused Reliquary	3	廢棄的聖殿	24	54	85
+799	Ruined Fane	3	荒廢的寺院	24	54	85
+800	Forgotten Temple	3	遺忘神殿	24	54	85
+801	Forgotten Reliquary	3	遺忘的聖殿	23	53	85
+802	Disused Fane	3	廢棄的寺院	23	53	85
+803	Ruined Temple	3	荒廢的神殿	23	53	85
+804	Flayer Dungeon Level 3	3	剝皮地牢第三層	22	51	83
+805	Flayer Dungeon Level 2	3	剝皮地牢第二層	22	51	82
+806	Flayer Dungeon Level 1	3	剝皮地牢第一層	22	51	81
+807	Swampy Pit Level 3	3	沼澤地穴第三層	21	51	85
+808	Swampy Pit Level 2	3	沼澤地穴第二層	21	51	85
+809	Swampy Pit Level 1	3	沼澤地穴第一層	21	51	85
+810	Spider Cave	3	蜘蛛巢穴	21	50	85
+811	Spider Cavern	3	蜘蛛洞窟	21	50	79
+812	Travincal	3	崔凡克	24	54	82
+813	Kurast Causeway	3	庫拉斯特堤道	24	53	81
+814	Upper Kurast	3	庫拉斯特上層	23	52	81
+815	Kurast Bazaar	3	庫拉斯特市集	22	52	81
+816	Lower Kurast	3	庫拉斯特下層	22	52	80
+817	Flayer Jungle	3	剝皮叢林	22	50	80
+818	Great Marsh	3	大沼澤	21	50	80
+819	Spider Forest	3	蜘蛛森林	21	49	79
+130844	act3 Sewers Level 2	3	下水道第二層	24	53	85
+130845	act3 Sewers Level 1	3	下水道第一層	23	52	85
+789	Chaos Sanctum	4	混沌魔殿	28	58	85
+791	River of Flame	4	火焰之河	27	57	85
+792	Outer Steppes	4	外圍荒原	26	56	82
+793	Plains of Despair	4	絕望平原	26	56	83
+794	City of the Damned	4	罪罰之城	27	57	84
+11155	Pandemonium Run 1	5	魔母巢穴	50	75	83
+11156	Pandemonium Run 2	5	遺忘沙漠	50	75	83
+11157	Pandemonium Run 3	5	苦痛熔爐	50	75	83
+21865	Hell1	5	亞巴頓	39	60	85
+21866	Hell2	5	冥河地穴	39	61	85
+21867	Hell3	5	煉獄地穴	39	62	85
+22647	Bloody Foothills	5	血腥丘陵	24	58	80
+22648	Rigid Highlands	5	冰凍高地	25	59	81
+22649	Arreat Plateau	5	亞瑞特高原	26	60	81
+22650	Crystalized Cavern Level 1	5	水晶通道	29	61	82
+22651	Cellar of Pity	5	冰凍之河	29	61	83
+22652	Crystalized Cavern Level 2	5	冰河小徑	29	61	83
+22653	Echo Chamber	5	漂泊者洞窟	29	61	85
+22654	Tundra Wastelands	5	冰凍苔原	27	60	81
+22655	Glacial Caves Level 1	5	先祖之路	29	62	82
+22656	Glacial Caves Level 2	5	冰窖	29	62	85
+22657	Rocky Summit	5	亞瑞特山巔	37	68	87
+22658	Nihlathaks Temple	5	尼拉塞克的神殿	32	63	83
+22659	Halls of Anguish	5	怨慟之廳	33	63	83
+22660	Halls of Death's Calling	5	苦痛之廳	34	64	84
+22662	Halls of Vaught	5	沃特之廳	36	64	84
+22663	The Worldstone Keep Level 1	5	世界之石要塞第一層	39	65	85
+22664	The Worldstone Keep Level 2	5	世界之石要塞第二層	40	65	85
+22665	The Worldstone Keep Level 3	5	世界之石要塞第三層	42	66	85
+22666	The Worldstone Chamber	5	世界之石大殿	43	66	85
+22667	Throne of Destruction	5	毀滅王座	43	66	85
+155018	act5 Tristram	5	崔斯特姆	50	75	83

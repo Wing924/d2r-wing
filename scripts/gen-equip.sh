@@ -8,15 +8,15 @@ tmpdir="$(mktemp -d)"
 trap 'rm -rf $tmpdir' EXIT
 
 scripts/json-to-tsv.sh origin/data/local/lng/strings/item-names.json > "$tmpdir/str.tsv"
-scripts/json-to-tsv.sh origin/data/local/lng/strings-legacy/item-names.json > "$tmpdir/oldstr.tsv"
 
 textql -header -dlm=tab -output-dlm=tab -output-header \
     -sql '
 SELECT
     s.id,
     s.Key,
-    o.zhTW old_zhTW,
     s.zhTW,
+    s.enUS,
+    code,
     category,
     type,
     CASE
@@ -40,31 +40,33 @@ SELECT
         ELSE ""
     END speed,
     CASE
+        WHEN category = "weap" THEN 1 + IFNULL(rangeadder, 0)
+    END range,
+    CASE
         WHEN gemsockets > 0 THEN
             MIN(gemsockets, invwidth*invheight)
         ELSE
             ""
     END socket,
+    min,
     max,
+    CAST(min * 1.5 AS INT) minEth,
     CAST(max * 1.5 AS INT) maxEth,
     level qlvls,
     ((level-1)/3*3 + 3) AS tc
 FROM str s
-    JOIN oldstr o
-        ON o.id = s.id
     JOIN (
-        SELECT "armo" category, namestr, code, normcode, ubercode, ultracode, type, maxac max, speed, gemsockets, invwidth, invheight, level
+        SELECT "armo" category, namestr, code, normcode, ubercode, ultracode, type, minac min, maxac max, speed, gemsockets, invwidth, invheight, level, NULL rangeadder
         FROM armor
         UNION
-        SELECT "weap" category, namestr, code, normcode, ubercode, ultracode, type, "" max, speed, gemsockets, invwidth, invheight, level
+        SELECT "weap" category, namestr, code, normcode, ubercode, ultracode, type,"" min, "" max, speed, gemsockets, invwidth, invheight, level, rangeadder
         FROM weapons
     ) a
-        ON a.namestr = s.Key
+        ON a.code = s.Key
 WHERE
     ubercode IS NOT NULL
 ORDER BY s.id
     ' \
     origin/data/global/excel/armor.txt \
     origin/data/global/excel/weapons.txt \
-    "$tmpdir/str.tsv" \
-    "$tmpdir/oldstr.tsv"
+    "$tmpdir/str.tsv"

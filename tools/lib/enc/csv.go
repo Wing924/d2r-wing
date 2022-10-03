@@ -10,6 +10,39 @@ import (
 )
 
 type CSVMap = map[int]map[string]string
+type TableRow map[string]string
+type CSVTable map[int][]TableRow
+
+func ReadCSVAsTable(filename string) CSVTable {
+	header, rows := ReadCSV(filename)
+
+	idIdx := slices.Index(header, "id")
+	if idIdx == -1 {
+		panic("id field not exist in " + filename)
+	}
+
+	result := CSVTable{}
+	for _, row := range rows {
+		id, err := strconv.Atoi(row[idIdx])
+		if err != nil {
+			log.Println(row)
+			panic(err)
+		}
+		data := TableRow{}
+		for i := range header {
+			if i == idIdx {
+				continue
+			}
+			if i < len(row) {
+				data[header[i]] = normalizeCell(row[i])
+			} else {
+				data[header[i]] = ""
+			}
+		}
+		result[id] = append(result[id], data)
+	}
+	return result
+}
 
 func ReadCSVAsMap(filename string) CSVMap {
 	header, rows := ReadCSV(filename)
@@ -57,39 +90,6 @@ func normalizeCell(s string) string {
 	}
 	return s
 }
-
-//func ReadCSVAsTable(filename string) []map[string]string {
-//	content := ReadFileWithBOM(filename)
-//
-//	lfIdx := bytes.IndexByte(content, '\n')
-//	if lfIdx < 0 {
-//		panic("invalid CSV file: no header")
-//	}
-//
-//	reader := csv.NewReader(bytes.NewBuffer(content))
-//	reader.FieldsPerRecord = -1
-//	if bytes.IndexByte(content[0:lfIdx], '\t') >= 0 {
-//		reader.Comma = '\t'
-//	}
-//
-//	header, err := reader.Read()
-//	if err != nil {
-//		panic(err)
-//	}
-//
-//	var result []map[string]string
-//	for {
-//		row, err := reader.Read()
-//		if err != nil {
-//			if errors.Is(err, io.EOF) {
-//				break
-//			}
-//			panic(err)
-//		}
-//		result = append(result, rowToMap(header, row))
-//	}
-//	return result
-//}
 
 func ReadCSV(filename string) (header []string, body [][]string) {
 	content := ReadFileWithBOM(filename)
