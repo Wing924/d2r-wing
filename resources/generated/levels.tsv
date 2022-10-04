@@ -35,7 +35,7 @@ id	Key	act	zhTW	normal	nightmare	hell
 5052	Stony Field	1	亂石曠野	4	37	68
 5053	Cold Plains	1	冰冷之原	2	36	68
 5054	Blood Moor	1	鮮血荒地	1	36	67
-115018	act1 Tristram	1	崔斯特姆	6	39	76
+315018	act1 Tristram	1	崔斯特姆	6	39	76
 824	Arcane Sanctuary	2	秘法聖殿	14	48	79
 825	Duriel's Lair	2	塔拉夏的密室	17	49	80
 826	Tal Rasha's Tomb	2	塔拉夏的古墓	17	49	80
@@ -61,8 +61,8 @@ id	Key	act	zhTW	normal	nightmare	hell
 849	Far Oasis	2	遙遠的綠洲	16	45	76
 850	Dry Hills	2	乾土高地	15	44	76
 851	Rocky Waste	2	碎石荒地	14	43	75
-120844	act2 Sewers Level 2	2	下水道第二層	13	43	74
-120845	act2 Sewers Level 1	2	下水道第一層	13	43	74
+320844	act2 Sewers Level 2	2	下水道第二層	13	43	74
+320845	act2 Sewers Level 1	2	下水道第一層	13	43	74
 795	Durance of Hate Level 3	3	憎恨囚牢第三層	25	55	83
 796	Durance of Hate Level 2	3	憎恨囚牢第二層	25	55	83
 797	Durance of Hate Level 1	3	憎恨囚牢第一層	25	55	83
@@ -88,8 +88,8 @@ id	Key	act	zhTW	normal	nightmare	hell
 817	Flayer Jungle	3	剝皮叢林	22	50	80
 818	Great Marsh	3	大沼澤	21	50	80
 819	Spider Forest	3	蜘蛛森林	21	49	79
-130844	act3 Sewers Level 2	3	下水道第二層	24	53	85
-130845	act3 Sewers Level 1	3	下水道第一層	23	52	85
+330844	act3 Sewers Level 2	3	下水道第二層	24	53	85
+330845	act3 Sewers Level 1	3	下水道第一層	23	52	85
 789	Chaos Sanctum	4	混沌魔殿	28	58	85
 791	River of Flame	4	火焰之河	27	57	85
 792	Outer Steppes	4	外圍荒原	26	56	82
@@ -121,4 +121,4 @@ id	Key	act	zhTW	normal	nightmare	hell
 22665	The Worldstone Keep Level 3	5	世界之石要塞第三層	42	66	85
 22666	The Worldstone Chamber	5	世界之石大殿	43	66	85
 22667	Throne of Destruction	5	毀滅王座	43	66	85
-155018	act5 Tristram	5	崔斯特姆	50	75	83
+355018	act5 Tristram	5	崔斯特姆	50	75	83
