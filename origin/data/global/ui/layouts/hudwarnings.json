@@ -17,7 +17,7 @@
         {
             "type": "LayoutItemWidget", "name": "InfoTextWrapper",
             "fields": {
-                "minHeight": 64,
+                "minHeight": 48,
                 "marginRight": 4,
                 "marginTop": 4,
                 "marginBottom": 4,
@@ -30,6 +30,29 @@
                         "fontType": "16pt",
                         "style": {
                             "fontColor": { "r": 199, "g": 179, "b": 119 },
+                            "alignment": { "v": "top", "h": "right" },
+                            "options": { "newlineHandling": "standard" }
+                        },
+                    }
+                },
+            ]
+        },
+        {
+            "type": "LayoutItemWidget", "name": "TerrorZoneInfoTextWrapper",
+            "fields": {
+                "minHeight": 16,
+                "marginRight": 4,
+                "marginTop": -4,
+                "marginBottom": 4,
+            },
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "TerrorZoneInfoText",
+                    "fields": {
+                        "fitToText": true,
+                        "fontType": "16pt",
+                        "style": {
+                            "fontColor": { "r": 135, "g": 82, "b": 161 },
                             "alignment": { "v": "top", "h": "right" },
                             "options": { "newlineHandling": "standard" }
                         },

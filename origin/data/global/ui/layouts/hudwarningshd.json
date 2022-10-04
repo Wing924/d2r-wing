@@ -17,7 +17,7 @@
         {
             "type": "LayoutItemWidget", "name": "InfoTextWrapper",
             "fields": {
-                "minHeight": 175,
+                "minHeight": 125,
                 "marginRight": 12,
                 "marginTop": 12,
                 "marginBottom": 12,
@@ -38,7 +38,32 @@
                 },
             ]
         },
- {
+        {
+            "type": "LayoutItemWidget", "name": "TerrorZoneInfoTextWrapper",
+            "fields": {
+                "minHeight": 50,
+                "marginRight": 12,
+                "marginTop": -12,
+                "marginBottom": 12,
+            },
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "TerrorZoneInfoText",
+                    "fields": {
+                        "fitToText": true,
+                        "fontType": "16pt",
+                        "style": {
+                            "pointSize": "$MediumFontSize",
+                            "fontColor": { "r": 135, "g": 82, "b": 161 },
+                            "alignment": { "v": "top", "h": "right" },
+                            "options": { "newlineHandling": "standard" },
+                            "spacing": { "kerning": 0.9 }
+                        },
+                    }
+                },
+            ]
+        },
+        {
             "type": "LayoutItemWidget", "name": "QuantityWarningWrapper",
             "fields": {
                 "marginRight": 5,
@@ -53,7 +78,7 @@
                        }
               },
              ]
-},
+        },
         {
             "type": "DurabilityWidget", "name": "DurabilityWarning",
             "fields": {
