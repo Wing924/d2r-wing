@@ -1,6 +1,10 @@
 # CHANGE-LOG
 
-## Unreleased
+## v1.6.0
+
+### Updates
+
+- 对应 `v2.5.0` (`1.4.71510`) 版本
 
 ### New Features
 
