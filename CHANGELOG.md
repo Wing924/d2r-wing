@@ -1,5 +1,11 @@
 # CHANGE-LOG
 
+## Unreleased
+
+### Bugfixes
+
+- 修正了塔拉夏的密室的抗性信息
+
 ## v1.6.0
 
 ### Updates

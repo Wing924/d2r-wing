@@ -25,7 +25,7 @@ id	act	levelGroup	groupName	avgMonDen	avgMonUniq	maxFR	maxLR	maxCR	maxPR	maxDR	m
 27286	1	Catacombs	地下墓穴	680	7	125	105	150	75	50	0	0
 27338	1	MooMooFarmGroup	ÿc8不存在的關卡ÿc0	800	7	50	50	50	33	50	33	0
 824	2	Arcane Sanctuary	秘法聖殿	990	8	110	25	110	75	100	50	1
-825	2	Duriel's Lair	塔拉夏的密室	2200	1	100	115	140	105	100	100	0
+825	2	Duriel's Lair	塔拉夏的密室	2200	1	0	0	0	0	0	0	0
 826	2	Tal Rasha's Tomb	塔拉夏的古墓	2200	8	100	115	140	105	100	100	0
 827	2	Ancient Tunnels	古代通道	680	7	110	115	33	105	50	100	0
 846	2	Canyon of the Magi	賢者之谷	880	8	105	115	140	115	66	0	0

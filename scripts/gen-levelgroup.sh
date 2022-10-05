@@ -18,6 +18,8 @@ for ((i=1; i<=25; i++)); do
         m.Id monId
     FROM levels l
         JOIN monstats m ON l.nmon$i = m.Id
+    WHERE
+        l.Name <> 'Act 2 - Duriel''s Lair'
     UNION
     SELECT
         l.Name,
@@ -25,6 +27,8 @@ for ((i=1; i<=25; i++)); do
     FROM levels l
         JOIN monstats m ON l.nmon$i = m.Id
         JOIN monstats m1 ON m.minion1 = m1.Id
+    WHERE
+        l.Name <> 'Act 2 - Duriel''s Lair'
     UNION
     SELECT
         l.Name,
@@ -32,6 +36,8 @@ for ((i=1; i<=25; i++)); do
     FROM levels l
         JOIN monstats m ON l.nmon$i = m.Id
         JOIN monstats m2 ON m.minion2 = m2.Id
+    WHERE
+        l.Name <> 'Act 2 - Duriel''s Lair'
     "
 done
 lvl_mon+="
