@@ -43,7 +43,6 @@ patches:
 pipelines:
   - name: add English name and detailed info (base item)
     resource: resources/generated/equip.tsv
-    id_delta: '100000'
     key_template: 'base_info_{{ .code }}'
     template: |-
       ÿc5[qlvl: {{- .qlvls -}}
@@ -167,7 +166,6 @@ pipelines:
 
   - name: add level group res
     resource: resources/generated/levelgroup.tsv
-    id_delta: '2{{ .act }}0000'
     key_template: 'act{{ .act }} {{ .levelGroup }} LG'
     template: |-
       {{ .zhTW }}

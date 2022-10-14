@@ -10,7 +10,6 @@ import (
 	"go.uber.org/zap"
 	"golang.org/x/exp/slices"
 	"os"
-	"strconv"
 	"text/template"
 )
 
@@ -50,7 +49,6 @@ func writeJSON(entries []model.Entry) {
 
 func processPipeline(entries []model.Entry, cfg *Config) []model.Entry {
 	var resources []enc.CSVTable
-	var idTemplates []*template.Template
 	var keyTemplates []*template.Template
 	var textTemplates []*template.Template
 
@@ -63,12 +61,10 @@ func processPipeline(entries []model.Entry, cfg *Config) []model.Entry {
 		}
 		funcs := CreateFuncs(lookupEntries)
 
-		idTmpl := template.Must(template.New("").Funcs(funcs).Parse(pip.IdDelta))
 		keyTmpl := template.Must(template.New("").Funcs(funcs).Parse(pip.KeyTemplate))
 		textTmpl := template.Must(template.New("").Funcs(funcs).Parse(pip.Template))
 
 		resources = append(resources, res)
-		idTemplates = append(idTemplates, idTmpl)
 		keyTemplates = append(keyTemplates, keyTmpl)
 		textTemplates = append(textTemplates, textTmpl)
 	}
@@ -97,33 +93,28 @@ func processPipeline(entries []model.Entry, cfg *Config) []model.Entry {
 					continue
 				}
 
-				if pip.IdDelta == "" {
+				newKey := entry.Key
+				if pip.KeyTemplate != "" {
+					keyOut := bytes.NewBuffer(nil)
+					if err := keyTemplates[j].Execute(keyOut, data); err != nil {
+						panic(err)
+					}
+					newKey = keyOut.String()
+				}
+
+				if newKey == entry.Key {
 					if oldText != newText {
 						logger.Infof("Replace %q\t->\t%q", oldText, newText)
 						entry.ZhTW = newText
 						entries[i] = entry
 					}
 				} else {
-					keyOut := bytes.NewBuffer(nil)
-					if err := keyTemplates[j].Execute(keyOut, data); err != nil {
-						panic(err)
-					}
-
-					idDeltaOut := bytes.NewBuffer(nil)
-					if err := idTemplates[j].Execute(idDeltaOut, data); err != nil {
-						panic(err)
-					}
-					idDelta, err := strconv.Atoi(idDeltaOut.String())
-					if err != nil {
-						panic(err)
-					}
-
 					newEntry := entry
-					newEntry.Key = keyOut.String()
-					newEntry.ID += idDelta
+					newEntry.Key = newKey
+					newEntry.ID = -1
 					newEntry.ZhTW = newText
 					entries = append(entries, newEntry)
-					logger.Infof("New entry #%d %q\t->\t%q", newEntry.ID, newEntry.Key, newText)
+					logger.Infof("New entry %q\t->\t%q", newEntry.Key, newText)
 				}
 			}
 		}

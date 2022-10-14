@@ -19,3 +19,17 @@ func ReadStringsJSON(filename string) []model.Entry {
 	}
 	return result
 }
+
+func WriteStringsJSON(filename string) []model.Entry {
+	content := ReadFileWithBOM(filename)
+	var err error
+	content, err = hujson.Standardize(content)
+	if err != nil {
+		panic(err)
+	}
+	var result []model.Entry
+	if err := json.Unmarshal(content, &result); err != nil {
+		panic(err)
+	}
+	return result
+}

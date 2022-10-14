@@ -46,8 +46,10 @@ dist-clean: clean clean-gen
 # build mods
 
 .PHONY: build
-build: clean patches gen-strings t2s
+build: clean patches gen-strings fill-id t2s
 gen-strings: $(TOOLDIR)/gen-strings $(TC_TARGET_STRINGS)
+fill-id: $(TOOLDIR)/fill-id
+	$(TOOLDIR)/fill-id -dir $(TCDIR)/data/local/lng/strings
 t2s: $(TOOLDIR)/t2s $(SC_TARGET_STRINGS)
 
 # build tools
