@@ -22,7 +22,7 @@ cat > "$levels_json"
 for i in $(seq 0 2 ${#NEW_KEYS[*]}); do
   act="${NEW_KEYS[$i]}"
   key="${NEW_KEYS[$(($i + 1))]}"
-  cat "$levels_json" | jq ".[] | select(.Key == \"$key\") | (.Key |= \"act$act \" + .) | (.id |= -1 + .)"
+  cat "$levels_json" | jq ".[] | select(.Key == \"$key\") | (.Key |= \"act$act \" + .) | (.id |= -1)"
 done | jq -s > "$new_keys_json"
 
 cat "$levels_json" "$new_keys_json" | jq '.[]' | jq -s
