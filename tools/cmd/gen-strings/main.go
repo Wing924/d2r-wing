@@ -54,7 +54,13 @@ func processPipeline(entries []model.Entry, cfg *Config) []model.Entry {
 
 	for _, pip := range cfg.Pipelines {
 		logger.Debugw("prepare pipeline", "pipeline", pip.Name)
-		res := enc.ReadCSVAsTable(pip.Resource)
+		res := enc.CSVTable{}
+		for _, resource := range pip.Resources {
+			tbl := enc.ReadCSVAsTable(resource)
+			for key, val := range tbl {
+				res[key] = val
+			}
+		}
 		var lookupEntries []model.Entry
 		for _, file := range pip.LookupStringFiles {
 			lookupEntries = append(lookupEntries, enc.ReadStringsJSON(file)...)
@@ -72,50 +78,56 @@ func processPipeline(entries []model.Entry, cfg *Config) []model.Entry {
 	for i := 0; i < len(entries); i++ {
 		entry := entries[i]
 		oldText := entry.ZhTW
+	PIP:
 		for j, pip := range cfg.Pipelines {
 			res := resources[j]
 
-			rows, ok := res[entry.ID]
+			row, ok := res[entry.Key]
 			if !ok {
 				continue
 			}
-			for _, row := range rows {
-				logger.Debugw("process pipeline", "pipeline", pip.Name)
-				data := generateTemplateData(cfg, row, entry)
+			if len(pip.IgnoreIDs) > 0 {
+				for _, ignoreID := range pip.IgnoreIDs {
+					if entry.ID == ignoreID {
+						continue PIP
+					}
+				}
+			}
+			logger.Debugw("process pipeline", "pipeline", pip.Name)
+			data := generateTemplateData(cfg, row, entry)
 
-				out := bytes.NewBuffer(nil)
+			out := bytes.NewBuffer(nil)
 
-				if err := textTemplates[j].Execute(out, data); err != nil {
+			if err := textTemplates[j].Execute(out, data); err != nil {
+				panic(err)
+			}
+			newText := out.String()
+			if newText == "(ignore)" {
+				continue
+			}
+
+			newKey := entry.Key
+			if pip.KeyTemplate != "" {
+				keyOut := bytes.NewBuffer(nil)
+				if err := keyTemplates[j].Execute(keyOut, data); err != nil {
 					panic(err)
 				}
-				newText := out.String()
-				if newText == "(ignore)" {
-					continue
-				}
+				newKey = keyOut.String()
+			}
 
-				newKey := entry.Key
-				if pip.KeyTemplate != "" {
-					keyOut := bytes.NewBuffer(nil)
-					if err := keyTemplates[j].Execute(keyOut, data); err != nil {
-						panic(err)
-					}
-					newKey = keyOut.String()
+			if newKey == entry.Key {
+				if oldText != newText {
+					logger.Infof("Replace %q\t->\t%q", oldText, newText)
+					entry.ZhTW = newText
+					entries[i] = entry
 				}
-
-				if newKey == entry.Key {
-					if oldText != newText {
-						logger.Infof("Replace %q\t->\t%q", oldText, newText)
-						entry.ZhTW = newText
-						entries[i] = entry
-					}
-				} else {
-					newEntry := entry
-					newEntry.Key = newKey
-					newEntry.ID = -1
-					newEntry.ZhTW = newText
-					entries = append(entries, newEntry)
-					logger.Infof("New entry %q\t->\t%q", newEntry.Key, newText)
-				}
+			} else {
+				newEntry := entry
+				newEntry.Key = newKey
+				newEntry.ID = -1
+				newEntry.ZhTW = newText
+				entries = append(entries, newEntry)
+				logger.Infof("New entry %q\t->\t%q", newEntry.Key, newText)
 			}
 		}
 	}

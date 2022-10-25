@@ -66,6 +66,7 @@ FROM levels l
 
 sql="SELECT
     str.id id,
+    str.Key Key,
     SUBSTR(s.Name, 5, 1) act,
     levelGroup,
     str.zhTW groupName,

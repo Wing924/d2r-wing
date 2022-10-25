@@ -4,7 +4,11 @@ patches:
 
 pipelines:
   - name: modify item
-    resource: resources/item_modify_startup.tsv
+    resources:
+      - (( append ))
+      - resources/item_modify_startup.tsv
 
   - name: modify text
-    resource: resources/text_modify_startup.tsv
+    resources:
+      - (( append ))
+      - resources/text_modify_startup.tsv

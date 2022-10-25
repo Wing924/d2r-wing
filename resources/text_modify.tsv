@@ -11,7 +11,7 @@ id	Key	zhTW	prefix	newName	suffix
 27189	DiabloCloneMessageTierFour	恐懼蔓延整個聖休亞瑞。	【4/6】
 27190	DiabloCloneMessageTierFive	恐懼即將現身聖休亞瑞。	【5/6】
 27191	DiabloCloneSpawnMessage	迪亞布羅入侵聖休亞瑞了！	【6/6】
-21859	巴尔				(幻象)
+21859	Baal Crab Clone	巴尔			(幻象)
 27291	BaseDesecratedFormat	腐化震荡袭向%s！		腐化震荡袭向：%s\nÿc5*：包含12级信念/降低抵抗/衰老也不能破免的怪ÿc0
 27292	BaseRemoveDesecratedFormat	腐化震荡的影响从%s消失。		腐化震荡的影响消失:%s
 27293	DesecratedSingleLevelFormat	ÿc;%sÿc0		\n- ÿc;%sÿc0

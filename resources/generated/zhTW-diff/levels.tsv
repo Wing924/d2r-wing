@@ -1,129 +1,129 @@
-id	old	new
-788	秘密母牛關卡	秘密乳牛關
-789	混沌庇難所	混沌魔殿
-790	群魔堡壘	混沌界要塞
-792	郊外大草原	外圍荒原
-794	神罰之城	罪罰之城
-795	憎恨的囚牢第三層	憎恨囚牢第三層
-796	憎恨的囚牢第二層	憎恨囚牢第二層
-797	憎恨的囚牢第一層	憎恨囚牢第一層
-798	廢棄的聖物	廢棄的聖殿
-799	殘破的寺院	荒廢的寺院
-801	遺忘的聖物	遺忘的聖殿
-803	殘破神殿	荒廢的神殿
-804	剝皮地窖第三層	剝皮地牢第三層
-805	剝皮地窖第二層	剝皮地牢第二層
-806	剝皮地窖第一層	剝皮地牢第一層
-807	沼澤地洞第三層	沼澤地穴第三層
-808	沼澤地洞第二層	沼澤地穴第二層
-809	沼澤地洞第一層	沼澤地穴第一層
-815	庫拉斯特商場	庫拉斯特市集
-818	龐大濕地	大沼澤
-820	庫拉斯特海港	庫拉斯特港口
-821	憎恨的囚牢	憎恨囚牢
-822	剝皮地窖	剝皮地牢
-823	沼澤地洞	沼澤地穴
-824	神秘庇難所	秘法聖殿
-825	塔.拉夏的房間	塔拉夏的密室
-826	塔.拉夏的古墓	塔拉夏的古墓
-831	利爪腹蛇神殿第二層	利爪蛇魔神殿第二層
-833	石製古墓第二層	古老石墓第二層
-834	利爪腹蛇神殿第一層	利爪蛇魔神殿第一層
-837	石製古墓第一層	古老石墓第一層
-838	皇宮監牢第三層	皇宮地窖第三層
-839	皇宮監牢第二層	皇宮地窖第二層
-840	皇宮監牢第一層	皇宮地窖第一層
-841	女眷住處第二層	後宮第二層
-842	女眷住處第一層	後宮第一層
-846	術士的峽谷	賢者之谷
-848	遺失的城市	失落古城
-850	乾燥的高地	乾土高地
-852	魯.高因	魯高因
-854	利爪腹蛇神殿	利爪蛇魔神殿
-856	石製古墓	古老石墓
-857	皇宮監牢	皇宮地窖
-858	女眷住處	後宮
-860	前往秘密母牛關卡	前往秘密乳牛關
-861	前往混沌庇難所	前往混沌魔殿
-863	前往郊外大草原	前往外圍荒原
-865	前往神罰之城	前往罪罰之城
-866	前往群魔堡壘	前往混沌界要塞
-867	前往憎恨的囚牢第三層	前往憎恨囚牢第三層
-868	前往憎恨的囚牢第二層	前往憎恨囚牢第二層
-869	前往憎恨的囚牢第一層	前往憎恨囚牢第一層
-870	前往廢棄的聖物	前往廢棄的聖殿
-871	前往殘破的寺院	前往荒廢的寺院
-873	前往遺忘的聖物	前往遺忘的聖殿
-875	前往殘破神殿	前往荒廢的神殿
-876	前往剝皮地窖第一層	前往剝皮地牢第一層
-877	前往剝皮地窖第二層	前往剝皮地牢第二層
-878	前往剝皮地窖第三層	前往剝皮地牢第三層
-879	前往沼澤地洞第三層	前往沼澤地穴第三層
-880	前往沼澤地洞第二層	前往沼澤地穴第二層
-881	前往沼澤地洞第一層	前往沼澤地穴第一層
-887	前往庫拉斯特商場	前往庫拉斯特市集
-890	前往龐大濕地	前往大沼澤
-892	前往庫拉斯特海港	前往庫拉斯特港口
-893	前往神秘庇難所	前往秘法聖殿
-894	前往塔.拉夏的房間	前往塔拉夏的密室
-895	前往塔.拉夏的古墓	前往塔拉夏的古墓
-900	前往利爪腹蛇神殿第二層	前往利爪蛇魔神殿第二層
-902	前往石製古墓第二層	前往古老石墓第二層
-903	前往利爪腹蛇神殿第一層	前往利爪蛇魔神殿第一層
-906	前往石製古墓第一層	前往古老石墓第一層
-907	前往皇宮監牢第三層	前往皇宮地窖第三層
-908	前往皇宮監牢第二層	前往皇宮地窖第二層
-910	前往女眷住處第二層	前往後宮第二層
-911	前往女眷住處第一層	前往後宮第一層
-915	前往術士的峽谷	前往賢者之谷
-917	前往遺失的城市	前往失落古城
-919	前往乾燥的高地	前往乾土高地
-921	前往魯.高因	前往魯高因
-5018	崔斯特瑞姆	崔斯特姆
-5028	軍營	兵營
-5030	僧院大門	修道院大門
-5037	大陵寢	大陵墓
-5043	洞窟第二層	洞穴第二層  洞穴
-5047	洞窟第一層	洞穴第一層
-5052	石塊曠野	亂石曠野
-5055	蘿格營地	俠盜營地
-5056	前往崔斯特瑞姆	前往崔斯特姆
-5066	前往軍營	前往兵營
-5068	前往僧院大門	前往修道院大門
-5075	前往大陵寢	前往大陵墓
-5078	前往地洞第二層	前往地穴第二層
-5079	前往洞穴第二層	前往地洞第二層
-5081	前往洞窟第二層	前往洞穴第二層
-5082	前往地洞第一層	前往地穴第一層
-5083	前往洞窟第一層	前往地洞第一層
-5085	前往洞窟第一層	前往洞穴第一層
-5090	前往石塊曠野	前往亂石曠野
-5093	前往蘿格營地	前往俠盜營地
-11155	主母巢穴	魔母巢穴
-11157	痛苦熔爐	苦痛熔爐
-21797	修女的悲慟	痛惜往事
-21798	沙漠的旅程	沙漠旅程
-21865	艾巴當	亞巴頓
-21866	冥河之洞	冥河地穴
-21867	地獄魔窟	煉獄地穴
-21868	前往艾巴當	前往亞巴頓
-21869	前往冥河之洞	前往冥河地穴
-21870	前往地獄魔窟	前往煉獄地穴
-22651	冰河	冰凍之河
-22652	冰河路徑	冰河小徑
-22653	漂泊者洞穴	漂泊者洞窟
-22655	遠古之路	先祖之路
-22657	亞瑞特山脈顛峰	亞瑞特山巔
-22659	悲痛之廳	怨慟之廳
-22660	痛苦之廳	苦痛之廳
-22662	瓦特之廳	沃特之廳
-22667	毀減的王座	毀滅王座
-22673	前往冰河	前往冰凍之河
-22674	前往冰河路徑	前往冰河小徑
-22675	前往漂泊者洞穴	前往漂泊者洞窟
-22677	前往遠古之路	前往先祖之路
-22679	前往亞瑞特山脈顛峰	前往亞瑞特山巔
-22681	前往悲痛之廳	前往怨慟之廳
-22682	前往痛苦之廳	前往苦痛之廳
-22684	前往瓦特之廳	前往沃特之廳
-22689	前往毀減的王座	前往毀滅王座
+id	Key	old	new
+788	Moo Moo Farm	秘密母牛關卡	秘密乳牛關
+789	Chaos Sanctum	混沌庇難所	混沌魔殿
+790	The Pandemonium Fortress	群魔堡壘	混沌界要塞
+792	Outer Steppes	郊外大草原	外圍荒原
+794	City of the Damned	神罰之城	罪罰之城
+795	Durance of Hate Level 3	憎恨的囚牢第三層	憎恨囚牢第三層
+796	Durance of Hate Level 2	憎恨的囚牢第二層	憎恨囚牢第二層
+797	Durance of Hate Level 1	憎恨的囚牢第一層	憎恨囚牢第一層
+798	Disused Reliquary	廢棄的聖物	廢棄的聖殿
+799	Ruined Fane	殘破的寺院	荒廢的寺院
+801	Forgotten Reliquary	遺忘的聖物	遺忘的聖殿
+803	Ruined Temple	殘破神殿	荒廢的神殿
+804	Flayer Dungeon Level 3	剝皮地窖第三層	剝皮地牢第三層
+805	Flayer Dungeon Level 2	剝皮地窖第二層	剝皮地牢第二層
+806	Flayer Dungeon Level 1	剝皮地窖第一層	剝皮地牢第一層
+807	Swampy Pit Level 3	沼澤地洞第三層	沼澤地穴第三層
+808	Swampy Pit Level 2	沼澤地洞第二層	沼澤地穴第二層
+809	Swampy Pit Level 1	沼澤地洞第一層	沼澤地穴第一層
+815	Kurast Bazaar	庫拉斯特商場	庫拉斯特市集
+818	Great Marsh	龐大濕地	大沼澤
+820	Kurast Docktown	庫拉斯特海港	庫拉斯特港口
+821	Durance of Hate	憎恨的囚牢	憎恨囚牢
+822	Flayer Dungeon	剝皮地窖	剝皮地牢
+823	Swampy Pit	沼澤地洞	沼澤地穴
+824	Arcane Sanctuary	神秘庇難所	秘法聖殿
+825	Duriel's Lair	塔.拉夏的房間	塔拉夏的密室
+826	Tal Rasha's Tomb	塔.拉夏的古墓	塔拉夏的古墓
+831	Claw Viper Temple Level 2	利爪腹蛇神殿第二層	利爪蛇魔神殿第二層
+833	Stony Tomb Level 2	石製古墓第二層	古老石墓第二層
+834	Claw Viper Temple Level 1	利爪腹蛇神殿第一層	利爪蛇魔神殿第一層
+837	Stony Tomb Level 1	石製古墓第一層	古老石墓第一層
+838	Palace Cellar Level 3	皇宮監牢第三層	皇宮地窖第三層
+839	Palace Cellar Level 2	皇宮監牢第二層	皇宮地窖第二層
+840	Palace Cellar Level 1	皇宮監牢第一層	皇宮地窖第一層
+841	Harem Level 2	女眷住處第二層	後宮第二層
+842	Harem Level 1	女眷住處第一層	後宮第一層
+846	Canyon of the Magi	術士的峽谷	賢者之谷
+848	Lost City	遺失的城市	失落古城
+850	Dry Hills	乾燥的高地	乾土高地
+852	Lut Gholein	魯.高因	魯高因
+854	Claw Viper Temple	利爪腹蛇神殿	利爪蛇魔神殿
+856	Stony Tomb	石製古墓	古老石墓
+857	Palace Cellar	皇宮監牢	皇宮地窖
+858	Harem	女眷住處	後宮
+860	To The Moo Moo Farm	前往秘密母牛關卡	前往秘密乳牛關
+861	To Chaos Sanctum	前往混沌庇難所	前往混沌魔殿
+863	To The Outer Steppes	前往郊外大草原	前往外圍荒原
+865	To The City of the Damned	前往神罰之城	前往罪罰之城
+866	To The Pandemonium Fortress	前往群魔堡壘	前往混沌界要塞
+867	To The Durance of Hate Level 3	前往憎恨的囚牢第三層	前往憎恨囚牢第三層
+868	To The Durance of Hate Level 2	前往憎恨的囚牢第二層	前往憎恨囚牢第二層
+869	To The Durance of Hate Level 1	前往憎恨的囚牢第一層	前往憎恨囚牢第一層
+870	To The Disused Reliquary	前往廢棄的聖物	前往廢棄的聖殿
+871	To The Ruined Fane	前往殘破的寺院	前往荒廢的寺院
+873	To The Forgotten Reliquary	前往遺忘的聖物	前往遺忘的聖殿
+875	To The Ruined Temple	前往殘破神殿	前往荒廢的神殿
+876	To The Flayer Dungeon Level 1	前往剝皮地窖第一層	前往剝皮地牢第一層
+877	To The Flayer Dungeon Level 2	前往剝皮地窖第二層	前往剝皮地牢第二層
+878	To The Flayer Dungeon Level 3	前往剝皮地窖第三層	前往剝皮地牢第三層
+879	To The Swampy Pit Level 3	前往沼澤地洞第三層	前往沼澤地穴第三層
+880	To The Swampy Pit Level 2	前往沼澤地洞第二層	前往沼澤地穴第二層
+881	To The Swampy Pit Level 1	前往沼澤地洞第一層	前往沼澤地穴第一層
+887	To The Kurast Bazaar	前往庫拉斯特商場	前往庫拉斯特市集
+890	To The Great Marsh	前往龐大濕地	前往大沼澤
+892	To The Kurast Docktown	前往庫拉斯特海港	前往庫拉斯特港口
+893	To The Arcane Sanctuary	前往神秘庇難所	前往秘法聖殿
+894	To Duriel's Lair	前往塔.拉夏的房間	前往塔拉夏的密室
+895	To Tal Rasha's Tomb	前往塔.拉夏的古墓	前往塔拉夏的古墓
+900	To The Claw Viper Temple Level 2	前往利爪腹蛇神殿第二層	前往利爪蛇魔神殿第二層
+902	To The Stony Tomb Level 2	前往石製古墓第二層	前往古老石墓第二層
+903	To The Claw Viper Temple Level 1	前往利爪腹蛇神殿第一層	前往利爪蛇魔神殿第一層
+906	To The Stony Tomb Level 1	前往石製古墓第一層	前往古老石墓第一層
+907	To The Palace Cellar Level 3	前往皇宮監牢第三層	前往皇宮地窖第三層
+908	To The Palace Cellar Level 2	前往皇宮監牢第二層	前往皇宮地窖第二層
+910	To The Harem Level 2	前往女眷住處第二層	前往後宮第二層
+911	To The Harem Level 1	前往女眷住處第一層	前往後宮第一層
+915	To The Canyon of the Magi	前往術士的峽谷	前往賢者之谷
+917	To The Lost City	前往遺失的城市	前往失落古城
+919	To The Dry Hills	前往乾燥的高地	前往乾土高地
+921	To Lut Gholein	前往魯.高因	前往魯高因
+5018	Tristram	崔斯特瑞姆	崔斯特姆
+5028	Barracks	軍營	兵營
+5030	Monastery Gate	僧院大門	修道院大門
+5037	Mausoleum	大陵寢	大陵墓
+5043	Cave Level 2	洞窟第二層	洞穴第二層  洞穴
+5047	Cave Level 1	洞窟第一層	洞穴第一層
+5052	Stony Field	石塊曠野	亂石曠野
+5055	Rogue Encampment	蘿格營地	俠盜營地
+5056	To Tristram	前往崔斯特瑞姆	前往崔斯特姆
+5066	To The Barracks	前往軍營	前往兵營
+5068	To The Monastery Gate	前往僧院大門	前往修道院大門
+5075	To The Mausoleum	前往大陵寢	前往大陵墓
+5078	To The Pit Level 2	前往地洞第二層	前往地穴第二層
+5079	To The Hole Level 2	前往洞穴第二層	前往地洞第二層
+5081	To The Cave Level 2	前往洞窟第二層	前往洞穴第二層
+5082	To The Pit Level 1	前往地洞第一層	前往地穴第一層
+5083	To The Hole Level 1	前往洞窟第一層	前往地洞第一層
+5085	To The Cave Level 1	前往洞窟第一層	前往洞穴第一層
+5090	To The Stony Field	前往石塊曠野	前往亂石曠野
+5093	To The Rogue Encampment	前往蘿格營地	前往俠盜營地
+11155	Pandemonium Run 1	主母巢穴	魔母巢穴
+11157	Pandemonium Run 3	痛苦熔爐	苦痛熔爐
+21797	act1X	修女的悲慟	痛惜往事
+21798	act2X	沙漠的旅程	沙漠旅程
+21865	Hell1	艾巴當	亞巴頓
+21866	Hell2	冥河之洞	冥河地穴
+21867	Hell3	地獄魔窟	煉獄地穴
+21868	To Hell1	前往艾巴當	前往亞巴頓
+21869	To Hell2	前往冥河之洞	前往冥河地穴
+21870	To Hell3	前往地獄魔窟	前往煉獄地穴
+22651	Cellar of Pity	冰河	冰凍之河
+22652	Crystalized Cavern Level 2	冰河路徑	冰河小徑
+22653	Echo Chamber	漂泊者洞穴	漂泊者洞窟
+22655	Glacial Caves Level 1	遠古之路	先祖之路
+22657	Rocky Summit	亞瑞特山脈顛峰	亞瑞特山巔
+22659	Halls of Anguish	悲痛之廳	怨慟之廳
+22660	Halls of Death's Calling	痛苦之廳	苦痛之廳
+22662	Halls of Vaught	瓦特之廳	沃特之廳
+22667	Throne of Destruction	毀減的王座	毀滅王座
+22673	To The Cellar of Pity	前往冰河	前往冰凍之河
+22674	To The Crystalized Cavern Level 2	前往冰河路徑	前往冰河小徑
+22675	To The Echo Chamber	前往漂泊者洞穴	前往漂泊者洞窟
+22677	To The Glacier Caves Level 1	前往遠古之路	前往先祖之路
+22679	To The Rocky Summit	前往亞瑞特山脈顛峰	前往亞瑞特山巔
+22681	To The Halls of Anguish	前往悲痛之廳	前往怨慟之廳
+22682	To The Halls of Death's Calling	前往痛苦之廳	前往苦痛之廳
+22684	To The Halls of Vaught	前往瓦特之廳	前往沃特之廳
+22689	To The Throne of Destruction	前往毀減的王座	前往毀滅王座

@@ -19,6 +19,7 @@ textql -header -dlm=tab -output-dlm=tab -output-header \
     -sql '
 SELECT
     n.id,
+    n.Key,
     o.zhTW old,
     n.zhTW new
 FROM old o
