@@ -17,7 +17,7 @@
         {
             "type": "LayoutItemWidget", "name": "InfoTextWrapper",
             "fields": {
-                "minHeight": 125,
+                "minHeight": 50,
                 "marginRight": 12,
                 "marginTop": 12,
                 "marginBottom": 12,

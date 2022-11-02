@@ -52,7 +52,7 @@
                         "fitToText": true,
                         "fontType": "16pt",
                         "style": {
-                            "fontColor": { "r": 135, "g": 82, "b": 161 },
+                            "fontColor": { "r": 174, "g": 0, "b": 255 },
                             "alignment": { "v": "top", "h": "right" },
                             "options": { "newlineHandling": "standard" }
                         },
