@@ -62,10 +62,13 @@ FROM levels l
     JOIN levelgroups lg ON l.LevelGroup = lg.Name
     LEFT JOIN ($lvl_mon) lm ON l.Name = lm.Name
     LEFT JOIN monstats ms ON lm.monId = ms.Id
+WHERE
+    l.Name <> 'Act 5 - Pandemonium Finale'
 "
 
 sql="SELECT
     str.id id,
+    str.Key Key,
     SUBSTR(s.Name, 5, 1) act,
     levelGroup,
     str.zhTW groupName,

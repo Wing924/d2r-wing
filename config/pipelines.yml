@@ -42,7 +42,8 @@ patches:
 
 pipelines:
   - name: add English name and detailed info (base item)
-    resource: resources/generated/equip.tsv
+    resources:
+      - resources/generated/equip.tsv
     key_template: 'base_info_{{ .code }}'
     template: |-
       ÿc5[qlvl: {{- .qlvls -}}
@@ -59,36 +60,30 @@ pipelines:
       ]
       {{ .enUS }}ÿc0
 
-  - name: add English name (uniq/set items)
-    resource: resources/generated/uniq-set.tsv
-    template: |-
-      {{ .enUS }}
-      {{ .zhTW }}
-
-  - name: add English name (set)
-    resource: resources/generated/sets.tsv
+  - name: add English name (non-base items)
+    resources:
+      - resources/generated/uniq-set.tsv
+      - resources/generated/sets.tsv
+      - resources/generated/runewords.tsv
     template: |-
       {{ .enUS }}
       {{ .zhTW }}
 
   - name: add English name (runes)
-    resource: resources/generated/runes.tsv
+    resources:
+      - resources/generated/runes.tsv
     template: |-
       {{ .zhTW }} {{ .enName }}
 
-  - name: add English name (runewords)
-    resource: resources/generated/runewords.tsv
-    template: |-
-      {{ .enUS }}
-      {{ .zhTW }}
-
   - name: add English name (skills)
-    resource: resources/generated/skills.tsv
+    resources:
+      - resources/generated/skills.tsv
     template: |-
       {{ .zhTW }}({{ .enUS }})
 
   - name: add equip info
-    resource: resources/generated/equip.tsv
+    resources:
+      - resources/generated/equip.tsv
     template: |-
       {{ .zhTW -}}
       {{- index .data.grade .grade }}
@@ -109,12 +104,14 @@ pipelines:
       {{- index .data.socket .socket }}
 
   - name: staff mods
-    resource: resources/generated/staff-mods.tsv
+    resources:
+      - resources/generated/staff-mods.tsv
     template: |-
       {{ .zhTW -}} *
 
   - name: add MAX
-    resource: resources/item_max.tsv
+    resources:
+      - resources/item_max.tsv
     lookup_string_files:
       - origin/data/local/lng/strings/skills.json
     template: |-
@@ -122,7 +119,8 @@ pipelines:
       {{ .zhTW }}
 
   - name: modify gems
-    resource: resources/generated/gems.tsv
+    resources:
+      - resources/generated/gems.tsv
     template: |-
       {{- if .inRune | and (lt (int .inRune) 20) -}}
         ÿc5[升級# {{- .inRune -}} ]
@@ -135,7 +133,8 @@ pipelines:
       ÿc0
 
   - name: modify item
-    resource: resources/item_modify.tsv
+    resources:
+      - resources/item_modify.tsv
     template: &modify |-
       {{- with .color }}{{ index $.data.color . }}{{ end }}
       {{- .prefix }}
@@ -149,7 +148,8 @@ pipelines:
       {{- with .color }}{{ index $.data.color "white" }}{{ end }}
 
   - name: modify runes
-    resource: resources/generated/runes.tsv
+    resources:
+      - resources/generated/runes.tsv
     template: |-
       {{- $num := atoi .num }}
       {{- if .category | eq "in socket" }}
@@ -165,7 +165,10 @@ pipelines:
       {{- end }}
 
   - name: add level group res
-    resource: resources/generated/levelgroup.tsv
+    resources:
+      - resources/generated/levelgroup.tsv
+    ignore_ids:
+      - 2714
     key_template: 'act{{ .act }} {{ .levelGroup }} LG'
     template: |-
       {{ .zhTW }}
@@ -186,16 +189,19 @@ pipelines:
       {{- end }}
 
   - name: add map levels
-    resource: resources/generated/levels.tsv
+    resources:
+      - resources/generated/levels.tsv
     template: |-
       {{ .zhTW }} [{{ .normal }}|{{ .nightmare }}|{{ .hell }}]
 
   - name: modify text
-    resource: resources/text_modify.tsv
+    resources:
+      - resources/text_modify.tsv
     template: *modify
 
   - name: modify abbr
-    resource: resources/text_abbr.tsv
+    resources:
+      - resources/text_abbr.tsv
     template: |-
       {{ mkAbbr .zhTW .abbr }}
 
