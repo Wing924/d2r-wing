@@ -122,7 +122,7 @@ pipelines:
     resources:
       - resources/generated/gems.tsv
     template: |-
-      {{- if .inRune | and (lt (int .inRune) 20) -}}
+      {{- if .inRune -}}
         ÿc5[升級# {{- .inRune -}} ]
       {{ end }}
       {{- if contains .rank "45" -}}
