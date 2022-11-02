@@ -26112,7 +26112,7 @@
     "zhCN": "漆黑裂痕"
   },
   {
-    "id": 252000,
+    "id": 252099,
     "Key": "base_info_7ax",
     "enUS": "Small Crescent",
     "zhTW": "ÿc5[qlvl:61,范围:2]\nSmall Crescentÿc0",
@@ -26129,7 +26129,7 @@
     "zhCN": "新月斧"
   },
   {
-    "id": 252001,
+    "id": 252100,
     "Key": "base_info_72a",
     "enUS": "Ettin Axe",
     "zhTW": "ÿc5[qlvl:70,范围:2]\nEttin Axeÿc0",
@@ -26146,7 +26146,7 @@
     "zhCN": "双头斧"
   },
   {
-    "id": 252002,
+    "id": 252101,
     "Key": "base_info_hlm",
     "enUS": "Helm",
     "zhTW": "ÿc5[qlvl:11,防御:15-18/e22-e27]\nHelmÿc0",
@@ -26163,7 +26163,7 @@
     "zhCN": "头盔"
   },
   {
-    "id": 252003,
+    "id": 252102,
     "Key": "base_info_fhl",
     "enUS": "Full Helm",
     "zhTW": "ÿc5[qlvl:15,防御:23-26/e34-e39]\nFull Helmÿc0",
@@ -26180,7 +26180,7 @@
     "zhCN": "全护盔"
   },
   {
-    "id": 252004,
+    "id": 252103,
     "Key": "base_info_ghm",
     "enUS": "Great Helm",
     "zhTW": "ÿc5[qlvl:23,防御:30-35/e45-e52]\nGreat Helmÿc0",
@@ -26197,7 +26197,7 @@
     "zhCN": "重盔"
   },
   {
-    "id": 252005,
+    "id": 252104,
     "Key": "base_info_axf",
     "enUS": "Hatchet Hands",
     "zhTW": "ÿc5[qlvl:12,范围:2]\nHatchet Handsÿc0",
@@ -26214,7 +26214,7 @@
     "zhCN": "斧刃拳套"
   },
   {
-    "id": 252006,
+    "id": 252105,
     "Key": "base_info_pad",
     "enUS": "Kurast Shield",
     "zhTW": "ÿc5[qlvl:74,防御:154-172/e231-e258]\nKurast Shieldÿc0",
@@ -26231,7 +26231,7 @@
     "zhCN": "库拉斯特盾"
   },
   {
-    "id": 252007,
+    "id": 252106,
     "Key": "base_info_ob5",
     "enUS": "Jared's Stone",
     "zhTW": "ÿc5[qlvl:24,范围:1]\nJared's Stoneÿc0",
@@ -26248,7 +26248,7 @@
     "zhCN": "杰瑞德之石"
   },
   {
-    "id": 252008,
+    "id": 252107,
     "Key": "base_info_nef",
     "enUS": "Bloodlord Skull",
     "zhTW": "ÿc5[qlvl:85,防御:103-148/e154-e222]\nBloodlord Skullÿc0",
@@ -26265,7 +26265,7 @@
     "zhCN": "血王颅骨"
   },
   {
-    "id": 252009,
+    "id": 252108,
     "Key": "base_info_nee",
     "enUS": "Succubus Skull",
     "zhTW": "ÿc5[qlvl:81,防御:100-146/e150-e219]\nSuccubus Skullÿc0",
@@ -26282,7 +26282,7 @@
     "zhCN": "魅魔颅骨"
   },
   {
-    "id": 252010,
+    "id": 252109,
     "Key": "base_info_ned",
     "enUS": "Overseer Skull",
     "zhTW": "ÿc5[qlvl:66,防御:98-142/e147-e213]\nOverseer Skullÿc0",
@@ -26299,7 +26299,7 @@
     "zhCN": "督军颅骨"
   },
   {
-    "id": 252011,
+    "id": 252110,
     "Key": "base_info_neb",
     "enUS": "Minion Skull",
     "zhTW": "ÿc5[qlvl:59,防御:95-139/e142-e208]\nMinion Skullÿc0",
@@ -26316,7 +26316,7 @@
     "zhCN": "爪牙颅骨"
   },
   {
-    "id": 252012,
+    "id": 252111,
     "Key": "base_info_paf",
     "enUS": "Vortex Shield",
     "zhTW": "ÿc5[qlvl:85,防御:182-225/e273-e337]\nVortex Shieldÿc0",
@@ -26333,7 +26333,7 @@
     "zhCN": "漩涡盾"
   },
   {
-    "id": 252013,
+    "id": 252112,
     "Key": "base_info_pae",
     "enUS": "Zakarum Shield",
     "zhTW": "ÿc5[qlvl:82,防御:169-193/e253-e289]\nZakarum Shieldÿc0",
@@ -26350,7 +26350,7 @@
     "zhCN": "萨卡兰姆盾"
   },
   {
-    "id": 252014,
+    "id": 252113,
     "Key": "base_info_pac",
     "enUS": "Sacred Rondache",
     "zhTW": "ÿc5[qlvl:70,防御:138-164/e207-e246]\nSacred Rondacheÿc0",
@@ -26367,7 +26367,7 @@
     "zhCN": "神圣轻圆盾"
   },
   {
-    "id": 252015,
+    "id": 252114,
     "Key": "base_info_pab",
     "enUS": "Sacred Targe",
     "zhTW": "ÿc5[qlvl:63,防御:126-158/e189-e237]\nSacred Targeÿc0",
@@ -26384,7 +26384,7 @@
     "zhCN": "神圣小盾"
   },
   {
-    "id": 252016,
+    "id": 252115,
     "Key": "base_info_baf",
     "enUS": "Guardian Crown",
     "zhTW": "ÿc5[qlvl:85,防御:117-168/e175-e252]\nGuardian Crownÿc0",
@@ -26401,7 +26401,7 @@
     "zhCN": "守护者王冠"
   },
   {
-    "id": 252017,
+    "id": 252116,
     "Key": "base_info_bae",
     "enUS": "Conqueror Crown",
     "zhTW": "ÿc5[qlvl:80,防御:114-159/e171-e238]\nConqueror Crownÿc0",
@@ -26418,7 +26418,7 @@
     "zhCN": "征服者王冠"
   },
   {
-    "id": 252018,
+    "id": 252117,
     "Key": "base_info_bad",
     "enUS": "Destroyer Helm",
     "zhTW": "ÿc5[qlvl:73,防御:111-156/e166-e234]\nDestroyer Helmÿc0",
@@ -26435,7 +26435,7 @@
     "zhCN": "毁灭者头盔"
   },
   {
-    "id": 252019,
+    "id": 252118,
     "Key": "base_info_bac",
     "enUS": "Fury Visor",
     "zhTW": "ÿc5[qlvl:66,防御:105-150/e157-e225]\nFury Visorÿc0",
@@ -26452,7 +26452,7 @@
     "zhCN": "怒火面甲"
   },
   {
-    "id": 252020,
+    "id": 252119,
     "Key": "base_info_bab",
     "enUS": "Carnage Helm",
     "zhTW": "ÿc5[qlvl:60,防御:102-147/e153-e220]\nCarnage Helmÿc0",
@@ -26469,7 +26469,7 @@
     "zhCN": "屠戮盔"
   },
   {
-    "id": 252021,
+    "id": 252120,
     "Key": "base_info_drf",
     "enUS": "Dream Spirit",
     "zhTW": "ÿc5[qlvl:85,防御:109-159/e163-e238]\nDream Spiritÿc0",
@@ -26486,7 +26486,7 @@
     "zhCN": "梦境之灵"
   },
   {
-    "id": 252022,
+    "id": 252121,
     "Key": "base_info_drb",
     "enUS": "Blood Spirit",
     "zhTW": "ÿc5[qlvl:62,防御:101-145/e151-e217]\nBlood Spiritÿc0",
@@ -26503,7 +26503,7 @@
     "zhCN": "鲜血之灵"
   },
   {
-    "id": 252023,
+    "id": 252122,
     "Key": "base_info_drd",
     "enUS": "Earth Spirit",
     "zhTW": "ÿc5[qlvl:76,防御:107-152/e160-e228]\nEarth Spiritÿc0",
@@ -26520,7 +26520,7 @@
     "zhCN": "大地之灵"
   },
   {
-    "id": 252024,
+    "id": 252123,
     "Key": "base_info_drc",
     "enUS": "Sun Spirit",
     "zhTW": "ÿc5[qlvl:69,防御:98-147/e147-e220]\nSun Spiritÿc0",
@@ -26537,7 +26537,7 @@
     "zhCN": "太阳之灵"
   },
   {
-    "id": 252025,
+    "id": 252124,
     "Key": "base_info_dre",
     "enUS": "Sky Spirit",
     "zhTW": "ÿc5[qlvl:83,防御:103-155/e154-e232]\nSky Spiritÿc0",
@@ -26554,7 +26554,7 @@
     "zhCN": "天空之灵"
   },
   {
-    "id": 252026,
+    "id": 252125,
     "Key": "base_info_nea",
     "enUS": "Hierophant Trophy",
     "zhTW": "ÿc5[qlvl:54,防御:58-70/e87-e105]\nHierophant Trophyÿc0",
@@ -26571,7 +26571,7 @@
     "zhCN": "圣师法器"
   },
   {
-    "id": 252027,
+    "id": 252126,
     "Key": "base_info_ne9",
     "enUS": "Cantor Trophy",
     "zhTW": "ÿc5[qlvl:49,防御:50-64/e75-e96]\nCantor Trophyÿc0",
@@ -26588,7 +26588,7 @@
     "zhCN": "领唱者法器"
   },
   {
-    "id": 252028,
+    "id": 252127,
     "Key": "base_info_ne8",
     "enUS": "Sexton Trophy",
     "zhTW": "ÿc5[qlvl:45,防御:44-55/e66-e82]\nSexton Trophyÿc0",
@@ -26605,7 +26605,7 @@
     "zhCN": "司事法器"
   },
   {
-    "id": 252029,
+    "id": 252128,
     "Key": "base_info_ne7",
     "enUS": "Fetish Trophy",
     "zhTW": "ÿc5[qlvl:39,防御:41-52/e61-e78]\nFetish Trophyÿc0",
@@ -26622,7 +26622,7 @@
     "zhCN": "鬼娃法器"
   },
   {
-    "id": 252030,
+    "id": 252129,
     "Key": "base_info_ne6",
     "enUS": "Mummified Trophy",
     "zhTW": "ÿc5[qlvl:33,防御:38-48/e57-e72]\nMummified Trophyÿc0",
@@ -26639,7 +26639,7 @@
     "zhCN": "木乃伊法器"
   },
   {
-    "id": 252031,
+    "id": 252130,
     "Key": "base_info_paa",
     "enUS": "Royal Shield",
     "zhTW": "ÿc5[qlvl:55,防御:156-181/e234-e271]\nRoyal Shieldÿc0",
@@ -26656,7 +26656,7 @@
     "zhCN": "皇家盾"
   },
   {
-    "id": 252032,
+    "id": 252131,
     "Key": "base_info_pa9",
     "enUS": "Gilded Shield",
     "zhTW": "ÿc5[qlvl:51,防御:144-168/e216-e252]\nGilded Shieldÿc0",
@@ -26673,7 +26673,7 @@
     "zhCN": "镀金盾"
   },
   {
-    "id": 252033,
+    "id": 252132,
     "Key": "base_info_pa8",
     "enUS": "Protector Shield",
     "zhTW": "ÿc5[qlvl:46,防御:129-153/e193-e229]\nProtector Shieldÿc0",
@@ -26690,7 +26690,7 @@
     "zhCN": "保卫者之盾"
   },
   {
-    "id": 252034,
+    "id": 252133,
     "Key": "base_info_pa7",
     "enUS": "Akaran Rondache",
     "zhTW": "ÿc5[qlvl:40,防御:113-137/e169-e205]\nAkaran Rondacheÿc0",
@@ -26707,7 +26707,7 @@
     "zhCN": "阿卡兰轻圆盾"
   },
   {
-    "id": 252035,
+    "id": 252134,
     "Key": "base_info_pa6",
     "enUS": "Akaran Targe",
     "zhTW": "ÿc5[qlvl:35,防御:101-125/e151-e187]\nAkaran Targeÿc0",
@@ -26724,7 +26724,7 @@
     "zhCN": "阿卡兰小盾"
   },
   {
-    "id": 252036,
+    "id": 252135,
     "Key": "base_info_baa",
     "enUS": "Slayer Guard",
     "zhTW": "ÿc5[qlvl:54,防御:93-120/e139-e180]\nSlayer Guardÿc0",
@@ -26741,7 +26741,7 @@
     "zhCN": "杀戮者头盔"
   },
   {
-    "id": 252037,
+    "id": 252136,
     "Key": "base_info_ba9",
     "enUS": "Savage Helmet",
     "zhTW": "ÿc5[qlvl:49,防御:85-98/e127-e147]\nSavage Helmetÿc0",
@@ -26758,7 +26758,7 @@
     "zhCN": "野蛮头盔"
   },
   {
-    "id": 252038,
+    "id": 252137,
     "Key": "base_info_ba8",
     "enUS": "Rage Mask",
     "zhTW": "ÿc5[qlvl:44,防御:78-90/e117-e135]\nRage Maskÿc0",
@@ -26775,7 +26775,7 @@
     "zhCN": "盛怒面甲"
   },
   {
-    "id": 252039,
+    "id": 252138,
     "Key": "base_info_ba7",
     "enUS": "Lion Helm",
     "zhTW": "ÿc5[qlvl:38,防御:63-75/e94-e112]\nLion Helmÿc0",
@@ -26792,7 +26792,7 @@
     "zhCN": "狮盔"
   },
   {
-    "id": 252040,
+    "id": 252139,
     "Key": "base_info_ba6",
     "enUS": "Jawbone Visor",
     "zhTW": "ÿc5[qlvl:33,防御:55-68/e82-e102]\nJawbone Visorÿc0",
@@ -26809,7 +26809,7 @@
     "zhCN": "颚骨面甲"
   },
   {
-    "id": 252041,
+    "id": 252140,
     "Key": "base_info_dra",
     "enUS": "Totemic Mask",
     "zhTW": "ÿc5[qlvl:55,防御:73-98/e109-e147]\nTotemic Maskÿc0",
@@ -26826,7 +26826,7 @@
     "zhCN": "图腾面具"
   },
   {
-    "id": 252042,
+    "id": 252141,
     "Key": "base_info_dr6",
     "enUS": "Alpha Helm",
     "zhTW": "ÿc5[qlvl:35,防御:52-62/e78-e93]\nAlpha Helmÿc0",
@@ -26843,7 +26843,7 @@
     "zhCN": "头狼盔"
   },
   {
-    "id": 252043,
+    "id": 252142,
     "Key": "base_info_dr8",
     "enUS": "Hunter's Guise",
     "zhTW": "ÿc5[qlvl:46,防御:67-81/e100-e121]\nHunter's Guiseÿc0",
@@ -26860,7 +26860,7 @@
     "zhCN": "猎人伪装"
   },
   {
-    "id": 252044,
+    "id": 252143,
     "Key": "base_info_dr7",
     "enUS": "Griffon Headdress",
     "zhTW": "ÿc5[qlvl:40,防御:46-68/e69-e102]\nGriffon Headdressÿc0",
@@ -26877,7 +26877,7 @@
     "zhCN": "狮鹫头饰"
   },
   {
-    "id": 252045,
+    "id": 252144,
     "Key": "base_info_dr9",
     "enUS": "Sacred Feathers",
     "zhTW": "ÿc5[qlvl:50,防御:58-87/e87-e130]\nSacred Feathersÿc0",
@@ -26894,7 +26894,7 @@
     "zhCN": "圣羽盔"
   },
   {
-    "id": 252046,
+    "id": 252145,
     "Key": "base_info_upk",
     "enUS": "Blade Barrier",
     "zhTW": "ÿc5[qlvl:68,防御:147-163/e220-e244]\nBlade Barrierÿc0",
@@ -26911,7 +26911,7 @@
     "zhCN": "剑刃屏障"
   },
   {
-    "id": 252047,
+    "id": 252146,
     "Key": "base_info_ush",
     "enUS": "Troll Nest",
     "zhTW": "ÿc5[qlvl:76,防御:158-173/e237-e259]\nTroll Nestÿc0",
@@ -26928,7 +26928,7 @@
     "zhCN": "巨魔巢"
   },
   {
-    "id": 252048,
+    "id": 252147,
     "Key": "base_info_uh9",
     "enUS": "Bone Visage",
     "zhTW": "ÿc5[qlvl:84,防御:100-157/e150-e235]\nBone Visageÿc0",
@@ -26945,7 +26945,7 @@
     "zhCN": "白骨面甲"
   },
   {
-    "id": 252049,
+    "id": 252148,
     "Key": "base_info_uhc",
     "enUS": "Colossus Girdle",
     "zhTW": "ÿc5[qlvl:85,防御:61-71/e91-e106]\nColossus Girdleÿc0",
@@ -26962,7 +26962,7 @@
     "zhCN": "巨型护腰"
   },
   {
-    "id": 252050,
+    "id": 252149,
     "Key": "base_info_utc",
     "enUS": "Troll Belt",
     "zhTW": "ÿc5[qlvl:82,防御:59-66/e88-e99]\nTroll Beltÿc0",
@@ -26979,7 +26979,7 @@
     "zhCN": "巨魔腰带"
   },
   {
-    "id": 252051,
+    "id": 252150,
     "Key": "base_info_umc",
     "enUS": "Mithril Coil",
     "zhTW": "ÿc5[qlvl:75,防御:58-65/e87-e97]\nMithril Coilÿc0",
@@ -26996,7 +26996,7 @@
     "zhCN": "秘银腰带"
   },
   {
-    "id": 252052,
+    "id": 252151,
     "Key": "base_info_uvc",
     "enUS": "Vampirefang Belt",
     "zhTW": "ÿc5[qlvl:68,防御:56-63/e84-e94]\nVampirefang Beltÿc0",
@@ -27013,7 +27013,7 @@
     "zhCN": "吸血鬼牙腰带"
   },
   {
-    "id": 252053,
+    "id": 252152,
     "Key": "base_info_ulc",
     "enUS": "Spiderweb Sash",
     "zhTW": "ÿc5[qlvl:61,防御:55-62/e82-e93]\nSpiderweb Sashÿc0",
@@ -27030,7 +27030,7 @@
     "zhCN": "蛛网饰带"
   },
   {
-    "id": 252054,
+    "id": 252153,
     "Key": "base_info_uhb",
     "enUS": "Myrmidon Greaves",
     "zhTW": "ÿc5[qlvl:85,防御:62-71/e93-e106]\nMyrmidon Greavesÿc0",
@@ -27047,7 +27047,7 @@
     "zhCN": "侍从护胫"
   },
   {
-    "id": 252055,
+    "id": 252154,
     "Key": "base_info_utb",
     "enUS": "Mirrored Boots",
     "zhTW": "ÿc5[qlvl:81,防御:59-68/e88-e102]\nMirrored Bootsÿc0",
@@ -27064,7 +27064,7 @@
     "zhCN": "镜化靴"
   },
   {
-    "id": 252056,
+    "id": 252155,
     "Key": "base_info_umb",
     "enUS": "Boneweave Boots",
     "zhTW": "ÿc5[qlvl:72,防御:59-67/e88-e100]\nBoneweave Bootsÿc0",
@@ -27081,7 +27081,7 @@
     "zhCN": "骸骨链靴"
   },
   {
-    "id": 252057,
+    "id": 252156,
     "Key": "base_info_uvb",
     "enUS": "Scarabshell Boots",
     "zhTW": "ÿc5[qlvl:66,防御:56-65/e84-e97]\nScarabshell Bootsÿc0",
@@ -27098,7 +27098,7 @@
     "zhCN": "圣甲虫壳靴"
   },
   {
-    "id": 252058,
+    "id": 252157,
     "Key": "base_info_ulb",
     "enUS": "Wyrmhide Boots",
     "zhTW": "ÿc5[qlvl:60,防御:54-62/e81-e93]\nWyrmhide Bootsÿc0",
@@ -27115,7 +27115,7 @@
     "zhCN": "飞龙皮靴"
   },
   {
-    "id": 252059,
+    "id": 252158,
     "Key": "base_info_uhg",
     "enUS": "Ogre Gauntlets",
     "zhTW": "ÿc5[qlvl:85,防御:62-71/e93-e106]\nOgre Gauntletsÿc0",
@@ -27132,7 +27132,7 @@
     "zhCN": "食人魔护手"
   },
   {
-    "id": 252060,
+    "id": 252159,
     "Key": "base_info_utg",
     "enUS": "Crusader Gauntlets",
     "zhTW": "ÿc5[qlvl:76,防御:59-68/e88-e102]\nCrusader Gauntletsÿc0",
@@ -27149,7 +27149,7 @@
     "zhCN": "圣教军护手"
   },
   {
-    "id": 252061,
+    "id": 252160,
     "Key": "base_info_umg",
     "enUS": "Vambraces",
     "zhTW": "ÿc5[qlvl:69,防御:59-67/e88-e100]\nVambracesÿc0",
@@ -27166,7 +27166,7 @@
     "zhCN": "护臂手甲"
   },
   {
-    "id": 252062,
+    "id": 252161,
     "Key": "base_info_uvg",
     "enUS": "Vampirebone Gloves",
     "zhTW": "ÿc5[qlvl:63,防御:56-65/e84-e97]\nVampirebone Glovesÿc0",
@@ -27183,7 +27183,7 @@
     "zhCN": "吸血鬼骨手套"
   },
   {
-    "id": 252063,
+    "id": 252162,
     "Key": "base_info_ulg",
     "enUS": "Bramble Mitts",
     "zhTW": "ÿc5[qlvl:57,防御:54-62/e81-e93]\nBramble Mittsÿc0",
@@ -27200,7 +27200,7 @@
     "zhCN": "防刺手套"
   },
   {
-    "id": 252064,
+    "id": 252163,
     "Key": "base_info_uts",
     "enUS": "Ward",
     "zhTW": "ÿc5[qlvl:84,防御:153-170/e229-e255]\nWardÿc0",
@@ -27217,7 +27217,7 @@
     "zhCN": "守护之盾"
   },
   {
-    "id": 252065,
+    "id": 252164,
     "Key": "base_info_uow",
     "enUS": "Aegis",
     "zhTW": "ÿc5[qlvl:79,防御:145-161/e217-e241]\nAegisÿc0",
@@ -27234,7 +27234,7 @@
     "zhCN": "圣盾"
   },
   {
-    "id": 252066,
+    "id": 252165,
     "Key": "base_info_uit",
     "enUS": "Monarch",
     "zhTW": "ÿc5[qlvl:72,防御:133-148/e199-e222]\nMonarchÿc0",
@@ -27251,7 +27251,7 @@
     "zhCN": "统治者大盾"
   },
   {
-    "id": 252067,
+    "id": 252166,
     "Key": "base_info_urg",
     "enUS": "Hyperion",
     "zhTW": "ÿc5[qlvl:64,防御:119-135/e178-e202]\nHyperionÿc0",
@@ -27268,7 +27268,7 @@
     "zhCN": "亥伯龙盾"
   },
   {
-    "id": 252068,
+    "id": 252167,
     "Key": "base_info_uml",
     "enUS": "Luna",
     "zhTW": "ÿc5[qlvl:61,防御:108-123/e162-e184]\nLunaÿc0",
@@ -27285,7 +27285,7 @@
     "zhCN": "月神盾"
   },
   {
-    "id": 252069,
+    "id": 252168,
     "Key": "base_info_uuc",
     "enUS": "Heater",
     "zhTW": "ÿc5[qlvl:58,防御:95-110/e142-e165]\nHeaterÿc0",
@@ -27302,7 +27302,7 @@
     "zhCN": "斗盾"
   },
   {
-    "id": 252070,
+    "id": 252169,
     "Key": "base_info_utp",
     "enUS": "Archon Plate",
     "zhTW": "ÿc5[qlvl:84,防御:410-524/e615-e786]\nArchon Plateÿc0",
@@ -27319,7 +27319,7 @@
     "zhCN": "统治者板甲"
   },
   {
-    "id": 252071,
+    "id": 252170,
     "Key": "base_info_uar",
     "enUS": "Sacred Armor",
     "zhTW": "ÿc5[qlvl:85,防御:487-600/e730-e900]\nSacred Armorÿc0",
@@ -27336,7 +27336,7 @@
     "zhCN": "神圣铠甲"
   },
   {
-    "id": 252072,
+    "id": 252171,
     "Key": "base_info_uul",
     "enUS": "Shadow Plate",
     "zhTW": "ÿc5[qlvl:83,防御:446-557/e669-e835]\nShadow Plateÿc0",
@@ -27353,7 +27353,7 @@
     "zhCN": "暗影板甲"
   },
   {
-    "id": 252073,
+    "id": 252172,
     "Key": "base_info_uth",
     "enUS": "Lacquered Plate",
     "zhTW": "ÿc5[qlvl:82,防御:433-541/e649-e811]\nLacquered Plateÿc0",
@@ -27370,7 +27370,7 @@
     "zhCN": "漆甲"
   },
   {
-    "id": 252074,
+    "id": 252173,
     "Key": "base_info_uld",
     "enUS": "Kraken Shell",
     "zhTW": "ÿc5[qlvl:81,防御:417-523/e625-e784]\nKraken Shellÿc0",
@@ -27387,7 +27387,7 @@
     "zhCN": "深海巨妖之壳"
   },
   {
-    "id": 252075,
+    "id": 252174,
     "Key": "base_info_ult",
     "enUS": "Hellforge Plate",
     "zhTW": "ÿc5[qlvl:78,防御:421-530/e631-e795]\nHellforge Plateÿc0",
@@ -27404,7 +27404,7 @@
     "zhCN": "地狱铸甲"
   },
   {
-    "id": 252076,
+    "id": 252175,
     "Key": "base_info_upl",
     "enUS": "Balrog Skin",
     "zhTW": "ÿc5[qlvl:76,防御:410-517/e615-e775]\nBalrog Skinÿc0",
@@ -27421,7 +27421,7 @@
     "zhCN": "炎魔皮"
   },
   {
-    "id": 252077,
+    "id": 252176,
     "Key": "base_info_urs",
     "enUS": "Great Hauberk",
     "zhTW": "ÿc5[qlvl:75,防御:395-501/e592-e751]\nGreat Hauberkÿc0",
@@ -27438,7 +27438,7 @@
     "zhCN": "大链甲衫"
   },
   {
-    "id": 252078,
+    "id": 252177,
     "Key": "base_info_uhn",
     "enUS": "Boneweave",
     "zhTW": "ÿc5[qlvl:62,防御:399-505/e598-e757]\nBoneweaveÿc0",
@@ -27455,7 +27455,7 @@
     "zhCN": "骨织甲"
   },
   {
-    "id": 252079,
+    "id": 252178,
     "Key": "base_info_ucl",
     "enUS": "Loricated Mail",
     "zhTW": "ÿc5[qlvl:73,防御:390-496/e585-e744]\nLoricated Mailÿc0",
@@ -27472,7 +27472,7 @@
     "zhCN": "覆铁甲"
   },
   {
-    "id": 252080,
+    "id": 252179,
     "Key": "base_info_ung",
     "enUS": "Diamond Mail",
     "zhTW": "ÿc5[qlvl:72,防御:383-489/e574-e733]\nDiamond Mailÿc0",
@@ -27489,7 +27489,7 @@
     "zhCN": "钻石甲"
   },
   {
-    "id": 252081,
+    "id": 252180,
     "Key": "base_info_utu",
     "enUS": "Wire Fleece",
     "zhTW": "ÿc5[qlvl:70,防御:375-481/e562-e721]\nWire Fleeceÿc0",
@@ -27506,7 +27506,7 @@
     "zhCN": "羊绒皮甲"
   },
   {
-    "id": 252082,
+    "id": 252181,
     "Key": "base_info_ula",
     "enUS": "Scarab Husk",
     "zhTW": "ÿc5[qlvl:68,防御:369-474/e553-e711]\nScarab Huskÿc0",
@@ -27523,7 +27523,7 @@
     "zhCN": "圣甲虫壳"
   },
   {
-    "id": 252083,
+    "id": 252182,
     "Key": "base_info_uea",
     "enUS": "Wyrmhide",
     "zhTW": "ÿc5[qlvl:67,防御:364-470/e546-e705]\nWyrmhideÿc0",
@@ -27540,7 +27540,7 @@
     "zhCN": "龙皮甲"
   },
   {
-    "id": 252084,
+    "id": 252183,
     "Key": "base_info_uui",
     "enUS": "Dusk Shroud",
     "zhTW": "ÿc5[qlvl:65,防御:361-467/e541-e700]\nDusk Shroudÿc0",
@@ -27557,7 +27557,7 @@
     "zhCN": "灰幕寿衣"
   },
   {
-    "id": 252085,
+    "id": 252184,
     "Key": "base_info_usk",
     "enUS": "Demonhead",
     "zhTW": "ÿc5[qlvl:74,防御:101-154/e151-e231]\nDemonheadÿc0",
@@ -27574,7 +27574,7 @@
     "zhCN": "恶魔面甲"
   },
   {
-    "id": 252086,
+    "id": 252185,
     "Key": "base_info_urn",
     "enUS": "Corona",
     "zhTW": "ÿc5[qlvl:85,防御:111-165/e166-e247]\nCoronaÿc0",
@@ -27591,7 +27591,7 @@
     "zhCN": "宝冠"
   },
   {
-    "id": 252087,
+    "id": 252186,
     "Key": "base_info_uhm",
     "enUS": "Spired Helm",
     "zhTW": "ÿc5[qlvl:79,防御:114-159/e171-e238]\nSpired Helmÿc0",
@@ -27608,7 +27608,7 @@
     "zhCN": "塔盔"
   },
   {
-    "id": 252088,
+    "id": 252187,
     "Key": "base_info_uhl",
     "enUS": "Giant Conch",
     "zhTW": "ÿc5[qlvl:54,防御:110-154/e165-e231]\nGiant Conchÿc0",
@@ -27625,7 +27625,7 @@
     "zhCN": "巨贝盔"
   },
   {
-    "id": 252089,
+    "id": 252188,
     "Key": "base_info_ulm",
     "enUS": "Armet",
     "zhTW": "ÿc5[qlvl:68,防御:105-149/e157-e223]\nArmetÿc0",
@@ -27642,7 +27642,7 @@
     "zhCN": "武装盔"
   },
   {
-    "id": 252090,
+    "id": 252189,
     "Key": "base_info_ukp",
     "enUS": "Hydraskull",
     "zhTW": "ÿc5[qlvl:63,防御:101-145/e151-e217]\nHydraskullÿc0",
@@ -27659,7 +27659,7 @@
     "zhCN": "多头蛇颅"
   },
   {
-    "id": 252091,
+    "id": 252190,
     "Key": "base_info_uap",
     "enUS": "Shako",
     "zhTW": "ÿc5[qlvl:58,防御:98-141/e147-e211]\nShakoÿc0",
@@ -27676,7 +27676,7 @@
     "zhCN": "军帽"
   },
   {
-    "id": 252092,
+    "id": 252191,
     "Key": "base_info_ci3",
     "enUS": "Diadem",
     "zhTW": "ÿc5[qlvl:85,防御:50-60/e75-e90]\nDiademÿc0",
@@ -27693,7 +27693,7 @@
     "zhCN": "权冠"
   },
   {
-    "id": 252093,
+    "id": 252192,
     "Key": "base_info_ci2",
     "enUS": "Tiara",
     "zhTW": "ÿc5[qlvl:70,防御:40-50/e60-e75]\nTiaraÿc0",
@@ -27710,7 +27710,7 @@
     "zhCN": "冠冕"
   },
   {
-    "id": 252094,
+    "id": 252193,
     "Key": "base_info_ci1",
     "enUS": "Coronet",
     "zhTW": "ÿc5[qlvl:52,防御:30-40/e45-e60]\nCoronetÿc0",
@@ -27727,7 +27727,7 @@
     "zhCN": "头冠"
   },
   {
-    "id": 252095,
+    "id": 252194,
     "Key": "base_info_ci0",
     "enUS": "Circlet",
     "zhTW": "ÿc5[qlvl:24,防御:20-30/e30-e45]\nCircletÿc0",
@@ -27744,7 +27744,7 @@
     "zhCN": "头环"
   },
   {
-    "id": 252096,
+    "id": 252195,
     "Key": "base_info_ne5",
     "enUS": "Demon Head",
     "zhTW": "ÿc5[qlvl:24,防御:15-20/e22-e30]\nDemon Headÿc0",
@@ -27761,7 +27761,7 @@
     "zhCN": "恶魔头骨"
   },
   {
-    "id": 252097,
+    "id": 252196,
     "Key": "base_info_ne4",
     "enUS": "Gargoyle Head",
     "zhTW": "ÿc5[qlvl:20,防御:10-16/e15-e24]\nGargoyle Headÿc0",
@@ -27778,7 +27778,7 @@
     "zhCN": "石像鬼头骨"
   },
   {
-    "id": 252098,
+    "id": 252197,
     "Key": "base_info_ne3",
     "enUS": "Unraveller Head",
     "zhTW": "ÿc5[qlvl:16,防御:6-10/e9-e15]\nUnraveller Headÿc0",
@@ -27795,7 +27795,7 @@
     "zhCN": "剖尸者头骨"
   },
   {
-    "id": 252099,
+    "id": 252198,
     "Key": "base_info_ne2",
     "enUS": "Zombie Head",
     "zhTW": "ÿc5[qlvl:8,防御:4-8/e6-e12]\nZombie Headÿc0",
@@ -27812,7 +27812,7 @@
     "zhCN": "僵尸头骨"
   },
   {
-    "id": 252100,
+    "id": 252199,
     "Key": "base_info_ne1",
     "enUS": "Preserved Head",
     "zhTW": "ÿc5[qlvl:4,防御:2-5/e3-e7]\nPreserved Headÿc0",
@@ -27829,7 +27829,7 @@
     "zhCN": "保存完好的头骨"
   },
   {
-    "id": 252101,
+    "id": 252200,
     "Key": "base_info_pa5",
     "enUS": "Crown Shield",
     "zhTW": "ÿc5[qlvl:24,防御:30-40/e45-e60]\nCrown Shieldÿc0",
@@ -27846,7 +27846,7 @@
     "zhCN": "王冠盾"
   },
   {
-    "id": 252102,
+    "id": 252201,
     "Key": "base_info_pa4",
     "enUS": "Aerin Shield",
     "zhTW": "ÿc5[qlvl:20,防御:26-36/e39-e54]\nAerin Shieldÿc0",
@@ -27863,7 +27863,7 @@
     "zhCN": "艾琳盾"
   },
   {
-    "id": 252103,
+    "id": 252202,
     "Key": "base_info_pa3",
     "enUS": "Heraldic Shield",
     "zhTW": "ÿc5[qlvl:16,防御:16-26/e24-e39]\nHeraldic Shieldÿc0",
@@ -27880,7 +27880,7 @@
     "zhCN": "纹章盾"
   },
   {
-    "id": 252104,
+    "id": 252203,
     "Key": "base_info_pa2",
     "enUS": "Rondache",
     "zhTW": "ÿc5[qlvl:8,防御:10-18/e15-e27]\nRondacheÿc0",
@@ -27897,7 +27897,7 @@
     "zhCN": "轻圆盾"
   },
   {
-    "id": 252105,
+    "id": 252204,
     "Key": "base_info_pa1",
     "enUS": "Targe",
     "zhTW": "ÿc5[qlvl:4,防御:8-12/e12-e18]\nTargeÿc0",
@@ -27914,7 +27914,7 @@
     "zhCN": "小盾"
   },
   {
-    "id": 252106,
+    "id": 252205,
     "Key": "base_info_ba5",
     "enUS": "Avenger Guard",
     "zhTW": "ÿc5[qlvl:24,防御:35-50/e52-e75]\nAvenger Guardÿc0",
@@ -27931,7 +27931,7 @@
     "zhCN": "复仇者头盔"
   },
   {
-    "id": 252107,
+    "id": 252206,
     "Key": "base_info_ba4",
     "enUS": "Assault Helmet",
     "zhTW": "ÿc5[qlvl:20,防御:30-35/e45-e52]\nAssault Helmetÿc0",
@@ -27948,7 +27948,7 @@
     "zhCN": "强攻盔"
   },
   {
-    "id": 252108,
+    "id": 252207,
     "Key": "base_info_ba3",
     "enUS": "Horned Helm",
     "zhTW": "ÿc5[qlvl:16,防御:25-30/e37-e45]\nHorned Helmÿc0",
@@ -27965,7 +27965,7 @@
     "zhCN": "长角盔"
   },
   {
-    "id": 252109,
+    "id": 252208,
     "Key": "base_info_ba2",
     "enUS": "Fanged Helm",
     "zhTW": "ÿc5[qlvl:8,防御:15-20/e22-e30]\nFanged Helmÿc0",
@@ -27982,7 +27982,7 @@
     "zhCN": "牙骨盔"
   },
   {
-    "id": 252110,
+    "id": 252209,
     "Key": "base_info_ba1",
     "enUS": "Jawbone Cap",
     "zhTW": "ÿc5[qlvl:4,防御:10-15/e15-e22]\nJawbone Capÿc0",
@@ -27999,7 +27999,7 @@
     "zhCN": "颚骨帽"
   },
   {
-    "id": 252111,
+    "id": 252210,
     "Key": "base_info_dr5",
     "enUS": "Spirit Mask",
     "zhTW": "ÿc5[qlvl:24,防御:22-35/e33-e52]\nSpirit Maskÿc0",
@@ -28016,7 +28016,7 @@
     "zhCN": "狼灵面具"
   },
   {
-    "id": 252112,
+    "id": 252211,
     "Key": "base_info_dr1",
     "enUS": "Wolf Head",
     "zhTW": "ÿc5[qlvl:4,防御:8-11/e12-e16]\nWolf Headÿc0",
@@ -28033,7 +28033,7 @@
     "zhCN": "狼头"
   },
   {
-    "id": 252113,
+    "id": 252212,
     "Key": "base_info_dr3",
     "enUS": "Antlers",
     "zhTW": "ÿc5[qlvl:16,防御:18-24/e27-e36]\nAntlersÿc0",
@@ -28050,7 +28050,7 @@
     "zhCN": "鹿角盔"
   },
   {
-    "id": 252114,
+    "id": 252213,
     "Key": "base_info_dr2",
     "enUS": "Hawk Helm",
     "zhTW": "ÿc5[qlvl:8,防御:4-15/e6-e22]\nHawk Helmÿc0",
@@ -28067,7 +28067,7 @@
     "zhCN": "鹰盔"
   },
   {
-    "id": 252115,
+    "id": 252214,
     "Key": "base_info_dr4",
     "enUS": "Falcon Mask",
     "zhTW": "ÿc5[qlvl:20,防御:12-28/e18-e42]\nFalcon Maskÿc0",
@@ -28084,7 +28084,7 @@
     "zhCN": "鹰隼面甲"
   },
   {
-    "id": 252116,
+    "id": 252215,
     "Key": "base_info_amf",
     "enUS": "Matriarchal Javelin",
     "zhTW": "ÿc5[qlvl:65,范围:3]\nMatriarchal Javelinÿc0",
@@ -28101,7 +28101,7 @@
     "zhCN": "女族长标枪"
   },
   {
-    "id": 252117,
+    "id": 252216,
     "Key": "base_info_ame",
     "enUS": "Matriarchal Pike",
     "zhTW": "ÿc5[qlvl:81,范围:5]\nMatriarchal Pikeÿc0",
@@ -28118,7 +28118,7 @@
     "zhCN": "女族长尖枪"
   },
   {
-    "id": 252118,
+    "id": 252217,
     "Key": "base_info_amd",
     "enUS": "Matriarchal Spear",
     "zhTW": "ÿc5[qlvl:61,范围:5]\nMatriarchal Spearÿc0",
@@ -28135,7 +28135,7 @@
     "zhCN": "女族长矛"
   },
   {
-    "id": 252119,
+    "id": 252218,
     "Key": "base_info_amc",
     "enUS": "Grand Matron Bow",
     "zhTW": "ÿc5[qlvl:78,范围:1]\nGrand Matron Bowÿc0",
@@ -28152,7 +28152,7 @@
     "zhCN": "仕女长之弓"
   },
   {
-    "id": 252120,
+    "id": 252219,
     "Key": "base_info_amb",
     "enUS": "Matriarchal Bow",
     "zhTW": "ÿc5[qlvl:53,范围:1]\nMatriarchal Bowÿc0",
@@ -28169,7 +28169,7 @@
     "zhCN": "女族长弓"
   },
   {
-    "id": 252121,
+    "id": 252220,
     "Key": "base_info_obf",
     "enUS": "Dimensional Shard",
     "zhTW": "ÿc5[qlvl:85,范围:1]\nDimensional Shardÿc0",
@@ -28186,7 +28186,7 @@
     "zhCN": "次元碎片"
   },
   {
-    "id": 252122,
+    "id": 252221,
     "Key": "base_info_obe",
     "enUS": "Vortex Orb",
     "zhTW": "ÿc5[qlvl:84,范围:1]\nVortex Orbÿc0",
@@ -28203,7 +28203,7 @@
     "zhCN": "旋云宝珠"
   },
   {
-    "id": 252123,
+    "id": 252222,
     "Key": "base_info_obd",
     "enUS": "Demon Heart",
     "zhTW": "ÿc5[qlvl:75,范围:1]\nDemon Heartÿc0",
@@ -28220,7 +28220,7 @@
     "zhCN": "恶魔之心"
   },
   {
-    "id": 252124,
+    "id": 252223,
     "Key": "base_info_obc",
     "enUS": "Eldritch Orb",
     "zhTW": "ÿc5[qlvl:67,范围:1]\nEldritch Orbÿc0",
@@ -28237,7 +28237,7 @@
     "zhCN": "怪异法珠"
   },
   {
-    "id": 252125,
+    "id": 252224,
     "Key": "base_info_obb",
     "enUS": "Heavenly Stone",
     "zhTW": "ÿc5[qlvl:59,范围:1]\nHeavenly Stoneÿc0",
@@ -28254,7 +28254,7 @@
     "zhCN": "天界石"
   },
   {
-    "id": 252126,
+    "id": 252225,
     "Key": "base_info_ama",
     "enUS": "Ceremonial Javelin",
     "zhTW": "ÿc5[qlvl:35,范围:3]\nCeremonial Javelinÿc0",
@@ -28271,7 +28271,7 @@
     "zhCN": "仪式标枪"
   },
   {
-    "id": 252127,
+    "id": 252226,
     "Key": "base_info_am9",
     "enUS": "Ceremonial Pike",
     "zhTW": "ÿc5[qlvl:51,范围:5]\nCeremonial Pikeÿc0",
@@ -28288,7 +28288,7 @@
     "zhCN": "仪式长枪"
   },
   {
-    "id": 252128,
+    "id": 252227,
     "Key": "base_info_am8",
     "enUS": "Ceremonial Spear",
     "zhTW": "ÿc5[qlvl:43,范围:5]\nCeremonial Spearÿc0",
@@ -28305,7 +28305,7 @@
     "zhCN": "仪式矛"
   },
   {
-    "id": 252129,
+    "id": 252228,
     "Key": "base_info_am7",
     "enUS": "Ceremonial Bow",
     "zhTW": "ÿc5[qlvl:47,范围:1]\nCeremonial Bowÿc0",
@@ -28322,7 +28322,7 @@
     "zhCN": "仪式弓"
   },
   {
-    "id": 252130,
+    "id": 252229,
     "Key": "base_info_am6",
     "enUS": "Ashwood Bow",
     "zhTW": "ÿc5[qlvl:39,范围:1]\nAshwood Bowÿc0",
@@ -28339,7 +28339,7 @@
     "zhCN": "白蜡木弓"
   },
   {
-    "id": 252131,
+    "id": 252230,
     "Key": "base_info_oba",
     "enUS": "Swirling Crystal",
     "zhTW": "ÿc5[qlvl:50,范围:1]\nSwirling Crystalÿc0",
@@ -28356,7 +28356,7 @@
     "zhCN": "漩涡水晶"
   },
   {
-    "id": 252132,
+    "id": 252231,
     "Key": "base_info_ob9",
     "enUS": "Sparkling Ball",
     "zhTW": "ÿc5[qlvl:46,范围:1]\nSparkling Ballÿc0",
@@ -28373,7 +28373,7 @@
     "zhCN": "闪光之球"
   },
   {
-    "id": 252133,
+    "id": 252232,
     "Key": "base_info_ob8",
     "enUS": "Cloudy Sphere",
     "zhTW": "ÿc5[qlvl:41,范围:1]\nCloudy Sphereÿc0",
@@ -28390,7 +28390,7 @@
     "zhCN": "云雾法球"
   },
   {
-    "id": 252134,
+    "id": 252233,
     "Key": "base_info_ob7",
     "enUS": "Crystalline Globe",
     "zhTW": "ÿc5[qlvl:37,范围:1]\nCrystalline Globeÿc0",
@@ -28407,7 +28407,7 @@
     "zhCN": "水晶之球"
   },
   {
-    "id": 252135,
+    "id": 252234,
     "Key": "base_info_ob6",
     "enUS": "Glowing Orb",
     "zhTW": "ÿc5[qlvl:32,范围:1]\nGlowing Orbÿc0",
@@ -28424,7 +28424,7 @@
     "zhCN": "闪光宝珠"
   },
   {
-    "id": 252136,
+    "id": 252235,
     "Key": "base_info_am5",
     "enUS": "Maiden Javelin",
     "zhTW": "ÿc5[qlvl:23,范围:3]\nMaiden Javelinÿc0",
@@ -28441,7 +28441,7 @@
     "zhCN": "处子标枪"
   },
   {
-    "id": 252137,
+    "id": 252236,
     "Key": "base_info_am4",
     "enUS": "Maiden Pike",
     "zhTW": "ÿc5[qlvl:27,范围:5]\nMaiden Pikeÿc0",
@@ -28458,7 +28458,7 @@
     "zhCN": "处子长枪"
   },
   {
-    "id": 252138,
+    "id": 252237,
     "Key": "base_info_am3",
     "enUS": "Maiden Spear",
     "zhTW": "ÿc5[qlvl:18,范围:5]\nMaiden Spearÿc0",
@@ -28475,7 +28475,7 @@
     "zhCN": "处子长矛"
   },
   {
-    "id": 252139,
+    "id": 252238,
     "Key": "base_info_am2",
     "enUS": "Reflex Bow",
     "zhTW": "ÿc5[qlvl:27,范围:1]\nReflex Bowÿc0",
@@ -28492,7 +28492,7 @@
     "zhCN": "双曲弓"
   },
   {
-    "id": 252140,
+    "id": 252239,
     "Key": "base_info_am1",
     "enUS": "Stag Bow",
     "zhTW": "ÿc5[qlvl:18,范围:1]\nStag Bowÿc0",
@@ -28509,7 +28509,7 @@
     "zhCN": "猎鹿弓"
   },
   {
-    "id": 252141,
+    "id": 252240,
     "Key": "base_info_ob4",
     "enUS": "Clasped Orb",
     "zhTW": "ÿc5[qlvl:17,范围:1]\nClasped Orbÿc0",
@@ -28526,7 +28526,7 @@
     "zhCN": "握扣法珠"
   },
   {
-    "id": 252142,
+    "id": 252241,
     "Key": "base_info_ob3",
     "enUS": "Smoked Sphere",
     "zhTW": "ÿc5[qlvl:12,范围:1]\nSmoked Sphereÿc0",
@@ -28543,7 +28543,7 @@
     "zhCN": "烟熏法球"
   },
   {
-    "id": 252143,
+    "id": 252242,
     "Key": "base_info_ob2",
     "enUS": "Sacred Globe",
     "zhTW": "ÿc5[qlvl:8,范围:1]\nSacred Globeÿc0",
@@ -28560,7 +28560,7 @@
     "zhCN": "圣洁之球"
   },
   {
-    "id": 252144,
+    "id": 252243,
     "Key": "base_info_ob1",
     "enUS": "Eagle Orb",
     "zhTW": "ÿc5[qlvl:1,范围:1]\nEagle Orbÿc0",
@@ -28577,7 +28577,7 @@
     "zhCN": "鹰眼法珠"
   },
   {
-    "id": 252145,
+    "id": 252244,
     "Key": "base_info_6rx",
     "enUS": "Demon Crossbow",
     "zhTW": "ÿc5[qlvl:84,范围:1]\nDemon Crossbowÿc0",
@@ -28594,7 +28594,7 @@
     "zhCN": "恶魔弩"
   },
   {
-    "id": 252146,
+    "id": 252245,
     "Key": "base_info_6hx",
     "enUS": "Colossus Crossbow",
     "zhTW": "ÿc5[qlvl:75,范围:1]\nColossus Crossbowÿc0",
@@ -28611,7 +28611,7 @@
     "zhCN": "巨神弩"
   },
   {
-    "id": 252147,
+    "id": 252246,
     "Key": "base_info_6mx",
     "enUS": "Gorgon Crossbow",
     "zhTW": "ÿc5[qlvl:67,范围:1]\nGorgon Crossbowÿc0",
@@ -28628,7 +28628,7 @@
     "zhCN": "蛇发女妖弩"
   },
   {
-    "id": 252148,
+    "id": 252247,
     "Key": "base_info_6lx",
     "enUS": "Pellet Bow",
     "zhTW": "ÿc5[qlvl:57,范围:1]\nPellet Bowÿc0",
@@ -28645,7 +28645,7 @@
     "zhCN": "弹丸弓"
   },
   {
-    "id": 252149,
+    "id": 252248,
     "Key": "base_info_6lw",
     "enUS": "Hydra Bow",
     "zhTW": "ÿc5[qlvl:85,范围:1]\nHydra Bowÿc0",
@@ -28662,7 +28662,7 @@
     "zhCN": "九头蛇弓"
   },
   {
-    "id": 252150,
+    "id": 252249,
     "Key": "base_info_6sw",
     "enUS": "Ward Bow",
     "zhTW": "ÿc5[qlvl:80,范围:1]\nWard Bowÿc0",
@@ -28679,7 +28679,7 @@
     "zhCN": "防护弓"
   },
   {
-    "id": 252151,
+    "id": 252250,
     "Key": "base_info_6l7",
     "enUS": "Crusader Bow",
     "zhTW": "ÿc5[qlvl:77,范围:1]\nCrusader Bowÿc0",
@@ -28696,7 +28696,7 @@
     "zhCN": "十字军弓"
   },
   {
-    "id": 252152,
+    "id": 252251,
     "Key": "base_info_6s7",
     "enUS": "Diamond Bow",
     "zhTW": "ÿc5[qlvl:72,范围:1]\nDiamond Bowÿc0",
@@ -28713,7 +28713,7 @@
     "zhCN": "钻石弓"
   },
   {
-    "id": 252153,
+    "id": 252252,
     "Key": "base_info_6cb",
     "enUS": "Great Bow",
     "zhTW": "ÿc5[qlvl:68,范围:1]\nGreat Bowÿc0",
@@ -28730,7 +28730,7 @@
     "zhCN": "重弓"
   },
   {
-    "id": 252154,
+    "id": 252253,
     "Key": "base_info_6lb",
     "enUS": "Shadow Bow",
     "zhTW": "ÿc5[qlvl:63,范围:1]\nShadow Bowÿc0",
@@ -28747,7 +28747,7 @@
     "zhCN": "暗影弓"
   },
   {
-    "id": 252155,
+    "id": 252254,
     "Key": "base_info_6hb",
     "enUS": "Blade Bow",
     "zhTW": "ÿc5[qlvl:60,范围:1]\nBlade Bowÿc0",
@@ -28764,7 +28764,7 @@
     "zhCN": "利刃弓"
   },
   {
-    "id": 252156,
+    "id": 252255,
     "Key": "base_info_6sb",
     "enUS": "Spider Bow",
     "zhTW": "ÿc5[qlvl:55,范围:1]\nSpider Bowÿc0",
@@ -28781,7 +28781,7 @@
     "zhCN": "蜘蛛弓"
   },
   {
-    "id": 252157,
+    "id": 252256,
     "Key": "base_info_6ws",
     "enUS": "Archon Staff",
     "zhTW": "ÿc5[qlvl:85,范围:2]\nArchon Staffÿc0",
@@ -28798,7 +28798,7 @@
     "zhCN": "统治者之杖"
   },
   {
-    "id": 252158,
+    "id": 252257,
     "Key": "base_info_6bs",
     "enUS": "Shillelagh",
     "zhTW": "ÿc5[qlvl:83,范围:2]\nShillelaghÿc0",
@@ -28815,7 +28815,7 @@
     "zhCN": "橡木棍"
   },
   {
-    "id": 252159,
+    "id": 252258,
     "Key": "base_info_6cs",
     "enUS": "Elder Staff",
     "zhTW": "ÿc5[qlvl:74,范围:2]\nElder Staffÿc0",
@@ -28832,7 +28832,7 @@
     "zhCN": "接骨木杖"
   },
   {
-    "id": 252160,
+    "id": 252259,
     "Key": "base_info_6ls",
     "enUS": "Stalagmite",
     "zhTW": "ÿc5[qlvl:66,范围:2]\nStalagmiteÿc0",
@@ -28849,7 +28849,7 @@
     "zhCN": "石笋杖"
   },
   {
-    "id": 252161,
+    "id": 252260,
     "Key": "base_info_6ss",
     "enUS": "Walking Stick",
     "zhTW": "ÿc5[qlvl:58,范围:2]\nWalking Stickÿc0",
@@ -28866,7 +28866,7 @@
     "zhCN": "手杖"
   },
   {
-    "id": 252162,
+    "id": 252261,
     "Key": "base_info_7wc",
     "enUS": "Giant Thresher",
     "zhTW": "ÿc5[qlvl:85,范围:5]\nGiant Thresherÿc0",
@@ -28883,7 +28883,7 @@
     "zhCN": "巨型砍斧"
   },
   {
-    "id": 252163,
+    "id": 252262,
     "Key": "base_info_7h7",
     "enUS": "Great Poleaxe",
     "zhTW": "ÿc5[qlvl:84,范围:5]\nGreat Poleaxeÿc0",
@@ -28900,7 +28900,7 @@
     "zhCN": "重长柄斧"
   },
   {
-    "id": 252164,
+    "id": 252263,
     "Key": "base_info_7pa",
     "enUS": "Cryptic Axe",
     "zhTW": "ÿc5[qlvl:79,范围:4]\nCryptic Axeÿc0",
@@ -28917,7 +28917,7 @@
     "zhCN": "秘文斧"
   },
   {
-    "id": 252165,
+    "id": 252264,
     "Key": "base_info_7s8",
     "enUS": "Thresher",
     "zhTW": "ÿc5[qlvl:71,范围:2]\nThresherÿc0",
@@ -28934,7 +28934,7 @@
     "zhCN": "砍斧"
   },
   {
-    "id": 252166,
+    "id": 252265,
     "Key": "base_info_7vo",
     "enUS": "Colossus Voulge",
     "zhTW": "ÿc5[qlvl:64,范围:3]\nColossus Voulgeÿc0",
@@ -28951,7 +28951,7 @@
     "zhCN": "巨神戟"
   },
   {
-    "id": 252167,
+    "id": 252266,
     "Key": "base_info_7o7",
     "enUS": "Ogre Axe",
     "zhTW": "ÿc5[qlvl:60,范围:3]\nOgre Axeÿc0",
@@ -28968,7 +28968,7 @@
     "zhCN": "食人魔斧"
   },
   {
-    "id": 252168,
+    "id": 252267,
     "Key": "base_info_7p7",
     "enUS": "War Pike",
     "zhTW": "ÿc5[qlvl:85,范围:5]\nWar Pikeÿc0",
@@ -28985,7 +28985,7 @@
     "zhCN": "战争长枪"
   },
   {
-    "id": 252169,
+    "id": 252268,
     "Key": "base_info_7st",
     "enUS": "Ghost Spear",
     "zhTW": "ÿc5[qlvl:83,范围:5]\nGhost Spearÿc0",
@@ -29002,7 +29002,7 @@
     "zhCN": "幽灵矛"
   },
   {
-    "id": 252170,
+    "id": 252269,
     "Key": "base_info_7br",
     "enUS": "Mancatcher",
     "zhTW": "ÿc5[qlvl:74,范围:5]\nMancatcherÿc0",
@@ -29019,7 +29019,7 @@
     "zhCN": "捕人叉"
   },
   {
-    "id": 252171,
+    "id": 252270,
     "Key": "base_info_7tr",
     "enUS": "Stygian Pike",
     "zhTW": "ÿc5[qlvl:66,范围:4]\nStygian Pikeÿc0",
@@ -29036,7 +29036,7 @@
     "zhCN": "地狱长枪"
   },
   {
-    "id": 252172,
+    "id": 252271,
     "Key": "base_info_7sr",
     "enUS": "Hyperion Spear",
     "zhTW": "ÿc5[qlvl:58,范围:4]\nHyperion Spearÿc0",
@@ -29053,7 +29053,7 @@
     "zhCN": "亥伯龙矛"
   },
   {
-    "id": 252173,
+    "id": 252272,
     "Key": "base_info_7ts",
     "enUS": "Winged Harpoon",
     "zhTW": "ÿc5[qlvl:85,范围:3]\nWinged Harpoonÿc0",
@@ -29070,7 +29070,7 @@
     "zhCN": "双股叉"
   },
   {
-    "id": 252174,
+    "id": 252273,
     "Key": "base_info_7gl",
     "enUS": "Ghost Glaive",
     "zhTW": "ÿc5[qlvl:79,范围:3]\nGhost Glaiveÿc0",
@@ -29087,7 +29087,7 @@
     "zhCN": "幽灵梭戟"
   },
   {
-    "id": 252175,
+    "id": 252274,
     "Key": "base_info_7s7",
     "enUS": "Balrog Spear",
     "zhTW": "ÿc5[qlvl:71,范围:3]\nBalrog Spearÿc0",
@@ -29104,7 +29104,7 @@
     "zhCN": "炎魔矛"
   },
   {
-    "id": 252176,
+    "id": 252275,
     "Key": "base_info_7pi",
     "enUS": "Stygian Pilum",
     "zhTW": "ÿc5[qlvl:62,范围:3]\nStygian Pilumÿc0",
@@ -29121,7 +29121,7 @@
     "zhCN": "地狱长标枪"
   },
   {
-    "id": 252177,
+    "id": 252276,
     "Key": "base_info_7ja",
     "enUS": "Hyperion Javelin",
     "zhTW": "ÿc5[qlvl:54,范围:3]\nHyperion Javelinÿc0",
@@ -29138,7 +29138,7 @@
     "zhCN": "亥伯龙标枪"
   },
   {
-    "id": 252178,
+    "id": 252277,
     "Key": "base_info_7b8",
     "enUS": "Winged Axe",
     "zhTW": "ÿc5[qlvl:80,范围:1]\nWinged Axeÿc0",
@@ -29155,7 +29155,7 @@
     "zhCN": "翼斧"
   },
   {
-    "id": 252179,
+    "id": 252278,
     "Key": "base_info_7bk",
     "enUS": "Winged Knife",
     "zhTW": "ÿc5[qlvl:77,范围:1]\nWinged Knifeÿc0",
@@ -29172,7 +29172,7 @@
     "zhCN": "翼刀"
   },
   {
-    "id": 252180,
+    "id": 252279,
     "Key": "base_info_7ta",
     "enUS": "Flying Axe",
     "zhTW": "ÿc5[qlvl:56,范围:1]\nFlying Axeÿc0",
@@ -29189,7 +29189,7 @@
     "zhCN": "飞斧"
   },
   {
-    "id": 252181,
+    "id": 252280,
     "Key": "base_info_7tk",
     "enUS": "Flying Knife",
     "zhTW": "ÿc5[qlvl:64,范围:1]\nFlying Knifeÿc0",
@@ -29206,7 +29206,7 @@
     "zhCN": "飞刀"
   },
   {
-    "id": 252182,
+    "id": 252281,
     "Key": "base_info_7bl",
     "enUS": "Legend Spike",
     "zhTW": "ÿc5[qlvl:85,范围:1]\nLegend Spikeÿc0",
@@ -29223,7 +29223,7 @@
     "zhCN": "传说匕刺"
   },
   {
-    "id": 252183,
+    "id": 252282,
     "Key": "base_info_7kr",
     "enUS": "Fanged Knife",
     "zhTW": "ÿc5[qlvl:83,范围:1]\nFanged Knifeÿc0",
@@ -29240,7 +29240,7 @@
     "zhCN": "牙刃刀"
   },
   {
-    "id": 252184,
+    "id": 252283,
     "Key": "base_info_7di",
     "enUS": "Mithril Point",
     "zhTW": "ÿc5[qlvl:70,范围:1]\nMithril Pointÿc0",
@@ -29257,7 +29257,7 @@
     "zhCN": "秘银刺"
   },
   {
-    "id": 252185,
+    "id": 252284,
     "Key": "base_info_7dg",
     "enUS": "Bone Knife",
     "zhTW": "ÿc5[qlvl:58,范围:1]\nBone Knifeÿc0",
@@ -29274,7 +29274,7 @@
     "zhCN": "骨刀"
   },
   {
-    "id": 252186,
+    "id": 252285,
     "Key": "base_info_7gd",
     "enUS": "Colossus Blade",
     "zhTW": "ÿc5[qlvl:85,范围:3]\nColossus Bladeÿc0",
@@ -29291,7 +29291,7 @@
     "zhCN": "巨神刃"
   },
   {
-    "id": 252187,
+    "id": 252286,
     "Key": "base_info_7fb",
     "enUS": "Colossus Sword",
     "zhTW": "ÿc5[qlvl:80,范围:3]\nColossus Swordÿc0",
@@ -29308,7 +29308,7 @@
     "zhCN": "巨神剑"
   },
   {
-    "id": 252188,
+    "id": 252287,
     "Key": "base_info_7b7",
     "enUS": "Champion Sword",
     "zhTW": "ÿc5[qlvl:77,范围:3]\nChampion Swordÿc0",
@@ -29325,7 +29325,7 @@
     "zhCN": "冠军剑"
   },
   {
-    "id": 252189,
+    "id": 252288,
     "Key": "base_info_7gs",
     "enUS": "Balrog Blade",
     "zhTW": "ÿc5[qlvl:71,范围:3]\nBalrog Bladeÿc0",
@@ -29342,7 +29342,7 @@
     "zhCN": "炎魔剑"
   },
   {
-    "id": 252190,
+    "id": 252289,
     "Key": "base_info_7cm",
     "enUS": "Highland Blade",
     "zhTW": "ÿc5[qlvl:66,范围:3]\nHighland Bladeÿc0",
@@ -29359,7 +29359,7 @@
     "zhCN": "高地剑"
   },
   {
-    "id": 252191,
+    "id": 252290,
     "Key": "base_info_72h",
     "enUS": "Legend Sword",
     "zhTW": "ÿc5[qlvl:59,范围:3]\nLegend Swordÿc0",
@@ -29376,7 +29376,7 @@
     "zhCN": "传说剑"
   },
   {
-    "id": 252192,
+    "id": 252291,
     "Key": "base_info_7wd",
     "enUS": "Mythical Sword",
     "zhTW": "ÿc5[qlvl:85,范围:2]\nMythical Swordÿc0",
@@ -29393,7 +29393,7 @@
     "zhCN": "神话剑"
   },
   {
-    "id": 252193,
+    "id": 252292,
     "Key": "base_info_7ls",
     "enUS": "Cryptic Sword",
     "zhTW": "ÿc5[qlvl:82,范围:2]\nCryptic Swordÿc0",
@@ -29410,7 +29410,7 @@
     "zhCN": "秘文剑"
   },
   {
-    "id": 252194,
+    "id": 252293,
     "Key": "base_info_7bs",
     "enUS": "Conquest Sword",
     "zhTW": "ÿc5[qlvl:78,范围:1]\nConquest Swordÿc0",
@@ -29427,7 +29427,7 @@
     "zhCN": "征服剑"
   },
   {
-    "id": 252195,
+    "id": 252294,
     "Key": "base_info_7cr",
     "enUS": "Phase Blade",
     "zhTW": "ÿc5[qlvl:73,范围:2]\nPhase Bladeÿc0",
@@ -29444,7 +29444,7 @@
     "zhCN": "相位之刃"
   },
   {
-    "id": 252196,
+    "id": 252295,
     "Key": "base_info_7fc",
     "enUS": "Hydra Edge",
     "zhTW": "ÿc5[qlvl:69,范围:1]\nHydra Edgeÿc0",
@@ -29461,7 +29461,7 @@
     "zhCN": "九头蛇刃"
   },
   {
-    "id": 252197,
+    "id": 252296,
     "Key": "base_info_7sb",
     "enUS": "Elegant Blade",
     "zhTW": "ÿc5[qlvl:63,范围:1]\nElegant Bladeÿc0",
@@ -29478,7 +29478,7 @@
     "zhCN": "精致剑"
   },
   {
-    "id": 252198,
+    "id": 252297,
     "Key": "base_info_7sm",
     "enUS": "Ataghan",
     "zhTW": "ÿc5[qlvl:61,范围:1]\nAtaghanÿc0",
@@ -29495,7 +29495,7 @@
     "zhCN": "叶根刀"
   },
   {
-    "id": 252199,
+    "id": 252298,
     "Key": "base_info_7ss",
     "enUS": "Falcata",
     "zhTW": "ÿc5[qlvl:56,范围:1]\nFalcataÿc0",
@@ -29512,7 +29512,7 @@
     "zhCN": "猎鹰剑"
   },
   {
-    "id": 252200,
+    "id": 252299,
     "Key": "base_info_7gm",
     "enUS": "Thunder Maul",
     "zhTW": "ÿc5[qlvl:85,范围:3]\nThunder Maulÿc0",
@@ -29529,7 +29529,7 @@
     "zhCN": "雷锤"
   },
   {
-    "id": 252201,
+    "id": 252300,
     "Key": "base_info_7m7",
     "enUS": "Ogre Maul",
     "zhTW": "ÿc5[qlvl:69,范围:2]\nOgre Maulÿc0",
@@ -29546,7 +29546,7 @@
     "zhCN": "食人魔锤"
   },
   {
-    "id": 252202,
+    "id": 252301,
     "Key": "base_info_7wh",
     "enUS": "Legendary Mallet",
     "zhTW": "ÿc5[qlvl:82,范围:2]\nLegendary Malletÿc0",
@@ -29563,7 +29563,7 @@
     "zhCN": "传奇重锤"
   },
   {
-    "id": 252203,
+    "id": 252302,
     "Key": "base_info_7fl",
     "enUS": "Scourge",
     "zhTW": "ÿc5[qlvl:76,范围:3]\nScourgeÿc0",
@@ -29580,7 +29580,7 @@
     "zhCN": "鞭锤"
   },
   {
-    "id": 252204,
+    "id": 252303,
     "Key": "base_info_7mt",
     "enUS": "Devil Star",
     "zhTW": "ÿc5[qlvl:70,范围:2]\nDevil Starÿc0",
@@ -29597,7 +29597,7 @@
     "zhCN": "恶魔流星"
   },
   {
-    "id": 252205,
+    "id": 252304,
     "Key": "base_info_7ma",
     "enUS": "Reinforced Mace",
     "zhTW": "ÿc5[qlvl:63,范围:1]\nReinforced Maceÿc0",
@@ -29614,7 +29614,7 @@
     "zhCN": "加固锤"
   },
   {
-    "id": 252206,
+    "id": 252305,
     "Key": "base_info_7sp",
     "enUS": "Tyrant Club",
     "zhTW": "ÿc5[qlvl:57,范围:2]\nTyrant Clubÿc0",
@@ -29631,7 +29631,7 @@
     "zhCN": "暴君棒"
   },
   {
-    "id": 252207,
+    "id": 252306,
     "Key": "base_info_7ws",
     "enUS": "Caduceus",
     "zhTW": "ÿc5[qlvl:85,范围:2]\nCaduceusÿc0",
@@ -29648,7 +29648,7 @@
     "zhCN": "使者杖"
   },
   {
-    "id": 252208,
+    "id": 252307,
     "Key": "base_info_7qs",
     "enUS": "Seraph Rod",
     "zhTW": "ÿc5[qlvl:76,范围:2]\nSeraph Rodÿc0",
@@ -29665,7 +29665,7 @@
     "zhCN": "炽天使杖"
   },
   {
-    "id": 252209,
+    "id": 252308,
     "Key": "base_info_7sc",
     "enUS": "Mighty Scepter",
     "zhTW": "ÿc5[qlvl:62,范围:1]\nMighty Scepterÿc0",
@@ -29682,7 +29682,7 @@
     "zhCN": "强威权杖"
   },
   {
-    "id": 252210,
+    "id": 252309,
     "Key": "base_info_7cl",
     "enUS": "Truncheon",
     "zhTW": "ÿc5[qlvl:52,范围:1]\nTruncheonÿc0",
@@ -29699,7 +29699,7 @@
     "zhCN": "戒律棒"
   },
   {
-    "id": 252211,
+    "id": 252310,
     "Key": "base_info_7gw",
     "enUS": "Unearthed Wand",
     "zhTW": "ÿc5[qlvl:86,范围:1]\nUnearthed Wandÿc0",
@@ -29716,7 +29716,7 @@
     "zhCN": "出土魔杖"
   },
   {
-    "id": 252212,
+    "id": 252311,
     "Key": "base_info_7bw",
     "enUS": "Lich Wand",
     "zhTW": "ÿc5[qlvl:75,范围:1]\nLich Wandÿc0",
@@ -29733,7 +29733,7 @@
     "zhCN": "尸妖魔杖"
   },
   {
-    "id": 252213,
+    "id": 252312,
     "Key": "base_info_7yw",
     "enUS": "Ghost Wand",
     "zhTW": "ÿc5[qlvl:65,范围:1]\nGhost Wandÿc0",
@@ -29750,7 +29750,7 @@
     "zhCN": "幽灵魔杖"
   },
   {
-    "id": 252214,
+    "id": 252313,
     "Key": "base_info_7wn",
     "enUS": "Polished Wand",
     "zhTW": "ÿc5[qlvl:55,范围:1]\nPolished Wandÿc0",
@@ -29767,7 +29767,7 @@
     "zhCN": "洗练魔杖"
   },
   {
-    "id": 252215,
+    "id": 252314,
     "Key": "base_info_7gi",
     "enUS": "Glorious Axe",
     "zhTW": "ÿc5[qlvl:85,范围:4]\nGlorious Axeÿc0",
@@ -29784,7 +29784,7 @@
     "zhCN": "荣耀之斧"
   },
   {
-    "id": 252216,
+    "id": 252315,
     "Key": "base_info_7ga",
     "enUS": "Champion Axe",
     "zhTW": "ÿc5[qlvl:82,范围:3]\nChampion Axeÿc0",
@@ -29801,7 +29801,7 @@
     "zhCN": "冠军斧"
   },
   {
-    "id": 252217,
+    "id": 252316,
     "Key": "base_info_7bt",
     "enUS": "Decapitator",
     "zhTW": "ÿc5[qlvl:73,范围:3]\nDecapitatorÿc0",
@@ -29818,7 +29818,7 @@
     "zhCN": "斩首斧"
   },
   {
-    "id": 252218,
+    "id": 252317,
     "Key": "base_info_7ba",
     "enUS": "Silver-edged Axe",
     "zhTW": "ÿc5[qlvl:65,范围:3]\nSilver-edged Axeÿc0",
@@ -29835,7 +29835,7 @@
     "zhCN": "镀银斧"
   },
   {
-    "id": 252219,
+    "id": 252318,
     "Key": "base_info_7la",
     "enUS": "Feral Axe",
     "zhTW": "ÿc5[qlvl:57,范围:3]\nFeral Axeÿc0",
@@ -29852,7 +29852,7 @@
     "zhCN": "狂野利斧"
   },
   {
-    "id": 252220,
+    "id": 252319,
     "Key": "base_info_7mp",
     "enUS": "War Spike",
     "zhTW": "ÿc5[qlvl:79,范围:2]\nWar Spikeÿc0",
@@ -29869,7 +29869,7 @@
     "zhCN": "战争尖斧"
   },
   {
-    "id": 252221,
+    "id": 252320,
     "Key": "base_info_skp",
     "enUS": "Skull Cap",
     "zhTW": "ÿc5[qlvl:5,防御:8-11/e12-e16]\nSkull Capÿc0",
@@ -29886,7 +29886,7 @@
     "zhCN": "骷髅帽"
   },
   {
-    "id": 252222,
+    "id": 252321,
     "Key": "base_info_cap",
     "enUS": "Cap",
     "zhTW": "ÿc5[qlvl:1,防御:3-5/e4-e7]\nCapÿc0",
@@ -29903,7 +29903,7 @@
     "zhCN": "软帽"
   },
   {
-    "id": 252223,
+    "id": 252322,
     "Key": "base_info_7ha",
     "enUS": "Tomahawk",
     "zhTW": "ÿc5[qlvl:54,范围:1]\nTomahawkÿc0",
@@ -29920,7 +29920,7 @@
     "zhCN": "土著战斧"
   },
   {
-    "id": 252224,
+    "id": 252323,
     "Key": "base_info_7qr",
     "enUS": "Scissors Suwayyah",
     "zhTW": "ÿc5[qlvl:85,范围:2]\nScissors Suwayyahÿc0",
@@ -29937,7 +29937,7 @@
     "zhCN": "剪咬手推剑"
   },
   {
-    "id": 252225,
+    "id": 252324,
     "Key": "base_info_7tw",
     "enUS": "Runic Talons",
     "zhTW": "ÿc5[qlvl:81,范围:2]\nRunic Talonsÿc0",
@@ -29954,7 +29954,7 @@
     "zhCN": "符文刃爪"
   },
   {
-    "id": 252226,
+    "id": 252325,
     "Key": "base_info_7lw",
     "enUS": "Feral Claws",
     "zhTW": "ÿc5[qlvl:78,范围:2]\nFeral Clawsÿc0",
@@ -29971,7 +29971,7 @@
     "zhCN": "狂野钩爪"
   },
   {
-    "id": 252227,
+    "id": 252326,
     "Key": "base_info_7cs",
     "enUS": "Battle Cestus",
     "zhTW": "ÿc5[qlvl:73,范围:2]\nBattle Cestusÿc0",
@@ -29988,7 +29988,7 @@
     "zhCN": "战斗缠刃拳套"
   },
   {
-    "id": 252228,
+    "id": 252327,
     "Key": "base_info_7xf",
     "enUS": "War Fist",
     "zhTW": "ÿc5[qlvl:68,范围:2]\nWar Fistÿc0",
@@ -30005,7 +30005,7 @@
     "zhCN": "战争拳套"
   },
   {
-    "id": 252229,
+    "id": 252328,
     "Key": "base_info_7wb",
     "enUS": "Wrist Sword",
     "zhTW": "ÿc5[qlvl:62,范围:2]\nWrist Swordÿc0",
@@ -30022,7 +30022,7 @@
     "zhCN": "腕剑"
   },
   {
-    "id": 252230,
+    "id": 252329,
     "Key": "base_info_7ar",
     "enUS": "Suwayyah",
     "zhTW": "ÿc5[qlvl:59,范围:2]\nSuwayyahÿc0",
@@ -30039,7 +30039,7 @@
     "zhCN": "手推剑"
   },
   {
-    "id": 252231,
+    "id": 252330,
     "Key": "base_info_9qr",
     "enUS": "Scissors Quhab",
     "zhTW": "ÿc5[qlvl:54,范围:2]\nScissors Quhabÿc0",
@@ -30056,7 +30056,7 @@
     "zhCN": "剪咬拳刃"
   },
   {
-    "id": 252232,
+    "id": 252331,
     "Key": "base_info_9tw",
     "enUS": "Greater Talons",
     "zhTW": "ÿc5[qlvl:50,范围:2]\nGreater Talonsÿc0",
@@ -30073,7 +30073,7 @@
     "zhCN": "大型刃爪"
   },
   {
-    "id": 252233,
+    "id": 252332,
     "Key": "base_info_9lw",
     "enUS": "Greater Claws",
     "zhTW": "ÿc5[qlvl:45,范围:2]\nGreater Clawsÿc0",
@@ -30090,7 +30090,7 @@
     "zhCN": "大型手爪刀"
   },
   {
-    "id": 252234,
+    "id": 252333,
     "Key": "base_info_9cs",
     "enUS": "Hand Scythe",
     "zhTW": "ÿc5[qlvl:41,范围:2]\nHand Scytheÿc0",
@@ -30107,7 +30107,7 @@
     "zhCN": "手镰"
   },
   {
-    "id": 252235,
+    "id": 252334,
     "Key": "base_info_9xf",
     "enUS": "Fascia",
     "zhTW": "ÿc5[qlvl:36,范围:2]\nFasciaÿc0",
@@ -30124,7 +30124,7 @@
     "zhCN": "刀刃拳套"
   },
   {
-    "id": 252236,
+    "id": 252335,
     "Key": "base_info_9wb",
     "enUS": "Wrist Spike",
     "zhTW": "ÿc5[qlvl:32,范围:2]\nWrist Spikeÿc0",
@@ -30141,7 +30141,7 @@
     "zhCN": "腕刺"
   },
   {
-    "id": 252237,
+    "id": 252336,
     "Key": "base_info_9ar",
     "enUS": "Quhab",
     "zhTW": "ÿc5[qlvl:28,范围:2]\nQuhabÿc0",
@@ -30158,7 +30158,7 @@
     "zhCN": "拳刃"
   },
   {
-    "id": 252238,
+    "id": 252337,
     "Key": "base_info_skr",
     "enUS": "Scissors Katar",
     "zhTW": "ÿc5[qlvl:24,范围:2]\nScissors Katarÿc0",
@@ -30175,7 +30175,7 @@
     "zhCN": "剪咬拳剑"
   },
   {
-    "id": 252239,
+    "id": 252338,
     "Key": "base_info_btl",
     "enUS": "Blade Talons",
     "zhTW": "ÿc5[qlvl:21,范围:2]\nBlade Talonsÿc0",
@@ -30192,7 +30192,7 @@
     "zhCN": "刃爪"
   },
   {
-    "id": 252240,
+    "id": 252339,
     "Key": "base_info_clw",
     "enUS": "Claws",
     "zhTW": "ÿc5[qlvl:18,范围:2]\nClawsÿc0",
@@ -30209,7 +30209,7 @@
     "zhCN": "手爪刀"
   },
   {
-    "id": 252241,
+    "id": 252340,
     "Key": "base_info_ces",
     "enUS": "Cestus",
     "zhTW": "ÿc5[qlvl:15,范围:2]\nCestusÿc0",
@@ -30226,7 +30226,7 @@
     "zhCN": "缠刃拳套"
   },
   {
-    "id": 252242,
+    "id": 252341,
     "Key": "base_info_wrb",
     "enUS": "Wrist Blade",
     "zhTW": "ÿc5[qlvl:9,范围:2]\nWrist Bladeÿc0",
@@ -30243,7 +30243,7 @@
     "zhCN": "腕刃"
   },
   {
-    "id": 252243,
+    "id": 252342,
     "Key": "base_info_ktr",
     "enUS": "Katar",
     "zhTW": "ÿc5[qlvl:1,范围:2]\nKatarÿc0",
@@ -30260,7 +30260,7 @@
     "zhCN": "拳剑"
   },
   {
-    "id": 252244,
+    "id": 252343,
     "Key": "base_info_9bl",
     "enUS": "Stiletto",
     "zhTW": "ÿc5[qlvl:46,范围:1]\nStilettoÿc0",
@@ -30277,7 +30277,7 @@
     "zhCN": "小剑"
   },
   {
-    "id": 252245,
+    "id": 252344,
     "Key": "base_info_xhg",
     "enUS": "War Gauntlets",
     "zhTW": "ÿc5[qlvl:54,防御:43-53/e64-e79]\nWar Gauntletsÿc0",
@@ -30294,7 +30294,7 @@
     "zhCN": "战争护手"
   },
   {
-    "id": 252246,
+    "id": 252345,
     "Key": "base_info_7wa",
     "enUS": "Berserker Axe",
     "zhTW": "ÿc5[qlvl:85,范围:3]\nBerserker Axeÿc0",
@@ -30311,7 +30311,7 @@
     "zhCN": "狂战斧"
   },
   {
-    "id": 252247,
+    "id": 252346,
     "Key": "base_info_neg",
     "enUS": "Hellspawn Skull",
     "zhTW": "ÿc5[qlvl:67,防御:96-141/e144-e211]\nHellspawn Skullÿc0",
@@ -30328,7 +30328,7 @@
     "zhCN": "地狱魔颅骨"
   },
   {
-    "id": 252248,
+    "id": 252347,
     "Key": "base_info_xhm",
     "enUS": "Winged Helm",
     "zhTW": "ÿc5[qlvl:51,防御:85-98/e127-e147]\nWinged Helmÿc0",
@@ -30345,7 +30345,7 @@
     "zhCN": "翼盔"
   },
   {
-    "id": 252249,
+    "id": 252348,
     "Key": "base_info_9b9",
     "enUS": "Gothic Sword",
     "zhTW": "ÿc5[qlvl:48,范围:2]\nGothic Swordÿc0",
@@ -30362,7 +30362,7 @@
     "zhCN": "哥特剑"
   },
   {
-    "id": 252250,
+    "id": 252349,
     "Key": "base_info_9ha",
     "enUS": "Hatchet",
     "zhTW": "ÿc5[qlvl:31,范围:1]\nHatchetÿc0",
@@ -30379,7 +30379,7 @@
     "zhCN": "小斧"
   },
   {
-    "id": 252251,
+    "id": 252350,
     "Key": "base_info_9ax",
     "enUS": "Cleaver",
     "zhTW": "ÿc5[qlvl:34,范围:2]\nCleaverÿc0",
@@ -30396,7 +30396,7 @@
     "zhCN": "剁肉斧"
   },
   {
-    "id": 252252,
+    "id": 252351,
     "Key": "base_info_92a",
     "enUS": "Twin Axe",
     "zhTW": "ÿc5[qlvl:39,范围:2]\nTwin Axeÿc0",
@@ -30413,7 +30413,7 @@
     "zhCN": "双锋斧"
   },
   {
-    "id": 252253,
+    "id": 252352,
     "Key": "base_info_9mp",
     "enUS": "Crowbill",
     "zhTW": "ÿc5[qlvl:43,范围:2]\nCrowbillÿc0",
@@ -30430,7 +30430,7 @@
     "zhCN": "鸦嘴锄"
   },
   {
-    "id": 252254,
+    "id": 252353,
     "Key": "base_info_9wa",
     "enUS": "Naga",
     "zhTW": "ÿc5[qlvl:48,范围:3]\nNagaÿc0",
@@ -30447,7 +30447,7 @@
     "zhCN": "蛇妖斧"
   },
   {
-    "id": 252255,
+    "id": 252354,
     "Key": "base_info_9la",
     "enUS": "Military Axe",
     "zhTW": "ÿc5[qlvl:34,范围:2]\nMilitary Axeÿc0",
@@ -30464,7 +30464,7 @@
     "zhCN": "军斧"
   },
   {
-    "id": 252256,
+    "id": 252355,
     "Key": "base_info_9ba",
     "enUS": "Bearded Axe",
     "zhTW": "ÿc5[qlvl:38,范围:2]\nBearded Axeÿc0",
@@ -30481,7 +30481,7 @@
     "zhCN": "钩斧"
   },
   {
-    "id": 252257,
+    "id": 252356,
     "Key": "base_info_9bt",
     "enUS": "Tabar",
     "zhTW": "ÿc5[qlvl:42,范围:2]\nTabarÿc0",
@@ -30498,7 +30498,7 @@
     "zhCN": "塔巴战斧"
   },
   {
-    "id": 252258,
+    "id": 252357,
     "Key": "base_info_9ga",
     "enUS": "Gothic Axe",
     "zhTW": "ÿc5[qlvl:46,范围:3]\nGothic Axeÿc0",
@@ -30515,7 +30515,7 @@
     "zhCN": "哥特斧"
   },
   {
-    "id": 252259,
+    "id": 252358,
     "Key": "base_info_9gi",
     "enUS": "Ancient Axe",
     "zhTW": "ÿc5[qlvl:51,范围:4]\nAncient Axeÿc0",
@@ -30532,7 +30532,7 @@
     "zhCN": "古代斧"
   },
   {
-    "id": 252260,
+    "id": 252359,
     "Key": "base_info_9wn",
     "enUS": "Burnt Wand",
     "zhTW": "ÿc5[qlvl:31,范围:1]\nBurnt Wandÿc0",
@@ -30549,7 +30549,7 @@
     "zhCN": "烧制魔杖"
   },
   {
-    "id": 252261,
+    "id": 252360,
     "Key": "base_info_9yw",
     "enUS": "Petrified Wand",
     "zhTW": "ÿc5[qlvl:38,范围:1]\nPetrified Wandÿc0",
@@ -30566,7 +30566,7 @@
     "zhCN": "石化魔杖"
   },
   {
-    "id": 252262,
+    "id": 252361,
     "Key": "base_info_9bw",
     "enUS": "Tomb Wand",
     "zhTW": "ÿc5[qlvl:43,范围:1]\nTomb Wandÿc0",
@@ -30583,7 +30583,7 @@
     "zhCN": "随葬魔杖"
   },
   {
-    "id": 252263,
+    "id": 252362,
     "Key": "base_info_9gw",
     "enUS": "Grave Wand",
     "zhTW": "ÿc5[qlvl:49,范围:1]\nGrave Wandÿc0",
@@ -30600,7 +30600,7 @@
     "zhCN": "陪葬魔杖"
   },
   {
-    "id": 252264,
+    "id": 252363,
     "Key": "base_info_9cl",
     "enUS": "Cudgel",
     "zhTW": "ÿc5[qlvl:30,范围:1]\nCudgelÿc0",
@@ -30617,7 +30617,7 @@
     "zhCN": "大棒"
   },
   {
-    "id": 252265,
+    "id": 252364,
     "Key": "base_info_9sc",
     "enUS": "Rune Scepter",
     "zhTW": "ÿc5[qlvl:31,范围:1]\nRune Scepterÿc0",
@@ -30634,7 +30634,7 @@
     "zhCN": "符文权杖"
   },
   {
-    "id": 252266,
+    "id": 252365,
     "Key": "base_info_9qs",
     "enUS": "Holy Water Sprinkler",
     "zhTW": "ÿc5[qlvl:40,范围:2]\nHoly Water Sprinklerÿc0",
@@ -30651,7 +30651,7 @@
     "zhCN": "圣水礼杖"
   },
   {
-    "id": 252267,
+    "id": 252366,
     "Key": "base_info_9ws",
     "enUS": "Divine Scepter",
     "zhTW": "ÿc5[qlvl:45,范围:2]\nDivine Scepterÿc0",
@@ -30668,7 +30668,7 @@
     "zhCN": "神圣权杖"
   },
   {
-    "id": 252268,
+    "id": 252367,
     "Key": "base_info_9sp",
     "enUS": "Barbed Club",
     "zhTW": "ÿc5[qlvl:32,范围:2]\nBarbed Clubÿc0",
@@ -30685,7 +30685,7 @@
     "zhCN": "尖刺棒"
   },
   {
-    "id": 252269,
+    "id": 252368,
     "Key": "base_info_9ma",
     "enUS": "Flanged Mace",
     "zhTW": "ÿc5[qlvl:35,范围:1]\nFlanged Maceÿc0",
@@ -30702,7 +30702,7 @@
     "zhCN": "凸缘钉锤"
   },
   {
-    "id": 252270,
+    "id": 252369,
     "Key": "base_info_9mt",
     "enUS": "Jagged Star",
     "zhTW": "ÿc5[qlvl:39,范围:2]\nJagged Starÿc0",
@@ -30719,7 +30719,7 @@
     "zhCN": "锯齿星锤"
   },
   {
-    "id": 252271,
+    "id": 252370,
     "Key": "base_info_9fl",
     "enUS": "Knout",
     "zhTW": "ÿc5[qlvl:43,范围:3]\nKnoutÿc0",
@@ -30736,7 +30736,7 @@
     "zhCN": "链子锤"
   },
   {
-    "id": 252272,
+    "id": 252371,
     "Key": "base_info_9wh",
     "enUS": "Battle Hammer",
     "zhTW": "ÿc5[qlvl:48,范围:1]\nBattle Hammerÿc0",
@@ -30753,7 +30753,7 @@
     "zhCN": "战斗锤"
   },
   {
-    "id": 252273,
+    "id": 252372,
     "Key": "base_info_9m9",
     "enUS": "War Club",
     "zhTW": "ÿc5[qlvl:45,范围:2]\nWar Clubÿc0",
@@ -30770,7 +30770,7 @@
     "zhCN": "战棒"
   },
   {
-    "id": 252274,
+    "id": 252373,
     "Key": "base_info_9gm",
     "enUS": "Martel de Fer",
     "zhTW": "ÿc5[qlvl:53,范围:3]\nMartel de Ferÿc0",
@@ -30787,7 +30787,7 @@
     "zhCN": "尖头锤"
   },
   {
-    "id": 252275,
+    "id": 252374,
     "Key": "base_info_9ss",
     "enUS": "Gladius",
     "zhTW": "ÿc5[qlvl:30,范围:1]\nGladiusÿc0",
@@ -30804,7 +30804,7 @@
     "zhCN": "角斗短剑"
   },
   {
-    "id": 252276,
+    "id": 252375,
     "Key": "base_info_9sm",
     "enUS": "Cutlass",
     "zhTW": "ÿc5[qlvl:43,范围:1]\nCutlassÿc0",
@@ -30821,7 +30821,7 @@
     "zhCN": "短弯刀"
   },
   {
-    "id": 252277,
+    "id": 252376,
     "Key": "base_info_9sb",
     "enUS": "Shamshir",
     "zhTW": "ÿc5[qlvl:35,范围:1]\nShamshirÿc0",
@@ -30838,7 +30838,7 @@
     "zhCN": "沙漠弯刀"
   },
   {
-    "id": 252278,
+    "id": 252377,
     "Key": "base_info_9fc",
     "enUS": "Tulwar",
     "zhTW": "ÿc5[qlvl:37,范围:1]\nTulwarÿc0",
@@ -30855,7 +30855,7 @@
     "zhCN": "塔瓦弯刀"
   },
   {
-    "id": 252279,
+    "id": 252378,
     "Key": "base_info_9cr",
     "enUS": "Dimensional Blade",
     "zhTW": "ÿc5[qlvl:37,范围:2]\nDimensional Bladeÿc0",
@@ -30872,7 +30872,7 @@
     "zhCN": "次元之刃"
   },
   {
-    "id": 252280,
+    "id": 252379,
     "Key": "base_info_9bs",
     "enUS": "Battle Sword",
     "zhTW": "ÿc5[qlvl:40,范围:1]\nBattle Swordÿc0",
@@ -30889,7 +30889,7 @@
     "zhCN": "战斗剑"
   },
   {
-    "id": 252281,
+    "id": 252380,
     "Key": "base_info_9ls",
     "enUS": "Rune Sword",
     "zhTW": "ÿc5[qlvl:44,范围:2]\nRune Swordÿc0",
@@ -30906,7 +30906,7 @@
     "zhCN": "符文剑"
   },
   {
-    "id": 252282,
+    "id": 252381,
     "Key": "base_info_9wd",
     "enUS": "Ancient Sword",
     "zhTW": "ÿc5[qlvl:49,范围:2]\nAncient Swordÿc0",
@@ -30923,7 +30923,7 @@
     "zhCN": "古代剑"
   },
   {
-    "id": 252283,
+    "id": 252382,
     "Key": "base_info_92h",
     "enUS": "Espandon",
     "zhTW": "ÿc5[qlvl:37,范围:3]\nEspandonÿc0",
@@ -30940,7 +30940,7 @@
     "zhCN": "西铁大剑"
   },
   {
-    "id": 252284,
+    "id": 252383,
     "Key": "base_info_9cm",
     "enUS": "Dacian Falx",
     "zhTW": "ÿc5[qlvl:42,范围:3]\nDacian Falxÿc0",
@@ -30957,7 +30957,7 @@
     "zhCN": "达契亚镰剑"
   },
   {
-    "id": 252285,
+    "id": 252384,
     "Key": "base_info_9gs",
     "enUS": "Tusk Sword",
     "zhTW": "ÿc5[qlvl:45,范围:3]\nTusk Swordÿc0",
@@ -30974,7 +30974,7 @@
     "zhCN": "獠牙剑"
   },
   {
-    "id": 252286,
+    "id": 252385,
     "Key": "base_info_9fb",
     "enUS": "Zweihander",
     "zhTW": "ÿc5[qlvl:49,范围:3]\nZweihanderÿc0",
@@ -30991,7 +30991,7 @@
     "zhCN": "双手重剑"
   },
   {
-    "id": 252287,
+    "id": 252386,
     "Key": "base_info_9gd",
     "enUS": "Executioner Sword",
     "zhTW": "ÿc5[qlvl:54,范围:3]\nExecutioner Swordÿc0",
@@ -31008,7 +31008,7 @@
     "zhCN": "行刑剑"
   },
   {
-    "id": 252288,
+    "id": 252387,
     "Key": "base_info_9dg",
     "enUS": "Poignard",
     "zhTW": "ÿc5[qlvl:31,范围:1]\nPoignardÿc0",
@@ -31025,7 +31025,7 @@
     "zhCN": "锐匕"
   },
   {
-    "id": 252289,
+    "id": 252388,
     "Key": "base_info_9di",
     "enUS": "Rondel",
     "zhTW": "ÿc5[qlvl:36,范围:1]\nRondelÿc0",
@@ -31042,7 +31042,7 @@
     "zhCN": "袖匕"
   },
   {
-    "id": 252290,
+    "id": 252389,
     "Key": "base_info_9kr",
     "enUS": "Cinquedeas",
     "zhTW": "ÿc5[qlvl:42,范围:1]\nCinquedeasÿc0",
@@ -31059,7 +31059,7 @@
     "zhCN": "五指短剑"
   },
   {
-    "id": 252291,
+    "id": 252390,
     "Key": "base_info_9tk",
     "enUS": "Battle Dart",
     "zhTW": "ÿc5[qlvl:31,范围:1]\nBattle Dartÿc0",
@@ -31076,7 +31076,7 @@
     "zhCN": "战斗镖"
   },
   {
-    "id": 252292,
+    "id": 252391,
     "Key": "base_info_gsc",
     "enUS": "Grand Scepter",
     "zhTW": "ÿc5[qlvl:15,范围:2]\nGrand Scepterÿc0",
@@ -31093,7 +31093,7 @@
     "zhCN": "大权杖"
   },
   {
-    "id": 252293,
+    "id": 252392,
     "Key": "base_info_9bk",
     "enUS": "War Dart",
     "zhTW": "ÿc5[qlvl:39,范围:1]\nWar Dartÿc0",
@@ -31110,7 +31110,7 @@
     "zhCN": "战镖"
   },
   {
-    "id": 252294,
+    "id": 252393,
     "Key": "base_info_9b8",
     "enUS": "Hurlbat",
     "zhTW": "ÿc5[qlvl:41,范围:1]\nHurlbatÿc0",
@@ -31127,7 +31127,7 @@
     "zhCN": "飞蝠斧"
   },
   {
-    "id": 252295,
+    "id": 252394,
     "Key": "base_info_9ja",
     "enUS": "War Javelin",
     "zhTW": "ÿc5[qlvl:30,范围:3]\nWar Javelinÿc0",
@@ -31144,7 +31144,7 @@
     "zhCN": "战争标枪"
   },
   {
-    "id": 252296,
+    "id": 252395,
     "Key": "base_info_9pi",
     "enUS": "Great Pilum",
     "zhTW": "ÿc5[qlvl:37,范围:3]\nGreat Pilumÿc0",
@@ -31161,7 +31161,7 @@
     "zhCN": "重标枪"
   },
   {
-    "id": 252297,
+    "id": 252396,
     "Key": "base_info_9s9",
     "enUS": "Simbilan",
     "zhTW": "ÿc5[qlvl:40,范围:3]\nSimbilanÿc0",
@@ -31178,7 +31178,7 @@
     "zhCN": "重梭镖"
   },
   {
-    "id": 252298,
+    "id": 252397,
     "Key": "base_info_9gl",
     "enUS": "Spiculum",
     "zhTW": "ÿc5[qlvl:46,范围:3]\nSpiculumÿc0",
@@ -31195,7 +31195,7 @@
     "zhCN": "斧刃戟枪"
   },
   {
-    "id": 252299,
+    "id": 252398,
     "Key": "base_info_9ts",
     "enUS": "Harpoon",
     "zhTW": "ÿc5[qlvl:51,范围:3]\nHarpoonÿc0",
@@ -31212,7 +31212,7 @@
     "zhCN": "鱼叉"
   },
   {
-    "id": 252300,
+    "id": 252399,
     "Key": "base_info_9sr",
     "enUS": "War Spear",
     "zhTW": "ÿc5[qlvl:33,范围:4]\nWar Spearÿc0",
@@ -31229,7 +31229,7 @@
     "zhCN": "战矛"
   },
   {
-    "id": 252301,
+    "id": 252400,
     "Key": "base_info_9tr",
     "enUS": "Fuscina",
     "zhTW": "ÿc5[qlvl:36,范围:4]\nFuscinaÿc0",
@@ -31246,7 +31246,7 @@
     "zhCN": "叉戟枪"
   },
   {
-    "id": 252302,
+    "id": 252401,
     "Key": "base_info_9br",
     "enUS": "War Fork",
     "zhTW": "ÿc5[qlvl:41,范围:5]\nWar Forkÿc0",
@@ -31263,7 +31263,7 @@
     "zhCN": "战叉"
   },
   {
-    "id": 252303,
+    "id": 252402,
     "Key": "base_info_9st",
     "enUS": "Yari",
     "zhTW": "ÿc5[qlvl:44,范围:5]\nYariÿc0",
@@ -31280,7 +31280,7 @@
     "zhCN": "长枪"
   },
   {
-    "id": 252304,
+    "id": 252403,
     "Key": "base_info_9p9",
     "enUS": "Lance",
     "zhTW": "ÿc5[qlvl:47,范围:5]\nLanceÿc0",
@@ -31297,7 +31297,7 @@
     "zhCN": "骑枪"
   },
   {
-    "id": 252305,
+    "id": 252404,
     "Key": "base_info_9b7",
     "enUS": "Lochaber Axe",
     "zhTW": "ÿc5[qlvl:33,范围:3]\nLochaber Axeÿc0",
@@ -31314,7 +31314,7 @@
     "zhCN": "罗佳伯长斧"
   },
   {
-    "id": 252306,
+    "id": 252405,
     "Key": "base_info_9vo",
     "enUS": "Bill",
     "zhTW": "ÿc5[qlvl:37,范围:3]\nBillÿc0",
@@ -31331,7 +31331,7 @@
     "zhCN": "钩镰枪"
   },
   {
-    "id": 252307,
+    "id": 252406,
     "Key": "base_info_9s8",
     "enUS": "Battle Scythe",
     "zhTW": "ÿc5[qlvl:40,范围:2]\nBattle Scytheÿc0",
@@ -31348,7 +31348,7 @@
     "zhCN": "战斗镰刀"
   },
   {
-    "id": 252308,
+    "id": 252407,
     "Key": "base_info_9pa",
     "enUS": "Partizan",
     "zhTW": "ÿc5[qlvl:35,范围:4]\nPartizanÿc0",
@@ -31365,7 +31365,7 @@
     "zhCN": "双刃矛戟"
   },
   {
-    "id": 252309,
+    "id": 252408,
     "Key": "base_info_9h9",
     "enUS": "Bec-de-Corbin",
     "zhTW": "ÿc5[qlvl:51,范围:5]\nBec-de-Corbinÿc0",
@@ -31382,7 +31382,7 @@
     "zhCN": "鸦喙锤戟"
   },
   {
-    "id": 252310,
+    "id": 252409,
     "Key": "base_info_9wc",
     "enUS": "Grim Scythe",
     "zhTW": "ÿc5[qlvl:55,范围:5]\nGrim Scytheÿc0",
@@ -31399,7 +31399,7 @@
     "zhCN": "恐怖镰刀"
   },
   {
-    "id": 252311,
+    "id": 252410,
     "Key": "base_info_8ss",
     "enUS": "Jo Staff",
     "zhTW": "ÿc5[qlvl:30,范围:2]\nJo Staffÿc0",
@@ -31416,7 +31416,7 @@
     "zhCN": "杖棍"
   },
   {
-    "id": 252312,
+    "id": 252411,
     "Key": "base_info_8ls",
     "enUS": "Quarterstaff",
     "zhTW": "ÿc5[qlvl:35,范围:2]\nQuarterstaffÿc0",
@@ -31433,7 +31433,7 @@
     "zhCN": "铁头棒"
   },
   {
-    "id": 252313,
+    "id": 252412,
     "Key": "base_info_8cs",
     "enUS": "Cedar Staff",
     "zhTW": "ÿc5[qlvl:38,范围:2]\nCedar Staffÿc0",
@@ -31450,7 +31450,7 @@
     "zhCN": "雪松杖"
   },
   {
-    "id": 252314,
+    "id": 252413,
     "Key": "base_info_8bs",
     "enUS": "Gothic Staff",
     "zhTW": "ÿc5[qlvl:42,范围:2]\nGothic Staffÿc0",
@@ -31467,7 +31467,7 @@
     "zhCN": "哥特杖"
   },
   {
-    "id": 252315,
+    "id": 252414,
     "Key": "base_info_8ws",
     "enUS": "Rune Staff",
     "zhTW": "ÿc5[qlvl:47,范围:2]\nRune Staffÿc0",
@@ -31484,7 +31484,7 @@
     "zhCN": "符文杖"
   },
   {
-    "id": 252316,
+    "id": 252415,
     "Key": "base_info_8sb",
     "enUS": "Edge Bow",
     "zhTW": "ÿc5[qlvl:30,范围:1]\nEdge Bowÿc0",
@@ -31501,7 +31501,7 @@
     "zhCN": "刃弓"
   },
   {
-    "id": 252317,
+    "id": 252416,
     "Key": "base_info_8hb",
     "enUS": "Razor Bow",
     "zhTW": "ÿc5[qlvl:33,范围:1]\nRazor Bowÿc0",
@@ -31518,7 +31518,7 @@
     "zhCN": "刀锋弓"
   },
   {
-    "id": 252318,
+    "id": 252417,
     "Key": "base_info_8lb",
     "enUS": "Cedar Bow",
     "zhTW": "ÿc5[qlvl:35,范围:1]\nCedar Bowÿc0",
@@ -31535,7 +31535,7 @@
     "zhCN": "雪松弓"
   },
   {
-    "id": 252319,
+    "id": 252418,
     "Key": "base_info_8cb",
     "enUS": "Double Bow",
     "zhTW": "ÿc5[qlvl:39,范围:1]\nDouble Bowÿc0",
@@ -31552,7 +31552,7 @@
     "zhCN": "双臂弓"
   },
   {
-    "id": 252320,
+    "id": 252419,
     "Key": "base_info_scp",
     "enUS": "Scepter",
     "zhTW": "ÿc5[qlvl:3,范围:1]\nScepterÿc0",
@@ -31569,7 +31569,7 @@
     "zhCN": "权杖"
   },
   {
-    "id": 252321,
+    "id": 252420,
     "Key": "base_info_8l8",
     "enUS": "Large Siege Bow",
     "zhTW": "ÿc5[qlvl:46,范围:1]\nLarge Siege Bowÿc0",
@@ -31586,7 +31586,7 @@
     "zhCN": "大型攻城弓"
   },
   {
-    "id": 252322,
+    "id": 252421,
     "Key": "base_info_8sw",
     "enUS": "Rune Bow",
     "zhTW": "ÿc5[qlvl:49,范围:1]\nRune Bowÿc0",
@@ -31603,7 +31603,7 @@
     "zhCN": "符文弓"
   },
   {
-    "id": 252323,
+    "id": 252422,
     "Key": "base_info_8lw",
     "enUS": "Gothic Bow",
     "zhTW": "ÿc5[qlvl:52,范围:1]\nGothic Bowÿc0",
@@ -31620,7 +31620,7 @@
     "zhCN": "哥特弓"
   },
   {
-    "id": 252324,
+    "id": 252423,
     "Key": "base_info_8lx",
     "enUS": "Arbalest",
     "zhTW": "ÿc5[qlvl:34,范围:1]\nArbalestÿc0",
@@ -31637,7 +31637,7 @@
     "zhCN": "巨弩"
   },
   {
-    "id": 252325,
+    "id": 252424,
     "Key": "base_info_8mx",
     "enUS": "Siege Crossbow",
     "zhTW": "ÿc5[qlvl:40,范围:1]\nSiege Crossbowÿc0",
@@ -31654,7 +31654,7 @@
     "zhCN": "攻城弩"
   },
   {
-    "id": 252326,
+    "id": 252425,
     "Key": "base_info_8hx",
     "enUS": "Ballista",
     "zhTW": "ÿc5[qlvl:47,范围:1]\nBallistaÿc0",
@@ -31671,7 +31671,7 @@
     "zhCN": "弩炮"
   },
   {
-    "id": 252327,
+    "id": 252426,
     "Key": "base_info_8rx",
     "enUS": "Chu-Ko-Nu",
     "zhTW": "ÿc5[qlvl:54,范围:1]\nChu-Ko-Nuÿc0",
@@ -31688,7 +31688,7 @@
     "zhCN": "巧工弩"
   },
   {
-    "id": 252328,
+    "id": 252427,
     "Key": "base_info_xap",
     "enUS": "War Hat",
     "zhTW": "ÿc5[qlvl:34,防御:45-53/e67-e79]\nWar Hatÿc0",
@@ -31705,7 +31705,7 @@
     "zhCN": "战争帽"
   },
   {
-    "id": 252329,
+    "id": 252428,
     "Key": "base_info_xkp",
     "enUS": "Sallet",
     "zhTW": "ÿc5[qlvl:37,防御:52-62/e78-e93]\nSalletÿc0",
@@ -31722,7 +31722,7 @@
     "zhCN": "轻盔"
   },
   {
-    "id": 252330,
+    "id": 252429,
     "Key": "base_info_xlm",
     "enUS": "Casque",
     "zhTW": "ÿc5[qlvl:42,防御:63-72/e94-e108]\nCasqueÿc0",
@@ -31739,7 +31739,7 @@
     "zhCN": "护鼻盔"
   },
   {
-    "id": 252331,
+    "id": 252430,
     "Key": "base_info_xhl",
     "enUS": "Basinet",
     "zhTW": "ÿc5[qlvl:45,防御:75-84/e112-e126]\nBasinetÿc0",
@@ -31756,7 +31756,7 @@
     "zhCN": "喙面盔"
   },
   {
-    "id": 252332,
+    "id": 252431,
     "Key": "base_info_xrn",
     "enUS": "Grand Crown",
     "zhTW": "ÿc5[qlvl:55,防御:78-113/e117-e169]\nGrand Crownÿc0",
@@ -31773,7 +31773,7 @@
     "zhCN": "宝冠盔"
   },
   {
-    "id": 252333,
+    "id": 252432,
     "Key": "base_info_xsk",
     "enUS": "Death Mask",
     "zhTW": "ÿc5[qlvl:48,防御:54-86/e81-e129]\nDeath Maskÿc0",
@@ -31790,7 +31790,7 @@
     "zhCN": "死者面甲"
   },
   {
-    "id": 252334,
+    "id": 252433,
     "Key": "base_info_xui",
     "enUS": "Ghost Armor",
     "zhTW": "ÿc5[qlvl:34,防御:102-117/e153-e175]\nGhost Armorÿc0",
@@ -31807,7 +31807,7 @@
     "zhCN": "幽灵甲"
   },
   {
-    "id": 252335,
+    "id": 252434,
     "Key": "base_info_xea",
     "enUS": "Serpentskin Armor",
     "zhTW": "ÿc5[qlvl:36,防御:111-126/e166-e189]\nSerpentskin Armorÿc0",
@@ -31824,7 +31824,7 @@
     "zhCN": "蛇皮甲"
   },
   {
-    "id": 252336,
+    "id": 252435,
     "Key": "base_info_xla",
     "enUS": "Demonhide Armor",
     "zhTW": "ÿc5[qlvl:37,防御:122-136/e183-e204]\nDemonhide Armorÿc0",
@@ -31841,7 +31841,7 @@
     "zhCN": "恶魔皮甲"
   },
   {
-    "id": 252337,
+    "id": 252436,
     "Key": "base_info_xtu",
     "enUS": "Trellised Armor",
     "zhTW": "ÿc5[qlvl:40,防御:138-153/e207-e229]\nTrellised Armorÿc0",
@@ -31858,7 +31858,7 @@
     "zhCN": "镶片铠甲"
   },
   {
-    "id": 252338,
+    "id": 252437,
     "Key": "base_info_xng",
     "enUS": "Linked Mail",
     "zhTW": "ÿc5[qlvl:42,防御:158-172/e237-e258]\nLinked Mailÿc0",
@@ -31875,7 +31875,7 @@
     "zhCN": "锁环甲"
   },
   {
-    "id": 252339,
+    "id": 252438,
     "Key": "base_info_xcl",
     "enUS": "Tigulated Mail",
     "zhTW": "ÿc5[qlvl:43,防御:176-190/e264-e285]\nTigulated Mailÿc0",
@@ -31892,7 +31892,7 @@
     "zhCN": "固片锁甲"
   },
   {
-    "id": 252340,
+    "id": 252439,
     "Key": "base_info_xhn",
     "enUS": "Mesh Armor",
     "zhTW": "ÿc5[qlvl:45,防御:198-213/e297-e319]\nMesh Armorÿc0",
@@ -31909,7 +31909,7 @@
     "zhCN": "札甲"
   },
   {
-    "id": 252341,
+    "id": 252440,
     "Key": "base_info_xrs",
     "enUS": "Cuirass",
     "zhTW": "ÿc5[qlvl:47,防御:188-202/e282-e303]\nCuirassÿc0",
@@ -31926,7 +31926,7 @@
     "zhCN": "重装胸甲"
   },
   {
-    "id": 252342,
+    "id": 252441,
     "Key": "base_info_xpl",
     "enUS": "Russet Armor",
     "zhTW": "ÿc5[qlvl:49,防御:225-243/e337-e364]\nRusset Armorÿc0",
@@ -31943,7 +31943,7 @@
     "zhCN": "褐锈甲"
   },
   {
-    "id": 252343,
+    "id": 252442,
     "Key": "base_info_clb",
     "enUS": "Club",
     "zhTW": "ÿc5[qlvl:1,范围:1]\nClubÿc0",
@@ -31960,7 +31960,7 @@
     "zhCN": "木棒"
   },
   {
-    "id": 252344,
+    "id": 252443,
     "Key": "base_info_xld",
     "enUS": "Sharktooth Armor",
     "zhTW": "ÿc5[qlvl:55,防御:242-258/e363-e387]\nSharktooth Armorÿc0",
@@ -31977,7 +31977,7 @@
     "zhCN": "鲨齿战甲"
   },
   {
-    "id": 252345,
+    "id": 252444,
     "Key": "base_info_xth",
     "enUS": "Embossed Plate",
     "zhTW": "ÿc5[qlvl:58,防御:282-303/e423-e454]\nEmbossed Plateÿc0",
@@ -31994,7 +31994,7 @@
     "zhCN": "浮雕纹甲"
   },
   {
-    "id": 252346,
+    "id": 252445,
     "Key": "base_info_xul",
     "enUS": "Chaos Armor",
     "zhTW": "ÿc5[qlvl:61,防御:315-342/e472-e513]\nChaos Armorÿc0",
@@ -32011,7 +32011,7 @@
     "zhCN": "混沌护甲"
   },
   {
-    "id": 252347,
+    "id": 252446,
     "Key": "base_info_xar",
     "enUS": "Ornate Plate",
     "zhTW": "ÿc5[qlvl:64,防御:417-450/e625-e675]\nOrnate Plateÿc0",
@@ -32028,7 +32028,7 @@
     "zhCN": "花纹战甲"
   },
   {
-    "id": 252348,
+    "id": 252447,
     "Key": "base_info_xtp",
     "enUS": "Mage Plate",
     "zhTW": "ÿc5[qlvl:60,防御:225-261/e337-e391]\nMage Plateÿc0",
@@ -32045,7 +32045,7 @@
     "zhCN": "法师铠"
   },
   {
-    "id": 252349,
+    "id": 252448,
     "Key": "base_info_xuc",
     "enUS": "Defender",
     "zhTW": "ÿc5[qlvl:34,防御:41-49/e61-e73]\nDefenderÿc0",
@@ -32062,7 +32062,7 @@
     "zhCN": "防卫盾"
   },
   {
-    "id": 252350,
+    "id": 252449,
     "Key": "base_info_xml",
     "enUS": "Round Shield",
     "zhTW": "ÿc5[qlvl:37,防御:47-55/e70-e82]\nRound Shieldÿc0",
@@ -32079,7 +32079,7 @@
     "zhCN": "圆盾"
   },
   {
-    "id": 252351,
+    "id": 252450,
     "Key": "base_info_xrg",
     "enUS": "Scutum",
     "zhTW": "ÿc5[qlvl:42,防御:53-61/e79-e91]\nScutumÿc0",
@@ -32096,7 +32096,7 @@
     "zhCN": "椭圆盾"
   },
   {
-    "id": 252352,
+    "id": 252451,
     "Key": "base_info_xit",
     "enUS": "Dragon Shield",
     "zhTW": "ÿc5[qlvl:45,防御:59-67/e88-e100]\nDragon Shieldÿc0",
@@ -32113,7 +32113,7 @@
     "zhCN": "龙盾"
   },
   {
-    "id": 252353,
+    "id": 252452,
     "Key": "base_info_xow",
     "enUS": "Pavise",
     "zhTW": "ÿc5[qlvl:50,防御:68-78/e102-e117]\nPaviseÿc0",
@@ -32130,7 +32130,7 @@
     "zhCN": "巨盾"
   },
   {
-    "id": 252354,
+    "id": 252453,
     "Key": "base_info_xts",
     "enUS": "Ancient Shield",
     "zhTW": "ÿc5[qlvl:56,防御:80-93/e120-e139]\nAncient Shieldÿc0",
@@ -32147,7 +32147,7 @@
     "zhCN": "古代盾"
   },
   {
-    "id": 252355,
+    "id": 252454,
     "Key": "base_info_xlg",
     "enUS": "Demonhide Gloves",
     "zhTW": "ÿc5[qlvl:33,防御:28-35/e42-e52]\nDemonhide Glovesÿc0",
@@ -32164,7 +32164,7 @@
     "zhCN": "恶魔皮手套"
   },
   {
-    "id": 252356,
+    "id": 252455,
     "Key": "base_info_xvg",
     "enUS": "Sharkskin Gloves",
     "zhTW": "ÿc5[qlvl:39,防御:33-39/e49-e58]\nSharkskin Glovesÿc0",
@@ -32181,7 +32181,7 @@
     "zhCN": "鲨鱼皮手套"
   },
   {
-    "id": 252357,
+    "id": 252456,
     "Key": "base_info_xmg",
     "enUS": "Heavy Bracers",
     "zhTW": "ÿc5[qlvl:43,防御:37-44/e55-e66]\nHeavy Bracersÿc0",
@@ -32198,7 +32198,7 @@
     "zhCN": "铁皮手套"
   },
   {
-    "id": 252358,
+    "id": 252457,
     "Key": "base_info_xtg",
     "enUS": "Battle Gauntlets",
     "zhTW": "ÿc5[qlvl:49,防御:39-47/e58-e70]\nBattle Gauntletsÿc0",
@@ -32215,7 +32215,7 @@
     "zhCN": "战斗护手"
   },
   {
-    "id": 252359,
+    "id": 252458,
     "Key": "base_info_xlb",
     "enUS": "Demonhide Boots",
     "zhTW": "ÿc5[qlvl:36,防御:28-35/e42-e52]\nDemonhide Bootsÿc0",
@@ -32232,7 +32232,7 @@
     "zhCN": "恶魔皮靴"
   },
   {
-    "id": 252360,
+    "id": 252459,
     "Key": "base_info_xvb",
     "enUS": "Sharkskin Boots",
     "zhTW": "ÿc5[qlvl:39,防御:33-39/e49-e58]\nSharkskin Bootsÿc0",
@@ -32249,7 +32249,7 @@
     "zhCN": "鲨鱼皮靴"
   },
   {
-    "id": 252361,
+    "id": 252460,
     "Key": "base_info_xmb",
     "enUS": "Mesh Boots",
     "zhTW": "ÿc5[qlvl:43,防御:37-44/e55-e66]\nMesh Bootsÿc0",
@@ -32266,7 +32266,7 @@
     "zhCN": "网纹靴"
   },
   {
-    "id": 252362,
+    "id": 252461,
     "Key": "base_info_xtb",
     "enUS": "Battle Boots",
     "zhTW": "ÿc5[qlvl:49,防御:39-47/e58-e70]\nBattle Bootsÿc0",
@@ -32283,7 +32283,7 @@
     "zhCN": "战靴"
   },
   {
-    "id": 252363,
+    "id": 252462,
     "Key": "base_info_xhb",
     "enUS": "War Boots",
     "zhTW": "ÿc5[qlvl:54,防御:43-53/e64-e79]\nWar Bootsÿc0",
@@ -32300,7 +32300,7 @@
     "zhCN": "战争靴"
   },
   {
-    "id": 252364,
+    "id": 252463,
     "Key": "base_info_zlb",
     "enUS": "Demonhide Sash",
     "zhTW": "ÿc5[qlvl:36,防御:29-34/e43-e51]\nDemonhide Sashÿc0",
@@ -32317,7 +32317,7 @@
     "zhCN": "恶魔皮带"
   },
   {
-    "id": 252365,
+    "id": 252464,
     "Key": "base_info_zvb",
     "enUS": "Sharkskin Belt",
     "zhTW": "ÿc5[qlvl:39,防御:31-36/e46-e54]\nSharkskin Beltÿc0",
@@ -32334,7 +32334,7 @@
     "zhCN": "鲨鱼皮带"
   },
   {
-    "id": 252366,
+    "id": 252465,
     "Key": "base_info_zmb",
     "enUS": "Mesh Belt",
     "zhTW": "ÿc5[qlvl:43,防御:35-40/e52-e60]\nMesh Beltÿc0",
@@ -32351,7 +32351,7 @@
     "zhCN": "网纹腰带"
   },
   {
-    "id": 252367,
+    "id": 252466,
     "Key": "base_info_ztb",
     "enUS": "Battle Belt",
     "zhTW": "ÿc5[qlvl:49,防御:37-42/e55-e63]\nBattle Beltÿc0",
@@ -32368,7 +32368,7 @@
     "zhCN": "战斗腰带"
   },
   {
-    "id": 252368,
+    "id": 252467,
     "Key": "base_info_zhb",
     "enUS": "War Belt",
     "zhTW": "ÿc5[qlvl:54,防御:41-52/e61-e78]\nWar Beltÿc0",
@@ -32385,7 +32385,7 @@
     "zhCN": "战争腰带"
   },
   {
-    "id": 252369,
+    "id": 252468,
     "Key": "base_info_xh9",
     "enUS": "Grim Helm",
     "zhTW": "ÿc5[qlvl:50,防御:60-125/e90-e187]\nGrim Helmÿc0",
@@ -32402,7 +32402,7 @@
     "zhCN": "恐怖头盔"
   },
   {
-    "id": 252370,
+    "id": 252469,
     "Key": "base_info_xsh",
     "enUS": "Grim Shield",
     "zhTW": "ÿc5[qlvl:48,防御:50-150/e75-e225]\nGrim Shieldÿc0",
@@ -32419,7 +32419,7 @@
     "zhCN": "恐怖大盾"
   },
   {
-    "id": 252371,
+    "id": 252470,
     "Key": "base_info_xpk",
     "enUS": "Barbed Shield",
     "zhTW": "ÿc5[qlvl:42,防御:58-78/e87-e117]\nBarbed Shieldÿc0",
@@ -32436,7 +32436,7 @@
     "zhCN": "尖刃盾"
   },
   {
-    "id": 252372,
+    "id": 252471,
     "Key": "base_info_rxb",
     "enUS": "Repeating Crossbow",
     "zhTW": "ÿc5[qlvl:33,范围:1]\nRepeating Crossbowÿc0",
@@ -32453,7 +32453,7 @@
     "zhCN": "连击弩"
   },
   {
-    "id": 252373,
+    "id": 252472,
     "Key": "base_info_hxb",
     "enUS": "Heavy Crossbow",
     "zhTW": "ÿc5[qlvl:24,范围:1]\nHeavy Crossbowÿc0",
@@ -32470,7 +32470,7 @@
     "zhCN": "重弩"
   },
   {
-    "id": 252374,
+    "id": 252473,
     "Key": "base_info_mxb",
     "enUS": "Crossbow",
     "zhTW": "ÿc5[qlvl:15,范围:1]\nCrossbowÿc0",
@@ -32487,7 +32487,7 @@
     "zhCN": "弩"
   },
   {
-    "id": 252375,
+    "id": 252474,
     "Key": "base_info_crn",
     "enUS": "Crown",
     "zhTW": "ÿc5[qlvl:29,防御:25-45/e37-e67]\nCrownÿc0",
@@ -32504,7 +32504,7 @@
     "zhCN": "王冠"
   },
   {
-    "id": 252376,
+    "id": 252475,
     "Key": "base_info_msk",
     "enUS": "Mask",
     "zhTW": "ÿc5[qlvl:19,防御:9-27/e13-e40]\nMaskÿc0",
@@ -32521,7 +32521,7 @@
     "zhCN": "覆面甲"
   },
   {
-    "id": 252377,
+    "id": 252476,
     "Key": "base_info_qui",
     "enUS": "Quilted Armor",
     "zhTW": "ÿc5[qlvl:1,防御:8-11/e12-e16]\nQuilted Armorÿc0",
@@ -32538,7 +32538,7 @@
     "zhCN": "内衬甲"
   },
   {
-    "id": 252378,
+    "id": 252477,
     "Key": "base_info_lea",
     "enUS": "Leather Armor",
     "zhTW": "ÿc5[qlvl:3,防御:14-17/e21-e25]\nLeather Armorÿc0",
@@ -32555,7 +32555,7 @@
     "zhCN": "皮甲"
   },
   {
-    "id": 252379,
+    "id": 252478,
     "Key": "base_info_hla",
     "enUS": "Hard Leather Armor",
     "zhTW": "ÿc5[qlvl:5,防御:21-24/e31-e36]\nHard Leather Armorÿc0",
@@ -32572,7 +32572,7 @@
     "zhCN": "硬皮甲"
   },
   {
-    "id": 252380,
+    "id": 252479,
     "Key": "base_info_stu",
     "enUS": "Studded Leather",
     "zhTW": "ÿc5[qlvl:8,防御:32-35/e48-e52]\nStudded Leatherÿc0",
@@ -32589,7 +32589,7 @@
     "zhCN": "钉皮甲"
   },
   {
-    "id": 252381,
+    "id": 252480,
     "Key": "base_info_rng",
     "enUS": "Ring Mail",
     "zhTW": "ÿc5[qlvl:11,防御:45-48/e67-e72]\nRing Mailÿc0",
@@ -32606,7 +32606,7 @@
     "zhCN": "环甲"
   },
   {
-    "id": 252382,
+    "id": 252481,
     "Key": "base_info_scl",
     "enUS": "Scale Mail",
     "zhTW": "ÿc5[qlvl:13,防御:57-60/e85-e90]\nScale Mailÿc0",
@@ -32623,7 +32623,7 @@
     "zhCN": "鱼鳞甲"
   },
   {
-    "id": 252383,
+    "id": 252482,
     "Key": "base_info_chn",
     "enUS": "Chain Mail",
     "zhTW": "ÿc5[qlvl:15,防御:72-75/e108-e112]\nChain Mailÿc0",
@@ -32640,7 +32640,7 @@
     "zhCN": "锁子甲"
   },
   {
-    "id": 252384,
+    "id": 252483,
     "Key": "base_info_brs",
     "enUS": "Breast Plate",
     "zhTW": "ÿc5[qlvl:18,防御:65-68/e97-e102]\nBreast Plateÿc0",
@@ -32657,7 +32657,7 @@
     "zhCN": "胸片甲"
   },
   {
-    "id": 252385,
+    "id": 252484,
     "Key": "base_info_spl",
     "enUS": "Splint Mail",
     "zhTW": "ÿc5[qlvl:20,防御:90-95/e135-e142]\nSplint Mailÿc0",
@@ -32674,7 +32674,7 @@
     "zhCN": "板条甲"
   },
   {
-    "id": 252386,
+    "id": 252485,
     "Key": "base_info_plt",
     "enUS": "Plate Mail",
     "zhTW": "ÿc5[qlvl:24,防御:108-116/e162-e174]\nPlate Mailÿc0",
@@ -32691,7 +32691,7 @@
     "zhCN": "板链甲"
   },
   {
-    "id": 252387,
+    "id": 252486,
     "Key": "base_info_fld",
     "enUS": "Field Plate",
     "zhTW": "ÿc5[qlvl:28,防御:101-105/e151-e157]\nField Plateÿc0",
@@ -32708,7 +32708,7 @@
     "zhCN": "全身板甲"
   },
   {
-    "id": 252388,
+    "id": 252487,
     "Key": "base_info_gth",
     "enUS": "Gothic Plate",
     "zhTW": "ÿc5[qlvl:32,防御:128-135/e192-e202]\nGothic Plateÿc0",
@@ -32725,7 +32725,7 @@
     "zhCN": "哥特甲"
   },
   {
-    "id": 252389,
+    "id": 252488,
     "Key": "base_info_ful",
     "enUS": "Full Plate Mail",
     "zhTW": "ÿc5[qlvl:37,防御:150-161/e225-e241]\nFull Plate Mailÿc0",
@@ -32742,7 +32742,7 @@
     "zhCN": "全身板链甲"
   },
   {
-    "id": 252390,
+    "id": 252489,
     "Key": "base_info_aar",
     "enUS": "Ancient Armor",
     "zhTW": "ÿc5[qlvl:40,防御:218-233/e327-e349]\nAncient Armorÿc0",
@@ -32759,7 +32759,7 @@
     "zhCN": "古代甲"
   },
   {
-    "id": 252391,
+    "id": 252490,
     "Key": "base_info_ltp",
     "enUS": "Light Plate",
     "zhTW": "ÿc5[qlvl:35,防御:90-107/e135-e160]\nLight Plateÿc0",
@@ -32776,7 +32776,7 @@
     "zhCN": "轻板甲"
   },
   {
-    "id": 252392,
+    "id": 252491,
     "Key": "base_info_buc",
     "enUS": "Buckler",
     "zhTW": "ÿc5[qlvl:1,防御:4-6/e6-e9]\nBucklerÿc0",
@@ -32793,7 +32793,7 @@
     "zhCN": "小圆盾"
   },
   {
-    "id": 252393,
+    "id": 252492,
     "Key": "base_info_sml",
     "enUS": "Small Shield",
     "zhTW": "ÿc5[qlvl:5,防御:8-10/e12-e15]\nSmall Shieldÿc0",
@@ -32810,7 +32810,7 @@
     "zhCN": "小盾"
   },
   {
-    "id": 252394,
+    "id": 252493,
     "Key": "base_info_lrg",
     "enUS": "Large Shield",
     "zhTW": "ÿc5[qlvl:11,防御:12-14/e18-e21]\nLarge Shieldÿc0",
@@ -32827,7 +32827,7 @@
     "zhCN": "大盾"
   },
   {
-    "id": 252395,
+    "id": 252494,
     "Key": "base_info_kit",
     "enUS": "Kite Shield",
     "zhTW": "ÿc5[qlvl:15,防御:16-18/e24-e27]\nKite Shieldÿc0",
@@ -32844,7 +32844,7 @@
     "zhCN": "鸢盾"
   },
   {
-    "id": 252396,
+    "id": 252495,
     "Key": "base_info_tow",
     "enUS": "Tower Shield",
     "zhTW": "ÿc5[qlvl:22,防御:22-25/e33-e37]\nTower Shieldÿc0",
@@ -32861,7 +32861,7 @@
     "zhCN": "塔盾"
   },
   {
-    "id": 252397,
+    "id": 252496,
     "Key": "base_info_gts",
     "enUS": "Gothic Shield",
     "zhTW": "ÿc5[qlvl:30,防御:30-35/e45-e52]\nGothic Shieldÿc0",
@@ -32878,7 +32878,7 @@
     "zhCN": "哥特盾"
   },
   {
-    "id": 252398,
+    "id": 252497,
     "Key": "base_info_lgl",
     "enUS": "Leather Gloves",
     "zhTW": "ÿc5[qlvl:3,防御:2-3/e3-e4]\nLeather Glovesÿc0",
@@ -32895,7 +32895,7 @@
     "zhCN": "皮手套"
   },
   {
-    "id": 252399,
+    "id": 252498,
     "Key": "base_info_vgl",
     "enUS": "Heavy Gloves",
     "zhTW": "ÿc5[qlvl:7,防御:5-6/e7-e9]\nHeavy Glovesÿc0",
@@ -32912,7 +32912,7 @@
     "zhCN": "重手套"
   },
   {
-    "id": 252400,
+    "id": 252499,
     "Key": "base_info_mgl",
     "enUS": "Chain Gloves",
     "zhTW": "ÿc5[qlvl:12,防御:8-9/e12-e13]\nChain Glovesÿc0",
@@ -32929,7 +32929,7 @@
     "zhCN": "链甲手套"
   },
   {
-    "id": 252401,
+    "id": 252500,
     "Key": "base_info_tgl",
     "enUS": "Light Gauntlets",
     "zhTW": "ÿc5[qlvl:20,防御:9-11/e13-e16]\nLight Gauntletsÿc0",
@@ -32946,7 +32946,7 @@
     "zhCN": "轻护手"
   },
   {
-    "id": 252402,
+    "id": 252501,
     "Key": "base_info_hgl",
     "enUS": "Gauntlets",
     "zhTW": "ÿc5[qlvl:27,防御:12-15/e18-e22]\nGauntletsÿc0",
@@ -32963,7 +32963,7 @@
     "zhCN": "护手"
   },
   {
-    "id": 252403,
+    "id": 252502,
     "Key": "base_info_lbt",
     "enUS": "Boots",
     "zhTW": "ÿc5[qlvl:3,防御:2-3/e3-e4]\nBootsÿc0",
@@ -32980,7 +32980,7 @@
     "zhCN": "短靴"
   },
   {
-    "id": 252404,
+    "id": 252503,
     "Key": "base_info_vbt",
     "enUS": "Heavy Boots",
     "zhTW": "ÿc5[qlvl:7,防御:5-6/e7-e9]\nHeavy Bootsÿc0",
@@ -32997,7 +32997,7 @@
     "zhCN": "重靴"
   },
   {
-    "id": 252405,
+    "id": 252504,
     "Key": "base_info_mbt",
     "enUS": "Chain Boots",
     "zhTW": "ÿc5[qlvl:12,防御:8-9/e12-e13]\nChain Bootsÿc0",
@@ -33014,7 +33014,7 @@
     "zhCN": "锁链靴"
   },
   {
-    "id": 252406,
+    "id": 252505,
     "Key": "base_info_tbt",
     "enUS": "Light Plated Boots",
     "zhTW": "ÿc5[qlvl:20,防御:9-11/e13-e16]\nLight Plated Bootsÿc0",
@@ -33031,7 +33031,7 @@
     "zhCN": "轻板甲靴"
   },
   {
-    "id": 252407,
+    "id": 252506,
     "Key": "base_info_hbt",
     "enUS": "Greaves",
     "zhTW": "ÿc5[qlvl:27,防御:12-15/e18-e22]\nGreavesÿc0",
@@ -33048,7 +33048,7 @@
     "zhCN": "护胫靴"
   },
   {
-    "id": 252408,
+    "id": 252507,
     "Key": "base_info_lbl",
     "enUS": "Sash",
     "zhTW": "ÿc5[qlvl:3,防御:2/e3]\nSashÿc0",
@@ -33065,7 +33065,7 @@
     "zhCN": "腰带"
   },
   {
-    "id": 252409,
+    "id": 252508,
     "Key": "base_info_vbl",
     "enUS": "Light Belt",
     "zhTW": "ÿc5[qlvl:7,防御:3/e4]\nLight Beltÿc0",
@@ -33082,7 +33082,7 @@
     "zhCN": "轻腰带"
   },
   {
-    "id": 252410,
+    "id": 252509,
     "Key": "base_info_mbl",
     "enUS": "Belt",
     "zhTW": "ÿc5[qlvl:12,防御:5/e7]\nBeltÿc0",
@@ -33099,7 +33099,7 @@
     "zhCN": "腰带"
   },
   {
-    "id": 252411,
+    "id": 252510,
     "Key": "base_info_tbl",
     "enUS": "Heavy Belt",
     "zhTW": "ÿc5[qlvl:20,防御:6/e9]\nHeavy Beltÿc0",
@@ -33116,7 +33116,7 @@
     "zhCN": "重腰带"
   },
   {
-    "id": 252412,
+    "id": 252511,
     "Key": "base_info_hbl",
     "enUS": "Plated Belt",
     "zhTW": "ÿc5[qlvl:27,防御:8-11/e12-e16]\nPlated Beltÿc0",
@@ -33133,7 +33133,7 @@
     "zhCN": "板甲腰带"
   },
   {
-    "id": 252413,
+    "id": 252512,
     "Key": "base_info_bhm",
     "enUS": "Bone Helm",
     "zhTW": "ÿc5[qlvl:22,防御:33-36/e49-e54]\nBone Helmÿc0",
@@ -33150,7 +33150,7 @@
     "zhCN": "骨盔"
   },
   {
-    "id": 252414,
+    "id": 252513,
     "Key": "base_info_bsh",
     "enUS": "Bone Shield",
     "zhTW": "ÿc5[qlvl:19,防御:10-30/e15-e45]\nBone Shieldÿc0",
@@ -33167,7 +33167,7 @@
     "zhCN": "骨盾"
   },
   {
-    "id": 252415,
+    "id": 252514,
     "Key": "base_info_spk",
     "enUS": "Spiked Shield",
     "zhTW": "ÿc5[qlvl:11,防御:15-25/e22-e37]\nSpiked Shieldÿc0",
@@ -33184,7 +33184,7 @@
     "zhCN": "尖刺盾"
   },
   {
-    "id": 252416,
+    "id": 252515,
     "Key": "base_info_hax",
     "enUS": "Hand Axe",
     "zhTW": "ÿc5[qlvl:3,范围:1]\nHand Axeÿc0",
@@ -33201,7 +33201,7 @@
     "zhCN": "手斧"
   },
   {
-    "id": 252417,
+    "id": 252516,
     "Key": "base_info_axe",
     "enUS": "Axe",
     "zhTW": "ÿc5[qlvl:7,范围:2]\nAxeÿc0",
@@ -33218,7 +33218,7 @@
     "zhCN": "斧"
   },
   {
-    "id": 252418,
+    "id": 252517,
     "Key": "base_info_2ax",
     "enUS": "Double Axe",
     "zhTW": "ÿc5[qlvl:13,范围:2]\nDouble Axeÿc0",
@@ -33235,7 +33235,7 @@
     "zhCN": "双刃斧"
   },
   {
-    "id": 252419,
+    "id": 252518,
     "Key": "base_info_mpi",
     "enUS": "Military Pick",
     "zhTW": "ÿc5[qlvl:19,范围:2]\nMilitary Pickÿc0",
@@ -33252,7 +33252,7 @@
     "zhCN": "军镐"
   },
   {
-    "id": 252420,
+    "id": 252519,
     "Key": "base_info_wax",
     "enUS": "War Axe",
     "zhTW": "ÿc5[qlvl:25,范围:3]\nWar Axeÿc0",
@@ -33269,7 +33269,7 @@
     "zhCN": "战斧"
   },
   {
-    "id": 252421,
+    "id": 252520,
     "Key": "base_info_lax",
     "enUS": "Large Axe",
     "zhTW": "ÿc5[qlvl:6,范围:2]\nLarge Axeÿc0",
@@ -33286,7 +33286,7 @@
     "zhCN": "大斧"
   },
   {
-    "id": 252422,
+    "id": 252521,
     "Key": "base_info_bax",
     "enUS": "Broad Axe",
     "zhTW": "ÿc5[qlvl:12,范围:2]\nBroad Axeÿc0",
@@ -33303,7 +33303,7 @@
     "zhCN": "宽刃斧"
   },
   {
-    "id": 252423,
+    "id": 252522,
     "Key": "base_info_btx",
     "enUS": "Battle Axe",
     "zhTW": "ÿc5[qlvl:17,范围:2]\nBattle Axeÿc0",
@@ -33320,7 +33320,7 @@
     "zhCN": "战斗斧"
   },
   {
-    "id": 252424,
+    "id": 252523,
     "Key": "base_info_gax",
     "enUS": "Great Axe",
     "zhTW": "ÿc5[qlvl:23,范围:3]\nGreat Axeÿc0",
@@ -33337,7 +33337,7 @@
     "zhCN": "重斧"
   },
   {
-    "id": 252425,
+    "id": 252524,
     "Key": "base_info_gix",
     "enUS": "Giant Axe",
     "zhTW": "ÿc5[qlvl:27,范围:4]\nGiant Axeÿc0",
@@ -33354,7 +33354,7 @@
     "zhCN": "巨斧"
   },
   {
-    "id": 252426,
+    "id": 252525,
     "Key": "base_info_wnd",
     "enUS": "Wand",
     "zhTW": "ÿc5[qlvl:2,范围:1]\nWandÿc0",
@@ -33371,7 +33371,7 @@
     "zhCN": "魔杖"
   },
   {
-    "id": 252427,
+    "id": 252526,
     "Key": "base_info_ywn",
     "enUS": "Yew Wand",
     "zhTW": "ÿc5[qlvl:12,范围:1]\nYew Wandÿc0",
@@ -33388,7 +33388,7 @@
     "zhCN": "紫杉魔杖"
   },
   {
-    "id": 252428,
+    "id": 252527,
     "Key": "base_info_bwn",
     "enUS": "Bone Wand",
     "zhTW": "ÿc5[qlvl:18,范围:1]\nBone Wandÿc0",
@@ -33405,7 +33405,7 @@
     "zhCN": "白骨魔杖"
   },
   {
-    "id": 252429,
+    "id": 252528,
     "Key": "base_info_gwn",
     "enUS": "Grim Wand",
     "zhTW": "ÿc5[qlvl:26,范围:1]\nGrim Wandÿc0",
@@ -33422,7 +33422,7 @@
     "zhCN": "恐怖魔杖"
   },
   {
-    "id": 252430,
+    "id": 252529,
     "Key": "base_info_xlt",
     "enUS": "Templar Coat",
     "zhTW": "ÿc5[qlvl:52,防御:252-274/e378-e411]\nTemplar Coatÿc0",
@@ -33439,7 +33439,7 @@
     "zhCN": "圣殿骑士铠"
   },
   {
-    "id": 252431,
+    "id": 252530,
     "Key": "base_info_8s8",
     "enUS": "Short Siege Bow",
     "zhTW": "ÿc5[qlvl:43,范围:1]\nShort Siege Bowÿc0",
@@ -33456,7 +33456,7 @@
     "zhCN": "小型攻城弓"
   },
   {
-    "id": 252432,
+    "id": 252531,
     "Key": "base_info_9ta",
     "enUS": "Francisca",
     "zhTW": "ÿc5[qlvl:34,范围:1]\nFranciscaÿc0",
@@ -33473,7 +33473,7 @@
     "zhCN": "法兰飞斧"
   },
   {
-    "id": 252433,
+    "id": 252532,
     "Key": "base_info_wsp",
     "enUS": "War Scepter",
     "zhTW": "ÿc5[qlvl:21,范围:2]\nWar Scepterÿc0",
@@ -33490,7 +33490,7 @@
     "zhCN": "战争权杖"
   },
   {
-    "id": 252434,
+    "id": 252533,
     "Key": "base_info_spc",
     "enUS": "Spiked Club",
     "zhTW": "ÿc5[qlvl:4,范围:2]\nSpiked Clubÿc0",
@@ -33507,7 +33507,7 @@
     "zhCN": "狼牙棒"
   },
   {
-    "id": 252435,
+    "id": 252534,
     "Key": "base_info_mac",
     "enUS": "Mace",
     "zhTW": "ÿc5[qlvl:8,范围:1]\nMaceÿc0",
@@ -33524,7 +33524,7 @@
     "zhCN": "钉锤"
   },
   {
-    "id": 252436,
+    "id": 252535,
     "Key": "base_info_mst",
     "enUS": "Morning Star",
     "zhTW": "ÿc5[qlvl:13,范围:2]\nMorning Starÿc0",
@@ -33541,7 +33541,7 @@
     "zhCN": "流星锤"
   },
   {
-    "id": 252437,
+    "id": 252536,
     "Key": "base_info_fla",
     "enUS": "Flail",
     "zhTW": "ÿc5[qlvl:19,范围:3]\nFlailÿc0",
@@ -33558,7 +33558,7 @@
     "zhCN": "连枷"
   },
   {
-    "id": 252438,
+    "id": 252537,
     "Key": "base_info_whm",
     "enUS": "War Hammer",
     "zhTW": "ÿc5[qlvl:25,范围:1]\nWar Hammerÿc0",
@@ -33575,7 +33575,7 @@
     "zhCN": "战锤"
   },
   {
-    "id": 252439,
+    "id": 252538,
     "Key": "base_info_mau",
     "enUS": "Maul",
     "zhTW": "ÿc5[qlvl:21,范围:2]\nMaulÿc0",
@@ -33592,7 +33592,7 @@
     "zhCN": "大锤"
   },
   {
-    "id": 252440,
+    "id": 252539,
     "Key": "base_info_gma",
     "enUS": "Great Maul",
     "zhTW": "ÿc5[qlvl:32,范围:3]\nGreat Maulÿc0",
@@ -33609,7 +33609,7 @@
     "zhCN": "重锤"
   },
   {
-    "id": 252441,
+    "id": 252540,
     "Key": "base_info_ssd",
     "enUS": "Short Sword",
     "zhTW": "ÿc5[qlvl:1,范围:1]\nShort Swordÿc0",
@@ -33626,7 +33626,7 @@
     "zhCN": "短剑"
   },
   {
-    "id": 252442,
+    "id": 252541,
     "Key": "base_info_scm",
     "enUS": "Scimitar",
     "zhTW": "ÿc5[qlvl:5,范围:1]\nScimitarÿc0",
@@ -33643,7 +33643,7 @@
     "zhCN": "弯刀"
   },
   {
-    "id": 252443,
+    "id": 252542,
     "Key": "base_info_sbr",
     "enUS": "Sabre",
     "zhTW": "ÿc5[qlvl:8,范围:1]\nSabreÿc0",
@@ -33660,7 +33660,7 @@
     "zhCN": "军刀"
   },
   {
-    "id": 252444,
+    "id": 252543,
     "Key": "base_info_flc",
     "enUS": "Falchion",
     "zhTW": "ÿc5[qlvl:11,范围:1]\nFalchionÿc0",
@@ -33677,7 +33677,7 @@
     "zhCN": "弯刃剑"
   },
   {
-    "id": 252445,
+    "id": 252544,
     "Key": "base_info_crs",
     "enUS": "Crystal Sword",
     "zhTW": "ÿc5[qlvl:11,范围:2]\nCrystal Swordÿc0",
@@ -33694,7 +33694,7 @@
     "zhCN": "水晶剑"
   },
   {
-    "id": 252446,
+    "id": 252545,
     "Key": "base_info_bsd",
     "enUS": "Broad Sword",
     "zhTW": "ÿc5[qlvl:15,范围:1]\nBroad Swordÿc0",
@@ -33711,7 +33711,7 @@
     "zhCN": "阔剑"
   },
   {
-    "id": 252447,
+    "id": 252546,
     "Key": "base_info_lsd",
     "enUS": "Long Sword",
     "zhTW": "ÿc5[qlvl:20,范围:2]\nLong Swordÿc0",
@@ -33728,7 +33728,7 @@
     "zhCN": "长剑"
   },
   {
-    "id": 252448,
+    "id": 252547,
     "Key": "base_info_wsd",
     "enUS": "War Sword",
     "zhTW": "ÿc5[qlvl:27,范围:2]\nWar Swordÿc0",
@@ -33745,7 +33745,7 @@
     "zhCN": "战争剑"
   },
   {
-    "id": 252449,
+    "id": 252548,
     "Key": "base_info_2hs",
     "enUS": "Two-Handed Sword",
     "zhTW": "ÿc5[qlvl:10,范围:3]\nTwo-Handed Swordÿc0",
@@ -33762,7 +33762,7 @@
     "zhCN": "双手剑"
   },
   {
-    "id": 252450,
+    "id": 252549,
     "Key": "base_info_clm",
     "enUS": "Claymore",
     "zhTW": "ÿc5[qlvl:17,范围:3]\nClaymoreÿc0",
@@ -33779,7 +33779,7 @@
     "zhCN": "双手大剑"
   },
   {
-    "id": 252451,
+    "id": 252550,
     "Key": "base_info_gis",
     "enUS": "Giant Sword",
     "zhTW": "ÿc5[qlvl:21,范围:3]\nGiant Swordÿc0",
@@ -33796,7 +33796,7 @@
     "zhCN": "巨剑"
   },
   {
-    "id": 252452,
+    "id": 252551,
     "Key": "base_info_bsw",
     "enUS": "Bastard Sword",
     "zhTW": "ÿc5[qlvl:24,范围:2]\nBastard Swordÿc0",
@@ -33813,7 +33813,7 @@
     "zhCN": "手半剑"
   },
   {
-    "id": 252453,
+    "id": 252552,
     "Key": "base_info_flb",
     "enUS": "Flamberge",
     "zhTW": "ÿc5[qlvl:27,范围:3]\nFlambergeÿc0",
@@ -33830,7 +33830,7 @@
     "zhCN": "焰刃剑"
   },
   {
-    "id": 252454,
+    "id": 252553,
     "Key": "base_info_gsd",
     "enUS": "Great Sword",
     "zhTW": "ÿc5[qlvl:33,范围:3]\nGreat Swordÿc0",
@@ -33847,7 +33847,7 @@
     "zhCN": "重剑"
   },
   {
-    "id": 252455,
+    "id": 252554,
     "Key": "base_info_dgr",
     "enUS": "Dagger",
     "zhTW": "ÿc5[qlvl:3,范围:1]\nDaggerÿc0",
@@ -33864,7 +33864,7 @@
     "zhCN": "匕首"
   },
   {
-    "id": 252456,
+    "id": 252555,
     "Key": "base_info_dir",
     "enUS": "Dirk",
     "zhTW": "ÿc5[qlvl:9,范围:1]\nDirkÿc0",
@@ -33881,7 +33881,7 @@
     "zhCN": "长匕首"
   },
   {
-    "id": 252457,
+    "id": 252556,
     "Key": "base_info_kri",
     "enUS": "Kris",
     "zhTW": "ÿc5[qlvl:17,范围:1]\nKrisÿc0",
@@ -33898,7 +33898,7 @@
     "zhCN": "波刃剑"
   },
   {
-    "id": 252458,
+    "id": 252557,
     "Key": "base_info_bld",
     "enUS": "Blade",
     "zhTW": "ÿc5[qlvl:23,范围:1]\nBladeÿc0",
@@ -33915,7 +33915,7 @@
     "zhCN": "短刃"
   },
   {
-    "id": 252459,
+    "id": 252558,
     "Key": "base_info_tkf",
     "enUS": "Throwing Knife",
     "zhTW": "ÿc5[qlvl:2,范围:1]\nThrowing Knifeÿc0",
@@ -33932,7 +33932,7 @@
     "zhCN": "投掷小刀"
   },
   {
-    "id": 252460,
+    "id": 252559,
     "Key": "base_info_tax",
     "enUS": "Throwing Axe",
     "zhTW": "ÿc5[qlvl:7,范围:1]\nThrowing Axeÿc0",
@@ -33949,7 +33949,7 @@
     "zhCN": "投掷斧"
   },
   {
-    "id": 252461,
+    "id": 252560,
     "Key": "base_info_bkf",
     "enUS": "Balanced Knife",
     "zhTW": "ÿc5[qlvl:13,范围:1]\nBalanced Knifeÿc0",
@@ -33966,7 +33966,7 @@
     "zhCN": "平衡飞刀"
   },
   {
-    "id": 252462,
+    "id": 252561,
     "Key": "base_info_bal",
     "enUS": "Balanced Axe",
     "zhTW": "ÿc5[qlvl:16,范围:1]\nBalanced Axeÿc0",
@@ -33983,7 +33983,7 @@
     "zhCN": "平衡飞斧"
   },
   {
-    "id": 252463,
+    "id": 252562,
     "Key": "base_info_jav",
     "enUS": "Javelin",
     "zhTW": "ÿc5[qlvl:1,范围:3]\nJavelinÿc0",
@@ -34000,7 +34000,7 @@
     "zhCN": "标枪"
   },
   {
-    "id": 252464,
+    "id": 252563,
     "Key": "base_info_pil",
     "enUS": "Pilum",
     "zhTW": "ÿc5[qlvl:10,范围:3]\nPilumÿc0",
@@ -34017,7 +34017,7 @@
     "zhCN": "长标枪"
   },
   {
-    "id": 252465,
+    "id": 252564,
     "Key": "base_info_ssp",
     "enUS": "Short Spear",
     "zhTW": "ÿc5[qlvl:15,范围:3]\nShort Spearÿc0",
@@ -34034,7 +34034,7 @@
     "zhCN": "短矛"
   },
   {
-    "id": 252466,
+    "id": 252565,
     "Key": "base_info_glv",
     "enUS": "Glaive",
     "zhTW": "ÿc5[qlvl:23,范围:3]\nGlaiveÿc0",
@@ -34051,7 +34051,7 @@
     "zhCN": "梭镖"
   },
   {
-    "id": 252467,
+    "id": 252566,
     "Key": "base_info_tsp",
     "enUS": "Throwing Spear",
     "zhTW": "ÿc5[qlvl:29,范围:3]\nThrowing Spearÿc0",
@@ -34068,7 +34068,7 @@
     "zhCN": "投枪"
   },
   {
-    "id": 252468,
+    "id": 252567,
     "Key": "base_info_spr",
     "enUS": "Spear",
     "zhTW": "ÿc5[qlvl:5,范围:4]\nSpearÿc0",
@@ -34085,7 +34085,7 @@
     "zhCN": "矛"
   },
   {
-    "id": 252469,
+    "id": 252568,
     "Key": "base_info_tri",
     "enUS": "Trident",
     "zhTW": "ÿc5[qlvl:9,范围:4]\nTridentÿc0",
@@ -34102,7 +34102,7 @@
     "zhCN": "三叉戟"
   },
   {
-    "id": 252470,
+    "id": 252569,
     "Key": "base_info_brn",
     "enUS": "Brandistock",
     "zhTW": "ÿc5[qlvl:16,范围:5]\nBrandistockÿc0",
@@ -34119,7 +34119,7 @@
     "zhCN": "羽剑杖"
   },
   {
-    "id": 252471,
+    "id": 252570,
     "Key": "base_info_spt",
     "enUS": "Spetum",
     "zhTW": "ÿc5[qlvl:20,范围:5]\nSpetumÿc0",
@@ -34136,7 +34136,7 @@
     "zhCN": "镋钯"
   },
   {
-    "id": 252472,
+    "id": 252571,
     "Key": "base_info_pik",
     "enUS": "Pike",
     "zhTW": "ÿc5[qlvl:24,范围:5]\nPikeÿc0",
@@ -34153,7 +34153,7 @@
     "zhCN": "尖枪"
   },
   {
-    "id": 252473,
+    "id": 252572,
     "Key": "base_info_bar",
     "enUS": "Bardiche",
     "zhTW": "ÿc5[qlvl:5,范围:3]\nBardicheÿc0",
@@ -34170,7 +34170,7 @@
     "zhCN": "大砍刀"
   },
   {
-    "id": 252474,
+    "id": 252573,
     "Key": "base_info_vou",
     "enUS": "Voulge",
     "zhTW": "ÿc5[qlvl:11,范围:3]\nVoulgeÿc0",
@@ -34187,7 +34187,7 @@
     "zhCN": "斧戟"
   },
   {
-    "id": 252475,
+    "id": 252574,
     "Key": "base_info_scy",
     "enUS": "Scythe",
     "zhTW": "ÿc5[qlvl:15,范围:2]\nScytheÿc0",
@@ -34204,7 +34204,7 @@
     "zhCN": "巨镰"
   },
   {
-    "id": 252476,
+    "id": 252575,
     "Key": "base_info_pax",
     "enUS": "Poleaxe",
     "zhTW": "ÿc5[qlvl:21,范围:4]\nPoleaxeÿc0",
@@ -34221,7 +34221,7 @@
     "zhCN": "长柄斧"
   },
   {
-    "id": 252477,
+    "id": 252576,
     "Key": "base_info_hal",
     "enUS": "Halberd",
     "zhTW": "ÿc5[qlvl:29,范围:5]\nHalberdÿc0",
@@ -34238,7 +34238,7 @@
     "zhCN": "斧枪"
   },
   {
-    "id": 252478,
+    "id": 252577,
     "Key": "base_info_wsc",
     "enUS": "War Scythe",
     "zhTW": "ÿc5[qlvl:34,范围:5]\nWar Scytheÿc0",
@@ -34255,7 +34255,7 @@
     "zhCN": "战争镰刀"
   },
   {
-    "id": 252479,
+    "id": 252578,
     "Key": "base_info_sst",
     "enUS": "Short Staff",
     "zhTW": "ÿc5[qlvl:1,范围:2]\nShort Staffÿc0",
@@ -34272,7 +34272,7 @@
     "zhCN": "短杖"
   },
   {
-    "id": 252480,
+    "id": 252579,
     "Key": "base_info_lst",
     "enUS": "Long Staff",
     "zhTW": "ÿc5[qlvl:8,范围:2]\nLong Staffÿc0",
@@ -34289,7 +34289,7 @@
     "zhCN": "长杖"
   },
   {
-    "id": 252481,
+    "id": 252580,
     "Key": "base_info_cst",
     "enUS": "Gnarled Staff",
     "zhTW": "ÿc5[qlvl:12,范围:2]\nGnarled Staffÿc0",
@@ -34306,7 +34306,7 @@
     "zhCN": "多节杖"
   },
   {
-    "id": 252482,
+    "id": 252581,
     "Key": "base_info_bst",
     "enUS": "Battle Staff",
     "zhTW": "ÿc5[qlvl:17,范围:2]\nBattle Staffÿc0",
@@ -34323,7 +34323,7 @@
     "zhCN": "战斗杖"
   },
   {
-    "id": 252483,
+    "id": 252582,
     "Key": "base_info_wst",
     "enUS": "War Staff",
     "zhTW": "ÿc5[qlvl:24,范围:2]\nWar Staffÿc0",
@@ -34340,7 +34340,7 @@
     "zhCN": "战杖"
   },
   {
-    "id": 252484,
+    "id": 252583,
     "Key": "base_info_sbw",
     "enUS": "Short Bow",
     "zhTW": "ÿc5[qlvl:1,范围:1]\nShort Bowÿc0",
@@ -34357,7 +34357,7 @@
     "zhCN": "短弓"
   },
   {
-    "id": 252485,
+    "id": 252584,
     "Key": "base_info_hbw",
     "enUS": "Hunter's Bow",
     "zhTW": "ÿc5[qlvl:5,范围:1]\nHunter's Bowÿc0",
@@ -34374,7 +34374,7 @@
     "zhCN": "猎弓"
   },
   {
-    "id": 252486,
+    "id": 252585,
     "Key": "base_info_lbw",
     "enUS": "Long Bow",
     "zhTW": "ÿc5[qlvl:8,范围:1]\nLong Bowÿc0",
@@ -34391,7 +34391,7 @@
     "zhCN": "长弓"
   },
   {
-    "id": 252487,
+    "id": 252586,
     "Key": "base_info_cbw",
     "enUS": "Composite Bow",
     "zhTW": "ÿc5[qlvl:12,范围:1]\nComposite Bowÿc0",
@@ -34408,7 +34408,7 @@
     "zhCN": "复合弓"
   },
   {
-    "id": 252488,
+    "id": 252587,
     "Key": "base_info_sbb",
     "enUS": "Short Battle Bow",
     "zhTW": "ÿc5[qlvl:18,范围:1]\nShort Battle Bowÿc0",
@@ -34425,7 +34425,7 @@
     "zhCN": "短战弓"
   },
   {
-    "id": 252489,
+    "id": 252588,
     "Key": "base_info_lbb",
     "enUS": "Long Battle Bow",
     "zhTW": "ÿc5[qlvl:23,范围:1]\nLong Battle Bowÿc0",
@@ -34442,7 +34442,7 @@
     "zhCN": "长战弓"
   },
   {
-    "id": 252490,
+    "id": 252589,
     "Key": "base_info_swb",
     "enUS": "Short War Bow",
     "zhTW": "ÿc5[qlvl:27,范围:1]\nShort War Bowÿc0",
@@ -34459,7 +34459,7 @@
     "zhCN": "短战争弓"
   },
   {
-    "id": 252491,
+    "id": 252590,
     "Key": "base_info_lwb",
     "enUS": "Long War Bow",
     "zhTW": "ÿc5[qlvl:31,范围:1]\nLong War Bowÿc0",
@@ -34476,7 +34476,7 @@
     "zhCN": "长战争弓"
   },
   {
-    "id": 252492,
+    "id": 252591,
     "Key": "base_info_lxb",
     "enUS": "Light Crossbow",
     "zhTW": "ÿc5[qlvl:6,范围:1]\nLight Crossbowÿc0",
