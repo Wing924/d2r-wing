@@ -23,6 +23,9 @@ type (
 		PtBR string `json:"ptBR"`
 		RuRU string `json:"ruRU"`
 		ZhCN string `json:"zhCN"`
+
+		ZhTWO string `json:"zhTWO,omitempty"`
+		ZhTWN string `json:"zhTWN,omitempty"`
 	}
 )
 

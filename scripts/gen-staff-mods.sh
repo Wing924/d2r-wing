@@ -11,6 +11,7 @@ sql='
 SELECT * FROM (
     SELECT
         n.id,
+        n.Key,
         n.ZhTW,
         a.category,
         a.type,

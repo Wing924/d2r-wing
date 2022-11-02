@@ -16,10 +16,11 @@ type (
 
 	Pipeline struct {
 		Name              string   `yaml:"name"`
-		Resource          string   `yaml:"resource"`
+		Resources         []string `yaml:"resources"`
 		LookupStringFiles []string `yaml:"lookup_string_files"`
 		KeyTemplate       string   `yaml:"key_template"`
 		Template          string   `yaml:"template"`
+		IgnoreIDs         []int    `yaml:"ignore_ids"`
 	}
 )
 

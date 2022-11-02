@@ -11,26 +11,22 @@ import (
 
 type CSVMap = map[int]map[string]string
 type TableRow map[string]string
-type CSVTable map[int][]TableRow
+type CSVTable map[string]TableRow
 
 func ReadCSVAsTable(filename string) CSVTable {
 	header, rows := ReadCSV(filename)
 
-	idIdx := slices.Index(header, "id")
-	if idIdx == -1 {
-		panic("id field not exist in " + filename)
+	keyIdx := slices.Index(header, "Key")
+	if keyIdx == -1 {
+		panic("Key field not exist in " + filename)
 	}
 
 	result := CSVTable{}
 	for _, row := range rows {
-		id, err := strconv.Atoi(row[idIdx])
-		if err != nil {
-			log.Println(row)
-			panic(err)
-		}
+		key := row[keyIdx]
 		data := TableRow{}
 		for i := range header {
-			if i == idIdx {
+			if i == keyIdx {
 				continue
 			}
 			if i < len(row) {
@@ -39,7 +35,7 @@ func ReadCSVAsTable(filename string) CSVTable {
 				data[header[i]] = ""
 			}
 		}
-		result[id] = append(result[id], data)
+		result[key] = data
 	}
 	return result
 }
