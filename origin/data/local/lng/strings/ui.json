@@ -31974,7 +31974,7 @@
     "jaJP": "汚されたワールドストーンが砕かれた後、謎の振動がサンクチュアリを脅かし始めた。この難易度での「恐怖の領域」を解放します。",
     "ptBR": "A destruição da Pedra do Mundo causou perigosos tremores. Criação de jogo aterrorizado desbloqueada nesta dificuldade.",
     "ruRU": "После уничтожения камня мироздания Санктуарий начали сотрясать разрушительные подземные толчки. На этом уровне сложности теперь доступны зоны ужаса.",
-    "zhCN": "世界之石崩坏的余波，导致了各种危险的余震。已在该难度下解锁恐惧区域的游戏创建。"
+    "zhCN": "世界之石崩坏的余波导致了各种危险的余震。已在该难度下解锁恐惧区域的游戏创建。"
   },
   {
     "id": 27300,
@@ -32383,5 +32383,56 @@
     "ptBR": ", ",
     "ruRU": ", ",
     "zhCN": ", "
+  },
+  {
+    "id": 27354,
+    "Key": "ShowDesecratedZoneHD",
+    "enUS": "Show Terror Zones",
+    "zhTW": "顯示邪惡威脅區域",
+    "deDE": "Terrorzonen anzeigen",
+    "esES": "Mostrar zonas de terror",
+    "frFR": "Afficher les zones de terreur",
+    "itIT": "Mostra Zone del Terrore",
+    "koKR": "공포의 영역 표시",
+    "plPL": "Pokazuj Obszary Grozy",
+    "esMX": "Mostrar Zonas de Terror",
+    "jaJP": "恐怖の領域表示",
+    "ptBR": "Mostrar Áreas de Terror",
+    "ruRU": "Показывать зоны ужаса",
+    "zhCN": "显示恐惧区域"
+  },
+  {
+    "id": 27355,
+    "Key": "OptionsMenuShowDesecratedZoneTooltip",
+    "enUS": "Display the active Terror\nZones when the automap is open.",
+    "zhTW": "自動地圖開啟時顯示當前的邪惡威脅區域。",
+    "deDE": "Zeigt aktive Terrorzonen an,\nwenn die automatische Karte offen ist.",
+    "esES": "Muestra las zonas de terror\nactivas cuando está abierto el mapa automático.",
+    "frFR": "Afficher les zones de terreur actives\nquand la carte auto est ouverte.",
+    "itIT": "Mostra le Zone del Terrore\nattive quando l'automappa è aperta.",
+    "koKR": "자동 지도가 열려있을 때\n활성화된 공포의 영역을 표시합니다.",
+    "plPL": "Wyświetlaj aktywne Obszary Grozy,\ngdy automapa jest włączona.",
+    "esMX": "Muestra las Zonas de Terror\nactivas cuando el automapa está abierto.",
+    "jaJP": "恐怖の領域となったエリアをオートマップを開いた時に表示します。",
+    "ptBR": "Exibe as Áreas de Terror\nativas quando o mapa automático está aberto.",
+    "ruRU": "Отображать активные зоны ужаса\nпри открытой карте.",
+    "zhCN": "打开透视地图时\n显示生效的恐惧区域。"
+  },
+  {
+    "id": 27356,
+    "Key": "SharedHeader",
+    "enUS": "Shared",
+    "zhTW": "共享",
+    "deDE": "Geteilt",
+    "esES": "Compartido",
+    "frFR": "Partagé",
+    "itIT": "Condivisa",
+    "koKR": "공유",
+    "plPL": "Wspólne",
+    "esMX": "Compartido",
+    "jaJP": "共有",
+    "ptBR": "Compartido",
+    "ruRU": "Общее",
+    "zhCN": "共享"
   }
 ]

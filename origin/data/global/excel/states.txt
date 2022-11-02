@@ -55,7 +55,7 @@ preventheal	52																																		1																															
 conversion	53																										1																conversionaura																			paladin_conversion										0
 uninterruptable	54																																																			7																				0
 ironmaiden	55						1	1																																			curseironmaiden					curse_hit														necromancer_ironmaiden										0
-terror	56						1	1																																			curseterror					curse_hit														necromancer_taint										0
+terror	56						1	1																																			curseterror					curse_hit														necromancer_taint									1	0
 attract	57						1	1																			1																curseattract					curse_hit														necromancer_attract										0
 lifetap	58						1	1																																			cursereversevampire					curse_hit														necromancer_reversevampire										0
 confuse	59						1	1																			1																curseconfuse					curse_hit														necromancer_confuse										0
