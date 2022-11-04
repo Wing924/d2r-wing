@@ -1,6 +1,6 @@
 # CHANGE-LOG
 
-## Unreleased
+## v1.7.0
 
 ### Updates
 
@@ -9,6 +9,7 @@
 ### Changes
 
 - 给宝石添加了合成符文的配方的备注(不再限定#10-#19)
+- 删除了底材名字上的max标识
 
 ### Bugfixes
 

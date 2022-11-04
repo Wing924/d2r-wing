@@ -89,17 +89,6 @@ pipelines:
       {{- index .data.grade .grade }}
       {{- index .data.weight .weight }}
       {{- with .speed -}} 〔 {{- . -}} 〕 {{- end }}
-      {{- if .max }}
-        {{- if .grade | eq "elite" }}
-          {{- if contains .type "tors|ashd" -}}
-            ( {{- .max }}-e{{ .maxEth -}} )
-          {{- else if ((contains .type "helm|circ") | and (.socket | eq "3")) | or ((contains .type "shie") | and (.socket | eq "4")) -}}
-            ( {{- .max -}} )
-          {{- end }}
-        {{- else if .Key | eq "xtp" -}}
-          ( {{- .max -}} )
-        {{- end }}
-      {{- end }}
       {{- index .data.tc .tc }}
       {{- index .data.socket .socket }}
 
