@@ -9,6 +9,7 @@ import (
 	"log"
 	"os"
 	"path/filepath"
+	"sort"
 )
 
 var (
@@ -22,7 +23,7 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-
+	sort.Strings(jsonFiles)
 	maxID := 0
 
 	entriesMap := map[string][]model.Entry{}
