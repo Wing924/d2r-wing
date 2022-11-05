@@ -1,5 +1,11 @@
 # CHANGE-LOG
 
+## Unreleased
+
+### Improvements
+
+- 射出的弩箭也显示为魔法箭，手持弩的弓马手感更好
+
 ## v1.7.0
 
 ### Updates
