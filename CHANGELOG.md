@@ -1,6 +1,6 @@
 # CHANGE-LOG
 
-## Unreleased
+## v1.7.1
 
 ### Improvements
 
