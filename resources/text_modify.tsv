@@ -4,7 +4,7 @@ id	Key	zhTW	prefix	newName	suffix
 5018	Tristram	崔斯特姆			 A1:[6|39|76] A5:[50|75|83]
 1711	HiqualityFormat	%0%1		%1 %0
 1712	LowqualityFormat	%0%1		(null)
-1727	Hiquality	特等的		[特等]
+1727	Hiquality	特等的		ÿc1[特等]ÿc0
 27186	DiabloCloneMessageTierOne	恐懼默默凝視聖休亞瑞。	【1/6】
 27187	DiabloCloneMessageTierTwo	恐懼逐漸逼近聖休亞瑞。	【2/6】
 27188	DiabloCloneMessageTierThree	恐懼開始滲入聖休亞瑞。	【3/6】

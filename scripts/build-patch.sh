@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -eu
+set -eu -o pipefail
 
 std_json=build/bin/std-json
 jsonpatch=build/bin/jsonpatch
@@ -113,6 +113,11 @@ while IFS= read -r -d '' patch_file; do
     spruce diff "$std_origin" "$dst_file" || :
     ;;
   *.json|*.txt|*.sh)
-    $DIFF --strip-trailing-cr -u "$origin_file" "$dst_file" || :
+    dst_file_size="$(cat "$dst_file" | wc -c)"
+    if [[ $dst_file_size < 1048576 ]]; then
+      $DIFF --strip-trailing-cr -u "$origin_file" "$dst_file" || :
+    else
+      echo "skip diff becasue the file is too large: $dst_file"
+    fi
   esac
 done < <(find "$patch_dir/data" -type f -print0)

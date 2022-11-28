@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -eu
+set -eu -o pipefail
 
 NEW_KEYS=(
   2 "Sewers Level 1"
@@ -19,7 +19,7 @@ new_keys_json="$tmpdir/new_keys.json"
 
 cat > "$levels_json"
 
-for i in $(seq 0 2 ${#NEW_KEYS[*]}); do
+for i in $(seq 0 2 $((${#NEW_KEYS[*]} - 1)) ); do
   act="${NEW_KEYS[$i]}"
   key="${NEW_KEYS[$(($i + 1))]}"
   cat "$levels_json" | jq ".[] | select(.Key == \"$key\") | (.Key |= \"act$act \" + .) | (.id |= -1)"
