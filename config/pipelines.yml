@@ -34,11 +34,13 @@ patches:
   - patches/05_entrance_light
   - patches/06_highlight_cain
   - patches/07_layout
+  # - patches/08_waypoint_light # only available on startup
   - patches/09_better_arrow
   - patches/10_global_light
   - patches/11_level_names
   - patches/12_levelgroup_res
   - patches/13_base_item_desc
+  - patches/14_hide_wall
 
 pipelines:
   - name: add English name and detailed info (base item)

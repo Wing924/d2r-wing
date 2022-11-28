@@ -1,5 +1,12 @@
 # CHANGE-LOG
 
+## unreleased
+
+### New Features
+
+- 修改了崔凡客得几堵遮挡视线的墙，再也不怕瘸子在墙后看不到了
+- 特等改为红色，更醒目
+
 ## v1.7.1
 
 ### Improvements
