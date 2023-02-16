@@ -140,3 +140,4 @@ id	Key	zhTW	abbr
 21211	ModStre8g	% 準確率	AR
 23001	ModStr2uPercent	傷害降低 %d%%	DR
 27351	ModStr2uPercentNegative	傷害提高 %d%%	DI
+27374	ModStr6l	攻击速度 %+d%%	IAS

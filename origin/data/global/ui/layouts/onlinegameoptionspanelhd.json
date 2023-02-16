@@ -42,6 +42,59 @@
                     },
                     "children": [
                         {
+                            "type": "TableRowWidget", "name": "Row Shared",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "Shared",
+                                    "fields": {
+                                        "text": "@SharedHeader",
+                                        "style": "$StyleSettingsTitle"
+                                    },
+                                    "children": [
+                                        {
+                                            "type": "ImageWidget", "name": "Divider",
+                                            "fields": {
+                                                "rect": "$OptionsDividerRect",
+                                                "filename": "PauseMenu\\Divider",
+                                            }
+                                        },
+                                    ]
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row WideItemDropEnabled",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "WideItemDropEnabledText",
+                                    "fields": {
+                                        "text": "@ItemDropSpacingHD",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                },
+                                {
+                                    "type": "CarouselWidget", "name": "WideItemDropEnabled",
+                                    "fields": {
+                                        "rect": "$OptionsCarouselRect",
+                                        "focusIndicatorFilename": "$OptionsCarouselFocusIndicatorFilename",
+                                        "states": [ "ItemDropSpacingLegacyHD", "ItemDropSpacingResurrectedHD" ],
+                                        "fontType": "8ptE",
+                                        "onUpdateMessage": "OptionsPanelMessage:SetWideItemDropEnabled",
+                                        "style": "$StyleSettingsCarousel",
+                                        "enabledColor" : "$CarouselEnabledColor",
+                                        "disabledColor" : "$CarouselDisabledColor",
+                                        "tooltipString": "@WideItemDropEnabledTooltip",
+                                        "tooltipStyle": {
+                                            "fontStyle": {
+                                                "options": { "newlineHandling": "standard" },
+                                            },
+                                            "showAfterDelay": true,
+                                        }
+                                    }
+                                },
+                            ]
+                        },
+                        {
                             "type": "TableRowWidget", "name": "Row Online",
                             "children": [
                                 {
@@ -274,38 +327,6 @@
                             ]
                         },
                         {
-                            "type": "TableRowWidget", "name": "Row WideItemDropEnabled",
-                            "children": [
-                                {
-                                    "type": "TextBoxWidget", "name": "WideItemDropEnabledText",
-                                    "fields": {
-                                        "text": "@ItemDropSpacingHD",
-                                        "style": "$StyleSettingsText"
-                                    }
-                                },
-                                {
-                                    "type": "CarouselWidget", "name": "WideItemDropEnabled",
-                                    "fields": {
-                                        "rect": "$OptionsCarouselRect",
-                                        "focusIndicatorFilename": "$OptionsCarouselFocusIndicatorFilename",
-                                        "states": [ "ItemDropSpacingLegacyHD", "ItemDropSpacingResurrectedHD" ],
-                                        "fontType": "8ptE",
-                                        "onUpdateMessage": "OptionsPanelMessage:SetWideItemDropEnabled",
-                                        "style": "$StyleSettingsCarousel",
-                                        "enabledColor" : "$CarouselEnabledColor",
-                                        "disabledColor" : "$CarouselDisabledColor",
-                                        "tooltipString": "@WideItemDropEnabledTooltip",
-                                        "tooltipStyle": {
-                                            "fontStyle": {
-                                                "options": { "newlineHandling": "standard" },
-                                            },
-                                            "showAfterDelay": true,
-                                        }
-                                    }
-                                },
-                            ]
-                        },
-                        {
                             "type": "TableRowWidget", "name": "Row DesecratedZonesEnabled",
                             "children": [
                                 {
@@ -358,9 +379,6 @@
                             ]
                         },
                         {
-                            "type": "TableRowWidget", "name": "Row Spacer",
-                        },
-                        {
                             "type": "TableRowWidget", "name": "Row Offline",
                             "children": [
                                 {
@@ -378,6 +396,58 @@
                                             }
                                         },
                                     ]
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row OfflineDesecratedZonesEnabled",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "OfflineDesecratedZonesEnabledText",
+                                    "fields": {
+                                        "text": "@TerrorZonesEnabled",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                },
+                                {
+                                    "type": "ToggleButtonWidget", "name": "OfflineDesecratedZonesEnabled",
+                                    "fields": {
+                                        "rect": "$OptionsToggleRect",
+                                        "sound": "cursor_menu_select_hd",
+                                        "focusIndicatorPadding": "$OptionsToggleFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsToggleFocusIndicatorFilename",
+                                        "filename": "Lobby\\CreateGame\\CreateGame_AdvancedCheckbox",
+                                        "focusIndicatorOffset": { "x": 0, "y": -4 },
+                                        "untoggledFrame": 0,
+                                        "untoggledPressedFrame": 1,
+                                        "untoggledHoveredFrame": 3,
+                                        "untoggledDisabledFrame": 2,
+                                        "toggledFrame": 4,
+                                        "toggledPressedFrame": 5,
+                                        "toggledHoveredFrame": 6,
+                                        "onClickMessage": "OptionsPanelMessage:SetOfflineDesecratedZonesEnabled",
+                                        "tooltipString": "@TerrorZonesEnabledTooltip",
+                                        "tooltipStyle": {
+                                            "fontStyle": {
+                                                "options": { "newlineHandling": "standard" },
+                                            },
+                                            "showAfterDelay": true,
+                                        }
+                                    },
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row OfflineNewGameSettingsEffectNote",
+                            "children": [
+                                {
+                                        "type": "TextBoxWidget", "name": "OfflineNewGameSettingsEffectNote",
+                                        "fields": {
+                                                "rect": { "x": 0, "y": 0, "width": 1730 },
+                                                "anchor": { "x": 0.0, "y": 1.0 },
+                                                "text": "@SettingsEffectNote",
+                                                "style": "$StyleSettingsText"
+                                        }
                                 },
                             ]
                         },
@@ -429,9 +499,6 @@
                                         }
                                 },
                             ]
-                        },
-                        {
-                            "type": "TableRowWidget", "name": "Row Spacer",
                         },
                     ]
                 },

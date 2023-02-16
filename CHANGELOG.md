@@ -1,5 +1,16 @@
 # CHANGE-LOG
 
+## Unreleased
+
+### Updates
+
+- 对应 `v2.6.0` (`1.5.73090`) 版本
+
+### Bugfixes
+
+- 修复了全局光源对于熊人和狼人不起作用的问题
+- 修复了钢铁之柱的max变量
+
 ## v1.8.0
 
 ### New Features

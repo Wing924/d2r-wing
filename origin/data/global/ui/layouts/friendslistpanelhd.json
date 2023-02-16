@@ -140,10 +140,9 @@
                                     }
                                 },
                                 {
-                                    "type": "ImageWidget", "name": "PresenceGameIcon",
+                                    "type": "PresenceImageWidget", "name": "PresenceGameIcon",
                                     "fields": {
                                         "rect": {"x": 20, "y": 20, "scale": 1.5 },
-                                        "filename": "Lobby\\FriendsList\\PresenceGameIcons\\presence_game_icon",
                                     }
                                 },
                                 {

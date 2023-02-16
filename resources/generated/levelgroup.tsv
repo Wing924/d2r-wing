@@ -20,7 +20,7 @@ id	Key	act	levelGroup	groupName	avgMonDen	avgMonUniq	maxFR	maxLR	maxCR	maxPR	max
 27281	Cave	1	Cave	洞穴	600	4.75	25	110	25	75	50	0	1
 27282	Underground Passage	1	Underground Passage	地底通道	600	5.5	110	110	120	100	40	20	1
 27283	Hole	1	Hole	地洞	600	4.75	110	110	120	25	50	0	0
-27284	Pit	1	Pit	地穴	600	4.75	120	110	130	75	33	20	1
+27284	Act 1 Pit	1	Act 1 Pit	地穴	600	4.75	120	110	130	75	33	20	1
 27285	Jail	1	Jail	監牢	680	7	125	105	75	105	100	50	1
 27286	Catacombs	1	Catacombs	地下墓穴	680	7	125	105	150	75	50	0	0
 27338	MooMooFarmGroup	1	MooMooFarmGroup	ÿc8不存在的關卡ÿc0	800	7	50	50	50	33	50	33	0

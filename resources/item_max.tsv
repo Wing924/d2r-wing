@@ -332,7 +332,7 @@ id	Key	zhTW	max
 21551	Thudergod's Vigor	雷神之力	200ED
 21552	Lidless Wall	警戒之牆	130ED/5EK
 21555	Boneflame	骨焰	3NEC/150ED/30RES
-21556	Steelpillar	鋼鐵之柱	260ED/80DEF
+21556	Steelpillar	鋼鐵之柱	260EDmg/80EDef
 21557	Nightwing's Veil	夜翼面紗	15CD/120ED/20DEX/9CA
 21559	Crown of Ages	歲月之冠	150DEF/30RES/15DR/2S
 21560	Andariel's Visage	安達莉爾的面貌	10LL/150ED/30STR
@@ -462,3 +462,11 @@ id	Key	zhTW	max
 27348	Rotting Fissure	腐敗裂痕	-70PR
 27349	Bone Break	分筋裂骨	10DI
 27350	Black Cleft	漆黑裂口	-45MR
+27361	Runeword172	催促	200ED
+27362	Runeword173	嵌飾	250ED/15CD/15LD/15FD
+27363	Runeword174	變化	80ED
+27364	Runeword175	接地	100ED/60LR/15LA
+27365	Runeword176	和緩	100ED/60FR/15FA
+27366	Runeword177	火爐	100ED/60CR/15CA
+27367	Runeword178	治癒	100ED/60PR
+27368	Runeword179	壁壘	6LL/100ED/15DR
