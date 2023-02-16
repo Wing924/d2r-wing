@@ -1,6 +1,6 @@
 # CHANGE-LOG
 
-## Unreleased
+## v1.9.0
 
 ### Updates
 
