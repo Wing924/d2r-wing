@@ -211,7 +211,7 @@ id	Key	old	new
 21888	ItemExpcharmdesc	從物品欄裡隱藏得到額外空間	放在物品欄以獲得其加成效果
 22745	strethereal	無形的 (無法修復)	無形（無法修復）
 22746	stretherealnonrepair	這項物品無法修復	這項物品無法修復。
-23001	ModStr2uPercent	傷害減少 %d%%	傷害降低 %d%%
+23001	ModStr2uPercent	傷害減少 %d%%	受到的物理傷害降低 %d%%
 23004	ItemModifierClassSkill	%+d 至 %s %s	%+d 至%s %s
 23005	ItemModifierNonClassSkill	%+d 至 %s	%+d 至%s
 23049	strItemModEtherealSocketed	"無形的 (無法修復)	 有凹槽 (%i)"	無形（無法修復），鑲孔（%i）

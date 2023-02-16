@@ -11,6 +11,7 @@ sql='
 SELECT
     s.id,
     s.Key,
+    s.enUS,
     s.zhTW
 FROM runes r
     JOIN str s

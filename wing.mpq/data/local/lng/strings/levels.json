@@ -6988,7 +6988,7 @@
   },
   {
     "id": 27284,
-    "Key": "Pit",
+    "Key": "Act 1 Pit",
     "enUS": "Pit",
     "zhTW": "地穴",
     "deDE": "Grube",
@@ -7328,7 +7328,7 @@
   },
   {
     "id": 252505,
-    "Key": "act1 Pit LG",
+    "Key": "act1 Act 1 Pit LG",
     "enUS": "Pit",
     "zhTW": "地穴 ÿc5(免疫:ÿc1火*ÿc9电ÿc3冰*ÿc5,只有不死恶魔)",
     "deDE": "Grube",

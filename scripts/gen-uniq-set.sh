@@ -24,7 +24,7 @@ FROM str s
         FROM uniqueitems
         WHERE
             lvl IS NOT NULL
-            AND (enabled = 1 OR ladder = 1)
+            AND (enabled = 1 OR firstLadderSeason > 0)
         UNION
         SELECT `set`, `index`, rarity, lvl
         FROM setitems

@@ -11,7 +11,7 @@ Act 1 - Den of Evil	8	Den of Evil	act1 Den of Evil LG
 Act 1 - Cave	9	Cave	act1 Cave LG
 Act 1 - Underground Passage	10	Underground Passage	act1 Underground Passage LG
 Act 1 - Hole	11	Hole	act1 Hole LG
-Act 1 - Pit	12	Pit	act1 Pit LG
+Act 1 - Pit	12	Pit	act1 Act 1 Pit LG
 Act 1 - Burial Grounds	13	Burial Grounds	act1 Burial Grounds LG
 Act 1 - Crypt	14	Crypt	act1 Crypt LG
 Act 1 - Mausoleum	15	Mausoleum	act1 Mausoleum LG
