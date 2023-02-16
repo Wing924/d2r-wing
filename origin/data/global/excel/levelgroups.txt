@@ -11,7 +11,7 @@ Act 1 - Den of Evil	8	Den of Evil	Den of Evil
 Act 1 - Cave	9	Cave	Cave
 Act 1 - Underground Passage	10	Underground Passage	Underground Passage
 Act 1 - Hole	11	Hole	Hole
-Act 1 - Pit	12	Pit	Pit
+Act 1 - Pit	12	Pit	Act 1 Pit
 Act 1 - Burial Grounds	13	Burial Grounds	Burial Grounds
 Act 1 - Crypt	14	Crypt	Crypt
 Act 1 - Mausoleum	15	Mausoleum	Mausoleum

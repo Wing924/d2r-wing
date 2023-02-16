@@ -3,7 +3,7 @@
     "fields": {
         "fitToParent": true,
         "onlinePlayButtonPosition": { "x": -624, "y": 1865 },
-        "offlinePlayButtonPosition": { "x": -305, "y": 1900 },
+        "offlinePlayButtonPosition": { "x": -305, "y": 1865 },
         "playerClassScale": [
             { "playerClass": "Assassin", "scale": 1.12 },
             { "playerClass": "Amazon", "scale": 1.05 },
@@ -216,19 +216,6 @@
             }
         },
         {
-            "type": "ButtonWidget", "name": "OnlinePlaySettingsButton",
-            "fields": {
-                "anchor": { "x": 0.5 },
-                "rect": { "x": -366, "y": 2017 },
-                "filename": "FrontEnd\\HD\\Final\\FrontEnd_Cog",
-                "tooltipString": "@GameCreationHD",
-                "onClickMessage": "PanelManager:OpenPanel:OnlineGameSettingsPanel",
-                "hoveredFrame": 2,
-                "disabledFrame": 3,
-                "disabledTint": { "a": 1.0 },
-            }
-        },
-        {
             "type": "ButtonWidget", "name": "QuickPlayButton",
             "fields": {
                 "anchor": { "x": 0.5 },
@@ -243,7 +230,22 @@
                 "disabledFrame": 2,
                 "disabledTint": { "a": 1.0 },
                 "sound": "cursor_launch_game_hd",
-            }
+            },
+            "children": [
+                {
+                    "type": "ButtonWidget", "name": "OnlinePlaySettingsButton",
+                    "fields": {
+                        "anchor": { "x": 0.5, "y": 1.0 },
+                        "rect": { "x": -47, "y": 8 },
+                        "filename": "FrontEnd\\HD\\Final\\FrontEnd_Cog",
+                        "tooltipString": "@GameCreationHD",
+                        "onClickMessage": "PanelManager:OpenPanel:OnlineGameSettingsPanel",
+                        "hoveredFrame": 2,
+                        "disabledFrame": 3,
+                        "disabledTint": { "a": 1.0 },
+                    }
+                },
+            ] 
         },
         {
             "type": "ImageWidget", "name": "Divider",
