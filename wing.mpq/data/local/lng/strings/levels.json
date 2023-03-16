@@ -7123,7 +7123,7 @@
     "zhCN": "ÿc8不存在的等级ÿc0"
   },
   {
-    "id": 252493,
+    "id": 252000,
     "Key": "act1 Barracks LG",
     "enUS": "Barracks",
     "zhTW": "兵营 ÿc5(免疫:ÿc1火*ÿc3冰*ÿc2毒ÿc5,只有不死恶魔)",
@@ -7140,7 +7140,7 @@
     "zhCN": "营房"
   },
   {
-    "id": 252494,
+    "id": 252001,
     "Key": "act1 Outer Cloister LG",
     "enUS": "Outer Cloister",
     "zhTW": "外侧回廊 ÿc5(免疫:ÿc1火*ÿc3冰*ÿc5)",
@@ -7157,7 +7157,7 @@
     "zhCN": "外侧回廊"
   },
   {
-    "id": 252495,
+    "id": 252002,
     "Key": "act2 Sewers Level 2",
     "enUS": "Sewers Level 2",
     "zhTW": "下水道第二层 [13|43|74]",
@@ -7174,7 +7174,7 @@
     "zhCN": "下水道二层"
   },
   {
-    "id": 252496,
+    "id": 252003,
     "Key": "act3 Sewers Level 2",
     "enUS": "Sewers Level 2",
     "zhTW": "下水道第二层 [24|53|85]",
@@ -7191,7 +7191,7 @@
     "zhCN": "下水道二层"
   },
   {
-    "id": 252497,
+    "id": 252004,
     "Key": "act1 Tristram",
     "enUS": "Tristram",
     "zhTW": "崔斯特姆 [6|39|76]",
@@ -7208,7 +7208,7 @@
     "zhCN": "崔斯特姆"
   },
   {
-    "id": 252498,
+    "id": 252005,
     "Key": "act1 MooMooFarmGroup LG",
     "enUS": "ÿc8a non-existent levelÿc0",
     "zhTW": "ÿc8不存在的关卡ÿc0 ÿc5(免疫:ÿc0无ÿc5)",
@@ -7225,7 +7225,7 @@
     "zhCN": "ÿc8不存在的等级ÿc0"
   },
   {
-    "id": 252499,
+    "id": 252006,
     "Key": "act5 The Worldstone Keep LG",
     "enUS": "Worldstone Keep",
     "zhTW": "世界之石要塞 ÿc5(免疫:ÿc1火*ÿc9电*ÿc3冰*ÿc2毒*ÿc4物ÿc8魔*ÿc5)",
@@ -7242,7 +7242,7 @@
     "zhCN": "世界之石要塞"
   },
   {
-    "id": 252500,
+    "id": 252007,
     "Key": "act5 Temple Halls LG",
     "enUS": "Temple Halls",
     "zhTW": "神殿大厅 ÿc5(免疫:ÿc1火*ÿc9电ÿc3冰*ÿc2毒*ÿc4物ÿc8魔*ÿc5)",
@@ -7259,7 +7259,7 @@
     "zhCN": "神殿大厅"
   },
   {
-    "id": 252501,
+    "id": 252008,
     "Key": "act3 Kurast Sewers LG",
     "enUS": "Kurast Sewers",
     "zhTW": "库拉斯特下水道 ÿc5(免疫:ÿc9电*ÿc3冰ÿc2毒*ÿc8魔*ÿc5)",
@@ -7276,7 +7276,7 @@
     "zhCN": "库拉斯特下水道"
   },
   {
-    "id": 252502,
+    "id": 252009,
     "Key": "act2 Lut Gholein Sewers LG",
     "enUS": "Lut Gholein Sewers",
     "zhTW": "鲁高因下水道 ÿc5(免疫:ÿc1火ÿc3冰ÿc2毒ÿc5)",
@@ -7293,7 +7293,7 @@
     "zhCN": "鲁·高因下水道"
   },
   {
-    "id": 252503,
+    "id": 252010,
     "Key": "act1 Catacombs LG",
     "enUS": "Catacombs",
     "zhTW": "地下墓穴 ÿc5(免疫:ÿc1火*ÿc9电ÿc3冰*ÿc5)",
@@ -7310,7 +7310,7 @@
     "zhCN": "地下墓穴"
   },
   {
-    "id": 252504,
+    "id": 252011,
     "Key": "act1 Jail LG",
     "enUS": "Jail",
     "zhTW": "监牢 ÿc5(免疫:ÿc1火*ÿc9电ÿc2毒ÿc4物ÿc5,只有不死恶魔)",
@@ -7327,7 +7327,7 @@
     "zhCN": "监狱"
   },
   {
-    "id": 252505,
+    "id": 252012,
     "Key": "act1 Act 1 Pit LG",
     "enUS": "Pit",
     "zhTW": "地穴 ÿc5(免疫:ÿc1火*ÿc9电ÿc3冰*ÿc5,只有不死恶魔)",
@@ -7344,7 +7344,7 @@
     "zhCN": "深坑"
   },
   {
-    "id": 252506,
+    "id": 252013,
     "Key": "act1 Hole LG",
     "enUS": "Hole",
     "zhTW": "地洞 ÿc5(免疫:ÿc1火ÿc9电ÿc3冰*ÿc5)",
@@ -7361,7 +7361,7 @@
     "zhCN": "地洞"
   },
   {
-    "id": 252507,
+    "id": 252014,
     "Key": "act1 Underground Passage LG",
     "enUS": "Underground Passage",
     "zhTW": "地底通道 ÿc5(免疫:ÿc1火ÿc9电ÿc3冰*ÿc2毒ÿc5,只有不死恶魔)",
@@ -7378,7 +7378,7 @@
     "zhCN": "地下通道"
   },
   {
-    "id": 252508,
+    "id": 252015,
     "Key": "act1 Cave LG",
     "enUS": "Cave",
     "zhTW": "洞穴 ÿc5(免疫:ÿc9电ÿc5,只有不死恶魔)",
@@ -7395,7 +7395,7 @@
     "zhCN": "洞穴"
   },
   {
-    "id": 252509,
+    "id": 252016,
     "Key": "act5 Throne of Destruction LG",
     "enUS": "Throne of Destruction",
     "zhTW": "毁灭王座 ÿc5(免疫:ÿc1火*ÿc9电ÿc3冰*ÿc2毒*ÿc8魔*ÿc5)",
@@ -7412,7 +7412,7 @@
     "zhCN": "毁灭王座"
   },
   {
-    "id": 252510,
+    "id": 252017,
     "Key": "act5 The Worldstone Chamber LG",
     "enUS": "The Worldstone Chamber",
     "zhTW": "世界之石大殿",
@@ -7429,7 +7429,7 @@
     "zhCN": "世界之石大殿"
   },
   {
-    "id": 252511,
+    "id": 252018,
     "Key": "act5 Nihlathaks Temple LG",
     "enUS": "Nihlathak's Temple",
     "zhTW": "尼拉塞克的神殿",
@@ -7446,7 +7446,7 @@
     "zhCN": "尼拉塞克的神殿"
   },
   {
-    "id": 252512,
+    "id": 252019,
     "Key": "act5 Rocky Summit LG",
     "enUS": "Arreat Summit",
     "zhTW": "亚瑞特山巅",
@@ -7463,7 +7463,7 @@
     "zhCN": "亚瑞特之巅"
   },
   {
-    "id": 252513,
+    "id": 252020,
     "Key": "act5 Glacial Caves Level 2 LG",
     "enUS": "Icy Cellar",
     "zhTW": "冰窖 ÿc5(免疫:ÿc9电ÿc3冰*ÿc2毒*ÿc4物ÿc5)",
@@ -7480,7 +7480,7 @@
     "zhCN": "寒冰地窖"
   },
   {
-    "id": 252514,
+    "id": 252021,
     "Key": "act5 Glacial Caves Level 1 LG",
     "enUS": "The Ancients' Way",
     "zhTW": "先祖之路 ÿc5(免疫:ÿc9电ÿc3冰*ÿc2毒ÿc5)",
@@ -7497,7 +7497,7 @@
     "zhCN": "先祖之路"
   },
   {
-    "id": 252515,
+    "id": 252022,
     "Key": "act5 Tundra Wastelands LG",
     "enUS": "Frozen Tundra",
     "zhTW": "冰冻苔原 ÿc5(免疫:ÿc1火*ÿc9电*ÿc3冰*ÿc2毒*ÿc4物ÿc5)",
@@ -7514,7 +7514,7 @@
     "zhCN": "冰冻苔原"
   },
   {
-    "id": 252516,
+    "id": 252023,
     "Key": "act5 Echo Chamber LG",
     "enUS": "Drifter Cavern",
     "zhTW": "漂泊者洞窟 ÿc5(免疫:ÿc1火*ÿc9电ÿc3冰*ÿc2毒ÿc4物ÿc5)",
@@ -7531,7 +7531,7 @@
     "zhCN": "漂流洞窟"
   },
   {
-    "id": 252517,
+    "id": 252024,
     "Key": "act5 Crystalized Cavern Level 2 LG",
     "enUS": "Glacial Trail",
     "zhTW": "冰河小径 ÿc5(免疫:ÿc1火*ÿc9电ÿc3冰*ÿc2毒ÿc4物ÿc5)",
@@ -7548,7 +7548,7 @@
     "zhCN": "冰川小径"
   },
   {
-    "id": 252518,
+    "id": 252025,
     "Key": "act5 Cellar of Pity LG",
     "enUS": "Frozen River",
     "zhTW": "冰冻之河 ÿc5(免疫:ÿc9电ÿc3冰*ÿc2毒ÿc4物ÿc5)",
@@ -7565,7 +7565,7 @@
     "zhCN": "冰冻之河"
   },
   {
-    "id": 252519,
+    "id": 252026,
     "Key": "act5 Crystalized Cavern Level 1 LG",
     "enUS": "Crystalline Passage",
     "zhTW": "水晶通道 ÿc5(免疫:ÿc1火*ÿc3冰*ÿc2毒ÿc4物ÿc5)",
@@ -7582,7 +7582,7 @@
     "zhCN": "水晶通道"
   },
   {
-    "id": 252520,
+    "id": 252027,
     "Key": "act5 Arreat Plateau LG",
     "enUS": "Arreat Plateau",
     "zhTW": "亚瑞特高原 ÿc5(免疫:ÿc1火*ÿc9电*ÿc3冰*ÿc2毒ÿc5)",
@@ -7599,7 +7599,7 @@
     "zhCN": "亚瑞特高原"
   },
   {
-    "id": 252521,
+    "id": 252028,
     "Key": "act4 Outer Steppes LG",
     "enUS": "Outer Steppes",
     "zhTW": "外围荒原 ÿc5(免疫:ÿc1火*ÿc9电ÿc3冰*ÿc2毒ÿc5)",
@@ -7616,7 +7616,7 @@
     "zhCN": "外域荒原"
   },
   {
-    "id": 252522,
+    "id": 252029,
     "Key": "act5 Rigid Highlands LG",
     "enUS": "Frigid Highlands",
     "zhTW": "冰冻高地 ÿc5(免疫:ÿc1火ÿc9电ÿc3冰*ÿc2毒ÿc5)",
@@ -7633,7 +7633,7 @@
     "zhCN": "冰冻高地"
   },
   {
-    "id": 252523,
+    "id": 252030,
     "Key": "act5 Bloody Foothills LG",
     "enUS": "Bloody Foothills",
     "zhTW": "血腥丘陵 ÿc5(免疫:ÿc1火ÿc9电ÿc3冰*ÿc2毒ÿc5)",
@@ -7650,7 +7650,7 @@
     "zhCN": "血腥丘陵"
   },
   {
-    "id": 252524,
+    "id": 252031,
     "Key": "act5 Harrogath LG",
     "enUS": "Harrogath",
     "zhTW": "哈洛加斯",
@@ -7667,7 +7667,7 @@
     "zhCN": "哈洛加斯"
   },
   {
-    "id": 252525,
+    "id": 252032,
     "Key": "act5 Hell3 LG",
     "enUS": "Infernal Pit",
     "zhTW": "炼狱地穴 ÿc5(免疫:ÿc1火*ÿc9电ÿc3冰*ÿc2毒*ÿc5)",
@@ -7684,7 +7684,7 @@
     "zhCN": "炼狱深渊"
   },
   {
-    "id": 252526,
+    "id": 252033,
     "Key": "act5 Hell2 LG",
     "enUS": "Pit of Acheron",
     "zhTW": "冥河地穴 ÿc5(免疫:ÿc1火*ÿc3冰*ÿc2毒ÿc4物ÿc8魔*ÿc5)",
@@ -7701,7 +7701,7 @@
     "zhCN": "阿克隆深渊"
   },
   {
-    "id": 252527,
+    "id": 252034,
     "Key": "act5 Hell1 LG",
     "enUS": "Abaddon",
     "zhTW": "亚巴顿 ÿc5(免疫:ÿc1火*ÿc9电ÿc3冰*ÿc2毒*ÿc4物ÿc5)",
@@ -7718,7 +7718,7 @@
     "zhCN": "亚巴顿"
   },
   {
-    "id": 252528,
+    "id": 252035,
     "Key": "act5 Pandemonium Run 3 LG",
     "enUS": "Furnace of Pain",
     "zhTW": "苦痛熔炉 ÿc5(免疫:ÿc1火*ÿc9电*ÿc3冰*ÿc2毒*ÿc8魔*ÿc5,只有不死恶魔)",
@@ -7735,7 +7735,7 @@
     "zhCN": "苦痛的熔炉"
   },
   {
-    "id": 252529,
+    "id": 252036,
     "Key": "act5 Pandemonium Run 2 LG",
     "enUS": "Forgotten Sands",
     "zhTW": "遗忘沙漠 ÿc5(免疫:ÿc1火*ÿc9电ÿc2毒ÿc4物ÿc5)",
@@ -7752,7 +7752,7 @@
     "zhCN": "遗忘的沙丘"
   },
   {
-    "id": 252530,
+    "id": 252037,
     "Key": "act5 Pandemonium Run 1 LG",
     "enUS": "Matron's Den",
     "zhTW": "魔母巢穴 ÿc5(免疫:ÿc9电ÿc3冰*ÿc5,只有不死恶魔)",
@@ -7769,7 +7769,7 @@
     "zhCN": "主母的巢穴"
   },
   {
-    "id": 252531,
+    "id": 252038,
     "Key": "act1 Rogue Encampment LG",
     "enUS": "Rogue Encampment",
     "zhTW": "侠盗营地",
@@ -7786,7 +7786,7 @@
     "zhCN": "流亡者营地"
   },
   {
-    "id": 252532,
+    "id": 252039,
     "Key": "act1 Blood Moor LG",
     "enUS": "Blood Moor",
     "zhTW": "鲜血荒地 ÿc5(免疫:ÿc1火ÿc3冰*ÿc5)",
@@ -7803,7 +7803,7 @@
     "zhCN": "鲜血荒地"
   },
   {
-    "id": 252533,
+    "id": 252040,
     "Key": "act1 Cold Plains LG",
     "enUS": "Cold Plains",
     "zhTW": "冰冷之原 ÿc5(免疫:ÿc1火ÿc9电ÿc3冰ÿc5)",
@@ -7820,7 +7820,7 @@
     "zhCN": "冰冷之原"
   },
   {
-    "id": 252534,
+    "id": 252041,
     "Key": "act1 Stony Field LG",
     "enUS": "Stony Field",
     "zhTW": "乱石旷野 ÿc5(免疫:ÿc9电ÿc3冰ÿc5)",
@@ -7837,7 +7837,7 @@
     "zhCN": "石块旷野"
   },
   {
-    "id": 252535,
+    "id": 252042,
     "Key": "act1 Dark Wood LG",
     "enUS": "Dark Wood",
     "zhTW": "黑暗森林 ÿc5(免疫:ÿc1火ÿc3冰*ÿc2毒ÿc5)",
@@ -7854,7 +7854,7 @@
     "zhCN": "黑暗森林"
   },
   {
-    "id": 252536,
+    "id": 252043,
     "Key": "act1 Black Marsh LG",
     "enUS": "Black Marsh",
     "zhTW": "黑色荒地 ÿc5(免疫:ÿc1火ÿc9电ÿc3冰*ÿc2毒ÿc5)",
@@ -7871,7 +7871,7 @@
     "zhCN": "黑色沼泽"
   },
   {
-    "id": 252537,
+    "id": 252044,
     "Key": "act1 Tamoe Highland LG",
     "enUS": "Tamoe Highland",
     "zhTW": "泰摩高地 ÿc5(免疫:ÿc1火ÿc9电ÿc3冰*ÿc2毒ÿc5)",
@@ -7888,7 +7888,7 @@
     "zhCN": "泰摩高地"
   },
   {
-    "id": 252538,
+    "id": 252045,
     "Key": "act1 Den of Evil LG",
     "enUS": "Den of Evil",
     "zhTW": "邪恶洞窟 ÿc5(免疫:ÿc1火ÿc3冰*ÿc5)",
@@ -7905,7 +7905,7 @@
     "zhCN": "邪恶洞穴"
   },
   {
-    "id": 252539,
+    "id": 252046,
     "Key": "act1 Burial Grounds LG",
     "enUS": "Burial Grounds",
     "zhTW": "埋骨之地 ÿc5(免疫:ÿc9电ÿc5,只有不死恶魔)",
@@ -7922,7 +7922,7 @@
     "zhCN": "埋骨之地"
   },
   {
-    "id": 252540,
+    "id": 252047,
     "Key": "act1 Crypt LG",
     "enUS": "Crypt",
     "zhTW": "墓地 ÿc5(免疫:ÿc9电ÿc5,只有不死恶魔)",
@@ -7939,7 +7939,7 @@
     "zhCN": "墓穴"
   },
   {
-    "id": 252541,
+    "id": 252048,
     "Key": "act1 Mausoleum LG",
     "enUS": "Mausoleum",
     "zhTW": "大陵墓 ÿc5(免疫:ÿc9电ÿc5,只有不死恶魔)",
@@ -7956,7 +7956,7 @@
     "zhCN": "寝陵"
   },
   {
-    "id": 252542,
+    "id": 252049,
     "Key": "act1 Forgotten Tower LG",
     "enUS": "Forgotten Tower",
     "zhTW": "遗忘之塔 ÿc5(免疫:ÿc1火*ÿc9电ÿc4物ÿc5)",
@@ -7973,7 +7973,7 @@
     "zhCN": "被遗忘的高塔"
   },
   {
-    "id": 252543,
+    "id": 252050,
     "Key": "act1 Monastery Gate LG",
     "enUS": "Monastery Gate",
     "zhTW": "修道院大门 ÿc5(免疫:ÿc9电ÿc3冰*ÿc2毒ÿc5,只有不死恶魔)",
@@ -7990,7 +7990,7 @@
     "zhCN": "修道院大门"
   },
   {
-    "id": 252544,
+    "id": 252051,
     "Key": "act3 Sewers Level 1",
     "enUS": "Sewers Level 1",
     "zhTW": "下水道第一层 [23|52|85]",
@@ -8007,7 +8007,7 @@
     "zhCN": "下水道一层"
   },
   {
-    "id": 252545,
+    "id": 252052,
     "Key": "act2 Sewers Level 1",
     "enUS": "Sewers Level 1",
     "zhTW": "下水道第一层 [13|43|74]",
@@ -8024,7 +8024,7 @@
     "zhCN": "下水道一层"
   },
   {
-    "id": 252546,
+    "id": 252053,
     "Key": "act1 Inner Cloister LG",
     "enUS": "Inner Cloister",
     "zhTW": "内侧回廊 ÿc5(免疫:ÿc1火*ÿc9电ÿc5,只有不死恶魔)",
@@ -8041,7 +8041,7 @@
     "zhCN": "内侧回廊"
   },
   {
-    "id": 252547,
+    "id": 252054,
     "Key": "act1 Cathedral LG",
     "enUS": "Cathedral",
     "zhTW": "大教堂 ÿc5(免疫:ÿc1火*ÿc9电ÿc4物ÿc5,只有不死恶魔)",
@@ -8058,7 +8058,7 @@
     "zhCN": "大教堂"
   },
   {
-    "id": 252548,
+    "id": 252055,
     "Key": "act1 Tristram LG",
     "enUS": "Tristram",
     "zhTW": "崔斯特姆 ÿc5(免疫:ÿc1火ÿc9电ÿc2毒ÿc5,只有不死恶魔)",
@@ -8075,7 +8075,7 @@
     "zhCN": "崔斯特姆"
   },
   {
-    "id": 252549,
+    "id": 252056,
     "Key": "act2 Harem LG",
     "enUS": "Harem",
     "zhTW": "后宫 ÿc5(免疫:ÿc1火ÿc9电ÿc3冰*ÿc2毒ÿc5)",
@@ -8092,7 +8092,7 @@
     "zhCN": "女眷住处"
   },
   {
-    "id": 252550,
+    "id": 252057,
     "Key": "act2 Palace Cellar LG",
     "enUS": "Palace Cellar",
     "zhTW": "皇宫地窖 ÿc5(免疫:ÿc1火ÿc9电ÿc2毒ÿc5)",
@@ -8109,7 +8109,7 @@
     "zhCN": "王宫监牢"
   },
   {
-    "id": 252551,
+    "id": 252058,
     "Key": "act2 Stony Tomb LG",
     "enUS": "Stony Tomb",
     "zhTW": "古老石墓 ÿc5(免疫:ÿc9电*ÿc5)",
@@ -8126,7 +8126,7 @@
     "zhCN": "碎石古墓"
   },
   {
-    "id": 252552,
+    "id": 252059,
     "Key": "act2 Halls of the Dead LG",
     "enUS": "Halls of the Dead",
     "zhTW": "死亡之殿 ÿc5(免疫:ÿc1火ÿc9电ÿc3冰*ÿc2毒ÿc5)",
@@ -8143,7 +8143,7 @@
     "zhCN": "亡者大殿"
   },
   {
-    "id": 252553,
+    "id": 252060,
     "Key": "act4 The Pandemonium Fortress LG",
     "enUS": "The Pandemonium Fortress",
     "zhTW": "混沌界要塞",
@@ -8160,7 +8160,7 @@
     "zhCN": "混沌要塞"
   },
   {
-    "id": 252554,
+    "id": 252061,
     "Key": "act2 Maggot Lair LG",
     "enUS": "Maggot Lair",
     "zhTW": "蛆虫巢穴 ÿc5(免疫:ÿc9电ÿc2毒ÿc4物ÿc5)",
@@ -8177,7 +8177,7 @@
     "zhCN": "蛆虫巢穴"
   },
   {
-    "id": 252555,
+    "id": 252062,
     "Key": "act2 Lut Gholein LG",
     "enUS": "Lut Gholein",
     "zhTW": "鲁高因",
@@ -8194,7 +8194,7 @@
     "zhCN": "鲁·高因"
   },
   {
-    "id": 252556,
+    "id": 252063,
     "Key": "act2 Rocky Waste LG",
     "enUS": "Rocky Waste",
     "zhTW": "碎石荒地 ÿc5(免疫:ÿc1火ÿc9电ÿc3冰*ÿc2毒ÿc5)",
@@ -8211,7 +8211,7 @@
     "zhCN": "碎石荒野"
   },
   {
-    "id": 252557,
+    "id": 252064,
     "Key": "act2 Dry Hills LG",
     "enUS": "Dry Hills",
     "zhTW": "干土高地 ÿc5(免疫:ÿc1火ÿc9电ÿc3冰ÿc5)",
@@ -8228,7 +8228,7 @@
     "zhCN": "干燥高地"
   },
   {
-    "id": 252558,
+    "id": 252065,
     "Key": "act2 Far Oasis LG",
     "enUS": "Far Oasis",
     "zhTW": "遥远的绿洲 ÿc5(免疫:ÿc9电ÿc2毒ÿc4物ÿc5)",
@@ -8245,7 +8245,7 @@
     "zhCN": "偏远绿洲"
   },
   {
-    "id": 252559,
+    "id": 252066,
     "Key": "act2 Lost City LG",
     "enUS": "Lost City",
     "zhTW": "失落古城 ÿc5(免疫:ÿc1火ÿc9电ÿc3冰ÿc8魔*ÿc5)",
@@ -8262,7 +8262,7 @@
     "zhCN": "失落之城"
   },
   {
-    "id": 252560,
+    "id": 252067,
     "Key": "act2 Valley of Snakes LG",
     "enUS": "Valley of Snakes",
     "zhTW": "群蛇峡谷 ÿc5(免疫:ÿc1火ÿc3冰*ÿc2毒ÿc8魔*ÿc5)",
@@ -8279,7 +8279,7 @@
     "zhCN": "群蛇峡谷"
   },
   {
-    "id": 252561,
+    "id": 252068,
     "Key": "act2 Canyon of the Magi LG",
     "enUS": "Canyon of the Magi",
     "zhTW": "贤者之谷 ÿc5(免疫:ÿc1火ÿc9电ÿc3冰*ÿc2毒*ÿc5)",
@@ -8296,7 +8296,7 @@
     "zhCN": "法师峡谷"
   },
   {
-    "id": 252562,
+    "id": 252069,
     "Key": "act2 Ancient Tunnels LG",
     "enUS": "Ancient Tunnels",
     "zhTW": "古代通道 ÿc5(免疫:ÿc1火ÿc9电ÿc2毒ÿc8魔*ÿc5)",
@@ -8313,7 +8313,7 @@
     "zhCN": "古代水道"
   },
   {
-    "id": 252563,
+    "id": 252070,
     "Key": "act2 Tal Rasha's Tomb LG",
     "enUS": "Tal Rasha's Tomb",
     "zhTW": "塔拉夏的古墓 ÿc5(免疫:ÿc1火ÿc9电ÿc3冰*ÿc2毒ÿc4物ÿc8魔*ÿc5)",
@@ -8330,7 +8330,7 @@
     "zhCN": "塔·拉夏之墓"
   },
   {
-    "id": 252564,
+    "id": 252071,
     "Key": "act2 Duriel's Lair LG",
     "enUS": "Tal Rasha's Chamber",
     "zhTW": "塔拉夏的密室 ÿc5(免疫:ÿc0无ÿc5)",
@@ -8347,7 +8347,7 @@
     "zhCN": "塔·拉夏的墓室"
   },
   {
-    "id": 252565,
+    "id": 252072,
     "Key": "act2 Arcane Sanctuary LG",
     "enUS": "Arcane Sanctuary",
     "zhTW": "秘法圣殿 ÿc5(免疫:ÿc1火ÿc3冰ÿc4物ÿc5,只有不死恶魔)",
@@ -8364,7 +8364,7 @@
     "zhCN": "神秘避难所"
   },
   {
-    "id": 252566,
+    "id": 252073,
     "Key": "act3 Swampy Pit LG",
     "enUS": "Swampy Pit",
     "zhTW": "沼泽地穴 ÿc5(免疫:ÿc1火ÿc9电ÿc2毒*ÿc5)",
@@ -8381,7 +8381,7 @@
     "zhCN": "沼泽陷坑"
   },
   {
-    "id": 252567,
+    "id": 252074,
     "Key": "act3 Flayer Dungeon LG",
     "enUS": "Flayer Dungeon",
     "zhTW": "剥皮地牢 ÿc5(免疫:ÿc1火*ÿc9电ÿc3冰*ÿc2毒ÿc4物ÿc5)",
@@ -8398,7 +8398,7 @@
     "zhCN": "剥皮魔监牢"
   },
   {
-    "id": 252568,
+    "id": 252075,
     "Key": "act3 Durance of Hate LG",
     "enUS": "Durance of Hate",
     "zhTW": "憎恨囚牢 ÿc5(免疫:ÿc9电ÿc3冰*ÿc2毒*ÿc5,只有不死恶魔)",
@@ -8415,7 +8415,7 @@
     "zhCN": "憎恨囚牢"
   },
   {
-    "id": 252569,
+    "id": 252076,
     "Key": "act3 Kurast Docktown LG",
     "enUS": "Kurast Docks",
     "zhTW": "库拉斯特港口",
@@ -8432,7 +8432,7 @@
     "zhCN": "库拉斯特海港"
   },
   {
-    "id": 252570,
+    "id": 252077,
     "Key": "act3 Spider Forest LG",
     "enUS": "Spider Forest",
     "zhTW": "蜘蛛森林 ÿc5(免疫:ÿc9电ÿc3冰*ÿc2毒ÿc5)",
@@ -8449,7 +8449,7 @@
     "zhCN": "蜘蛛森林"
   },
   {
-    "id": 252571,
+    "id": 252078,
     "Key": "act3 Great Marsh LG",
     "enUS": "Great Marsh",
     "zhTW": "大沼泽 ÿc5(免疫:ÿc1火ÿc9电ÿc3冰*ÿc5)",
@@ -8466,7 +8466,7 @@
     "zhCN": "庞大湿地"
   },
   {
-    "id": 252572,
+    "id": 252079,
     "Key": "act3 Flayer Jungle LG",
     "enUS": "Flayer Jungle",
     "zhTW": "剥皮丛林 ÿc5(免疫:ÿc1火*ÿc9电ÿc3冰*ÿc2毒ÿc5)",
@@ -8483,7 +8483,7 @@
     "zhCN": "剥皮魔丛林"
   },
   {
-    "id": 252573,
+    "id": 252080,
     "Key": "act3 Lower Kurast LG",
     "enUS": "Lower Kurast",
     "zhTW": "库拉斯特下层 ÿc5(免疫:ÿc1火ÿc9电ÿc5)",
@@ -8500,7 +8500,7 @@
     "zhCN": "库拉斯特下层区"
   },
   {
-    "id": 252574,
+    "id": 252081,
     "Key": "act3 Kurast Bazaar LG",
     "enUS": "Kurast Bazaar",
     "zhTW": "库拉斯特市集 ÿc5(免疫:ÿc1火ÿc3冰*ÿc4物ÿc5)",
@@ -8517,7 +8517,7 @@
     "zhCN": "库拉斯特集市"
   },
   {
-    "id": 252575,
+    "id": 252082,
     "Key": "act4 River of Flame LG",
     "enUS": "River of Flame",
     "zhTW": "火焰之河 ÿc5(免疫:ÿc1火*ÿc9电ÿc3冰*ÿc2毒*ÿc5)",
@@ -8534,7 +8534,7 @@
     "zhCN": "火焰之河"
   },
   {
-    "id": 252576,
+    "id": 252083,
     "Key": "act3 Kurast Causeway LG",
     "enUS": "Kurast Causeway",
     "zhTW": "库拉斯特堤道 ÿc5(免疫:ÿc9电ÿc3冰*ÿc5)",
@@ -8551,7 +8551,7 @@
     "zhCN": "库拉斯特堤道"
   },
   {
-    "id": 252577,
+    "id": 252084,
     "Key": "act3 Travincal LG",
     "enUS": "Travincal",
     "zhTW": "崔凡克 ÿc5(免疫:ÿc9电ÿc3冰*ÿc5)",
@@ -8568,7 +8568,7 @@
     "zhCN": "崔凡克"
   },
   {
-    "id": 252578,
+    "id": 252085,
     "Key": "act3 Spider Cavern LG",
     "enUS": "Spider Cavern",
     "zhTW": "蜘蛛洞窟 ÿc5(免疫:ÿc1火ÿc9电ÿc2毒*ÿc5)",
@@ -8585,7 +8585,7 @@
     "zhCN": "蜘蛛洞穴"
   },
   {
-    "id": 252579,
+    "id": 252086,
     "Key": "act3 Spider Cave LG",
     "enUS": "Arachnid Lair",
     "zhTW": "蜘蛛巢穴 ÿc5(免疫:ÿc1火ÿc9电ÿc2毒*ÿc5)",
@@ -8602,7 +8602,7 @@
     "zhCN": "巨蛛巢穴"
   },
   {
-    "id": 252580,
+    "id": 252087,
     "Key": "act3 Ruined Temple LG",
     "enUS": "Ruined Temple",
     "zhTW": "荒废的神殿 ÿc5(免疫:ÿc1火*ÿc3冰*ÿc8魔*ÿc5)",
@@ -8619,7 +8619,7 @@
     "zhCN": "毁灭的神庙"
   },
   {
-    "id": 252581,
+    "id": 252088,
     "Key": "act5 Tristram",
     "enUS": "Tristram",
     "zhTW": "崔斯特姆 [50|75|83]",
@@ -8636,7 +8636,7 @@
     "zhCN": "崔斯特姆"
   },
   {
-    "id": 252582,
+    "id": 252089,
     "Key": "act4 Chaos Sanctum LG",
     "enUS": "The Chaos Sanctuary",
     "zhTW": "混沌魔殿 ÿc5(免疫:ÿc1火*ÿc9电ÿc3冰*ÿc5,只有不死恶魔)",
@@ -8653,7 +8653,7 @@
     "zhCN": "混沌避难所"
   },
   {
-    "id": 252583,
+    "id": 252090,
     "Key": "act2 Claw Viper Temple LG",
     "enUS": "Claw Viper Temple",
     "zhTW": "利爪蛇魔神殿 ÿc5(免疫:ÿc1火ÿc3冰*ÿc2毒ÿc8魔*ÿc5)",
@@ -8670,7 +8670,7 @@
     "zhCN": "利爪蝮蛇神殿"
   },
   {
-    "id": 252584,
+    "id": 252091,
     "Key": "act3 Upper Kurast LG",
     "enUS": "Upper Kurast",
     "zhTW": "库拉斯特上层 ÿc5(免疫:ÿc9电ÿc3冰*ÿc5)",
@@ -8687,7 +8687,7 @@
     "zhCN": "库拉斯特上层区"
   },
   {
-    "id": 252585,
+    "id": 252092,
     "Key": "act3 Disused Fane LG",
     "enUS": "Disused Fane",
     "zhTW": "废弃的寺院 ÿc5(免疫:ÿc1火*ÿc3冰*ÿc8魔*ÿc5)",
@@ -8704,7 +8704,7 @@
     "zhCN": "废弃的礼拜堂"
   },
   {
-    "id": 252586,
+    "id": 252093,
     "Key": "act4 Plains of Despair LG",
     "enUS": "Plains of Despair",
     "zhTW": "绝望平原 ÿc5(免疫:ÿc1火*ÿc9电ÿc3冰*ÿc2毒ÿc5,只有不死恶魔)",
@@ -8721,7 +8721,7 @@
     "zhCN": "绝望平原"
   },
   {
-    "id": 252587,
+    "id": 252094,
     "Key": "act4 City of the Damned LG",
     "enUS": "City of the Damned",
     "zhTW": "罪罚之城 ÿc5(免疫:ÿc1火*ÿc9电*ÿc3冰*ÿc2毒ÿc5)",
@@ -8738,7 +8738,7 @@
     "zhCN": "神罚之城"
   },
   {
-    "id": 252588,
+    "id": 252095,
     "Key": "act3 Disused Reliquary LG",
     "enUS": "Disused Reliquary",
     "zhTW": "废弃的圣殿 ÿc5(免疫:ÿc1火ÿc9电*ÿc3冰*ÿc5)",
@@ -8755,7 +8755,7 @@
     "zhCN": "废弃的藏骨室"
   },
   {
-    "id": 252589,
+    "id": 252096,
     "Key": "act3 Ruined Fane LG",
     "enUS": "Ruined Fane",
     "zhTW": "荒废的寺院 ÿc5(免疫:ÿc1火ÿc9电*ÿc3冰*ÿc5)",
@@ -8772,7 +8772,7 @@
     "zhCN": "被毁的礼拜堂"
   },
   {
-    "id": 252590,
+    "id": 252097,
     "Key": "act3 Forgotten Temple LG",
     "enUS": "Forgotten Temple",
     "zhTW": "遗忘神殿 ÿc5(免疫:ÿc1火ÿc9电*ÿc3冰*ÿc5)",
@@ -8789,7 +8789,7 @@
     "zhCN": "被遗忘的神殿"
   },
   {
-    "id": 252591,
+    "id": 252098,
     "Key": "act3 Forgotten Reliquary LG",
     "enUS": "Forgotten Reliquary",
     "zhTW": "遗忘的圣殿 ÿc5(免疫:ÿc1火*ÿc3冰*ÿc8魔*ÿc5)",

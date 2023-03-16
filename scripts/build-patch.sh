@@ -102,6 +102,8 @@ while IFS= read -r -d '' patch_file; do
   *.jsonpatch.json)
     apply_jsonpatch "$origin_file" "$patch_file" "$dst_file"
     ;;
+  *.md)
+    ;;
   *)
     apply_copy "$patch_file" "$dst_file"
   esac
