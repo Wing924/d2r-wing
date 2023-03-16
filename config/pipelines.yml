@@ -41,6 +41,8 @@ patches:
   - patches/12_levelgroup_res
   - patches/13_base_item_desc
   - patches/14_hide_wall
+  - patches/15_show_asn_charge
+  - patches/16_reduce_asn_effect
 
 pipelines:
   - name: add English name and detailed info (base item)

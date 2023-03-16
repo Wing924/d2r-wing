@@ -1,5 +1,12 @@
 # CHANGE-LOG
 
+## Unreleased
+
+### New Features
+
+- 显示刺客聚气特效
+- 降低刺客聚气特效，保护眼睛
+
 ## v1.9.0
 
 ### Updates

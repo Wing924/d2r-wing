@@ -1,0 +1,36 @@
+{
+	"dependencies": {
+		"particles": [
+			"(( append ))",
+			{
+				"path": "data/hd/vfx/particles/overlays/common/progressive_fire_3/progressive_fire_3_fix.particles"
+			}
+		]
+	},
+	"entities": [
+		"(( append ))",
+		{
+			"type": "Entity",
+			"name": "entity_root",
+			"id": 304314862,
+			"components": [
+				{
+					"type": "VfxDefinitionComponent",
+					"name": "component_vfx",
+					"filename": "data/hd/vfx/particles/overlays/common/progressive_fire_3/progressive_fire_3_fix.particles",
+					"hardKillOnDestroy": true
+				},
+				{
+					"type": "TransformDefinitionComponent",
+					"name": "entity_root_TransformDefinition",
+					"position": {
+						"x": 143.0,
+						"y": 100.0,
+						"z": 152.0
+					},
+					"inheritOnlyPosition": true
+				}
+			]
+		}
+	]
+}
