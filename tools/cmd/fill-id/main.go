@@ -42,7 +42,9 @@ func main() {
 	nextID := calcNextID(maxID)
 	log.Println("max ID =", maxID, "next ID =", nextID)
 
-	for filename, entries := range entriesMap {
+	//for filename, entries := range entriesMap {
+	for _, filename := range jsonFiles {
+		entries := entriesMap[filename]
 		changed := false
 		for i, entry := range entries {
 			if entry.ID < 0 {

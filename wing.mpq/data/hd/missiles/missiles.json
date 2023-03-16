@@ -271,7 +271,7 @@
   "fireexplosion": "fire_arrow_explode_2",
   "fireexplosion_2": "fire_arrow_explode_2",
   "firehead": "vampire_missile",
-  "firemedium": "expansion_rock_lava_explosion",
+  "firemedium": "expansion_volcano_fire",
   "firesmall": "expansion_rock_lava_explosion",
   "firestorm": "ground_firesmall",
   "firestormmaker": "expansion_firestorm_emitter",
