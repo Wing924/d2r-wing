@@ -27,6 +27,7 @@ data:
     dark_red: "ÿcS"
 
 patches:
+  - patches/00_dataversionbuild
   - patches/01_runes_sound
   - patches/02_runes_texture
   - patches/03_key_texture
