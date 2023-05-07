@@ -3121,7 +3121,7 @@
     "itIT": "La stagione %d terminerà il %s.",
     "koKR": "%d시즌이 %s에 종료될 예정입니다.",
     "plPL": "%d sezon skończy się %s.",
-    "esMX": "La Temporada %d finalizará en %s.",
+    "esMX": "La Temporada %d finalizará el %s.\n%d/%m/%Y a las %H:%M",
     "jaJP": "シーズン %dは%sに終了します。",
     "ptBR": "A temporada %d terminará em %s.",
     "ruRU": "%d-й сезон завершится в %s.",
