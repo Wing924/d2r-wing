@@ -1,5 +1,11 @@
 # CHANGE-LOG
 
+## v1.11.0
+
+### Updates
+
+- 对应 `v2.7.0` (`1.6.74264`) 版本
+
 ## v1.10.0
 
 ### New Features
