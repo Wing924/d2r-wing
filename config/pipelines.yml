@@ -44,6 +44,7 @@ patches:
   - patches/14_hide_wall
   - patches/15_show_asn_charge
   - patches/16_reduce_asn_effect
+  - patches/17_mini_cube
 
 pipelines:
   - name: add English name and detailed info (base item)

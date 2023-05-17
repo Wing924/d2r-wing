@@ -1,5 +1,11 @@
 # CHANGE-LOG
 
+## Unreleased
+
+### New Features
+
+- 增加迷你方块（从暂停菜单中开启）
+
 ## v1.11.0
 
 ### Updates
