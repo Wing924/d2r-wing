@@ -1,6 +1,6 @@
 # CHANGE-LOG
 
-## Unreleased
+## v1.12.0
 
 ### New Features
 
