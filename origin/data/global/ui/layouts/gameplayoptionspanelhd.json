@@ -869,41 +869,47 @@
                                 },
                             ]
                         },
-                        {
-                            "type": "TableRowWidget", "name": "Row GreetingsSubtitles",
-                            "children": [
-                                {
-                                    "type": "TextBoxWidget", "name": "GreetingsSubtitlesText",
-                                    "fields": {
-                                        "text": "@GreetingsSubtitles",
-                                        "style": "$StyleSettingsText",
-                                    }
-                                },
-                                {
-                                    "type": "ToggleButtonWidget", "name": "GreetingsSubtitles",
-                                    "fields": {
-                                        "rect": "$OptionsToggleRect",
-                                        "sound": "cursor_menu_select_hd",
-                                        "focusIndicatorPadding": "$OptionsToggleFocusIndicatorPadding",
-                                        "focusIndicatorFilename": "$OptionsToggleFocusIndicatorFilename",
-                                        "filename": "Lobby\\CreateGame\\CreateGame_AdvancedCheckbox",
-                                        "focusIndicatorOffset": { "x": 0, "y": -4 },
-                                        "untoggledFrame": 0,
-                                        "untoggledPressedFrame": 1,
-                                        "untoggledHoveredFrame": 3,
-                                        "untoggledDisabledFrame": 2,
-                                        "toggledFrame": 4,
-                                        "toggledPressedFrame": 5,
-                                        "toggledHoveredFrame": 6,
-                                        "onClickMessage": "OptionsPanelMessage:SetGreetingsSubtitles",
-                                        "tooltipString": "@OptionsMenuGreetingsSubtitlesTooltip",
-                                        "tooltipStyle": {
-                                            "showAfterDelay": true,
-                                        }
-                                    },
-                                },
-                            ]
-                        },
+                      {
+                        "type": "TableRowWidget",
+                        "name": "Row GreetingsSubtitles",
+                        "children": [
+                          {
+                            "type": "TextBoxWidget",
+                            "name": "GreetingsSubtitlesText",
+                            "fields": {
+                              "text": "@GreetingsSubtitles",
+                              "style": "$StyleSettingsText",
+                            }
+                          },
+                          {
+                            "type": "ToggleButtonWidget",
+                            "name": "GreetingsSubtitles",
+                            "fields": {
+                              "rect": "$OptionsToggleRect",
+                              "sound": "cursor_menu_select_hd",
+                              "focusIndicatorPadding": "$OptionsToggleFocusIndicatorPadding",
+                              "focusIndicatorFilename": "$OptionsToggleFocusIndicatorFilename",
+                              "filename": "Lobby\\CreateGame\\CreateGame_AdvancedCheckbox",
+                              "focusIndicatorOffset": {
+                                "x": 0,
+                                "y": -4
+                              },
+                              "untoggledFrame": 0,
+                              "untoggledPressedFrame": 1,
+                              "untoggledHoveredFrame": 3,
+                              "untoggledDisabledFrame": 2,
+                              "toggledFrame": 4,
+                              "toggledPressedFrame": 5,
+                              "toggledHoveredFrame": 6,
+                              "onClickMessage": "OptionsPanelMessage:SetGreetingsSubtitles",
+                              "tooltipString": "@OptionsMenuGreetingsSubtitlesTooltip",
+                              "tooltipStyle": {
+                                "showAfterDelay": true,
+                              }
+                            },
+                          },
+                        ]
+                      },
                         {
                             "type": "TableRowWidget", "name": "Row Controller Options",
                             "children": [
@@ -1461,6 +1467,66 @@
                                                 "style": "$StyleSettingsText"
                                         }
                                 },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row DataPrivacy",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "DataPrivacy",
+                                    "fields": {
+                                        "text": "@DataPrivacyHeader",
+                                        "style": "$StyleSettingsTitle"
+                                    },
+                                    "children": [
+                                        {
+                                            "type": "ImageWidget", "name": "Divider",
+                                            "fields": {
+                                                "rect": "$OptionsDividerRect",
+                                                "filename": "PauseMenu\\Divider",
+                                            }
+                                        },
+                                    ]
+                                },
+                            ]
+                        },                    
+                        {
+                            "type": "TableRowWidget", "name": "Row DataSharingOptOut",
+                            "children": [
+                              {
+                                  "type": "TextBoxWidget", "name": "DataSharingOptOutText",
+                                  "fields": {
+                                      "text": "@DataSharingOptOut",
+                                      "style": "$StyleSettingsText"
+                                  }
+                              },
+                              {
+                                "type": "ToggleButtonWidget",
+                                "name": "DataSharingOptOut",
+                                "fields": {
+                                  "rect": "$OptionsToggleRect",
+                                  "sound": "cursor_menu_select_hd",
+                                  "focusIndicatorPadding": "$OptionsToggleFocusIndicatorPadding",
+                                  "focusIndicatorFilename": "$OptionsToggleFocusIndicatorFilename",
+                                  "filename": "Lobby\\CreateGame\\CreateGame_AdvancedCheckbox",
+                                  "focusIndicatorOffset": {
+                                    "x": 0,
+                                    "y": -4
+                                  },
+                                  "untoggledFrame": 0,
+                                  "untoggledPressedFrame": 1,
+                                  "untoggledHoveredFrame": 3,
+                                  "untoggledDisabledFrame": 2,
+                                  "toggledFrame": 4,
+                                  "toggledPressedFrame": 5,
+                                  "toggledHoveredFrame": 6,
+                                  "onClickMessage": "OptionsPanelMessage:SetDataSharingOptOut",
+                                  "tooltipString": "@OptionsDataSharingOptOutTooltip",
+                                  "tooltipStyle": {
+                                    "showAfterDelay": true
+                                  }
+                                }
+                              },
                             ]
                         },
                         {
