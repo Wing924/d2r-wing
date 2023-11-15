@@ -1,5 +1,11 @@
 # CHANGE-LOG
 
+## v1.12.2
+
+### Updates
+
+- 更新了对应的版本文件
+
 ## v1.12.1
 
 ### Updates
