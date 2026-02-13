@@ -8,12 +8,12 @@
         {
             "type": "ImageWidget", "name": "Ribbon",
             "children": [
-				{
-					"type": "ControllerCursorBoundsWidget", "name": "ControllerCursorBounds",
-					"fields": {
-						"fitToParent": true,
-					},
-				},
+                {
+                    "type": "ControllerCursorBoundsWidget", "name": "ControllerCursorBounds",
+                    "fields": {
+                        "fitToParent": true,
+                    },
+                },
                 {
                     "type": "AnimatedImageWidget", "name": "Logo",
                 },
@@ -40,6 +40,8 @@
                         "disabledFrame": 2,
                         "navigation": {
                             "down": { "name": "OnlineMode" },
+                            "up": { "panelBoundary": true },
+                            "right": { "panelBoundary": true },
                         }
                     }
                 },
@@ -52,7 +54,7 @@
                         "disabledTooltipString": "@strcantconnectserver",
                         "textColor": "$FontColorLightGold",
                         "text/style": "$StyleFEButtonText",
-                        "pointSize": "$SmallFontSize",
+                        "pointSize": "$SmallPanelFontSize",
                         "focusIndicatorFilename": "Controller/HoverImages/DifficultySelect_Hover",
                         "focusIndicatorOffset": { "x": -2, "y": 0 },
                         "onClickMessage": "MainMenuHD:SetConsolePlayMode:0",
@@ -71,7 +73,7 @@
                         "textString": "@Offline",
                         "textColor": "$FontColorLightGold",
                         "text/style": "$StyleFEButtonText",
-                        "pointSize": "$SmallFontSize",
+                        "pointSize": "$SmallPanelFontSize",
                         "focusIndicatorFilename": "Controller/HoverImages/DifficultySelect_Hover",
                         "focusIndicatorOffset": { "x": -2, "y": 0 },
                         "onClickMessage": "MainMenuHD:SetConsolePlayMode:1",
@@ -97,6 +99,7 @@
                         "navigation": {
                             "up": { "name": "OnlineMode" },
                             "down": { "name": "Cinematics" },
+                            "right": { "panelBoundary": true },
                         }
                     }
                 },
@@ -107,6 +110,7 @@
                         "navigation": {
                             "up": { "name": "Settings" },
                             "down": { "name": "Credits" },
+                            "right": { "panelBoundary": true },
                         }
                     }
                 },
@@ -117,6 +121,7 @@
                         "navigation": {
                             "up": { "name": "Cinematics" },
                             "down": { "name": "MotDScrollBar" },
+                            "right": { "panelBoundary": true },
                         }
                     }
                 },
@@ -144,7 +149,7 @@
                                     "fields": {
                                         "navigation": {
                                             "right": { "panelBoundary": true },
-                                            "left": { "name": "Credits" },
+                                            "up": { "name": "Credits" },
                                         }
                                     }
                                 },

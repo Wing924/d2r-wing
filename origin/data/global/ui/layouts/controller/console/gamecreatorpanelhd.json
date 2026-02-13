@@ -91,6 +91,13 @@
                 "filename": "FrontEnd\\HD\\Final\\FrontEnd_ClassicIconSmall"
             },
         },
+		{
+            "type": "ImageWidget", "name": "ExpansionIcon",
+            "fields": {
+                "rect": { "x": 1244, "y": 398 },
+                "filename": "FrontEnd\\HD\\Final\\FrontEnd_ExpansionIconSmall"
+            },
+        },
         // Act Selectors - Left section
         {
             "type": "ToggleButtonWidget", "name": "CustomButton",
@@ -1253,7 +1260,7 @@
             "type": "TextBoxWidget", "name": "MaxLevelDifference",
             "fields":
             {
-                "rect": { "x": 710, "y": 1070, "width": 500, "height": 44 },
+                "rect": { "x": 710, "y": 1070, "width": 480, "height": 44 },
                 "fontType": "16pt",
                 "text": "@LobbyCreateGamePanelCharacterLevelDifference",
                 "style": {
@@ -1261,6 +1268,7 @@
                     "pointSize": "$MediumFontSize",
                     "dropShadow": "$DefaultDropShadow",
                     "alignment": { "v": "center" },
+                    "options": { "lineWrap": true },
                 },
             },
         },

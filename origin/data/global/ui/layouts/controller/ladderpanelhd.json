@@ -186,6 +186,16 @@
                 {
                     "type": "TextBoxWidget", "name": "ClassTitle",
                 },
+                                {
+                    "type": "DropdownListWidget", "name": "ClassGardenDropdown",
+                    "fields": {
+                        "navigation": {
+                            "down": { "name": "down" },
+                            "left": { "name": "TypeDropdown" },
+                            "right": { "panelBoundary": true }
+                        }
+                    }
+                },
                 {
                     "type": "DropdownListWidget", "name": "ClassExpansionDropdown",
                     "fields": {

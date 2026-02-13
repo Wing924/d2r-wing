@@ -39,6 +39,7 @@
                             "type": "TextBoxWidget", "name": "TextBox",
                             "fields": {
                                 "fitToParent": true,
+                                "truncateWithEllipsis": true
                             }
                         }
                     ]

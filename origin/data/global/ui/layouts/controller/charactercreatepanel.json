@@ -79,7 +79,8 @@
                         "navigation": {
                             "up": { "name": "ToggleLegacy" },
                             "left": { "name": "Sorceress" },
-                            "down": { "name": "ToGame"}
+                            "right": { "name": "Warlock" },
+                            "down": { "name": "ToGame" }
                         },
                     }
                 },
@@ -114,6 +115,16 @@
                             "right": { "name": "Druid" },
                             "down": { "name": "ToGame" }
                         }
+                    }
+                },
+                {
+                    "type": "CharacterCreateWidget", "name": "Warlock",
+                    "fields": {
+                        "navigation": {
+                            "up": { "name": "ToggleLegacy" },
+                            "left": { "name": "Druid" },
+                            "down": { "name": "ToGame"}
+                        },
                     }
                 },
             ],

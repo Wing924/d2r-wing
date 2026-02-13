@@ -31,4 +31,10 @@
     "SettingsPanelAnchorRect": { "x": -1130, "y": -1006, "width": 1950, "height": 1763, "scale": "$ConsoleUIScale" },
     "SettingsPanelBackgroundRect": { "x": -1041, "y": 240, "width": "$OptionsPanelWidth", "height": "$OptionsPanelHeight", "scale": "$ConsoleUIScale" },
     "SettingsPanelTabsRect": { "x": -998, "y": 256, "width": "$OptionsPanelWidth", "height": 121, "scale": "$ConsoleUIScale" },
+	
+	"LootFilterOptionsPanelRect": { "x": -1002, "y": 256, "width": "$LootFilterOptionsPanelWidth", "height": "$LootFilterOptionsPanelHeight", "scale": "$ConsoleUIScale" },
+	"LootFilterItemTabRect": { "x": -1017, "y": 670, "width": 1770, "height": 1000, "scale": "$ConsoleUIScale" },
+	"LootFilterConfirmButtonX": 421,
+
+    "ChronicleRewardsControllerRect": { "x": -1039, "y": 240, "wifth": 0, "height": 0, "scale" : "$ConsoleUIScale"},
 }

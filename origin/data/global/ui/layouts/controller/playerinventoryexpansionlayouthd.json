@@ -82,11 +82,21 @@
         {
             "type": "TextBoxWidget", "name": "gold_amount",
         },
-        {
-            "type": "ButtonWidget", "name": "gold_button",
-        },
+      {
+        "type": "ButtonWidget",
+        "name": "gold_button",
+        "fields": {
+          "focusIndicatorFilename":  "",
+          "focusIndicatorPadding": {"left": 50, "top": 50, "right": 40, "bottom": 40},
+        }
+      },
         {
             "type": "InventoryGridWidget", "name": "grid",
+			"children": [
+				{
+					"type": "AnimatedImageWidget", "name": "chronicleFlourish",
+				}
+			]
         },
         {
             "type": "InventorySlotWidget", "name": "slot_head",

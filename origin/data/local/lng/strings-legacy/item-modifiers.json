@@ -4006,5 +4006,65 @@
     "itIT": "Usala per scongelare Anya",
     "koKR": "앤야를 녹이는 데 사용",
     "plPL": "Zatrzymaj ją, by rozmrozić Anyę"
+  },
+  {
+    "id": 27446,
+    "Key": "UseTerrorTokenAct1",
+    "enUS": "Right Click to terrorize Act 1",
+    "zhTW": "點擊滑鼠右鍵將第一章設為邪惡威脅區域",
+    "deDE": "Mit Rechtsklick terrorisieren (Akt 1)",
+    "esES": "Clic derecho para aterrorizar el Acto I",
+    "frFR": "Clic droit pour terroriser l’acte I",
+    "itIT": "Clicca col destro per terrorizzare l'Atto 1",
+    "koKR": "오른쪽 클릭으로 1막에 공포의 마수 뻗기",
+    "plPL": "Naciśnij PPM, aby Aktem I owładnęła Groza"
+  },
+  {
+    "id": 27448,
+    "Key": "UseTerrorTokenAct2",
+    "enUS": "Right Click to terrorize Act 2",
+    "zhTW": "點擊滑鼠右鍵將第二章設為邪惡威脅區域",
+    "deDE": "Mit Rechtsklick terrorisieren (Akt 2)",
+    "esES": "Clic derecho para aterrorizar el Acto II",
+    "frFR": "Clic droit pour terroriser l’acte II",
+    "itIT": "Clicca col destro per terrorizzare l'Atto 2",
+    "koKR": "오른쪽 클릭으로 2막에 공포의 마수 뻗기",
+    "plPL": "Naciśnij PPM, aby Aktem II owładnęła Groza"
+  },
+  {
+    "id": 27450,
+    "Key": "UseTerrorTokenAct3",
+    "enUS": "Right Click to terrorize Act 3",
+    "zhTW": "點擊滑鼠右鍵將第三章設為邪惡威脅區域",
+    "deDE": "Mit Rechtsklick terrorisieren (Akt 3)",
+    "esES": "Clic derecho para aterrorizar el Acto III",
+    "frFR": "Clic droit pour terroriser l’acte III",
+    "itIT": "Clicca col destro per terrorizzare l'Atto 3",
+    "koKR": "오른쪽 클릭으로 3막에 공포의 마수 뻗기",
+    "plPL": "Naciśnij PPM, aby Aktem III owładnęła Groza"
+  },
+  {
+    "id": 27452,
+    "Key": "UseTerrorTokenAct4",
+    "enUS": "Right Click to terrorize Act 4",
+    "zhTW": "點擊滑鼠右鍵將第四章設為邪惡威脅區域",
+    "deDE": "Mit Rechtsklick terrorisieren (Akt 4)",
+    "esES": "Clic derecho para aterrorizar el Acto IV",
+    "frFR": "Clic droit pour terroriser l’acte IV",
+    "itIT": "Clicca col destro per terrorizzare l'Atto 4",
+    "koKR": "오른쪽 클릭으로 4막에 공포의 마수 뻗기",
+    "plPL": "Naciśnij PPM, aby Aktem IV owładnęła Groza"
+  },
+  {
+    "id": 27454,
+    "Key": "UseTerrorTokenAct5",
+    "enUS": "Right Click to terrorize Act 5",
+    "zhTW": "點擊滑鼠右鍵將第五章設為邪惡威脅區域",
+    "deDE": "Mit Rechtsklick terrorisieren (Akt 5)",
+    "esES": "Clic derecho para aterrorizar el Acto V",
+    "frFR": "Clic droit pour terroriser l’acte V",
+    "itIT": "Clicca col destro per terrorizzare l'Atto 5",
+    "koKR": "오른쪽 클릭으로 5막에 공포의 마수 뻗기",
+    "plPL": "Naciśnij PPM, aby Aktem V owładnęła Groza"
   }
 ]

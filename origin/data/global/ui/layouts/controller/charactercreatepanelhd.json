@@ -33,7 +33,7 @@
                 "navigation": {
                     "left": { "name": "Assassin" },
                     "right": { "name": "Barbarian" },
-                    "down": { "name": "HardcoreCheckbox" }
+                    "down": { "name": "InputText" }
                 },
             }
         },
@@ -43,7 +43,7 @@
                 "navigation": {
                     "left": { "name": "Necromancer" },
                     "right": { "name": "Paladin" },
-                    "down": { "name": "HardcoreCheckbox" }
+                    "down": { "name": "InputText" }
                 },
             },
         },
@@ -53,7 +53,7 @@
                 "navigation": {
                     "left": { "name": "Barbarian" },
                     "right": { "name": "Sorceress" },
-                    "down": { "name": "HardcoreCheckbox" }
+                    "down": { "name": "InputText" }
                 },
             }
         },
@@ -62,8 +62,8 @@
             "fields": {
                 "navigation": {
                     "left": { "name": "Paladin" },
-                    "right": { "name": "Druid" },
-                    "down": { "name": "ToGame" }
+                    "right": { "name": "Warlock" },
+                    "down": { "name": "GameVersionInfoButton" }
                 },
             }
         },
@@ -71,8 +71,18 @@
             "type": "HDCharacterSelectorWidget", "name": "Druid",
             "fields": {
                 "navigation": {
+                    "left": { "name": "Warlock" },
+                    "down": {  "name": "GameVersionInfoButton" }
+                },
+            }
+        },
+        {
+            "type": "HDCharacterSelectorWidget", "name": "Warlock",
+            "fields": {
+                "navigation": {
                     "left": { "name": "Sorceress" },
-                    "down": {  "name": "ToGame" }
+                    "right": { "name": "Druid" },
+                    "down": {  "name": "GameVersionInfoButton" }
                 },
             }
         },
@@ -109,11 +119,60 @@
                     }
                 },
                 {
+                    "type": "Widget", "name": "GameVersionContainer",
+                    "children": [
+                        {
+                            "type": "TextBoxWidget", "name": "GameVersionLabel",
+							"fields": {
+								"rect": { "x": -363, "y": 0, "width": 525, "height": 62 },
+							}
+                        },
+                        {
+                            "type": "ButtonWidget", "name": "GameVersionInfoButton",
+                            "fields": {
+								"rect": { "x": 536, "y": 0 },
+                                "navigation": {
+                                    "left": { "name": "HardcoreCheckbox" },
+                                    "up": { "name": "Druid" },
+                                    "down": { "name": "GameVersionDropdown" }
+                                }
+                            }
+                        },
+                        {
+                            "type": "DropdownListWidget", "name": "GameVersionDropdown",
+                            "fields": {
+								"rect": { "x": -363, "y": 73, "width": 975, "height": 105 },
+                                "background/rect": { "width": 975, "height": 105 },
+                                "navigation": {
+                                    "left": { "name": "HardcoreCheckbox" },
+                                    "up": { "name": "GameVersionInfoButton" },
+                                    "down": { "name": "ToGame" }
+                                },
+				                "states": [ "" ] // States will be populated in code based on "gameVersionNames" at the top
+                            }
+                        }
+                    ]
+                },
+                {
                     "type": "ButtonWidget", "name": "ToGame",
                     "fields": {
                         "navigation": {
-                            "left": { "name": "ClassicToggle" },
-                            "up": { "name": "Druid" },
+                            "left": { "name": "HardcoreCheckbox" },
+                            "up": { "name": "GameVersionDropdown" },
+                            "down": { "name": "UpsellButton" },
+                            "right": { "name": "UpsellButton" }
+                        }
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "UpsellDescription",
+                },
+                {
+                    "type": "ButtonWidget", "name": "UpsellButton",
+                    "fields": {
+                        "navigation": {
+                            "left": { "name": "HardcoreCheckbox" },
+                            "up": { "name": "GameVersionDropdown" },
                         }
                     }
                 },
@@ -146,13 +205,20 @@
 
                 {
                     "type": "InputTextBoxWidget", "name": "InputText",
+                    "fields": {
+                        "navigation": {
+                            "up": { "name": "Barbarian" },
+                            "right": { "name": "ToGame" },
+                            "left": { "name": "ToMainMenu" },
+                            "down": { "name": "HardcoreCheckbox" },
+                        },
+                    }
                 },
-
                 {
                     "type": "ToggleButtonWidget", "name": "ClassicToggle",
                     "fields": {
                         "navigation": {
-                            "up": { "name": "Barbarian" },
+                            "up": { "name": "InputText" },
                             "right": { "name": "ToGame" },
                             "left": { "name": "HardcoreCheckbox" },
                         },
@@ -162,8 +228,8 @@
                     "type": "ToggleButtonWidget", "name": "HardcoreCheckbox",
                     "fields": {
                         "navigation": {
-                            "up": { "name": "Barbarian" },
-                            "right": { "name": "ClassicToggle" },
+                            "up": { "name": "InputText" },
+                            "right": { "name": "ToGame" },
                             "left": { "name": "LadderToggle" },
                         },
                     }
@@ -172,7 +238,7 @@
                     "type": "ToggleButtonWidget", "name": "LadderToggle",
                     "fields": {
                         "navigation": {
-                            "up": { "name": "Barbarian" },
+                            "up": { "name": "InputText" },
                             "right": { "name": "HardcoreCheckbox" },
                             "left": { "name": "ToMainMenu" },
                         },

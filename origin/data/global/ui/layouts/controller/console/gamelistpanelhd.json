@@ -589,7 +589,7 @@
                 {
                     "type": "TextBoxWidget", "name": "GameNameFilterText",
                     "fields": {
-                        "rect": { "x": 2, "y": 888, "width": 540, "height": 100 },
+                        "rect": { "x": 2, "y": 948, "width": 540, "height": 100 },
                         "style": {
                             "fontColor": "$LightButtonTextColor", 
                             "pointSize": "$SmallFontSize",
@@ -703,6 +703,13 @@
                     "fields": {
                         "rect": { "x": 697, "y": 20 },
                         "filename": "FrontEnd\\HD\\Final\\FrontEnd_HardcoreIconSmall"
+                    },
+                },
+                {
+                    "type": "ImageWidget", "name": "ExpansionIcon",
+                    "fields": {
+                        "rect": { "x": 755, "y": 20 },
+                        "filename": "FrontEnd\\HD\\Final\\FrontEnd_ExpansionIconSmall"
                     },
                 },
             ]

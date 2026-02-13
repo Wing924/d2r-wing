@@ -77,6 +77,22 @@
                                     ]
                                 },
                                 {
+                                    "type": "ImageWidget", "name": "ExpansionIcon",
+                                    "fields": {
+                                        "rect": { "x": 545, "y": 0 },
+                                        "filename": "FrontEnd\\HD\\Final\\FrontEnd_ExpansionIconSmall"
+                                    },
+                                    "children": [
+                                        {
+                                            "type": "FocusableWidget", "name": "ExpansionIconTooltip",
+                                            "fields": {
+                                                "fitToParent": true,
+                                                "tooltipString": "@Expansion",
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
                                     "type": "ImageWidget", "name": "HardcoreIcon",
                                     "fields": {
                                         "rect": { "x": 488, "y": 0 },

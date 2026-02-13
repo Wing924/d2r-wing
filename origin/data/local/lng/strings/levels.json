@@ -286,7 +286,7 @@
     "jaJP": "フレイヤーの地下牢: 第3階層",
     "ptBR": "Masmorra dos Esfoladores Nível 3",
     "ruRU": "Подземелье свежевателей: 3-й уровень",
-    "zhCN": "剥皮魔监牢三层"
+    "zhCN": "翠绿监牢三层"
   },
   {
     "id": 805,
@@ -303,7 +303,7 @@
     "jaJP": "フレイヤーの地下牢: 第2階層",
     "ptBR": "Masmorra dos Esfoladores Nível 2",
     "ruRU": "Подземелье свежевателей: 2-й уровень",
-    "zhCN": "剥皮魔监牢二层"
+    "zhCN": "翠绿监牢二层"
   },
   {
     "id": 806,
@@ -320,7 +320,7 @@
     "jaJP": "フレイヤーの地下牢: 第1階層",
     "ptBR": "Masmorra dos Esfoladores Nível 1",
     "ruRU": "Подземелье свежевателей: 1-й уровень",
-    "zhCN": "剥皮魔监牢一层"
+    "zhCN": "翠绿监牢一层"
   },
   {
     "id": 807,
@@ -507,7 +507,7 @@
     "jaJP": "フレイヤーの密林",
     "ptBR": "Selva dos Esfoladores",
     "ruRU": "Джунгли свежевателей",
-    "zhCN": "剥皮魔丛林"
+    "zhCN": "翠绿丛林"
   },
   {
     "id": 818,
@@ -592,7 +592,7 @@
     "jaJP": "フレイヤーの地下牢",
     "ptBR": "Masmorra dos Esfoladores",
     "ruRU": "Подземелье свежевателей",
-    "zhCN": "剥皮魔监牢"
+    "zhCN": "翠绿监牢"
   },
   {
     "id": 823,
@@ -1510,7 +1510,7 @@
     "jaJP": "フレイヤーの地下牢: 第1階層へ",
     "ptBR": "Para a Masmorra dos Esfoladores Nível 1",
     "ruRU": "На 1-й уровень Подземелья свежевателей",
-    "zhCN": "前往剥皮魔监牢一层"
+    "zhCN": "前往翠绿监牢一层"
   },
   {
     "id": 877,
@@ -1527,7 +1527,7 @@
     "jaJP": "フレイヤーの地下牢: 第2階層へ",
     "ptBR": "Para a Masmorra dos Esfoladores Nível 2",
     "ruRU": "На 2-й уровень Подземелья свежевателей",
-    "zhCN": "前往剥皮魔监牢二层"
+    "zhCN": "前往翠绿监牢二层"
   },
   {
     "id": 878,
@@ -1544,7 +1544,7 @@
     "jaJP": "フレイヤーの地下牢: 第3階層へ",
     "ptBR": "Para a Masmorra dos Esfoladores Nível 3",
     "ruRU": "На 3-й уровень Подземелья свежевателей",
-    "zhCN": "前往剥皮魔监牢三层"
+    "zhCN": "前往翠绿监牢三层"
   },
   {
     "id": 879,
@@ -1731,7 +1731,7 @@
     "jaJP": "フレイヤーの密林へ",
     "ptBR": "Para a Selva dos Esfoladores",
     "ruRU": "В Джунгли свежевателей",
-    "zhCN": "前往剥皮魔丛林"
+    "zhCN": "前往翠绿丛林"
   },
   {
     "id": 890,
@@ -3074,7 +3074,7 @@
     "jaJP": "血の荒野",
     "ptBR": "Charco Sangrento",
     "ruRU": "Кровавая пустошь",
-    "zhCN": "鲜血荒地"
+    "zhCN": "精华荒地"
   },
   {
     "id": 5055,
@@ -3720,7 +3720,7 @@
     "jaJP": "血の荒野へ",
     "ptBR": "Para o Charco Sangrento",
     "ruRU": "В Кровавую пустошь",
-    "zhCN": "前往鲜血荒地"
+    "zhCN": "前往精华荒地"
   },
   {
     "id": 5093,
@@ -4009,7 +4009,7 @@
     "jaJP": "血に塗れし丘陵",
     "ptBR": "Colinas Sangrentas",
     "ruRU": "Кровавые предгорья",
-    "zhCN": "血腥丘陵"
+    "zhCN": "嗜战丘陵"
   },
   {
     "id": 22648,
@@ -4383,7 +4383,7 @@
     "jaJP": "血に塗れし丘陵へ",
     "ptBR": "Para as Colinas Sangrentas",
     "ruRU": "В Кровавые предгорья",
-    "zhCN": "前往血腥丘陵"
+    "zhCN": "前往嗜战丘陵"
   },
   {
     "id": 22670,
@@ -4757,7 +4757,7 @@
     "jaJP": "〈血の荒野〉",
     "ptBR": "Entrando no Charco Sangrento",
     "ruRU": "Кровавая пустошь",
-    "zhCN": "进入鲜血荒地"
+    "zhCN": "进入精华荒地"
   },
   {
     "id": 22767,
@@ -5964,7 +5964,7 @@
     "jaJP": "〈フレイヤーの密林〉",
     "ptBR": "Entrando na Selva dos Esfoladores",
     "ruRU": "Джунгли свежевателей",
-    "zhCN": "进入剥皮魔丛林"
+    "zhCN": "进入翠绿丛林"
   },
   {
     "id": 22838,
@@ -6134,7 +6134,7 @@
     "jaJP": "〈フレイヤーの地下牢: 第1階層〉",
     "ptBR": "Entrando na Masmorra dos Esfoladores Nível 1",
     "ruRU": "1-й уровень Подземелья свежевателей",
-    "zhCN": "进入剥皮魔监牢一层"
+    "zhCN": "进入翠绿监牢一层"
   },
   {
     "id": 22848,
@@ -6151,7 +6151,7 @@
     "jaJP": "〈フレイヤーの地下牢: 第2階層〉",
     "ptBR": "Entrando na Masmorra dos Esfoladores Nível 2",
     "ruRU": "2-й уровень Подземелья свежевателей",
-    "zhCN": "进入剥皮魔监牢二层"
+    "zhCN": "进入翠绿监牢二层"
   },
   {
     "id": 22849,
@@ -6185,7 +6185,7 @@
     "jaJP": "〈フレイヤーの地下牢: 第3階層〉",
     "ptBR": "Entrando na Masmorra dos Esfoladores Nível 3",
     "ruRU": "3-й уровень Подземелья свежевателей",
-    "zhCN": "进入剥皮魔监牢三层"
+    "zhCN": "进入翠绿监牢三层"
   },
   {
     "id": 22853,
@@ -6474,7 +6474,7 @@
     "jaJP": "〈血に塗れし丘陵〉",
     "ptBR": "Entrando nas Colinas Sangrentas",
     "ruRU": "Кровавые предгорья",
-    "zhCN": "进入血腥丘陵"
+    "zhCN": "进入嗜战丘陵"
   },
   {
     "id": 22870,
@@ -7120,6 +7120,57 @@
     "jaJP": "ÿc8存在しないところÿc0",
     "ptBR": "ÿc8um nível inexistenteÿc0",
     "ruRU": "ÿc8несуществующий уровеньÿc0",
-    "zhCN": "ÿc8不存在的等级ÿc0"
+    "zhCN": "ÿc8不存在的关卡ÿc0"
+  },
+  {
+    "id": 27867,
+    "Key": "ColossalSummit",
+    "enUS": "Colossal Summit",
+    "zhTW": "宏偉山巔",
+    "deDE": "Kolossaler Gipfel",
+    "esES": "Cima Colosal",
+    "frFR": "Sommet Colossal",
+    "itIT": "Sommità Colossale",
+    "koKR": "위압적인 정상",
+    "plPL": "Wierzchołek Kolosów",
+    "esMX": "Cima Colosal",
+    "jaJP": "高峰の頂き",
+    "ptBR": "Cume Colossal",
+    "ruRU": "Вершина колосса",
+    "zhCN": "巨像之巅"
+  },
+  {
+    "id": 27868,
+    "Key": "ToTheColossalSummit",
+    "enUS": "To The Colossal Summit",
+    "zhTW": "前往宏偉山巔",
+    "deDE": "Zum Kolossalen Gipfel",
+    "esES": "A la Cima Colosal",
+    "frFR": "Vers le sommet Colossal",
+    "itIT": "Verso la Sommità Colossale",
+    "koKR": "위압적인 정상으로 이동",
+    "plPL": "Wierzchołek Kolosów",
+    "esMX": "A la Cima Colosal",
+    "jaJP": "高峰の頂きへ",
+    "ptBR": "Para o Cume Colossal",
+    "ruRU": "На Вершину колосса",
+    "zhCN": "前往巨像之巅"
+  },
+  {
+    "id": 27869,
+    "Key": "EnteringTheColossalSummit",
+    "enUS": "Entering The Colossal Summit",
+    "zhTW": "進入宏偉山巔",
+    "deDE": "Jetzt: Der Kolossale Gipfel",
+    "esES": "Entrando en la Cima Colosal",
+    "frFR": "Entre dans le sommet Colossal",
+    "itIT": "Ingresso nella Sommità Colossale",
+    "koKR": "위압적인 정상에 진입",
+    "plPL": "Wkraczasz na Wierzchołek Kolosów",
+    "esMX": "Entrando a la Cima Colosal",
+    "jaJP": "〈高峰の頂き〉",
+    "ptBR": "Entrando no Cume Colossal",
+    "ruRU": "Вершина колосса",
+    "zhCN": "进入巨像之巅"
   }
 ]

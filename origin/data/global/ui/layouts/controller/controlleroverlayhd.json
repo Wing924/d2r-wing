@@ -116,10 +116,20 @@
                      ]
                 },
                 {
-                    "type": "ButtonLegendWidget", "name": "Legend",
-                    "fields": {
+                    "type": "ButtonLegendScrollWidget", "name": "Legend",
+                    "fields": { 
                         "rect": { "x": 0, "y": 1661, "width": 2880, "height": 103 },
-                        "text": { "style": "$StyleButtonLegend" },
+                        "subText": [
+                                {"name": "Legend1", "rect": {"x": 0, "y": 0, "width": 360, "height": 103}, "style": "$StyleButtonLegend",},
+                                {"name": "Legend2", "rect": {"x": 360, "y": 0, "width": 360, "height": 103}, "style": "$StyleButtonLegend",},
+                                {"name": "Legend3", "rect": {"x": 720, "y": 0, "width": 360, "height": 103}, "style": "$StyleButtonLegend",},
+                                {"name": "Legend4", "rect": {"x": 1080, "y": 0, "width": 360, "height": 103}, "style": "$StyleButtonLegend",},
+                                {"name": "Legend5", "rect": {"x": 1440, "y": 0, "width": 360, "height": 103}, "style": "$StyleButtonLegend",},
+                                {"name": "Legend6", "rect": {"x": 1800, "y": 0, "width": 360, "height": 103}, "style": "$StyleButtonLegend",},
+                                {"name": "Legend7", "rect": {"x": 2160, "y": 0, "width": 360, "height": 103}, "style": "$StyleButtonLegend",},
+                                {"name": "Legend8", "rect": {"x": 2520, "y": 0, "width": 360, "height": 103}, "style": "$StyleButtonLegend",},
+                        ],
+                        "dataUpdateTime": 0.2,
                     },
                 },
             ]

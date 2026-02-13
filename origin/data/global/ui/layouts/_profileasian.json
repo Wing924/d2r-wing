@@ -12,4 +12,14 @@
     // Join game tweaks.
     "JoinGamePlayerEntryHeight": 140,
     "JoinGamePlayerNameHeight": 100,
+
+      // Modal Overrides
+    "StyleModalDialogDescription":
+    {
+        "fontColor": "$ModalDescriptionTextColor",
+        "alignment": { "h": "center", "v": "center" },
+        "options": { "lineWrap": true, "newlineHandling": "standard" },
+        "pointSize": "$MediumFontSize",
+        "spacing": { "leading": 0.72, "kerning": 0.88 },
+    },
 }

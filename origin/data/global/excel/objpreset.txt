@@ -579,3 +579,7 @@ Index	Act	ObjectClass	*Notes	*eol
 147	5	FinalPortal		0
 148	5	DummyEx109		0
 149	5	ConsolationChest		0
+150	5	ColossalAltar		0
+151	5	colossal_statue_1		0
+152	5	colossal_statue_2		0
+153	5	colossal_statue_3		0

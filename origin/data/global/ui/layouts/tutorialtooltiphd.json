@@ -16,7 +16,7 @@
             { "label": "TutorialTooltipChat", "titleRect": { "x": 175, "y": 702 }, "titleText": "@Chatcaps", "textRect": "$TutorialTooltipChatRect", "text": "@TutorialToolTipLobbyChat", "confirmRect": "$TooltipConfirmSmall", "dismissRect": "$TooltipDismissSmall", "highlightRect": { "x": -1250, "y" : 165, "width": 1180, "height": 1400 }, "tooltipAnchor": { "x": 0.5, "y": 0.0 }  },
             { "label": "TutorialTooltipChatArrow", "titleRect": { "x": -1075, "y": 702 }, "titleText": "@Chatcaps", "textRect": "$TutorialTooltipChatArrowRect", "text": "@TutorialToolTipLobbyArrow", "confirmRect": "$TooltipConfirmSmall", "dismissRect": "$TooltipDismissSmall", "highlightRect": { "x": -603, "y": 110, "width": 52, "height": 52 }  },
             { "label": "TutorialTooltipCreateGame", "titleRect": { "x": -275, "y": 402 }, "titleText": "@LobbyCreateGame", "textRect": "$TutorialTooltipCreateGameRect", "text": "@TutorialToolTipCreateGame", "confirmRect": "$TooltipConfirmSmall", "dismissRect": "$TooltipDismissSmall", "highlightRect": { "x": 440, "y": 105, "width": 386, "height": 103 }  },
-            { "label": "TutorialTooltipGameName", "titleRect": { "x": -575, "y": 402 }, "titleText": "@LobbyCreateGame", "textRect": "$TutorialTooltipGameName", "text": "@TutorialToolTipCreateGameSettings", "confirmRect": "$TooltipConfirmMed", "dismissRect": "$TooltipDismissMed", "highlightRect": { "x": 785, "y": 1235, "width": 472, "height": 120 }  },
+            { "label": "TutorialTooltipGameName", "titleRect": { "x": -575, "y": 402 }, "titleText": "@LobbyCreateGame", "textRect": "$TutorialTooltipGameName", "text": "@TutorialToolTipCreateGameSettings", "confirmRect": "$TooltipConfirmMed", "dismissRect": "$TooltipDismissMed", "highlightRect": { "x": 785, "y": 1276, "width": 472, "height": 120 }  },
             { "label": "TutorialTooltipJoinGame", "titleRect": { "x": 275, "y": 402 }, "titleText": "@LobbyJoinGame", "textRect": "$TutorialTooltipJoinGame", "text": "@TutorialToolTipJoinGame", "confirmRect": "$TooltipConfirmSmall", "dismissRect": "$TooltipDismissSmall", "highlightRect": { "x": 825, "y": 105, "width": 386, "height": 103 }  },
             { "label": "TutorialTooltipLadder", "titleRect": { "x": 275, "y": 402 }, "titleText": "@LobbyLadder", "textRect": "$TutorialTooltipLadder", "text": "@TutorialToolTipLadder", "confirmRect": "$TooltipConfirmLarge", "dismissRect": "$TooltipDismissLarge", "highlightRect": { "x": 1210, "y": 105, "width": 386, "height": 103 }  },
         ],
@@ -51,7 +51,7 @@
         {
             "type": "NineTileImageWidget", "name": "TooltipTile",
             "fields": {
-                "rect": { "width": 900, "height": 0 },
+                "rect": { "width": 900, "height": 96 },
                 "anchor": { "x": 0.5 },
                 "filename": "PANEL/TooltipBorder/TooltipBorder",
                 "backgroundColor": [ 0.0, 0.0, 0.0, 0.80 ],
@@ -60,9 +60,9 @@
             "children": [
                 {
                     "type": "TextBoxWidget", "name": "Title",
-                    "fields": {
-                        "anchor": { "x": 0.5 },
-                        "style": {
+                    "fields": {                        
+                      "fitToParent": true,  
+                      "style": {
                             "pointSize": "$MediumLargeFontSize",
                             "alignment": { "v": "center", "h": "center" },
                             "fontColor": "$FontColorGoldYellow",

@@ -49,6 +49,9 @@
                                 {
                                     "type": "ImageWidget", "name": "HardcoreIcon",
                                 },
+                                {
+                                    "type": "ImageWidget", "name": "ExpansionIcon"
+                                }
                             ]
                         },
                         {

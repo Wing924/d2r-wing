@@ -118,7 +118,8 @@
                             "fields": {
                                 "rect": { "x": 5, "y": 0, "width": 2563, "height": 104 },
                                 "filename": "PANEL\\AdvancedCharacterSheet\\AdvancedCharacterSheet_Cell",
-                                "tileScale": 1.0
+                                "tileScale": 1.0,
+								"allowScissorResizing": false
                             }
                         },
                         {

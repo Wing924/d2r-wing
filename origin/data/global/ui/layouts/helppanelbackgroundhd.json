@@ -1,5 +1,5 @@
 {
-    "type": "HelpPanel", "name": "HelpPanelBackground",
+    "type": "Panel", "name": "HelpPanelBackground",
     "fields": {
         // This needs to be low enough to draw below the HUD.
         "priority": -10,

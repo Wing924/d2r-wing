@@ -1,9 +1,9 @@
 {
     "type": "GamerTagPanel", "name": "GamerTagPanel",
     "fields": {
-        "anchor": { "x": 0.0, "y": 0.0},
+        "anchor": { "x": 1.0, "y": 0.0},
         "rect": { "x": 0, "y": 0},
-        "createCharacterRect": { "x": 1560, "y": 2000, "width": 700, "height": 65 },
+        "createCharacterRect": { "x": -2281, "y": 2000, "width": 700, "height": 65 },
         "createCharacterStyle": {
             "fontColor": "$FontColorVeryLightGray",
             "spacing": "$ReducedSpacing",
@@ -17,13 +17,13 @@
         {
             "type": "TextBoxWidget", "name": "XboxGamerTag",
             "fields": {
-                "rect": { "x": 850, "y": 60, "width": 700, "height": 65 },
+                "rect": { "x": -750, "y": 60, "width": 700, "height": 65 },
                 "fontType": "16pt",
                 "text": "GAMER_TAG WWWWWW",
                 "style": {
                     "fontColor": "$FontColorVeryLightGray",
                     "spacing": "$ReducedSpacing",
-                    "alignment": { "h": "left", "v": "center" },
+                    "alignment": { "h": "right", "v": "center" },
                     "pointSize": "$MediumLargeFontSize",
                     "dropShadow": "$DefaultDropShadow"
                 }

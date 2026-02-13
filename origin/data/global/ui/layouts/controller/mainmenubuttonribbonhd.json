@@ -28,6 +28,7 @@
                         "focusIndicatorOffset": { "x": -2, "y": 0 },
                         "navigation": {
                             "right": { "panelBoundary": true },
+                            "up": { "panelBoundary": true },
                             "down": { "name": "Cinematics" },
                         }
                     }
@@ -95,7 +96,7 @@
                                     "fields": {
                                         "navigation": {
                                             "right": { "panelBoundary": true },
-                                            "left": { "name": "Exit" },
+                                            "up": { "name": "Exit" },
                                         },
                                         "focusIndicatorFilename": "Controller/HoverImages/MotD_Hover",
                                         "focusIndicatorOffset": { "x": 0, "y": -4 },

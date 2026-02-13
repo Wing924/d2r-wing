@@ -74,6 +74,7 @@
         "GoldColor": "$FontColorWhite",
         "RuneColor": "$FontColorOrange",
         "EventItemsColor": "$FontColorOrange",
+        "DesecratedColor": "$FontColorDesecrated",
     },
 
     // HirablesPanel
@@ -108,4 +109,6 @@
     // Join game tweaks.
     "JoinGamePlayerEntryHeight": 140,
     "JoinGamePlayerNameHeight": 100,
+
+    "ChronicleRewardsControllerRect": { "x": -1039, "y": 240, "wifth": 0, "height": 0, "scale" : "$ConsoleUIScale"},
 }

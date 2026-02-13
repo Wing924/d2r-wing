@@ -19,7 +19,8 @@
              "Spells\\paladin\\PaSkillicon",
              "Spells\\Barbarian\\BaSkillicon",
              "Spells\\Druid\\DrSkillicon",
-             "Spells\\Assassin\\AsSkillicon"
+             "Spells\\Assassin\\AsSkillicon",
+             "Spells\\Warlock\\WaSkillicon",
         ],
         "skillBackgroundFile": [
             "Spells\\Skill_Trees\\AmSkilltree",
@@ -28,7 +29,8 @@
             "Spells\\Skill_Trees\\PaSkilltree",
             "Spells\\Skill_Trees\\BaSkilltree",
             "Spells\\Skill_Trees\\DrSkilltree",
-            "Spells\\Skill_Trees\\AsSkilltree"
+            "Spells\\Skill_Trees\\AsSkilltree",
+            "Spells\\Skill_Trees\\WaSkilltree",
         ],
         "textTab0": [
             "@SkillCategoryAm1",
@@ -38,6 +40,7 @@
             "@SkillCategoryBa1",
             "@SkillCategoryDr1",
             "@SkillCategoryAs1",
+            "@SkillCategoryWa3",
         ],
         "textTab1": [
             "@SkillCategoryAm2",
@@ -47,6 +50,7 @@
             "@SkillCategoryBa2",
             "@SkillCategoryDr2",
             "@SkillCategoryAs2",
+            "@SkillCategoryWa2",
         ],
         "textTab2": [
             "@SkillCategoryAm3",
@@ -56,6 +60,7 @@
             "@SkillCategoryBa3",
             "@SkillCategoryDr3",
             "@SkillCategoryAs3",
+            "@SkillCategoryWa1",
         ],
         "cancelPositionX": [ 1075, 1075, 1075 ],
         "cancelPositionCode": [ 0, 0, 0, 0, 0, 0, 0 ],

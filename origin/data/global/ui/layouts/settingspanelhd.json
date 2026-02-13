@@ -93,6 +93,8 @@
                     "SettingsPanelMessage:CheckChanges:GameplayOptionsPanel",
                     "SettingsPanelMessage:CheckChanges:KeyBindingMenu",
                 ],
+				"truncateText": true,
+				"showFullTextWhenTabActive": true,
             },
         },
         {

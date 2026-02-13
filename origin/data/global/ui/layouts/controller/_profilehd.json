@@ -56,7 +56,6 @@
     },
     "StyleSkillTreeTabs" :
     {
-        "options": { "lineWrap": true },
         "pointSize": "$MediumFontSize",
         "alignment": { "h": "center", "v": "center" },
         "fontColor": "$FontColorWhite",
@@ -90,4 +89,8 @@
     "MessageLogPanelRect": { "x": -887, "y": 280, "width": 1771, "height": 1400 },
     "UISwitcherRect": { "x": -1440, "y": 100, "width": 2800, "height": 1600 },
     "AdvancedStatsPanelRect": { "x": -1386, "y": -237 },
+    "ChronicleSearchBox": { "x": 1275, "y": -118, "width": 420, "height": 102 },
+    "ChronicleSearchInput": { "x": 40, "y": 0, "width": 350, "height": 102 },
+
+    "ChronicleRewardsControllerRect": { "x": -896, "y": 270 },
 }

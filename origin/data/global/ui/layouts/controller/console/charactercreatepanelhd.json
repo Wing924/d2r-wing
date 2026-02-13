@@ -48,6 +48,12 @@
             }
         },
         {
+            "type": "HDCharacterSelectorWidget", "name": "Warlock",
+            "fields": {
+                "rect": { "x": 1000, "y": 600, "width": 465, "height": 975 },
+            }
+        },
+        {
             "type": "TextBoxWidget", "name": "Title",
         },
         {

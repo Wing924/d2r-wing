@@ -36,7 +36,7 @@
             "type": "ImageWidget", "name": "AgeDescriptorImage",
             "fields": {
                 "rect": { "x": 22, "y": 58 },
-                "filename": "PauseMenu\\descriptor-18",
+                "filename": "PauseMenu\\age-descriptor",
             }
         },
         {
