@@ -65,12 +65,12 @@ jobs:
     steps:
       - uses: actions/download-artifact@v6
         with:
-          path: './'
+          path: artifact
           pattern: wing-*
           merge-multiple: true
 
       - name: List downloaded artifacts
-        run: ls -l artifact/*.zip
+        run: ls -lR artifact/*.zip
 
       - name: Release
         if: startsWith(github.ref, 'refs/tags/v')
