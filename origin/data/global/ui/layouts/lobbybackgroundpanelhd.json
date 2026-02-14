@@ -277,6 +277,7 @@
                 "activateOnOpened": true,
                 "frustumBoundsMin": [ 20.0, -10.0, 70.0 ],
                 "frustumBoundsMax": [ 120.0, 20.0, 150.0 ],
+                "captureOffset": [ 0.0, 20.0, 0.0 ],
                 "overrideFrustumBoundsOnActivate": true,
                 "visDataPath": "data/hd/env/vis/ui_frontend_lobby.json",
                 "iblDataPath": "data/hd/env/ibl/act3_IW_over29_CUBEMAP.ibls",
@@ -287,7 +288,7 @@
             "type": "PlayerLoaderWidget", "name": "MainCharacterCapture",
             "fields": {
                 "position": [ 78.0, 1.1, 108.7 ],
-                "yawDegrees": -100,
+                "yawDegrees": -105,
                 "animation": "FrontendNeutral",
                 "captureInView": 0,
              }
@@ -304,8 +305,8 @@
             "type": "PlayerLoaderWidget", "name": "CharacterCapture1",
             "fields": {
                 "playerClass": "Assassin",
-                "position": [ 78.0, 1.1, 108.7 ],
-                "yawDegrees": -85,
+                "position": [ 78.0, 21.1, 108.7 ],
+                "yawDegrees": -105,
                 "animation": "FrontendNeutral",
                 "captureInView": 1
             }
@@ -314,8 +315,8 @@
             "type": "PlayerLoaderWidget", "name": "CharacterCapture2",
             "fields": {
                 "playerClass": "Sorceress",
-                "position": [ 78.0, 1.1, 108.7 ],
-                "yawDegrees": -85,
+                "position": [ 78.0, 41.1, 108.7 ],
+                "yawDegrees": -105,
                 "animation": "FrontendNeutral",
                 "captureInView": 2
             }
@@ -324,8 +325,8 @@
             "type": "PlayerLoaderWidget", "name": "CharacterCapture3",
             "fields": {
                 "playerClass": "Amazon",
-                "position": [ 78.0, 1.1, 108.7 ],
-                "yawDegrees": -85,
+                "position": [ 78.0, 61.1, 108.7 ],
+                "yawDegrees": -105,
                 "animation": "FrontendNeutral",
                 "captureInView": 3
             }
@@ -333,9 +334,9 @@
         {
             "type": "PlayerLoaderWidget", "name": "CharacterCapture4",
             "fields": {
-                "playerClass": "Assassin",
-                "position": [ 78.0, 1.1, 108.7 ],
-                "yawDegrees": -85,
+                "playerClass": "Warlock",
+                "position": [ 78.0, 81.1, 108.7 ],
+                "yawDegrees": -105,
                 "animation": "FrontendNeutral",
                 "captureInView": 4
             }
@@ -344,18 +345,18 @@
             "type": "PlayerLoaderWidget", "name": "CharacterCapture5",
             "fields": {
                 "playerClass": "Druid",
-                "position": [ 78.0, 1.1, 108.7 ],
-                "yawDegrees": -85,
+                "position": [ 78.0, 101.1, 108.7 ],
+                "yawDegrees": -105,
                 "animation": "FrontendNeutral",
-                "captureInView": 5,
+                "captureInView": 5
             }
         },
         {
             "type": "PlayerLoaderWidget", "name": "CharacterCapture6",
             "fields": {
                 "playerClass": "Paladin",
-                "position": [ 78.0, 1.1, 108.7 ],
-                "yawDegrees": -85,
+                "position": [ 78.0, 121.1, 108.7 ],
+                "yawDegrees": -105,
                 "animation": "FrontendNeutral",
                 "captureInView": 6
             }
@@ -364,8 +365,8 @@
             "type": "PlayerLoaderWidget", "name": "CharacterCapture7",
             "fields": {
                 "playerClass": "Barbarian",
-                "position": [ 78.0, 1.1, 108.7 ],
-                "yawDegrees": -85,
+                "position": [ 78.0, 141.1, 108.7 ],
+                "yawDegrees": -105,
                 "animation": "FrontendNeutral",
                 "captureInView": 7
             }
@@ -374,8 +375,8 @@
             "type": "PlayerLoaderWidget", "name": "CharacterCapture8",
             "fields": {
                 "playerClass": "Necromancer",
-                "position": [ 78.0, 1.1, 108.7 ],
-                "yawDegrees": -85,
+                "position": [ 78.0, 161.1, 108.7 ],
+                "yawDegrees": -105,
                 "animation": "FrontendNeutral",
                 "captureInView": 8
             }

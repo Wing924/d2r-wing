@@ -323,6 +323,20 @@
                     }
                 },
                 {
+                    "type": "DropdownListWidget", "name": "ClassGardenDropdown",
+                    "fields": {
+                        "rect": {"x": -745, "y": 465, "width": 560, "height": 67 },
+                        "background/rect": { "x": 0, "y": 0, "width": 560, "height": 67 },
+                        "text/rect": {"x": -50},
+                        "focusIndicatorOffset": { "x": 252, "y": 2 },
+                        "navigation": {
+                            "up": { "name": "TypeDropdown" },
+                            "right":  { "name": "right" },
+                            "down": { "name": "SeasonDropdown" }
+                        }
+                    }
+                },
+                {
                     "type": "DropdownListWidget", "name": "ClassExpansionDropdown",
                     "fields": {
                         "rect": {"x": -745, "y": 465, "width": 560, "height": 67 },

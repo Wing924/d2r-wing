@@ -6,19 +6,10 @@
         "a": 255
     },
     "TooltipStyle": {
-        "inGameTargetPadding": [
-            0,
-            0,
-            0,
-            0
-        ],
-        "inGameBackgroundColor": [
-            0,
-            0,
-            0,
-            0.8
-        ],
         "SocketedColor": "$FontColorSocketedEtherealColor",
-        "EtherealColor": "$FontColorSocketedEtherealColor"
+        "EtherealColor": "$FontColorSocketedEtherealColor",
+        "HealthPotionColor": "$FontColorLightRed",
+        "ManaPotionColor": "$FontColorLightBlue",
+        "RejuvPotionColor": "$FontColorLightPurple"
     }
 }

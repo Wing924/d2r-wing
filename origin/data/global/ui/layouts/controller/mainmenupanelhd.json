@@ -42,6 +42,9 @@
             "type": "PlayerLoaderWidget", "name": "PreloadAssassin",
         },
         {
+            "type": "PlayerLoaderWidget", "name": "PreloadWarlock",
+        },
+        {
             "type": "PlayerLoaderWidget", "name": "Player",
         },
         {
@@ -78,6 +81,7 @@
                     "down": { "name": "OnlinePlaySettingsButton" },
                     "left": { "panelBoundary": true },
                     "right": { "name": "SecondaryContextButton" },
+                    "up": {"panelBoundary": true },
                 },
             }
         },
@@ -92,6 +96,7 @@
                 "navigation": {
                     "left": { "name": "QuickPlayButton" },
                     "right": { "panelBoundary": true },
+                    "up": {"panelBoundary": true },
                 },
             }
         },

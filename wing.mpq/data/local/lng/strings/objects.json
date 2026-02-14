@@ -286,7 +286,7 @@
     "jaJP": "棺",
     "ptBR": "Ataúde",
     "ruRU": "Саркофаг",
-    "zhCN": "棺木"
+    "zhCN": "石匣"
   },
   {
     "id": 3238,
@@ -354,7 +354,7 @@
     "jaJP": "死骸",
     "ptBR": "Cadáver",
     "ruRU": "Труп",
-    "zhCN": "尸骸"
+    "zhCN": "残骸"
   },
   {
     "id": 3242,
@@ -660,7 +660,7 @@
     "jaJP": "祭壇",
     "ptBR": "altar",
     "ruRU": "святилище",
-    "zhCN": "圣坛"
+    "zhCN": "魔坛"
   },
   {
     "id": 3265,
@@ -694,7 +694,7 @@
     "jaJP": "棺桶",
     "ptBR": "Caixão",
     "ruRU": "Гроб",
-    "zhCN": "棺材"
+    "zhCN": "石匣"
   },
   {
     "id": 3267,
@@ -847,7 +847,7 @@
     "jaJP": "衛兵の死体",
     "ptBR": "Cadáver do Guarda",
     "ruRU": "Тело стражника",
-    "zhCN": "守卫的尸体"
+    "zhCN": "守卫的残骸"
   },
   {
     "id": 3276,
@@ -898,7 +898,7 @@
     "jaJP": "火の付いた体",
     "ptBR": "Corpo Flamejante",
     "ruRU": "Горящий труп",
-    "zhCN": "燃烧的尸体"
+    "zhCN": "燃烧的残骸"
   },
   {
     "id": 3282,
@@ -1000,7 +1000,7 @@
     "jaJP": "祭壇",
     "ptBR": "Altar",
     "ruRU": "Святилище",
-    "zhCN": "圣坛"
+    "zhCN": "魔坛"
   },
   {
     "id": 3290,
@@ -1238,7 +1238,7 @@
     "jaJP": "死体",
     "ptBR": "Cadáver",
     "ruRU": "Мертвое тело",
-    "zhCN": "死尸"
+    "zhCN": "残骸"
   },
   {
     "id": 3306,
@@ -1374,7 +1374,7 @@
     "jaJP": "魔術の祭壇",
     "ptBR": "Altar Mágico",
     "ruRU": "Святилище магии",
-    "zhCN": "魔法圣坛"
+    "zhCN": "魔法魔坛"
   },
   {
     "id": 3315,
@@ -1493,7 +1493,7 @@
     "jaJP": "棺",
     "ptBR": "Ataúde",
     "ruRU": "Саркофаг",
-    "zhCN": "棺木"
+    "zhCN": "石匣"
   },
   {
     "id": 3323,
@@ -1646,7 +1646,7 @@
     "jaJP": "棺の宝箱",
     "ptBR": "Arca Funerária",
     "ruRU": "Погребальный сундук",
-    "zhCN": "埋尸箱"
+    "zhCN": "残骸掩埋箱"
   },
   {
     "id": 22524,
@@ -1663,7 +1663,7 @@
     "jaJP": "棺の宝箱",
     "ptBR": "Arca Funerária",
     "ruRU": "Погребальный сундук",
-    "zhCN": "埋尸箱"
+    "zhCN": "残骸掩埋箱"
   },
   {
     "id": 22525,
@@ -2173,7 +2173,7 @@
     "jaJP": "魔術の祭壇",
     "ptBR": "Altar Mágico",
     "ruRU": "Святилище магии",
-    "zhCN": "魔法圣坛"
+    "zhCN": "魔法魔坛"
   },
   {
     "id": 22555,
@@ -2411,7 +2411,7 @@
     "jaJP": "祭壇",
     "ptBR": "Altar",
     "ruRU": "Святилище",
-    "zhCN": "圣坛"
+    "zhCN": "魔坛"
   },
   {
     "id": 22569,
@@ -2751,7 +2751,7 @@
     "jaJP": "命の祭壇",
     "ptBR": "Altar de Vida",
     "ruRU": "Святилище здоровья",
-    "zhCN": "生命圣坛"
+    "zhCN": "生命魔坛"
   },
   {
     "id": 22589,
@@ -3023,7 +3023,7 @@
     "jaJP": "死骸",
     "ptBR": "Cadáver",
     "ruRU": "Труп",
-    "zhCN": "尸骸"
+    "zhCN": "残骸"
   },
   {
     "id": 22607,
@@ -3091,7 +3091,7 @@
     "jaJP": "死骸",
     "ptBR": "Cadáver",
     "ruRU": "Труп",
-    "zhCN": "尸骸"
+    "zhCN": "残骸"
   },
   {
     "id": 22611,
@@ -3216,17 +3216,34 @@
     "id": 27213,
     "Key": "oldStash",
     "enUS": "Past",
-    "zhTW": "上一个",
+    "zhTW": "上赛季",
     "deDE": "Zurück",
     "esES": "Anterior",
     "frFR": "Préc.",
     "itIT": "Prec",
     "koKR": "이전",
-    "plPL": "Poprzedni",
+    "plPL": "Poprzednia",
     "esMX": "Anterior",
     "jaJP": "前",
     "ptBR": "Anterior",
-    "ruRU": "Прошлый",
-    "zhCN": "上一个"
+    "ruRU": "Прош.",
+    "zhCN": "过往"
+  },
+  {
+    "id": 28100,
+    "Key": "stashRemoveOnly",
+    "enUS": "Remove Only",
+    "zhTW": "仅限移除",
+    "deDE": "Nur entfernen",
+    "esES": "Eliminar solo",
+    "frFR": "Retrait uniquement",
+    "itIT": "Solo rimozione",
+    "koKR": "제거만 가능",
+    "plPL": "Tylko usuń",
+    "esMX": "Solo eliminar",
+    "jaJP": "削除のみ：",
+    "ptBR": "Apenas remover",
+    "ruRU": "Только извлечение",
+    "zhCN": "仅限取出"
   }
 ]

@@ -57,6 +57,7 @@
           "type": "UnitRootComponent"
         },
         {
+          "enableWeaponAttachInertialization": false,
           "filename": "data/hd/objects/env_pillars/arcane_tome/skeleton/arcane_tome.skeleton",
           "name": "component_skeleton",
           "type": "SkeletonDefinitionComponent"

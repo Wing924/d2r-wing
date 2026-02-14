@@ -34,6 +34,15 @@
     "y": 390
   },
   "AddFriendModalFontSize": 26,
+  "AltStyleGoldAmount": {
+    "alignment": {
+      "h": "left",
+      "v": "center"
+    },
+    "dropShadow": "$DefaultDropShadow",
+    "fontColor": "$FontColorCurrencyGold",
+    "pointSize": "$SmallPanelFontSize"
+  },
   "CalibrationTableColumn1": {
     "alignment": {
       "h": "fit",
@@ -59,6 +68,18 @@
   "ChatRect": {
     "x": -1620,
     "y": 190
+  },
+  "ChronicleSearchBox": {
+    "height": 102,
+    "width": 450,
+    "x": 1275,
+    "y": -118
+  },
+  "ChronicleSearchInput": {
+    "height": 102,
+    "width": 400,
+    "x": 40,
+    "y": 0
   },
   "CinematicsFontSize": 32,
   "CreateGameNarrowRect": {
@@ -150,6 +171,12 @@
     "g": 128,
     "r": 0
   },
+  "FontColorDesecrated": {
+    "a": 255,
+    "b": 252,
+    "g": 72,
+    "r": 154
+  },
   "FontColorGold": "$FontColorGoldYellow",
   "FontColorGoldYellow": {
     "a": 255,
@@ -212,6 +239,12 @@
     "g": 235,
     "r": 255
   },
+  "FontColorMoreLightGray": {
+    "a": 255,
+    "b": 191,
+    "g": 191,
+    "r": 191
+  },
   "FontColorOrange": {
     "a": 255,
     "b": 0,
@@ -273,7 +306,7 @@
   },
   "GameNameRect": {
     "x": 785,
-    "y": 1235
+    "y": 1276
   },
   "GoldCurrencyTextColor": "$FontColorCurrencyGold",
   "HoldToSkipDurationMilliseconds": 500,
@@ -365,6 +398,24 @@
   "LobbyAnchor": {
     "x": 0.5
   },
+  "LootFilterConfirmButtonX": 421,
+  "LootFilterItemTabRect": {
+    "height": 1000,
+    "width": 1770,
+    "x": -880,
+    "y": 670
+  },
+  "LootFilterMediumFontSize": "$MediumFontSize",
+  "LootFilterMediumLargeFontSize": "$MediumLargeFontSize",
+  "LootFilterOptionsPanelHeight": 1405,
+  "LootFilterOptionsPanelRect": {
+    "height": "$LootFilterOptionsPanelHeight",
+    "width": "$LootFilterOptionsPanelWidth",
+    "x": -865,
+    "y": 279
+  },
+  "LootFilterOptionsPanelWidth": 1730,
+  "LootFilterSmallFontSize": "$SmallFontSize",
   "MediumFontSize": 26,
   "MediumLargeFontSize": 32,
   "MediumPanelFontSize": "$MediumFontSize",
@@ -687,6 +738,7 @@
     "Spells/Barbarian/BaSkillicon",
     "Spells/Druid/DrSkillicon",
     "Spells/Assassin/AsSkillicon",
+    "Spells/Warlock/WaSkillicon",
     "Spells/SubMenu/Skillicon"
   ],
   "SkillQuantityTextRect": {
@@ -751,6 +803,14 @@
     },
     "pointSize": "$MediumLargeFontSize"
   },
+  "StyleChronicleItemList": {
+    "alignment": {
+      "h": "left",
+      "v": "center"
+    },
+    "fontColor": "$FontColorWhite",
+    "pointSize": "$SmallPanelFontSize"
+  },
   "StyleCinematicsButtonText": {
     "dropShadow": "$DefaultDropShadow",
     "fontColor": "$LightButtonTextColor",
@@ -779,6 +839,18 @@
     "pointSize": "$MediumLargeFontSize",
     "spacing": "$MinimumSpacing"
   },
+  "StyleFilterRuleListButtonTextSmall": {
+    "alignment": {
+      "v": "center"
+    },
+    "dropShadow": "$DefaultDropShadow",
+    "fontColor": "$LightButtonTextColor",
+    "options": {
+      "lineWrap": false
+    },
+    "pointSize": "$LootFilterSmallFontSize",
+    "spacing": "$MinimumSpacing"
+  },
   "StyleGoldAmount": {
     "alignment": {
       "h": "left",
@@ -787,6 +859,71 @@
     "dropShadow": "$DefaultDropShadow",
     "fontColor": "$FontColorCurrencyGold",
     "pointSize": "$XMediumLargeFontSize"
+  },
+  "StyleGoldMax": {
+    "alignment": {
+      "h": "center",
+      "v": "center"
+    },
+    "fontColor": "$FontColorWhite",
+    "pointSize": "$SmallFontSize"
+  },
+  "StyleItemListButtonText": {
+    "alignment": {
+      "v": "center"
+    },
+    "dropShadow": "$DefaultDropShadow",
+    "fontColor": "$LightButtonTextColor",
+    "pointSize": "$LootFilterMediumFontSize",
+    "spacing": "$MinimumSpacing"
+  },
+  "StyleItemListButtonTextSmall": {
+    "alignment": {
+      "v": "center"
+    },
+    "dropShadow": "$DefaultDropShadow",
+    "fontColor": "$LightButtonTextColor",
+    "options": {
+      "lineWrap": true
+    },
+    "pointSize": "$LootFilterSmallFontSize",
+    "spacing": "$MinimumSpacing"
+  },
+  "StyleLFButtonText": {
+    "alignment": {
+      "v": "center"
+    },
+    "dropShadow": "$DefaultDropShadow",
+    "fontColor": "$LightButtonTextColor",
+    "pointSize": "$LootFilterMediumLargeFontSize",
+    "spacing": "$MinimumSpacing"
+  },
+  "StyleLFButtonTextSmall": {
+    "alignment": {
+      "h": "center",
+      "v": "center"
+    },
+    "dropShadow": "$DefaultDropShadow",
+    "fontColor": "$LightButtonTextColor",
+    "options": {
+      "lineWrap": true
+    },
+    "pointSize": "$LootFilterMediumFontSize",
+    "spacing": {
+      "kerning": 0.88,
+      "leading": 0.8
+    }
+  },
+  "StyleLootFilterAltTitle": {
+    "alignment": {
+      "h": "left",
+      "v": "center"
+    },
+    "fontColor": "$FontColorGoldYellow",
+    "options": {
+      "lineWrap": true
+    },
+    "pointSize": "$LootFilterMediumFontSize"
   },
   "StyleModalDialogDescription": {
     "alignment": {
@@ -858,6 +995,25 @@
       "leading": 1
     }
   },
+  "StyleRewardsTitleBlock": {
+    "alignment": {
+      "h": "center",
+      "v": "center"
+    },
+    "dropShadow": "$DefaultDropShadow",
+    "fontColor": "$PanelTitleColor",
+    "pointSize": "$LargeFontSize",
+    "spacing": "$ReducedSpacing"
+  },
+  "StyleRuleSummaryButtonText": {
+    "alignment": {
+      "v": "center"
+    },
+    "dropShadow": "$DefaultDropShadow",
+    "fontColor": "$LightButtonTextColor",
+    "pointSize": "$LootFilterMediumFontSize",
+    "spacing": "$MinimumSpacing"
+  },
   "StyleScrollingSpeech": {
     "alignment": {
       "h": "left"
@@ -881,6 +1037,14 @@
       "v": "center"
     },
     "pointSize": "$MediumFontSize",
+    "spacing": "$ReducedSpacing"
+  },
+  "StyleSettingsLargeCarousel": {
+    "alignment": {
+      "h": "center",
+      "v": "center"
+    },
+    "pointSize": "$MediumLargeFontSize",
     "spacing": "$ReducedSpacing"
   },
   "StyleSettingsNumeric": {
@@ -1001,6 +1165,12 @@
   "TabsActiveTextColor": "$FontColorVeryLightGray",
   "TabsActiveTextColorInGame": "$FontColorVeryLightGray",
   "TabsInactiveTextColor": "$FontColorDarkGrayBlue",
+  "ToggleButtonFocusIndicatorPadding": {
+    "bottom": 9,
+    "left": 3,
+    "right": 12,
+    "top": 6
+  },
   "TooltipBorderColor": [
     0.266,
     0.266,
@@ -1043,15 +1213,16 @@
   "TooltipStyle": {
     "CraftedColor": "$FontColorOrange",
     "DefaultColor": "$FontColorWhite",
+    "DesecratedColor": "$FontColorDesecrated",
     "EtherealColor": "$FontColorSocketedEtherealColor",
     "EventItemsColor": "$FontColorOrange",
     "GoldColor": "$FontColorWhite",
-    "HealthPotionColor": "$FontColorWhite",
+    "HealthPotionColor": "$FontColorLightRed",
     "MagicColor": "$FontColorBlue",
-    "ManaPotionColor": "$FontColorWhite",
+    "ManaPotionColor": "$FontColorLightBlue",
     "QuestColor": "$FontColorGoldYellow",
     "RareColor": "$FontColorYellow",
-    "RejuvPotionColor": "$FontColorWhite",
+    "RejuvPotionColor": "$FontColorLightPurple",
     "RuneColor": "$FontColorOrange",
     "SetColor": "$FontColorGreen",
     "SocketedColor": "$FontColorSocketedEtherealColor",
@@ -1089,7 +1260,7 @@
       0,
       0,
       0,
-      0.8
+      0.6
     ],
     "inGameShowItemsSelectedBackgroundColor": [
       0,
@@ -1098,10 +1269,10 @@
       1
     ],
     "inGameTargetPadding": [
-      0,
-      0,
-      0,
-      0
+      7,
+      1,
+      7,
+      1
     ],
     "padding": [
       20,

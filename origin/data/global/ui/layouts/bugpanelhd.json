@@ -26,13 +26,13 @@
                         "filename": "PANEL/TooltipBorder/TooltipBorder",
                         "backgroundColor": [ 0.0, 0.0, 0.0, 0.80 ],
                         "tileScale": 1.0,
-                        "rect": { "x": 0, "y": 0, "width": 876, "height": 0 },
+                        "rect": { "x": 0, "y": 0, "width": 876, "height": 100 },
                     },
                     "children": [
                         {
                             "type": "TextBoxWidget", "name": "BugBuildText",
                             "fields": {
-                                "anchor": { "x": 0.5 },
+                                "anchor": { "x": 0.5, "y": 0.5 },
                                 "text": "@ReportPanelTitle",
                                 "style": {
                                     "pointSize": "$LargeFontSize",
@@ -49,7 +49,7 @@
                         "filename": "PANEL/TooltipBorder/TooltipBorder",
                         "backgroundColor": [ 0.0, 0.0, 0.0, 0.80 ],
                         "tileScale": 1.0,
-                        "rect": { "x": 0 , "y": 62, "width": 876, "height": 887 },
+                        "rect": { "x": 0 , "y": 100, "width": 876, "height": 887 },
                     },
                 },
                 {

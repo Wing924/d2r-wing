@@ -11,7 +11,8 @@
             "Spells/paladin/PaSkillicon",
             "Spells/Barbarian/BaSkillicon",
             "Spells/Druid/DrSkillicon",
-            "Spells/Assassin/AsSkillicon"
+            "Spells/Assassin/AsSkillicon",
+            "Spells/Warlock/WaSkillicon",
         ],
         "skillBackgroundFile": [
             "Controller/Panel/Spells/V2/AmSkilltree",
@@ -20,7 +21,8 @@
             "Controller/Panel/Spells/V2/PaSkilltree",
             "Controller/Panel/Spells/V2/BaSkilltree",
             "Controller/Panel/Spells/V2/DrSkilltree",
-            "Controller/Panel/Spells/V2/AsSkilltree"
+            "Controller/Panel/Spells/V2/AsSkilltree",
+            "Controller/Panel/Spells/V2/WaSkilltree",
         ],
         "skillRow": [ 179, 368, 560, 750, 939, 1129 ],
         "skillColumn": [ 451, 789, 1125 ],
@@ -53,6 +55,7 @@
                 "focusIndicatorFilename": "Controller/HoverImages/QuestTab_Hover",
                 "focusIndicatorOffset": { "x": 0, "y": -6 },
                 "focusOnMouseOver": true,
+				"tooltipOffset": { "x": 251, "y": 0 },
             },
             "children": [
                 {
@@ -72,6 +75,7 @@
                 "focusIndicatorFilename": "Controller/HoverImages/QuestTab_Hover",
                 "focusIndicatorOffset": { "x": 0, "y": -6 },
                 "focusOnMouseOver": true,
+				"tooltipOffset": { "x": 564, "y": 0 },
             },
             "children": [
                 {
@@ -91,6 +95,7 @@
                 "focusIndicatorFilename": "Controller/HoverImages/QuestTab_Hover",
                 "focusIndicatorOffset": { "x": 0, "y": -6 },
                 "focusOnMouseOver": true,
+				"tooltipOffset": { "x": 878, "y": 0 },
             },
             "children": [
                 {
@@ -112,6 +117,7 @@
                 "focusIndicatorOffset": { "x": 4, "y": -6 },
                 "onClickMessage": "SkillsTreePanelMessage:ActivateTab:3",
                 "focusOnMouseOver": true,
+				"tooltipOffset": { "x": 1190, "y": 0 },
             },
             "children": [
                 {
@@ -232,6 +238,7 @@
             "fields": {
                 "rect": { "x": 274, "y": 22, "width": 300, "height": 80 },
                 "style": "$StyleSkillTreeTabs",
+				"truncateWithEllipsis": true
             }
         },
         {
@@ -239,6 +246,7 @@
             "fields": {
                 "rect": { "x": 588, "y": 22, "width": 300, "height": 80 },
                 "style": "$StyleSkillTreeTabs",
+				"truncateWithEllipsis": true
             }
         },
         {
@@ -246,6 +254,7 @@
             "fields": {
                 "rect": { "x": 898, "y": 22, "width": 300, "height": 80 },
                 "style": "$StyleSkillTreeTabs",
+				"truncateWithEllipsis": true
             }
         },
         {
@@ -254,6 +263,7 @@
                 "text": "@GeneralSkills",
                 "rect": { "x": 1215, "y": 22, "width": 300, "height": 80 },
                 "style": "$StyleSkillTreeTabs",
+				"truncateWithEllipsis": true
             }
         },
         {

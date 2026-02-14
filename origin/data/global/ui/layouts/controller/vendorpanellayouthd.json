@@ -4,6 +4,8 @@
     "fields": {
         "rect": "$ConsoleLeftPanelRect",
         "defaultWidget": "grid",
+        "controllerGambleRefreshSoundHD": "cursor_gamble_refresh_hd",
+        "controllerGambleRefreshSoundSD": "cursor_pass",
     },
     "children": [
         {

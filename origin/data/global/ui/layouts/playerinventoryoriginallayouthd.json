@@ -76,7 +76,22 @@
                 "cellCount": { "x": 10, "y": 4 },
                 "cellSize": "$ItemCellSize",
                 "gemSocketFilename": "PANEL\\gemsocket",
+				"chronicleFlourishOffset" : { "x": -1, "y": 0},
             },
+			"children": [
+				{
+					"type": "AnimatedImageWidget", "name": "chronicleFlourish",
+					"fields": {
+						"rect": { "x": 0, "y": 0, "width": 370, "height": 540, "scale": 2 },
+						"filename": "PANEL\\Chronicle\\RewardAnims\\PANEL_ChronicleReward_1x1",
+						"blendMode": "black",
+						"fps": 30,
+						"playing": false,
+						"loop": false,
+						"frame": 30,
+					},
+				},
+			],
         },
         {
             "type": "InventorySlotWidget", "name": "slot_head",

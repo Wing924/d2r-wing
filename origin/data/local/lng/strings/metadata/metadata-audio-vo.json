@@ -12004,5 +12004,455 @@
     "Speaker": "Qual-Kehk",
     "AudioFileName": "qua_canihelpyou.wav",
     "ExtraMetadata": "Common"
-  }
+  },
+  {
+    "Id": 27783,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_act1_entry_wilderness.flac",
+    "ExtraMetadata": "Act1"
+  },
+  {
+    "Id": 27784,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_act1_entry_denofevil.flac",
+    "ExtraMetadata": "Act1"
+  },
+  {
+    "Id": 27786,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_act1_entry_burialground.flac",
+    "ExtraMetadata": "Act1"
+  },
+  {
+    "Id": 27787,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_act1_entry_monastery.flac",
+    "ExtraMetadata": "Act1"
+  },
+  {
+    "Id": 27788,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_act1_entry_forgottentower.flac",
+    "ExtraMetadata": "Act1"
+  },
+  {
+    "Id": 27789,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_act1_entry_jail.flac",
+    "ExtraMetadata": "Act1"
+  },
+  {
+    "Id": 27790,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_act1_entry_catacombs.flac",
+    "ExtraMetadata": "Act1"
+  },
+  {
+    "Id": 27791,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_act1_complete_denofevil.flac",
+    "ExtraMetadata": "Act1"
+  },
+  {
+    "Id": 27792,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_act1_complete_burialground.flac",
+    "ExtraMetadata": "Act1"
+  },
+  {
+    "Id": 27793,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_act1_find_treeofinifuss.flac",
+    "ExtraMetadata": "Act1"
+  },
+  {
+    "Id": 27794,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_act1_find_cairnstones.flac",
+    "ExtraMetadata": "Act1"
+  },
+  {
+    "Id": 27795,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_act1_find_tristram.flac",
+    "ExtraMetadata": "Act1"
+  },
+  {
+    "Id": 27796,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_act1_rescue_cain.flac",
+    "ExtraMetadata": "Act1"
+  },
+  {
+    "Id": 27797,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_act1_complete_toolsoftrade.flac",
+    "ExtraMetadata": "Act1"
+  },
+  {
+    "Id": 27798,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_act1_complete_forgottentower.flac",
+    "ExtraMetadata": "Act1"
+  },
+  {
+    "Id": 27799,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_act1_complete_andariel.flac",
+    "ExtraMetadata": "Act1"
+  },
+  {
+    "Id": 27800,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_act2_entry_radamentlair.flac",
+    "ExtraMetadata": "Act2"
+  },
+  {
+    "Id": 27801,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_act2_complete_radamentlair.flac",
+    "ExtraMetadata": "Act2"
+  },
+  {
+    "Id": 27802,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_act2_entry_clawviperlair.flac",
+    "ExtraMetadata": "Act2"
+  },
+  {
+    "Id": 28020,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_act2_begin_taintedsun.flac",
+    "ExtraMetadata": "Act2"
+  },  
+  {
+    "Id": 27803,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_act2_complete_taintedsun.flac",
+    "ExtraMetadata": "Act2"
+  },
+  {
+    "Id": 27804,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_act2_entry_arcanesanctuary.flac",
+    "ExtraMetadata": "Act2"
+  },
+  {
+    "Id": 28021,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_act2_find_summoner.flac",
+    "ExtraMetadata": "Act2"
+  },  
+  {
+    "Id": 28004,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_act2_complete_summoner.flac",
+    "ExtraMetadata": "Act2"
+  },
+  {
+    "Id": 27806,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_act2_find_decoytomb.flac",
+    "ExtraMetadata": "Act2"
+  },
+  {
+    "Id": 27807,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_act2_find_truetomb.flac",
+    "ExtraMetadata": "Act2"
+  },
+  {
+    "Id": 27808,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_act2_complete_tombs.flac",
+    "ExtraMetadata": "Act2"
+  },
+  {
+    "Id": 27809,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_act3_find_lamesentome.flac",
+    "ExtraMetadata": "Act3"
+  },
+  {
+    "Id": 27810,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_act3_complete_lamesentome.flac",
+    "ExtraMetadata": "Act3"
+  },
+  {
+    "Id": 27811,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_act3_find_beneathcity.flac",
+    "ExtraMetadata": "Act3"
+  },
+  {
+    "Id": 27812,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_act3_find_drainlever.flac",
+    "ExtraMetadata": "Act3"
+  },
+  {
+    "Id": 27813,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_act3_complete_beneathcity.flac",
+    "ExtraMetadata": "Act3"
+  },
+  {
+    "Id": 27814,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_act3_complete_bladeofoldreligion.flac",
+    "ExtraMetadata": "Act3"
+  },
+  {
+    "Id": 27815,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_act3_find_jadefigurine.flac",
+    "ExtraMetadata": "Act3"
+  },
+  {
+    "Id": 27816,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_act3_find_blackenedtemple.flac",
+    "ExtraMetadata": "Act3"
+  },
+  {
+    "Id": 27817,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_act3_complete_brokentemple.flac",
+    "ExtraMetadata": "Act3"
+  },
+  {
+    "Id": 27818,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_act3_find_guardiantower.flac",
+    "ExtraMetadata": "Act3"
+  },
+  {
+    "Id": 27819,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_act3_complete_guardiantower.flac",
+    "ExtraMetadata": "Act3"
+  },
+  {
+    "Id": 27820,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_act4_free_izual.flac",
+    "ExtraMetadata": "Act4"
+  },
+  {
+    "Id": 27821,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_act4_kill_diablo.flac",
+    "ExtraMetadata": "Act4"
+  },
+  {
+    "Id": 27822,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_act5_entry_wilderness.flac",
+    "ExtraMetadata": "Act5"
+  },
+  {
+    "Id": 27823,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_act5_complete_stopsiege.flac",
+    "ExtraMetadata": "Act5"
+  },
+  {
+    "Id": 27824,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_act5_rescue_qualkehksoldiers.flac",
+    "ExtraMetadata": "Act5"
+  },
+  {
+    "Id": 27825,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_act5_entry_nihlathaksland.flac",
+    "ExtraMetadata": "Act5"
+  },
+  {
+    "Id": 27826,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_act5_complete_nihlathaksecret.flac",
+    "ExtraMetadata": "Act5"
+  },
+  {
+    "Id": 27827,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_act5_entry_mountaintop.flac",
+    "ExtraMetadata": "Act5"
+  },
+  {
+    "Id": 27828,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_act5_entry_worldstone.flac",
+    "ExtraMetadata": "Act5"
+  },
+  {
+    "Id": 27829,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_act5_complete_defeatbaal.flac",
+    "ExtraMetadata": "Act5"
+  },
+  {
+    "Id": 27918,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_cantcarry.flac",
+    "ExtraMetadata": "Common"
+  },
+  {
+    "Id": 27919,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_overburdened.flac",
+    "ExtraMetadata": "Common"
+  },
+  {
+    "Id": 27920,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_cantuseyet.flac",
+    "ExtraMetadata": "Common"
+  },
+  {
+    "Id": 27921,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_help.flac",
+    "ExtraMetadata": "Common"
+  },
+  {
+    "Id": 27922,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_helpme.flac",
+    "ExtraMetadata": "Common"
+  },
+  {
+    "Id": 27923,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_followme.flac",
+    "ExtraMetadata": "Common"
+  },
+  {
+    "Id": 27924,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_comeon.flac",
+    "ExtraMetadata": "Common"
+  },
+  {
+    "Id": 27925,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_thisisforyou.flac",
+    "ExtraMetadata": "Common"
+  },
+  {
+    "Id": 27926,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_thisisyours.flac",
+    "ExtraMetadata": "Common"
+  },
+  {
+    "Id": 27927,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_thanks.flac",
+    "ExtraMetadata": "Common"
+  },
+  {
+    "Id": 27928,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_thankyou.flac",
+    "ExtraMetadata": "Common"
+  },
+  {
+    "Id": 27929,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_forgiveme.flac",
+    "ExtraMetadata": "Common"
+  },
+  {
+    "Id": 27930,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_oops.flac",
+    "ExtraMetadata": "Common"
+  },
+  {
+    "Id": 27931,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_bye.flac",
+    "ExtraMetadata": "Common"
+  },
+  {
+    "Id": 27932,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_goodbye.flac",
+    "ExtraMetadata": "Common"
+  },
+  {
+    "Id": 27933,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_die.flac",
+    "ExtraMetadata": "Common"
+  },
+  {
+    "Id": 27934,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_timetodie.flac",
+    "ExtraMetadata": "Common"
+  },
+  {
+    "Id": 27935,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_runaway.flac",
+    "ExtraMetadata": "Common"
+  },
+  {
+    "Id": 27936,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_run.flac",
+    "ExtraMetadata": "Common"
+  },
+  {
+    "Id": 27937,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_impossible.flac",
+    "ExtraMetadata": "Common"
+  },
+  {
+    "Id": 27938,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_icant.flac",
+    "ExtraMetadata": "Common"
+  },
+  {
+    "Id": 27939,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_needkey.flac",
+    "ExtraMetadata": "Common"
+  },
+  {
+    "Id": 27940,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_itslocked.flac",
+    "ExtraMetadata": "Common"
+  },
+  {
+    "Id": 27941,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_notenoughmana.flac",
+    "ExtraMetadata": "Common"
+  },
+  {
+    "Id": 27942,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_needmana.flac",
+    "ExtraMetadata": "Common"
+  },
+  {
+    "Id": 27943,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_cantdohere.flac",
+    "ExtraMetadata": "Common"
+  },
+  {
+    "Id": 27944,
+    "Speaker": "Warlock",
+    "AudioFileName": "war_notintown.flac",
+    "ExtraMetadata": "Common"
+  }                                                                              
 ]

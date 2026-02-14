@@ -76,7 +76,7 @@
         },
         {
             "type": "TableWidget", "name": "PauseTable",
-            "fields": {
+            "fields": {  
                 "anchor": { "x": 0.5, "y": 0.5 },
                 "rect": { "x": -329, "y": -340 },
                 "columns": [ { "width": 658, "alignment": { "h": "center", "v": "center" } } ],
@@ -149,7 +149,7 @@
             "type": "ImageWidget", "name": "AgeDescriptorImage",
             "fields": {
                 "rect": { "x": 40, "y": 80 },
-                "filename": "PauseMenu\\descriptor-18",
+                "filename": "PauseMenu\\age-descriptor",
             }
         },
         {

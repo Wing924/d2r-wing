@@ -71,7 +71,7 @@
                                 {
                                     "type": "TextBoxWidget", "name": "ItemNameDisplayModeText",
                                     "fields": {
-                                        "text": "@ItemNameDisplayModeText",
+                                        "text": "@CfgShowItems",
                                         "style": "$StyleSettingsText"
                                     }
                                 },
@@ -88,6 +88,39 @@
                                         "enabledColor": "$CarouselEnabledColor",
                                         "disabledColor": "$CarouselDisabledColor",
                                         "tooltipString": "@ItemNameDisplayModeTooltip",
+                                        "tooltipStyle": {
+                                            "fontStyle": {
+                                                "options": { "newlineHandling": "standard" },
+                                            },
+                                            "showAfterDelay": true,
+                                        }
+                                    }
+                                },
+                            ]
+                        },
+						{
+                            "type": "TableRowWidget", "name": "Row UnfilteredItemNameDisplayMode",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "UnfilteredItemNameDisplayModeText",
+                                    "fields": {
+                                        "text": "@CfgShowItemsUnfiltered",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                },
+                                {
+                                    "type": "CarouselWidget", "name": "UnfilteredItemNameDisplayMode",
+                                    "fields": {
+                                        "rect": "$OptionsCarouselRect",
+                                        "focusIndicatorPadding": "$OptionsCarouselFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsCarouselFocusIndicatorFilename",
+                                        "states": [ "ItemDisplayHold", "ItemDisplayToggle", "ItemDisplayTimed" ],
+                                        "fontType": "8ptE",
+                                        "onUpdateMessage": "OptionsPanelMessage:SetUnfilteredItemNameDisplayMode",
+                                        "style": "$StyleSettingsCarousel",
+                                        "enabledColor": "$CarouselEnabledColor",
+                                        "disabledColor": "$CarouselDisabledColor",
+                                        "tooltipString": "@UnfilteredItemNameDisplayModeTooltip",
                                         "tooltipStyle": {
                                             "fontStyle": {
                                                 "options": { "newlineHandling": "standard" },
@@ -498,6 +531,41 @@
                                         "toggledHoveredFrame": 6,
                                         "onClickMessage": "OptionsPanelMessage:SetShowClock",
                                         "tooltipString": "@OptionsMenuShowClockDescription",
+                                        "tooltipStyle": {
+                                            "showAfterDelay": true,
+                                        }
+                                    },
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row ShowBatteryLevel",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ShowBatteryLevelText",
+                                    "fields": {
+                                        "text": "@ShowBatteryLevel",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                },
+                                {
+                                    "type": "ToggleButtonWidget", "name": "ShowBatteryLevel",
+                                    "fields": {
+                                        "rect": "$OptionsToggleRect",
+                                        "sound": "cursor_menu_select_hd",
+                                        "focusIndicatorPadding": "$OptionsToggleFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsToggleFocusIndicatorFilename",
+                                        "filename": "Lobby\\CreateGame\\CreateGame_AdvancedCheckbox",
+                                        "focusIndicatorOffset": { "x": 0, "y": -4 },
+                                        "untoggledFrame": 0,
+                                        "untoggledPressedFrame": 1,
+                                        "untoggledHoveredFrame": 3,
+                                        "untoggledDisabledFrame": 2,
+                                        "toggledFrame": 4,
+                                        "toggledPressedFrame": 5,
+                                        "toggledHoveredFrame": 6,
+                                        "onClickMessage": "OptionsPanelMessage:ShowBatteryLevel",
+                                        "tooltipString": "",
                                         "tooltipStyle": {
                                             "showAfterDelay": true,
                                         }

@@ -37,15 +37,16 @@
         {
             "type": "FriendsRecyclingListWidget", "name": "FriendsList",
             "fields": {
+                "itemSelectionMessage": "FriendsListMessage:ShowContextMenu",
                 "isHoverList": true,
+                "navigationWrapsList": false,
                 "selectorName": "FriendsListSelector",
             },
             "children": [
                 {
-                    "type": "HoverListItemWidget", "name": "Template",
+                    "type": "FriendsListItemWidget", "name": "Template",
                     "fields": {
-                        "focusIndicatorFilename": "Controller/HoverImages/FriendsList_Hover",
-                        "focusIndicatorOffset": { "x": 0, "y": -3 },
+                        "focusIndicatorPadding": { "left": 0, "top": 0, "right": 6, "bottom": 0 },
                         "navigation": {
                             "up": { "name": "OnlineStatus" },
                             "down": { "name": "AddFriends" },

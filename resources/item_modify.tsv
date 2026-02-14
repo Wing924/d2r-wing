@@ -13,34 +13,34 @@ id	Key	zhTW	prefix	newName	suffix	color
 20435	cm1	小型咒符	★		★
 20436	cm2	大型咒符	★		★
 20437	cm3	特大咒符	★		★
-2182	gpl	刺鼻毒氣藥水		(null)
-2183	opl	烈性藥水		(null)
-2184	gpm	窒息毒氣藥水		(null)
-2185	opm	爆炸藥水		(null)
-2186	gps	腐臭毒氣藥水		(null)
-2187	ops	火油藥水		(null)
+2182	gpl	刺鼻毒氣藥水		小毒
+2183	opl	烈性藥水		小炸
+2184	gpm	窒息毒氣藥水		中毒
+2185	opm	爆炸藥水		中炸
+2186	gps	腐臭毒氣藥水		大毒
+2187	ops	火油藥水		大炸
 2191	leg	維特的腿				red
-2200	tsc	城鎮傳送卷軸		(null)
-2202	isc	鑑定卷軸		(null)
-2207	vps	精力藥水		(null)
+2200	tsc	城鎮傳送卷軸		回城		gray
+2202	isc	鑑定卷軸		鑑定		gray
+2207	vps	精力藥水		精力		gray
 2208	yps	解毒藥水		解毒		gray
-2209	rvs	活力藥水		(null)
-2210	rvl	全效活力藥水		大紫		pink
-2211	wms	融冰藥水		(null)
+2209	rvs	活力藥水		小紫
+2210	rvl	全效活力藥水		大紫
+2211	wms	融冰藥水		融冰		gray
 2212	amu	護身符	★		★
 2214	rin	戒指	★		★
 2215	gld	金幣		金
 2218	aqv	弓矢				gray
 2220	cqv	弩箭				gray
-2221	Key	鑰匙		(null)		gray
-2222	key	鑰匙		(null)		gray
-2266	hp1	弱效生命藥水		(null)
-2267	hp2	輕效生命藥水		(null)
-2268	hp3	生命藥水		(null)
-2269	hp4	強效生命藥水		(null)
-2270	hp5	特效生命藥水		超紅		gray
-2271	mp1	弱效法力藥水		(null)
-2272	mp2	輕效法力藥水		(null)
-2273	mp3	法力藥水		(null)
-2274	mp4	強效法力藥水		(null)
-2275	mp5	特效法力藥水		超藍		gray
+2221	Key	鑰匙				gray
+2222	key	鑰匙				gray
+2266	hp1	弱效生命藥水		微紅
+2267	hp2	輕效生命藥水		小紅
+2268	hp3	生命藥水		中紅
+2269	hp4	強效生命藥水		大紅
+2270	hp5	特效生命藥水		超紅
+2271	mp1	弱效法力藥水		微藍
+2272	mp2	輕效法力藥水		小藍
+2273	mp3	法力藥水		中藍
+2274	mp4	強效法力藥水		大藍
+2275	mp5	特效法力藥水		超藍

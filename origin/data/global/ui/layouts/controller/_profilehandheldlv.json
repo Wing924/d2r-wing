@@ -2,6 +2,40 @@
     // Base (parent) profile.
     "basedOn": "HandheldHD",
 
-    "MediumFontSize": 34,
-    "SmallFontSize": 32,
+    "SmallFontSize": 40,
+	"MediumFontSize": 40,
+    "MediumLargeFontSize": 40,
+    "XMediumFontSize": 40,
+	"XMediumLargeFontSize": 40,
+	"LargeFontSize": 40,
+    "SmallPanelFontSize": 32,
+
+    //Tutorial Tooltips
+	"TooltipConfirmSmall": { "x": 200, "y": 400 },
+    "TooltipDismissSmall": { "x": 200, "y": 550 },
+    "TooltipConfirmMed": { "x": 200, "y": 575 },
+    "TooltipDismissMed": { "x": 200, "y": 725 },
+    "TooltipConfirmLarge": { "x": 200, "y": 850 },
+    "TooltipDismissLarge": { "x": 200, "y": 1000 },
+    "TooltipConfirmXL": { "x": 200, "y": 1150 },
+    "TooltipDismissXL": { "x": 200, "y": 1300 },
+	
+	// LootFilter overrides
+	"LootFilterSmallFontSize": 32,
+	"LootFilterMediumFontSize": 32,
+	"LootFilterMediumLargeFontSize": 32,
+    
+    // FriendsList overrides
+    "FriendsListMediumFontSize": 30,
+    "FriendsListSmallFontSize": 24,
+
+    // Modal Overrides
+    "StyleModalDialogDescription":
+    {
+        "fontColor": "$ModalDescriptionTextColor",
+        "alignment": { "h": "center", "v": "center" },
+        "options": { "lineWrap": true, "newlineHandling": "standard" },
+        "pointSize": "$MediumFontSize",
+        "spacing": { "leading": 0.72, "kerning": 0.88 },
+    },
 }

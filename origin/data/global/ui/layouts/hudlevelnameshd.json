@@ -25,7 +25,7 @@
                 "rect": { "y": 100 },
                 "style": {
                     "pointSize": 54,
-                    "fontColor": { "r": 128, "g": 0, "b": 128 },
+                    "fontColor": "$FontColorDesecrated",
                     "alignment": { "h": "center", "v": "bottom" },
                     "dropShadow":  "$DefaultDropShadow"
                 }

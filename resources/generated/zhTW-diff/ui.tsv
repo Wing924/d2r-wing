@@ -358,7 +358,7 @@ id	Key	old	new
 10091	strExpansionHardLadder	資料片專家級排行	資料片專家級天梯排名
 10094	strrepairallequip	全面修復	修復所有物品
 10101	strgamefailillegaljoinXB	無法進入遊戲。暗黑破壞神 II 的人物，無法加入由暗黑破壞神 II資料片之人物所建立的遊戲中。	無法進入遊戲。非資料片角色無法加入由資料片角色所創建的遊戲。
-10102	strgamefailillegaljoinXC	無法進入遊戲。一位暗黑破壞神II資料片的人物無法加入一個由暗黑破壞神II所開創的遊戲。	無法進入遊戲。非資料片角色無法加入由資料片角色所創建的遊戲。
+10102	strgamefailillegaljoinXC	無法進入遊戲。一位暗黑破壞神II資料片的人物無法加入一個由暗黑破壞神II所開創的遊戲。	無法進入遊戲。非經典角色無法加入由經典角色創建的遊戲。
 10104	charmontohit1X	平均機率中有 %s 會擊中你： %d%%	%s擊中你的平均機率：%d%%
 10105	charmontohit2X	"格擋機率：%d%%
 %s擊中你的平均機率：%d%%"	"格檔機率：%d%%

@@ -13,3 +13,6 @@ killed	Unit dies
 absorbdamage	Unit takes damage
 levelup	Unit gained a Level
 death	Monster dies
+install	The event is installed
+hextrigger	Special event to trigger hexes
+absorbresisteddamage	Unit takes damage which has been resisted

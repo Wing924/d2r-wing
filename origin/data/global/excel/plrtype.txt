@@ -7,3 +7,4 @@ Barbarian	BA
 Expansion	
 Druid	DZ
 Assassin	AI
+Warlock	WK

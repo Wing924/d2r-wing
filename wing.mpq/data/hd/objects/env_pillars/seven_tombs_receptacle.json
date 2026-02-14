@@ -49,6 +49,7 @@
           "type": "UnitRootComponent"
         },
         {
+          "enableWeaponAttachInertialization": false,
           "filename": "data/hd/objects/env_pillars/seven_tombs_receptacle/skeleton/seven_tombs_receptacle.skeleton",
           "name": "component_skeleton",
           "type": "SkeletonDefinitionComponent"

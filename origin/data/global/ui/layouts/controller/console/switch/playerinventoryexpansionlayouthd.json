@@ -40,6 +40,11 @@
         },
         {
             "type": "InventoryGridWidget", "name": "grid",
+			"children": [
+				{
+					"type": "AnimatedImageWidget", "name": "chronicleFlourish",
+				}
+			]
         },
         {
             "type": "InventorySlotWidget", "name": "slot_head",

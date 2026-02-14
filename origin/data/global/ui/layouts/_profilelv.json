@@ -71,6 +71,7 @@
         "GoldColor": "$FontColorWhite",
         "RuneColor": "$FontColorOrange",
         "EventItemsColor": "$FontColorOrange",
+        "DesecratedColor": "$FontColorDesecrated",
     },
 
     // HirablesPanel
@@ -153,4 +154,15 @@
     // Join game tweaks.
     "JoinGamePlayerEntryHeight": 140,
     "JoinGamePlayerNameHeight": 100,
+	
+	// Loot filter
+	"StyleLFButtonTextSmall":
+    {
+        "fontColor": "$LightButtonTextColor",
+        "pointSize": "$LootFilterSmallFontSize",
+        "dropShadow": "$DefaultDropShadow",
+        "spacing": { "kerning": 0.88, "leading": 0.8 },
+		"alignment": { "v": "center", "h": "center" },
+		"options": { "lineWrap": true },
+    },
 }

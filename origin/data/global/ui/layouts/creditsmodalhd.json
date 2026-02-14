@@ -17,7 +17,7 @@
             "fields": {
                 "rect": { "x": 1080, "width": 250 },
                 "anchor": { "x": -0.5, "y": 0.0 },
-                "filename": "CreditsResurrected.txt",
+                "filename": "CreditsROTW.txt",
                 "normalScrollPerSecond": 165,
                 "fastScrollPerSecond": 500,
                 "maxScrollPerSecond": 2000,

@@ -15,6 +15,7 @@
     "FontColorGray": { "r": 99, "g": 99, "b": 99, "a": 255 },
     "FontColorGrey": "$FontColorGray",
     "FontColorTransparent": { "r": 0, "g": 0, "b": 0, "a": 0 },
+    "FontColorDesecrated": { "r": 174, "g": 0, "b": 255 },
 
     // Font sizes.
 
@@ -102,6 +103,7 @@
         "SPELLS/BaSkillicon",
         "SPELLS/DrSkillicon",
         "SPELLS/AsSkillicon",
+        "SPELLS/WaSkillicon",
         "SPELLS/Skillicon"
     ],
 

@@ -7,3 +7,4 @@ Barbarian	bar
 Expansion	
 Druid	dru
 Assassin	ass
+Warlock	war

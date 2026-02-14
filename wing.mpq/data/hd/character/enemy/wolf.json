@@ -93,6 +93,7 @@
           "type": "UnitRootComponent"
         },
         {
+          "enableWeaponAttachInertialization": false,
           "filename": "data/hd/character/enemy/wolf/skeleton/wolf.skeleton",
           "name": "component_skeleton",
           "type": "SkeletonDefinitionComponent"

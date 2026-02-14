@@ -3,7 +3,7 @@
     "fields": {
         "rect": {"x": 455, "y": 240, "width": 1140, "height": 1225},
         "anchor": { "x": 0.5 },
-        "numLadderEntriesPerPage": 14,
+        "numLadderEntriesPerPage": 12,
         "defaultCharacterNameColor": "$FontColorWhite",
         "deceasedCharacterNameColor": "$FontColorGray",
         "defaultWidget": "SeasonDropdown"
@@ -15,14 +15,14 @@
                 {
                     "type": "ImageWidget", "name": "MainListBackground",
                     "fields": { 
-                        "rect": { "x": 10, "y": 155 }, 
+                        "rect": { "x": 10, "y": 262 }, 
                         "filename": "Lobby\\Ladder\\Ladder_List"
                     }
                 },
                 {
                     "type": "ListWidget", "name": "MainLadderList",
                     "fields": {
-                        "rect": { "x": 13, "y": 157, "width": 1111, "height": 760 },
+                        "rect": { "x": 13, "y": 264, "width": 1111, "height": 653 },
                         "direction": "vertical",
                         "selectorName": "LadderSelector",
                     },
@@ -106,7 +106,7 @@
                 {
                     "type": "TextBoxWidget", "name": "MainListRankTitle",
                     "fields": { 
-                        "rect": { "x": 20, "y": 105, "width": 240, "height": 40 }, 
+                        "rect": { "x": 20, "y": 212, "width": 240, "height": 40 }, 
                         "text": "@RankX",
                         "style": {
                             "fontColor": "$FontColorLightGray", 
@@ -119,7 +119,7 @@
                 {
                     "type": "TextBoxWidget", "name": "MainListNameTitle",
                     "fields": { 
-                        "rect": { "x": 260, "y": 105, "width": 340, "height": 40 }, 
+                        "rect": { "x": 260, "y": 212, "width": 340, "height": 40 }, 
                         "text": "@strName",
                         "style": {
                             "fontColor": "$FontColorLightGray", 
@@ -132,7 +132,7 @@
                 {
                     "type": "TextBoxWidget", "name": "MainListClassTitle",
                     "fields": { 
-                        "rect": { "x": 530, "y": 105, "width": 160, "height": 40 }, 
+                        "rect": { "x": 530, "y": 212, "width": 160, "height": 40 }, 
                         "text": "@strClass",
                         "style": {
                             "fontColor": "$FontColorLightGray", 
@@ -145,7 +145,7 @@
                 {
                     "type": "TextBoxWidget", "name": "MainListLevelTitle",
                     "fields": { 
-                        "rect": { "x": 680, "y": 105, "width": 180, "height": 40 }, 
+                        "rect": { "x": 680, "y": 212, "width": 180, "height": 40 }, 
                         "text": "@strchrlvl",
                         "style": {
                             "fontColor": "$FontColorLightGray", 
@@ -158,7 +158,7 @@
                 {
                     "type": "TextBoxWidget", "name": "MainListExperienceTitle",
                     "fields": { 
-                        "rect": { "x": 865, "y": 105, "width": 255, "height": 40 }, 
+                        "rect": { "x": 865, "y": 212, "width": 255, "height": 40 }, 
                         "text": "@strchrexp",
                         "style": {
                             "fontColor": "$FontColorLightGray", 
@@ -323,7 +323,7 @@
                 {
                     "type": "TextBoxWidget", "name": "TypeTitle",
                     "fields": { 
-                        "rect": { "x": 320, "y": 0, "width": 200, "height": 40 }, 
+                        "rect": { "x": 5, "y": 107, "width": 200, "height": 40 }, 
                         "text": "@LadderType",
                         "style": {
                             "fontColor": "$FontColorLightGray", 
@@ -335,15 +335,22 @@
                 {
                     "type": "DropdownListWidget", "name": "TypeDropdown",
                     "fields": {
-                        "rect": {"x": 320, "y": 40, "width": 400, "height": 67 },
-                        "background/rect": { "x": 0, "y": 0, "width": 400, "height": 67 },
+                        "rect": {"x": 5, "y": 147, "width": 700, "height": 67 },
+                        "background/rect": { "x": 0, "y": 0, "width": 700, "height": 67 },
                         "text/rect": {"x": -50},
                         "focusIndicatorFilename": "Controller/HoverImages/LadderDropdown_Hover",
-                        "focusIndicatorOffset": { "x": 173, "y": 4 },
+                        "focusIndicatorOffset": { "x": 320, "y": 4 },
                         "pressedFrame": 1,
                         "disabledFrame": 2,
                         "hoveredFrame": 3,
-                        "states": [ "@Expansion", "@LadderHardcoreExpansionAbbreviated", "@Classic", "@LadderHardcoreClassicAbbreviated" ],
+                        "states": [
+							"@Expansion",
+							"@LadderHardcoreExpansionAbbreviated",
+							"@Classic",
+							"@LadderHardcoreClassicAbbreviated",
+							"@RotW",
+							"@LadderHardcoreRotWAbbreviated"
+						],
                         "text/style": {
                             "pointSize": "$MediumFontSize",
                             "alignment": { "h": "center", "v": "center" },
@@ -355,7 +362,7 @@
                 {
                     "type": "TextBoxWidget", "name": "ClassTitle",
                     "fields": { 
-                        "rect": { "x": 730, "y": 0, "width": 200, "height": 40 }, 
+                        "rect": { "x": 320, "y": 0, "width": 200, "height": 40 }, 
                         "text": "@strClass",
                         "style": {
                             "fontColor": "$FontColorLightGray", 
@@ -365,13 +372,33 @@
                     }
                 },
                 {
-                    "type": "DropdownListWidget", "name": "ClassExpansionDropdown",
+                    "type": "DropdownListWidget", "name": "ClassGardenDropdown",
                     "fields": {
-                        "rect": {"x": 730, "y": 40, "width": 400, "height": 67 },
-                        "background/rect": { "x": 0, "y": 0, "width": 400, "height": 67 },
+                        "rect": {"x": 320, "y": 40, "width": 475, "height": 67 },
+                        "background/rect": { "x": 0, "y": 0, "width": 475, "height": 67 },
                         "text/rect": {"x": -50},
                         "focusIndicatorFilename": "Controller/HoverImages/LadderDropdown_Hover",
-                        "focusIndicatorOffset": { "x": 172, "y": 4 },
+                        "focusIndicatorOffset": { "x": 208, "y": 4 },
+                        "pressedFrame": 1,
+                        "disabledFrame": 2,
+                        "hoveredFrame": 3,
+                        "states": [ "@LadderClassFilterAll", "@partycharama", "@partycharass", "@partycharnec", "@partycharbar", "@partycharpal", "@partycharsor", "@partychardru", "@warlockstr" ],
+                        "text/style": {
+                            "pointSize": "$MediumFontSize",
+                            "alignment": { "h": "center", "v": "center" },
+                        },
+                        "textColor": "$FontColorLightGold",
+                        "onUpdateMessage": "Lobby:LadderKeyChanged",
+                    }
+                },
+                {
+                    "type": "DropdownListWidget", "name": "ClassExpansionDropdown",
+                    "fields": {
+                        "rect": {"x": 320, "y": 40, "width": 475, "height": 67 },
+                        "background/rect": { "x": 0, "y": 0, "width": 475, "height": 67 },
+                        "text/rect": {"x": -50},
+                        "focusIndicatorFilename": "Controller/HoverImages/LadderDropdown_Hover",
+                        "focusIndicatorOffset": { "x": 208, "y": 4 },
                         "pressedFrame": 1,
                         "disabledFrame": 2,
                         "hoveredFrame": 3,
@@ -387,11 +414,11 @@
                 {
                     "type": "DropdownListWidget", "name": "ClassClassicDropdown",
                     "fields": {
-                        "rect": {"x": 730, "y": 40, "width": 400, "height": 67 },
-                        "background/rect": { "x": 0, "y": 0, "width": 400, "height": 67 },
+                        "rect": {"x": 320, "y": 40, "width": 475, "height": 67 },
+                        "background/rect": { "x": 0, "y": 0, "width": 475, "height": 67 },
                         "text/rect": {"x": -50},
                         "focusIndicatorFilename": "Controller/HoverImages/LadderDropdown_Hover",
-                        "focusIndicatorOffset": { "x": 172, "y": 4 },
+                        "focusIndicatorOffset": { "x": 208, "y": 4 },
                         "pressedFrame": 1,
                         "disabledFrame": 2,
                         "hoveredFrame": 3,

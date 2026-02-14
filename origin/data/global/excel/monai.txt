@@ -105,7 +105,7 @@ BladeCreeper									0
 InvisoPet	Teleport Skill Range	AI Delay (Frames)							0
 DeathSentry		AI Delay (Frames)	Skill2 (% Chance)	Skill2 (Range)					0
 ShadowWarrior	Max Target Range	Caster Leash Range	Attack (% Chance)	Skill Decrement				Summon Skill/Skill Min Chance/Skill Max Chance (#/256)	0
-ShadowMaster	Approach Range/Melee Bonus Rating/Progressive Bonus Rating	Random Skill Pick/Enemy Awareness Range/Caster Leash Range	Attack (% Chance)					Summon Skill	0
+ShadowMaster	Approach Enemy Range Squared/Melee Bonus Chance/Progressive Skill Bonus Chance	Random Skill Bonus Chance/Target Max Range/Boss Leash Range Squared	"Basic Attack % Chance (minus max(summoning skill level, 1)*2)"					Summoning Skill ID	0
 Raven	Caster Min Leash Range	Caster Ideal Leash Range	Attack interval (Frames)	Attack Enemy (% Chance)	Caster Max Leash Range				0
 DruidWolf	AI Delay (Frames)	Skill1 (Fenris Rage) (% Chance)	Walk Randomly (% Chance)	Max Target Range	Caster Leash Range				0
 Totem	Run Away From Enemy (% Chance)	Stay Close to Caster (% Chance)	Teleport Leash Range to Caster	Move Leash Range to Caster					0
@@ -142,8 +142,15 @@ BaalTentacle	Attack1 (% Chance)	AI Delay (Frames)	Base Life Duration (Frames)			
 BaalCrabClone									0
 BaalMinion	Skill1/Attack1 (% Chance)	Approach Enemy (% Chance)	"Skill1 (% Chance), else Attack1 else AI Delay (Frames)"	AI Delay (Frames)					0
 ClawViperEx	Skill1 (Charge) (% Chance)	Skill1 (Charge) Range	Attack2 (% Chance)	Attack1 (% Chance)	AI Delay (Frames)	"Charge overlay (0 = none, 2 = red, else blue)"	Attack1 Range	Attack1 Interval (Frames)	0
-ShadowMasterNoInit	Approach Enemy Range/Melee bonus rating/Progressive bonus rating	Caster Leash Range	Attack (% Chance)					summoning skill	0
+ShadowMasterNoInit	Approach Enemy Max Range Squared/Melee Bonus Chance/Progressive Skill Bonus Chance	Random Skill Bonus Chance/Target Max Range/Boss Leash Range Squared	"Basic Attack % Chance (minus max(summoning skill * 2, 1))"					Summoning Skill ID	0
 UberIzual	Attack1 (% Chance)	Approach Enemy (% Chance)	Ranged Skill1 (Frost Nova) (% Chance)	Melee Skill1 (Frost Nova) (% Chance)	Post Skill1 (Frost Nova) AI Delay (Frames)	Post Skill1 (Frost Nova) Attack Swing Count			0
 UberBaal									0
 UberMephisto									0
 UberDiablo									0
+GenericPet	Leash Distance / Warp Distance / Close Distance	Ambient Wander Chance / Swarm Cutoff / Flags	Skill Gather Type / Allow Skill Bonuses / Skill Choose Type	Mode Attack Mode / Mode Attack AI Type / Mode Attack Bonus Rating	Melee Sweet Spot Min / Melee Sweet Spot Max / Melee Bonus Rating	Ranged Sweet Spot Min / Ranged Sweet Spot Max / Ranged Bonus Rating	Random Bonus Rating / Progressive Bonus Rating		0
+ColossalWhirlwind	Attack/Skill1 Range	Attack/Skill1 (% Chance)	Attack1/Attack2/Skill1 (% Chance)	Target Range	Run Away From Target (Frames)				0
+ColossalThrow	Attack/Skill1 Range	Attack/Skill1 (% Chance)	Attack1/Attack2/Skill1 (% Chance)	Target Range	Run Away From Target (Frames)				0
+ColossalLeap	Attack/Skill1 Range	Attack/Skill1 (% Chance)	Attack1/Attack2/Skill1 (% Chance)	Lower bound frame	Upper bound frame	Max summons in lifetime			0
+ColBarbWhirl	Attack/Skill1 Range	Attack/Skill1 (% Chance)	Attack1/Attack2/Skill1 (% Chance)	Target Range	Run Away From Target (Frames)				0
+ColBarbThrow	Attack/Skill1 Range	Attack/Skill1 (% Chance)	Attack1/Attack2/Skill1 (% Chance)	Target Range	Run Away From Target (Frames)				0
+ColBarbFrenzy	Attack/Skill1 Range	Attack/Skill1 (% Chance)	Attack1/Attack2/Skill1 (% Chance)	Target Range	Run Away From Target (Frames)				0

@@ -5,7 +5,8 @@
             "type": "NineTileImageWidget", "name": "FocusIndicator",
             "fields": {
                 "filename": "Controller/PANEL/ControllerSelector/ControllerSelectorBorder",
-                "tileScale": 1.0,
+              "tileScale": 1.0,
+              "padding": { "left":15, "top": 15, "right": 15, "bottom": 15 },
             }
         },
     ],

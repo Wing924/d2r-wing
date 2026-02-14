@@ -39,6 +39,14 @@
                                     ]
                                 },
                                 {
+                                    "type": "ImageWidget", "name": "ExpansionIcon",
+                                    "children": [
+                                        {
+                                            "type": "FocusableWidget", "name": "ExpansionIconTooltip",
+                                        }
+                                    ]
+                                },
+                                {
                                     "type": "ImageWidget", "name": "HardcoreIcon",
                                     "children": [
                                         {

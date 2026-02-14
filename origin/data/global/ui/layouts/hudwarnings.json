@@ -15,11 +15,34 @@
     },
     "children": [
         {
+            "type": "LayoutItemWidget", "name": "BatteryInfoTextWrapper",
+            "fields": {
+                "minHeight": 16,
+                "marginRight": 4,
+                "marginTop": 4,
+                "marginBottom": 4,
+            },
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "BatteryInfoText",
+                    "fields": {
+                        "fitToText": true,
+                        "fontType": "16pt",
+                        "style": {
+                            "fontColor": { "r": 199, "g": 179, "b": 119 },
+                            "alignment": { "v": "top", "h": "right" },
+                            "options": { "newlineHandling": "standard" },
+                        },
+                    }
+                },
+            ]
+        },
+        {
             "type": "LayoutItemWidget", "name": "InfoTextWrapper",
             "fields": {
                 "minHeight": 48,
                 "marginRight": 4,
-                "marginTop": 4,
+                "marginTop": -4,
                 "marginBottom": 4,
             },
             "children": [
@@ -52,7 +75,7 @@
                         "fitToText": true,
                         "fontType": "16pt",
                         "style": {
-                            "fontColor": { "r": 174, "g": 0, "b": 255 },
+                            "fontColor": "$FontColorDesecrated",
                             "alignment": { "v": "top", "h": "right" },
                             "options": { "newlineHandling": "standard" }
                         },

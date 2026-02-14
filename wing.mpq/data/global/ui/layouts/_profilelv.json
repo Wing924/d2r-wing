@@ -118,6 +118,22 @@
   },
   "SmallFontSize": 28,
   "SmallPanelFontSize": 22,
+  "StyleLFButtonTextSmall": {
+    "alignment": {
+      "h": "center",
+      "v": "center"
+    },
+    "dropShadow": "$DefaultDropShadow",
+    "fontColor": "$LightButtonTextColor",
+    "options": {
+      "lineWrap": true
+    },
+    "pointSize": "$LootFilterSmallFontSize",
+    "spacing": {
+      "kerning": 0.88,
+      "leading": 0.8
+    }
+  },
   "StyleNPCDialogueSize": "$LargeFontSize",
   "StyleScrollingSpeech": {
     "alignment": {
@@ -205,15 +221,16 @@
   "TooltipStyle": {
     "CraftedColor": "$FontColorOrange",
     "DefaultColor": "$FontColorWhite",
+    "DesecratedColor": "$FontColorDesecrated",
     "EtherealColor": "$FontColorSocketedEtherealColor",
     "EventItemsColor": "$FontColorOrange",
     "GoldColor": "$FontColorWhite",
-    "HealthPotionColor": "$FontColorWhite",
+    "HealthPotionColor": "$FontColorLightRed",
     "MagicColor": "$FontColorBlue",
-    "ManaPotionColor": "$FontColorWhite",
+    "ManaPotionColor": "$FontColorLightBlue",
     "QuestColor": "$FontColorGoldYellow",
     "RareColor": "$FontColorYellow",
-    "RejuvPotionColor": "$FontColorWhite",
+    "RejuvPotionColor": "$FontColorLightPurple",
     "RuneColor": "$FontColorOrange",
     "SetColor": "$FontColorGreen",
     "SocketedColor": "$FontColorSocketedEtherealColor",
@@ -260,10 +277,10 @@
       1
     ],
     "inGameTargetPadding": [
-      0,
-      0,
-      0,
-      0
+      7,
+      1,
+      7,
+      1
     ],
     "padding": [
       20,

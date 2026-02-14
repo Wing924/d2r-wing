@@ -43,6 +43,14 @@
           },
           "state_machine_filename": "",
           "type": "UnitRootComponent"
+        },
+        {
+          "alpha": 1,
+          "blendFunction": 1,
+          "blendInTimeSec": 0.15,
+          "isMirroredBladesOnly": true,
+          "name": "entity_root_ModelFadeInDefinition",
+          "type": "ModelFadeInDefinitionComponent"
         }
       ],
       "id": 2001416446,

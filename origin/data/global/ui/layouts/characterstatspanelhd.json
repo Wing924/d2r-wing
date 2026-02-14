@@ -270,8 +270,8 @@
                                     "alignment": { "h": "center", "v": "center" },
                                     "options": { "newlineHandling": "standard" },
                                     "spacing": { "kerning": 0.87, "leading": 0.75 }
-
                                 },
+                                "truncateWithEllipsis": true
                             },
                             "children": [
                                 {
@@ -439,6 +439,7 @@
                                     "options": { "newlineHandling": "standard" },
                                     "spacing": { "kerning": 0.87, "leading": 0.75 }
                                 },
+                                "truncateWithEllipsis": true
                             },
                             "children": [
                                 {

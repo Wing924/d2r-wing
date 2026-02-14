@@ -202,6 +202,36 @@
             "Kegan",
             "Phelan"
         ],
+        "warlockNames": [
+            "Malthus",
+            "Erebus",
+            "Thaxus",
+            "Corvus",
+            "Noctis",
+            "Vex",
+            "Malachar",
+            "Zephon",
+            "Draven",
+            "Mordain",
+            "Kaleth",
+            "Obsidian",
+            "Raziel",
+            "Vaelor",
+            "Tenebris",
+            "Hex",
+            "Malachai",
+            "Thorne",
+            "Vesper",
+            "Vortigern",
+            "Nyx",
+            "Azrael",
+            "Lucien",
+            "Grimwald",
+            "Caelum",
+            "Lazarus",
+            "Balthazar",
+            "Pookie"
+        ],
     },
     "children": [
         {
@@ -359,6 +389,19 @@
                             "onSelect": { "basePath": "FrontEnd\\sorceress\\sofw",  "overlayPath": "FrontEnd\\sorceress\\sofws", "overlayBlendMode": "black" },
                             "selected": { "basePath": "FrontEnd\\sorceress\\sonu3", "overlayPath": "FrontEnd\\sorceress\\sonu3s", "overlayBlendMode": "black" },
                             "onUnselect": { "basePath": "FrontEnd\\sorceress\\sobw",  "overlayPath": "FrontEnd\\sorceress\\sobws", "overlayBlendMode": "black" },
+                        },
+                    }
+                },
+                {
+                    "type": "CharacterCreateWidget", "name": "Warlock",
+                    "fields": {
+                        "rect": { "x": 320, "y": 370, },
+                        "stateAnimations": {
+                            "base": { "basePath": "FrontEnd\\warlock\\wlnu1", "speedMultiplier": 3.0 },
+                            "onHover": { "basePath": "FrontEnd\\warlock\\wlnu2", "speedMultiplier": 3.0 },
+                            "onSelect": { "basePath": "FrontEnd\\warlock\\wlfw", "overlayPath": "FrontEnd\\warlock\\wlfws", "overlayBlendMode": "black" },
+                            "selected": { "basePath": "FrontEnd\\warlock\\wlnu3", "overlayPath": "FrontEnd\\warlock\\wlnu3s", "overlayBlendMode": "black", "speedMultiplier": 2.0 },
+                            "onUnselect": { "basePath": "FrontEnd\\warlock\\wlbw", "overlayPath": "FrontEnd\\warlock\\wlbws", "overlayBlendMode": "black" },
                         },
                     }
                 },

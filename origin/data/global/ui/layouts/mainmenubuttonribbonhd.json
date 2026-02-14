@@ -102,7 +102,7 @@
                         "filename": "PANEL/TooltipBorder/TooltipBorder",
                         "backgroundColor": [ 0.0, 0.0, 0.0, 0.80 ],
                         "tileScale": 1.0,
-                        "rect": { "x": 87, "y": 1542, "width": 631, "height": 0 },
+                        "rect": { "x": 71, "y": 1491, "width": 665, "height": 96 },
                     },
                     "children": [
                         {
@@ -125,13 +125,13 @@
                         "filename": "PANEL/TooltipBorder/TooltipBorder",
                         "backgroundColor": [ 0.0, 0.0, 0.0, 0.80 ],
                         "tileScale": 1.0,
-                        "rect": { "x": 87, "y": 1588, "width": 631, "height": 490 },
+                        "rect": { "x": 71, "y": 1578, "width": 665, "height": 518 },
                     },
                     "children": [
                         {
                             "type": "ImageWidget", "name": "ScrollBarBackground",
                             "fields": {
-                                "rect": { "x": 605, "y": 8 },
+                                "rect": { "x": 615, "y": 18 },
                                 "filename": "FrontEnd\\HD\\Final\\FrontEnd_ScrollbarSmall",
                             },
                             "children": [
@@ -151,7 +151,7 @@
                         {
                             "type": "ScrollViewWidget", "name": "MotDScrollView",
                             "fields": {
-                                "rect": { "x": 4, "y": 4, "width": 600, "height": 486 },
+                                "rect": { "x": 14, "y": 14, "width": 600, "height": 486 },
                                 "scrollControllerName": "MotDScrollBar",
                                 "clipChildrenDraw": true,
                             },

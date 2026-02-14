@@ -5,4 +5,27 @@
     "XMediumLargeFontSize": 36,
     "MediumLargeFontSize": 36,
     "XMediumFontSize": 34,
+	
+	"LootFilterOptionsPanelRect": { "x": -1002, "y": 256, "width": "$LootFilterOptionsPanelWidth", "height": "$LootFilterOptionsPanelHeight", "scale": "$ConsoleUIScale" },
+	"LootFilterItemTabRect": { "x": -1017, "y": 670, "width": 1770, "height": 1000, "scale": "$ConsoleUIScale" },
+	"StyleLFButtonTextSmall":
+    {
+        "fontColor": "$LightButtonTextColor",
+        "pointSize": "$LootFilterSmallFontSize",
+        "dropShadow": "$DefaultDropShadow",
+        "spacing": { "kerning": 0.88, "leading": 0.8 },
+		"alignment": { "v": "center", "h": "center" },
+		"options": { "lineWrap": true },
+    },
+    
+    // FriendsList overrides
+    "FriendsListMediumFontSize": 32,
+    "FriendsListSmallFontSize": 28,
+
+    "StyleSettingsNumericGameCreator": {
+        "fontFace": "Exocet",
+        "pointSize": 34,
+        "fontColor": "$FontColorWhite",
+        "alignment": { "h": "left", "v": "center" },
+    },
 }

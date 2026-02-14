@@ -43,6 +43,9 @@
             "type": "PlayerLoaderWidget", "name": "PreloadAssassin",
         },
         {
+            "type": "PlayerLoaderWidget", "name": "PreloadWarlock",
+        },
+        {
             "type": "PlayerLoaderWidget", "name": "Player",
         },
         {
@@ -288,6 +291,22 @@
                             "fields": {
                                 "fitToParent": true,
                                 "tooltipString": "@strHardcore",
+                            }
+                        }
+                    ]
+                },
+                     {
+                    "type": "ImageWidget", "name": "ExpansionIcon",
+                    "fields": {
+                        "rect": { "x": 755, "y": 20 },
+                        "filename": "FrontEnd\\HD\\Final\\FrontEnd_ExpansionIconSmall"
+                    },
+                    "children": [
+                        {
+                            "type": "FocusableWidget", "name": "ExpansionIconTooltip",
+                            "fields": {
+                                "fitToParent": true,
+                                "tooltipString": "@Expansion",
                             }
                         }
                     ]

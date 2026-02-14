@@ -8,10 +8,10 @@
     },
     "children": [
         {
-            "type": "ImageWidget", "name": "EscapeOptionsBG",
+            "type": "ImageWidget", "name": "EscapeOptionsBGClassic",
             "fields": {
                 "rect": { "x": 0, "y": 0 },
-                "filename": "Controller/Panel/EscapeMenu/EscapeOptionsBG"
+                "filename": "Controller/Panel/EscapeMenu/EscapeOptionsBGClassic"
             }
         },
         {
