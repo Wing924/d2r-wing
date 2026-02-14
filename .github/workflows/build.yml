@@ -50,11 +50,13 @@ jobs:
           cp -r wing.mpq build/mods/wing
           cd build
           zip -r wing-$MODE-$LANG-$VERSION.zip mods
+          ls -l build/wing-*.zip
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v6
         with:
           path: build/wing-*.zip
+          name: wing-${{ matrix.mode }}-${{ matrix.lang }}
           if-no-files-found: error
 
   publish:
@@ -64,6 +66,8 @@ jobs:
       - uses: actions/download-artifact@v6
         with:
           path: './'
+          pattern: wing-*
+          merge-multiple: true
 
       - name: Release
         if: startsWith(github.ref, 'refs/tags/v')
