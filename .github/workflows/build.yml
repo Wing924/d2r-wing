@@ -52,7 +52,7 @@ jobs:
           zip -r wing-$MODE-$LANG-$VERSION.zip mods
 
       - name: Upload artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v6
         with:
           path: build/wing-*.zip
           if-no-files-found: error
@@ -61,7 +61,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
-      - uses: actions/download-artifact@v3
+      - uses: actions/download-artifact@v6
         with:
           path: './'
 
