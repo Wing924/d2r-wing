@@ -53,6 +53,7 @@
           "type": "UnitRootComponent"
         },
         {
+          "enableWeaponAttachInertialization": false,
           "filename": "data/hd/items/dropped_items/skeleton/dropped_items.skeleton",
           "name": "component_skeleton",
           "type": "SkeletonDefinitionComponent"

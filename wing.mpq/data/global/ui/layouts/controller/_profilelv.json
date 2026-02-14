@@ -39,6 +39,13 @@
     "x": 0,
     "y": 1661
   },
+  "ChronicleRewardsControllerRect": {
+    "height": 0,
+    "scale": "$ConsoleUIScale",
+    "wifth": 0,
+    "x": -1039,
+    "y": 240
+  },
   "FontColorSocketedEtherealColor": {
     "a": 255,
     "b": 128,
@@ -140,15 +147,16 @@
   "TooltipStyle": {
     "CraftedColor": "$FontColorOrange",
     "DefaultColor": "$FontColorWhite",
+    "DesecratedColor": "$FontColorDesecrated",
     "EtherealColor": "$FontColorSocketedEtherealColor",
     "EventItemsColor": "$FontColorOrange",
     "GoldColor": "$FontColorWhite",
-    "HealthPotionColor": "$FontColorWhite",
+    "HealthPotionColor": "$FontColorLightRed",
     "MagicColor": "$FontColorBlue",
-    "ManaPotionColor": "$FontColorWhite",
+    "ManaPotionColor": "$FontColorLightBlue",
     "QuestColor": "$FontColorGoldYellow",
     "RareColor": "$FontColorYellow",
-    "RejuvPotionColor": "$FontColorWhite",
+    "RejuvPotionColor": "$FontColorLightPurple",
     "RuneColor": "$FontColorOrange",
     "SetColor": "$FontColorGreen",
     "SocketedColor": "$FontColorSocketedEtherealColor",

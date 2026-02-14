@@ -19,6 +19,8 @@ WHERE
         s.Key like "skillname%"
         OR
         s.Key like "skillsname%"
+        OR
+        s.Key like "%Name"
     )
     AND s.Key NOT IN (
         "skillname0",
@@ -34,6 +36,7 @@ WHERE
     )
 ORDER BY s.id
 '
+
 
 scripts/json-to-tsv.sh origin/data/local/lng/strings/skills.json > "$tmpdir/str.tsv"
 

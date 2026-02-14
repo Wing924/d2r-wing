@@ -90,6 +90,7 @@
           "type": "UnitRootComponent"
         },
         {
+          "enableWeaponAttachInertialization": false,
           "filename": "data/hd/character/enemy/bear/skeleton/bear.skeleton",
           "name": "component_skeleton",
           "type": "SkeletonDefinitionComponent"

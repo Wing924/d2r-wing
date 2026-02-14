@@ -10,7 +10,7 @@ $1 == "Expansion" {
     next
 }
 {
-    print substr($0, 0, length($0)-1), 1, "base_info_" $19, ""
+    print substr($0, 0, length($0)-1), 1, "base_info_" $20, ""
     next
 }
 '

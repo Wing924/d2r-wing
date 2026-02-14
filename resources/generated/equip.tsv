@@ -87,7 +87,7 @@ id	Key	zhTW	enUS	code	category	type	grade	weight	speed	range	socket	min	max	minE
 2015	dgr	匕首	Dagger	dgr	weap	knif	normal		-20	1	1			0	0	3	3
 2016	dir	長匕首	Dirk	dir	weap	knif	normal		0	1	1			0	0	9	9
 2017	kri	波刃匕首	Kris	kri	weap	knif	normal		-20	1	3			0	0	17	18
-2018	bld	利刃匕首	Blade	bld	weap	knif	normal		-10	1	2			0	0	23	24
+2018	bld	利刃匕首	Blade	bld	weap	knif	normal		-10	1	3			0	0	23	24
 2019	tkf	飛刀	Throwing Knife	tkf	weap	tkni	normal		0	1				0	0	2	3
 2020	tax	飛斧	Throwing Axe	tax	weap	taxe	normal		10	1				0	0	7	9
 2021	bkf	平衡飛刀	Balanced Knife	bkf	weap	tkni	normal		-20	1				0	0	13	15
@@ -252,7 +252,7 @@ id	Key	zhTW	enUS	code	category	type	grade	weight	speed	range	socket	min	max	minE
 11006	neg	地獄爪牙顱骨	Hellspawn Skull	neg	armo	head	elite				2	96	141	144	211	67	69
 11010	7wa	狂戰斧	Berserker Axe	7wa	weap	axe	elite		0	3	6			0	0	85	87
 11012	xhg	征戰護手	War Gauntlets	xhg	armo	glov	exceptional					43	53	64	79	54	54
-11028	9bl	窄刃匕首	Stiletto	9bl	weap	knif	exceptional		-10	1	2			0	0	46	48
+11028	9bl	窄刃匕首	Stiletto	9bl	weap	knif	exceptional		-10	1	3			0	0	46	48
 20181	ktr	拳刃	Katar	ktr	weap	h2h	normal		-10	2	2			0	0	1	3
 20182	wrb	腕刃	Wrist Blade	wrb	weap	h2h	normal		0	2	2			0	0	9	9
 20183	ces	刃拳	Cestus	ces	weap	h2h	normal		0	2	2			0	0	15	15
@@ -314,7 +314,7 @@ id	Key	zhTW	enUS	code	category	type	grade	weight	speed	range	socket	min	max	minE
 20240	7dg	骸骨小刀	Bone Knife	7dg	weap	knif	elite		-20	1	1			0	0	58	60
 20241	7di	秘銀尖刀	Mithril Point	7di	weap	knif	elite		0	1	1			0	0	70	72
 20242	7kr	尖齒小刀	Fanged Knife	7kr	weap	knif	elite		-20	1	3			0	0	83	84
-20243	7bl	傳說尖刀	Legend Spike	7bl	weap	knif	elite		-10	1	2			0	0	85	87
+20243	7bl	傳說尖刀	Legend Spike	7bl	weap	knif	elite		-10	1	3			0	0	85	87
 20244	7tk	高速飛刀	Flying Knife	7tk	weap	tkni	elite		0	1				0	0	64	66
 20245	7ta	高速飛斧	Flying Axe	7ta	weap	taxe	elite		10	1				0	0	56	57
 20246	7bk	刃翼飛刀	Winged Knife	7bk	weap	tkni	elite		-20	1				0	0	77	78
@@ -492,3 +492,18 @@ id	Key	zhTW	enUS	code	category	type	grade	weight	speed	range	socket	min	max	minE
 21778	ob5	傑瑞德之石	Jared's Stone	ob5	weap	orb	normal		10	1	3			0	0	24	24
 21779	pad	庫拉斯特盾	Kurast Shield	pad	armo	ashd	elite	light			4	154	172	231	258	74	75
 21780	axf	斧手	Hatchet Hands	axf	weap	h2h	normal		10	2	2			0	0	12	12
+27587	wa1	舊書	Old Book	wa1	armo	grim	normal				2	2	5	3	7	4	6
+27588	wa2	秘典	Tome	wa2	armo	grim	normal				2	4	8	6	12	8	9
+27589	wa3	寶典	Codex	wa3	armo	grim	normal				2	6	10	9	15	16	18
+27590	wa4	綱要	Compendium	wa4	armo	grim	normal				2	10	16	15	24	20	21
+27591	wa5	魔典	Grimoire	wa5	armo	grim	normal				2	15	20	22	30	24	24
+27592	wa6	焦灼書冊	Burnt Text	wa6	armo	grim	exceptional				2	38	48	57	72	33	33
+27593	wa7	黑暗秘典	Dark Tome	wa7	armo	grim	exceptional				2	41	52	61	78	39	39
+27594	wa8	黑暗寶典	Dark Codex	wa8	armo	grim	exceptional				2	44	55	66	82	45	45
+27595	wa9	著魔綱要	Possessed Compendium	wa9	armo	grim	exceptional				2	50	64	75	96	49	51
+27596	waa	著魔魔典	Possessed Grimoire	waa	armo	grim	exceptional				2	58	70	87	105	54	54
+27597	wab	被遺忘的書冊	Forgotten Volume	wab	armo	grim	elite				2	95	139	142	208	59	60
+27598	wac	神秘秘典	Occult Tome	wac	armo	grim	elite				2	96	141	144	211	67	69
+27599	wad	神秘寶典	Occult Codex	wad	armo	grim	elite				2	98	142	147	213	66	66
+27600	wae	褻瀆綱要	Blasphemous Compendium	wae	armo	grim	elite				2	100	146	150	219	81	81
+27601	waf	褻瀆魔典	Blasphemous Grimoire	waf	armo	grim	elite				2	103	148	154	222	85	87

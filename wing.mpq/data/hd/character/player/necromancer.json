@@ -272,6 +272,7 @@
           "type": "UnitRootComponent"
         },
         {
+          "enableWeaponAttachInertialization": false,
           "filename": "data/hd/character/player/necromancer/skeleton/necromancer.skeleton",
           "name": "component_skeleton",
           "type": "SkeletonDefinitionComponent"
@@ -634,7 +635,8 @@
               "animationStateName": "ShieldAdditiveLayer",
               "layerName": "ShieldEquipLayer",
               "name": "entity_root_EquipmentAnimationLayers_equipmentLayers_0",
-              "type": "EquipmentLayerSetup"
+              "type": "EquipmentLayerSetup",
+              "useBlendOverride": false
             }
           ],
           "name": "entity_root_EquipmentAnimationLayers",

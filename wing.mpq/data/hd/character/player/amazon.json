@@ -242,6 +242,7 @@
           "type": "UnitRootComponent"
         },
         {
+          "enableWeaponAttachInertialization": false,
           "filename": "data/hd/character/player/amazon/skeleton/amazon.skeleton",
           "name": "component_skeleton",
           "type": "SkeletonDefinitionComponent"

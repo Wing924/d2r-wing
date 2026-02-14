@@ -28,6 +28,7 @@ id	Key	zhTW	set	rarity	qlvl
 2600	Blood Crescent	血紅新月		1	10
 2601	Krintizs Skewer	克里維茲的肉叉		1	14
 2602	Gleamscythe	閃耀鐮刀		1	18
+2603	Azurewrath	碧藍怒火		1	18
 2603	Azurewrath	碧藍怒火		1	87
 2604	Griswolds Edge	格里斯瓦德之刃		1	23
 2605	Hellplague	地獄瘟疫		1	30
@@ -483,6 +484,7 @@ id	Key	zhTW	set	rarity	qlvl
 21825	Heaven's Taebaek	太白山的榮光	Heaven's Brethren	7	55
 21826	Haemosu's Adament	解慕漱的堅決	Heaven's Brethren	7	55
 21827	Lycander's Flank	萊坎德的側翼		1	50
+21828	Constricting Ring	束縛之戒		1	95
 21829	Ginther's Rift	金瑟的裂隙		1	45
 21831	Naj's Light Plate	娜吉的輕鎧	Naj's Ancient Set	7	43
 21832	Naj's Circlet	娜吉的頭環	Naj's Ancient Set	7	43
@@ -504,3 +506,46 @@ id	Key	zhTW	set	rarity	qlvl
 27348	Rotting Fissure	腐敗裂痕		1	69
 27349	Bone Break	分筋裂骨		1	69
 27350	Black Cleft	漆黑裂口		1	69
+27388	Warlord's Lust	戰爭領主的慾望	Warlord's Glory	7	100
+27389	Warlord's Conquest	戰爭領主的征服	Warlord's Glory	7	100
+27390	Warlord's Mantle	戰爭領主的鬥篷	Warlord's Glory	7	100
+27391	Warlord's Crushers	戰爭領主的輾壓者	Warlord's Glory	7	100
+27392	Warlord's Authority	戰爭領主的權威	Warlord's Glory	7	100
+27628	Ars Al'Diablolos	艾迪亞布羅斯學術		1	85
+27629	Ars Tor'Baalos	托巴爾羅斯學術		1	85
+27630	Ars Dul'Mephistos	杜墨菲斯托斯學術		1	85
+27631	Measured Wrath	審慎之怒		3	58
+27632	Dreadfang	懼牙		2	69
+27633	Wraithstep	怨靈步伐		2	73
+27634	Bloodpact Shard	血誓碎片		2	73
+27635	Sling	投索		1	58
+27636	Opalvein	蛋白石脈		1	58
+27637	Entropy Locket	無序墜盒		1	60
+27638	Gheed's Wager	基德的賭注		1	79
+27639	Unique Warlock Helm	地獄刑長的意志		2	55
+27641	Bane's Oathmaker	貝恩的立誓者	Bane's Garments	7	7
+27642	Bane's Wraithskin	貝恩的靈膚	Bane's Garments	7	7
+27643	Bane's Authority	貝恩的權威	Bane's Garments	7	7
+27644	Horazon's Countenance	赫拉森的面容	Horazon's Splendor	7	40
+27645	Horazon's Dominion	赫拉森的統治	Horazon's Splendor	7	40
+27646	Horazon's Hold	赫拉森的掌控	Horazon's Splendor	7	40
+27647	Horazon's Legacy	赫拉森的傳承	Horazon's Splendor	7	40
+27648	Horazon's Secrets	赫拉森的秘密	Horazon's Splendor	7	40
+27906	Defender's Bile	防禦者的膽汁		1	110
+27907	Guardian's Thunder	守護者的閃電		1	110
+27908	Protector's Frost	保衛者的冰霜		1	110
+27909	Defender's Fire	防禦者的火焰		1	110
+27910	Protector's Stone	保衛者的岩石		1	110
+27911	Guardian's Light	守護者的光芒		1	110
+28035	PreCrafted Cold Rupture	潛伏冰寒裂縫		2	69
+28036	Crafted Cold Rupture	新生冰寒裂縫		1	69
+28037	PreCrafted Flame Rift	潛伏火焰裂隙		2	69
+28038	Crafted Flame Rift	新生火焰裂隙		1	69
+28039	PreCrafted Crack of the Heavens	潛伏天堂裂擊		2	69
+28040	Crafted Crack of the Heavens	新生天堂裂擊		1	69
+28041	PreCrafted Rotting Fissure	潛伏腐敗裂痕		2	69
+28042	Crafted Rotting Fissure	新生腐敗裂痕		1	69
+28043	PreCrafted Bone Break	潛伏分筋裂骨		2	69
+28044	Crafted Bone Break	新生分筋裂骨		1	69
+28045	PreCrafted Black Cleft	潛伏漆黑裂口		2	69
+28046	Crafted Black Cleft	新生漆黑裂口		1	69

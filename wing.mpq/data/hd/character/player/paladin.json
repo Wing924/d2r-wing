@@ -318,6 +318,7 @@
           "type": "UnitRootComponent"
         },
         {
+          "enableWeaponAttachInertialization": false,
           "filename": "data/hd/character/player/paladin/skeleton/paladin.skeleton",
           "name": "component_skeleton",
           "type": "SkeletonDefinitionComponent"
@@ -858,7 +859,8 @@
               "animationStateName": "ShieldAdditiveLayer",
               "layerName": "ShieldEquipLayer",
               "name": "entity_root_EquipmentAnimationLayers_equipmentLayers_0",
-              "type": "EquipmentLayerSetup"
+              "type": "EquipmentLayerSetup",
+              "useBlendOverride": false
             }
           ],
           "name": "entity_root_EquipmentAnimationLayers",
@@ -1388,6 +1390,8 @@
           "defaultEnabledWeight": 1,
           "equipmentLayerName": "ShieldEquipLayer",
           "name": "entity_holyshield_EnableEquipmentAnimationLayer",
+          "townDefaultEnabledWeight": 0,
+          "townEquipmentLayerName": "",
           "type": "EnableEquipmentAnimationLayerComponent"
         }
       ],

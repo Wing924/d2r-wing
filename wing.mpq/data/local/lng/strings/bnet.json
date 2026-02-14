@@ -575,7 +575,7 @@
     "jaJP": "自分のレルムの「Diablo II」ラダー（ランキングシステム）における、キャラクターのランキングを表示します。",
     "ptBR": "Permite visualizar a classificação de seu personagem nas Competições de Diablo II em seu Reino.",
     "ruRU": "Показывает позицию вашего персонажа в рейтинге Diablo II в вашем игровом мире.",
-    "zhCN": "可以查看您的角色在您所在服务器的《暗黑破坏神II》天梯中的排名。"
+    "zhCN": "可以查看您的角色在您所在服务器的《暗黑破坏神2》天梯中的排名。"
   },
   {
     "id": 721,
@@ -1255,7 +1255,7 @@
     "jaJP": "さらにヘルプが必要な場合は、Battle.netのテクニカルサポート・チャンネル（Technical Support Channel）を利用するか、「Diablo II」の取扱説明書を確認する、またはBlizzardのテクニカルサポートページ http://www.blizzard.com/support/ を確認してください。",
     "ptBR": "Se precisar de mais ajuda, entre no canal do Suporte Técnico no Battle.net, consulte o manual de Diablo II ou acesse a página de suporte técnico da Blizzard em https://us.battle.net/support/pt/",
     "ruRU": "Не нашли ответ на свой вопрос? Обратитесь в чат канала технической поддержки, прочитайте руководство Diablo II или откройте страницу техподдержки Blizzard на сайте http://www.blizzard.com/support/.",
-    "zhCN": "如果还需要进一步的帮助，您可以访问战网的技术支持（TECHNICAL SUPPORT）频道、查阅《暗黑破坏神II》手册、或访问暴雪的技术支持页面: https://www.battlenet.com.cn/support/zh/"
+    "zhCN": "如果还需要进一步的帮助，请访问https://support.battlenet.com.cn/ld9/获取更多帮助。"
   },
   {
     "id": 775,
@@ -1646,7 +1646,7 @@
     "jaJP": "詳細はwww.battle.net/support/errormessages/よりご確認ください。",
     "ptBR": "Para obter mais informações, acesse battle.net/support/errormessages/",
     "ruRU": "Подробнее на www.battle.net/support/errormessages/",
-    "zhCN": "若需要更多信息，请访问 https://www.battlenet.com.cn/support/zh/article/99037"
+    "zhCN": "若需要更多信息，请访问https://support.battlenet.com.cn/help/article/101044"
   },
   {
     "id": 5189,
@@ -1680,7 +1680,7 @@
     "jaJP": "モデムをお使いの場合はBattle.netへの接続前に、インターネット・サービスプロバイダーに接続する必要があります。詳細はwww.battle.net/support/errormessages/よりご確認ください。",
     "ptBR": "Se estiver usando um modem, poderá ser necessário se conectar ao seu provedor de Internet antes de acessar o Battle.net. Para obter mais informações, acesse www.battle.net/support/errormessages/",
     "ruRU": "Если вы используете модем, то возможно, вам необходимо вначале подключиться к сети перед подключением к Battle.net. Подробнее на www.battle.net/support/errormessages/",
-    "zhCN": "如果使用调制解调器，您可能需要先连接到您的互联网服务提供商再尝试连接战网。更多信息，请访问https://www.battlenet.com.cn/support/zh/article/99037"
+    "zhCN": "如果使用调制解调器，您可能需要先连接到您的互联网服务提供商再尝试连接战网。更多信息，请访问https://support.battlenet.com.cn/help/article/101044"
   },
   {
     "id": 5191,
@@ -3142,6 +3142,6 @@
     "jaJP": "ディアブロ II リザレクテッドをプレイするには17歳以上でなくてはなりません。",
     "ptBR": "Você precisa ter pelo menos 18 anos para jogar Diablo II: Resurrected",
     "ruRU": "К игре в Diablo II Resurrected не допускаются пользователи моложе 18 лет.",
-    "zhCN": "你至少要满18周岁才能玩《暗黑破坏神II》：重生"
+    "zhCN": "你至少要满18周岁才能玩《暗黑破坏神2》：重制版"
   }
 ]

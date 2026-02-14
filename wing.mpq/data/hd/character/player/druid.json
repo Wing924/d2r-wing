@@ -320,6 +320,7 @@
           "type": "UnitRootComponent"
         },
         {
+          "enableWeaponAttachInertialization": false,
           "filename": "data/hd/character/player/druid/skeleton/druid.skeleton",
           "name": "component_skeleton",
           "type": "SkeletonDefinitionComponent"

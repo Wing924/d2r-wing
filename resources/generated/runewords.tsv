@@ -1,6 +1,7 @@
 id	Key	enUS	zhTW
 10910	Runeword22	Delirium	精神錯亂
 20507	Runeword1	Ancients' Pledge	先祖之契
+20509	Runeword3	Authority	權威
 20510	Runeword4	Beast	野獸
 20512	Runeword6	Black	黑錘
 20514	Runeword8	Bone	骸骨
@@ -78,18 +79,22 @@ id	Key	enUS	zhTW
 20653	Runeword148	Treachery	背信
 20656	Runeword151	Unbending Will	不屈意志
 20659	Runeword154	Venom	劇毒
+20662	Runeword157	Void	虛無
 20665	Runeword160	Wealth	財富
 20667	Runeword162	White	蒼白
 20668	Runeword163	Wind	輕風
 20670	Runeword165	Wisdom	智慧
 20673	Runeword168	Wrath	憤怒
 20675	Runeword170	Zephyr	和風
-27360	Runeword171	Hustle	催促
-27361	Runeword172	Hustle	催促
+27360	Runeword171	Hysteria	歇斯底里
+27361	Runeword172	Mania	狂躁
 27362	Runeword173	Mosaic	嵌飾
 27363	Runeword174	Metamorphosis	變化
 27364	Runeword175	Ground	接地
 27365	Runeword176	Temper	和緩
 27366	Runeword177	Hearth	火爐
 27367	Runeword178	Cure	治癒
-27368	Runeword179	Bulwark	壁壘
+27650	Runeword180	Coven	巫師會
+27651	Runeword181	Vigilance	戒慎
+27652	Runeword182	Ritual	儀式
+27974	Runeword179	Bulwark	壁壘
