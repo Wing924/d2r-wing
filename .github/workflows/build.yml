@@ -50,7 +50,7 @@ jobs:
           cp -r wing.mpq build/mods/wing
           cd build
           zip -r wing-$MODE-$LANG-$VERSION.zip mods
-          ls -l build/wing-*.zip
+          ls -l wing-*.zip
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v6
