@@ -470,3 +470,31 @@ id	Key	zhTW	max
 27366	Runeword177	火爐	100ED/60CR/15CA
 27367	Runeword178	治癒	100ED/60PR
 27368	Runeword179	壁壘	6LL/100ED/15DR
+20509	Runeword3	權威	60ED
+20662	Runeword157	虛無	15MD/12ATTR
+27619	Defender's Bile	防禦者的膽汁	10PD/-10PR/5EXP/35MF/50EG
+27628	Ars Al'Diablolos	艾迪亞布羅斯學術	200ED/25FD/10Light Radius/10EK/30FR/5${27432:天啟末日}
+27629	Ars Tor'Baalos	托巴爾羅斯學術	3${27484:惡魔專精}/4${27508:沸血術}/3${27504:吞食}/3${27512:吞噬}/150ED/10DR
+27630	Ars Dul'Mephistos	杜墨菲斯托斯學術	30FCR/115EDmg/70AR/170ED/-20MR/25MF
+27631	Measured Wrath	審慎之怒	180ED/3${27492:召喚魔汙怪}/3${27408:火焰之環}/3${27420:烈焰湧浪}/20VIT/5EK/30RES
+27632	Dreadfang	懼牙	166ED/6LM
+27633	Wraithstep	怨靈步伐	防禦128/15DEX/15ENG
+27634	Bloodpact Shard	血誓碎片	15Max Life/3${27500:血誓}/3${27508:沸血術}/3${27516:束縛惡魔}/35MF
+27635	Sling	投索	-5MR/15ENG/20MF
+27636	Opalvein	蛋白石脈	8RES/3LK/3EK/5Dmg or 40ED
+27637	Entropy Locket	無序墜盒	10MD/10FCR/40LR/15Max Mana/12MDR
+27638	Gheed's Wager	基德的賭注	20FCR/20FHR/20FRW/150ED/-7MR/15RES/75EG
+27639	Unique Warlock Helm	地獄刑長的意志	-8FD/-8MR/215ED/6EK
+27644	Horazon's Countenance	赫拉森的面容	防禦154/20STR/10MDR
+27645	Horazon's Dominion	赫拉森的統治	100ED/100Mana/25CR/25FR/25LR
+27646	Horazon's Hold	赫拉森的掌控	防禦35/150AR/15DEX/270FD/40Life
+27647	Horazon's Legacy	赫拉森的傳承	防禦68/15STR/15DEX/30MR
+27648	Horazon's Secrets	赫拉森的秘密	防禦142/30VIT/50Life
+27650	Runeword180	巫師會	50ED/5LK/40MF
+27651	Runeword181	戒慎	40Life/40Mana/35RES/100ED
+27652	Runeword182	儀式	320ED/250DTD/260AR/5LK
+27907	Guardian's Thunder	守護者的閃電	10LR/-10LR/5EXP/35MF/50EG
+27908	Protector's Frost	保衛者的冰霜	10CR/-10CR/5EXP/35MF/50EG
+27909	Defender's Fire	防禦者的火焰	10FD/-10FR/5EXP/35MF/50EG
+27910	Protector's Stone	保衛者的岩石	50ED/-10DR/5EXP/35MF/50EG
+27911	Guardian's Light	守護者的光芒	10MR/-10MR/5EXP/35MF/50EG

@@ -122,6 +122,10 @@ id	Key	zhTW	abbr
 10979	ModitemHPaK	%+d 擊殺生命恢復	LK
 10982	ModitemAttratvsM	%d%% 準確率，針對	AR
 10983	Moditemdamvsm	%d%% 傷害，針對	DMG
+10986	Moditemenrescoldsk	敵人冰寒抗性 -%d%%	CR
+10987	Moditemenresfiresk	敵人火焰抗性 -%d%%	FR
+10988	Moditemenresltngsk	敵人電擊抗性 -%d%%	LR
+10989	Moditemenrespoissk	敵人毒素抗性 -%d%%	PR
 10990	ModitemdamFiresk	%+d%% 火焰技能傷害	FD
 10991	ModitemdamColdsk	%+d%% 冰寒技能傷害	CD
 10992	ModitemdamLtngsk	%+d%% 閃電技能傷害	LD
@@ -141,3 +145,8 @@ id	Key	zhTW	abbr
 23001	ModStr2uPercent	傷害降低 %d%%	DR
 27351	ModStr2uPercentNegative	傷害提高 %d%%	DI
 27374	ModStr6l	攻击速度 %+d%%	IAS
+27678	ModStrMagMastery	%+d%% 魔法技能傷害	MD
+27679	ModStrMagPierce	敵人魔法抗性 -%d%%	MR
+27865	MaxMagDmgPerLvl	%+d 魔法傷害最大值	Max MD
+27866	ModStrDamPierce	敵人物理傷害抗性 -%d%%	PR
+27891	ModStrge9	+%d 術士技能	WAR

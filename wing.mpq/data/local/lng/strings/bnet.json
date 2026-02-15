@@ -14,7 +14,7 @@
     "jaJP": "チャットヘルプ",
     "ptBR": "AJUDA DO BATE-PAPO",
     "ruRU": "ПОМОЩЬ ПО ЧАТУ",
-    "zhCN": "聊天帮助"
+    "zhCN": "聊天说明"
   },
   {
     "id": 687,
@@ -31,7 +31,7 @@
     "jaJP": "チャットコマンド",
     "ptBR": "COMANDOS DO BATE-PAPO",
     "ruRU": "КОМАНДЫ ЧАТА",
-    "zhCN": "聊天命令"
+    "zhCN": "聊天指令"
   },
   {
     "id": 688,
@@ -48,7 +48,7 @@
     "jaJP": "キャラクターを左クリックすると、キャラクターがオーラに包まれて選択状態になります。選択を解除するには、もう一度そのキャラクターを左クリックしてください。",
     "ptBR": "Para selecionar um personagem, clique no retrato de personagem para realçar com uma aura. Para cancelar a seleção de um personagem, clique no retrato novamente.",
     "ruRU": "Чтобы выбрать персонажа, щелкните левой кнопкой мыши по портрету и подсветите его. Чтобы отменить выбор подсвеченного персонажа, щелкните левой кнопкой мыши по его портрету.",
-    "zhCN": "要选择一个角色，左键点击角色的肖像，被选中的角色周围会亮起光环。要取消选中的角色，请在亮起光环的肖像上左键单击。"
+    "zhCN": "要选择一个对象，滑鼠左键点击角色的图像，此时图像周围会亮起。要解除角色的选定状态，点选一下他们的图像。"
   },
   {
     "id": 689,
@@ -65,7 +65,7 @@
     "jaJP": "画面左側のチャットウィンドウの下に表示されているボタンには、以下の機能があります:",
     "ptBR": "Os botões abaixo da Janela de Bate-papo, no lado esquerdo da tela, têm as seguintes funções:",
     "ruRU": "Кнопки под окном чата с левой стороны экрана выполняют следующие функции:",
-    "zhCN": "屏幕左侧聊天窗口下面的按钮具有以下功能:"
+    "zhCN": "聊天视窗下方、位于萤幕左侧的按钮具有下列的功能："
   },
   {
     "id": 690,
@@ -82,7 +82,7 @@
     "jaJP": "送信: 現在選択しているキャラクターに関わりなく、同じチャットチャンネルの全員にメッセージを送ります。このボタンはテキストボックスに入力を始めると使えるようになります。",
     "ptBR": "ENVIAR exibe sua mensagem para todos em seu canal de bate-papo, independentemente de qual retrato de personagem está selecionado. Esse botão é ativado assim que você começa a digitar na caixa de texto.",
     "ruRU": "ОТПРАВИТЬ – посылает ваше сообщение всем участникам канала чата, даже если их портрет не выбран. Эта кнопка активируется, когда вы начинаете печатать сообщение.",
-    "zhCN": "“发送”将把您的消息显示给聊天频道中的每个人，不管当前选择了怎样的角色头像。当在文本框中开始输入信息时，此按钮将被激活。"
+    "zhCN": "「发送」会把你的讯息发送给目前在你的聊天频道中的所有人，无论你是否已选择了谁的图像。只要你在文字区输入文字，这个按钮就会自动亮起来。"
   },
   {
     "id": 691,
@@ -99,7 +99,7 @@
     "jaJP": "ささやく: 選択しているキャラクターの相手にのみメッセージを送ります。このボタンはテキストボックスに入力を始め、自分以外のキャラクターを選択すると使えるようになります。",
     "ptBR": "SUSSURRAR envia sua mensagem somente para o personagem que você selecionou. Esse botão é ativado assim que você começa a digitar na caixa de texto com outro personagem selecionado.",
     "ruRU": "ШЕПНУТЬ – посылает ваше сообщение только выбранному персонажу. Эта кнопка активируется, когда вы выбираете персонажа и начинаете печатать сообщение.",
-    "zhCN": "“密语”只会把您的信息发送给选中的角色。当您选中了一个角色并在文本框中开始输入信息时，此按钮将被激活。"
+    "zhCN": "「悄悄话」会把你的讯息以密语的方式发送给目前选择的对象。只要在文字区输入文字，这个按钮就会自动亮起来。"
   },
   {
     "id": 692,
@@ -116,7 +116,7 @@
     "jaJP": "ミュート: 選択したキャラクターの相手からメッセージが送られてこないようにします。ミュートしたキャラクターには赤い×のエフェクトが表示されます。このボタンは自分以外のキャラクターを選択すると使えるようになります。",
     "ptBR": "SILENCIAR bloqueia as mensagens do personagem que você selecionou. Os personagens que você silenciou são marcados com um X vermelho. Esse botão é ativado assim que você seleciona outro personagem.",
     "ruRU": "ЗАБЛОКИРОВАТЬ – запрещает выбранному персонажу посылать вам сообщения. Заблокированные персонажи отмечены красным крестом. Эта кнопка активируется, когда вы выбираете другого персонажа.",
-    "zhCN": "“屏蔽”将会屏蔽您选中的角色所发出的信息。被屏蔽的角色会用红色的X图形标记。此按钮会在你选择一个角色时被激活。"
+    "zhCN": "「缄默」会过滤掉你目前选择对象的讯息。被你标示为缄默的对象，图像上面会打上一个红色的大叉。这个按钮在你选择了另一个对象之后，就可以再度选用。"
   },
   {
     "id": 693,
@@ -133,7 +133,7 @@
     "jaJP": "ミュート解除: キャラクターのミュートを解除し、メッセージを受け取れるようにします。",
     "ptBR": "DESATIVAR SILÊNCIO permite voltar a receber mensagens de um personagem silenciado anteriormente.",
     "ruRU": "РАЗБЛОКИРОВАТЬ – снова разрешает выбранному персонажу посылать вам сообщения.",
-    "zhCN": "“解除屏蔽”会使您重新开始接收来自被屏蔽的角色的信息。"
+    "zhCN": "「解除缄默」可以让你再次从设定为缄默的玩家那边收到讯息。"
   },
   {
     "id": 694,
@@ -150,7 +150,7 @@
     "jaJP": "エモート: チャットチャンネル内の全員に対して、「～は～した」などの行動を表現するテキストを作成して送ることができます。",
     "ptBR": "EMOTE permite realizar uma ação que toda a sala pode \u003cver\u003e representada com texto.",
     "ruRU": "ЭМОЦИИ – позволяет выполнить действие, сообщение о котором увидят все участники чата.",
-    "zhCN": "“表情”允许您执行一个动作，整个房间的人都可以\u003c看到\u003e这段通过文本表示的动作。"
+    "zhCN": "「表情」可以让整个聊天室的人都能透过文字「看」到你的动作。"
   },
   {
     "id": 695,
@@ -167,7 +167,7 @@
     "jaJP": "例: プレイヤーDoomhammerが「は手を振って挨拶をした」と入力してエモートボタンを押すと: 「Doomhammer は手を振って挨拶をした」というメッセージがチャンネル内の全員に送られます。このボタンはテキストボックスに入力を始めると使えるようになります。",
     "ptBR": "Por exemplo, se Apocalipse quiser cumprimentar todos os jogadores no canal de bate-papo, ele poderia digitar \u003cdiz olá.\u003e e clicar no botão EMOTE. Todos no canal receberão a mensagem \u003cApocalipse diz olá.\u003e Esse botão é ativado assim que você começa a digitar na caixa de texto.",
     "ruRU": "Например, если Doomhammer хочет поприветствовать всех игроков в чате, он может написать \u003cприветственно машет рукой.\u003e и нажать кнопку ЭМОЦИИ. Все в чате получат сообщение \u003cDoomhammer приветственно машет рукой.\u003e Эта кнопка активируется, когда вы начинаете набирать сообщение.",
-    "zhCN": "例如，如果Doomhammer想要在聊天频道中问候所有的玩家，他可以输入\u003c打招呼\u003e，然后点击“表情”按钮。频道里的每个人都会收到消息，\u003cDoomhammer打招呼\u003e。当在文本框中开始输入信息时，此按钮将被激活。"
+    "zhCN": "举例来说，Doomhammer 想和聊天室中的所有人打个招呼，他可以输入 \u003cwaves hello.\u003e 然后点选「表情」按钮。频道里的每个人都会收到 \u003cDoomhammer waves hello.\u003e的讯息。只要你在文字区输入文字，这个按钮就会自动亮起来。"
   },
   {
     "id": 696,
@@ -184,7 +184,7 @@
     "jaJP": "ÿc5灰色のテキストÿc4: チャットチャンネルへの参加・退出メッセージは灰色で表示されます。",
     "ptBR": "ÿc5Texto cinzaÿc4 indica quando alguém entra ou sai do canal de bate-papo.",
     "ruRU": "ÿc5Серымÿc4 выделены сообщения о том, что кто-то вошел в чат или вышел из него.",
-    "zhCN": "ÿc5灰色文字ÿc4代表某人加入或离开了聊天频道。"
+    "zhCN": "ÿc5灰色文字ÿc4表示有人加入或是离开聊天频道。"
   },
   {
     "id": 697,
@@ -201,7 +201,7 @@
     "jaJP": "ÿc7金色のテキストÿc4: 発言者名は金色で表示されます。",
     "ptBR": "ÿc7Texto douradoÿc4 indica o nome do jogador que está falando.",
     "ruRU": "ÿc7Золотымÿc4 выделено имя игрока.",
-    "zhCN": "ÿc7金色文字ÿc4代表说话的玩家名字。"
+    "zhCN": "ÿc7金色文字ÿc4表示发言者的名字。"
   },
   {
     "id": 698,
@@ -218,7 +218,7 @@
     "jaJP": "ÿc0白色のテキストÿc4: チャットチャンネル全体に向けたメッセージは白で表示されます。",
     "ptBR": "ÿc0Texto brancoÿc4 indica o que você ou outros jogadores falaram em voz alta para todo o canal de bate-papo.",
     "ruRU": "ÿc0Белымÿc4 выделены сообщения, которые видны всем участникам чата.",
-    "zhCN": "ÿc0白色文字ÿc4代表你或其他人在整个聊天频道的公开发言。"
+    "zhCN": "ÿc0白色文字ÿc4表示你或是其他人对整个频道的大声呼喊。"
   },
   {
     "id": 699,
@@ -235,7 +235,7 @@
     "jaJP": "ÿc2緑色のテキストÿc4: 「ささやく」で特定の相手に送ったか、特定の相手から送られたメッセージは、緑色で表示されます。",
     "ptBR": "ÿc2Texto verdeÿc4 indica o que você \u003csussurrou\u003e para uma pessoa específica ou uma mensagem que alguém \u003csussurrou\u003e para você no canal de bate-papo.",
     "ruRU": "ÿc2Зеленымÿc4 выделены сообщения, которые вы \u003cпрошептали\u003e другому игроку или другой игрок \u003cпрошептал\u003e вам.",
-    "zhCN": "ÿc2绿色文字ÿc4代表你对特定玩家的\u003c密语\u003e，或其他玩家通过聊天频道对你发来的\u003c密语\u003e。"
+    "zhCN": "ÿc2绿色文字ÿc4表示你对特定对象发送的悄悄话密语，或是其他人在这个频道中对你发送的密语。"
   },
   {
     "id": 701,
@@ -252,7 +252,7 @@
     "jaJP": "ÿc1赤色のテキストÿc4: Battle.netからのエラーメッセージは赤で表示されます。",
     "ptBR": "ÿc1Texto vermelhoÿc4 indica mensagens de erro enviadas diretamente pelo Battle.net.",
     "ruRU": "ÿc1Краснымÿc4 выделены сообщения об ошибках от Battle.net.",
-    "zhCN": "ÿc1红色文字ÿc4代表直接由战网发布的错误信息。"
+    "zhCN": "ÿc1红色文字ÿc4代表直接来自 Battle.net 所发送的错误讯息。"
   },
   {
     "id": 702,
@@ -269,7 +269,7 @@
     "jaJP": "ダイアログウィンドウ",
     "ptBR": "JANELA DE DIÁLOGO",
     "ruRU": "ДИАЛОГОВОЕ ОКНО",
-    "zhCN": "对话窗口"
+    "zhCN": "对话视窗"
   },
   {
     "id": 703,
@@ -286,7 +286,7 @@
     "jaJP": "画面右側のこのウィンドウは、ゲーム情報とプロフィール情報の表示と入力に使われます。チャットウィンドウとは異なり、このウィンドウの内容は選択中のボタンに応じて変化します。以下が各ボタンとその機能の詳細です:",
     "ptBR": "Essa janela no lado direito da tela é usada para exibir e inserir informações do jogo e do perfil. Diferentemente da Janela de Bate-papo, essa área muda de acordo com a função que você ativou. Os botões para essas funções são explicados nesta seção:",
     "ruRU": "В окне справа отображается информация об игре и данные персонажа. В отличие от чата, это окно меняется в зависимости от включенных функций. Ниже кнопки этих функций описаны подробнее.",
-    "zhCN": "屏幕右边的这个窗口用于显示或进入游戏及资料信息。与聊天窗口不同的是，这个窗口会根据你所激活的功能改变。在接下来的部分中，会详细给您介绍与这些功能相对应的按钮的详细信息。"
+    "zhCN": "这个画面右侧的视窗是用来显示游戏的相关讯息，并让你进入其他人的游戏。和交谈视窗不同的地方是，这个区域视你目前启用的功能而有所变动。这些按钮的功能如下所述："
   },
   {
     "id": 704,
@@ -320,7 +320,7 @@
     "jaJP": "他のプレイヤーが参加できる新しいゲームを作成します。新しいゲームの作成時には、設定可能な項目がいくつかあります。一部は設定が必須ですが、大半の項目は任意です。以下が項目のリストです:",
     "ptBR": "Permite criar um novo jogo para que outros jogadores participem. Há várias escolhas, listadas a seguir, ao criar um novo jogo, mas muitas delas são opcionais.",
     "ruRU": "Позволяет создать новую игру, в которую могут войти другие игроки. При создании игры нужно выбрать несколько параметров (не все из них обязательны).",
-    "zhCN": "让您可以创建一个新的游戏，供其他玩家加入。下方列出了一些您在创建一个新游戏时需要决定的事项，其中一些不是必选项。"
+    "zhCN": "让你创建一场新的游戏，让其他玩家来加入。下方有好几个选项，可以随你的偏好调整这一场游戏的设定。"
   },
   {
     "id": 706,
@@ -337,7 +337,7 @@
     "jaJP": "ゲーム名: ゲーム参加画面に表示されるゲームの名前です。暗号的なものや、説明を含めたものにすることが可能ですが、一部の言葉や名称は使用が禁止されています。",
     "ptBR": "Nome do Jogo é como você quer que o jogo seja exibido na tela Entrar em um Jogo. O nome pode ser enigmático ou descritivo, embora alguns termos e nomes sejam bloqueados.",
     "ruRU": "Название игры будет отображаться на экране «Присоединиться». Название может быть каким угодно, хотя некоторые слова использовать запрещено.",
-    "zhCN": "“游戏名称”是您的游戏在“加入游戏”窗口中所显示的名称。您可以用此名称描述自己的游戏，也可以在一定限制的基础上，任意自定义游戏名。"
+    "zhCN": "游戏名称：是你这场游戏显示在「加入游戏」画面中的名字。你可以自由使用清楚明白的叙述或是神秘的暗号，不过有些特定的文字或是名称禁止使用。"
   },
   {
     "id": 707,
@@ -354,7 +354,7 @@
     "jaJP": "パスワード: パスワードを設定すると、非公開のゲームを作成できます。パスワードが設定されたゲームは、参加時にパスワードを入力する必要があります。",
     "ptBR": "Senha dá a opção de tornar seu jogo privado. Para entrar em seu jogo, outros jogadores precisarão saber a senha que você escolheu.",
     "ruRU": "Пароль дает возможность ограничить доступ к игре. Другие игроки должны будут его ввести, чтобы присоединиться к вашей игре.",
-    "zhCN": "设置密码可以让您的游戏变为私人游戏。其他玩家必须知道您所选择的密码才能加入此游戏。"
+    "zhCN": "密码：让你可以把这场游戏设定纯私人性质。其他想要加入的玩家得输入你所设定的密码。"
   },
   {
     "id": 708,
@@ -371,7 +371,7 @@
     "jaJP": "ゲームの説明: 作成するゲームの説明を入力できます。参加して欲しいタイプのプレイヤーやキャラクターに向けたアピールに便利です。",
     "ptBR": "Descrição do Jogo permite dizer algo sobre o jogo que você está criando. Essa é uma boa maneira de anunciar o tipo de jogador ou personagem que você quer no jogo.",
     "ruRU": "Описание игры позволяет рассказать о том, какую игру вы создаете. Здесь можно сообщить о том, каких игроков или персонажей вы ждете в своей игре.",
-    "zhCN": "您可以在游戏描述中留下关于您创建的游戏的一些话。可以通过这种方法展示您希望怎样的玩家或角色加入您的游戏。"
+    "zhCN": "游戏说明：让你说明或介绍你所创建的这一场游戏。用来召集某种特定的角色或玩家时十分有用。"
   },
   {
     "id": 709,
@@ -388,7 +388,7 @@
     "jaJP": "最大プレイヤー数: 同時にゲームに参加できるキャラクターの数を設定します。初期状態では4に設定されています。ボックス隣の上矢印と下矢印をクリックすることで数値を変更できます。設定可能な最大値は8です。",
     "ptBR": "Número Máximo de Jogadores define um limite de personagens simultâneos no jogo. A configuração padrão é 4. Você pode alterar o número de jogadores, até o máximo de 8, clicando nas setas ao lado da caixa.",
     "ruRU": "Максимальное количество игроков устанавливает лимит на количество игроков, которые могут одновременно находиться в игре. По умолчанию их 4. Количество игроков можно увеличить вплоть до 8, нажимая стрелки вверх-вниз рядом с окошком.",
-    "zhCN": "“最大玩家人数”会设置游戏中最多存在的角色数量。默认设置为4。您可以通过点击数字框旁边的上下箭头自行设置玩家的数量，最大不能超过8名。"
+    "zhCN": "人数上限：限制这一场游戏能够参与的最多人数。预设是 4 人，但你可以点选旁边的上下箭头调整人数，最多为 8 人。"
   },
   {
     "id": 710,
@@ -405,7 +405,7 @@
     "jaJP": "レベル差制限: 参加できるキャラクターのレベル差の範囲です。あなたのキャラクターのレベルを基準に、設定された差を上回る、あるいは下回るレベルのキャラクターは参加できなくなります。初期状態では4に設定されています。",
     "ptBR": "Diferença de Nível define uma faixa acima e abaixo do nível do seu personagem para os outros personagens que entrarem em seu jogo. A configuração padrão é 4 para especificar quem pode entrar.",
     "ruRU": "Разница между персонажами определяет, насколько уровень других игроков может быть выше или ниже вашего. По умолчанию это значение равно 4.",
-    "zhCN": "”角色等级差“会设置允许进入游戏的其他角色与您的等级差别。默认设置为4。"
+    "zhCN": "等级差距：限定你的角色和其他欲加入角色在等级上面的差距。预设的数值是 4，但你也可以把这项等级的限制取消。"
   },
   {
     "id": 711,
@@ -422,7 +422,7 @@
     "jaJP": "レベル差制限を適用しない場合は、この設定項目の隣にあるチェックボックスをクリックしてチェックを外してください。数値が4に設定されている場合、ゲームに参加するキャラクターはあなたのキャラクターから見て、レベルの差が上下4以内である必要があります。ボックス隣の上矢印と下矢印をクリックすると数値を変更できます。",
     "ptBR": "Para criar um jogo sem restrições de nível, clique na caixa de seleção ao lado da opção. O número 4 significa que qualquer personagem que entrar em seu jogo deverá ter uma diferença de até 4 níveis em relação ao seu personagem. Você pode alterar a diferença de nível clicando nas setas ao lado da caixa.",
     "ruRU": "Чтобы отменить ограничение по уровню, снимите галочку рядом с этой опцией. Цифра 4 означает, что игрок может присоединиться к игре, если его уровень отличается от вашего не более чем на 4. Разницу в уровне можно изменить, нажимая стрелки рядом с окошком.",
-    "zhCN": "要想取消等级限制，点击此选项旁边的勾选框。此处显示的数字“4”代表着任何与您的角色相差不超过4级的角色都可以加入您的游戏。您可以点击此文本框旁边的上下箭头来改变等级差限制。"
+    "zhCN": "要把等级限制取消，点选一下这个项目旁边的勾勾。显示出来的数字 4 是用来告诉其他玩家，所选用的角色不能和你的角色等级差到四级以上，才能加入这一场游戏。你可以点选右侧的上下箭头来变更等级限制的数字。"
   },
   {
     "id": 712,
@@ -439,7 +439,7 @@
     "jaJP": "ノーマル、ナイトメア、ヘル: プレイする難易度を設定します。初期状態ではノーマルに設定されています。難易度「ナイトメア」と「ヘル」でゲームを開始するには、キャラクターが一定の条件を満たしている必要があります。条件を満たしていない場合、この2つの難易度は選択できません。",
     "ptBR": "Normal, Pesadelo e Tormento definem os níveis de dificuldade do jogo. A configuração padrão é Normal. Os personagens devem atender a determinados requisitos para iniciar jogos nas dificuldades Pesadelo e Tormento. Essas opções não poderão ser selecionadas até que esses requisitos sejam atendidos.",
     "ruRU": "В игре есть три уровня сложности: «Обычный» (по умолчанию), «Кошмар» и «Ад». Чтобы начать игру на уровне «Кошмар» или «Ад», ваш персонаж должен удовлетворять определенным требованиям.",
-    "zhCN": "您可以将难度设置为“普通”、“噩梦”和“地狱”。默认的设置为“普通”。角色必须达到一定的标准，才能够开启“噩梦”或“地狱”难度的游戏。只有在达到相应的要求之后，才可以选择这些选项。"
+    "zhCN": "普通、恶梦和地狱等选项则是设定游戏的困难度，预设选项为普通。角色必须符合特定的条件，才能创造恶梦和地狱难度的游戏。除非符合条件，否则你无法选择这些项目。"
   },
   {
     "id": 713,
@@ -473,7 +473,7 @@
     "jaJP": "他のプレイヤーが作成したゲームに参加します。ゲーム参加画面で一覧表示されたゲームは公開状態のものであり、プレイヤー参加可能枠の空きがあればいつでも参加できます。",
     "ptBR": "Permite entrar em um jogo existente. Os jogos listados nessa tela são considerados públicos, e você poderá entrar neles sempre que houver espaço para um jogador.",
     "ruRU": "Позволяет войти в созданную игру. Игры в этом окне считаются открытыми для всех, и свободное место можно занять в любой момент.",
-    "zhCN": "让您加入一个已经存在的游戏。在这个屏幕上列出的游戏被认为是公开的，只要游戏中有空位，玩家就可以在任何时间加入。"
+    "zhCN": "让你加入一场既存的游戏。列在这个画面中的游戏是公开的，而且只要它还有空间，随时都可以让其他玩家加入。"
   },
   {
     "id": 715,
@@ -490,7 +490,7 @@
     "jaJP": "この一覧からゲームを選択すると、参加しているキャラクターやゲームの経過時間などの情報が表示されます。非公開のゲームに参加するには、ゲーム名と設定されているパスワードを入力する必要があります。",
     "ptBR": "Selecionar um jogo dessa lista exibirá informações sobre ele, inclusive sobre personagens e o tempo de jogo decorrido. Para entrar em um jogo privado, será necessário informar o nome do jogo e a senha.",
     "ruRU": "Выбрав игру в этом окне, вы увидите сведения о ее персонажах и прошедшем времени, а также другую информацию. Чтобы присоединиться к частной игре, нужно ввести ее название и соответствующий пароль.",
-    "zhCN": "从该列表中选择一个游戏，将会显示此游戏的信息，包括游戏中的角色及此游戏已运行的时间。要加入一个私人游戏，您需要输入游戏名称及创建者所分配的密码。"
+    "zhCN": "从这个列表选择游戏，会显示出这场游戏的相关资讯，包括参加的角色、目前所在的章节以及游戏已开始多久的时间。如要加入一场私人的游戏，你得输入该场游戏的名称，以及它所设定的密码。"
   },
   {
     "id": 716,
@@ -524,7 +524,7 @@
     "jaJP": "既存のチャットチャンネルに参加、もしくは自分のチャンネルを作成することができます。既存の公開チャンネルに入るには、チャンネル一覧から選択してOKボタンを押してください。非公開チャンネルに入るには、そのチャンネル名を入力する必要があります。",
     "ptBR": "Permite entrar em um canal de bate-papo ou criar seu próprio canal. Para entrar em um canal público, selecione um dos canais na lista e clique no botão OK. Para entrar em um canal privado, você precisará informar o nome do canal.",
     "ruRU": "Позволяет присоединиться к существующему каналу чата или создать свой. Чтобы войти в существующий открытый канал, выберите его в списке каналов и нажмите кнопку ОК. Чтобы войти в закрытый канал, надо ввести его название.",
-    "zhCN": "让您加入一个已有的聊天频道，或者创建一个属于自己的频道。要想加入一个已经建立的公共频道，可以在频道列表中选择一个，然后点击“确认”按钮。要想加入一个私人频道，您需要输入想要加入的频道的名称。"
+    "zhCN": "加入一个既存的聊天频道，或是自己创建一个全新的频道。要进入别人创建的公开频道，在频道列表选择并点选「确定」按钮。如要进入私人频道，你必须输入你想进入的频道名称。"
   },
   {
     "id": 718,
@@ -541,7 +541,7 @@
     "jaJP": "自分のチャンネルを作成したい場合は、チャンネル名欄に任意の名前を入力してください。入力した名前のチャンネルが存在していない場合は、チャンネルの作成が行われます。",
     "ptBR": "Se desejar criar seu próprio canal, preencha o campo Nome do Canal. Se o canal com esse nome não existir, ele será criado automaticamente.",
     "ruRU": "Если вы хотите завести свой канал, введите название в поле «Название канала». Если такого канала еще не существует, он создастся автоматически.",
-    "zhCN": "如果您希望启动自己的频道，请在频道名称字段中输入您希望创建的频道名称。如果此频道尚不存在，您将自动创建该通道。"
+    "zhCN": "若要创建一个自己的频道，在频道名称的栏位中输入频道的名字。如果这个频道目前不存在，新频道就会自动创建。"
   },
   {
     "id": 719,
@@ -575,7 +575,7 @@
     "jaJP": "自分のレルムの「Diablo II」ラダー（ランキングシステム）における、キャラクターのランキングを表示します。",
     "ptBR": "Permite visualizar a classificação de seu personagem nas Competições de Diablo II em seu Reino.",
     "ruRU": "Показывает позицию вашего персонажа в рейтинге Diablo II в вашем игровом мире.",
-    "zhCN": "可以查看您的角色在您所在服务器的《暗黑破坏神2》天梯中的排名。"
+    "zhCN": "查看你的角色在其伺服器的天梯游戏排名。"
   },
   {
     "id": 721,
@@ -592,7 +592,7 @@
     "jaJP": "「スタンダード・ラダー」ではキャラクターの経験値ランキングが表示されます。初期状態では全体のランキングが表示されます。クラス名を選択するとそのクラスのランキングが表示されます。",
     "ptBR": "A COMPETIÇÃO PADRÃO exibe os personagens no topo da classificação, em ordem de experiência. A configuração padrão exibe as classificações gerais, mas você pode ver listas organizadas selecionando a opção Por Classe.",
     "ruRU": "СТАНДАРТНЫЙ РЕЙТИНГ отображает персонажей в зависимости от опыта. По умолчанию отображается общий список, но его можно отсортировать кнопкой «По классу».",
-    "zhCN": "标准天梯会根据经验值显示排名最高的角色。默认设置下会显示所有排名，您也可以选择“根据职业”查看分类排名。"
+    "zhCN": "「标准天梯」依照经验值多寡列出最顶尖的角色。预设为显示整体排名，但你也可以点选「职业」选项来检视各职业的排名。"
   },
   {
     "id": 722,
@@ -609,7 +609,7 @@
     "jaJP": "「ハードコア・ラダー」ではハードコア・キャラクターの経験値ランキングが表示されます。初期状態では全体のランキングが表示されます。クラス名を選択するとそのクラスのランキングが表示されます。",
     "ptBR": "A COMPETIÇÃO HARDCORE exibe os personagens Hardcore no topo da classificação, em ordem de experiência. A configuração padrão exibe as classificações gerais, mas você pode ver listas organizadas selecionando a opção Por Classe.",
     "ruRU": "РЕЙТИНГ ГЕРОИЧЕСКОГО РЕЖИМА отображает персонажей в зависимости от опыта, набранного в героическом режиме. По умолчанию отображается общий список, но его можно отсортировать кнопкой «По классу».",
-    "zhCN": "专家模式天梯会根据经验值显示排名最高的角色。默认设置下会显示所有排名，您也可以选择“根据职业”查看分类排名。"
+    "zhCN": "「专家级天梯」依照经验值多寡列出最顶尖的专家级角色。预设为显示整体排名，你也可以点选「职业」选项来检视各职业的排名。"
   },
   {
     "id": 723,
@@ -626,7 +626,7 @@
     "jaJP": "終了: Battle.netのチャットインターフェースを閉じ、キャラクター選択画面に戻ります。このボタンを押した後もBattle.netには接続されたままですが、キャラクターの選択を行うまでチャットやゲームの開始は行えません。",
     "ptBR": "SAIR fecha a interface de bate-papo do Battle.net e retorna à tela Seleção de Personagem. Isso não afeta a conexão com o Battle.net, mas não será possível conversar ou iniciar jogos até selecionar um personagem.",
     "ruRU": "ВЫЙТИ – закрывает чат Battle.net и возвращает вас на экран выбора персонажа. Хотя вы все еще подключены к Battle.net, вы не можете писать сообщения в чате или начать игру, пока не выберете персонажа.",
-    "zhCN": "“退出”会关闭战网聊天界面，并让您返回角色选择画面。在此期间，您仍然保持与战网的连接，但在选择一个角色之前，您将无法进行聊天或者开始游戏。"
+    "zhCN": "退出：关掉 Battle.net 聊天介面，回到角色选择的画面。虽然你仍然连在Battle.net，但是你无法交谈或是创建游戏，必须先选择一个角色才能开始止。"
   },
   {
     "id": 724,
@@ -643,7 +643,7 @@
     "jaJP": "高度なコマンド",
     "ptBR": "COMANDOS AVANÇADOS",
     "ruRU": "ДОПОЛНИТЕЛЬНЫЕ КОМАНДЫ",
-    "zhCN": "高级命令"
+    "zhCN": "进阶指令"
   },
   {
     "id": 727,
@@ -660,7 +660,7 @@
     "jaJP": "メッセージ入力用のテキストボックスに以下のコマンドを打ち込むと、高度な機能を利用することができます:",
     "ptBR": "É possível acessar esses recursos avançados digitando os seguintes comandos na caixa de texto onde você costuma digitar mensagens:",
     "ruRU": "Чтобы получить доступ к этим дополнительным функциям, введите следующие команды в окне, где вы обычно набираете сообщения:",
-    "zhCN": "您可以在通常输入信息的文本框中输入以下命令来使用这些高级功能:"
+    "zhCN": "你可以在文字区块，也就是你先前输入讯息的地方，输入这些进阶指令："
   },
   {
     "id": 730,
@@ -677,7 +677,7 @@
     "jaJP": "Battle.net上の他のユーザーにプライベートメッセージを送ります。",
     "ptBR": "Envia uma mensagem privada para outro usuário no Battle.net",
     "ruRU": "Отправляет личное сообщение другому игроку в Battle.net.",
-    "zhCN": "将一段私人信息发送给战网上的另一个用户"
+    "zhCN": "发送私人讯息给另一位 Battle.net 的使用者。"
   },
   {
     "id": 731,
@@ -694,7 +694,7 @@
     "jaJP": "/me、/emote",
     "ptBR": "/me, /emote",
     "ruRU": "/me, /emote",
-    "zhCN": "/我, /表情"
+    "zhCN": "/me, /emote"
   },
   {
     "id": 732,
@@ -711,7 +711,7 @@
     "jaJP": "「～は～した」などの行動を表現するテキストを作成してチャットチャンネルに送ることができます。",
     "ptBR": "Permite realizar uma ação na sala de bate-papo.",
     "ruRU": "Позволяет выполнить действие в чате.",
-    "zhCN": "此命令可以在聊天室中进行动作。"
+    "zhCN": "可以让你在聊天室进行一些表情动作。"
   },
   {
     "id": 735,
@@ -728,7 +728,7 @@
     "jaJP": "指定したユーザーからのメッセージをミュートします。",
     "ptBR": "Permite ignorar mensagens do usuário indicado.",
     "ruRU": "Позволяет игнорировать сообщения от выбранного пользователя.",
-    "zhCN": "此命令可以屏蔽指定用户的信息。"
+    "zhCN": "可以让你忽略指定使用者所发送的讯息。"
   },
   {
     "id": 738,
@@ -745,7 +745,7 @@
     "jaJP": "指定したユーザーのミュートを解除し、メッセージを受け取れるようにします。",
     "ptBR": "Permite voltar a receber mensagens do usuário.",
     "ruRU": "Позволяет снова получать сообщения от выбранного пользователя.",
-    "zhCN": "使您可以重新收到来自此用户的信息。"
+    "zhCN": "可以让你再次收到该使用者的讯息。"
   },
   {
     "id": 739,
@@ -762,7 +762,7 @@
     "jaJP": "/away \u003c理由\u003e",
     "ptBR": "/away \u003cmotivo\u003e",
     "ruRU": "/away \u003cпричина\u003e",
-    "zhCN": "/暂离\u003c缘由\u003e"
+    "zhCN": "/away \u003c理由\u003e"
   },
   {
     "id": 740,
@@ -779,7 +779,7 @@
     "jaJP": "メッセージを送ってきた相手に対して、自分が離席中のため返信できないことを通知できます。/away コマンドの後にメッセージを入力して、離席の理由を伝えることも可能です。この機能を解除するには、再度 /away と入力してください。",
     "ptBR": "Permite informar às pessoas que enviarem mensagens que você está ausente e não pode responder. Você pode informar um motivo para a ausência depois do comando /away. Para desativar essa mensagem automática quando você voltar, digite apenas /away.",
     "ruRU": "Дает знать пользователям, посылающим вам сообщения, что вы отошли от компьютера и не можете ответить. Вы можете указать причину после команды /away. Чтобы отключить это автоматическое сообщение, когда вы вернетесь за компьютер, просто еще раз наберите /away.",
-    "zhCN": "让其他给您发送信息的玩家知道您目前不在电脑前，无法回复他们。您可以在“/暂离”命令后面加上自己不在电脑前的理由。等您回到电脑前之后，再次输入“/暂离”命令可以关闭此自动回复的信息。"
+    "zhCN": "让发送讯息给你的其他人知道你离开电脑，所以无法回复。你可以为你的缺席提供一个理由，只要在 /away 指令后面接著输入就行了。当你回到电脑前想要关掉这个自动讯息，只要输入 /away 即可。"
   },
   {
     "id": 741,
@@ -796,7 +796,7 @@
     "jaJP": "/dnd",
     "ptBR": "/dnd",
     "ruRU": "/dnd",
-    "zhCN": "/勿扰"
+    "zhCN": "/dnd"
   },
   {
     "id": 742,
@@ -813,7 +813,7 @@
     "jaJP": "メッセージを送ってきた相手に対して、メッセージの送信を控えて欲しいことを通知できます。/dnd コマンドの後にメッセージを入力して、控えて欲しい理由を伝えることも可能です。この機能を解除するには、再度 /dnd と入力してください。",
     "ptBR": "Permite informar às pessoas que enviarem mensagens que você não quer ser perturbado. Você pode informar um motivo para a ausência depois do comando /dnd. Para desativar essa mensagem automática quando você voltar, digite apenas /dnd.",
     "ruRU": "Дает знать пользователям, посылающим вам сообщения, что сейчас вас лучше не беспокоить. Вы можете указать причину после команды /dnd. Чтобы отключить это автоматическое сообщение, когда вы вернетесь, просто еще раз наберите /dnd.",
-    "zhCN": "让其他给您发送信息的玩家知道您不希望被打扰。您可以在“/勿扰”命令后面加上自己不希望被打扰的理由。再次输入“/勿扰”命令可以关闭此自动回复的信息。"
+    "zhCN": "让发送讯息给你的其他人知道你现在不希望受到打扰。你可以为你的缺席提供一个理由，只要在 /dnd 指令后面接著输入就行了。当你回到电脑前想要关掉这个自动讯息，只要输入 /dnd 即可。"
   },
   {
     "id": 743,
@@ -830,7 +830,7 @@
     "jaJP": "/channel \u003cチャンネル名\u003e、/join \u003cチャンネル名\u003e",
     "ptBR": "/channel \u003cnomedocanal\u003e, /join \u003cnomedocanal\u003e",
     "ruRU": "/channel \u003cназваниеканала\u003e, /join \u003cназваниеканала\u003e",
-    "zhCN": "/频道\u003c频道名称\u003e, /加入\u003c频道名称\u003e"
+    "zhCN": "/channel \u003c频道名称\u003e, /join \u003c频道名称\u003e"
   },
   {
     "id": 744,
@@ -847,7 +847,7 @@
     "jaJP": "Battle.net上の指定したチャンネルに移動します。例: technical supportチャンネルに入りたい場合は、/channel technical support と入力してください。なお、入力した名前のチャンネルが存在していない場合は、自動的にその名前のチャンネルが作成されます。",
     "ptBR": "Acessa o canal do Battle.net escolhido. Se desejar entrar no canal do suporte técnico, basta digitar /channel technical support. Se você tentar acessar um canal que não existe, ele será criado automaticamente.",
     "ruRU": "Переносит вас в выбранный канал Battle.net. Если вы хотите связаться с техподдержкой, наберите «/channel техническая поддержка». При попытке войти в несуществующий канал вы автоматически создадите его.",
-    "zhCN": "将带您进入您选择的战网频道。如果您想要进入技术支持通道，您只需键入/频道技术支持。如果您试图加入一个不存在的频道，您将自动创建该频道。"
+    "zhCN": "加入你所指定的 Battle.net 频道。如果你想要进入技术协助频道，你只要输入 /channel technical support 即可。如果你尝试加入不存在的频道，则会自动创建一个新频道。"
   },
   {
     "id": 745,
@@ -864,7 +864,7 @@
     "jaJP": "/who \u003cチャンネル名\u003e",
     "ptBR": "/who \u003cnomedocanal\u003e",
     "ruRU": "/who \u003cназваниеканала\u003e",
-    "zhCN": "/查询\u003c频道名称\u003e"
+    "zhCN": "/who \u003c频道名称\u003e"
   },
   {
     "id": 746,
@@ -881,7 +881,7 @@
     "jaJP": "入力した名前のチャンネルに入室しているプレイヤーの、Battle.netアカウント名をリスト表示します。",
     "ptBR": "Fornece uma lista de nomes de contas do Battle.net dos jogadores que estão no canal solicitado do Battle.net.",
     "ruRU": "Выводит список учетных записей Battle.net тех игроков, которые сейчас находятся в указанном канале.",
-    "zhCN": "提供所请求的战网频道中当前所有玩家的账号名称列表。"
+    "zhCN": "提供一个 Battle.net 的帐号名称列表，显示出目前位于你指定 Battle.net 频道中的所有玩家。"
   },
   {
     "id": 748,
@@ -898,7 +898,7 @@
     "jaJP": "指定したアカウントの非公開チャンネルへの入室を禁止にします。このコマンドを実行できるのはチャンネル管理者のみです。/unban \u003cアカウント名\u003e でアカウントの入室禁止設定を解除できます。",
     "ptBR": "Impede uma conta de entrar em um canal privado. Só pode ser emitido pelo operador do canal. Use /unban \u003cnomedaconta\u003e para permitir que contas banidas de um canal privado possam voltar ao canal.",
     "ruRU": "Запрещает пользователю войти в закрытый канал. Эта возможность доступна только оператору канала. Введите /unban \u003cназваниезаписи\u003e, чтобы снова позволить заблокированным пользователям войти в канал.",
-    "zhCN": "禁止一个账户进入私人频道，此命令只能由频道管理者发出。使用/取消拉黑\u003c账户名称\u003e可以允许被禁止的账户重新进入此频道。"
+    "zhCN": "禁止一个帐号进入私人频道，只有频道主持者可以使用此一命令。你可以稍后利用 /unban \u003c帐号\u003e 让刚刚被你禁止进入的帐号，再度回到这个频道。"
   },
   {
     "id": 749,
@@ -932,7 +932,7 @@
     "jaJP": "選択したテキストのコピー、切り取り、貼り付けを行うキーボードショートカットです。Ctrl+Aでテキストボックスの全テキストを選択できます。Ctrl+Mで音楽のオン・オフを切り替えられます。Ctrl+Nで選択しているキャラクターのアカウント名を貼り付けることができます。",
     "ptBR": "Use esses comandos para copiar, cortar e colar o texto selecionado. Use Ctrl+A para selecionar todo o conteúdo do campo de texto. Use Ctrl+M para ligar/desligar a música. Use Ctrl+N para colar o nome da conta de um personagem selecionado.",
     "ruRU": "Позволяет копировать, вырезать и вставлять выделенный текст. Ctrl+A выделяет весь текст в поле. Ctrl+M включает и отключает музыку. Ctrl+N вставляет имя учетной записи выбранного персонажа.",
-    "zhCN": "使用这些命令可以复制、剪切或粘贴高亮显示的文本。使用ctrl+a可以选择文本字段中的所有文本。使用ctrl+m可以打开/关闭音乐。使用ctrl+n可以粘贴您所选中的角色的账户名称。"
+    "zhCN": "使用这些指令可以复制、剪下或是贴上标记的文字。使用 Ctrl+A 可以选择文字区中的所有文字。利用 Ctrl+M 可以切换音乐的有 / 无。利用 Ctrl+N 可以贴上选择的人物帐号名称。"
   },
   {
     "id": 752,
@@ -949,7 +949,7 @@
     "jaJP": "指定したプレイヤーにチャンネル管理者の権限を委譲します。なお、実際に権限の委譲が行われるのは、現在のチャンネル管理者がチャンネルを退出した後です。このコマンドを実行できるのはチャンネル管理者のみです。",
     "ptBR": "Designa o jogador escolhido como o próximo operador do canal, o que entrará em vigor quando o operador atual sair do canal. Só pode ser emitido pelo operador atual do canal.",
     "ruRU": "Передает управление каналом другому игроку. Для этого текущий оператор канала должен сам передать управление и покинуть канал.",
-    "zhCN": "指定您所选择的玩家成为下一任频道管理者，此指令只能由当前频道管理者使用，且将在当前的管理者离开本频道后生效。"
+    "zhCN": "任命你选择的玩家成为继任的频道主持者，只要目前的频道主持者离开，就可以让新的频道主持者接手。只有目前的频道主持者可以使用这个指令。"
   },
   {
     "id": 754,
@@ -966,7 +966,7 @@
     "jaJP": "指定したアカウントを非公開チャンネルから追放します。このコマンドを実行できるのはチャンネル管理者のみです。ただし、追放されたプレイヤーはそのチャンネルに再入室することが可能です。",
     "ptBR": "Expulsa uma conta de um canal privado. Só pode ser emitido pelo operador do canal. No entanto, o jogador expulso pode voltar a entrar no canal imediatamente.",
     "ruRU": "Исключает пользователя из закрытого канала. Такая возможность есть только у оператора канала. Исключенный игрок может сразу же снова войти в канал.",
-    "zhCN": "从私人频道中踢出账户，只能由频道管理员发出。然而，被踢出的玩家可以立即重新加入频道。"
+    "zhCN": "把一个帐号从私人的频道踢出去。只有频道主持者可以使用这个命令。不过，被踢出去的玩家可以马上重新加入这个频道。"
   },
   {
     "id": 755,
@@ -983,7 +983,7 @@
     "jaJP": "/rejoin、/resign",
     "ptBR": "/rejoin, /resign",
     "ruRU": "/rejoin, resign",
-    "zhCN": "/重新加入, 辞任"
+    "zhCN": "/rejoin, resign"
   },
   {
     "id": 756,
@@ -1000,7 +1000,7 @@
     "jaJP": "チャンネル管理者がチャンネルに再入室し、名前をリストの最初ではなく最後に表示させます。このコマンドを実行できるのはチャンネル管理者のみです。",
     "ptBR": "Faz com que o operador do canal volte a entrar no canal, aparecendo no final da lista em vez de no topo. Somente o operador do canal pode emitir esse comando.",
     "ruRU": "Позволяет оператору канала снова войти в канал, что переместит его из начала списка в конец. Такая возможность есть только у оператора канала.",
-    "zhCN": "让一个频道的管理者重新加入频道，出现在列表的末尾/最底部而不是开头/最顶部。只有频道管理者可以使用此命令。"
+    "zhCN": "让频道的主持者重新加入频道，出现在列表的最后/底端，而非排在最前方/顶端。只有频道操作者可以使用这个指令。"
   },
   {
     "id": 759,
@@ -1017,7 +1017,7 @@
     "jaJP": "Battle.netの公開チャットチャンネル全体およびBlizzard製ゲームすべての中からプレイヤーの検索を行い、そのプレイヤーのアカウント名、アカウント番号、現在いる場所が確認できます。",
     "ptBR": "Busca um jogador em todos os canais públicos de bate-papo do Battle.net e em todos os jogos da Blizzard, informando o nome e o número da conta e a localização atual.",
     "ruRU": "Ищет игрока во всех открытых каналах Battle.net и всех играх Blizzard, выводя имя и номер его учетной записи, а также текущее местоположение.",
-    "zhCN": "在战网的公共聊天（Public Chat）频道和所有暴雪游戏中搜索另一名玩家，告诉你此玩家的用户名、用户号码和当前的位置。"
+    "zhCN": "在 Battle.net 公众频道以及所有暴雪游戏中找寻特定的玩家，告诉你他们的帐号名称，帐号号码以及目前所在的位置。"
   },
   {
     "id": 760,
@@ -1034,7 +1034,7 @@
     "jaJP": "/whoami",
     "ptBR": "/whoami",
     "ruRU": "/whoami",
-    "zhCN": "/我是谁"
+    "zhCN": "/whoami"
   },
   {
     "id": 761,
@@ -1051,7 +1051,7 @@
     "jaJP": "Battle.netにおける自分のアカウント番号と現在いる場所を確認します。",
     "ptBR": "Fornece o número da conta e a localização atual no Battle.net.",
     "ruRU": "Выводит номер вашей учетной записи и местоположение в Battle.net.",
-    "zhCN": "显示您当前的账号号码和在战网中所在的位置。"
+    "zhCN": "告知你目前的帐号号码和 Battle.net 的地区。"
   },
   {
     "id": 762,
@@ -1068,7 +1068,7 @@
     "jaJP": "/d2notify",
     "ptBR": "/d2notify",
     "ruRU": "/d2notify",
-    "zhCN": "/d2通知"
+    "zhCN": "/d2notify"
   },
   {
     "id": 763,
@@ -1085,7 +1085,7 @@
     "jaJP": "チャットチャンネルでのbattle.netへのプレイヤー入退出通知のオン・オフを切り替えます。",
     "ptBR": "Ativa/desativa as notificações de entrada e saída no canal de bate-papo.",
     "ruRU": "Включает и отключает сообщения о входе в канал и выходе из него.",
-    "zhCN": "在聊天频道切换战网的“加入/离开”通知。"
+    "zhCN": "切换 Battle.net 在聊天频道中加入或离开的提示讯息。"
   },
   {
     "id": 764,
@@ -1102,7 +1102,7 @@
     "jaJP": "/help、/?",
     "ptBR": "/help, /?",
     "ruRU": "/help, /?",
-    "zhCN": "/帮助, /?"
+    "zhCN": "/help, /?"
   },
   {
     "id": 765,
@@ -1119,7 +1119,7 @@
     "jaJP": "Battle.net全般に関するヘルプテキストを表示します。",
     "ptBR": "Acessa o texto de ajuda geral do Battle.net.",
     "ruRU": "Открывает общую справку Battle.net.",
-    "zhCN": "访问战网的帮助文本。"
+    "zhCN": "叫出 Battle.net 的一般协助说明。"
   },
   {
     "id": 766,
@@ -1136,7 +1136,7 @@
     "jaJP": "/time",
     "ptBR": "/time",
     "ruRU": "/time",
-    "zhCN": "/时间"
+    "zhCN": "/time"
   },
   {
     "id": 767,
@@ -1153,7 +1153,7 @@
     "jaJP": "Battle.netにおける時刻と、自分の現地時刻を表示します。",
     "ptBR": "Informa a hora atual do Battle.net e sua hora local atual.",
     "ruRU": "Выводит время Battle.net и ваше местное время.",
-    "zhCN": "为您提供当前的战网时间和您的当地时间。"
+    "zhCN": "告知你目前 Battle.net 的时间以及你当地时间。"
   },
   {
     "id": 768,
@@ -1170,7 +1170,7 @@
     "jaJP": "/users",
     "ptBR": "/users",
     "ruRU": "/users",
-    "zhCN": "/用户"
+    "zhCN": "/users"
   },
   {
     "id": 769,
@@ -1187,7 +1187,7 @@
     "jaJP": "Battle.net全体において現在アクティブなユーザー数、ゲーム数、チャンネル数を表示します。",
     "ptBR": "Informa o número de usuários, jogos e canais atualmente ativos em todo o Battle.net.",
     "ruRU": "Выводит количество игроков, игр и каналов, активных на данный момент в Battle.net.",
-    "zhCN": "提供当前在整个战网中活跃的用户、游戏和频道的数量。"
+    "zhCN": "告诉你目前 Battle.net 上所有使用者的数量、游戏和频道的数量。"
   },
   {
     "id": 771,
@@ -1204,7 +1204,7 @@
     "jaJP": "Battle.netに対応している他のBlizzard製ゲームのラダー情報を表示します。各ゲームのプログラムIDは以下の通りです: 「StarCraft」 \u003cSTAR\u003e、「Brood War」 \u003cSTARX\u003e、「Warcraft II: Battle.net Edition」 \u003cW2BN\u003e",
     "ptBR": "Fornece as estatísticas de Competição de outros jogos da Blizzard compatíveis com o Battle.net. Estes são os IDs de programa para cada jogo: StarCraft \u003cSTAR\u003e, Brood War \u003cSTARX\u003e e Warcraft II: Battle.net Edition \u003cW2BN\u003e.",
     "ruRU": "Выводит рейтинги других игр Blizzard в системе Battle.net. ID игр: StarCraft – \u003cSTAR\u003e, Brood War – \u003cSTARX\u003e, Warcraft II: Battle.net Edition – \u003cW2BN\u003e.",
-    "zhCN": "提供战网支持的其他暴雪游戏的天梯数据。每个游戏的简称如下：星际争霸\u003cSTAR\u003e，母巢之战\u003cSTARX\u003e，魔兽争霸II战网版本\u003cW2BN\u003e。"
+    "zhCN": "可显示 Battle.net 上面所支援暴雪游戏的天梯游戏状况。每一个程式的辨识码如下：星海争霸\u003cSTAR\u003e，怒火燎原\u003cSTARX\u003e和魔兽争霸II：battle.net版\u003cW2BN\u003e。"
   },
   {
     "id": 772,
@@ -1221,7 +1221,7 @@
     "jaJP": "自分のキャラクターを右クリックしてプロフィールを編集できます。",
     "ptBR": "Clicar com o botão direito em seu personagem permite editar o próprio perfil.",
     "ruRU": "Щелкните ПКМ по своему персонажу, чтобы редактировать профиль.",
-    "zhCN": "右键点击你自己的角色即可编辑你的个人资料。"
+    "zhCN": "右键点击你自己的人物，可以修改你的个人资料。"
   },
   {
     "id": 773,
@@ -1238,7 +1238,7 @@
     "jaJP": "Battle.netのチャットチャンネルで「Tab」キーを押すごとに、最近実行したコマンドの内10件が新しいものから順に表示されます。",
     "ptBR": "Usar a tecla \"Tab\" na sala de bate-papo do Battle.net mostra os últimos 10 comandos utilizados.",
     "ruRU": "С помощью кнопки Tab можно переключаться между последними десятью командами в чате Battle.net.",
-    "zhCN": "在战网聊天室中可以使用“Tab”键循环浏览你之前发出的最后10个命令。"
+    "zhCN": "在 Battle.net 的交谈室中，可使用 Tab 键切换你前十个输入过的指令。"
   },
   {
     "id": 774,
@@ -1255,7 +1255,7 @@
     "jaJP": "さらにヘルプが必要な場合は、Battle.netのテクニカルサポート・チャンネル（Technical Support Channel）を利用するか、「Diablo II」の取扱説明書を確認する、またはBlizzardのテクニカルサポートページ http://www.blizzard.com/support/ を確認してください。",
     "ptBR": "Se precisar de mais ajuda, entre no canal do Suporte Técnico no Battle.net, consulte o manual de Diablo II ou acesse a página de suporte técnico da Blizzard em https://us.battle.net/support/pt/",
     "ruRU": "Не нашли ответ на свой вопрос? Обратитесь в чат канала технической поддержки, прочитайте руководство Diablo II или откройте страницу техподдержки Blizzard на сайте http://www.blizzard.com/support/.",
-    "zhCN": "如果还需要进一步的帮助，请访问https://support.battlenet.com.cn/ld9/获取更多帮助。"
+    "zhCN": "如果你需要进一步的协助，请到 Battle.net 的 TECHNICAL SUPPORT 频道、参考「暗黑破坏神II」的说明书，或是到 http://www.blizzard.com/support/ 的网址，从 Blizzard公司 寻求技术性的支援。"
   },
   {
     "id": 775,
@@ -1272,7 +1272,7 @@
     "jaJP": "Battle.net チャットコマンド集",
     "ptBR": "COMANDOS DO BATTLE.NET",
     "ruRU": "КОМАНДЫ BATTLE.NET",
-    "zhCN": "战网命令"
+    "zhCN": "BATTLE.NET 指令"
   },
   {
     "id": 777,
@@ -1289,7 +1289,7 @@
     "jaJP": "/me",
     "ptBR": "/me",
     "ruRU": "/me",
-    "zhCN": "/我"
+    "zhCN": "/me"
   },
   {
     "id": 778,
@@ -1306,7 +1306,7 @@
     "jaJP": "/away",
     "ptBR": "/away",
     "ruRU": "/away",
-    "zhCN": "/暂离"
+    "zhCN": "/away"
   },
   {
     "id": 779,
@@ -1323,7 +1323,7 @@
     "jaJP": "/squelch、/unsquelch",
     "ptBR": "/squelch, /unsquelch",
     "ruRU": "/squelch, /unsquelch",
-    "zhCN": "/屏蔽, /取消屏蔽"
+    "zhCN": "/squelch, /unsquelch"
   },
   {
     "id": 780,
@@ -1340,7 +1340,7 @@
     "jaJP": "/ban、/unban、/kick",
     "ptBR": "/ban, /unban, /kick",
     "ruRU": "/ban, /unban, /kick",
-    "zhCN": "/拉黑, /取消拉黑, /踢人"
+    "zhCN": "/ban, /unban, /kick"
   },
   {
     "id": 781,
@@ -1357,7 +1357,7 @@
     "jaJP": "/channel",
     "ptBR": "/channel",
     "ruRU": "/channel",
-    "zhCN": "/频道"
+    "zhCN": "/channel"
   },
   {
     "id": 782,
@@ -1374,7 +1374,7 @@
     "jaJP": "/whois、/where、/whoami",
     "ptBR": "/whois, /where, /whoami",
     "ruRU": "/whois, /where, /whoami",
-    "zhCN": "/是何人, /地点, /我是谁"
+    "zhCN": "/whois, /where, /whoami"
   },
   {
     "id": 783,
@@ -1391,7 +1391,7 @@
     "jaJP": "/d2notify",
     "ptBR": "/d2notify",
     "ruRU": "/d2notify",
-    "zhCN": "/d2通知"
+    "zhCN": "/d2notify"
   },
   {
     "id": 784,
@@ -1408,7 +1408,7 @@
     "jaJP": "/designate、/rejoin",
     "ptBR": "/designate, /rejoin",
     "ruRU": "/designate, /rejoin",
-    "zhCN": "/委任, /重新加入"
+    "zhCN": "/designate, /rejoin"
   },
   {
     "id": 785,
@@ -1425,7 +1425,7 @@
     "jaJP": "/time",
     "ptBR": "/time",
     "ruRU": "/time",
-    "zhCN": "/时间"
+    "zhCN": "/time"
   },
   {
     "id": 786,
@@ -1442,7 +1442,7 @@
     "jaJP": "/who、/users",
     "ptBR": "/who, /users",
     "ruRU": "/who, /users",
-    "zhCN": "/查询, /用户"
+    "zhCN": "/who, /users"
   },
   {
     "id": 787,
@@ -1459,7 +1459,7 @@
     "jaJP": "/stats",
     "ptBR": "/stats",
     "ruRU": "/stats",
-    "zhCN": "/数据"
+    "zhCN": "/stats"
   },
   {
     "id": 5171,
@@ -1476,7 +1476,7 @@
     "jaJP": "Battle.netに接続中",
     "ptBR": "Conectando ao Battle.net",
     "ruRU": "Подключение к Battle.net",
-    "zhCN": "正在连接战网"
+    "zhCN": "连接到 Battle.net"
   },
   {
     "id": 5172,
@@ -1493,7 +1493,7 @@
     "jaJP": "ゲートウェイを照会中",
     "ptBR": "Consultando gateway",
     "ruRU": "Отправка запроса на сетевой шлюз",
-    "zhCN": "正在问询网关"
+    "zhCN": "查询通讯闸"
   },
   {
     "id": 5173,
@@ -1510,7 +1510,7 @@
     "jaJP": "最も近いサーバーに接続中",
     "ptBR": "Conectando ao servidor mais rápido",
     "ruRU": "Подключение к серверу с самым быстрым откликом",
-    "zhCN": "正在连接到最快的服务器"
+    "zhCN": "连接到最快速的伺服器"
   },
   {
     "id": 5174,
@@ -1527,7 +1527,7 @@
     "jaJP": "利用者のアカウントにアクセス中",
     "ptBR": "Acessando sua conta",
     "ruRU": "Получение доступа к учетной записи",
-    "zhCN": "正在访问您的账户"
+    "zhCN": "存取你的帐号"
   },
   {
     "id": 5175,
@@ -1544,7 +1544,7 @@
     "jaJP": "バージョンを確認中",
     "ptBR": "Verificando versões",
     "ruRU": "Проверка версий",
-    "zhCN": "正在检查版本"
+    "zhCN": "检查版本"
   },
   {
     "id": 5177,
@@ -1561,7 +1561,7 @@
     "jaJP": "プレイヤー・プロフィールを取得中",
     "ptBR": "Obtendo perfil de jogador",
     "ruRU": "Получение профиля игрока",
-    "zhCN": "正在获取玩家档案"
+    "zhCN": "取得玩家资料"
   },
   {
     "id": 5183,
@@ -1578,7 +1578,7 @@
     "jaJP": "ソフトウェアの新しいバージョンがあります。ゲームのプログラムを完全にアンインストールしてからオリジナルのゲームCDで再インストールを行い、Battle.netに再接続してください。",
     "ptBR": "Há uma nova versão do software disponível. Desinstale completamente o programa do jogo, reinstale usando o CD original e reconecte-se ao Battle.net.",
     "ruRU": "Доступна новая версия программы. Пожалуйста, полностью удалите игру, заново установите ее с  CD-диска и подключитесь к Battle.net.",
-    "zhCN": "有新版本的软件可供使用。请完全卸载您的游戏程序，使用原始CD重新安装，再重新连接到战网。"
+    "zhCN": "目前有更新的版本。请把你的游戏完全移除之后，再从你的原版光碟上面重新安装，然后再连线到Battle.net。"
   },
   {
     "id": 5184,
@@ -1595,7 +1595,7 @@
     "jaJP": "Battle.netに接続できません。インターネット・サービスプロバイダーにモデムでアクセスしており、リモートアクセス用の設定が行われていない場合は、手動での接続が必要になります。",
     "ptBR": "Não é possível conectar ao Battle.net. Se estiver usando um modem para acessar o provedor de serviços e não tiver configurado para acesso remoto, poderá ser necessário iniciar a conexão manualmente.",
     "ruRU": "Не удалось подключиться к Battle.net. Если вы используете модем для доступа к услугам интернет-провайдера и не настраивали функцию удаленного доступа, возможно, вам придется начать процесс подключения вручную.",
-    "zhCN": "无法连接到战网。如果您正在使用调制解调器接入服务提供商，而非使用远程访问，则可能需要手动启动连接。"
+    "zhCN": "无法连上Battle.net。如果你是使用数据机连到网际网路供应者，而且并没有使用远端连线的话，你可以利用手动的方式启动连线。"
   },
   {
     "id": 5185,
@@ -1612,7 +1612,7 @@
     "jaJP": "インターネット接続の回線状態が悪い、またはポート6112経由でのUDPパケット処理が行われていません。この状態でもチャットは行えますが、ゲームをプレイすることはできません。お使いのインターネット・サービスプロバイダー、またはシステム管理者にこのポートの開放手順をお問い合わせください。",
     "ptBR": "Sua conexão de Internet está muito fraca ou não está processando pacotes UDP pela porta 6112. Você poderá usar o bate-papo, mas não poderá jogar. Entre em contato com seu provedor de Internet ou administrador de sistemas para obter ajuda para abrir essa porta.",
     "ruRU": "Недостаточная скорость интернет-cоединения, либо пакеты UDP не обрабатываются через порт 6112. Вы сможете общаться в чате, но не сможете играть. Если вам нужна помощь, чтобы открыть этот порт, обратитесь к своему интернет-провайдеру или системному администратору.",
-    "zhCN": "您的互联网连接情况不佳，或是未能通过6112端口处理UDP数据包。您可以聊天，但不能进行游戏。请与因特网服务提供商或系统管理员联系，以获得协助打开此端口。"
+    "zhCN": "你的网际网路连线可能品质很差，或是没有透过6112 通讯埠进行UDP的动作。你仍然可以和其他人交谈，但是无法进行游戏。请和你的网际网路提供者连系，或是请你的系统管理员帮助你打开这个通讯埠。"
   },
   {
     "id": 5187,
@@ -1629,7 +1629,7 @@
     "jaJP": "Battle.netがアプリケーションのバージョンを正しく認識できません。",
     "ptBR": "O Battle.net não consegue identificar corretamente a versão do aplicativo.",
     "ruRU": "Battle.net не удалось определить вашу версию приложения.",
-    "zhCN": "战网无法正确识别您的应用程序版本。"
+    "zhCN": "Battle.net 无法辨视你目前应用程式的版本。"
   },
   {
     "id": 5188,
@@ -1646,7 +1646,7 @@
     "jaJP": "詳細はwww.battle.net/support/errormessages/よりご確認ください。",
     "ptBR": "Para obter mais informações, acesse battle.net/support/errormessages/",
     "ruRU": "Подробнее на www.battle.net/support/errormessages/",
-    "zhCN": "若需要更多信息，请访问https://support.battlenet.com.cn/help/article/101044"
+    "zhCN": "想要取得更多资讯，请到 www.battle.net/support/errormessages/"
   },
   {
     "id": 5189,
@@ -1663,7 +1663,7 @@
     "jaJP": "Battle.netに接続できません。",
     "ptBR": "Não é possível conectar ao Battle.net.",
     "ruRU": "Не удалось подключиться к Battle.net.",
-    "zhCN": "无法连接到战网。"
+    "zhCN": "无法连上 Battle.net"
   },
   {
     "id": 5190,
@@ -1680,7 +1680,7 @@
     "jaJP": "モデムをお使いの場合はBattle.netへの接続前に、インターネット・サービスプロバイダーに接続する必要があります。詳細はwww.battle.net/support/errormessages/よりご確認ください。",
     "ptBR": "Se estiver usando um modem, poderá ser necessário se conectar ao seu provedor de Internet antes de acessar o Battle.net. Para obter mais informações, acesse www.battle.net/support/errormessages/",
     "ruRU": "Если вы используете модем, то возможно, вам необходимо вначале подключиться к сети перед подключением к Battle.net. Подробнее на www.battle.net/support/errormessages/",
-    "zhCN": "如果使用调制解调器，您可能需要先连接到您的互联网服务提供商再尝试连接战网。更多信息，请访问https://support.battlenet.com.cn/help/article/101044"
+    "zhCN": "如果使用数据机，你须要连上你的网际网路提供者，才能连到Battle.net。想知道进一步的讯息，请到www.battle.net/support/errormessages/"
   },
   {
     "id": 5191,
@@ -1697,7 +1697,7 @@
     "jaJP": "インターネット・サービスプロバイダーに16ビット接続で接続しています。",
     "ptBR": "Você está usando uma conexão de 16 bits com o provedor de Internet.",
     "ruRU": "Установлено 16-битное подключение к интернет-провайдеру.",
-    "zhCN": "您正在使用16位数据连接接入因特网服务提供商。"
+    "zhCN": "你连到网际网路提供者时用的是 16 位元模式。"
   },
   {
     "id": 5192,
@@ -1714,7 +1714,7 @@
     "jaJP": "Battle.netのご利用には、インターネットに32ビット接続で接続する必要があります。インターネット・サービスプロバイダーから提供されている最新の接続ソフトウェアをお使いになっているか、ご確認ください。",
     "ptBR": "O Battle.net requer uma conexão de Internet de 32 bits. Verifique se está usando a versão mais recente do software de conexão do provedor de Internet.",
     "ruRU": "Для доступа к службе Battle.net требуется 32-битное подключение к Интернету. Убедитесь, что вы используете для подключения актуальное программное обеспечение от своего интернет-провайдера.",
-    "zhCN": "您需要通过32位数据连接才能使用战网。请确保你从互联网服务提供商处获得最新的连接软件。"
+    "zhCN": "Battle.net 需要以 32 位元的连线接上网际网路。请确定你目前使用的连线软体，是由网际网路提供者所给你的常用软体。"
   },
   {
     "id": 5193,
@@ -1731,7 +1731,7 @@
     "jaJP": "TCP/IP接続を開放できません。OpenTransportが正しくインストールされているかご確認ください。また、Battle.netへの接続前に、インターネット・サービスプロバイダーに接続する必要があります。",
     "ptBR": "Não é possível abrir uma conexão TCP/IP. Verifique se OpenTransport foi instalado corretamente. Também pode ser necessário se conectar ao provedor de Internet antes de se conectar ao Battle.net.",
     "ruRU": "Не удалось установить подключение TCP/IP. Убедитесь, что программное обеспечение OpenTransport установлено корректно. Возможно, вам придется подключиться к своему интернет-провайдеру перед соединением с Battle.net.",
-    "zhCN": "无法打开TCP/IP连接。确保正确安装了OpenTransport。您可能需要先连接到您的互联网服务提供商，才能够连接到战网。"
+    "zhCN": "无法开启 TCP/IP 连线。确定 OpenTransport 已经安装完毕。你可能须要和你的网际网路提供者连系，才能连上Battle.net。"
   },
   {
     "id": 5195,
@@ -1748,7 +1748,7 @@
     "jaJP": "ソフトウェアの新しいバージョンがあります。Battle.netのご利用には最新バージョンが必要です。今からソフトウェアのアップデートを行います。",
     "ptBR": "Há uma nova versão do software disponível. O Battle.net requer o uso da versão mais recente. O software será atualizado agora.",
     "ruRU": "Доступна новая версия программного обеспечения. Для Battle.net требуется наличие новейшей версии. Будет выполнено обновление.",
-    "zhCN": "有一个新版本的软件可供使用。战网要求您使用最新版本。您的软件现在将被更新。"
+    "zhCN": "目前有更新的版本。Battle.net 需要使用最新版来进行游戏，你的软体即将开始更新。"
   },
   {
     "id": 5196,
@@ -1765,7 +1765,7 @@
     "jaJP": "アップデートのダウンロードが完了しました。アプリケーションを再起動します。",
     "ptBR": "A atualização foi baixada com sucesso. O aplicativo será reiniciado.",
     "ruRU": "Обновление загружено. Будет выполнен перезапуск приложения.",
-    "zhCN": "已成功下载更新。您的应用程序现在将重新启动。"
+    "zhCN": "更新档下载成功，你的应用程式会自动重新启动。"
   },
   {
     "id": 5197,
@@ -1782,7 +1782,7 @@
     "jaJP": "アップデートが中断されました。データの更新は行われていません。もう一度お試しください。",
     "ptBR": "A atualização foi interrompida. Nenhuma alteração foi feita. Tente realizar o processo novamente.",
     "ruRU": "Обновление прервано. Изменения не внесены. Пожалуйста, попробуйте еще раз.",
-    "zhCN": "更新中断。程序没有变化。请重新尝试此过程。"
+    "zhCN": "更新动作遭到中断，不会对目前的程式做任何改变。请稍候再重试。"
   },
   {
     "id": 5198,
@@ -1799,7 +1799,7 @@
     "jaJP": "ソフトウェアのアップグレードをダウンロードしています。",
     "ptBR": "Baixando upgrade de software.",
     "ruRU": "Загрузка обновления программного обеспечения.",
-    "zhCN": "下载软件升级。"
+    "zhCN": "下载更新"
   },
   {
     "id": 5203,
@@ -1816,7 +1816,7 @@
     "jaJP": "現在レルムの改修中です。15分後にもう一度お試しください。",
     "ptBR": "O reino está passando por reformas. Tente novamente em 15 minutos.",
     "ruRU": "Игровой мир в процессе обновления. Пожалуйста, попробуйте еще раз через 15 минут.",
-    "zhCN": "服务器正在维护。请在15分钟后再次尝试。"
+    "zhCN": "这个伺服器正在更新，请 15 分钟后再试一次。"
   },
   {
     "id": 5231,
@@ -1833,7 +1833,7 @@
     "jaJP": "ユーザー名は2文字以上である必要があります。別の名前を入力してください。",
     "ptBR": "Os nomes de usuário devem ter pelo menos dois caracteres. Tente novamente com outro nome.",
     "ruRU": "Имена пользователей должны содержать не менее двух символов. Пожалуйста, попробуйте другое имя.",
-    "zhCN": "用户名的长度需要最少两个字符。请用不同的名字再试一次。"
+    "zhCN": "使用者名称需要至少两个字元。请试试不同的名字。"
   },
   {
     "id": 5232,
@@ -1850,7 +1850,7 @@
     "jaJP": "ユーザー名に不正な文字が含まれています。",
     "ptBR": "O nome de usuário contém um ou mais caracteres proibidos.",
     "ruRU": "В вашем имени пользователя содержится один или несколько недопустимых символов.",
-    "zhCN": "您的用户名中包含一个或多个非法字符。"
+    "zhCN": "你的使用者名称包括了一个或以上的无效字元。"
   },
   {
     "id": 5233,
@@ -1867,7 +1867,7 @@
     "jaJP": "ユーザー名に使用が禁じられている言葉が含まれています。",
     "ptBR": "O nome de usuário contém uma ou mais palavras não permitidas.",
     "ruRU": "В вашем имени пользователя содержится одно или несколько запрещенных слов.",
-    "zhCN": "您的用户名中包含一个或多个不被允许的文字。"
+    "zhCN": "你的使用者名称包括了一个或以上的禁用文字。"
   },
   {
     "id": 5234,
@@ -1884,7 +1884,7 @@
     "jaJP": "前回のアカウント作成リクエストがまだ処理中です。しばらく待ってから、作成したアカウントでのログインをお試しください。",
     "ptBR": "Sua solicitação anterior de criação de conta ainda está sendo processada. Aguarde alguns instantes e tente se conectar com a conta que acabou de criar.",
     "ruRU": "Ваш предыдущий запрос о создании учетной записи еще обрабатывается. Пожалуйста, подождите некоторое время и попробуйте войти под уже созданной учетной записью.",
-    "zhCN": "您之前的账户创建请求仍在处理中。请稍等片刻，然后尝试用您刚刚创建的账户登录。"
+    "zhCN": "你上一次申请帐户的要求仍在处理中。请稍等一下，并尝试利用你刚刚开创的帐户登录。"
   },
   {
     "id": 5235,
@@ -1901,7 +1901,7 @@
     "jaJP": "名前の英数字の文字数が足りません。",
     "ptBR": "O nome não tem caracteres alfanuméricos suficientes.",
     "ruRU": "В вашем имени недостаточно букв и цифр.",
-    "zhCN": "您的名字中没有足够的字母-数字类字符。"
+    "zhCN": "你的名字中没有足够的字母与数字。"
   },
   {
     "id": 5236,
@@ -1918,7 +1918,7 @@
     "jaJP": "名前に含まれている、連続する句読点の数が多すぎます。",
     "ptBR": "O nome contém muitos caracteres de pontuação adjacentes.",
     "ruRU": "В вашем имени слишком много знаков пунктуации подряд.",
-    "zhCN": "你的名字中包含了太多相邻的符号。"
+    "zhCN": "你的名字包含了太多相邻的标点符号。"
   },
   {
     "id": 5237,
@@ -1935,7 +1935,7 @@
     "jaJP": "名前に含まれている句読点の数が多すぎます。",
     "ptBR": "O nome contém muitos caracteres de pontuação.",
     "ruRU": "В вашем имени слишком много знаков пунктуации.",
-    "zhCN": "您的名字里的符号太多了。"
+    "zhCN": "你的名字包含了太多的标点符号。"
   },
   {
     "id": 5238,
@@ -1952,7 +1952,7 @@
     "jaJP": "入力したパスワードが一致していません。同じパスワードを2回入力してください。",
     "ptBR": "As senhas digitadas são diferentes. Insira a mesma senha duas vezes.",
     "ruRU": "Введенные пароли не совпадают. Пожалуйста, введите одинаковые пароли.",
-    "zhCN": "您两次输入的密码不匹配。请输入两次相同的密码。"
+    "zhCN": "你输入的密码不符，请输入相同的密码二次。"
   },
   {
     "id": 5239,
@@ -1969,7 +1969,7 @@
     "jaJP": "入力した名前はすでに使われています。別の名前をご入力ください。",
     "ptBR": "Já existe uma conta com o nome escolhido.  Tente novamente com outro nome.",
     "ruRU": "Учетная запись с таким названием уже существует. Пожалуйста, выберите другое.",
-    "zhCN": "您选择的账户名已经存在。请用不同的名字再试一次。"
+    "zhCN": "你所选择的名字已经有其他的帐户使用了。请再试一次，并输入不同的名字。"
   },
   {
     "id": 5240,
@@ -1986,7 +1986,7 @@
     "jaJP": "入力されたIDが正しくありません。",
     "ptBR": "Você inseriu um ID inválido.",
     "ruRU": "Введен некорректный ID.",
-    "zhCN": "您输入的ID无效。"
+    "zhCN": "你输入了一个无法使用的名字。"
   },
   {
     "id": 5241,
@@ -2003,7 +2003,7 @@
     "jaJP": "入力したパスワードが間違っています。自分のキャラクターがBattle.netに3ヶ月間以上ログインしていない、またはパスワードを忘れてしまった場合は、以下を選択することができます: ",
     "ptBR": "Você inseriu uma senha incorreta. Se o personagem não foi usado no Battle.net por 3 meses ou se você esqueceu a senha, pode selecionar ",
     "ruRU": "Введен некорректный пароль. Если вы не играли своим персонажем в Battle.net в течение 3 месяцев или забыли свой пароль, вы можете выбрать ",
-    "zhCN": "您输入了错误的密码。如果您的角色已经3个月没有登陆战网，或者您忘记了密码，可以选择"
+    "zhCN": "你输入了一个错误的密码。如果你的人物没有在三个月之内连上 Battle.net，或是你忘掉你的密码，你可以选择「新帐户」来设定一个新的名称或是密码。"
   },
   {
     "id": 5242,
@@ -2020,7 +2020,7 @@
     "jaJP": "パスワードを変更できません。入力された名前またはパスワードが正しくありません。",
     "ptBR": "Não foi possível alterar a senha. Você informou um nome ou senha inválido.",
     "ruRU": "Не удалось сменить пароль. Вы указали некорректное имя или пароль.",
-    "zhCN": "无法更改密码。指定的账户名或密码无效。"
+    "zhCN": "无法变更密码。你输入了错误的名称或密码。"
   },
   {
     "id": 5244,
@@ -2037,7 +2037,7 @@
     "jaJP": "ログインエラー",
     "ptBR": "Erro de conexão",
     "ruRU": "Ошибка авторизации",
-    "zhCN": "登录错误"
+    "zhCN": "登入错误"
   },
   {
     "id": 5245,
@@ -2054,7 +2054,7 @@
     "jaJP": "バージョンを認識できません",
     "ptBR": "Não é possível identificar a versão",
     "ruRU": "Не удалось определить версию",
-    "zhCN": "无法识别版本"
+    "zhCN": "无法辨别版本"
   },
   {
     "id": 5246,
@@ -2071,7 +2071,7 @@
     "jaJP": "再インストールしてアップグレード",
     "ptBR": "Reinstale para fazer upgrade",
     "ruRU": "Переустановите для обновления",
-    "zhCN": "重新安装升级"
+    "zhCN": "重新安装以进行升级"
   },
   {
     "id": 5247,
@@ -2088,7 +2088,7 @@
     "jaJP": "接続できません",
     "ptBR": "Não é possível conectar",
     "ruRU": "Не удалось подключиться",
-    "zhCN": "无法连接"
+    "zhCN": "无法连线"
   },
   {
     "id": 5248,
@@ -2105,7 +2105,7 @@
     "jaJP": "Battle.net",
     "ptBR": "Battle.net",
     "ruRU": "Battle.net",
-    "zhCN": "战网"
+    "zhCN": "Battle.net"
   },
   {
     "id": 5249,
@@ -2122,7 +2122,7 @@
     "jaJP": "アカウントを作成できません",
     "ptBR": "Não é possível criar conta",
     "ruRU": "Не удалось создать учетную запись",
-    "zhCN": "无法创建账户"
+    "zhCN": "无法创建帐户"
   },
   {
     "id": 5266,
@@ -2156,7 +2156,7 @@
     "jaJP": "名前",
     "ptBR": "Nome",
     "ruRU": "Имя",
-    "zhCN": "名字"
+    "zhCN": "名称"
   },
   {
     "id": 5268,
@@ -2207,7 +2207,7 @@
     "jaJP": "場所",
     "ptBR": "Local",
     "ruRU": "Страна",
-    "zhCN": "地址"
+    "zhCN": "地区"
   },
   {
     "id": 5271,
@@ -2224,7 +2224,7 @@
     "jaJP": "自己紹介",
     "ptBR": "Descrição",
     "ruRU": "Описание",
-    "zhCN": "描述"
+    "zhCN": "说明"
   },
   {
     "id": 5288,
@@ -2258,7 +2258,7 @@
     "jaJP": "K",
     "ptBR": "K",
     "ruRU": "ТЫС.",
-    "zhCN": "千"
+    "zhCN": "K"
   },
   {
     "id": 5329,
@@ -2275,7 +2275,7 @@
     "jaJP": "M",
     "ptBR": "M",
     "ruRU": "МЛН",
-    "zhCN": "百万"
+    "zhCN": "M"
   },
   {
     "id": 5330,
@@ -2292,7 +2292,7 @@
     "jaJP": "B",
     "ptBR": "B",
     "ruRU": "МЛРД",
-    "zhCN": "十亿"
+    "zhCN": "B"
   },
   {
     "id": 5331,
@@ -2309,7 +2309,7 @@
     "jaJP": "T",
     "ptBR": "T",
     "ruRU": "ТРЛН",
-    "zhCN": "兆"
+    "zhCN": "T"
   },
   {
     "id": 5332,
@@ -2326,7 +2326,7 @@
     "jaJP": "%sからのメッセージ: %s",
     "ptBR": "De %s: %s",
     "ruRU": "От %s: %s",
-    "zhCN": "来自%s：%s"
+    "zhCN": "来自%s的讯息：%s"
   },
   {
     "id": 5333,
@@ -2343,7 +2343,7 @@
     "jaJP": "%sへのメッセージ: %s",
     "ptBR": "Enviado para %s: %s",
     "ruRU": "Для %s: %s",
-    "zhCN": "发送到%s: %s"
+    "zhCN": "发送给%s：%s"
   },
   {
     "id": 5337,
@@ -2360,7 +2360,7 @@
     "jaJP": "無効なチャンネル名です。チャンネル名に予約文字を含めることはできません。",
     "ptBR": "Nome de canal inválido. O nome do canal não pode conter caracteres reservados.",
     "ruRU": "Неправильное название канала. В названии канала нельзя использовать зарезервированные символы.",
-    "zhCN": "无效的频道名称。频道名称中不能包含保留字符。"
+    "zhCN": "无效的频道名称。频道名称不能包括保留字元。"
   },
   {
     "id": 5338,
@@ -2377,7 +2377,7 @@
     "jaJP": "インターネットのリンクをクリックしました。ウェブブラウザが起動します。Battle.netにはWindowsのタスクバーから戻ることができます。",
     "ptBR": "Você clicou em um link da Internet. O navegador da web será iniciado. Você pode usar a barra de tarefas do Windows para voltar ao Battle.net.",
     "ruRU": "Вы щелкнули по интернет-ссылке. Сейчас будет запущен ваш браузер. Используйте панель задач Windows, чтобы вернуться в Battle.net.",
-    "zhCN": "您点击了一个因特网链接，将会启动网络浏览器。您可以使用Windows的任务栏返回战网。"
+    "zhCN": "你点选了一个打开网际网路的连结。你的浏览器会自动执行，你可以使用 Windows 的工作列回到 Battle.net。"
   },
   {
     "id": 5339,
@@ -2394,7 +2394,7 @@
     "jaJP": "Battle.netへの接続が切断されました。OKを押すと%sへの接続が切断されます。キャンセルを押すと接続状態が維持されます。",
     "ptBR": "Você se desconectou do Battle.net. Pressione OK para interromper a conexão com %s. Pressione Cancelar para manter a conexão.",
     "ruRU": "Вы отключились от Battle.net. Нажмите «ОК», чтобы прервать подключение к %s. Нажмите «Отмена», чтобы сохранить подключение.",
-    "zhCN": "您与战网的连接已断开。按下“确认”可以挂起到%s的连接，按“取消”则保持连接。"
+    "zhCN": "你己经和 Battle.net 中断连线了。按下「确定」挂断与%s的连线，或按下「取消」保持连线。"
   },
   {
     "id": 5340,
@@ -2411,7 +2411,7 @@
     "jaJP": "Battle.netから標準のブラウザを起動することができませんでした。",
     "ptBR": "O Battle.net não conseguiu abrir o navegador padrão.",
     "ruRU": "Battle.net не удалось запустить ваш браузер по умолчанию.",
-    "zhCN": "战网无法启动默认浏览器。"
+    "zhCN": "Battle.net 无法启动你预设的浏览器。"
   },
   {
     "id": 5341,
@@ -2428,7 +2428,7 @@
     "jaJP": "URLを開けませんでした。URLが無効である可能性があります。",
     "ptBR": "Não foi possível abrir este URL. O URL parece ser inválido.",
     "ruRU": "Не удалось перейти по этому адресу URL. Возможно, адрес некорректен.",
-    "zhCN": "无法打开此URL。此URL似乎无效。"
+    "zhCN": "无法开启网址，目前的网址无效。"
   },
   {
     "id": 5342,
@@ -2445,7 +2445,7 @@
     "jaJP": "Battle.netからウェブブラウザを起動するには、バージョン1.1以降のInternet Configが必要です。Internet Configがお使いのコンピューターにインストールされているかご確認ください。",
     "ptBR": "Para abrir um navegador da web pelo Battle.net, é necessário ter Internet Config 1.1 ou mais recente.  Verifique se Internet Config está instalado no seu computador.",
     "ruRU": "Чтобы запустить веб-браузер с помощью Battle.net, требуется программное обеспечение Internet Config 1.1 или более новая версия.  Убедитесь, что на вашем компьютере установлен Internet Config.",
-    "zhCN": "从战网启动网络浏览器需要您的计算机上安装了1.1或者更新版本的因特网配置。"
+    "zhCN": "要从 Battle.Net 来启动网页浏览器，你需要有 Internet Config 1.1 或更新的版本。请确定你的电脑上面安装了 Internet Config。"
   },
   {
     "id": 5343,
@@ -2462,7 +2462,7 @@
     "jaJP": "Internet Configまたはインターネットのコントロールパネルで設定されている標準のウェブブラウザが、HDD内に見つかりませんでした。",
     "ptBR": "O navegador da web padrão selecionado em Internet Config ou no painel de controle da Internet não foi localizado no disco rígido.",
     "ruRU": "На вашем жестком диске не найден браузер по умолчанию, указанный в Internet Config или на панели управления Интернетом.",
-    "zhCN": "因特网配置或因特网控制面板中所选择的默认网络浏览器无法在您的硬盘上找到。"
+    "zhCN": "在 Internet Config 或控制台的 Internet 中，所预设的网页浏览器并不存在于你的硬碟之中。"
   },
   {
     "id": 5344,
@@ -2479,7 +2479,7 @@
     "jaJP": "ウェブブラウザの起動に必要なメモリの空きがありません。",
     "ptBR": "Não há memória disponível suficiente para iniciar o navegador da web.",
     "ruRU": "Недостаточно свободной памяти для запуска веб-браузера.",
-    "zhCN": "没有足够的可用内存来启动网络浏览器。"
+    "zhCN": "记忆体不足，无法执行网页浏览器。"
   },
   {
     "id": 5345,
@@ -2496,7 +2496,7 @@
     "jaJP": "インターネットのリンクをクリックしました。ウェブブラウザが起動します。以下をお使いください: ",
     "ptBR": "Você clicou em um link da Internet. O navegador da web será iniciado. Use ",
     "ruRU": "Вы щелкнули по интернет-ссылке. Сейчас будет запущен ваш браузер. Используйте",
-    "zhCN": "你已经点击了一个到因特网的链接。您的web浏览器现在将被启动。使用"
+    "zhCN": "你点选了一个打开网际网路的连结，你的浏览器会自动执行。"
   },
   {
     "id": 5346,
@@ -2513,7 +2513,7 @@
     "jaJP": "制限されているチャンネルです",
     "ptBR": "Esse canal é restrito",
     "ruRU": "Подключение к этому каналу ограничено.",
-    "zhCN": "此频道受到限制"
+    "zhCN": "这个频道目前禁用"
   },
   {
     "id": 5347,
@@ -2530,7 +2530,7 @@
     "jaJP": "Battle.netから切断されました。再度接続してください。",
     "ptBR": "Sua conexão com o Battle.net foi encerrada.  Reconecte-se.",
     "ruRU": "Вы были отключены от Battle.net. Пожалуйста, подключитесь снова.",
-    "zhCN": "您与战网断开了连接。请重新连接。"
+    "zhCN": "你和 Battle.net 的连线已中断。请重新连线。"
   },
   {
     "id": 5348,
@@ -2547,7 +2547,7 @@
     "jaJP": "Battle.netに接続できません。しばらく待ってから再度接続を試みてください。",
     "ptBR": "O Battle.net está indisponível. Reconecte-se mais tarde.",
     "ruRU": "Battle.net недоступен. Попробуйте подключиться позже.",
-    "zhCN": "战网已关闭。请稍后重新连接。"
+    "zhCN": "无法连上 Battle.net。请稍后再试一次。"
   },
   {
     "id": 5350,
@@ -2564,7 +2564,7 @@
     "jaJP": "Battle.netに接続できません。しばらく待ってから再度接続を試みてください。",
     "ptBR": "O Battle.net está indisponível. Reconecte-se mais tarde.",
     "ruRU": "Сеть Battle.net сейчас недоступна. Попробуйте подключиться позже.",
-    "zhCN": "战网已关闭。请稍后重新连接。"
+    "zhCN": "无法连上 Battle.net。请稍后再试一次。"
   },
   {
     "id": 5351,
@@ -2581,7 +2581,7 @@
     "jaJP": "Battle.netへの接続が失われました。",
     "ptBR": "A conexão com o Battle.net foi interrompida.",
     "ruRU": "Потеряно соединение с Battle.net.",
-    "zhCN": "与战网失去连接。"
+    "zhCN": "与 Battle.net 失去连线。"
   },
   {
     "id": 5352,
@@ -2598,7 +2598,7 @@
     "jaJP": "Battle.netへの接続が失われました。",
     "ptBR": "A conexão com o Battle.net foi perdida.",
     "ruRU": "Подключение к Battle.net прервано.",
-    "zhCN": "您与战网的连接中断了。"
+    "zhCN": "你和 Battle.net 的连线已经中断。"
   },
   {
     "id": 5353,
@@ -2615,7 +2615,7 @@
     "jaJP": "Battle.netの応答がありません。しばらく待ってから再度接続をお試しください。",
     "ptBR": "O Battle.net não está respondendo. Tente conectar-se novamente em alguns minutos.",
     "ruRU": "Battle.net не отвечает. Попробуйте подключиться через несколько минут.",
-    "zhCN": "战网没有响应。请等候几分钟，再重新尝试连接。"
+    "zhCN": "Battle.net 没有回应，请稍候数分钟之后再重试。"
   },
   {
     "id": 5354,
@@ -2632,7 +2632,7 @@
     "jaJP": "Battle.netの応答がありません。しばらく待ってから再度接続をお試しください。",
     "ptBR": "O Battle.net não está respondendo. Tente conectar-se novamente em alguns minutos.",
     "ruRU": "Battle.net не отвечает. Попробуйте подключиться через несколько минут.",
-    "zhCN": "战网没有响应。请等候几分钟，再重新尝试连接。"
+    "zhCN": "Battle.net 没有回应，请稍候数分钟之后再重试。"
   },
   {
     "id": 5355,
@@ -2649,7 +2649,7 @@
     "jaJP": "Battle.netへの接続が中断されました。しばらく待ってからもう一度お試しください。",
     "ptBR": "A conexão com o Battle.net foi interrompida. Tente novamente mais tarde.",
     "ruRU": "Подключение к Battle.net было прервано. Попробуйте позже.",
-    "zhCN": "战网连接已中断。请稍后再试。"
+    "zhCN": "和 Battle.net 的连线已经中断。请稍后再试一次。"
   },
   {
     "id": 10004,
@@ -2666,7 +2666,7 @@
     "jaJP": "/whisper \u003c*アカウント名\u003e、/w \u003c*アカウント名\u003e",
     "ptBR": "/whisper \u003c*nomedaconta\u003e, /w \u003c*nomedaconta\u003e",
     "ruRU": "/whisper \u003cназваниезаписи\u003e, /w \u003cназваниезаписи\u003e",
-    "zhCN": "/密语\u003c*accountname\u003e, /w\u003c*accountname\u003e"
+    "zhCN": "/whisper \u003c*帐号名称\u003e, /w \u003c*帐号名称\u003e"
   },
   {
     "id": 10005,
@@ -2683,7 +2683,7 @@
     "jaJP": "/msg \u003c*アカウント名\u003e、/m \u003c*アカウント名\u003e",
     "ptBR": "/msg \u003c*nomedaconta\u003e, /m \u003c*nomedaconta\u003e",
     "ruRU": "/msg \u003cназваниезаписи\u003e, /m \u003cназваниезаписи\u003e",
-    "zhCN": "/消息\u003c*accountname\u003e, /m\u003c*accountname\u003e"
+    "zhCN": "/msg \u003c*帐号名称\u003e, /m \u003c*帐号名称\u003e"
   },
   {
     "id": 10006,
@@ -2700,7 +2700,7 @@
     "jaJP": "/squelch \u003c*アカウント名\u003e",
     "ptBR": "/squelch \u003c*nomedaconta\u003e",
     "ruRU": "/squelch \u003cназваниезаписи\u003e",
-    "zhCN": "/屏蔽\u003c*accountname\u003e"
+    "zhCN": "/squelch \u003c*帐号名称\u003e"
   },
   {
     "id": 10007,
@@ -2717,7 +2717,7 @@
     "jaJP": "/ignore \u003c*アカウント名\u003e",
     "ptBR": "/ignore \u003c*nomedaconta\u003e",
     "ruRU": "/ignore \u003cназваниезаписи\u003e",
-    "zhCN": "/无视\u003c*accountname\u003e"
+    "zhCN": "/ignore \u003c*帐号名称\u003e"
   },
   {
     "id": 10008,
@@ -2734,7 +2734,7 @@
     "jaJP": "/unsquelch \u003c*アカウント名\u003e",
     "ptBR": "/unsquelch \u003c*nomedaconta\u003e",
     "ruRU": "/unsquelch \u003cназваниезаписи\u003e",
-    "zhCN": "/取消屏蔽\u003c*accountname\u003e"
+    "zhCN": "/unsquelch \u003c*帐号名称\u003e"
   },
   {
     "id": 10009,
@@ -2751,7 +2751,7 @@
     "jaJP": "/unignore \u003c*アカウント名\u003e",
     "ptBR": "/unignore \u003c*nomedaconta\u003e",
     "ruRU": "/unignore \u003cназваниезаписи\u003e",
-    "zhCN": "/取消无视\u003c*accountname\u003e"
+    "zhCN": "/unignore \u003c*帐号名称\u003e"
   },
   {
     "id": 10010,
@@ -2768,7 +2768,7 @@
     "jaJP": "/ban \u003c*アカウント名\u003e",
     "ptBR": "/ban \u003c*nomedaconta\u003e",
     "ruRU": "/ban \u003cназваниезаписи\u003e",
-    "zhCN": "/拉黑\u003c*accountname\u003e"
+    "zhCN": "/ban \u003c*帐号名称\u003e"
   },
   {
     "id": 10011,
@@ -2785,7 +2785,7 @@
     "jaJP": "/designate \u003c*アカウント名\u003e",
     "ptBR": "/designate \u003c*nomedaconta\u003e",
     "ruRU": "/designate \u003cназваниезаписи\u003e",
-    "zhCN": "/任命\u003c*accountname\u003e"
+    "zhCN": "/designate \u003c*帐号名称\u003e"
   },
   {
     "id": 10012,
@@ -2802,7 +2802,7 @@
     "jaJP": "/kick \u003c*アカウント名\u003e",
     "ptBR": "/kick \u003c*nomedaconta\u003e",
     "ruRU": "/kick \u003cназваниезаписи\u003e",
-    "zhCN": "/踢人\u003c*accountname\u003e"
+    "zhCN": "/kick \u003c*帐号名称\u003e"
   },
   {
     "id": 10013,
@@ -2819,7 +2819,7 @@
     "jaJP": "/whois \u003c*アカウント名\u003e、/where \u003c*アカウント名\u003e",
     "ptBR": "/whois \u003c*nomedaconta\u003e, /where \u003c*nomedaconta\u003e",
     "ruRU": "/whois \u003cназваниезаписи\u003e, /where \u003cназваниезаписи\u003e",
-    "zhCN": "/是何人\u003c*accountname\u003e, /地点\u003c*accountname\u003e"
+    "zhCN": "/whois \u003c*帐号名称\u003e, /where \u003c*帐号名称\u003e"
   },
   {
     "id": 10014,
@@ -2836,7 +2836,7 @@
     "jaJP": "/whereis \u003c*アカウント名\u003e",
     "ptBR": "/whereis \u003c*nomedaconta\u003e",
     "ruRU": "/whereis \u003cназваниезаписи\u003e",
-    "zhCN": "/在何处\u003c*accountname\u003e"
+    "zhCN": "/whereis \u003c*帐号名称\u003e"
   },
   {
     "id": 10015,
@@ -2853,7 +2853,7 @@
     "jaJP": "/stats \u003c*アカウント名\u003e \u003cプログラムID\u003e",
     "ptBR": "/stats \u003c*nomedaconta\u003e \u003cIDprograma\u003e",
     "ruRU": "/stats \u003cназваниезаписи\u003e \u003cID\u003e",
-    "zhCN": "/数据\u003c*accountname\u003e \u003cprogramID\u003e"
+    "zhCN": "/stats \u003c*帐号名称\u003e \u003c程式ID\u003e"
   },
   {
     "id": 10092,
@@ -2870,7 +2870,7 @@
     "jaJP": "「拡張版ラダー」ではキャラクターの経験値ランキングが表示されます。初期状態では全体のランキングが表示されます。クラス名を選択するとそのクラスのランキングが表示されます。",
     "ptBR": "A COMPETIÇÃO DA EXPANSÃO exibe os personagens no topo da classificação, em ordem de experiência. A configuração padrão exibe as classificações gerais, mas você pode ver listas organizadas selecionando a opção Por Classe.",
     "ruRU": "РЕЙТИНГ ДОПОЛНЕНИЯ отображает персонажей в зависимости от опыта. По умолчанию отображается общий список, но его можно отсортировать кнопкой «По классу».",
-    "zhCN": "资料片天梯会根据经验值显示排名最高的角色。默认设置下会显示所有排名，您也可以选择“根据职业”查看分类排名。"
+    "zhCN": "「资料片天梯」依照经验值多寡列出最顶尖的角色。预设为显示整体排名，但你也可以点选「职业」选项来检视各职业的排名。"
   },
   {
     "id": 10093,
@@ -2887,7 +2887,7 @@
     "jaJP": "「拡張版ハードコア・ラダー」ではハードコア・キャラクターの経験値ランキングが表示されます。初期状態では全体のランキングが表示されます。クラス名を選択するとそのクラスのランキングが表示されます。",
     "ptBR": "A COMPETIÇÃO HARDCORE DA EXPANSÃO exibe os personagens Hardcore no topo da classificação, em ordem de experiência. A configuração padrão exibe as classificações gerais, mas você pode ver listas organizadas selecionando a opção Por Classe.",
     "ruRU": "РЕЙТИНГ ДОПОЛНЕНИЯ (ГЕРОИЧ.) отображает персонажей в зависимости от опыта, набранного в героическом режиме. По умолчанию отображается общий список, но его можно отсортировать кнопкой «По классу».",
-    "zhCN": "资料片专家模式天梯会根据经验值显示排名最高的角色。默认设置下会显示所有排名，您也可以选择“根据职业”查看分类排名。"
+    "zhCN": "「资料片专家级天梯」依照经验值多寡列出最顶尖的专家级角色。预设为显示整体排名，你也可以点选「职业」选项来检视各职业的排名。"
   },
   {
     "id": 11017,
@@ -2904,7 +2904,7 @@
     "jaJP": "ÿc3青色のテキストÿc4: チャットチャンネル内でプレイヤーの取った行動は青で表示されます。",
     "ptBR": "ÿc3Texto azulÿc4 representa ações realizadas por pessoas no canal de bate-papo.",
     "ruRU": "Действия участников чата выделяются ÿc3голубымÿc4 цветом.",
-    "zhCN": "ÿc3蓝色文字ÿc4代表聊天频道中的玩家所做出的行动。"
+    "zhCN": "ÿc3蓝色文字ÿc4代表聊天频道中其他人的行动。"
   },
   {
     "id": 11041,
@@ -2921,7 +2921,7 @@
     "jaJP": "/reply",
     "ptBR": "/reply",
     "ruRU": "/reply",
-    "zhCN": "/回复"
+    "zhCN": "/reply"
   },
   {
     "id": 11042,
@@ -2938,7 +2938,7 @@
     "jaJP": "送られてきたささやきに対して、アカウント名を入力せずにメッセージを返信できます。",
     "ptBR": "Permite responder a um sussurro sem digitar o nome da conta.",
     "ruRU": "Позволяет ответить игроку, не указывая имя пользователя.",
-    "zhCN": "此命令可以在不输入账户名称的情况下回复一条密语"
+    "zhCN": "可直接回复密语，不需键入帐户名称"
   },
   {
     "id": 11043,
@@ -2955,7 +2955,7 @@
     "jaJP": "/whisper、/msg、/reply",
     "ptBR": "/whisper, /msg, /reply",
     "ruRU": "/whisper, /msg, /reply",
-    "zhCN": "/密语, /消息, /回复"
+    "zhCN": "/whisper, /msg, /reply"
   },
   {
     "id": 11044,
@@ -2972,7 +2972,7 @@
     "jaJP": "ÿc9黄色のテキストÿc4: Battle.netからの特別なメッセージは黄色で表示されます。",
     "ptBR": "ÿc9Texto amareloÿc4 representa mensagens especiais enviadas diretamente pelo Battle.net",
     "ruRU": "Особые оповещения Battle.net выделяются ÿc9желтымÿc4 цветом.",
-    "zhCN": "ÿc9黄色文字ÿc4代表由战网发送的特殊信息"
+    "zhCN": "ÿc9黄色文字ÿc4代表从 Battle.net 直接发送的特别讯息"
   },
   {
     "id": 11045,
@@ -3006,7 +3006,7 @@
     "jaJP": "高度なコマンドの使用時には、同じレルムにいるプレイヤーに対しては \u003cキャラクター名\u003e、他のレルムにいるプレイヤーに対しては \u003cキャラクター名 @レルム名\u003e を使用できます。",
     "ptBR": "Ao usar comandos avançados, você também pode usar nomes de personagens para pessoas no mesmo Reino e nomes de personagens @Reino para pessoas em outro Reino.",
     "ruRU": "Для дополнительных команд можно также указывать имя персонажа для игроков из того же игрового мира и «имя персонажа@игровой мир» для игроков из другого игрового мира.",
-    "zhCN": "在使用高级命令时，您可以使用同一服务器中玩家的角色名称，或者通过“@服务器”来指定其他服务器中玩家的角色名称。"
+    "zhCN": "当使用进阶指令时，你可以直接使用角色名称联络同一伺服器的人，或是使用「角色名称@伺服器」的方式联络其他伺服器的玩家。"
   },
   {
     "id": 11047,
@@ -3023,7 +3023,7 @@
     "jaJP": "「Starcraft」などの他のゲームのプレイヤーも含め、Battle.net上のユーザーに対しては \u003c*アカウント名\u003e を使う必要があります。",
     "ptBR": "É necessário usar *nomes de conta para qualquer pessoa no Battle.net, inclusive quem estiver em outro jogo, como Starcraft.",
     "ruRU": "Необходимо указывать название учетной записи для всех пользователей Battle.net, включая игроков из других игр, таких как Starcraft.",
-    "zhCN": "对于登陆战网的玩家，包括正处于其他游戏（如《星际争霸》）中的玩家使用命令时，须用*账号名来指定。"
+    "zhCN": "对于 Battle.net 上的任何人，包含譬如在《星海争霸》等其他游戏中的玩家，则必须使用*帐户名称的表示方法。"
   },
   {
     "id": 11048,
@@ -3040,7 +3040,7 @@
     "jaJP": "以下のコマンドで\u003cアカウント名\u003eの使用が必要な場合は、必ず\u003cキャラクター名\u003e、\u003cキャラクター名@レルム名\u003e、\u003c*アカウント名\u003eのいずれかをお使いください。",
     "ptBR": "Sempre que um comando abaixo solicitar o uso de \u003cnomedaconta\u003e, use \u003cnomedepersonagem\u003e, \u003cnomedepersonagem@Reino\u003e ou \u003c*nomedaconta\u003e.",
     "ruRU": "Если в команде нужно указать \u003cназваниезаписи\u003e, можете вводить его как \u003cимяперсонажа\u003e, \u003cимяперсонажа@игровой мир\u003e или \u003cназваниезаписи\u003e.",
-    "zhCN": "当以下命令中要求使用\u003c账号名\u003e时，请使用\u003c角色名\u003e、\u003c角色名@服务器\u003e或\u003c*账号名\u003e的格式。"
+    "zhCN": "当有指令要求使用\u003c帐户名称\u003e时，请使用下列的方式：\u003c角色名称\u003e、\u003c角色名称@伺服器\u003e或\u003c*帐户名称\u003e。"
   },
   {
     "id": 11060,
@@ -3057,7 +3057,7 @@
     "jaJP": "また、チャットチャンネル内のプレイヤーが取った行動もÿc5灰色のテキストÿc4で表示されます。",
     "ptBR": "ÿc5Texto cinzaÿc4 também representa ações realizadas por pessoas no canal de bate-papo.",
     "ruRU": "ÿc5Серымÿc4 также выделены действия участников чата.",
-    "zhCN": "ÿc5灰色文字ÿc4也代表聊天频道中的玩家所做出的行动。"
+    "zhCN": "ÿc5灰色文字ÿc4同样代表聊天频道中其他人的行动。"
   },
   {
     "id": 11061,
@@ -3074,7 +3074,7 @@
     "jaJP": "ÿc3青色のテキストÿc4: Battle.netからの特別なメッセージ、またはBlizzardからのメッセージは、青で表示されます。",
     "ptBR": "ÿc3Texto azulÿc4 representa mensagens especiais enviadas diretamente pelo Battle.net ou por um Representante da Blizzard.",
     "ruRU": "ÿc3Голубымÿc4 выделены особые оповещения Battle.net или сообщения от представителей Blizzard.",
-    "zhCN": "ÿc3蓝色文字ÿc4代表战网或暴雪工作人员直接向你发送的特殊信息。"
+    "zhCN": "ÿc3蓝色文字ÿc4代表由 Battle.net 或暴雪工作人员直接发送的特别讯息。"
   },
   {
     "id": 27109,
@@ -3091,7 +3091,7 @@
     "jaJP": "キュー中の順番: %d",
     "ptBR": "Posição na fila: %d",
     "ruRU": "Место в очереди: %d",
-    "zhCN": "队列中的位置：%d"
+    "zhCN": "伫列顺位：%d"
   },
   {
     "id": 27110,
@@ -3108,7 +3108,7 @@
     "jaJP": "%sを押すとオフラインでプレイ",
     "ptBR": "Pressione %s para jogar offline",
     "ruRU": "Нажмите %s для игры в локальном режиме",
-    "zhCN": "按下%s开始离线游戏"
+    "zhCN": "按下 %s 进行离线游戏"
   },
   {
     "id": 27111,
@@ -3125,7 +3125,7 @@
     "jaJP": "オフラインでプレイします。現在のキューの順番はクリアされます。",
     "ptBR": "Você começará a jogar offline e perderá sua posição na fila.",
     "ruRU": "Вы перейдете в локальный режим и утратите свое место в очереди.",
-    "zhCN": "开始以离线模式进行游戏，这样会失去您在队列中的位置。"
+    "zhCN": "你会离开伫列，然后以离线状态进行游戏。"
   },
   {
     "id": 27144,
@@ -3142,6 +3142,6 @@
     "jaJP": "ディアブロ II リザレクテッドをプレイするには17歳以上でなくてはなりません。",
     "ptBR": "Você precisa ter pelo menos 18 anos para jogar Diablo II: Resurrected",
     "ruRU": "К игре в Diablo II Resurrected не допускаются пользователи моложе 18 лет.",
-    "zhCN": "你至少要满18周岁才能玩《暗黑破坏神2》：重制版"
+    "zhCN": "必须年满18岁才能游玩《暗黑破坏神II：狱火重生》"
   }
 ]

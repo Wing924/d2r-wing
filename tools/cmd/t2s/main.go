@@ -37,6 +37,7 @@ func main() {
 				panic(err)
 			}
 			e.ZhTW = txt
+			e.ZhCN = txt
 			entries[i] = e
 		}
 

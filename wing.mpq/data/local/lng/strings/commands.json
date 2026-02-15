@@ -48,7 +48,7 @@
     "jaJP": "すべてのフレンドをリストで表示します。",
     "ptBR": "Lista todos os seus amigos no Battle.net.",
     "ruRU": "Отображает список друзей в Battle.net",
-    "zhCN": "列出所有的战网好友。"
+    "zhCN": "列出所有 Battle.net 好友。"
   },
   {
     "id": 25003,
@@ -65,7 +65,7 @@
     "jaJP": "add",
     "ptBR": "adicionar",
     "ruRU": "add",
-    "zhCN": "添加"
+    "zhCN": "新增"
   },
   {
     "id": 25004,
@@ -82,7 +82,7 @@
     "jaJP": "他のプレイヤーをBattle.netのフレンドに招待します。",
     "ptBR": "Envia uma solicitação de amizade no Battle.net para outro jogador.",
     "ruRU": "Отправляет приглашение в друзья другому игроку в Battle.net.",
-    "zhCN": "向另一名玩家发出邀请，申请成为其战网好友。"
+    "zhCN": "向另一位玩家送出 Battle.net 好友邀请。"
   },
   {
     "id": 25005,
@@ -116,7 +116,7 @@
     "jaJP": "Battle.netのフレンドリストから指定のアカウントを削除します。",
     "ptBR": "Remove uma conta da sua lista de amigos no Battle.net.",
     "ruRU": "Удаляет учетную запись из вашего списка друзей в Battle.net.",
-    "zhCN": "将一个账号从你的战网好友列表中移除。"
+    "zhCN": "移除 Battle.net 好友名单中的帐号。"
   },
   {
     "id": 25007,
@@ -133,7 +133,7 @@
     "jaJP": "msg",
     "ptBR": "msg",
     "ruRU": "msg",
-    "zhCN": "消息"
+    "zhCN": "广播"
   },
   {
     "id": 25008,
@@ -150,7 +150,7 @@
     "jaJP": "フレンドリストの全員にメッセージを送信します。",
     "ptBR": "Envia uma mensagem para todos na sua lista de amigos.",
     "ruRU": "Отправляет сообщение всем друзьям в списке.",
-    "zhCN": "向好友列表里的每个人发送一条信息。"
+    "zhCN": "向好友名单中的所有好友送出讯息。"
   },
   {
     "id": 25009,
@@ -218,7 +218,7 @@
     "jaJP": "sent",
     "ptBR": "enviado",
     "ruRU": "sent",
-    "zhCN": "发送"
+    "zhCN": "送出"
   },
   {
     "id": 25013,
@@ -235,7 +235,7 @@
     "jaJP": "received",
     "ptBR": "recebido",
     "ruRU": "received",
-    "zhCN": "接收"
+    "zhCN": "收到"
   },
   {
     "id": 25014,
@@ -269,7 +269,7 @@
     "jaJP": "フレンドがいません。",
     "ptBR": "Você não tem amigos.",
     "ruRU": "У вас нет друзей.",
-    "zhCN": "你尚未添加好友。"
+    "zhCN": "你没有任何好友。"
   },
   {
     "id": 25016,
@@ -286,7 +286,7 @@
     "jaJP": "その名前のフレンドはいません。",
     "ptBR": "Você não tem um amigo com esse nome.",
     "ruRU": "У вас нет друга с таким именем.",
-    "zhCN": "你没有叫这个名字的好友。"
+    "zhCN": "你没有该名称的好友。"
   },
   {
     "id": 25017,
@@ -303,7 +303,7 @@
     "jaJP": "プレイヤー名が必要です。",
     "ptBR": "Insira o nome do jogador.",
     "ruRU": "Ожидается имя игрока.",
-    "zhCN": "缺少玩家名字。"
+    "zhCN": "请输入玩家名称。"
   },
   {
     "id": 25018,
@@ -320,7 +320,7 @@
     "jaJP": "メッセージを入力してください。",
     "ptBR": "Insira a mensagem.",
     "ruRU": "Ожидается сообщение.",
-    "zhCN": "缺少消息内容。"
+    "zhCN": "请输入讯息。"
   },
   {
     "id": 25019,
@@ -337,7 +337,7 @@
     "jaJP": "%sにフレンドリクエストを送りました。",
     "ptBR": "Solicitação de amizade enviada para %s.",
     "ruRU": "Запрос на добавление в друзья отправлен игроку: %s.",
-    "zhCN": "已向%s发送好友请求。"
+    "zhCN": "已向%s发送好友邀请。"
   },
   {
     "id": 25020,
@@ -354,7 +354,7 @@
     "jaJP": "%sにリクエストを送れませんでした。",
     "ptBR": "Falha ao enviar solicitação para %s.",
     "ruRU": "Запрос на добавление в друзья не отправлен игроку %s.",
-    "zhCN": "向%s发送请求失败。"
+    "zhCN": "无法向%s发送好友邀请。"
   },
   {
     "id": 25021,
@@ -371,7 +371,7 @@
     "jaJP": "%sは未回答の招待数が上限に達しています。",
     "ptBR": "%s tem muitas solicitações pendentes.",
     "ruRU": "Игрок %s получил слишком много приглашений.",
-    "zhCN": "%s有太多尚未处理的邀请。"
+    "zhCN": "%s有太多尚未回复的邀请。"
   },
   {
     "id": 25022,
@@ -388,7 +388,7 @@
     "jaJP": "未回答の招待数が上限に達しています。",
     "ptBR": "Você tem muitas solicitações pendentes.",
     "ruRU": "У вас слишком много активных приглашений.",
-    "zhCN": "你有太多尚未处理的邀请。"
+    "zhCN": "你有太多尚未回复的邀请。"
   },
   {
     "id": 25023,
@@ -405,7 +405,7 @@
     "jaJP": "%sはすでにフレンドです。",
     "ptBR": "%s já está na sua lista de amigos.",
     "ruRU": "Игрок %s уже является вашим другом.",
-    "zhCN": "你和%s已经是好友了。"
+    "zhCN": "%s和你已经是好友。"
   },
   {
     "id": 25024,
@@ -439,7 +439,7 @@
     "jaJP": "これ以上フレンドを追加できません。",
     "ptBR": "Você não pode adicionar mais amigos.",
     "ruRU": "Вы не можете добавить новых друзей.",
-    "zhCN": "你无法添加更多的好友。"
+    "zhCN": "你无法新增更多好友。"
   },
   {
     "id": 25026,
@@ -456,7 +456,7 @@
     "jaJP": "%sはこれ以上フレンドを追加できません。",
     "ptBR": "%s não pode adicionar mais amigos.",
     "ruRU": "Игрок %s не может добавить новых друзей.",
-    "zhCN": "%s无法添加更多的好友。"
+    "zhCN": "%s无法新增更多好友。"
   },
   {
     "id": 25027,
@@ -473,7 +473,7 @@
     "jaJP": "この招待はすでに無効です。",
     "ptBR": "Esta solicitação não é mais válida.",
     "ruRU": "Отправленное приглашение уже не действительно.",
-    "zhCN": "该份邀请已失效。"
+    "zhCN": "送出的邀请已失效。"
   },
   {
     "id": 25028,
@@ -490,7 +490,7 @@
     "jaJP": "%sをブロックしました。",
     "ptBR": "Você bloqueou %s.",
     "ruRU": "Вы заблокировали игрока: %s.",
-    "zhCN": "你屏蔽了%s。"
+    "zhCN": "你封锁了%s。"
   },
   {
     "id": 25029,
@@ -507,7 +507,7 @@
     "jaJP": "保留中の招待:",
     "ptBR": "Solicitações pendentes:",
     "ruRU": "Текущих приглашений:",
-    "zhCN": "尚待处理的邀请："
+    "zhCN": "尚未确认的邀请："
   },
   {
     "id": 25030,
@@ -524,7 +524,7 @@
     "jaJP": "保留中の送信済み招待:",
     "ptBR": "Solicitações enviadas pendentes:",
     "ruRU": "Активных отправленных приглашений:",
-    "zhCN": "尚待处理的已发送邀请："
+    "zhCN": "邀请等待确认："
   },
   {
     "id": 25031,
@@ -541,7 +541,7 @@
     "jaJP": "保留中の招待はありません。",
     "ptBR": "Você não tem solicitações pendentes.",
     "ruRU": "У вас нет активных приглашений.",
-    "zhCN": "你没有尚未处理的邀请。"
+    "zhCN": "你没有尚未确认的邀请。"
   },
   {
     "id": 25032,
@@ -558,7 +558,7 @@
     "jaJP": "保留中の送信済み招待はありません。",
     "ptBR": "Você não tem solicitações enviadas pendentes.",
     "ruRU": "У вас нет активных отправленных приглашений.",
-    "zhCN": "你没有尚未处理的已发送邀请。"
+    "zhCN": "你没有等待确认的邀请。"
   },
   {
     "id": 25033,
@@ -575,7 +575,7 @@
     "jaJP": "%sから受け取った未回答の招待はありません。",
     "ptBR": "Nenhuma solicitação pendente de %s",
     "ruRU": "Нет активных приглашений от игрока %s",
-    "zhCN": "没有来自%s的尚未处理的邀请"
+    "zhCN": "没有从%s送出的未回复邀请。"
   },
   {
     "id": 25034,
@@ -592,7 +592,7 @@
     "jaJP": "%sに送った未回答の招待はありません。",
     "ptBR": "Nenhuma solicitação pendente enviada para %s",
     "ruRU": "Нет активных приглашений для игрока %s",
-    "zhCN": "没有发送给%s的尚未处理的邀请"
+    "zhCN": "没有送至%s的未回复邀请。"
   },
   {
     "id": 25035,
@@ -643,7 +643,7 @@
     "jaJP": "designate",
     "ptBR": "designar",
     "ruRU": "designate",
-    "zhCN": "任命"
+    "zhCN": "指定"
   },
   {
     "id": 25038,
@@ -677,7 +677,7 @@
     "jaJP": "kick",
     "ptBR": "expulsar",
     "ruRU": "kick",
-    "zhCN": "踢人"
+    "zhCN": "踢出"
   },
   {
     "id": 25040,
@@ -728,7 +728,7 @@
     "jaJP": "who",
     "ptBR": "quem",
     "ruRU": "who",
-    "zhCN": "查询"
+    "zhCN": "谁在"
   },
   {
     "id": 25043,
@@ -745,7 +745,7 @@
     "jaJP": "チャンネル名が必要です。",
     "ptBR": "Insira o nome do canal.",
     "ruRU": "Ожидается название канала.",
-    "zhCN": "缺少频道名称。"
+    "zhCN": "请输入频道名称。"
   },
   {
     "id": 25044,
@@ -762,7 +762,7 @@
     "jaJP": "チャンネル名を指定するか、チャンネルに入っている必要があります。",
     "ptBR": "É necessário especificar o nome do canal ou estar em um canal.",
     "ruRU": "Вы должны находиться в канале или указать его название.",
-    "zhCN": "必须指定频道名称或在频道中。"
+    "zhCN": "必须指定频道名称或已在一个频道中。"
   },
   {
     "id": 25045,
@@ -779,7 +779,7 @@
     "jaJP": "チャンネル「%s」の参加者:",
     "ptBR": "Membros no canal [%s]:",
     "ruRU": "Участники канала [%s]:",
-    "zhCN": "频道中的成员[%s]:"
+    "zhCN": "[%s]频道的成员："
   },
   {
     "id": 25046,
@@ -796,7 +796,7 @@
     "jaJP": "公開チャンネルには招待できません。",
     "ptBR": "Jogadores só podem ser convidados para canais privados.",
     "ruRU": "Игроков можно приглашать только в частные каналы.",
-    "zhCN": "玩家只能被邀请加入私人频道。"
+    "zhCN": "玩家必须透过邀请才能进入私人频道。"
   },
   {
     "id": 25047,
@@ -813,7 +813,7 @@
     "jaJP": "公開チャンネルでは追放できません。",
     "ptBR": "Jogadores só podem ser expulsos de canais privados.",
     "ruRU": "Игроков можно исключать только из частных каналов.",
-    "zhCN": "玩家只能被从私人频道中踢除。"
+    "zhCN": "只能移除私人频道中的玩家。"
   },
   {
     "id": 25048,
@@ -830,7 +830,7 @@
     "jaJP": "公開チャンネルでは管理者になれません。",
     "ptBR": "Jogadores só podem ser moderadores em canais privados.",
     "ruRU": "Игроки могут быть модераторами только в частных каналах.",
-    "zhCN": "玩家只能成为私人频道中的管理员。"
+    "zhCN": "玩家只能担任私人频道的管理员。"
   },
   {
     "id": 25049,
@@ -847,7 +847,7 @@
     "jaJP": "whisper",
     "ptBR": "sussurrar",
     "ruRU": "whisper",
-    "zhCN": "密语"
+    "zhCN": "悄悄话"
   },
   {
     "id": 25050,
@@ -864,7 +864,7 @@
     "jaJP": "message",
     "ptBR": "mensagem",
     "ruRU": "message",
-    "zhCN": "消息"
+    "zhCN": "讯息"
   },
   {
     "id": 25051,
@@ -898,7 +898,7 @@
     "jaJP": "オンライン状態を「取込中」にします。",
     "ptBR": "Define seu status online como Ocupado.",
     "ruRU": "Указывает сетевой статус «Занят».",
-    "zhCN": "将你的在线状态设置为忙碌"
+    "zhCN": "将你的状态设为忙碌"
   },
   {
     "id": 25053,
@@ -932,7 +932,7 @@
     "jaJP": "オンライン状態を「退席中」にします。",
     "ptBR": "Define seu status online como Ausente.",
     "ruRU": "Указывает сетевой статус «Отошел».",
-    "zhCN": "将你的在线状态设置为离开"
+    "zhCN": "将你的状态设为暂离"
   },
   {
     "id": 25055,
@@ -949,7 +949,7 @@
     "jaJP": "online",
     "ptBR": "online",
     "ruRU": "online",
-    "zhCN": "在线"
+    "zhCN": "上线"
   },
   {
     "id": 25056,
@@ -966,7 +966,7 @@
     "jaJP": "オンライン状態を「オンライン」にします。",
     "ptBR": "Define seu status online como Online.",
     "ruRU": "Указывает сетевой статус «В сети».",
-    "zhCN": "将你的在线状态设置为在线"
+    "zhCN": "将你的状态设为上线"
   },
   {
     "id": 25057,
@@ -983,7 +983,7 @@
     "jaJP": "setavailability",
     "ptBR": "disponibilidade",
     "ruRU": "setavailability",
-    "zhCN": "设置在线状态"
+    "zhCN": "线上状态"
   },
   {
     "id": 25058,
@@ -1000,7 +1000,7 @@
     "jaJP": "自分のオンライン状態を設定します。",
     "ptBR": "Define seu status online.",
     "ruRU": "Указывает ваш сетевой статус.",
-    "zhCN": "设置你的在线状态"
+    "zhCN": "设定你的线上状态"
   },
   {
     "id": 25059,
@@ -1034,7 +1034,7 @@
     "jaJP": "オプションを設定または解除します。",
     "ptBR": "Define ou remove uma opção.",
     "ruRU": "Задает или отключает функцию.",
-    "zhCN": "设置或清除一个选项"
+    "zhCN": "设定或清除选项。"
   },
   {
     "id": 25061,
@@ -1051,7 +1051,7 @@
     "jaJP": "set",
     "ptBR": "definir",
     "ruRU": "set",
-    "zhCN": "设置"
+    "zhCN": "设定"
   },
   {
     "id": 25062,
@@ -1068,7 +1068,7 @@
     "jaJP": "指定したオプションを有効化します。",
     "ptBR": "Ativa a opção especificada.",
     "ruRU": "Включает указанную функцию.",
-    "zhCN": "启用指定选项"
+    "zhCN": "启用指定的选项。"
   },
   {
     "id": 25063,
@@ -1102,7 +1102,7 @@
     "jaJP": "指定したオプションを無効化します。",
     "ptBR": "Desativa a opção especificada.",
     "ruRU": "Отключает указанную функцию.",
-    "zhCN": "禁用指定选项"
+    "zhCN": "停用指定的选项"
   },
   {
     "id": 25065,
@@ -1136,7 +1136,7 @@
     "jaJP": "プレイヤーの入退室を通知するかどうか設定します。",
     "ptBR": "Opção que controla se você receberá notificações sobre jogadores entrando ou saindo de um canal.",
     "ruRU": "Функция, управляющая уведомлениями о том, как игроки подключаются к каналу и покидают его.",
-    "zhCN": "决定玩家进入或退出频道时是否要通知你的选项。"
+    "zhCN": "此选项可设定当玩家进入或离开频道时，是否通知你。"
   },
   {
     "id": 25067,
@@ -1153,7 +1153,7 @@
     "jaJP": "ignorewhisper",
     "ptBR": "ignorarsussurro",
     "ruRU": "ignorewhisper",
-    "zhCN": "屏蔽密语"
+    "zhCN": "忽略悄悄话"
   },
   {
     "id": 25068,
@@ -1170,7 +1170,7 @@
     "jaJP": "ささやきをミュートします。",
     "ptBR": "Ignora mensagens de sussurros.",
     "ruRU": "Игнорировать личные сообщения.",
-    "zhCN": "屏蔽密语信息。"
+    "zhCN": "忽略悄悄话密语讯息。"
   },
   {
     "id": 25069,
@@ -1187,7 +1187,7 @@
     "jaJP": "unignorewhisper",
     "ptBR": "permitirsussurro",
     "ruRU": "unignorewhisper",
-    "zhCN": "取消屏蔽密语"
+    "zhCN": "取消忽略悄悄话"
   },
   {
     "id": 25070,
@@ -1204,7 +1204,7 @@
     "jaJP": "ささやきのミュートを解除します。",
     "ptBR": "Recebe mensagens de sussurros.",
     "ruRU": "Получать личные сообщения.",
-    "zhCN": "接收密语信息。"
+    "zhCN": "接受悄悄话密语讯息。"
   },
   {
     "id": 25071,
@@ -1221,7 +1221,7 @@
     "jaJP": "ignoreprivate",
     "ptBR": "ignorarprivado",
     "ruRU": "ignoreprivate",
-    "zhCN": "屏蔽私人"
+    "zhCN": "忽略私频"
   },
   {
     "id": 25072,
@@ -1238,7 +1238,7 @@
     "jaJP": "非公開チャンネルからのメッセージをミュートします。",
     "ptBR": "Ignora mensagens de canais privados.",
     "ruRU": "Игнорировать сообщения частных каналов.",
-    "zhCN": "屏蔽私人频道的信息。"
+    "zhCN": "忽略私人频道讯息。"
   },
   {
     "id": 25073,
@@ -1255,7 +1255,7 @@
     "jaJP": "unignoreprivate",
     "ptBR": "permitirprivado",
     "ruRU": "unignoreprivate",
-    "zhCN": "取消屏蔽私人"
+    "zhCN": "取消忽略私频"
   },
   {
     "id": 25074,
@@ -1272,7 +1272,7 @@
     "jaJP": "非公開チャンネルからのメッセージの無視を解除します。",
     "ptBR": "Recebe mensagens de canais privados.",
     "ruRU": "Получать сообщения частных каналов.",
-    "zhCN": "接收私人频道的信息。"
+    "zhCN": "接受私人频道讯息。"
   },
   {
     "id": 25075,
@@ -1289,7 +1289,7 @@
     "jaJP": "ignorepublic",
     "ptBR": "ignorarpublico",
     "ruRU": "ignorepublic",
-    "zhCN": "屏蔽公开"
+    "zhCN": "忽略公频"
   },
   {
     "id": 25076,
@@ -1306,7 +1306,7 @@
     "jaJP": "公開チャンネルからのメッセージをミュートします。",
     "ptBR": "Ignora mensagens de canais públicos.",
     "ruRU": "Игнорировать сообщения общих каналов.",
-    "zhCN": "屏蔽公开频道的信息。"
+    "zhCN": "忽略公开频道讯息。"
   },
   {
     "id": 25077,
@@ -1323,7 +1323,7 @@
     "jaJP": "unignorepublic",
     "ptBR": "permitirpublico",
     "ruRU": "unignorepublic",
-    "zhCN": "取消屏蔽公开"
+    "zhCN": "取消忽略公频"
   },
   {
     "id": 25078,
@@ -1340,7 +1340,7 @@
     "jaJP": "公開チャンネルからのメッセージのミュートを解除します。",
     "ptBR": "Recebe mensagens de canais públicos.",
     "ruRU": "Получать сообщения общих каналов.",
-    "zhCN": "接收公开频道的信息。"
+    "zhCN": "接受公开频道讯息。"
   },
   {
     "id": 25079,
@@ -1374,7 +1374,7 @@
     "jaJP": "現在の時刻を表示します。",
     "ptBR": "Informa o horário atual.",
     "ruRU": "Показывает текущее время.",
-    "zhCN": "报告当前时间。"
+    "zhCN": "回报当前时间。"
   },
   {
     "id": 25081,
@@ -1391,7 +1391,7 @@
     "jaJP": "現在はささやきを受け付けていません。後でもう一度お試しください。",
     "ptBR": "Os sussurros estão desativados. Tente novamente mais tarde.",
     "ruRU": "У меня временно отключены личные сообщения. Попробуйте позже.",
-    "zhCN": "我当前已禁用密语，请稍后再试。"
+    "zhCN": "我目前关闭了悄悄话密语功能，请稍后再试。"
   },
   {
     "id": 25082,
@@ -1408,7 +1408,7 @@
     "jaJP": "%sからのフレンドリクエストを承諾しました。",
     "ptBR": "A solicitação de amizade de %s foi aceita.",
     "ruRU": "Принят запрос на добавление в друзья от игрока %s.",
-    "zhCN": "已接受来自%s的好友请求。"
+    "zhCN": "接受%s的好友邀请。"
   },
   {
     "id": 25083,
@@ -1425,7 +1425,7 @@
     "jaJP": "%sからのフレンドリクエストを承諾できませんでした。",
     "ptBR": "Falha ao aceitar a solicitação de amizade de %s.",
     "ruRU": "Не удалось принять запрос на добавление в друзья от игрока %s.",
-    "zhCN": "接受来自%s的好友请求失败。"
+    "zhCN": "无法接受%s的好友邀请。"
   },
   {
     "id": 25084,
@@ -1442,7 +1442,7 @@
     "jaJP": "%sからのフレンドリクエストを拒否しました。",
     "ptBR": "A solicitação de amizade de %s foi recusada.",
     "ruRU": "Отклонен запрос на добавление в друзья от игрока %s.",
-    "zhCN": "已拒绝来自%s的好友请求。"
+    "zhCN": "拒绝%s的好友邀请。"
   },
   {
     "id": 25085,
@@ -1459,7 +1459,7 @@
     "jaJP": "%sからのフレンドリクエストを拒否できませんでした。",
     "ptBR": "Falha ao recusar a solicitação de amizade de %s.",
     "ruRU": "Не удалось отклонить запрос на добавление в друзья от игрока %s.",
-    "zhCN": "拒绝来自%s的好友请求失败。"
+    "zhCN": "无法拒绝%s的好友邀请。"
   },
   {
     "id": 25086,
@@ -1476,7 +1476,7 @@
     "jaJP": "%sをフレンドから外しました。",
     "ptBR": "Removeu %s da lista de amigos.",
     "ruRU": "Из списка друзей удален игрок %s.",
-    "zhCN": "已移除好友%s。"
+    "zhCN": "移除好友%s。"
   },
   {
     "id": 25087,
@@ -1493,7 +1493,7 @@
     "jaJP": "%sをフレンドから外せませんでした。",
     "ptBR": "Falha ao remover %s da lista de amigos.",
     "ruRU": "Не удалось удалить игрока %s.",
-    "zhCN": "未能成功移除好友%s。"
+    "zhCN": "无法移除好友%s。"
   },
   {
     "id": 25090,
@@ -1510,7 +1510,7 @@
     "jaJP": "bug",
     "ptBR": "bug",
     "ruRU": "bug",
-    "zhCN": "bug"
+    "zhCN": "错误"
   },
   {
     "id": 25091,
@@ -1527,7 +1527,7 @@
     "jaJP": "バグ報告や意見を送ります。",
     "ptBR": "Envia um bug ou feedback.",
     "ruRU": "Сообщить о неполадке или направить отзыв.",
-    "zhCN": "提交bug或反馈。"
+    "zhCN": "回报错误或意见。"
   },
   {
     "id": 25092,
@@ -1544,7 +1544,7 @@
     "jaJP": "ignore",
     "ptBR": "ignorar",
     "ruRU": "ignore",
-    "zhCN": "屏蔽"
+    "zhCN": "忽略"
   },
   {
     "id": 25093,
@@ -1561,7 +1561,7 @@
     "jaJP": "プレイヤーからのメッセージをすべてミュートします。",
     "ptBR": "Ignora todas as comunicações de um jogador.",
     "ruRU": "Игнорировать все сообщения от игрока.",
-    "zhCN": "屏蔽来自一位玩家的所有沟通信息。"
+    "zhCN": "忽略特定玩家的所有讯息。"
   },
   {
     "id": 25094,
@@ -1578,7 +1578,7 @@
     "jaJP": "unignore",
     "ptBR": "permitir",
     "ruRU": "unignore",
-    "zhCN": "取消屏蔽"
+    "zhCN": "取消忽略"
   },
   {
     "id": 25095,
@@ -1595,7 +1595,7 @@
     "jaJP": "ミュートリストからプレイヤーを除外します。",
     "ptBR": "Remove um jogador da lista de ignorados.",
     "ruRU": "Прекратить игнорировать игрока.",
-    "zhCN": "将玩家移出你的屏蔽列表。"
+    "zhCN": "将一名玩家从你的忽略名单上移除。"
   },
   {
     "id": 25096,
@@ -1629,7 +1629,7 @@
     "jaJP": "あなたのアカウント情報を表示します。",
     "ptBR": "Exibe as informações da sua conta.",
     "ruRU": "Отобразить информацию о вашей учетной записи.",
-    "zhCN": "显示你的账号信息。"
+    "zhCN": "显示你的帐号资讯"
   },
   {
     "id": 25098,
@@ -1646,7 +1646,7 @@
     "jaJP": "whois",
     "ptBR": "quem",
     "ruRU": "whois",
-    "zhCN": "是何人"
+    "zhCN": "谁是"
   },
   {
     "id": 25099,
@@ -1663,7 +1663,7 @@
     "jaJP": "特定プレイヤーの詳細情報を表示します。",
     "ptBR": "Exibe mais informações sobre o jogador especificado.",
     "ruRU": "Отобразить информацию об указанном игроке.",
-    "zhCN": "显示指定玩家的更多信息。"
+    "zhCN": "显示指定玩家的详细资讯"
   },
   {
     "id": 25100,
@@ -1697,7 +1697,7 @@
     "jaJP": "メッセージを送信してきた相手にメッセージを送ります。",
     "ptBR": "Envie uma mensagem para um jogador que enviou uma mensagem para você.",
     "ruRU": "Отправить ответ на полученное от игрока сообщение.",
-    "zhCN": "对最近一个向你发消息的玩家发送消息"
+    "zhCN": "回复讯息给传过讯息给你的人。"
   },
   {
     "id": 25102,
@@ -1714,7 +1714,7 @@
     "jaJP": "nopickup",
     "ptBR": "naocoletar",
     "ruRU": "nopickup",
-    "zhCN": "无拾取"
+    "zhCN": "捡拾物品"
   },
   {
     "id": 25103,
@@ -1731,7 +1731,7 @@
     "jaJP": "アイテムを拾うか拾わないかを設定します。",
     "ptBR": "Ativa/desativa a coleta de itens.",
     "ruRU": "Включить или отключить возможность подбирать предметы.",
-    "zhCN": "切换你是否能拾取物品。"
+    "zhCN": "切换是否捡拾物品。"
   },
   {
     "id": 25105,
@@ -1765,7 +1765,7 @@
     "jaJP": "ゲームへの参加プレイヤー数をシミュレートしてドロップ率と難易度を上昇させます。",
     "ptBR": "Simula mais jogadores para aumentar a ocorrência de itens e a dificuldade.",
     "ruRU": "Симулировать наличие в игре дополнительных игроков для повышения сложности и улучшения добычи.",
-    "zhCN": "模拟有更多的玩家在游戏中，以此增加掉落和困难度。"
+    "zhCN": "在游戏中模拟更多玩家以增加掉落物和难度。"
   },
   {
     "id": 25107,
@@ -1782,7 +1782,7 @@
     "jaJP": "users",
     "ptBR": "usuarios",
     "ruRU": "users",
-    "zhCN": "用户"
+    "zhCN": "使用者"
   },
   {
     "id": 25108,
@@ -1799,7 +1799,7 @@
     "jaJP": "ユーザー数とゲーム数を表示します。",
     "ptBR": "Exibe o número de usuários e jogos.",
     "ruRU": "Отобразить количество пользователей и игр.",
-    "zhCN": "显示用户和游戏的数量。"
+    "zhCN": "显示使用者和游戏的数量。"
   },
   {
     "id": 25109,
@@ -1816,7 +1816,7 @@
     "jaJP": "resign",
     "ptBR": "renunciar",
     "ruRU": "resign",
-    "zhCN": "辞任"
+    "zhCN": "辞退"
   },
   {
     "id": 25110,
@@ -1833,7 +1833,7 @@
     "jaJP": "非公開チャンネルの管理者を辞任します。",
     "ptBR": "Deixa de ser moderador de um canal privado.",
     "ruRU": "Уйти с должности модератора в частном канале.",
-    "zhCN": "放弃担任私人频道的管理员。"
+    "zhCN": "辞退私人频道管理员的身分。"
   },
   {
     "id": 25111,
@@ -1850,7 +1850,7 @@
     "jaJP": "このプレイヤーはミュートに設定されています。",
     "ptBR": "Esta pessoa já está sendo ignorada.",
     "ruRU": "Вы уже игнорируете этого игрока.",
-    "zhCN": "该玩家已经被屏蔽。"
+    "zhCN": "此玩家已被封锁。"
   },
   {
     "id": 25112,
@@ -1867,7 +1867,7 @@
     "jaJP": "このプレイヤーはミュートに設定されていません。",
     "ptBR": "Esta pessoa não está sendo ignorada.",
     "ruRU": "Вы не игнорируете этого игрока.",
-    "zhCN": "该玩家未被屏蔽。"
+    "zhCN": "此玩家没有被封锁。"
   },
   {
     "id": 25113,
@@ -1884,7 +1884,7 @@
     "jaJP": "あなたは%s（%s）です。",
     "ptBR": "Você é %s (%s).",
     "ruRU": "Вы – %s (%s).",
-    "zhCN": "你是%s (%s)。"
+    "zhCN": "你是%s（%s）。"
   },
   {
     "id": 25114,
@@ -1901,7 +1901,7 @@
     "jaJP": "入力した情報「%s」に一致するユーザーが複数見つかりました。BattleTagを省略なしで入力してください。",
     "ptBR": "Vários usuários corresponderam ao nome %s. Use uma BattleTag completa.",
     "ruRU": "Найдено несколько пользователей с таким именем. Пожалуйста, укажите полный BattleTag.",
-    "zhCN": "有多名用户匹配名称, %s。请使用一个完整的战网昵称。"
+    "zhCN": "符合使用者名称「%s」的结果不只一个，请使用完整 BattleTag。"
   },
   {
     "id": 25115,
@@ -1918,7 +1918,7 @@
     "jaJP": "入力した情報と一致するユーザーが見つかりません。正しいプレイヤー名またはBattleTagを入力してください。",
     "ptBR": "Nenhum usuário correspondeu às informações fornecidas. Especifique o nome ou a BattleTag de um jogador",
     "ruRU": "Нет пользователей, соответствующих заданным параметрам. Пожалуйста, укажите имя игрока или BattleTag.",
-    "zhCN": "没有用户符合提供的信息。请指定一个玩家名称或战网昵称。"
+    "zhCN": "找不到符合的使用者，请输入完整使用者名称或 BattleTag。"
   },
   {
     "id": 25116,
@@ -1935,7 +1935,7 @@
     "jaJP": "プレイヤーの入退室通知を表示します。",
     "ptBR": "As notificações de entrada e saída de jogadores estão ativadas.",
     "ruRU": "Уведомления о появлении/выходе игрока включены.",
-    "zhCN": "玩家进入或离开时的通知已开启。"
+    "zhCN": "启用玩家进入或离开的提示讯息。"
   },
   {
     "id": 25117,
@@ -1952,7 +1952,7 @@
     "jaJP": "プレイヤーの入退室通知を表示しません。",
     "ptBR": "As notificações de entrada e saída de jogadores estão desativadas.",
     "ruRU": "Уведомления о появлении/выходе игрока отключены.",
-    "zhCN": "玩家进入或离开时的通知已关闭。"
+    "zhCN": "关闭玩家进入或离开的提示讯息。"
   },
   {
     "id": 25118,
@@ -1969,7 +1969,7 @@
     "jaJP": "指定した公開チャンネルへの参加または作成します。",
     "ptBR": "Entra em um canal público ou cria um com o nome especificado.",
     "ruRU": "Создать или перейти в открытый канал с указанным названием.",
-    "zhCN": "进入或使用指定名称创建一个公开频道。"
+    "zhCN": "进入或创建指定名称的公开频道。"
   },
   {
     "id": 25119,
@@ -1986,7 +1986,7 @@
     "jaJP": "非公開チャンネルの管理者となる別のプレイヤーを指定します。",
     "ptBR": "Especifica outro jogador para moderador de um canal privado.",
     "ruRU": "Выбрать игрока, который получит права модератора в частном канале.",
-    "zhCN": "指定另一名玩家成为私人频道的管理员。 "
+    "zhCN": "指定另一位玩家为私人频道的管理员。"
   },
   {
     "id": 25120,
@@ -2003,7 +2003,7 @@
     "jaJP": "Battle.netのフレンドとコミュケーションします。",
     "ptBR": "Interação com seus amigos no Battle.net.",
     "ruRU": "Общаться с друзьями в Battle.net.",
-    "zhCN": "与你的战网好友互动。"
+    "zhCN": "和 Battle.net 好友互动。"
   },
   {
     "id": 25121,
@@ -2020,7 +2020,7 @@
     "jaJP": "Battle.netのプレイヤーからのフレンドリクエストを承諾します。保留中のリクエストは/friend list receivedで確認できます。",
     "ptBR": "Aceita uma solicitação de amizade de outro jogador no Battle.net. Use o comando /friends list received para ver uma lista de solicitações pendentes.",
     "ruRU": "Принять запрос на добавление в друзья от другого игрока в Battle.net. Воспользуйтесь командой /friends list received для просмотра текущих запросов.",
-    "zhCN": "接受来自另一名玩家的战网好友请求。使用/好友 列表 接收 命令可以看到所有尚未处理的请求列表。"
+    "zhCN": "接受另一位 Battle.net 玩家的好友邀请。使用 /好友 列表 收到 指令即可检视尚未回复的好友邀请。"
   },
   {
     "id": 25122,
@@ -2037,7 +2037,7 @@
     "jaJP": "Battle.netのプレイヤーからのフレンドリクエストを断ります。保留中のリクエストは/friend list receivedで確認できます。",
     "ptBR": "Recusa uma solicitação de amizade de outro jogador no Battle.net. Use o comando /friends list received para ver uma lista de solicitações pendentes.",
     "ruRU": "Отклонить запрос на добавление в друзья от другого игрока в Battle.net. Воспользуйтесь командой /friends list received для просмотра текущих запросов.",
-    "zhCN": "拒绝来自另一名玩家的战网好友请求。使用/好友 列表 接收 命令可以看到所有尚未处理的请求列表。"
+    "zhCN": "拒绝另一位 Battle.net 玩家的好友邀请。使用 /好友 列表 收到 指令即可检视尚未回复的好友邀请。"
   },
   {
     "id": 25123,
@@ -2054,7 +2054,7 @@
     "jaJP": "Battle.netのプレイヤーに送ったフレンドリクエストを取り消します。保留中のリクエストは/friend list sentで確認できます。",
     "ptBR": "Cancela uma solicitação de amizade enviada a outro jogador no Battle.net. Use o comando /friends list sent para ver uma lista de solicitações de amizade.",
     "ruRU": "Отозвать запрос на добавление в друзья для другого игрока в Battle.net. Воспользуйтесь командой /friends list sent для просмотра отправленных запросов.",
-    "zhCN": "撤回发向另一名玩家的战网好友请求。使用/好友 列表 发送 命令可以看到所有好友请求。"
+    "zhCN": "撤回发送给另一位玩家的 Battle.net 好友邀请。使用 /好友 列表 送出 指令即可检视送出的好友邀请清单。"
   },
   {
     "id": 25124,
@@ -2071,7 +2071,7 @@
     "jaJP": "Battle.netのプレイヤーに送ったフレンドリクエストを確認できます。",
     "ptBR": "Lista todas as suas solicitações de amizade enviadas no Battle.net.",
     "ruRU": "Отображает все отправленные вами запросы на добавление в друзья в Battle.net.",
-    "zhCN": "列出你发出的所有战网好友请求。"
+    "zhCN": "列出所有送出的 Battle.net 好友邀请。"
   },
   {
     "id": 25125,
@@ -2088,7 +2088,7 @@
     "jaJP": "Battle.netのプレイヤーから届いたフレンドリクエストを確認できます。",
     "ptBR": "Lista todas as suas solicitações de amizade recebidas no Battle.net.",
     "ruRU": "Отображает все полученные вами запросы на добавление в друзья в Battle.net.",
-    "zhCN": "列出你收到的所有战网好友请求。"
+    "zhCN": "列出所有收到的 Battle.net 好友邀请。"
   },
   {
     "id": 25126,
@@ -2105,7 +2105,7 @@
     "jaJP": "このチャンネルにほかのプレイヤーを招待します。",
     "ptBR": "Convida outro jogador para este canal.",
     "ruRU": "Пригласить в канал другого игрока.",
-    "zhCN": "邀请另一名玩家加入此频道。"
+    "zhCN": "邀请另一位玩家加入这个频道。"
   },
   {
     "id": 25127,
@@ -2122,7 +2122,7 @@
     "jaJP": "非公開チャンネルからプレイヤーを削除します。",
     "ptBR": "Remove um jogador de um canal privado.",
     "ruRU": "Исключить игрока из частного канала.",
-    "zhCN": "从一个私人频道中移除一名玩家。"
+    "zhCN": "从私人频道移除一位玩家。"
   },
   {
     "id": 25128,
@@ -2139,7 +2139,7 @@
     "jaJP": "現在、または指定したチャンネルから退室します。",
     "ptBR": "Sai do canal atual ou especificado.",
     "ruRU": "Покинуть текущий или выбранный канал.",
-    "zhCN": "离开当前频道或指定的频道。"
+    "zhCN": "离开目前这个频道或指定频道。"
   },
   {
     "id": 25129,
@@ -2156,7 +2156,7 @@
     "jaJP": "他のプレイヤーにプライベートメッセージを送ります。",
     "ptBR": "Envia uma mensagem privada para outro jogador.",
     "ruRU": "Отправить личное сообщение другому игроку.",
-    "zhCN": "向另一名玩家发出私人信息。"
+    "zhCN": "发送私人讯息给另一位玩家。"
   },
   {
     "id": 25130,
@@ -2173,7 +2173,7 @@
     "jaJP": "非公開チャンネルを作成します。",
     "ptBR": "Cria um canal privado com o nome especificado.",
     "ruRU": "Создать частный канал с указанным названием.",
-    "zhCN": "使用指定名称创建一个私人频道。"
+    "zhCN": "创建指定名称的私人频道。"
   },
   {
     "id": 25131,
@@ -2190,7 +2190,7 @@
     "jaJP": "このチャンネルの全プレイヤーを表示します。",
     "ptBR": "Lista os jogadores neste canal.",
     "ruRU": "Отобразить список игроков в этом канале.",
-    "zhCN": "列出此频道中的玩家。"
+    "zhCN": "列出这个频道的玩家。"
   },
   {
     "id": 25132,
@@ -2207,7 +2207,7 @@
     "jaJP": "公開チャンネルのメッセージをミュートしています。",
     "ptBR": "Você está ignorando mensagens de canais públicos.",
     "ruRU": "Вы игнорируете сообщения общих каналов.",
-    "zhCN": "屏蔽公开频道的所有信息。"
+    "zhCN": "开始忽略公开频道讯息。"
   },
   {
     "id": 25133,
@@ -2224,7 +2224,7 @@
     "jaJP": "非公開チャンネルのメッセージをミュート中です。",
     "ptBR": "Você está ignorando mensagens de canais privados.",
     "ruRU": "Вы игнорируете сообщения частных каналов.",
-    "zhCN": "屏蔽私人频道的所有信息。"
+    "zhCN": "开始忽略私人频道讯息。"
   },
   {
     "id": 25134,
@@ -2241,7 +2241,7 @@
     "jaJP": "ささやきをミュート中です。",
     "ptBR": "Você está ignorando mensagens de sussurros.",
     "ruRU": "Вы игнорируете личные сообщения.",
-    "zhCN": "屏蔽所有密语信息。"
+    "zhCN": "开始忽略悄悄话密语讯息。"
   },
   {
     "id": 25135,
@@ -2258,7 +2258,7 @@
     "jaJP": "公開チャンネルのメッセージへのミュートが解除されました。",
     "ptBR": "Você deixou de ignorar mensagens de canais públicos.",
     "ruRU": "Вы больше не игнорируете сообщения общих каналов.",
-    "zhCN": "不再屏蔽公开频道的所有信息。"
+    "zhCN": "停止忽略公开频道讯息。"
   },
   {
     "id": 25136,
@@ -2275,7 +2275,7 @@
     "jaJP": "非公開チャンネルのメッセージへのミュートが解除されました。",
     "ptBR": "Você deixou de ignorar mensagens de canais privados.",
     "ruRU": "Вы больше не игнорируете сообщения частных каналов.",
-    "zhCN": "不再屏蔽私人频道的所有信息。"
+    "zhCN": "停止忽略私人频道讯息。"
   },
   {
     "id": 25137,
@@ -2292,7 +2292,7 @@
     "jaJP": "ささやきへのミュートが解除されました。",
     "ptBR": "Você deixou de ignorar mensagens de sussurros.",
     "ruRU": "Вы больше не игнорируете личные сообщения.",
-    "zhCN": "不再屏蔽所有密语信息。"
+    "zhCN": "停止忽略悄悄话密语讯息。"
   },
   {
     "id": 25138,
@@ -2309,7 +2309,7 @@
     "jaJP": "現在、参加しているチャンネルを表示します。",
     "ptBR": "Lista todos os canais em que você está.",
     "ruRU": "Отображает все каналы, к которым вы сейчас подключены.",
-    "zhCN": "列出你当前已经加入的所有频道。"
+    "zhCN": "列出你目前加入的所有频道。"
   },
   {
     "id": 25139,
@@ -2326,7 +2326,7 @@
     "jaJP": "既に送ったチャンネルへの招待を表示します。",
     "ptBR": "Lista todos os convites de canais que você enviou.",
     "ruRU": "Отображает все отправленные вами приглашения в каналы.",
-    "zhCN": "列出你所发送的所有频道邀请。"
+    "zhCN": "列出你发出的所有频道邀请。"
   },
   {
     "id": 25140,
@@ -2343,7 +2343,7 @@
     "jaJP": "受け取っているチャンネルへの招待を表示します。",
     "ptBR": "Lista todos os convites de canais que você recebeu.",
     "ruRU": "Отображает все полученные вами приглашения в каналы.",
-    "zhCN": "列出你所收到的所有频道邀请。"
+    "zhCN": "列出你收到的所有频道邀请。"
   },
   {
     "id": 25141,
@@ -2360,7 +2360,7 @@
     "jaJP": "チャンネルへの招待を承諾します。",
     "ptBR": "Aceita um convite para um canal.",
     "ruRU": "Принять приглашение в канал.",
-    "zhCN": "接受一个频道的邀请。"
+    "zhCN": "接受加入频道的邀请。"
   },
   {
     "id": 25142,
@@ -2377,7 +2377,7 @@
     "jaJP": "チャンネルへの招待を拒否します。",
     "ptBR": "Recusa um convite para um canal.",
     "ruRU": "Отклонить приглашение в канал.",
-    "zhCN": "拒绝一个频道的邀请。"
+    "zhCN": "拒绝加入频道的邀请。"
   },
   {
     "id": 25143,
@@ -2394,7 +2394,7 @@
     "jaJP": "アクティブなチャンネル:",
     "ptBR": "Canais ativos:",
     "ruRU": "Активные каналы:",
-    "zhCN": "已激活的频道："
+    "zhCN": "可用频道："
   },
   {
     "id": 25144,
@@ -2428,7 +2428,7 @@
     "jaJP": "送信済みチャンネルへの招待:",
     "ptBR": "Convites de canais enviados:",
     "ruRU": "Отправленные приглашения в каналы:",
-    "zhCN": "发送的频道邀请："
+    "zhCN": "送出的频道邀请："
   },
   {
     "id": 25146,
@@ -2479,7 +2479,7 @@
     "jaJP": "default",
     "ptBR": "padrao",
     "ruRU": "default",
-    "zhCN": "默认"
+    "zhCN": "预设"
   },
   {
     "id": 25149,
@@ -2496,7 +2496,7 @@
     "jaJP": "チャンネルへの招待がありません。",
     "ptBR": "Você não recebeu convites de canais.",
     "ruRU": "Вы не получали приглашений в каналы.",
-    "zhCN": "你没有收到任何的频道邀请。"
+    "zhCN": "你并未收到任何频道邀请。"
   },
   {
     "id": 25150,
@@ -2513,7 +2513,7 @@
     "jaJP": "IDに合致する招待が見つかりません。/channel list receivedコマンドを使って受信済みのチャンネルへの招待リストと対応する招待IDを確認してください。",
     "ptBR": "Não foi possível encontrar um convite correspondente ao ID de convite fornecido. Use o comando /channel list received para ver uma lista de convites de canais recebidos e insira o ID de convite correspondente.",
     "ruRU": "Не удалось найти приглашение по ID. Воспользуйтесь командой /channel list received для просмотра полученных приглашений в каналы и введите ID нужного приглашения.",
-    "zhCN": "无法找到与邀请ID对应的频道邀请。请使用/频道 列表 接收 命令查看你收到的所有频道邀请列表，并输入相对应的邀请ID。"
+    "zhCN": "找不到符合该ID的频道邀请。使用 /频道 列表 收到 指令即可检视收到的频道邀请，然后输入对应的邀请ID。"
   },
   {
     "id": 25151,
@@ -2530,7 +2530,7 @@
     "jaJP": "チャンネルの管理者だけが非公開チャンネルからプレイヤーを追放できます。",
     "ptBR": "Somente moderadores de canal podem expulsar jogadores de canais privados.",
     "ruRU": "Только модераторы могут исключать игроков из частных каналов.",
-    "zhCN": "只有频道管理员可以将玩家从私人频道中踢出。"
+    "zhCN": "只有频道管理员能从私人频道移除玩家。"
   },
   {
     "id": 25152,
@@ -2547,7 +2547,7 @@
     "jaJP": "%sから招待を受け取りました。%sチャンネル: %s",
     "ptBR": "%s convidou você para entrar em um canal %s: %s",
     "ruRU": "%s приглашает вас в канал (%s): %s",
-    "zhCN": "%s邀请你加入一个%s频道：%s"
+    "zhCN": "%s邀请你加入%s频道：%s"
   },
   {
     "id": 25153,
@@ -2564,7 +2564,7 @@
     "jaJP": "対象がありません。",
     "ptBR": "Sem destinatários de resposta válidos.",
     "ruRU": "Нет игроков, которым можно было бы отправить ответ.",
-    "zhCN": "非有效的回复接收人"
+    "zhCN": "不是正确的讯息回复对象。"
   },
   {
     "id": 25154,
@@ -2581,7 +2581,7 @@
     "jaJP": "チャットチャンネルに参加、作成、招待をすることで他のプレイヤーとコミュニケーションできます。",
     "ptBR": "Interaja com outros jogadores entrando em um canal de bate-papo, criando seu próprio ou convidando pessoas para entrar em um canal.",
     "ruRU": "Взаимодействуйте с игроками, создавая каналы чата, а также присоединяясь или приглашая других в уже существующие.",
-    "zhCN": "与其他玩家互动，比如加入、创建或邀请进入聊天频道。"
+    "zhCN": "加入、建立和邀请其他玩家到聊天频道，和他们互相交流。"
   },
   {
     "id": 25155,
@@ -2615,7 +2615,7 @@
     "jaJP": "オンライン状態をオフラインにします",
     "ptBR": "Define seu status online como Offline.",
     "ruRU": "Указывает сетевой статус «Не в сети».",
-    "zhCN": "将你的在线状态设置为离线"
+    "zhCN": "将你的状态设为离线"
   },
   {
     "id": 25157,
@@ -2632,7 +2632,7 @@
     "jaJP": "%sがチャンネル%sから追放されました。",
     "ptBR": "%s foi expulso do canal %s.",
     "ruRU": "Игрок %s исключен из канала %s.",
-    "zhCN": "%s已被踢出了%s频道。"
+    "zhCN": "%s被踢出%s频道。"
   },
   {
     "id": 25158,
@@ -2666,7 +2666,7 @@
     "jaJP": "あなたは%sをチャンネル%sの管理者に設定しました。",
     "ptBR": "Você designou %s como moderador do canal %s.",
     "ruRU": "Вы выбрали игрока %s в качестве модератора канала %s.",
-    "zhCN": "你已将%s指定为%s频道的管理员。"
+    "zhCN": "你指定%s成为%s频道的管理员。"
   },
   {
     "id": 25160,
@@ -2683,7 +2683,7 @@
     "jaJP": "%sをチャンネル%sの管理者に設定できませんでした。",
     "ptBR": "Não foi possível designar %s como moderador do canal %s.",
     "ruRU": "Не удалось выбрать игрока %s в качестве модератора канала %s.",
-    "zhCN": "无法将%s指定为%s频道的管理员。"
+    "zhCN": "无法指定%s成为%s频道的管理员。"
   },
   {
     "id": 25161,
@@ -2700,7 +2700,7 @@
     "jaJP": "チャンネル%sへの%sからの招待を拒否しました。",
     "ptBR": "Você recusou um convite de %s para o canal %s.",
     "ruRU": "Вы отклонили приглашение в канал %s от игрока %s.",
-    "zhCN": "你拒绝了%s频道的邀请 (来自%s)。"
+    "zhCN": "你拒绝加入%s频道（来自%s的邀请）。"
   },
   {
     "id": 25162,
@@ -2717,7 +2717,7 @@
     "jaJP": "チャンネル%sへの%sからの招待を拒否できませんでした。",
     "ptBR": "Não foi possível recusar o convite de %s para o canal %s.",
     "ruRU": "Не удалось отклонить приглашение в канал %s от игрока %s.",
-    "zhCN": "无法拒绝%s频道的邀请 (来自%s)。"
+    "zhCN": "无法拒绝加入%s频道（来自%s的邀请）。"
   },
   {
     "id": 25163,
@@ -2734,7 +2734,7 @@
     "jaJP": "チャンネル%sへの%sからの招待を承諾しました。",
     "ptBR": "Você aceitou um convite de %s para o canal %s.",
     "ruRU": "Вы приняли приглашение в канал %s от игрока %s.",
-    "zhCN": "你接受了%s频道的邀请 (来自%s)。"
+    "zhCN": "你接受加入%s频道（来自%s的邀请）。"
   },
   {
     "id": 25164,
@@ -2751,7 +2751,7 @@
     "jaJP": "チャンネル%sへの%sからの招待を承諾できませんでした。",
     "ptBR": "Não foi possível aceitar o convite de %s para o canal %s.",
     "ruRU": "Не удалось принять приглашение в канал %s от игрока %s.",
-    "zhCN": "无法接受%s频道的邀请 (来自%s)。"
+    "zhCN": "无法接受加入%s频道。（来自%s的邀请）。"
   },
   {
     "id": 25165,
@@ -2802,7 +2802,7 @@
     "jaJP": "チャンネルの管理者のみが非公開チャンネルの新しい管理者を指定できます。",
     "ptBR": "Apenas o moderador do canal pode designar um novo moderador para canais privados.",
     "ruRU": "Только модератор канала может назначить нового модератора для частных каналов.",
-    "zhCN": "在私人频道中只有频道管理员可以指定新的管理员。"
+    "zhCN": "只有频道管理员可以为私人频道指定新的管理员。"
   },
   {
     "id": 25168,
@@ -2819,7 +2819,7 @@
     "jaJP": "%sがチャンネル%sの現在の管理者です。",
     "ptBR": "%s agora é moderador do canal %s.",
     "ruRU": "Игрок %s — теперь модератор канала %s.",
-    "zhCN": "%s成为了%s频道的管理员。"
+    "zhCN": "%s现在是%s频道的管理员。"
   },
   {
     "id": 25169,
@@ -2836,7 +2836,7 @@
     "jaJP": "使えないチャンネル名です。",
     "ptBR": "Nome de canal inválido.",
     "ruRU": "Неправильное название канала.",
-    "zhCN": "无效的频道名称。"
+    "zhCN": "错误的频道名称。"
   },
   {
     "id": 25170,
@@ -2853,7 +2853,7 @@
     "jaJP": "%sをゲームに招待しました。",
     "ptBR": "Você convidou %s para um jogo.",
     "ruRU": "Вы пригласили игрока: %s.",
-    "zhCN": "你邀请了%s加入游戏。"
+    "zhCN": "你邀请%s加入游戏。"
   },
   {
     "id": 25171,
@@ -2870,7 +2870,7 @@
     "jaJP": "%sをゲームに招待できませんでした。",
     "ptBR": "Falha ao convidar %s para um jogo.",
     "ruRU": "Не удалось пригласить игрока: %s.",
-    "zhCN": "邀请%s加入游戏失败。"
+    "zhCN": "你无法邀请%s加入游戏。"
   },
   {
     "id": 25172,
@@ -2887,7 +2887,7 @@
     "jaJP": "オンライン状態を%sにしました。",
     "ptBR": "Seu status online foi definido como %s.",
     "ruRU": "Ваш сетевой статус теперь – «%s».",
-    "zhCN": "已将你的在线状态设置为%s。"
+    "zhCN": "你的线上状态设为%s。"
   },
   {
     "id": 25173,
@@ -2904,7 +2904,7 @@
     "jaJP": "オンライン状態を%sにできませんでした。",
     "ptBR": "Falha ao definir seu status online como %s.",
     "ruRU": "Не удалось задать сетевой статус «%s».",
-    "zhCN": "无法将你的在线状态设置为%s。"
+    "zhCN": "无法将你的线上状态设为%s。"
   },
   {
     "id": 25174,
@@ -2921,7 +2921,7 @@
     "jaJP": "あなたのオンライン状態は既に%sになっています。",
     "ptBR": "Seu status online já está definido como %s.",
     "ruRU": "У вас уже выбран сетевой статус «%s».",
-    "zhCN": "你的在线状态已经设置为%s。"
+    "zhCN": "你的线上状态已经设为%s。"
   },
   {
     "id": 25175,
@@ -2938,7 +2938,7 @@
     "jaJP": "アイテム回収を有効化しました",
     "ptBR": "Coleta de itens ativada",
     "ruRU": "Подбор предметов включен",
-    "zhCN": "物品拾取已启用"
+    "zhCN": "已开启物品捡拾"
   },
   {
     "id": 25176,
@@ -2955,7 +2955,7 @@
     "jaJP": "アイテム回収を無効化しました",
     "ptBR": "Coleta de itens desativada",
     "ruRU": "Подбор предметов отключен",
-    "zhCN": "物品拾取已禁用"
+    "zhCN": "已关闭物品捡拾"
   },
   {
     "id": 25177,
@@ -2972,7 +2972,7 @@
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": " "
   },
   {
     "id": 25178,
@@ -2989,7 +2989,7 @@
     "jaJP": "このアカウントは現在レビュー中のため、チャット機能が一時的に使用できません。このアプリケーションを再起動する前に数時間お待ちいただいてから、再度試してみてください。このアカウントでのゲームは引き続きプレイが可能です。",
     "ptBR": "O bate-papo está temporariamente indisponível porque esta conta está em análise. Aguarde algumas horas antes de reiniciar o aplicativo e tentar novamente. É possível continuar a jogar com esta conta enquanto isso.",
     "ruRU": "Функции чата временно недоступны, поскольку производится проверка учетной записи. Подождите несколько часов, прежде чем перезапустить приложение и попробовать еще раз. Пока можно продолжать игру с использованием данной учетной записи.",
-    "zhCN": "此账号目前正在审核过程中，聊天功能暂时无法使用。请等待几小时，重新启动应用程序后再进行尝试。在此期间，此账号仍可正常进行游戏。"
+    "zhCN": "这个帐号正在接受审查，因此暂时无法使用聊天功能。请在数小时后重新启动应用程式，然后再试一次。在这段期间，这个帐号依然可以进行游戏。"
   },
   {
     "id": 25179,
@@ -3023,7 +3023,7 @@
     "jaJP": "フレンドリクエストが取り消されました。",
     "ptBR": "Solicitação de amizade cancelada.",
     "ruRU": "Запрос на добавление в друзья отозван.",
-    "zhCN": "好友请求已撤回。"
+    "zhCN": "已撤回好友邀请。"
   },
   {
     "id": 25182,
@@ -3040,7 +3040,7 @@
     "jaJP": "フレンドリクエストを取り消せませんでした。",
     "ptBR": "Não é possível cancelar a solicitação de amizade.",
     "ruRU": "Не удалось отозвать запрос на добавление в друзья.",
-    "zhCN": "无法撤回好友请求。"
+    "zhCN": "无法撤回好友邀请。"
   },
   {
     "id": 25183,
@@ -3057,7 +3057,7 @@
     "jaJP": "保留中のフレンドリクエストを取り消します。",
     "ptBR": "Cancela uma solicitação de amizade pendente.",
     "ruRU": "Отзывает запрос на добавление в друзья.",
-    "zhCN": "撤退一条尚未处理的好友请求。"
+    "zhCN": "撤回未回复的好友邀请。"
   },
   {
     "id": 25184,
@@ -3074,7 +3074,7 @@
     "jaJP": "現地時間: %s\nサーバー時間: %s",
     "ptBR": "Horário local: %s\nHorário do servidor: %s",
     "ruRU": "Местное время: %s\nВремя сервера: %s",
-    "zhCN": "本地时间：%s\n服务器时间：%s"
+    "zhCN": "本地时间：%s\n伺服器时间：%s"
   },
   {
     "id": 25185,
@@ -3108,7 +3108,7 @@
     "jaJP": "現在のラダー・シーズンは%dです。",
     "ptBR": "Temporada de competição atual: %d.",
     "ruRU": "Текущий рейтинговый сезон: %d.",
-    "zhCN": "当前天梯赛季为第%d赛季。"
+    "zhCN": "目前是天梯赛季 %d。"
   },
   {
     "id": 25187,
@@ -3125,7 +3125,7 @@
     "jaJP": "シーズン %dは%sに終了します。",
     "ptBR": "A temporada %d terminará em %s.",
     "ruRU": "%d-й сезон завершится в %s.",
-    "zhCN": "第%d赛季将于%s结束。"
+    "zhCN": "赛季 %d 将于 %s 结束。"
   },
   {
     "id": 25188,
@@ -3142,7 +3142,7 @@
     "jaJP": "現在、利用可能なシーズンがありません。",
     "ptBR": "Nenhuma temporada de competição ativa.",
     "ruRU": "Сейчас не проводится рейтинговый сезон.",
-    "zhCN": "尚无进行中的天梯赛季。"
+    "zhCN": "没有进行中的天梯赛季。"
   },
   {
     "id": 25189,
@@ -3159,7 +3159,7 @@
     "jaJP": "次のシーズンは%sから始まります。",
     "ptBR": "A próxima temporada começará em %s.",
     "ruRU": "Следующий сезон начнется в %s.",
-    "zhCN": "下一赛季将于%s开始。"
+    "zhCN": "下个赛季将会于 %s 开始。"
   },
   {
     "id": 25190,
@@ -3176,7 +3176,7 @@
     "jaJP": "現在のシーズンと終了時期を表示。",
     "ptBR": "Exibe a temporada atual e a data de término, se disponível.",
     "ruRU": "Показывает текущий сезон и время его завершения, если информация доступна.",
-    "zhCN": "显示当前赛季是否已有确定的结束时间。"
+    "zhCN": "显示当前赛季。若已知道结束时间，同时也会显示出来。"
   },
   {
     "id": 25191,
@@ -3193,7 +3193,7 @@
     "jaJP": "%Y/%m/%d %I:%M%p",
     "ptBR": "%d/%m/%Y %H:%M",
     "ruRU": "%I:%M %p %d/%m/%Y",
-    "zhCN": "%Y/%m/%d %I:%M%p"
+    "zhCN": "%Y/%m/%d %I:%M %p"
   },
   {
     "id": 25192,
@@ -3210,7 +3210,7 @@
     "jaJP": "ウーバー・ディアブロ",
     "ptBR": "uberdiablo",
     "ruRU": "Супер-Диабло",
-    "zhCN": "超级迪亚波罗"
+    "zhCN": "超级迪亚布罗"
   },
   {
     "id": 25193,
@@ -3227,7 +3227,7 @@
     "jaJP": "現在、利用可能なゲームでのウーバー・ディアブロ出現の進行状態を表示します。",
     "ptBR": "Exibe o progresso atual até o surgimento de um Uber Diablo para o tipo de jogo ativo.",
     "ruRU": "Отобразить, сколько осталось до появления Супер-Диабло в текущей игре.",
-    "zhCN": "显示超级迪亚波罗即将在该游戏类型中登场的当前进度。"
+    "zhCN": "于当前进行的游戏模式中，显示超级迪亚布罗目前的生成进度。"
   },
   {
     "id": 25194,
@@ -3244,7 +3244,7 @@
     "jaJP": "terrorized",
     "ptBR": "aterrorizado",
     "ruRU": "Ужас",
-    "zhCN": "恐惧区域"
+    "zhCN": "邪恶威胁"
   },
   {
     "id": 25195,
@@ -3261,7 +3261,7 @@
     "jaJP": "恐怖に侵されている場所を表示する。",
     "ptBR": "Exibe os níveis atuais que estão aterrorizados.",
     "ruRU": "Показывать текущие уровни, ввергнутые в ужас.",
-    "zhCN": "显示当前被恐惧的关卡。"
+    "zhCN": "显示当前受到邪恶威胁的区域。"
   },
   {
     "id": 25196,
@@ -3278,7 +3278,7 @@
     "jaJP": "オンライン",
     "ptBR": "online",
     "ruRU": "online",
-    "zhCN": "在线"
+    "zhCN": "线上"
   },
   {
     "id": 25197,
@@ -3295,7 +3295,7 @@
     "jaJP": "現在、オンラインで恐怖の領域になっている場所を表示する。",
     "ptBR": "Exibe os níveis online atuais que estão aterrorizados.",
     "ruRU": "Показывать текущие уровни сетевой игры, где есть зоны ужаса.",
-    "zhCN": "显示当前被恐惧的在线关卡。"
+    "zhCN": "显示当前受到邪恶威胁的线上区域。"
   },
   {
     "id": 25198,
@@ -3329,7 +3329,7 @@
     "jaJP": "現在、オフラインで恐怖の領域になっている場所を表示する。",
     "ptBR": "Exibe os níveis offline atuais que estão aterrorizados.",
     "ruRU": "Показывать текущие уровни локальной игры, где есть зоны ужаса.",
-    "zhCN": "显示当前被恐惧的离线关卡。"
+    "zhCN": "显示当前受到邪恶威胁的离线区域。"
   },
   {
     "id": 25990,
@@ -3346,7 +3346,7 @@
     "jaJP": "help",
     "ptBR": "ajuda",
     "ruRU": "help",
-    "zhCN": "帮助"
+    "zhCN": "说明"
   },
   {
     "id": 25991,
@@ -3363,7 +3363,7 @@
     "jaJP": "「/%s コマンド」と入力することで、そのコマンドのヘルプを確認できます。",
     "ptBR": "Digite /%s ASSUNTO para informações sobre um assunto específico.",
     "ruRU": "Чтобы узнать подробнее о конкретной теме, введите: /%s ТЕМА",
-    "zhCN": "输入 /%s话题 获取指定话题的信息。"
+    "zhCN": "输入 /%s 主题 以取得特定主题的相关资讯。"
   },
   {
     "id": 25992,
@@ -3380,7 +3380,7 @@
     "jaJP": "特定のコマンドに関するヘルプを表示します。",
     "ptBR": "Exibe ajuda para um ASSUNTO específico",
     "ruRU": "Приводит справку по конкретной ТЕМЕ",
-    "zhCN": "显示指定话题的帮助"
+    "zhCN": "显示特定主题的说明"
   },
   {
     "id": 25993,
@@ -3397,7 +3397,7 @@
     "jaJP": "例:",
     "ptBR": "Exemplo:",
     "ruRU": "Пример:",
-    "zhCN": "举例："
+    "zhCN": "范例："
   },
   {
     "id": 25994,
@@ -3414,7 +3414,7 @@
     "jaJP": "コマンドの一覧:",
     "ptBR": "Os comandos são:",
     "ruRU": "Команды:",
-    "zhCN": "命令是："
+    "zhCN": "指令为："
   },
   {
     "id": 25995,
@@ -3431,7 +3431,7 @@
     "jaJP": "特定のコマンドの使用法についてヘルプが必要な場合",
     "ptBR": "Para obter ajuda sobre um comando específico, use",
     "ruRU": "Для получения справки о действии конкретной команды:",
-    "zhCN": "获取某个具体命令的使用方法"
+    "zhCN": "显示特定指令的说明"
   },
   {
     "id": 25996,
@@ -3448,7 +3448,7 @@
     "jaJP": "command",
     "ptBR": "comando",
     "ruRU": "command",
-    "zhCN": "命令"
+    "zhCN": "指令"
   },
   {
     "id": 26385,
@@ -3465,7 +3465,7 @@
     "jaJP": "FPS: %d",
     "ptBR": "FPS: %d",
     "ruRU": "FPS: %d",
-    "zhCN": "FPS: %d"
+    "zhCN": "每秒帧数：%d"
   },
   {
     "id": 26386,
@@ -3482,7 +3482,7 @@
     "jaJP": "Ping: %d",
     "ptBR": "Ping: %d",
     "ruRU": "Ping: %d",
-    "zhCN": "Ping: %d"
+    "zhCN": "网路延迟：%d"
   },
   {
     "id": 26387,
@@ -3499,7 +3499,7 @@
     "jaJP": "Phys: %u / %u m",
     "ptBR": "Memória física: %u / %u m",
     "ruRU": "Phys: %u / %u m",
-    "zhCN": "Phys: %u / %u m"
+    "zhCN": "实体记忆体：%u / %u m"
   },
   {
     "id": 26388,
@@ -3516,7 +3516,7 @@
     "jaJP": "Page: %u / %u m",
     "ptBR": "Página: %u / %u m",
     "ruRU": "Page: %u / %u m",
-    "zhCN": "Page: %u / %u m"
+    "zhCN": "记忆体分页：%u / %u m"
   },
   {
     "id": 26389,
@@ -3533,7 +3533,7 @@
     "jaJP": "Video: %s",
     "ptBR": "Vídeo: %s",
     "ruRU": "Video: %s",
-    "zhCN": "Video: %s"
+    "zhCN": "显示设定：%s"
   },
   {
     "id": 26390,
@@ -3550,7 +3550,7 @@
     "jaJP": "GFX Memory -\u003e %i",
     "ptBR": "Memória GFX -\u003e %i",
     "ruRU": "GFX Memory -\u003e %i",
-    "zhCN": "GFX Memory -\u003e %i"
+    "zhCN": "GFX 记忆体 -\u003e %i"
   },
   {
     "id": 26391,
@@ -3567,7 +3567,7 @@
     "jaJP": "COF Memory -\u003e %i of %i",
     "ptBR": "Memória COF -\u003e %i de %i",
     "ruRU": "COF Memory -\u003e %i of %i",
-    "zhCN": "COF Memory -\u003e %i of %i"
+    "zhCN": "COF 记忆体 -\u003e %i / %i"
   },
   {
     "id": 26392,
@@ -3584,7 +3584,7 @@
     "jaJP": "Sprite Cache Memory -\u003e %u of %u",
     "ptBR": "Memória Cache de Sprites -\u003e %u de %u",
     "ruRU": "Sprite Cache Memory -\u003e %u of %u",
-    "zhCN": "Sprite Cache Memory -\u003e %u of %u"
+    "zhCN": "Sprite 暂存记忆体 -\u003e %u / %u"
   },
   {
     "id": 26393,
@@ -3601,7 +3601,7 @@
     "jaJP": "CEL Data Cache Memory -\u003e %u of %u",
     "ptBR": "Memória Cache de Dados CEL -\u003e %u de %u",
     "ruRU": "CEL Data Cache Memory -\u003e %u of %u",
-    "zhCN": "CEL Data Cache Memory -\u003e %u of %u"
+    "zhCN": "CEL 资料暂存记忆体 -\u003e %u / %u"
   },
   {
     "id": 26394,
@@ -3618,7 +3618,7 @@
     "jaJP": "Tile Cache: (%.2fK) %3.2f%%, Misses: %d, %d percent utilized",
     "ptBR": "Cache de Bloco: (%.2fK) %3.2f%%, Perdas: %d, %d% utilizado",
     "ruRU": "Tile Cache: (%.2fK) %3.2f%%, Misses: %d, %d percent utilized",
-    "zhCN": "Tile Cache: (%.2fK) %3.2f%%, Misses: %d, %d percent utilized"
+    "zhCN": "Tile Cache：(%.2fK) %3.2f%%，丢失：%d，已利用百分之%d"
   },
   {
     "id": 27001,
@@ -3635,7 +3635,7 @@
     "jaJP": "新しいメッセージを送るのをもう少しお待ちください。",
     "ptBR": "Aguarde um momento antes de enviar mais mensagens.",
     "ruRU": "Подождите немного, прежде чем отправлять новые сообщения.",
-    "zhCN": "请稍等片刻再发送新的消息。"
+    "zhCN": "请稍待片刻，再发送其他讯息。"
   },
   {
     "id": 27054,
@@ -3652,7 +3652,7 @@
     "jaJP": "そのチャンネルのプレイヤーは招待できません。",
     "ptBR": "Você não pode convidar um jogador para esse canal.",
     "ruRU": "Вы не можете пригласить игрока в этот канал.",
-    "zhCN": "你不能邀请玩家加入该频道。"
+    "zhCN": "你无法邀请玩家进入该频道。"
   },
   {
     "id": 251780,
@@ -3669,6 +3669,6 @@
     "jaJP": "%sに送った未回答の招待はありません。",
     "ptBR": "Nenhuma solicitação pendente para %s",
     "ruRU": "Нет активных приглашений: %s",
-    "zhCN": "没有发送给%s的尚未处理的请求"
+    "zhCN": "没有发给%s的未回复邀请。"
   }
 ]
