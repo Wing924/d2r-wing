@@ -33,12 +33,13 @@ WHERE
   OR (type = "scep" AND socket = 5) -- pal 权杖
   OR (type = "wand" AND socket = 2) -- nec 魔杖
   OR (type = "staf" AND socket >= 4) -- sor 法杖
-  OR (type = "knif") -- war 匕首
   OR type IN (
-    "phlm", -- bar 头 (3s)
-    "pelt", -- dru 头 (3s)
+    "grim", -- war 书
+    "head", -- nec 头颅 (2s)
+    "knif", -- war 匕首
     "orb", -- sor 法球 (电棒)
-    "head" -- nec 头颅 (2s)
+    "pelt", -- dru 头 (3s)
+    "phlm" -- bar 头 (3s)
   )
 ORDER BY category, type, id
 '

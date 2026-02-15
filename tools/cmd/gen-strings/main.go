@@ -119,13 +119,16 @@ func processPipeline(entries []model.Entry, cfg *Config) []model.Entry {
 				if oldText != newText {
 					logger.Infof("Replace %q\t->\t%q", oldText, newText)
 					entry.ZhTW = newText
-					entries[i] = entry
+					entry.ZhCN = newText
 				}
+				entry.ZhCN = entry.ZhTW
+				entries[i] = entry
 			} else {
 				newEntry := entry
 				newEntry.Key = newKey
 				newEntry.ID = -1
 				newEntry.ZhTW = newText
+				newEntry.ZhCN = newText
 				entries = append(entries, newEntry)
 				logger.Infof("New entry %q\t->\t%q", newEntry.Key, newText)
 			}
