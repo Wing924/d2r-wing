@@ -26846,7 +26846,7 @@
     "id": 27639,
     "Key": "Unique Warlock Helm",
     "enUS": "Hellwarden's Will",
-    "zhTW": "[-8FD/-8MR/215ED/6EK]\nHellwarden's Will\n地狱刑长的意志",
+    "zhTW": "[-8FR/-8MR/215ED/6EK]\nHellwarden's Will\n地狱刑长的意志",
     "deDE": "Wille des Höllenwärters",
     "esES": "[fs]Voluntad del alcaide infernal",
     "frFR": "Volonté du Garde-enfer",
@@ -26857,7 +26857,7 @@
     "jaJP": "ヘル・ウォーデンの意志",
     "ptBR": "Vontade do Carcereiro Infernal",
     "ruRU": "Воля стража Преисподней",
-    "zhCN": "[-8FD/-8MR/215ED/6EK]\nHellwarden's Will\n地狱刑长的意志"
+    "zhCN": "[-8FR/-8MR/215ED/6EK]\nHellwarden's Will\n地狱刑长的意志"
   },
   {
     "id": 27641,
@@ -26948,7 +26948,7 @@
     "id": 27646,
     "Key": "Horazon's Hold",
     "enUS": "Horazon's Hold",
-    "zhTW": "[防御35/150AR/15DEX/270FD/40Life]\nHorazon's Hold\n赫拉森的掌控",
+    "zhTW": "[防御35/150AR/15DEX/40Life]\nHorazon's Hold\n赫拉森的掌控",
     "deDE": "Horazons Halt",
     "esES": "[ms]Reducto de Horazón",
     "frFR": "Emprise d’Horazon",
@@ -26959,7 +26959,7 @@
     "jaJP": "ホラゾンの掌握",
     "ptBR": "Controle de Horazon",
     "ruRU": "Хватка Хоразона",
-    "zhCN": "[防御35/150AR/15DEX/270FD/40Life]\nHorazon's Hold\n赫拉森的掌控"
+    "zhCN": "[防御35/150AR/15DEX/40Life]\nHorazon's Hold\n赫拉森的掌控"
   },
   {
     "id": 27647,
@@ -28002,7 +28002,7 @@
     "id": 28035,
     "Key": "PreCrafted Cold Rupture",
     "enUS": "Latent Cold Rupture",
-    "zhTW": "Latent Cold Rupture\n潜伏冰寒裂缝",
+    "zhTW": "[-70CR]\nLatent Cold Rupture\n潜伏冰寒裂缝",
     "deDE": "[ms]Latenter Kältespalt",
     "esES": "Ruptura fría latente",
     "frFR": "Rupture glaciale latente",
@@ -28013,7 +28013,7 @@
     "jaJP": "潜在する甘美なる凍気",
     "ptBR": "Ruptura Gélida Latente",
     "ruRU": "Скрытый ледяной разлом",
-    "zhCN": "Latent Cold Rupture\n潜伏冰寒裂缝"
+    "zhCN": "[-70CR]\nLatent Cold Rupture\n潜伏冰寒裂缝"
   },
   {
     "id": 28036,
@@ -28036,7 +28036,7 @@
     "id": 28037,
     "Key": "PreCrafted Flame Rift",
     "enUS": "Latent Flame Rift",
-    "zhTW": "Latent Flame Rift\n潜伏火焰裂隙",
+    "zhTW": "[-70FR]\nLatent Flame Rift\n潜伏火焰裂隙",
     "deDE": "[ms]Latenter Flammenspalt",
     "esES": "Falla de llamas latente",
     "frFR": "Faille ardente latente",
@@ -28047,7 +28047,7 @@
     "jaJP": "潜在する穿つ炎",
     "ptBR": "Fenda Flamejante Latente",
     "ruRU": "Скрытый пламенный портал",
-    "zhCN": "Latent Flame Rift\n潜伏火焰裂隙"
+    "zhCN": "[-70FR]\nLatent Flame Rift\n潜伏火焰裂隙"
   },
   {
     "id": 28038,
@@ -28070,7 +28070,7 @@
     "id": 28039,
     "Key": "PreCrafted Crack of the Heavens",
     "enUS": "Latent Crack of the Heavens",
-    "zhTW": "Latent Crack of the Heavens\n潜伏天堂裂击",
+    "zhTW": "[-70LR]\nLatent Crack of the Heavens\n潜伏天堂裂击",
     "deDE": "[ms]Latenter Himmelsriss",
     "esES": "Chasquido de los cielos latente",
     "frFR": "Fracture des Cieux latente",
@@ -28081,7 +28081,7 @@
     "jaJP": "潜在する天外の亀裂",
     "ptBR": "Rachadura do Paraíso Latente",
     "ruRU": "Скрытая небесная трещина",
-    "zhCN": "Latent Crack of the Heavens\n潜伏天堂裂击"
+    "zhCN": "[-70LR]\nLatent Crack of the Heavens\n潜伏天堂裂击"
   },
   {
     "id": 28040,
@@ -28104,7 +28104,7 @@
     "id": 28041,
     "Key": "PreCrafted Rotting Fissure",
     "enUS": "Latent Rotting Fissure",
-    "zhTW": "Latent Rotting Fissure\n潜伏腐败裂痕",
+    "zhTW": "[-70PR]\nLatent Rotting Fissure\n潜伏腐败裂痕",
     "deDE": "[fs]Latente Fäulniskluft",
     "esES": "Fisura putrefacta latente",
     "frFR": "Fissure putride latente",
@@ -28115,7 +28115,7 @@
     "jaJP": "潜在する腐れる傷跡",
     "ptBR": "Fissura Putrefata Latente",
     "ruRU": "Скрытый гниющий излом",
-    "zhCN": "Latent Rotting Fissure\n潜伏腐败裂痕"
+    "zhCN": "[-70PR]\nLatent Rotting Fissure\n潜伏腐败裂痕"
   },
   {
     "id": 28042,
@@ -28138,7 +28138,7 @@
     "id": 28043,
     "Key": "PreCrafted Bone Break",
     "enUS": "Latent Bone Break",
-    "zhTW": "Latent Bone Break\n潜伏分筋裂骨",
+    "zhTW": "[10DI]\nLatent Bone Break\n潜伏分筋裂骨",
     "deDE": "[ms]Latenter Knochenbruch",
     "esES": "Rotura de huesos latente",
     "frFR": "Briseur d’os latent",
@@ -28149,7 +28149,7 @@
     "jaJP": "潜在する骨食み",
     "ptBR": "Rompimento de Ossos Latente",
     "ruRU": "Скрытый перелом костей",
-    "zhCN": "Latent Bone Break\n潜伏分筋裂骨"
+    "zhCN": "[10DI]\nLatent Bone Break\n潜伏分筋裂骨"
   },
   {
     "id": 28044,
@@ -28172,7 +28172,7 @@
     "id": 28045,
     "Key": "PreCrafted Black Cleft",
     "enUS": "Latent Black Cleft",
-    "zhTW": "Latent Black Cleft\n潜伏漆黑裂口",
+    "zhTW": "[-45MR]\nLatent Black Cleft\n潜伏漆黑裂口",
     "deDE": "[fs]Latente Schwarze Bresche",
     "esES": "Hendidura negra latente",
     "frFR": "Fente noire latente",
@@ -28183,7 +28183,7 @@
     "jaJP": "潜在する黒き裂目",
     "ptBR": "Fratura Sombria Latente",
     "ruRU": "Скрытая черная расщелина",
-    "zhCN": "Latent Black Cleft\n潜伏漆黑裂口"
+    "zhCN": "[-45MR]\nLatent Black Cleft\n潜伏漆黑裂口"
   },
   {
     "id": 28046,
