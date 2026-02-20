@@ -26472,7 +26472,7 @@
     "id": 27609,
     "Key": "ua1",
     "enUS": "Talic's Anguish",
-    "zhTW": "塔力克的怨恸",
+    "zhTW": "塔力克的怨恸|A1",
     "deDE": "[fs]Talics Qual",
     "esES": "[fs]Angustia de Talic",
     "frFR": "Angoisse de Talic",
@@ -26483,13 +26483,13 @@
     "jaJP": "タリックの苦悶",
     "ptBR": "Angústia de Talic",
     "ruRU": "Мучение Талика",
-    "zhCN": "塔力克的怨恸"
+    "zhCN": "塔力克的怨恸|A1"
   },
   {
     "id": 27610,
     "Key": "ua2",
     "enUS": "Korlic's Pain",
-    "zhTW": "科力克的苦痛",
+    "zhTW": "科力克的苦痛|A2",
     "deDE": "[ms]Korlics Schmerz",
     "esES": "[ms]Dolor de Korlic",
     "frFR": "Douleur de Korlic",
@@ -26500,13 +26500,13 @@
     "jaJP": "コーリックの苦痛",
     "ptBR": "Dor de Korlic",
     "ruRU": "Боль Корлика",
-    "zhCN": "科力克的苦痛"
+    "zhCN": "科力克的苦痛|A2"
   },
   {
     "id": 27611,
     "Key": "ua3",
     "enUS": "Madawc's Ire",
-    "zhTW": "马道克的怒火",
+    "zhTW": "马道克的怒火|A3",
     "deDE": "[ms]Madawcs Zorn",
     "esES": "[fs]Ira de Madawc",
     "frFR": "Colère de Madawc",
@@ -26517,13 +26517,13 @@
     "jaJP": "マドウクの激憤",
     "ptBR": "Ira de Madawc",
     "ruRU": "Гнев Мадавка",
-    "zhCN": "马道克的怒火"
+    "zhCN": "马道克的怒火|A3"
   },
   {
     "id": 27612,
     "Key": "ua4",
     "enUS": "Bul-Kathos' Nightmare",
-    "zhTW": "布尔凯索的梦魇",
+    "zhTW": "布尔凯索的梦魇|A4",
     "deDE": "[ms]Bul-Kathos' Alptraum",
     "esES": "[fs]Pesadilla de Bul-Kathos",
     "frFR": "Cauchemar de Bul-Kathos",
@@ -26534,13 +26534,13 @@
     "jaJP": "バル=カソスの悪夢",
     "ptBR": "Pesadelo de Bul-Kathos",
     "ruRU": "Кошмар Бул-Катоса",
-    "zhCN": "布尔凯索的梦魇"
+    "zhCN": "布尔凯索的梦魇|A4"
   },
   {
     "id": 27613,
     "Key": "ua5",
     "enUS": "Worusk's End",
-    "zhTW": "沃鲁斯克的终结",
+    "zhTW": "沃鲁斯克的终结|A5",
     "deDE": "[ns]Worsuks Ende",
     "esES": "[ms]Fin de Worusk",
     "frFR": "Trépas de Worusk",
@@ -26551,7 +26551,7 @@
     "jaJP": "ウォルスクの最期",
     "ptBR": "Fim de Worusk",
     "ruRU": "Погибель Воруска",
-    "zhCN": "沃鲁斯克的终结"
+    "zhCN": "沃鲁斯克的终结|A5"
   },
   {
     "id": 27614,
