@@ -1,0 +1,1495 @@
+{
+  "dependencies": {
+    "animations": [],
+    "json": [
+      {
+        "path": "data/hd/character/player/warlock/warlock_state_machine.json"
+      },
+      {
+        "path": "data/hd/missiles/abyss_meteor.json"
+      },
+      {
+        "path": "data/hd/missiles/abyss_meteor_explode.json"
+      },
+      {
+        "path": "data/hd/missiles/abyss_meteor_tail.json"
+      },
+      {
+        "path": "data/hd/missiles/abyss_meteor_target_indicator.json"
+      },
+      {
+        "path": "data/hd/overlays/common/apocalypse.json"
+      },
+      {
+        "path": "data/hd/overlays/common/hex_purge_explosion.json"
+      },
+      {
+        "path": "data/hd/overlays/common/hexbanedebuff.json"
+      },
+      {
+        "path": "data/hd/overlays/common/hexpurgedebuff.json"
+      },
+      {
+        "path": "data/hd/overlays/common/hexsyphondebuff.json"
+      },
+      {
+        "path": "data/hd/overlays/common/surge_hex_explode.json"
+      },
+      {
+        "path": "data/hd/overlays/warlock/death_mark.json"
+      },
+      {
+        "path": "data/hd/overlays/warlock/eldritchblastperiodic.json"
+      },
+      {
+        "path": "data/hd/overlays/warlock/engorgecast.json"
+      },
+      {
+        "path": "data/hd/overlays/warlock/engorgestate.json"
+      },
+      {
+        "path": "data/hd/overlays/warlock/healthlink.json"
+      },
+      {
+        "path": "data/hd/overlays/warlock/hex_enchant.json"
+      },
+      {
+        "path": "data/hd/overlays/warlock/psychicward.json"
+      },
+      {
+        "path": "data/hd/overlays/warlock/psychicward_hit_0.json"
+      },
+      {
+        "path": "data/hd/overlays/warlock/psychicward_hit_1.json"
+      },
+      {
+        "path": "data/hd/overlays/warlock/psychicward_hit_2.json"
+      },
+      {
+        "path": "data/hd/overlays/warlock/psychicward_hit_3.json"
+      },
+      {
+        "path": "data/hd/overlays/warlock/psychicward_hit_4.json"
+      },
+      {
+        "path": "data/hd/overlays/warlock/psychicward_hit_5.json"
+      },
+      {
+        "path": "data/hd/overlays/warlock/psychicward_hit_6.json"
+      },
+      {
+        "path": "data/hd/overlays/warlock/psychicward_hit_7.json"
+      },
+      {
+        "path": "data/hd/overlays/warlock/warlock_death_mark_pet.json"
+      },
+      {
+        "path": "data/hd/overlays/warlock/warlock_fire_cast_1.json"
+      },
+      {
+        "path": "data/hd/overlays/warlock/warlock_psychic_cast_1.json"
+      },
+      {
+        "path": "data/hd/overlays/warlock/warlock_psychic_cast_1_no_hex.json"
+      },
+      {
+        "path": "data/hd/overlays/warlock/warlock_psychic_cast_2.json"
+      },
+      {
+        "path": "data/hd/overlays/warlock/warlock_shadow_cast_1.json"
+      },
+      {
+        "path": "data/hd/overlays/warlock/warlock_shadow_cast_2.json"
+      },
+      {
+        "path": "data/hd/overlays/warlock/warlockconsume.json"
+      },
+      {
+        "path": "data/hd/overlays/warlock/warlockdemonground.json"
+      },
+      {
+        "path": "data/hd/overlays/warlock/warlockdemontorso.json"
+      }
+    ],
+    "models": [
+      {
+        "path": "data/hd/character/player/warlock/head.model"
+      },
+      {
+        "path": "data/hd/character/player/warlock/larm_hvy.model"
+      },
+      {
+        "path": "data/hd/character/player/warlock/larm_lit.model"
+      },
+      {
+        "path": "data/hd/character/player/warlock/larm_med.model"
+      },
+      {
+        "path": "data/hd/character/player/warlock/legs_hvy.model"
+      },
+      {
+        "path": "data/hd/character/player/warlock/legs_lit.model"
+      },
+      {
+        "path": "data/hd/character/player/warlock/legs_med.model"
+      },
+      {
+        "path": "data/hd/character/player/warlock/rarm_hvy.model"
+      },
+      {
+        "path": "data/hd/character/player/warlock/rarm_lit.model"
+      },
+      {
+        "path": "data/hd/character/player/warlock/rarm_med.model"
+      },
+      {
+        "path": "data/hd/character/player/warlock/special1_hvy.model"
+      },
+      {
+        "path": "data/hd/character/player/warlock/special1_lit.model"
+      },
+      {
+        "path": "data/hd/character/player/warlock/special1_med.model"
+      },
+      {
+        "path": "data/hd/character/player/warlock/special2_hvy.model"
+      },
+      {
+        "path": "data/hd/character/player/warlock/special2_lit.model"
+      },
+      {
+        "path": "data/hd/character/player/warlock/special2_med.model"
+      },
+      {
+        "path": "data/hd/character/player/warlock/torso_hvy.model"
+      },
+      {
+        "path": "data/hd/character/player/warlock/torso_lit.model"
+      },
+      {
+        "path": "data/hd/character/player/warlock/torso_med.model"
+      },
+      {
+        "path": "data/hd/items/weapon/axe/axe/axe.model"
+      }
+    ],
+    "objecteffects": [],
+    "other": [],
+    "particles": [
+      {
+        "path": "data/hd/vfx/particles/character/player/warlock/vfx_warlock_hand.particles"
+      }
+    ],
+    "physics": [],
+    "skeletons": [
+      {
+        "path": "data/hd/character/player/warlock/skeleton/warlock.skeleton"
+      }
+    ],
+    "textures": [
+      {
+        "path": "data/hd/character/common/common_hair1_FLOW.texture"
+      },
+      {
+        "path": "data/hd/character/common/common_hair1_HRT.texture"
+      },
+      {
+        "path": "data/hd/character/common/common_ktint.texture"
+      },
+      {
+        "path": "data/hd/character/player/necromancer/textures/Necro_Body_SSS.texture"
+      },
+      {
+        "path": "data/hd/character/player/warlock/textures/Warlock_Armor_ALB.texture"
+      },
+      {
+        "path": "data/hd/character/player/warlock/textures/Warlock_Armor_mask.texture"
+      },
+      {
+        "path": "data/hd/character/player/warlock/textures/Warlock_Armor_NRM.texture"
+      },
+      {
+        "path": "data/hd/character/player/warlock/textures/Warlock_Armor_ORM.texture"
+      },
+      {
+        "path": "data/hd/character/player/warlock/textures/warlock_armorhvy_ALB.texture"
+      },
+      {
+        "path": "data/hd/character/player/warlock/textures/warlock_armorhvy_mask.texture"
+      },
+      {
+        "path": "data/hd/character/player/warlock/textures/warlock_armorhvy_NRM.texture"
+      },
+      {
+        "path": "data/hd/character/player/warlock/textures/warlock_armorhvy_ORM.texture"
+      },
+      {
+        "path": "data/hd/character/player/warlock/textures/warlock_armormed_ALB.texture"
+      },
+      {
+        "path": "data/hd/character/player/warlock/textures/warlock_armormed_mask.texture"
+      },
+      {
+        "path": "data/hd/character/player/warlock/textures/warlock_armormed_NRM.texture"
+      },
+      {
+        "path": "data/hd/character/player/warlock/textures/warlock_armormed_ORM.texture"
+      },
+      {
+        "path": "data/hd/character/player/warlock/textures/Warlock_Body_ALB.texture"
+      },
+      {
+        "path": "data/hd/character/player/warlock/textures/Warlock_Body_NRM.texture"
+      },
+      {
+        "path": "data/hd/character/player/warlock/textures/Warlock_Body_ORM.texture"
+      },
+      {
+        "path": "data/hd/character/player/warlock/textures/Warlock_Body_SSS.texture"
+      },
+      {
+        "path": "data/hd/character/player/warlock/textures/Warlock_Hair_ALB.texture"
+      },
+      {
+        "path": "data/hd/character/player/warlock/textures/Warlock_Hair_Grey_ALB.texture"
+      },
+      {
+        "path": "data/hd/character/player/warlock/textures/Warlock_Head_ALB.texture"
+      },
+      {
+        "path": "data/hd/character/player/warlock/textures/Warlock_Head_NRM.texture"
+      },
+      {
+        "path": "data/hd/character/player/warlock/textures/Warlock_Head_ORM.texture"
+      },
+      {
+        "path": "data/hd/character/player/warlock/textures/Warlock_Head_SSS.texture"
+      },
+      {
+        "path": "data/hd/vfx/textures/default/Black.texture"
+      },
+      {
+        "path": "data/hd/vfx/textures/fresnel/FX_T_gradientMap_Eldritch_hexAll_01.texture"
+      },
+      {
+        "path": "data/hd/vfx/textures/fresnel/T_FX_FresnelGrad_03_Hori_Mirror.texture"
+      },
+      {
+        "path": "data/hd/vfx/textures/fresnel/T_FX_gaussian_noise_gray.texture"
+      },
+      {
+        "path": "data/hd/vfx/textures/fresnel/T_FX_smokey_01.texture"
+      },
+      {
+        "path": "data/hd/vfx/textures/fresnel/warlock_vfx_glove_ALB.texture"
+      },
+      {
+        "path": "data/hd/vfx/textures/fresnel/warlock_vfx_hand_ALB.texture"
+      }
+    ],
+    "variantdata": []
+  },
+  "entities": [
+    {
+      "components": [
+        {
+          "animations": [],
+          "doNotInheritRotation": false,
+          "doNotUseHDHeight": false,
+          "hideAllMeshWhenInOpenedMode": false,
+          "name": "component_root",
+          "onCreateEventName": "",
+          "rotationOverride": {
+            "w": 0.9238795,
+            "x": 0,
+            "y": 0.3826834,
+            "z": 0
+          },
+          "state_machine_filename": "data/hd/character/player/warlock/warlock_state_machine.json",
+          "type": "UnitRootComponent"
+        },
+        {
+          "enableWeaponAttachInertialization": true,
+          "filename": "data/hd/character/player/warlock/skeleton/warlock.skeleton",
+          "name": "component_skeleton",
+          "type": "SkeletonDefinitionComponent"
+        },
+        {
+          "minions": [],
+          "missiles": [
+            {
+              "filename": "data/hd/missiles/abyss_meteor.json",
+              "name": "Root_UnitDefinitionList_0",
+              "type": "UnitDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/missiles/abyss_meteor_explode.json",
+              "name": "Root_UnitDefinitionList_1",
+              "type": "UnitDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/missiles/abyss_meteor_target_indicator.json",
+              "name": "Root_UnitDefinitionList_2",
+              "type": "UnitDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/missiles/abyss_meteor_tail.json",
+              "name": "Root_UnitDefinitionList_3",
+              "type": "UnitDefinitionListEntry"
+            }
+          ],
+          "name": "Root_DefinitionPreloadComponent",
+          "overlays": [
+            {
+              "filename": "data/hd/overlays/warlock/warlock_fire_cast_1.json",
+              "name": "Root_OverlayDefinitionList_0",
+              "type": "OverlayDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/overlays/warlock/warlock_shadow_cast_1.json",
+              "name": "Root_OverlayDefinitionList_1",
+              "type": "OverlayDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/overlays/warlock/warlock_psychic_cast_1.json",
+              "name": "Root_OverlayDefinitionList_2",
+              "type": "OverlayDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/overlays/common/apocalypse.json",
+              "name": "Root_OverlayDefinitionList_3",
+              "type": "OverlayDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/overlays/warlock/psychicward.json",
+              "name": "Root_OverlayDefinitionList_4",
+              "type": "OverlayDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/overlays/warlock/warlock_psychic_cast_2.json",
+              "name": "Root_OverlayDefinitionList_5",
+              "type": "OverlayDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/overlays/common/hexbanedebuff.json",
+              "name": "Root_OverlayDefinitionList_6",
+              "type": "OverlayDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/overlays/common/hexsyphondebuff.json",
+              "name": "Root_OverlayDefinitionList_7",
+              "type": "OverlayDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/overlays/common/surge_hex_explode.json",
+              "name": "Root_OverlayDefinitionList_8",
+              "type": "OverlayDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/overlays/warlock/engorgecast.json",
+              "name": "Root_OverlayDefinitionList_9",
+              "type": "OverlayDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/overlays/warlock/engorgestate.json",
+              "name": "Root_OverlayDefinitionList_10",
+              "type": "OverlayDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/overlays/warlock/warlockdemonground.json",
+              "name": "Root_OverlayDefinitionList_11",
+              "type": "OverlayDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/overlays/warlock/warlockdemontorso.json",
+              "name": "Root_OverlayDefinitionList_12",
+              "type": "OverlayDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/overlays/warlock/warlockconsume.json",
+              "name": "Root_OverlayDefinitionList_13",
+              "type": "OverlayDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/overlays/warlock/death_mark.json",
+              "name": "Root_OverlayDefinitionList_14",
+              "type": "OverlayDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/overlays/warlock/warlock_death_mark_pet.json",
+              "name": "Root_OverlayDefinitionList_15",
+              "type": "OverlayDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/overlays/warlock/hex_enchant.json",
+              "name": "Root_OverlayDefinitionList_16",
+              "type": "OverlayDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/overlays/warlock/healthlink.json",
+              "name": "Root_OverlayDefinitionList_17",
+              "type": "OverlayDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/overlays/common/hexpurgedebuff.json",
+              "name": "Root_OverlayDefinitionList_18",
+              "type": "OverlayDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/overlays/common/hex_purge_explosion.json",
+              "name": "Root_OverlayDefinitionList_19",
+              "type": "OverlayDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/overlays/warlock/psychicward_hit_0.json",
+              "name": "PsychicWard_Hit0",
+              "type": "OverlayDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/overlays/warlock/psychicward_hit_1.json",
+              "name": "PsychicWard_Hit1",
+              "type": "OverlayDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/overlays/warlock/psychicward_hit_2.json",
+              "name": "PsychicWard_Hit2",
+              "type": "OverlayDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/overlays/warlock/psychicward_hit_3.json",
+              "name": "PsychicWard_Hit3",
+              "type": "OverlayDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/overlays/warlock/psychicward_hit_4.json",
+              "name": "PsychicWard_Hit4",
+              "type": "OverlayDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/overlays/warlock/psychicward_hit_5.json",
+              "name": "PsychicWard_Hit5",
+              "type": "OverlayDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/overlays/warlock/psychicward_hit_6.json",
+              "name": "PsychicWard_Hit6",
+              "type": "OverlayDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/overlays/warlock/psychicward_hit_7.json",
+              "name": "PsychicWard_Hit7",
+              "type": "OverlayDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/overlays/warlock/warlock_psychic_cast_1_no_hex.json",
+              "name": "Root_OverlayDefinitionList_28",
+              "type": "OverlayDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/overlays/warlock/eldritchblastperiodic.json",
+              "name": "Root_OverlayDefinitionList_29",
+              "type": "OverlayDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/overlays/warlock/warlock_shadow_cast_2.json",
+              "name": "Root_OverlayDefinitionList_30",
+              "type": "OverlayDefinitionListEntry"
+            }
+          ],
+          "type": "DefinitionPreloadComponent"
+        },
+        {
+          "defaultTransforms": {
+            "0": {
+              "name": "entity_root_DefaultAttachmentTransform_defaultTransforms_Head",
+              "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "scale": {
+                "x": 0.85,
+                "y": 0.9,
+                "z": 0.9
+              },
+              "translation": {
+                "x": 0,
+                "y": 0.06,
+                "z": 0.02
+              },
+              "type": "Transform"
+            },
+            "5": {
+              "name": "entity_root_DefaultAttachmentTransform_defaultTransforms_Right_Hand",
+              "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "scale": {
+                "x": 0.87,
+                "y": 0.87,
+                "z": 0.87
+              },
+              "translation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "type": "Transform"
+            },
+            "6": {
+              "name": "entity_root_DefaultAttachmentTransform_defaultTransforms_Left_Hand",
+              "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "scale": {
+                "x": 0.87,
+                "y": 0.87,
+                "z": 0.87
+              },
+              "translation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "type": "Transform"
+            },
+            "7": {
+              "name": "entity_root_DefaultAttachmentTransform_defaultTransforms_Shield",
+              "rotation": {
+                "x": 0,
+                "y": -2,
+                "z": 0
+              },
+              "scale": {
+                "x": 0.87,
+                "y": 0.87,
+                "z": 0.87
+              },
+              "translation": {
+                "x": 0,
+                "y": 0,
+                "z": -0.1
+              },
+              "type": "Transform"
+            }
+          },
+          "name": "entity_root_DefaultAttachmentTransform",
+          "type": "DefaultAttachmentTransformComponent"
+        },
+        {
+          "fineTurnAngle": 30,
+          "fineTurnDamping": 0.4,
+          "name": "entity_root_TraversalAnimation",
+          "runStartAnimation": "Run_Start",
+          "runStartTownAnimation": "Run_Start",
+          "runStopAnimation": "Run_Stop",
+          "runStopRequiredTimeRunning": 0.1,
+          "runStopTownAnimation": "Run_Stop_Town",
+          "runTurn180AngleThresholdController": 100,
+          "runTurn180AngleThresholdMouse": 110,
+          "runTurn180CCWAnimation": "Run_Turn_180_CCW",
+          "runTurn180CCWTownAnimation": "Run_Turn_180_CCW",
+          "runTurn180CWAnimation": "Run_Turn_180_CW",
+          "runTurn180CWTownAnimation": "Run_Turn_180_CW",
+          "runTurn180CooldownTime": 0.1,
+          "runTurn180NoiseProtectionAngleThreshold": 30,
+          "runTurn180RotationLockTime": 0.1,
+          "runTurn180StopInterruptableTime": 0.25,
+          "runTurnRateControllerMax": 1080,
+          "runTurnRateControllerMin": 180,
+          "runTurnRateMouseMax": 1080,
+          "runTurnRateMouseMin": 30,
+          "stopToStartRunSkipWindow": 0.25,
+          "type": "TraversalAnimationComponent",
+          "walkToStartRunInterruptWindow": 0.25,
+          "walkTurnRateControllerMax": 1080,
+          "walkTurnRateControllerMin": 180,
+          "walkTurnRateMouseMax": 1080,
+          "walkTurnRateMouseMin": 30
+        },
+        {
+          "name": "entity_root_IK",
+          "preset": {
+            "footIKSetup": [
+              {
+                "defaultEnabled": false,
+                "enabledTrackName": "R_FKIK",
+                "flipKneeRotationAxis": false,
+                "footBoneName": "R_Foot",
+                "hipBoneName": "R_Thigh",
+                "hyperExtensionScale": 1,
+                "hyperExtensionStart": 0,
+                "kneeBoneName": "R_Calf",
+                "kneeRotationAxis": 2,
+                "locationTrackName": "R_IK_position",
+                "name": "Default_Biped_VV_footIKSetup_0",
+                "type": "FootIKSetup"
+              },
+              {
+                "defaultEnabled": false,
+                "enabledTrackName": "L_FKIK",
+                "flipKneeRotationAxis": false,
+                "footBoneName": "L_Foot",
+                "hipBoneName": "L_Thigh",
+                "hyperExtensionScale": 1,
+                "hyperExtensionStart": 0,
+                "kneeBoneName": "L_Calf",
+                "kneeRotationAxis": 2,
+                "locationTrackName": "L_IK_position",
+                "name": "Default_Biped_VV_footIKSetup_1",
+                "type": "FootIKSetup"
+              }
+            ],
+            "name": "Default_Biped_VV",
+            "type": "IKPreset"
+          },
+          "type": "IKComponent"
+        },
+        {
+          "inheritOnlyPosition": false,
+          "name": "entity_root_TransformDefinition",
+          "orientation": {
+            "w": 1,
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 0.93,
+            "y": 0.93,
+            "z": 0.93
+          },
+          "type": "TransformDefinitionComponent"
+        },
+        {
+          "equipmentLayers": [
+            {
+              "animationStateName": "ShieldAdditiveLayer",
+              "layerName": "ShieldEquipLayer",
+              "name": "entity_root_EquipmentAnimationLayers_equipmentLayers_0",
+              "type": "EquipmentLayerSetup",
+              "useBlendOverride": false
+            },
+            {
+              "animationStateName": "TWN_ShieldAdditiveLayer",
+              "layerName": "TWN_ShieldEquipLayer",
+              "name": "entity_root_EquipmentAnimationLayers_equipmentLayers_1",
+              "type": "EquipmentLayerSetup",
+              "useBlendOverride": false
+            },
+            {
+              "animationStateName": "FEGrimoireAdditiveLayer",
+              "layerName": "FEGrimoireEquipLayer",
+              "name": "entity_root_EquipmentAnimationLayers_equipmentLayers_3",
+              "type": "EquipmentLayerSetup",
+              "useBlendOverride": true
+            }
+          ],
+          "name": "entity_root_EquipmentAnimationLayers",
+          "type": "EquipmentAnimationLayersComponent"
+        },
+        {
+          "characterSelectSet": {
+            "firstFidgetDelayMax": 7,
+            "firstFidgetDelayMin": 1,
+            "name": "entity_root_FidgetAnimation_characterSelectSet",
+            "options": [
+              {
+                "cooldownMax": 0,
+                "cooldownMin": 0,
+                "name": "entity_root_FidgetAnimation_characterSelectSet_options_0",
+                "stateName": "CE_Fidget01",
+                "type": "FidgetAnimationOption",
+                "weight": 3
+              },
+              {
+                "cooldownMax": 0,
+                "cooldownMin": 0,
+                "name": "entity_root_FidgetAnimation_characterSelectSet_options_1",
+                "stateName": "CE_Fidget02",
+                "type": "FidgetAnimationOption",
+                "weight": 1
+              }
+            ],
+            "subsequentFidgetDelayMax": 12,
+            "subsequentFidgetDelayMin": 3,
+            "type": "FidgetAnimationSet"
+          },
+          "frontendSet": {
+            "firstFidgetDelayMax": 3,
+            "firstFidgetDelayMin": 1,
+            "name": "entity_root_FidgetAnimation_frontendSet",
+            "options": [
+              {
+                "cooldownMax": 0,
+                "cooldownMin": 0,
+                "name": "entity_root_FidgetAnimation_frontendSet_options_0",
+                "stateName": "FE_Fidget01",
+                "type": "FidgetAnimationOption",
+                "weight": 15
+              },
+              {
+                "cooldownMax": 800,
+                "cooldownMin": 600,
+                "name": "entity_root_FidgetAnimation_frontendSet_options_1",
+                "stateName": "FE_Fidget02",
+                "type": "FidgetAnimationOption",
+                "weight": 0.01
+              },
+              {
+                "cooldownMax": 0,
+                "cooldownMin": 0,
+                "name": "entity_root_FidgetAnimation_frontendSet_options_2",
+                "stateName": "FE_Fidget03",
+                "type": "FidgetAnimationOption",
+                "weight": 15
+              }
+            ],
+            "subsequentFidgetDelayMax": 5,
+            "subsequentFidgetDelayMin": 2,
+            "type": "FidgetAnimationSet"
+          },
+          "name": "entity_root_FidgetAnimation",
+          "neutralSet": {
+            "firstFidgetDelayMax": 7,
+            "firstFidgetDelayMin": 5,
+            "name": "entity_root_FidgetAnimation_neutralSet",
+            "options": [
+              {
+                "cooldownMax": 0,
+                "cooldownMin": 0,
+                "name": "entity_root_FidgetAnimation_neutralSet_options_0",
+                "stateName": "Fidget01",
+                "type": "FidgetAnimationOption",
+                "weight": 1
+              },
+              {
+                "cooldownMax": 0,
+                "cooldownMin": 0,
+                "name": "entity_root_FidgetAnimation_neutralSet_options_1",
+                "stateName": "Fidget02",
+                "type": "FidgetAnimationOption",
+                "weight": 1
+              }
+            ],
+            "subsequentFidgetDelayMax": 5,
+            "subsequentFidgetDelayMin": 2,
+            "type": "FidgetAnimationSet"
+          },
+          "townNeutralSet": {
+            "firstFidgetDelayMax": 7,
+            "firstFidgetDelayMin": 5,
+            "name": "entity_root_FidgetAnimation_townNeutralSet",
+            "options": [
+              {
+                "cooldownMax": 0,
+                "cooldownMin": 0,
+                "name": "entity_root_FidgetAnimation_townNeutralSet_options_0",
+                "stateName": "Townfidget01",
+                "type": "FidgetAnimationOption",
+                "weight": 15
+              },
+              {
+                "cooldownMax": 0,
+                "cooldownMin": 0,
+                "name": "entity_root_FidgetAnimation_townNeutralSet_options_1",
+                "stateName": "Townfidget02",
+                "type": "FidgetAnimationOption",
+                "weight": 10
+              },
+              {
+                "cooldownMax": 0,
+                "cooldownMin": 0,
+                "name": "entity_root_FidgetAnimation_townNeutralSet_options_2",
+                "stateName": "Townfidget03",
+                "type": "FidgetAnimationOption",
+                "weight": 20
+              }
+            ],
+            "subsequentFidgetDelayMax": 5,
+            "subsequentFidgetDelayMin": 2,
+            "type": "FidgetAnimationSet"
+          },
+          "type": "FidgetAnimationComponent"
+        },
+        {
+          "aimLayers": [
+            {
+              "aimDampingFactor": 0.15,
+              "aimLocationTrackName": "aim_location",
+              "aimTarget": 2,
+              "layerName": "Aim_Head",
+              "name": "entity_root_AimLayers_aimLayers_0",
+              "pitchAngleOffset": 0,
+              "pitchAnimationState": "HeadAimLayer_Pitch",
+              "pitchOutOfRangeBehavior": 0,
+              "type": "AimLayerSetup",
+              "yawAngleOffset": 0,
+              "yawAnimationState": "HeadAimLayer_Yaw",
+              "yawOutOfRangeBehavior": 2
+            },
+            {
+              "aimDampingFactor": 0.3,
+              "aimLocationTrackName": "aim_location",
+              "aimTarget": 1,
+              "layerName": "Aim_Melee",
+              "name": "entity_root_AimLayers_aimLayers_1",
+              "pitchAngleOffset": 0,
+              "pitchAnimationState": "MeleeAimLayer",
+              "pitchOutOfRangeBehavior": 0,
+              "type": "AimLayerSetup",
+              "yawAngleOffset": 0,
+              "yawAnimationState": "",
+              "yawOutOfRangeBehavior": 2
+            },
+            {
+              "aimDampingFactor": 0.15,
+              "aimLocationTrackName": "aim_location",
+              "aimTarget": 2,
+              "layerName": "Aim_Head_Town",
+              "name": "entity_root_AimLayers_aimLayers_2",
+              "pitchAngleOffset": 0,
+              "pitchAnimationState": "HeadAimLayer_Pitch_Town",
+              "pitchOutOfRangeBehavior": 0,
+              "type": "AimLayerSetup",
+              "yawAngleOffset": 0,
+              "yawAnimationState": "HeadAimLayer_Yaw_Town",
+              "yawOutOfRangeBehavior": 2
+            }
+          ],
+          "name": "entity_root_AimLayers",
+          "type": "AimLayersComponent"
+        },
+        {
+          "aimLayerName": "Aim_Head",
+          "blendInTime": 0.25,
+          "blendOutTime": 0.25,
+          "controlOverrides": [
+            {
+              "aimLayerName": "Aim_Head_Town",
+              "blendInTime": 0.25,
+              "blendOutTime": 0.25,
+              "mode": 5,
+              "name": "entity_root_LookAtAnimationControl_controlOverrides_0",
+              "type": "LookAtControlSetup"
+            },
+            {
+              "aimLayerName": "Aim_Head_Town",
+              "blendInTime": 0.25,
+              "blendOutTime": 0.25,
+              "mode": 6,
+              "name": "entity_root_LookAtAnimationControl_controlOverrides_1",
+              "type": "LookAtControlSetup"
+            }
+          ],
+          "name": "entity_root_LookAtAnimationControl",
+          "type": "LookAtAnimationControlComponent"
+        },
+        {
+          "GradientRemap": "data/hd/vfx/textures/fresnel/FX_T_gradientMap_Eldritch_hexAll_01.texture",
+          "NoiseBase": "data/hd/vfx/textures/fresnel/T_FX_smokey_01.texture",
+          "NoiseBlend": "data/hd/vfx/textures/fresnel/T_FX_gaussian_noise_gray.texture",
+          "WarlockEffectGradient": "data/hd/vfx/textures/fresnel/T_FX_FresnelGrad_03_Hori_Mirror.texture",
+          "WarlockEffectMaskGlove": "data/hd/vfx/textures/fresnel/warlock_vfx_glove_ALB.texture",
+          "WarlockEffectMaskHand": "data/hd/vfx/textures/fresnel/warlock_vfx_hand_ALB.texture",
+          "fresnelEffectSettings": {
+            "handFresnelAlpha": 1,
+            "handFresnelGradientCursor": 0.35,
+            "handFresnelPower": 1,
+            "handFresnelUScrollStep": -0.7,
+            "handFresnelVScrollStep": 0.5,
+            "handNoiseBaseContribution": 1,
+            "handNoiseBlendContribution": 1,
+            "handUVScaleX": 5,
+            "handUVScaleY": 10,
+            "isOnArm": true,
+            "isOnMirroredWeapon": true,
+            "isOnWeapon": false,
+            "mirroredWeaponStartingStrength": 0.8,
+            "name": "entity_root_WarlockEffectsDefinition_fresnelEffectSettings",
+            "type": "FresnelModelEffectParameters",
+            "verticalCursorStep": 0.325,
+            "weaponFresnelAlpha": 1,
+            "weaponFresnelGradientCursor": 0.3,
+            "weaponFresnelPower": 1,
+            "weaponFresnelUScrollStep": 0.5,
+            "weaponFresnelVScrollStep": 1.25,
+            "weaponNoiseBaseContribution": 1,
+            "weaponNoiseBlendContribution": 1,
+            "weaponUVScaleX": 1,
+            "weaponUVScaleY": 1
+          },
+          "name": "entity_root_WarlockEffectsDefinition",
+          "outlineEffectSettings": {
+            "handNoiseBaseContribution": 1,
+            "handNoiseBlendContribution": 1,
+            "handOutlineGradientCursor": 1,
+            "handOutlineIntensity": 2.3,
+            "handOutlineUScrollStep": 0.5,
+            "handOutlineVScrollStep": 1.25,
+            "horizontalCursorOffset": 0.4,
+            "isOnArm": false,
+            "isOnMirroredWeapon": true,
+            "isOnWeapon": true,
+            "mirroredWeaponStartingStrength": 0.8,
+            "name": "entity_root_WarlockEffectsDefinition_outlineEffectSettings",
+            "type": "OutlineModelEffectParameters",
+            "verticalCursorStep": 0.325,
+            "weaponNoiseBaseContribution": 1,
+            "weaponNoiseBlendContribution": 1.2,
+            "weaponOutlineGradientCursor": 0.3,
+            "weaponOutlineIntensity": 1.5,
+            "weaponOutlineUScrollStep": 0.5,
+            "weaponOutlineVScrollStep": 1.25
+          },
+          "type": "WarlockEffectsDefinitionComponent"
+        }
+      ],
+      "id": 3469102202,
+      "name": "entity_root",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "filename": "data/hd/character/player/warlock/head.model",
+          "floorModel": false,
+          "ghostShadows": false,
+          "lightMask": 19,
+          "name": "component_model_head",
+          "shadowMask": 3,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1,
+          "type": "ModelDefinitionComponent",
+          "visibleLayers": 8388641
+        }
+      ],
+      "id": 418728692,
+      "name": "entity_head",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "name": "component_part_torso_lit",
+          "part": "torso",
+          "type": "UnitPartComponent",
+          "variant": "lit"
+        },
+        {
+          "filename": "data/hd/character/player/warlock/torso_lit.model",
+          "floorModel": false,
+          "ghostShadows": false,
+          "lightMask": 19,
+          "name": "component_model_torso_lit",
+          "shadowMask": 3,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1,
+          "type": "ModelDefinitionComponent",
+          "visibleLayers": 1
+        }
+      ],
+      "id": 803317690,
+      "name": "entity_torso_lit",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "name": "component_part_torso_med",
+          "part": "torso",
+          "type": "UnitPartComponent",
+          "variant": "med"
+        },
+        {
+          "filename": "data/hd/character/player/warlock/torso_med.model",
+          "floorModel": false,
+          "ghostShadows": false,
+          "lightMask": 19,
+          "name": "component_model_torso_med",
+          "shadowMask": 3,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1,
+          "type": "ModelDefinitionComponent",
+          "visibleLayers": 1
+        }
+      ],
+      "id": 1675418738,
+      "name": "entity_torso_med",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "name": "component_part_torso_hvy",
+          "part": "torso",
+          "type": "UnitPartComponent",
+          "variant": "hvy"
+        },
+        {
+          "filename": "data/hd/character/player/warlock/torso_hvy.model",
+          "floorModel": false,
+          "ghostShadows": false,
+          "lightMask": 19,
+          "name": "component_model_torso_hvy",
+          "shadowMask": 3,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1,
+          "type": "ModelDefinitionComponent",
+          "visibleLayers": 1
+        }
+      ],
+      "id": 254096941,
+      "name": "entity_torso_hvy",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "name": "component_part_legs_lit",
+          "part": "legs",
+          "type": "UnitPartComponent",
+          "variant": "lit"
+        },
+        {
+          "filename": "data/hd/character/player/warlock/legs_lit.model",
+          "floorModel": false,
+          "ghostShadows": false,
+          "lightMask": 19,
+          "name": "component_model_legs_lit",
+          "shadowMask": 3,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1,
+          "type": "ModelDefinitionComponent",
+          "visibleLayers": 1
+        }
+      ],
+      "id": 4083075895,
+      "name": "entity_legs_lit",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "name": "component_part_legs_med",
+          "part": "legs",
+          "type": "UnitPartComponent",
+          "variant": "med"
+        },
+        {
+          "filename": "data/hd/character/player/warlock/legs_med.model",
+          "floorModel": false,
+          "ghostShadows": false,
+          "lightMask": 19,
+          "name": "component_model_legs_med",
+          "shadowMask": 3,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1,
+          "type": "ModelDefinitionComponent",
+          "visibleLayers": 1
+        }
+      ],
+      "id": 643367151,
+      "name": "entity_legs_med",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "name": "component_part_legs_hvy",
+          "part": "legs",
+          "type": "UnitPartComponent",
+          "variant": "hvy"
+        },
+        {
+          "filename": "data/hd/character/player/warlock/legs_hvy.model",
+          "floorModel": false,
+          "ghostShadows": false,
+          "lightMask": 19,
+          "name": "component_model_legs_hvy",
+          "shadowMask": 3,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1,
+          "type": "ModelDefinitionComponent",
+          "visibleLayers": 1
+        }
+      ],
+      "id": 3550632618,
+      "name": "entity_legs_hvy",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "name": "component_part_rarm_lit",
+          "part": "rarm",
+          "type": "UnitPartComponent",
+          "variant": "lit"
+        },
+        {
+          "filename": "data/hd/character/player/warlock/rarm_lit.model",
+          "floorModel": false,
+          "ghostShadows": false,
+          "lightMask": 19,
+          "name": "component_model_rarm_lit",
+          "shadowMask": 3,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1,
+          "type": "ModelDefinitionComponent",
+          "visibleLayers": 1
+        }
+      ],
+      "id": 2047911477,
+      "name": "entity_rarm_lit",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "name": "component_part_rarm_med",
+          "part": "rarm",
+          "type": "UnitPartComponent",
+          "variant": "med"
+        },
+        {
+          "filename": "data/hd/character/player/warlock/rarm_med.model",
+          "floorModel": false,
+          "ghostShadows": false,
+          "lightMask": 19,
+          "name": "component_model_rarm_med",
+          "shadowMask": 3,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1,
+          "type": "ModelDefinitionComponent",
+          "visibleLayers": 1
+        }
+      ],
+      "id": 2903235309,
+      "name": "entity_rarm_med",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "name": "component_part_rarm_hvy",
+          "part": "rarm",
+          "type": "UnitPartComponent",
+          "variant": "hvy"
+        },
+        {
+          "filename": "data/hd/character/player/warlock/rarm_hvy.model",
+          "floorModel": false,
+          "ghostShadows": false,
+          "lightMask": 19,
+          "name": "component_model_rarm_hvy",
+          "shadowMask": 3,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1,
+          "type": "ModelDefinitionComponent",
+          "visibleLayers": 1
+        }
+      ],
+      "id": 1515467944,
+      "name": "entity_rarm_hvy",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "name": "component_part_larm_lit",
+          "part": "larm",
+          "type": "UnitPartComponent",
+          "variant": "lit"
+        },
+        {
+          "filename": "data/hd/character/player/warlock/larm_lit.model",
+          "floorModel": false,
+          "ghostShadows": false,
+          "lightMask": 19,
+          "name": "component_model_larm_lit",
+          "shadowMask": 3,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1,
+          "type": "ModelDefinitionComponent",
+          "visibleLayers": 1
+        }
+      ],
+      "id": 1823273017,
+      "name": "entity_larm_lit",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "name": "component_part_larm_med",
+          "part": "larm",
+          "type": "UnitPartComponent",
+          "variant": "med"
+        },
+        {
+          "filename": "data/hd/character/player/warlock/larm_med.model",
+          "floorModel": false,
+          "ghostShadows": false,
+          "lightMask": 19,
+          "name": "component_model_larm_med",
+          "shadowMask": 3,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1,
+          "type": "ModelDefinitionComponent",
+          "visibleLayers": 1
+        }
+      ],
+      "id": 2678531570,
+      "name": "entity_larm_med",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "name": "component_part_larm_hvy",
+          "part": "larm",
+          "type": "UnitPartComponent",
+          "variant": "hvy"
+        },
+        {
+          "filename": "data/hd/character/player/warlock/larm_hvy.model",
+          "floorModel": false,
+          "ghostShadows": false,
+          "lightMask": 19,
+          "name": "component_model_larm_hvy",
+          "shadowMask": 3,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1,
+          "type": "ModelDefinitionComponent",
+          "visibleLayers": 1
+        }
+      ],
+      "id": 1290829741,
+      "name": "entity_larm_hvy",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "name": "component_part_special1_lit",
+          "part": "special1",
+          "type": "UnitPartComponent",
+          "variant": "lit"
+        },
+        {
+          "filename": "data/hd/character/player/warlock/special1_lit.model",
+          "floorModel": false,
+          "ghostShadows": false,
+          "lightMask": 19,
+          "name": "component_model_special1_lit",
+          "shadowMask": 3,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1,
+          "type": "ModelDefinitionComponent",
+          "visibleLayers": 1
+        }
+      ],
+      "id": 901625322,
+      "name": "entity_special1_lit",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "name": "component_part_special1_med",
+          "part": "special1",
+          "type": "UnitPartComponent",
+          "variant": "med"
+        },
+        {
+          "filename": "data/hd/character/player/warlock/special1_med.model",
+          "floorModel": false,
+          "ghostShadows": false,
+          "lightMask": 19,
+          "name": "component_model_special1_med",
+          "shadowMask": 3,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1,
+          "type": "ModelDefinitionComponent",
+          "visibleLayers": 1
+        }
+      ],
+      "id": 1433937783,
+      "name": "entity_special1_med",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "name": "component_part_special1_hvy",
+          "part": "special1",
+          "type": "UnitPartComponent",
+          "variant": "hvy"
+        },
+        {
+          "filename": "data/hd/character/player/warlock/special1_hvy.model",
+          "floorModel": false,
+          "ghostShadows": false,
+          "lightMask": 19,
+          "name": "component_model_special1_hvy",
+          "shadowMask": 3,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1,
+          "type": "ModelDefinitionComponent",
+          "visibleLayers": 1
+        }
+      ],
+      "id": 29458738,
+      "name": "entity_special1_hvy",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "name": "component_part_special2_lit",
+          "part": "special2",
+          "type": "UnitPartComponent",
+          "variant": "lit"
+        },
+        {
+          "filename": "data/hd/character/player/warlock/special2_lit.model",
+          "floorModel": false,
+          "ghostShadows": false,
+          "lightMask": 19,
+          "name": "component_model_special2_lit",
+          "shadowMask": 3,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1,
+          "type": "ModelDefinitionComponent",
+          "visibleLayers": 1
+        }
+      ],
+      "id": 3161362664,
+      "name": "entity_special2_lit",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "name": "component_part_special2_med",
+          "part": "special2",
+          "type": "UnitPartComponent",
+          "variant": "med"
+        },
+        {
+          "filename": "data/hd/character/player/warlock/special2_med.model",
+          "floorModel": false,
+          "ghostShadows": false,
+          "lightMask": 19,
+          "name": "component_model_special2_med",
+          "shadowMask": 3,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1,
+          "type": "ModelDefinitionComponent",
+          "visibleLayers": 1
+        }
+      ],
+      "id": 3693740405,
+      "name": "entity_special2_med",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "name": "component_part_special2_hvy",
+          "part": "special2",
+          "type": "UnitPartComponent",
+          "variant": "hvy"
+        },
+        {
+          "filename": "data/hd/character/player/warlock/special2_hvy.model",
+          "floorModel": false,
+          "ghostShadows": false,
+          "lightMask": 19,
+          "name": "component_model_special2_hvy",
+          "shadowMask": 3,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1,
+          "type": "ModelDefinitionComponent",
+          "visibleLayers": 1
+        }
+      ],
+      "id": 2289261360,
+      "name": "entity_special2_hvy",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "filename": "data/hd/vfx/particles/character/player/warlock/vfx_warlock_hand.particles",
+          "hardKillOnDestroy": true,
+          "name": "entity_vfx_VfxDefinition",
+          "type": "VfxDefinitionComponent"
+        },
+        {
+          "name": "entity_vfx_EntityAttachmentDefinition",
+          "targetbone": "R_Wrist_END",
+          "type": "EntityAttachmentDefinitionComponent"
+        }
+      ],
+      "id": 2311346798,
+      "name": "entity_vfx",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "inheritOnlyPosition": false,
+          "name": "entity_torso_TransformDefinition",
+          "orientation": {
+            "w": 1,
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "position": {
+            "x": 0,
+            "y": 50,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "type": "TransformDefinitionComponent"
+        },
+        {
+          "attenuation": 1,
+          "color": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "diffuseContribution": 1,
+          "isLocalLight": false,
+          "lightMask": 1,
+          "name": "white_light",
+          "power": 25000,
+          "radius": 200,
+          "specularContribution": 1,
+          "type": "PointLightDefinitionComponent"
+        }
+      ],
+      "id": 2353308128,
+      "name": "entity_pointlight",
+      "type": "Entity"
+    }
+  ],
+  "name": "warlock",
+  "type": "UnitDefinition"
+}

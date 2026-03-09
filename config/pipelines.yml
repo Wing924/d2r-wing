@@ -45,6 +45,7 @@ patches:
  # - patches/15_show_asn_charge
  # - patches/16_reduce_asn_effect
   # - patches/17_mini_cube
+  - patches/18_highlight_elite
 
 pipelines:
   - name: add English name and detailed info (base item)
@@ -86,6 +87,13 @@ pipelines:
       - resources/generated/skills.tsv
     template: |-
       {{ .zhTW }}({{ .enUS }})
+
+  - name: add English name (special items)
+    resources:
+      - resources/item_eng.tsv
+    template: |-
+      {{ .enUS }}
+      {{ .zhTW }}
 
   - name: add equip info
     resources:

@@ -1,0 +1,49 @@
+{
+  "entities": [
+    "(( append ))",
+    {
+      "type": "Entity",
+      "name": "entity_pointlight",
+      "id": 2353308128,
+      "components": [
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "entity_torso_TransformDefinition",
+          "position": {
+            "x": 0.0,
+            "y": 50.0,
+            "z": 0.0
+          },
+          "orientation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        },
+        {
+          "type": "PointLightDefinitionComponent",
+          "name": "white_light",
+          "color": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "power": 25000.0,
+          "radius": 200.0,
+          "attenuation": 1.0,
+          "lightMask": 1,
+          "diffuseContribution": 1.0,
+          "specularContribution": 1.0,
+          "isLocalLight": false
+        }
+      ]
+    }
+  ]
+}
