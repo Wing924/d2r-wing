@@ -12311,7 +12311,7 @@
     "id": 11146,
     "Key": "pk1",
     "enUS": "Key of Terror",
-    "zhTW": "恐惧之钥|A1",
+    "zhTW": "Key of Terror\n恐惧之钥|A1",
     "deDE": "Schlüssel des Terrors",
     "esES": "Llave del terror",
     "frFR": "Clé de la Terreur",
@@ -12322,13 +12322,13 @@
     "jaJP": "恐怖の鍵",
     "ptBR": "[fs]Chave do Terror",
     "ruRU": "Ключ Ужаса",
-    "zhCN": "恐惧之钥|A1"
+    "zhCN": "Key of Terror\n恐惧之钥|A1"
   },
   {
     "id": 11147,
     "Key": "pk2",
     "enUS": "Key of Hate",
-    "zhTW": "憎恨之钥|A2",
+    "zhTW": "Key of Hate\n憎恨之钥|A2",
     "deDE": "Schlüssel des Hasses",
     "esES": "Llave del odio",
     "frFR": "Clé de la Haine",
@@ -12339,13 +12339,13 @@
     "jaJP": "憎悪の鍵",
     "ptBR": "[fs]Chave do Ódio",
     "ruRU": "Ключ Ненависти",
-    "zhCN": "憎恨之钥|A2"
+    "zhCN": "Key of Hate\n憎恨之钥|A2"
   },
   {
     "id": 11148,
     "Key": "pk3",
     "enUS": "Key of Destruction",
-    "zhTW": "毁灭之钥|A5",
+    "zhTW": "Key of Destruction\n毁灭之钥|A5",
     "deDE": "Schlüssel der Zerstörung",
     "esES": "Llave de la destrucción",
     "frFR": "Clé de la Destruction",
@@ -12356,13 +12356,13 @@
     "jaJP": "破壊の鍵",
     "ptBR": "[fs]Chave da Destruição",
     "ruRU": "Ключ Разрушения",
-    "zhCN": "毁灭之钥|A5"
+    "zhCN": "Key of Destruction\n毁灭之钥|A5"
   },
   {
     "id": 11149,
     "Key": "dhn",
     "enUS": "Diablo's Horn",
-    "zhTW": "迪亚布罗之角",
+    "zhTW": "Diablo's Horn\n迪亚布罗之角",
     "deDE": "Diablos Horn",
     "esES": "Cuerno de Diablo",
     "frFR": "Corne de Diablo",
@@ -12373,13 +12373,13 @@
     "jaJP": "ディアブロの角",
     "ptBR": "[ms]Chifre de Diablo",
     "ruRU": "Рог Диабло",
-    "zhCN": "迪亚布罗之角"
+    "zhCN": "Diablo's Horn\n迪亚布罗之角"
   },
   {
     "id": 11150,
     "Key": "bey",
     "enUS": "Baal's Eye",
-    "zhTW": "巴尔之眼",
+    "zhTW": "Baal's Eye\n巴尔之眼",
     "deDE": "Baals Auge",
     "esES": "Ojo de Baal",
     "frFR": "Œil de Baal",
@@ -12390,13 +12390,13 @@
     "jaJP": "バールの目",
     "ptBR": "[ms]Olho de Baal",
     "ruRU": "Глаз Баала",
-    "zhCN": "巴尔之眼"
+    "zhCN": "Baal's Eye\n巴尔之眼"
   },
   {
     "id": 11151,
     "Key": "mbr",
     "enUS": "Mephisto's Brain",
-    "zhTW": "墨菲斯托之脑",
+    "zhTW": "Mephisto's Brain\n墨菲斯托之脑",
     "deDE": "Mephistos Gehirn",
     "esES": "Cerebro de Mefisto",
     "frFR": "Cerveau de Méphisto",
@@ -12407,7 +12407,7 @@
     "jaJP": "メフィストの脳",
     "ptBR": "[ms]Cérebro de Mefisto",
     "ruRU": "Мозг Мефисто",
-    "zhCN": "墨菲斯托之脑"
+    "zhCN": "Mephisto's Brain\n墨菲斯托之脑"
   },
   {
     "id": 11152,
@@ -12447,7 +12447,7 @@
     "id": 11164,
     "Key": "tes",
     "enUS": "Twisted Essence of Suffering",
-    "zhTW": "扭曲的苦怨精华|A1A2",
+    "zhTW": "Twisted Essence of Suffering\n扭曲的苦怨精华|A1A2",
     "deDE": "Verdorbene Essenz des Leidens",
     "esES": "Esencia del sufrimiento retorcida",
     "frFR": "Essence tordue de souffrance",
@@ -12458,13 +12458,13 @@
     "jaJP": "捻じれた苦痛のエッセンス",
     "ptBR": "[fs]Essência Perversa do Sofrimento",
     "ruRU": "Искаженная сущность Страдания",
-    "zhCN": "扭曲的苦怨精华|A1A2"
+    "zhCN": "Twisted Essence of Suffering\n扭曲的苦怨精华|A1A2"
   },
   {
     "id": 11165,
     "Key": "ceh",
     "enUS": "Charged Essence of Hatred",
-    "zhTW": "充盈的憎恨精华|A3",
+    "zhTW": "Charged Essence of Hatred\n充盈的憎恨精华|A3",
     "deDE": "Geladene Essenz des Hasses",
     "esES": "Esencia del odio cargada",
     "frFR": "Essence chargée de haine",
@@ -12475,13 +12475,13 @@
     "jaJP": "蓄積した憎悪のエッセンス",
     "ptBR": "[fs]Essência Carregada do Ódio",
     "ruRU": "Заряженная сущность Ненависти",
-    "zhCN": "充盈的憎恨精华|A3"
+    "zhCN": "Charged Essence of Hatred\n充盈的憎恨精华|A3"
   },
   {
     "id": 11166,
     "Key": "bet",
     "enUS": "Burning Essence of Terror",
-    "zhTW": "燃烧的恐惧精华|A4",
+    "zhTW": "Burning Essence of Terror\n燃烧的恐惧精华|A4",
     "deDE": "Brennende Essenz des Schreckens",
     "esES": "Esencia del terror ardiente",
     "frFR": "Essence brûlante de terreur",
@@ -12492,13 +12492,13 @@
     "jaJP": "燃え盛る恐怖のエッセンス",
     "ptBR": "[fs]Essência Flamejante do Terror",
     "ruRU": "Обжигающая сущность Ужаса",
-    "zhCN": "燃烧的恐惧精华|A4"
+    "zhCN": "Burning Essence of Terror\n燃烧的恐惧精华|A4"
   },
   {
     "id": 11167,
     "Key": "fed",
     "enUS": "Festering Essence of Destruction",
-    "zhTW": "溃烂的毁灭精华|A5",
+    "zhTW": "Festering Essence of Destruction\n溃烂的毁灭精华|A5",
     "deDE": "Eiternde Essenz der Zerstörung",
     "esES": "Esencia de la destrucción infecta",
     "frFR": "Essence suintante de destruction",
@@ -12509,7 +12509,7 @@
     "jaJP": "煮えたぎる破壊のエッセンス",
     "ptBR": "[fs]Essência Fétida da Destruição",
     "ruRU": "Гниющая эссенция Разрушения",
-    "zhCN": "溃烂的毁灭精华|A5"
+    "zhCN": "Festering Essence of Destruction\n溃烂的毁灭精华|A5"
   },
   {
     "id": 20181,
@@ -26472,7 +26472,7 @@
     "id": 27609,
     "Key": "ua1",
     "enUS": "Talic's Anguish",
-    "zhTW": "塔力克的怨恸|A1",
+    "zhTW": "Talic's Anguish\n塔力克的怨恸|A1",
     "deDE": "[fs]Talics Qual",
     "esES": "[fs]Angustia de Talic",
     "frFR": "Angoisse de Talic",
@@ -26483,13 +26483,13 @@
     "jaJP": "タリックの苦悶",
     "ptBR": "Angústia de Talic",
     "ruRU": "Мучение Талика",
-    "zhCN": "塔力克的怨恸|A1"
+    "zhCN": "Talic's Anguish\n塔力克的怨恸|A1"
   },
   {
     "id": 27610,
     "Key": "ua2",
     "enUS": "Korlic's Pain",
-    "zhTW": "科力克的苦痛|A2",
+    "zhTW": "Korlic's Pain\n科力克的苦痛|A2",
     "deDE": "[ms]Korlics Schmerz",
     "esES": "[ms]Dolor de Korlic",
     "frFR": "Douleur de Korlic",
@@ -26500,13 +26500,13 @@
     "jaJP": "コーリックの苦痛",
     "ptBR": "Dor de Korlic",
     "ruRU": "Боль Корлика",
-    "zhCN": "科力克的苦痛|A2"
+    "zhCN": "Korlic's Pain\n科力克的苦痛|A2"
   },
   {
     "id": 27611,
     "Key": "ua3",
     "enUS": "Madawc's Ire",
-    "zhTW": "马道克的怒火|A3",
+    "zhTW": "Madawc's Ire\n马道克的怒火|A3",
     "deDE": "[ms]Madawcs Zorn",
     "esES": "[fs]Ira de Madawc",
     "frFR": "Colère de Madawc",
@@ -26517,13 +26517,13 @@
     "jaJP": "マドウクの激憤",
     "ptBR": "Ira de Madawc",
     "ruRU": "Гнев Мадавка",
-    "zhCN": "马道克的怒火|A3"
+    "zhCN": "Madawc's Ire\n马道克的怒火|A3"
   },
   {
     "id": 27612,
     "Key": "ua4",
     "enUS": "Bul-Kathos' Nightmare",
-    "zhTW": "布尔凯索的梦魇|A4",
+    "zhTW": "Bul-Kathos' Nightmare\n布尔凯索的梦魇|A4",
     "deDE": "[ms]Bul-Kathos' Alptraum",
     "esES": "[fs]Pesadilla de Bul-Kathos",
     "frFR": "Cauchemar de Bul-Kathos",
@@ -26534,13 +26534,13 @@
     "jaJP": "バル=カソスの悪夢",
     "ptBR": "Pesadelo de Bul-Kathos",
     "ruRU": "Кошмар Бул-Катоса",
-    "zhCN": "布尔凯索的梦魇|A4"
+    "zhCN": "Bul-Kathos' Nightmare\n布尔凯索的梦魇|A4"
   },
   {
     "id": 27613,
     "Key": "ua5",
     "enUS": "Worusk's End",
-    "zhTW": "沃鲁斯克的终结|A5",
+    "zhTW": "Worusk's End\n沃鲁斯克的终结|A5",
     "deDE": "[ns]Worsuks Ende",
     "esES": "[ms]Fin de Worusk",
     "frFR": "Trépas de Worusk",
@@ -26551,7 +26551,7 @@
     "jaJP": "ウォルスクの最期",
     "ptBR": "Fim de Worusk",
     "ruRU": "Погибель Воруска",
-    "zhCN": "沃鲁斯克的终结|A5"
+    "zhCN": "Worusk's End\n沃鲁斯克的终结|A5"
   },
   {
     "id": 27614,
