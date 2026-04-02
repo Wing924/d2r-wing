@@ -48,6 +48,62 @@
                     },
                     "children": [
                         {
+                            "type": "TableRowWidget", "name": "Row Handheld Options",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "Handheld Options",
+                                    "fields": {
+                                        "text": "@HandheldTitle",
+                                        "style": "$StyleSettingsTitle"
+                                    },
+                                    "children": [
+                                        {
+                                            "type": "ImageWidget", "name": "Divider",
+                                            "fields": {
+                                                "rect": "$OptionsDividerRect",
+                                                "filename": "PauseMenu\\Divider",
+                                            }
+                                        },
+                                    ]
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row DesktopMode",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "DesktopModeText",
+                                    "fields": {
+                                        "text": "@DesktopModeSettingName",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                },
+                                {
+                                    "type": "ToggleButtonWidget", "name": "DesktopMode",
+                                    "fields": {
+                                        "rect": "$OptionsToggleRect",
+                                        "sound": "cursor_menu_select_hd",
+                                        "focusIndicatorPadding": "$OptionsToggleFocusIndicatorPadding",
+                                        "focusIndicatorFilename": "$OptionsToggleFocusIndicatorFilename",
+                                        "focusIndicatorOffset": { "x": 0, "y": -4 },
+                                        "filename": "Lobby\\CreateGame\\CreateGame_AdvancedCheckbox",
+                                        "untoggledFrame": 0,
+                                        "untoggledPressedFrame": 1,
+                                        "untoggledHoveredFrame": 3,
+                                        "untoggledDisabledFrame": 2,
+                                        "toggledFrame": 4,
+                                        "toggledPressedFrame": 5,
+                                        "toggledHoveredFrame": 6,
+                                        "onClickMessage": "OptionsPanelMessage:SetDesktopModeEnabled",
+                                        "tooltipString": "@DesktopModeSettingTooltip",
+                                        "tooltipStyle": {
+                                            "showAfterDelay": true,
+                                        }
+                                    },
+                                },
+                            ]
+                        },
+                        {
                             "type": "TableRowWidget", "name": "Row Video Options",
                             "children": [
                                 {
