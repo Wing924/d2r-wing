@@ -33204,7 +33204,7 @@
     "id": 27741,
     "Key": "Chronicle",
     "enUS": "Chronicle",
-    "zhTW": "记事",
+    "zhTW": "收藏记事",
     "deDE": "Chronik",
     "esES": "Crónica",
     "frFR": "Chroniques",
@@ -33215,7 +33215,7 @@
     "jaJP": "年代記",
     "ptBR": "Crônica",
     "ruRU": "История",
-    "zhCN": "记事"
+    "zhCN": "收藏记事"
   },
   {
     "id": 27742,
@@ -34343,7 +34343,7 @@
     "id": 27887,
     "Key": "ChronicleRewardsReturnToChronicle",
     "enUS": "Return to Chronicle",
-    "zhTW": "返回记事",
+    "zhTW": "返回收藏记事",
     "deDE": "Zurück zur Chronik",
     "esES": "Volver a la crónica",
     "frFR": "Retour aux chroniques",
@@ -34354,13 +34354,13 @@
     "jaJP": "年代記に戻る",
     "ptBR": "Voltar para Crônica",
     "ruRU": "Вернуться к истории",
-    "zhCN": "返回记事"
+    "zhCN": "返回收藏记事"
   },
   {
     "id": 27914,
     "Key": "ChronicleEligibilityNotice",
     "enUS": "Eligible for Chronicle",
-    "zhTW": "符合记事资格",
+    "zhTW": "符合收藏记事资格",
     "deDE": "Berechtigt für Chronik",
     "esES": "Crónica disponible",
     "frFR": "Éligible pour les chroniques",
@@ -34371,7 +34371,7 @@
     "jaJP": "年代記に適格",
     "ptBR": "Elegível para Crônica",
     "ruRU": "Доступно для истории",
-    "zhCN": "符合记事资格"
+    "zhCN": "符合收藏记事资格"
   },
   {
     "id": 27915,
@@ -35006,7 +35006,7 @@
     "id": 27992,
     "Key": "strGardenConvert3",
     "enUS": "Warning: Once you convert a character to RotW, you cannot play it in Expansion Diablo II games.",
-    "zhTW": "警告：一旦转换为术士军临角色后，这个角色就再也无法进行《暗黑破坏神II》资料片游戏。",
+    "zhTW": "警告：转换为术士军临角色后，这个角色就再也无法进行《暗黑破坏神II》资料片游戏。",
     "deDE": "Achtung: Sobald du deinen Charakter erst einmal für RotW konvertiert hast, kannst du ihn nicht mehr in Diablo II-Erweiterungsspielen benutzen.",
     "esES": "Aviso: una vez convertido en personaje de RotW, no podrás jugarlo en la versión de la expansión de Diablo II.",
     "frFR": "Attention : une fois un personnage converti pour RotW, vous ne pourrez plus l’utiliser dans Diablo II et l’Extension.",
@@ -35017,7 +35017,7 @@
     "jaJP": "注意:「ウォーロックの君臨」キャラクターに変換すると拡張版のゲームでは使用できなくなります。",
     "ptBR": "Aviso: Depois de converter um personagem para RotW, você não poderá usá-lo em jogos de Expansão de Diablo II.",
     "ruRU": "Внимание: перенеся персонажа в версию \"ГЧ\", вы не сможете играть им в других дополнениях для Diablo II.",
-    "zhCN": "警告：一旦转换为术士军临角色后，这个角色就再也无法进行《暗黑破坏神II》资料片游戏。"
+    "zhCN": "警告：转换为术士军临角色后，这个角色就再也无法进行《暗黑破坏神II》资料片游戏。"
   },
   {
     "id": 27993,
@@ -35280,15 +35280,15 @@
     "enUS": "war",
     "zhTW": "术士",
     "deDE": "Hex",
-    "esES": "guerra",
+    "esES": "brj",
     "frFR": "dém",
     "itIT": "str",
     "koKR": "악술",
-    "plPL": "wojna",
-    "esMX": "guerra",
+    "plPL": "cza",
+    "esMX": "con",
     "jaJP": "War",
-    "ptBR": "guerra",
-    "ruRU": "черн.",
+    "ptBR": "bru",
+    "ruRU": "чкн",
     "zhCN": "术士"
   },
   {
@@ -35448,7 +35448,7 @@
     "id": 28033,
     "Key": "ChronicleItemFoundPrefix",
     "enUS": "Chronicle Item Discovered",
-    "zhTW": "发现的记事物品",
+    "zhTW": "发现的收藏记事物品",
     "deDE": "Chronikgegenstand entdeckt",
     "esES": "Objeto de crónica descubierto",
     "frFR": "Chronique découverte",
@@ -35459,7 +35459,7 @@
     "jaJP": "年代記アイテム発見",
     "ptBR": "Item de Crônica descoberto",
     "ruRU": "Открыт предмет из летописи",
-    "zhCN": "发现的记事物品"
+    "zhCN": "发现的收藏记事物品"
   },
   {
     "id": 28034,
@@ -36174,5 +36174,56 @@
     "ptBR": "O nome contém palavras proibidas ou reservadas. Tente outro nome.",
     "ruRU": "Имя содержит недопустимые или зарезервированные слова. Придумайте другое имя.",
     "zhCN": "名称中包含不雅字眼或系统保留字。请尝试其他名称。"
+  },
+  {
+    "id": 28102,
+    "Key": "DesktopModeSettingName",
+    "enUS": "Desktop Mode",
+    "zhTW": "桌面模式",
+    "deDE": "Desktop-Modus",
+    "esES": "Modo escritorio",
+    "frFR": "Mode bureau",
+    "itIT": "Modalità Desktop",
+    "koKR": "데스크톱 모드",
+    "plPL": "Tryb PC",
+    "esMX": "Modo escritorio",
+    "jaJP": "デスクトップモード",
+    "ptBR": "Modo PC",
+    "ruRU": "Стационарный режим",
+    "zhCN": "桌面模式"
+  },
+  {
+    "id": 28103,
+    "Key": "DesktopModeSettingTooltip",
+    "enUS": "Changes the UI to match Desktop and\n enables full mouse and keyboard support",
+    "zhTW": "将使用者介面更改为桌面模式并\n启用滑鼠与键盘的完整支援",
+    "deDE": "Passt die Benutzeroberfläche an Desktop an und\n ermöglicht vollständige Unterstützung von Maus und Tastatur.",
+    "esES": "Cambia la IU para que coincida con la del escritorio y\n permite la compatibilidad total con ratón y teclado",
+    "frFR": "Modifie l’interface pour qu’elle corresponde à celle du bureau et active la prise en charge complète de la souris et du clavier.",
+    "itIT": "Modifica l'interfaccia per adattarla al desktop e\n abilita il supporto completo per mouse e tastiera",
+    "koKR": "사용자 인터페이스를 데스크톱 컴퓨터와 동일하게\n변경하고 마우스 및 키보드를 지원합니다.",
+    "plPL": "Przełącza interfejs do trybu PC i\n włącza pełną obsługę myszy i klawiatury.",
+    "esMX": "Cambia la IU para coincidir con el escritorio\ny activa la compatibilidad para mouse y teclado",
+    "jaJP": "デスクトップに合わせてUIを変更し、\nマウスとキーボードを完全サポートします",
+    "ptBR": "Altera a interface do usuário para corresponder à versão para PC e\nhabilita o suporte completo para mouse e teclado",
+    "ruRU": "Применяет интерфейс стационарного компьютера и\n позволяет использовать клавиатуру и мышь",
+    "zhCN": "将使用者介面更改为桌面模式并\n启用滑鼠与键盘的完整支援"
+  },
+  {
+    "id": 28104,
+    "Key": "HandheldTitle",
+    "enUS": "Handheld",
+    "zhTW": "手持",
+    "deDE": "Handheld",
+    "esES": "Portátil",
+    "frFR": "Portable",
+    "itIT": "Portatile",
+    "koKR": "휴대용",
+    "plPL": "Przenośny",
+    "esMX": "Portátil",
+    "jaJP": "携帯",
+    "ptBR": "Portátil",
+    "ruRU": "Портативный",
+    "zhCN": "手持"
   }
 ]
