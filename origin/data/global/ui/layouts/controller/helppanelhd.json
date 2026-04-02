@@ -314,7 +314,12 @@
     },
     "children": [
         {
-            "type": "ClickCatcherWidget", "name": "catcher",
+            "type": "RectangleWidget", "name": "TransparentBG",
+            "children": [
+                {
+                    "type": "ClickCatcherWidget", "name": "catcher",
+                }
+            ]
         },
 
         {
