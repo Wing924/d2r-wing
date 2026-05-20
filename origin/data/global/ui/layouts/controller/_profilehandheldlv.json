@@ -38,4 +38,10 @@
         "pointSize": "$MediumFontSize",
         "spacing": { "leading": 0.72, "kerning": 0.88 },
     },
+
+    "LF_ProfileDropdownWidth": 657,
+    "LF_ProfileDropdownBackgroundWidth": 655,
+    "OptionsDividerRect": { "x": 0, "y": 78 },
+
+    "LowResMinimumSpacing" : { "kerning": 0.88, "leading": 0.65 },
 }

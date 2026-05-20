@@ -184,10 +184,10 @@
                                     "fontColor": { "r": 255, "g": 168, "b": 0, "a": 255 },
                                     "alignment": { "h": "center", "v": "center" },
                                     "pointSize": "$SmallPanelFontSize",
-                                    "spacing": "$MinimumSpacing",
+                                    "spacing": "$LowResMinimumSpacing",
                                     "options": { "newlineHandling": "standard", "pipeCharacterBehavior" : "handle", "lineWrap": true },
                                 },
-                                "text": "@Inparty"
+                                "text": "@Inparty",
                             }
                         },
                         {

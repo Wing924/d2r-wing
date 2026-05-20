@@ -3,6 +3,10 @@
     "INT_MAX": 2147483647,
 
     "ToggleButtonFocusIndicatorPadding": { "left": 3,"top": 6, "right": 12, "bottom": 9 },
+
+    // Overridden in console profile.
+    // Defined here to allows to declare console scale in base panel layouts and automatically update to proper scale when on console
+    "ConsoleUIScale": 1.0,
     
     // Anchor points.
     "LeftPanelAnchor": { "x": 0.0, "y": 0.397 },
@@ -106,6 +110,7 @@
     "DefaultSpacing" : { "kerning": 1.0 },
     "ReducedSpacing" : { "kerning": 0.94 },
     "MinimumSpacing" : { "kerning": 0.88 },
+    "LowResMinimumSpacing" : { "kerning": 0.88 },
 
     // Recoloring.
     "EmptyColorRange": {
@@ -399,7 +404,7 @@
     "CalibrationTableColumn1": { "width": 700, "alignment": { "h": "fit", "v": "fit" } },
     "OptionsSliderValueRect": { "x": -159, "y": 17, "width": 70, "height": 40 },
     "ChronicleSearchBox": { "x": 1275, "y": -118, "width": 450, "height": 102 },
-    "ChronicleSearchInput": { "x": 40, "y": 0, "width": 400, "height": 102 },
+    "ChronicleSearchInput": { "x": 40, "y": 0, "width": 370, "height": 102 },
 
     // Options hover indicators
     "OptionsSliderFocusIndicatorFilename": "Controller/HoverImages/Slider_Hover",
@@ -650,4 +655,6 @@
         "alignment": { "h": "left", "v": "center" },
 		"options": { "lineWrap": true },
     },
+    "LF_ProfileDropdownWidth": 627,
+    "LF_ProfileDropdownBackgroundWidth": 625,
 }
