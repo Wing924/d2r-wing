@@ -28,4 +28,16 @@
         "fontColor": "$FontColorWhite",
         "alignment": { "h": "left", "v": "center" },
     },
+
+    // Modal Overrides
+    "StyleModalDialogDescription":
+    {
+        "fontColor": "$ModalDescriptionTextColor",
+        "alignment": { "h": "center", "v": "center" },
+        "options": { "lineWrap": true, "newlineHandling": "standard" },
+        "pointSize": "$MediumFontSize",
+        "spacing": { "leading": 0.72, "kerning": 0.88 },
+    },
+
+    "LowResMinimumSpacing" : { "kerning": 0.88, "leading": 0.70 },
 }

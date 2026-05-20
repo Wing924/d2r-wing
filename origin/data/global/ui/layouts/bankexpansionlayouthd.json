@@ -61,7 +61,7 @@
                 {
                     "type": "TextBoxWidget", "name": "ShowPreviousLadderText",
                     "fields": {
-                        "text": "@oldStash",
+                        "text": "@stashRemoveOnly",
                         "rect": { "x": 0, "y": 28 },
                         "style": {
                             "fontColor": "$PanelTitleColor",
@@ -139,8 +139,7 @@
                         {
                             "type": "ImageWidget", "name": "StashNavigation",
                             "fields": {
-                                "rect": { "x": 369, "y": 1211, "width": 420, "height": 93 },
-                                "filename": "PANEL\\Stash\\Stash_PageNavigation"
+                                "rect": { "x": 369, "y": 1211, "width": 420, "height": 93 }
                             },
                             "children": [
                                 {

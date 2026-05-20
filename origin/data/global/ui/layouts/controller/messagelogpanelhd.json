@@ -34,15 +34,19 @@
                 {
                     "type": "ListItemWidget", "name": "ChatEntryTemplate",
                     "fields": {
-                        "rect": { "x": 10, "y": 0, "width": 0, "height": 50 },
+                        "rect": { "x": 10, "y": 0, "width": 1671, "height": 50 },
                     },
                     "children": [
                         {
                             "type": "TextBoxWithLinksWidget", "name": "MessageText",
                             "fields": {
-                                "rect": { "x": 0, "y": 0, "width": 1700, "height": 50 },
-                                "fitToParent": false,
-                                "focusOnMouseOver": true
+                                "fitToParent": true,
+                                "text/style": {
+                                    "fontColor": "$FontColorWhite",
+                                    "fontFace": "BlizzardGlobal",
+                                    "pointSize": "$MediumFontSize",
+                                    "options": { "pipeCharacterBehavior" : "handle", "newlineHandling": "standard", "lineWrap": true }
+                                }
                             }
                         },
                     ]

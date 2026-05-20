@@ -9,11 +9,7 @@
             "type": "RecyclingListWidget", "name": "OptionsList",
             "children": [
                 {
-                    "type": "ListItemWidget", "name": "template",
-                    "fields": {
-                        "focusIndicatorVisible": true,
-                        "focusIndicatorFilename": "Controller/HoverImages/ContextMenuWide_Hover"
-                    },
+                    "type": "HoverListItemWidget", "name": "template",
                     "children": [
                         {
                             "type": "ImageWidget", "name": "Image",

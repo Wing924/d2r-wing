@@ -4,9 +4,9 @@
         "rect": { "width": 625, "height": 600 },
         "priority": 2000000001,
         "drawTint": false,
-        "scrollBarOffset": { "x": -15, "y": 15 },
+        "scrollBarOffset": { "x": -32, "y": 32 },
         "scrollBarSize": { "x": 25, "y": 540 },
-        "scrollBarBackgroundOffset": { "x": -18, "y": 0 },
+        "scrollBarBackgroundOffset": { "x": -38, "y": 0 },
     },
     "children": [
         {

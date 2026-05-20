@@ -20,7 +20,7 @@
         {
             "type": "NineTileImageWidget", "name": "Title",
             "fields": {
-                "rect": { "x": -875, "y": 512, "width": 1750, "height": 0 },
+                "rect": { "x": -875, "y": 462, "width": 1750, "height": 100 },
                 "anchor": { "x": 0.5 },
                 "filename": "PANEL/TooltipBorder/TooltipBorder",
                 "backgroundColor": [ 0.0, 0.0, 0.0, 0.80 ],
@@ -30,7 +30,7 @@
                 {
                     "type": "TextBoxWidget", "name": "TitleText",
                     "fields": {
-                        "anchor": { "x": 0.5 },
+                        "anchor": { "x": 0.5, "y": 0.5 },
                         "text": "@AccountLinkingRequestTitle",
                         "style": {
                             "pointSize": "$MediumLargeFontSize",

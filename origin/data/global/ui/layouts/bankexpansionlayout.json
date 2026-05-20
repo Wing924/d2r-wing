@@ -75,7 +75,7 @@
                         {
                             "type": "TextBoxWidget", "name": "ShowPreviousLadderText",
                             "fields": {
-                                "text": "@oldStash",
+                                "text": "@stashRemoveOnly",
                                 "rect": { "x": 35, "y": 16 },
                                 "style": {
                                     "fontColor": "$PanelTitleColor",
