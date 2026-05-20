@@ -77,11 +77,12 @@
   },
   "ChronicleSearchInput": {
     "height": 102,
-    "width": 400,
+    "width": 370,
     "x": 40,
     "y": 0
   },
   "CinematicsFontSize": 32,
+  "ConsoleUIScale": 1,
   "CreateGameNarrowRect": {
     "x": 70,
     "y": 80
@@ -347,6 +348,8 @@
     "x": 825,
     "y": 105
   },
+  "LF_ProfileDropdownBackgroundWidth": 625,
+  "LF_ProfileDropdownWidth": 627,
   "LadderNarrowRect": {
     "x": 840,
     "y": 80
@@ -416,6 +419,9 @@
   },
   "LootFilterOptionsPanelWidth": 1730,
   "LootFilterSmallFontSize": "$SmallFontSize",
+  "LowResMinimumSpacing": {
+    "kerning": 0.88
+  },
   "MediumFontSize": 26,
   "MediumLargeFontSize": 32,
   "MediumPanelFontSize": "$MediumFontSize",

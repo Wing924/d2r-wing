@@ -41,7 +41,7 @@
   },
   "ChronicleRewardsControllerRect": {
     "height": 0,
-    "scale": "$ConsoleUIScale",
+    "scale": 1.16,
     "wifth": 0,
     "x": -1039,
     "y": 240
