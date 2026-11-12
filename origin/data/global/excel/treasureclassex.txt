@@ -535,6 +535,12 @@ Act 4 (H) Wraith B	10	80	1					75	Act 4 (H) Good	4	Act 4 (H) Magic B	25									
 Act 5 (H) Wraith A	10	81	1					75	Act 5 (H) Good	4	Act 5 (H) Magic A	25																										0
 Act 5 (H) Wraith B	10	83	1					75	Act 5 (H) Good	4	Act 5 (H) Magic B	25																										0
 Act 5 (H) Wraith C	10	85	1					75	Act 5 (H) Good	4	Act 5 (H) Magic C	25																										0
+Act 1 (H) Citem A Shard	11	63	1	800	800	800	1024	0	"gld,mul=1280"	60	Act 1 (H) Equip A	37	Act 1 (H) Good	3																								0
+Act 1 Worldstone Shard Parent Citem A			-2						Act 1 Terrorize Act Consumable	1	All Acts Terrorize Consumable	1	Act 1 (H) Citem A Shard	1																								0
+Act 2 Worldstone Shard Parent Citem A			-2						Act 2 Terrorize Act Consumable	1	All Acts Terrorize Consumable	1	Act 1 (H) Citem A Shard	1																								0
+Act 3 Worldstone Shard Parent Citem A			-2						Act 3 Terrorize Act Consumable	1	All Acts Terrorize Consumable	1	Act 1 (H) Citem A Shard	1																								0
+Act 4 Worldstone Shard Parent Citem A			-2						Act 4 Terrorize Act Consumable	1	All Acts Terrorize Consumable	1	Act 1 (H) Citem A Shard	1																								0
+Act 5 Worldstone Shard Parent Citem A			-2						Act 5 Terrorize Act Consumable	1	All Acts Terrorize Consumable	1	Act 1 (H) Citem A Shard	1																								0
 Act 1 Citem A	11	0	1	800	800	800	1024	0	"gld,mul=1280"	60	Act 1 Equip A	37	Act 1 Good	3																								0
 Act 1 Citem B	11	5	1	800	800	800	1024	0	"gld,mul=1280"	60	Act 1 Equip B	37	Act 1 Good	3																								0
 Act 1 Citem C	11	9	1	800	800	800	1024	0	"gld,mul=1280"	60	Act 1 Equip C	37	Act 1 Good	3																								0
@@ -563,20 +569,20 @@ Act 4 (N) Citem B	11	54	1	800	800	800	1024	0	"gld,mul=1280"	60	Act 4 (N) Equip B
 Act 5 (N) Citem A	11	57	1	800	800	800	1024	0	"gld,mul=1280"	60	Act 5 (N) Equip A	37	Act 5 (N) Good	3																								0
 Act 5 (N) Citem B	11	60	1	800	800	800	1024	0	"gld,mul=1280"	60	Act 5 (N) Equip B	37	Act 5 (N) Good	3																								0
 Act 5 (N) Citem C	11	62	1	800	800	800	1024	0	"gld,mul=1280"	60	Act 5 (N) Equip C	37	Act 5 (N) Good	3																								0
-Act 1 (H) Citem A	11	63	1	800	800	800	1024	0	"gld,mul=1280"	60	Act 1 (H) Equip A	37	Act 1 (H) Good	3	Act 3 Worldstone Shard Parent	3																						0
-Act 1 (H) Citem B	11	66	1	800	800	800	1024	0	"gld,mul=1280"	60	Act 1 (H) Equip B	37	Act 1 (H) Good	3	Act 3 Worldstone Shard Parent	3																						0
-Act 1 (H) Citem C	11	68	1	800	800	800	1024	0	"gld,mul=1280"	60	Act 1 (H) Equip B	37	Act 1 (H) Good	3	Act 3 Worldstone Shard Parent	3																						0
-Act 2 (H) Citem A	11	69	1	800	800	800	1024	0	"gld,mul=1280"	60	Act 2 (H) Equip A	37	Act 2 (H) Good	3	Act 4 Worldstone Shard Parent	3																						0
-Act 2 (H) Citem B	11	71	1	800	800	800	1024	0	"gld,mul=1280"	60	Act 2 (H) Equip B	37	Act 2 (H) Good	3	Act 4 Worldstone Shard Parent	3																						0
-Act 2 (H) Citem C	11	72	1	800	800	800	1024	0	"gld,mul=1280"	60	Act 2 (H) Equip B	37	Act 2 (H) Good	3	Act 4 Worldstone Shard Parent	3																						0
-Act 3 (H) Citem A	11	74	1	800	800	800	1024	0	"gld,mul=1280"	60	Act 3 (H) Equip A	37	Act 3 (H) Good	3	Act 5 Worldstone Shard Parent	3																						0
-Act 3 (H) Citem B	11	75	1	800	800	800	1024	0	"gld,mul=1280"	60	Act 3 (H) Equip B	37	Act 3 (H) Good	3	Act 5 Worldstone Shard Parent	3																						0
-Act 3 (H) Citem C	11	77	1	800	800	800	1024	0	"gld,mul=1280"	60	Act 3 (H) Equip B	37	Act 3 (H) Good	3	Act 5 Worldstone Shard Parent	3																						0
-Act 4 (H) Citem A	11	78	1	800	800	800	1024	0	"gld,mul=1280"	60	Act 4 (H) Equip A	37	Act 4 (H) Good	3	Act 2 Worldstone Shard Parent	3																						0
-Act 4 (H) Citem B	11	80	1	800	800	800	1024	0	"gld,mul=1280"	60	Act 4 (H) Equip B	37	Act 4 (H) Good	3	Act 2 Worldstone Shard Parent	3																						0
-Act 5 (H) Citem A	11	81	1	800	800	800	1024	0	"gld,mul=1280"	60	Act 5 (H) Equip A	37	Act 5 (H) Good	3	Act 1 Worldstone Shard Parent	3																						0
-Act 5 (H) Citem B	11	83	1	800	800	800	1024	0	"gld,mul=1280"	60	Act 5 (H) Equip B	37	Act 5 (H) Good	3	Act 1 Worldstone Shard Parent	3																						0
-Act 5 (H) Citem C	11	85	1	800	800	800	1024	0	"gld,mul=1280"	60	Act 5 (H) Equip C	37	Act 5 (H) Good	3	Act 1 Worldstone Shard Parent	3																						0
+Act 1 (H) Citem A	11	63	1	800	800	800	1024	0	"gld,mul=1280"	84	Act 1 (H) Equip A	41	Act 1 (H) Good	5	Act 3 Worldstone Shard Parent Citem A	3																						0
+Act 1 (H) Citem B	11	66	1	800	800	800	1024	0	"gld,mul=1280"	84	Act 1 (H) Equip B	41	Act 1 (H) Good	5	Act 3 Worldstone Shard Parent Citem A	3																						0
+Act 1 (H) Citem C	11	68	1	800	800	800	1024	0	"gld,mul=1280"	84	Act 1 (H) Equip B	41	Act 1 (H) Good	5	Act 3 Worldstone Shard Parent Citem A	3																						0
+Act 2 (H) Citem A	11	69	1	800	800	800	1024	0	"gld,mul=1280"	84	Act 2 (H) Equip A	41	Act 2 (H) Good	5	Act 4 Worldstone Shard Parent Citem A	3																						0
+Act 2 (H) Citem B	11	71	1	800	800	800	1024	0	"gld,mul=1280"	84	Act 2 (H) Equip B	41	Act 2 (H) Good	5	Act 4 Worldstone Shard Parent Citem A	3																						0
+Act 2 (H) Citem C	11	72	1	800	800	800	1024	0	"gld,mul=1280"	84	Act 2 (H) Equip B	41	Act 2 (H) Good	5	Act 4 Worldstone Shard Parent Citem A	3																						0
+Act 3 (H) Citem A	11	74	1	800	800	800	1024	0	"gld,mul=1280"	84	Act 3 (H) Equip A	41	Act 3 (H) Good	5	Act 5 Worldstone Shard Parent Citem A	3																						0
+Act 3 (H) Citem B	11	75	1	800	800	800	1024	0	"gld,mul=1280"	84	Act 3 (H) Equip B	41	Act 3 (H) Good	5	Act 5 Worldstone Shard Parent Citem A	3																						0
+Act 3 (H) Citem C	11	77	1	800	800	800	1024	0	"gld,mul=1280"	84	Act 3 (H) Equip B	41	Act 3 (H) Good	5	Act 5 Worldstone Shard Parent Citem A	3																						0
+Act 4 (H) Citem A	11	78	1	800	800	800	1024	0	"gld,mul=1280"	84	Act 4 (H) Equip A	41	Act 4 (H) Good	5	Act 2 Worldstone Shard Parent Citem A	3																						0
+Act 4 (H) Citem B	11	80	1	800	800	800	1024	0	"gld,mul=1280"	84	Act 4 (H) Equip B	41	Act 4 (H) Good	5	Act 2 Worldstone Shard Parent Citem A	3																						0
+Act 5 (H) Citem A	11	81	1	800	800	800	1024	0	"gld,mul=1280"	84	Act 5 (H) Equip A	41	Act 5 (H) Good	5	Act 1 Worldstone Shard Parent Citem A	3																						0
+Act 5 (H) Citem B	11	83	1	800	800	800	1024	0	"gld,mul=1280"	84	Act 5 (H) Equip B	41	Act 5 (H) Good	5	Act 1 Worldstone Shard Parent Citem A	3																						0
+Act 5 (H) Citem C	11	85	1	800	800	800	1024	0	"gld,mul=1280"	84	Act 5 (H) Equip C	41	Act 5 (H) Good	5	Act 1 Worldstone Shard Parent Citem A	3																						0
 Act 1 Cpot A	12	0	2					0	Hpotion 1	1																												0
 Act 1 Cpot B	12	5	2					0	Hpotion 1	1																												0
 Act 1 Cpot C	12	9	2					0	Hpotion 1	1																												0
@@ -662,6 +668,12 @@ Act 4 (H) Champ B	13	80	-3					0	Act 4 (H) Citem B	1	Act 4 (H) Cpot B	1									
 Act 5 (H) Champ A	13	81	-3					0	Act 5 (H) Citem A	1	Act 5 (H) Cpot A	1																										0
 Act 5 (H) Champ B	13	83	-3					0	Act 5 (H) Citem B	1	Act 5 (H) Cpot B	1																										0
 Act 5 (H) Champ C	13	85	-3					0	Act 5 (H) Citem C	1	Act 5 (H) Cpot C	1																										0
+Act 1 (H) Uitem A Shard	14	63	1	800	800	800	1024	0	Act 1 (H) Equip A	58	Act 1 (H) Good	4																										0
+Act 1 Worldstone Shard Parent Uitem A			-2						Act 1 Terrorize Act Consumable	1	All Acts Terrorize Consumable	1	Act 1 (H) Uitem A Shard	1																								0
+Act 2 Worldstone Shard Parent Uitem A			-2						Act 2 Terrorize Act Consumable	1	All Acts Terrorize Consumable	1	Act 1 (H) Uitem A Shard	1																								0
+Act 3 Worldstone Shard Parent Uitem A			-2						Act 3 Terrorize Act Consumable	1	All Acts Terrorize Consumable	1	Act 1 (H) Uitem A Shard	1																								0
+Act 4 Worldstone Shard Parent Uitem A			-2						Act 4 Terrorize Act Consumable	1	All Acts Terrorize Consumable	1	Act 1 (H) Uitem A Shard	1																								0
+Act 5 Worldstone Shard Parent Uitem A			-2						Act 5 Terrorize Act Consumable	1	All Acts Terrorize Consumable	1	Act 1 (H) Uitem A Shard	1																								0
 Act 1 Uitem A	14	0	1	800	800	800	1024	0	Act 1 Equip A	58	Act 1 Good	4																										0
 Act 1 Uitem B	14	5	1	800	800	800	1024	0	Act 1 Equip B	58	Act 1 Good	4																										0
 Act 1 Uitem C	14	9	1	800	800	800	1024	0	Act 1 Equip C	58	Act 1 Good	4																										0
@@ -690,20 +702,20 @@ Act 4 (N) Uitem B	14	54	1	800	800	800	1024	0	Act 4 (N) Equip B	58	Act 4 (N) Good
 Act 5 (N) Uitem A	14	57	1	800	800	800	1024	0	Act 5 (N) Equip A	58	Act 5 (N) Good	4																										0
 Act 5 (N) Uitem B	14	60	1	800	800	800	1024	0	Act 5 (N) Equip B	58	Act 5 (N) Good	4																										0
 Act 5 (N) Uitem C	14	62	1	800	800	800	1024	0	Act 5 (N) Equip C	58	Act 5 (N) Good	4																										0
-Act 1 (H) Uitem A	14	63	1	800	800	800	1024	0	Act 1 (H) Equip A	58	Act 1 (H) Good	4	Act 3 Worldstone Shard Parent	2																								0
-Act 1 (H) Uitem B	14	66	1	800	800	800	1024	0	Act 1 (H) Equip B	58	Act 1 (H) Good	4	Act 3 Worldstone Shard Parent	2																								0
-Act 1 (H) Uitem C	14	68	1	800	800	800	1024	0	Act 1 (H) Equip B	58	Act 1 (H) Good	4	Act 3 Worldstone Shard Parent	2																								0
-Act 2 (H) Uitem A	14	69	1	800	800	800	1024	0	Act 2 (H) Equip A	58	Act 2 (H) Good	4	Act 4 Worldstone Shard Parent	2																								0
-Act 2 (H) Uitem B	14	71	1	800	800	800	1024	0	Act 2 (H) Equip B	58	Act 2 (H) Good	4	Act 4 Worldstone Shard Parent	2																								0
-Act 2 (H) Uitem C	14	72	1	800	800	800	1024	0	Act 2 (H) Equip B	58	Act 2 (H) Good	4	Act 4 Worldstone Shard Parent	2																								0
-Act 3 (H) Uitem A	14	74	1	800	800	800	1024	0	Act 3 (H) Equip A	58	Act 3 (H) Good	4	Act 5 Worldstone Shard Parent	2																								0
-Act 3 (H) Uitem B	14	75	1	800	800	800	1024	0	Act 3 (H) Equip B	58	Act 3 (H) Good	4	Act 5 Worldstone Shard Parent	2																								0
-Act 3 (H) Uitem C	14	77	1	800	800	800	1024	0	Act 3 (H) Equip B	58	Act 3 (H) Good	4	Act 5 Worldstone Shard Parent	2																								0
-Act 4 (H) Uitem A	14	78	1	800	800	800	1024	0	Act 4 (H) Equip A	58	Act 4 (H) Good	4	Act 2 Worldstone Shard Parent	2																								0
-Act 4 (H) Uitem B	14	80	1	800	800	800	1024	0	Act 4 (H) Equip B	58	Act 4 (H) Good	4	Act 2 Worldstone Shard Parent	2																								0
-Act 5 (H) Uitem A	14	81	1	800	800	800	1024	0	Act 5 (H) Equip A	58	Act 5 (H) Good	4	Act 1 Worldstone Shard Parent	2																								0
-Act 5 (H) Uitem B	14	83	1	800	800	800	1024	0	Act 5 (H) Equip B	58	Act 5 (H) Good	4	Act 1 Worldstone Shard Parent	2																								0
-Act 5 (H) Uitem C	14	85	1	800	800	800	1024	0	Act 5 (H) Equip C	58	Act 5 (H) Good	4	Act 1 Worldstone Shard Parent	2																								0
+Act 1 (H) Uitem A	14	63	1	800	800	800	1024	0	Act 1 (H) Equip A	75	Act 1 (H) Good	6	Act 3 Worldstone Shard Parent Uitem A	2																								0
+Act 1 (H) Uitem B	14	66	1	800	800	800	1024	0	Act 1 (H) Equip B	75	Act 1 (H) Good	6	Act 3 Worldstone Shard Parent Uitem A	2																								0
+Act 1 (H) Uitem C	14	68	1	800	800	800	1024	0	Act 1 (H) Equip B	75	Act 1 (H) Good	6	Act 3 Worldstone Shard Parent Uitem A	2																								0
+Act 2 (H) Uitem A	14	69	1	800	800	800	1024	0	Act 2 (H) Equip A	75	Act 2 (H) Good	6	Act 4 Worldstone Shard Parent Uitem A	2																								0
+Act 2 (H) Uitem B	14	71	1	800	800	800	1024	0	Act 2 (H) Equip B	75	Act 2 (H) Good	6	Act 4 Worldstone Shard Parent Uitem A	2																								0
+Act 2 (H) Uitem C	14	72	1	800	800	800	1024	0	Act 2 (H) Equip B	75	Act 2 (H) Good	6	Act 4 Worldstone Shard Parent Uitem A	2																								0
+Act 3 (H) Uitem A	14	74	1	800	800	800	1024	0	Act 3 (H) Equip A	75	Act 3 (H) Good	6	Act 5 Worldstone Shard Parent Uitem A	2																								0
+Act 3 (H) Uitem B	14	75	1	800	800	800	1024	0	Act 3 (H) Equip B	75	Act 3 (H) Good	6	Act 5 Worldstone Shard Parent Uitem A	2																								0
+Act 3 (H) Uitem C	14	77	1	800	800	800	1024	0	Act 3 (H) Equip B	75	Act 3 (H) Good	6	Act 5 Worldstone Shard Parent Uitem A	2																								0
+Act 4 (H) Uitem A	14	78	1	800	800	800	1024	0	Act 4 (H) Equip A	75	Act 4 (H) Good	6	Act 2 Worldstone Shard Parent Uitem A	2																								0
+Act 4 (H) Uitem B	14	80	1	800	800	800	1024	0	Act 4 (H) Equip B	75	Act 4 (H) Good	6	Act 2 Worldstone Shard Parent Uitem A	2																								0
+Act 5 (H) Uitem A	14	81	1	800	800	800	1024	0	Act 5 (H) Equip A	75	Act 5 (H) Good	6	Act 1 Worldstone Shard Parent Uitem A	2																								0
+Act 5 (H) Uitem B	14	83	1	800	800	800	1024	0	Act 5 (H) Equip B	75	Act 5 (H) Good	6	Act 1 Worldstone Shard Parent Uitem A	2																								0
+Act 5 (H) Uitem C	14	85	1	800	800	800	1024	0	Act 5 (H) Equip C	75	Act 5 (H) Good	6	Act 1 Worldstone Shard Parent Uitem A	2																								0
 Act 1 Unique A	15	0	-4					0	Act 1 Uitem A	1	Act 1 Cpot A	2																										0
 Act 1 Unique B	15	5	-4					0	Act 1 Uitem B	1	Act 1 Cpot B	2																										0
 Act 1 Unique C	15	9	-4					0	Act 1 Uitem C	1	Act 1 Cpot C	2																										0
@@ -778,15 +790,15 @@ Andarielq (N)			7	983	983	1024	1024	19	Act 2 (N) Equip A	19	Act 2 (N) Good	3				
 Andarielq (N) Desecrated A	20	43	7	983	983	1024	1024	19	Act 2 (N) Equip A	19	Act 2 (N) Good	3																										0
 Andarielq (N) Desecrated B	20	57	7	983	983	1024	1024	19	Act 4 (N) Equip B	19	Act 4 (N) Good	3																										0
 Andarielq (N) Desecrated C	20	73	7	983	983	1024	1024	19	Act 3 (H) Equip A	19	Act 3 (H) Good	3																										0
-Andarielq (H)			7	983	983	1024	1024	19	Act 2 (H) Equip A	19	Act 2 (H) Good	3	tes	1	Ancient Statue 1	1																						0
-Andarielq Item (H) Desecrated A			7	983	983	1024	1024	57	Act 3 (H) Equip B	57	Act 3 (H) Good	9	tes	3	Ancient Statue 1	2																						0
-Andarielq Item (H) Desecrated B			7	983	983	1024	1024	57	Act 3 (H) Equip C	57	Act 3 (H) Good	9	tes	3	Ancient Statue 1	2																						0
-Andarielq Item (H) Desecrated C			7	983	983	1024	1024	57	Act 4 (H) Equip A	57	Act 4 (H) Good	9	tes	3	Ancient Statue 1	2																						0
-Andarielq Item (H) Desecrated D			7	983	983	1024	1024	57	Act 4 (H) Equip B	57	Act 4 (H) Good	9	tes	3	Ancient Statue 1	2																						0
-Andarielq Item (H) Desecrated E			7	983	983	1024	1024	57	Act 4 (H) Equip C	57	Act 4 (H) Good	9	tes	3	Ancient Statue 1	2																						0
-Andarielq Item (H) Desecrated F			7	983	983	1024	1024	57	Act 5 (H) Equip A	57	Act 5 (H) Good	9	tes	3	Ancient Statue 1	2																						0
-Andarielq Item (H) Desecrated G			7	983	983	1024	1024	57	Act 5 (H) Equip B	57	Act 5 (H) Good	9	tes	3	Ancient Statue 1	2																						0
-Andarielq Item (H) Desecrated H			7	983	983	1024	1024	57	Act 5 (H) Equip C	57	Act 5 (H) Good	9	tes	3	Ancient Statue 1	2																						0
+Andarielq (H)			7	983	983	1024	1024	125	Act 2 (H) Equip A	125	Act 2 (H) Good	20	tes	7	Ancient Statue 1	2																						0
+Andarielq Item (H) Desecrated A			7	983	983	1024	1024	125	Act 3 (H) Equip B	125	Act 3 (H) Good	20	tes	7	Ancient Statue 1	3																						0
+Andarielq Item (H) Desecrated B			7	983	983	1024	1024	125	Act 3 (H) Equip C	125	Act 3 (H) Good	20	tes	7	Ancient Statue 1	3																						0
+Andarielq Item (H) Desecrated C			7	983	983	1024	1024	125	Act 4 (H) Equip A	125	Act 4 (H) Good	20	tes	7	Ancient Statue 1	3																						0
+Andarielq Item (H) Desecrated D			7	983	983	1024	1024	125	Act 4 (H) Equip B	125	Act 4 (H) Good	20	tes	7	Ancient Statue 1	3																						0
+Andarielq Item (H) Desecrated E			7	983	983	1024	1024	125	Act 4 (H) Equip C	125	Act 4 (H) Good	20	tes	7	Ancient Statue 1	3																						0
+Andarielq Item (H) Desecrated F			7	983	983	1024	1024	125	Act 5 (H) Equip A	125	Act 5 (H) Good	20	tes	7	Ancient Statue 1	3																						0
+Andarielq Item (H) Desecrated G			7	983	983	1024	1024	125	Act 5 (H) Equip B	125	Act 5 (H) Good	20	tes	7	Ancient Statue 1	3																						0
+Andarielq Item (H) Desecrated H			7	983	983	1024	1024	125	Act 5 (H) Equip C	125	Act 5 (H) Good	20	tes	7	Ancient Statue 1	3																						0
 Andarielq (H) Desecrated A	20	74	-1					0	Andarielq Item (H) Desecrated A	1																												0
 Andarielq (H) Desecrated B	20	78	-1					0	Andarielq Item (H) Desecrated B	1																												0
 Andarielq (H) Desecrated C	20	81	-1					0	Andarielq Item (H) Desecrated C	1																												0
@@ -803,11 +815,11 @@ Duriel (N) - Base			7	983	983	983	1024	19	"gld,mul=1536"	11	Act 3 (N) Equip A	19
 Duriel (N) - Base Desecrated A			7	983	983	983	1024	19	"gld,mul=1536"	11	Act 4 (N) Equip A	19	Act 4 (N) Junk	15	Act 4 (N) Good	3																						0
 Duriel (N) - Base Desecrated B			7	983	983	983	1024	19	"gld,mul=1536"	11	Act 5 (N) Equip B	19	Act 5 (N) Junk	15	Act 5 (N) Good	3																						0
 Duriel (N) - Base Desecrated C			7	983	983	983	1024	19	"gld,mul=1536"	11	Act 3 (H) Equip A	19	Act 3 (H) Junk	15	Act 3 (H) Good	3																						0
-Duriel (H) - Base			7	983	983	983	1024	19	"gld,mul=2048"	11	Act 3 (H) Equip A	19	Act 3 (H) Junk	15	Act 3 (H) Good	3	tes	2	Ancient Statue 2	1																		0
-Duriel (H) - Base Desecrated A			7	983	983	983	1024	19	"gld,mul=2048"	11	Act 4 (H) Equip B	19	Act 4 (H) Junk	15	Act 4 (H) Good	3	tes	2	Ancient Statue 2	2																		0
-Duriel (H) - Base Desecrated B			7	983	983	983	1024	19	"gld,mul=2048"	11	Act 5 (H) Equip A	19	Act 5 (H) Junk	15	Act 5 (H) Good	3	tes	2	Ancient Statue 2	2																		0
-Duriel (H) - Base Desecrated C			7	983	983	983	1024	19	"gld,mul=2048"	11	Act 5 (H) Equip B	19	Act 5 (H) Junk	15	Act 5 (H) Good	3	tes	2	Ancient Statue 2	2																		0
-Duriel (H) - Base Desecrated D			7	983	983	983	1024	19	"gld,mul=2048"	11	Act 5 (H) Equip C	19	Act 5 (H) Junk	15	Act 5 (H) Good	3	tes	2	Ancient Statue 2	2																		0
+Duriel (H) - Base			7	983	983	983	1024	49	"gld,mul=2048"	27	Act 3 (H) Equip A	49	Act 3 (H) Junk	40	Act 3 (H) Good	8	tes	7	Ancient Statue 2	1																		0
+Duriel (H) - Base Desecrated A			7	983	983	983	1024	49	"gld,mul=2048"	27	Act 4 (H) Equip B	49	Act 4 (H) Junk	40	Act 4 (H) Good	8	tes	7	Ancient Statue 2	2																		0
+Duriel (H) - Base Desecrated B			7	983	983	983	1024	49	"gld,mul=2048"	27	Act 5 (H) Equip A	49	Act 5 (H) Junk	40	Act 5 (H) Good	8	tes	7	Ancient Statue 2	2																		0
+Duriel (H) - Base Desecrated C			7	983	983	983	1024	49	"gld,mul=2048"	27	Act 5 (H) Equip B	49	Act 5 (H) Junk	40	Act 5 (H) Good	8	tes	7	Ancient Statue 2	2																		0
+Duriel (H) - Base Desecrated D			7	983	983	983	1024	49	"gld,mul=2048"	27	Act 5 (H) Equip C	49	Act 5 (H) Junk	40	Act 5 (H) Good	8	tes	7	Ancient Statue 2	2																		0
 Durielq - Base			7	993	993	1024	1024	19	Act 3 Equip A	19	Act 3 Good	3																										0
 Durielq (N) - Base			7	993	993	1024	1024	19	Act 3 (N) Equip A	19	Act 3 (N) Good	3																										0
 Durielq (H) - Base			7	993	993	1024	1024	19	Act 3 (H) Equip A	19	Act 3 (H) Good	3	tes	2																								0
@@ -839,11 +851,11 @@ Mephisto (N)			7	983	983	983	1024	15	"gld,mul=1536"	5	Act 4 (N) Equip A	52	Act 4
 Mephisto (N) Desecrated A	22	59	7	983	983	983	1024	15	"gld,mul=1536"	5	Act 4 (N) Equip B	52	Act 4 (N) Junk	5	Act 4 (N) Good	3																						0
 Mephisto (N) Desecrated B	22	66	7	983	983	983	1024	15	"gld,mul=1536"	5	Act 5 (N) Equip C	52	Act 5 (N) Junk	5	Act 5 (N) Good	3																						0
 Mephisto (N) Desecrated C	22	73	7	983	983	983	1024	15	"gld,mul=1536"	5	Act 3 (H) Equip A	52	Act 3 (H) Junk	5	Act 3 (H) Good	3																						0
-Mephisto (H)			7	983	983	983	1024	15	"gld,mul=2048"	5	Act 4 (H) Equip A	52	Act 4 (H) Junk	5	Act 4 (H) Good	3	ceh	1	Ancient Statue 3	1																		0
-Mephisto Item (H) Desecrated A			7	983	983	983	1024	15	"gld,mul=2048"	5	Act 4 (H) Equip B	52	Act 4 (H) Junk	5	Act 4 (H) Good	3	ceh	1	Ancient Statue 3	2																		0
-Mephisto Item (H) Desecrated B			7	983	983	983	1024	15	"gld,mul=2048"	5	Act 5 (H) Equip A	52	Act 5 (H) Junk	5	Act 5 (H) Good	3	ceh	1	Ancient Statue 3	2																		0
-Mephisto Item (H) Desecrated C			7	983	983	983	1024	15	"gld,mul=2048"	5	Act 5 (H) Equip B	52	Act 5 (H) Junk	5	Act 5 (H) Good	3	ceh	1	Ancient Statue 3	2																		0
-Mephisto Item (H) Desecrated D			7	983	983	983	1024	15	"gld,mul=2048"	5	Act 5 (H) Equip C	52	Act 5 (H) Junk	5	Act 5 (H) Good	3	ceh	1	Ancient Statue 3	2																		0
+Mephisto (H)			7	983	983	983	1024	33	"gld,mul=2048"	11	Act 4 (H) Equip A	110	Act 4 (H) Junk	11	Act 4 (H) Good	6	ceh	3	Ancient Statue 3	1																		0
+Mephisto Item (H) Desecrated A			7	983	983	983	1024	33	"gld,mul=2048"	11	Act 4 (H) Equip B	110	Act 4 (H) Junk	11	Act 4 (H) Good	6	ceh	3	Ancient Statue 3	2																		0
+Mephisto Item (H) Desecrated B			7	983	983	983	1024	33	"gld,mul=2048"	11	Act 5 (H) Equip A	110	Act 5 (H) Junk	11	Act 5 (H) Good	6	ceh	3	Ancient Statue 3	2																		0
+Mephisto Item (H) Desecrated C			7	983	983	983	1024	33	"gld,mul=2048"	11	Act 5 (H) Equip B	110	Act 5 (H) Junk	11	Act 5 (H) Good	6	ceh	3	Ancient Statue 3	2																		0
+Mephisto Item (H) Desecrated D			7	983	983	983	1024	33	"gld,mul=2048"	11	Act 5 (H) Equip C	110	Act 5 (H) Junk	11	Act 5 (H) Good	6	ceh	3	Ancient Statue 3	2																		0
 Mephisto (H) Desecrated A	22	87	-1					0	Mephisto Item (H) Desecrated A	1																												0
 Mephisto (H) Desecrated B	22	90	-1					0	Mephisto Item (H) Desecrated B	1																												0
 Mephisto (H) Desecrated C	22	93	-1					0	Mephisto Item (H) Desecrated C	1																												0
@@ -858,9 +870,9 @@ Diablo (N)			7	983	983	983	1024	15	"gld,mul=1536"	5	Act 5 (N) Equip A	52	Act 5 (
 Diablo (N) Desecrated A	23	62	7	983	983	983	1024	15	"gld,mul=1536"	5	Act 5 (N) Equip A	52	Act 5 (N) Junk	5	Act 5 (N) Good	3																						0
 Diablo (N) Desecrated B	23	67	7	983	983	983	1024	15	"gld,mul=1536"	5	Act 1 (H) Equip A	52	Act 1 (H) Junk	5	Act 1 (H) Good	3																						0
 Diablo (N) Desecrated C	23	73	7	983	983	983	1024	15	"gld,mul=1536"	5	Act 3 (H) Equip A	52	Act 3 (H) Junk	5	Act 3 (H) Good	3																						0
-Diablo (H)			7	983	983	983	1024	15	"gld,mul=2048"	5	Act 5 (H) Equip A	52	Act 5 (H) Junk	5	Act 5 (H) Good	3	bet	1	Ancient Statue 4	1																		0
-Diablo Item (H) Desecrated A			7	983	983	983	1024	15	"gld,mul=2048"	5	Act 5 (H) Equip B	52	Act 5 (H) Junk	5	Act 5 (H) Good	3	bet	1	Ancient Statue 4	2																		0
-Diablo Item (H) Desecrated B			7	983	983	983	1024	15	"gld,mul=2048"	5	Act 5 (H) Equip C	52	Act 5 (H) Junk	5	Act 5 (H) Good	3	bet	1	Ancient Statue 4	2																		0
+Diablo (H)			7	983	983	983	1024	33	"gld,mul=2048"	11	Act 5 (H) Equip A	110	Act 5 (H) Junk	11	Act 5 (H) Good	6	bet	3	Ancient Statue 4	1																		0
+Diablo Item (H) Desecrated A			7	983	983	983	1024	33	"gld,mul=2048"	11	Act 5 (H) Equip B	110	Act 5 (H) Junk	11	Act 5 (H) Good	6	bet	3	Ancient Statue 4	2																		0
+Diablo Item (H) Desecrated B			7	983	983	983	1024	33	"gld,mul=2048"	11	Act 5 (H) Equip C	110	Act 5 (H) Junk	11	Act 5 (H) Good	6	bet	3	Ancient Statue 4	2																		0
 Diablo (H) Desecrated A	23	94	-1					0	Diablo Item (H) Desecrated A	1																												0
 Diablo (H) Desecrated B	23	96	-1					0	Diablo Item (H) Desecrated B	1																												0
 Diabloq			7	993	993	1024	1024	15	Act 5 Equip A	52	Act 5 Good	3																										0
@@ -951,8 +963,8 @@ Baal			7	983	983	983	1024	15	"gld,mul=1280"	5	Act 1 (N) Equip A	52	Act 1 (N) Jun
 Baal Desecrated	29	60	7	983	983	983	1024	15	"gld,mul=1280"	5	Act 3 (N) Equip A	52	Act 3 (N) Junk	5	Act 3 (N) Good	3																						0
 Baal (N)			7	983	983	983	1024	15	"gld,mul=1536"	5	Act 1 (H) Equip A	52	Act 1 (H) Junk	5	Act 1 (H) Good	3																						0
 Baal (N) Desecrated	29	75	7	983	983	983	1024	15	"gld,mul=1536"	5	Act 3 (H) Equip A	52	Act 3 (H) Junk	5	Act 3 (H) Good	3																						0
-Baal (H)			7	983	983	983	1024	15	"gld,mul=2048"	5	Act 5 (H) Equip B	52	Act 5 (H) Junk	5	Act 5 (H) Good	3	fed	1	Ancient Statue 5	1																		0
-Baal Item (H) Desecrated			7	983	983	983	1024	15	"gld,mul=2048"	5	Act 5 (H) Equip C	53	Act 5 (H) Junk	5	Act 5 (H) Good	4	fed	1	Ancient Statue 5	2																		0
+Baal (H)			7	983	983	983	1024	33	"gld,mul=2048"	11	Act 5 (H) Equip B	110	Act 5 (H) Junk	11	Act 5 (H) Good	6	fed	3	Ancient Statue 5	1																		0
+Baal Item (H) Desecrated			7	983	983	983	1024	33	"gld,mul=2048"	11	Act 5 (H) Equip C	110	Act 5 (H) Junk	11	Act 5 (H) Good	6	fed	3	Ancient Statue 5	2																		0
 Baal (H) Desecrated	29	99	-1					0	Baal Item (H) Desecrated	1																												0
 Baalq			7	993	993	1024	1024	15	Act 1 (N) Equip A	52	Act 1 (N) Good	3																										0
 Baalq (N)			7	993	993	1024	1024	15	Act 1 (H) Equip A	52	Act 1 (H) Good	3																										0
@@ -1287,48 +1299,49 @@ Act 2 (H) Good Desecrated Herald			1						Jewelry C	60	Chipped Gem	4	Flawed Gem	
 Act 3 (H) Good Desecrated Herald			1						Jewelry C	60	Chipped Gem	4	Flawed Gem	10	Normal Gem	14	Flawless Gem	28	Runes 15	18																		0
 Act 4 (H) Good Desecrated Herald			1						Jewelry C	60	Chipped Gem	4	Flawed Gem	10	Normal Gem	14	Flawless Gem	28	Runes 16	18																		0
 Act 5 (H) Good Desecrated Herald			1						Jewelry C	60	Chipped Gem	4	Flawed Gem	10	Normal Gem	14	Flawless Gem	28	Runes 17	18																		0
-Act 1 (H) Herald Item A			1	800	800	850	1024	0	Act 1 (H) Equip A Desecrated Herald	360	Act 1 (H) Good Desecrated Herald	30	All Acts Terrorize Consumable	15	Sunder Charms	2																						0
-Act 1 (H) Herald Item B			1	800	800	850	1024	0	Act 1 (H) Equip B Desecrated Herald	360	Act 1 (H) Good Desecrated Herald	30	All Acts Terrorize Consumable	15	Sunder Charms	2																						0
-Act 1 (H) Herald Item C			1	800	800	850	1024	0	Act 1 (H) Equip C Desecrated Herald	360	Act 1 (H) Good Desecrated Herald	30	All Acts Terrorize Consumable	15	Sunder Charms	2																						0
-Act 2 (H) Herald Item D			1	800	800	850	1024	0	Act 2 (H) Equip A Desecrated Herald	360	Act 2 (H) Good Desecrated Herald	30	All Acts Terrorize Consumable	15	Sunder Charms	2																						0
-Act 2 (H) Herald Item E			1	800	800	850	1024	0	Act 2 (H) Equip B Desecrated Herald	360	Act 2 (H) Good Desecrated Herald	30	All Acts Terrorize Consumable	15	Sunder Charms	2																						0
-Act 2 (H) Herald Item F			1	800	800	850	1024	0	Act 2 (H) Equip C Desecrated Herald	360	Act 2 (H) Good Desecrated Herald	30	All Acts Terrorize Consumable	15	Sunder Charms	2																						0
-Act 3 (H) Herald Item G			1	800	800	850	1024	0	Act 3 (H) Equip A Desecrated Herald	360	Act 3 (H) Good Desecrated Herald	30	All Acts Terrorize Consumable	15	Sunder Charms	2																						0
-Act 3 (H) Herald Item H			1	800	800	850	1024	0	Act 3 (H) Equip B Desecrated Herald	360	Act 3 (H) Good Desecrated Herald	30	All Acts Terrorize Consumable	15	Sunder Charms	2																						0
-Act 3 (H) Herald Item I			1	800	800	850	1024	0	Act 3 (H) Equip C Desecrated Herald	360	Act 3 (H) Good Desecrated Herald	30	All Acts Terrorize Consumable	15	Sunder Charms	2																						0
-Act 4 (H) Herald Item J			1	800	800	850	1024	0	Act 4 (H) Equip A Desecrated Herald	360	Act 4 (H) Good Desecrated Herald	30	All Acts Terrorize Consumable	15	Sunder Charms	2																						0
-Act 4 (H) Herald Item K			1	800	800	850	1024	0	Act 4 (H) Equip B Desecrated Herald	360	Act 4 (H) Good Desecrated Herald	30	All Acts Terrorize Consumable	15	Sunder Charms	2																						0
-Act 5 (H) Herald Item L			1	800	800	850	1024	0	Act 5 (H) Equip A Desecrated Herald	360	Act 5 (H) Good Desecrated Herald	30	All Acts Terrorize Consumable	15	Sunder Charms	2																						0
-Act 5 (H) Herald Item M			1	800	800	850	1024	0	Act 5 (H) Equip B Desecrated Herald	360	Act 5 (H) Good Desecrated Herald	30	All Acts Terrorize Consumable	15	Sunder Charms	2																						0
-Act 5 (H) Herald Item N			1	800	800	850	1024	0	Act 5 (H) Equip C Desecrated Herald	360	Act 5 (H) Good Desecrated Herald	30	All Acts Terrorize Consumable	15	Sunder Charms	2																						0
-Act 1 (H) Herald Item A - 1 Extra			-1	800	800	850	1024	0	Act 1 (H) Herald Item A	1																						(stat('heraldtier'.accr)>2)*(stat('heraldtier'.accr) <5) 						0
-Act 1 (H) Herald Item B - 1 Extra			-1	800	800	850	1024	0	Act 1 (H) Herald Item B	1																						(stat('heraldtier'.accr)>2)*(stat('heraldtier'.accr) <5) 						0
-Act 1 (H) Herald Item C - 1 Extra			-1	800	800	850	1024	0	Act 1 (H) Herald Item C	1																						(stat('heraldtier'.accr)>2)*(stat('heraldtier'.accr) <5) 						0
-Act 2 (H) Herald Item D - 1 Extra			-1	800	800	850	1024	0	Act 2 (H) Herald Item D	1																						(stat('heraldtier'.accr)>2)*(stat('heraldtier'.accr) <5) 						0
-Act 2 (H) Herald Item E - 1 Extra			-1	800	800	850	1024	0	Act 2 (H) Herald Item E	1																						(stat('heraldtier'.accr)>2)*(stat('heraldtier'.accr) <5) 						0
-Act 2 (H) Herald Item F - 1 Extra			-1	800	800	850	1024	0	Act 2 (H) Herald Item F	1																						(stat('heraldtier'.accr)>2)*(stat('heraldtier'.accr) <5) 						0
-Act 3 (H) Herald Item G - 1 Extra			-1	800	800	850	1024	0	Act 3 (H) Herald Item G	1																						(stat('heraldtier'.accr)>2)*(stat('heraldtier'.accr) <5) 						0
-Act 3 (H) Herald Item H - 1 Extra			-1	800	800	850	1024	0	Act 3 (H) Herald Item H	1																						(stat('heraldtier'.accr)>2)*(stat('heraldtier'.accr) <5) 						0
-Act 3 (H) Herald Item I - 1 Extra			-1	800	800	850	1024	0	Act 3 (H) Herald Item I	1																						(stat('heraldtier'.accr)>2)*(stat('heraldtier'.accr) <5) 						0
-Act 4 (H) Herald Item J - 1 Extra			-1	800	800	850	1024	0	Act 4 (H) Herald Item J	1																						(stat('heraldtier'.accr)>2)*(stat('heraldtier'.accr) <5) 						0
-Act 4 (H) Herald Item K - 1 Extra			-1	800	800	850	1024	0	Act 4 (H) Herald Item K	1																						(stat('heraldtier'.accr)>2)*(stat('heraldtier'.accr) <5) 						0
-Act 5 (H) Herald Item L - 1 Extra			-1	800	800	850	1024	0	Act 5 (H) Herald Item L	1																						(stat('heraldtier'.accr)>2)*(stat('heraldtier'.accr) <5) 						0
-Act 5 (H) Herald Item M - 1 Extra			-1	800	800	850	1024	0	Act 5 (H) Herald Item M	1																						(stat('heraldtier'.accr)>2)*(stat('heraldtier'.accr) <5) 						0
-Act 5 (H) Herald Item N - 1 Extra			-1	800	800	850	1024	0	Act 5 (H) Herald Item N	1																						(stat('heraldtier'.accr)>2)*(stat('heraldtier'.accr) <5) 						0
-Act 1 (H) Herald Item A - 2 Extra			-2	800	800	850	1024	0	Act 1 (H) Herald Item A	2																						(stat('heraldtier'.accr) >4) 						0
-Act 1 (H) Herald Item B - 2 Extra			-2	800	800	850	1024	0	Act 1 (H) Herald Item B	2																						(stat('heraldtier'.accr) >4) 						0
-Act 1 (H) Herald Item C - 2 Extra			-2	800	800	850	1024	0	Act 1 (H) Herald Item C	2																						(stat('heraldtier'.accr) >4) 						0
-Act 2 (H) Herald Item D - 2 Extra			-2	800	800	850	1024	0	Act 2 (H) Herald Item D	2																						(stat('heraldtier'.accr) >4) 						0
-Act 2 (H) Herald Item E - 2 Extra			-2	800	800	850	1024	0	Act 2 (H) Herald Item E	2																						(stat('heraldtier'.accr) >4) 						0
-Act 2 (H) Herald Item F - 2 Extra			-2	800	800	850	1024	0	Act 2 (H) Herald Item F	2																						(stat('heraldtier'.accr) >4) 						0
-Act 3 (H) Herald Item G - 2 Extra			-2	800	800	850	1024	0	Act 3 (H) Herald Item G	2																						(stat('heraldtier'.accr) >4) 						0
-Act 3 (H) Herald Item H - 2 Extra			-2	800	800	850	1024	0	Act 3 (H) Herald Item H	2																						(stat('heraldtier'.accr) >4) 						0
-Act 3 (H) Herald Item I - 2 Extra			-2	800	800	850	1024	0	Act 3 (H) Herald Item I	2																						(stat('heraldtier'.accr) >4) 						0
-Act 4 (H) Herald Item J - 2 Extra			-2	800	800	850	1024	0	Act 4 (H) Herald Item J	2																						(stat('heraldtier'.accr) >4) 						0
-Act 4 (H) Herald Item K - 2 Extra			-2	800	800	850	1024	0	Act 4 (H) Herald Item K	2																						(stat('heraldtier'.accr) >4) 						0
-Act 5 (H) Herald Item L - 2 Extra			-2	800	800	850	1024	0	Act 5 (H) Herald Item L	2																						(stat('heraldtier'.accr) >4) 						0
-Act 5 (H) Herald Item M - 2 Extra			-2	800	800	850	1024	0	Act 5 (H) Herald Item M	2																						(stat('heraldtier'.accr) >4) 						0
-Act 5 (H) Herald Item N - 2 Extra			-2	800	800	850	1024	0	Act 5 (H) Herald Item N	2																						(stat('heraldtier'.accr) >4) 						0
+Act 1 (H) Herald Item Shard			-2	800	800	850	1024	0	Act 1 (H) Equip A Desecrated Herald	1	All Acts Terrorize Consumable	1																										0
+Act 1 (H) Herald Item A			1	800	800	850	1024	0	Act 1 (H) Equip A Desecrated Herald	360	Act 1 (H) Good Desecrated Herald	30	Act 1 (H) Herald Item Shard	15	Sunder Charms	2																						0
+Act 1 (H) Herald Item B			1	800	800	850	1024	0	Act 1 (H) Equip B Desecrated Herald	360	Act 1 (H) Good Desecrated Herald	30	Act 1 (H) Herald Item Shard	15	Sunder Charms	2																						0
+Act 1 (H) Herald Item C			1	800	800	850	1024	0	Act 1 (H) Equip C Desecrated Herald	360	Act 1 (H) Good Desecrated Herald	30	Act 1 (H) Herald Item Shard	15	Sunder Charms	2																						0
+Act 2 (H) Herald Item D			1	800	800	850	1024	0	Act 2 (H) Equip A Desecrated Herald	360	Act 2 (H) Good Desecrated Herald	30	Act 1 (H) Herald Item Shard	15	Sunder Charms	2																						0
+Act 2 (H) Herald Item E			1	800	800	850	1024	0	Act 2 (H) Equip B Desecrated Herald	360	Act 2 (H) Good Desecrated Herald	30	Act 1 (H) Herald Item Shard	15	Sunder Charms	2																						0
+Act 2 (H) Herald Item F			1	800	800	850	1024	0	Act 2 (H) Equip C Desecrated Herald	360	Act 2 (H) Good Desecrated Herald	30	Act 1 (H) Herald Item Shard	15	Sunder Charms	2																						0
+Act 3 (H) Herald Item G			1	800	800	850	1024	0	Act 3 (H) Equip A Desecrated Herald	360	Act 3 (H) Good Desecrated Herald	30	Act 1 (H) Herald Item Shard	15	Sunder Charms	2																						0
+Act 3 (H) Herald Item H			1	800	800	850	1024	0	Act 3 (H) Equip B Desecrated Herald	360	Act 3 (H) Good Desecrated Herald	30	Act 1 (H) Herald Item Shard	15	Sunder Charms	2																						0
+Act 3 (H) Herald Item I			1	800	800	850	1024	0	Act 3 (H) Equip C Desecrated Herald	360	Act 3 (H) Good Desecrated Herald	30	Act 1 (H) Herald Item Shard	15	Sunder Charms	2																						0
+Act 4 (H) Herald Item J			1	800	800	850	1024	0	Act 4 (H) Equip A Desecrated Herald	360	Act 4 (H) Good Desecrated Herald	30	Act 1 (H) Herald Item Shard	15	Sunder Charms	2																						0
+Act 4 (H) Herald Item K			1	800	800	850	1024	0	Act 4 (H) Equip B Desecrated Herald	360	Act 4 (H) Good Desecrated Herald	30	Act 1 (H) Herald Item Shard	15	Sunder Charms	2																						0
+Act 5 (H) Herald Item L			1	800	800	850	1024	0	Act 5 (H) Equip A Desecrated Herald	360	Act 5 (H) Good Desecrated Herald	30	Act 1 (H) Herald Item Shard	15	Sunder Charms	2																						0
+Act 5 (H) Herald Item M			1	800	800	850	1024	0	Act 5 (H) Equip B Desecrated Herald	360	Act 5 (H) Good Desecrated Herald	30	Act 1 (H) Herald Item Shard	15	Sunder Charms	2																						0
+Act 5 (H) Herald Item N			1	800	800	850	1024	0	Act 5 (H) Equip C Desecrated Herald	360	Act 5 (H) Good Desecrated Herald	30	Act 1 (H) Herald Item Shard	15	Sunder Charms	2																						0
+Act 1 (H) Herald Item A - 1 Extra			-1	850	850	920	1024	0	Act 1 (H) Herald Item A	1																						(stat('heraldtier'.accr)>2)*(stat('heraldtier'.accr) <5) 						0
+Act 1 (H) Herald Item B - 1 Extra			-1	850	850	920	1024	0	Act 1 (H) Herald Item B	1																						(stat('heraldtier'.accr)>2)*(stat('heraldtier'.accr) <5) 						0
+Act 1 (H) Herald Item C - 1 Extra			-1	850	850	920	1024	0	Act 1 (H) Herald Item C	1																						(stat('heraldtier'.accr)>2)*(stat('heraldtier'.accr) <5) 						0
+Act 2 (H) Herald Item D - 1 Extra			-1	850	850	920	1024	0	Act 2 (H) Herald Item D	1																						(stat('heraldtier'.accr)>2)*(stat('heraldtier'.accr) <5) 						0
+Act 2 (H) Herald Item E - 1 Extra			-1	850	850	920	1024	0	Act 2 (H) Herald Item E	1																						(stat('heraldtier'.accr)>2)*(stat('heraldtier'.accr) <5) 						0
+Act 2 (H) Herald Item F - 1 Extra			-1	850	850	920	1024	0	Act 2 (H) Herald Item F	1																						(stat('heraldtier'.accr)>2)*(stat('heraldtier'.accr) <5) 						0
+Act 3 (H) Herald Item G - 1 Extra			-1	850	850	920	1024	0	Act 3 (H) Herald Item G	1																						(stat('heraldtier'.accr)>2)*(stat('heraldtier'.accr) <5) 						0
+Act 3 (H) Herald Item H - 1 Extra			-1	850	850	920	1024	0	Act 3 (H) Herald Item H	1																						(stat('heraldtier'.accr)>2)*(stat('heraldtier'.accr) <5) 						0
+Act 3 (H) Herald Item I - 1 Extra			-1	850	850	920	1024	0	Act 3 (H) Herald Item I	1																						(stat('heraldtier'.accr)>2)*(stat('heraldtier'.accr) <5) 						0
+Act 4 (H) Herald Item J - 1 Extra			-1	850	850	920	1024	0	Act 4 (H) Herald Item J	1																						(stat('heraldtier'.accr)>2)*(stat('heraldtier'.accr) <5) 						0
+Act 4 (H) Herald Item K - 1 Extra			-1	850	850	920	1024	0	Act 4 (H) Herald Item K	1																						(stat('heraldtier'.accr)>2)*(stat('heraldtier'.accr) <5) 						0
+Act 5 (H) Herald Item L - 1 Extra			-1	850	850	920	1024	0	Act 5 (H) Herald Item L	1																						(stat('heraldtier'.accr)>2)*(stat('heraldtier'.accr) <5) 						0
+Act 5 (H) Herald Item M - 1 Extra			-1	850	850	920	1024	0	Act 5 (H) Herald Item M	1																						(stat('heraldtier'.accr)>2)*(stat('heraldtier'.accr) <5) 						0
+Act 5 (H) Herald Item N - 1 Extra			-1	850	850	920	1024	0	Act 5 (H) Herald Item N	1																						(stat('heraldtier'.accr)>2)*(stat('heraldtier'.accr) <5) 						0
+Act 1 (H) Herald Item A - 2 Extra			-2	870	870	950	1024	0	Act 1 (H) Herald Item A	2																						(stat('heraldtier'.accr) >4) 						0
+Act 1 (H) Herald Item B - 2 Extra			-2	870	870	950	1024	0	Act 1 (H) Herald Item B	2																						(stat('heraldtier'.accr) >4) 						0
+Act 1 (H) Herald Item C - 2 Extra			-2	870	870	950	1024	0	Act 1 (H) Herald Item C	2																						(stat('heraldtier'.accr) >4) 						0
+Act 2 (H) Herald Item D - 2 Extra			-2	870	870	950	1024	0	Act 2 (H) Herald Item D	2																						(stat('heraldtier'.accr) >4) 						0
+Act 2 (H) Herald Item E - 2 Extra			-2	870	870	950	1024	0	Act 2 (H) Herald Item E	2																						(stat('heraldtier'.accr) >4) 						0
+Act 2 (H) Herald Item F - 2 Extra			-2	870	870	950	1024	0	Act 2 (H) Herald Item F	2																						(stat('heraldtier'.accr) >4) 						0
+Act 3 (H) Herald Item G - 2 Extra			-2	870	870	950	1024	0	Act 3 (H) Herald Item G	2																						(stat('heraldtier'.accr) >4) 						0
+Act 3 (H) Herald Item H - 2 Extra			-2	870	870	950	1024	0	Act 3 (H) Herald Item H	2																						(stat('heraldtier'.accr) >4) 						0
+Act 3 (H) Herald Item I - 2 Extra			-2	870	870	950	1024	0	Act 3 (H) Herald Item I	2																						(stat('heraldtier'.accr) >4) 						0
+Act 4 (H) Herald Item J - 2 Extra			-2	870	870	950	1024	0	Act 4 (H) Herald Item J	2																						(stat('heraldtier'.accr) >4) 						0
+Act 4 (H) Herald Item K - 2 Extra			-2	870	870	950	1024	0	Act 4 (H) Herald Item K	2																						(stat('heraldtier'.accr) >4) 						0
+Act 5 (H) Herald Item L - 2 Extra			-2	870	870	950	1024	0	Act 5 (H) Herald Item L	2																						(stat('heraldtier'.accr) >4) 						0
+Act 5 (H) Herald Item M - 2 Extra			-2	870	870	950	1024	0	Act 5 (H) Herald Item M	2																						(stat('heraldtier'.accr) >4) 						0
+Act 5 (H) Herald Item N - 2 Extra			-2	870	870	950	1024	0	Act 5 (H) Herald Item N	2																						(stat('heraldtier'.accr) >4) 						0
 Act 1 (H) Herald A	41	67	-6	800	800	850	1024	0	Act 1 (H) Herald Item A	2	Act 1 (H) Herald Item A - 1 Extra	1	Act 1 (H) Herald Item A - 2 Extra	1	Act 1 (H) Cpot A	2																						0
 Act 1 (H) Herald B	41	68	-6	800	800	850	1024	0	Act 1 (H) Herald Item B	2	Act 1 (H) Herald Item B - 1 Extra	1	Act 1 (H) Herald Item B - 2 Extra	1	Act 1 (H) Cpot B	2																						0
 Act 1 (H) Herald C	41	69	-6	800	800	850	1024	0	Act 1 (H) Herald Item C	2	Act 1 (H) Herald Item C - 1 Extra	1	Act 1 (H) Herald Item C - 2 Extra	1	Act 1 (H) Cpot C	2																						0

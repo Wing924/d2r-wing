@@ -39557,7 +39557,7 @@
     "ptBR": "Máx. de demônios: %d",
     "ruRU": "Максимум демонов: %d",
     "zhCN": "最大恶魔数：%d"
-  },
+  }, 
   {
     "id": 28105,
     "Key": "StrSkillChainMaxCount",
@@ -39574,5 +39574,5 @@
     "ptBR": "Máximo de cadeias: %d",
     "ruRU": "Максимум цепей: %d",
     "zhCN": "最大锁链数: %d"
-  }
+  }  
 ]

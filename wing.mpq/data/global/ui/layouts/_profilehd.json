@@ -69,6 +69,7 @@
     "x": -1620,
     "y": 190
   },
+  "ChronicleLeftCursorPadding": 40,
   "ChronicleSearchBox": {
     "height": 102,
     "width": 450,

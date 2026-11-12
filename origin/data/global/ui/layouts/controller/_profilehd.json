@@ -91,6 +91,7 @@
     "AdvancedStatsPanelRect": { "x": -1386, "y": -237 },
     "ChronicleSearchBox": { "x": 1275, "y": -118, "width": 420, "height": 102 },
     "ChronicleSearchInput": { "x": 40, "y": 0, "width": 350, "height": 102 },
+    "ChronicleLeftCursorPadding": 40,
 
     "ChronicleRewardsControllerRect": { "x": -896, "y": 270 },
 }
