@@ -34,7 +34,7 @@ Runeword32	Elation																																																			0
 Runeword33	Enigma	1					110	tors									JahIthBer	r31	r06	r30				ac		750	775	heal-kill		14	14	move2		45	45	str/lvl	6			allskills		2	2	mag%/lvl	8			oskill	Teleport	1	1	0
 Runeword34	Enlightenment	1					111	tors									PulRalSur	r21	r08	r12				hit-skill	Fire Ball	5	15	gethit-skill	Blaze	5	15	sor		2	2	oskill	Warmth	1	1													0
 Runeword35	Envy																																																			0
-Runeword36	Eternity	1					110	mele									AmnBerIstSolSur	r11	r30	r24	r12	r29		dmg%		260	310	indestruct		1	1	slow		33	33	charged	Revive	88	8	regen		16	16	regen-mana		16	16	nofreeze		1	1	0
+Runeword36	Eternity	1			16	16	110	mele	miss								AmnBerIstSolSur	r11	r30	r24	r12	r29		dmg%		300	390	eternity-update		1	1	slow		33	33	oskill	Revive	5	5	regen		16	16	regen-mana		16	16	nofreeze		1	1	0
 Runeword37	Exile	1					110	pala									VexOhmIstDol	r26	r27	r24	r14			block2		30	30	freeze		1	1	ac%		220	260	aura	Defiance	13	16	skilltab	10	2	2	hit-skill	Life Tap	15	5	rep-dur	25			0
 Runeword38	Faith	1					"110, Previously Ladder Only"	miss									OhmJahLemEld	r27	r31	r20	r02			dmg%		280	280	att%		300	300	dmg-fire		120	120	res-all		15	15	aura	Fanaticism	12	15	reanimate	1	10	10	allskills		1	2	0
 Runeword39	Famine	1						axe	hamm								FalOhmOrtJah	r19	r27	r09	r31			dmg%		270	320	lifesteal		12	12	swing2		30	30	noheal		1	1	dmg-mag		180	200	dmg-elem		50	200	ethereal		1	1	0
@@ -168,15 +168,15 @@ Runeword167	Wonder																																																			0
 Runeword168	Wrath	1					Previously Ladder Only	miss									PulLumBerMal	r21	r17	r30	r23			dmg-demon		300	300	dmg-undead		250	300	dmg-ltng		41	240	dmg-mag		85	120	hit-skill	Life Tap	5	10	hit-skill	Decrepify	30	1	nofreeze		1	1	0
 Runeword169	Youth																																																			0
 Runeword170	Zephyr	1					109	miss									OrtEth	r09	r05					move2		25	25	swing2		25	25	dmg%		33	33	att		66	66	gethit-skill	240	7	1	ac		25	25					0
-Runeword171	Hustle (armor)	1			3		D2R Ladder 3	tors									ShaelKoEld	r13	r18	r02				move2		65	65	stamdrain		35	35	swing2		40	40	res-all		10	10	oskill	Evade	6	6									0
-Runeword172	Hustle (weapon)	1			3		D2R Ladder 3	weap									ShaelKoEld	r13	r18	r02				hit-skill	Quickness	5	1	swing2		10	10	dmg%		180	200	aura	Fanaticism	1	1													0
+Runeword171	Hustle (armor)	1			3	14	D2R Ladder 3	tors									ShaelKoEld	r13	r18	r02				move2		65	65	stamdrain		35	35	swing2		40	40	res-all		10	10	oskill	Evade	6	6									0
+Runeword172	Hustle (weapon)	1			3	14	D2R Ladder 3	weap									ShaelKoEld	r13	r18	r02				hit-skill	Quickness	5	1	swing2		10	10	dmg%		180	200	aura	Fanaticism	1	1													0
 Runeword173	Mosaic	1	1		3	12	D2R Ladder 3	h2h									MalGulAmn	r23	r25	r11				skilltab	20	2	2	charge-noconsume		50	50	swing2		20	20	dmg%		200	250	extra-fire		8	15	extra-cold		8	15	extra-ltng		8	15	0
-Runeword174	Metamorphosis	1			3		D2R Ladder 3	helm									IoChamFal	r16	r32	r19				hit-skill	Mark of the Bear	100	1	hit-skill	Mark of the Wolf	100	1	skilltab	16	5	5	ac%		50	80	res-all		10	10	crush		25	25					0
-Runeword175	Ground	1			3		D2R Ladder 3	helm									ShaelIoOrt	r13	r16	r09				hp%		5	5	ac%		75	100	res-ltng		10	30	abs-ltng%		10	15													0
-Runeword176	Temper	1			3		D2R Ladder 3	helm									ShaelIoRal	r13	r16	r08				hp%		5	5	ac%		75	100	res-fire		10	30	abs-fire%		10	15													0
-Runeword177	Hearth	1			3		D2R Ladder 3	helm									ShaelIoThul	r13	r16	r10				hp%		5	5	ac%		75	100	res-cold		10	30	abs-cold%		10	15	nofreeze		1	1									0
-Runeword178	Cure	1			3		D2R Ladder 3	helm									ShaelIoTal	r13	r16	r07				hp%		5	5	ac%		75	100	res-pois		10	30	res-pois-len		50	50	aura	Cleansing	1	1									0
-Runeword179	Bulwark	1			3		D2R Ladder 3	helm									ShaelIoSol	r13	r16	r12				hp%		5	5	ac%		75	100	red-dmg%		10	15	regen		30	30	lifesteal		4	6									0
+Runeword174	Metamorphosis	1			3	14	D2R Ladder 3	helm									IoChamFal	r16	r32	r19				hit-skill	Mark of the Bear	100	1	hit-skill	Mark of the Wolf	100	1	skilltab	16	5	5	ac%		50	80	res-all		10	10	crush		25	25					0
+Runeword175	Ground	1			3	14	D2R Ladder 3	helm									ShaelIoOrt	r13	r16	r09				hp%		5	5	ac%		75	100	res-ltng		10	30	abs-ltng%		10	15													0
+Runeword176	Temper	1			3	14	D2R Ladder 3	helm									ShaelIoRal	r13	r16	r08				hp%		5	5	ac%		75	100	res-fire		10	30	abs-fire%		10	15													0
+Runeword177	Hearth	1			3	14	D2R Ladder 3	helm									ShaelIoThul	r13	r16	r10				hp%		5	5	ac%		75	100	res-cold		10	30	abs-cold%		10	15	nofreeze		1	1									0
+Runeword178	Cure	1			3	14	D2R Ladder 3	helm									ShaelIoTal	r13	r16	r07				hp%		5	5	ac%		75	100	res-pois		10	30	res-pois-len		50	50	aura	Cleansing	1	1									0
+Runeword179	Bulwark	1			3	14	D2R Ladder 3	helm									ShaelIoSol	r13	r16	r12				hp%		5	5	ac%		75	100	red-dmg%		10	15	regen		30	30	lifesteal		4	6									0
 Runeword180	Coven	1						helm									IstRalIo	r24	r08	r16				gethit-skill	Sigil Lethargy	5	10	allskills		1	1	cast1		20	20	ac%		30	50	mag%		1	15	heal-kill		1	5					0
 Runeword181	Vigilance	1						grim	shld	head	ashd						DolGul	r14	r25					gethit-skill	Ring of Fire	5	10	move2		10	10	block2		30	30	hp		20	40	mana		20	40	res-all		25	35	ac%		75	100	0
 Runeword182	Ritual	1						knif									AmnShaelOhm	r11	r13	r27				gethit-skill	Sigil Death	13	1	swing1		20	20	dmg%		200	270	dmg-demon		150	250	att%		200	260	heal-kill		3	5	rip		1	1	0

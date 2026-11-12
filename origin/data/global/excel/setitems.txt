@@ -12,10 +12,10 @@ Iratha's Collar	9	Iratha's Finery		1					amu	Amulet	7	21	15	lgry	lgry						5	250
 Iratha's Cuff	10	Iratha's Finery		1					tgl	Light Gauntlets	7	21	15	lgry	lgry						5	2500	2	res-cold		30	30	half-freeze		1	1																													swing2		20	20																																						0
 Iratha's Coil	11	Iratha's Finery		1					crn	Crown	7	21	15	lgry	lgry						5	2500	2	res-fire		30	30	res-ltng		30	30																													ac/lvl	16																																								0
 Iratha's Cord	12	Iratha's Finery		1					tbl	Heavy Belt	7	21	15	lgry	lgry						5	2500	2	ac		25	25	dmg-min		5	5																													dex		10	10																																						0
-Isenhart's Lightbrand	13	Isenhart's Armory		1					bsd	Broad Sword	7	11	8	lgld	lgld						5	2500	2	dmg-min		10	10	swing2		20	20																													att/lvl	10																																								0
-Isenhart's Parry	14	Isenhart's Armory		1					gts	Gothic Shield	7	11	8	lgld	lgld						5	2500	2	ac		40	40	light-thorns		4	4																													res-all		8	8																																						0
-Isenhart's Case	15	Isenhart's Armory		1					brs	Breast Plate	7	11	8	lgld	lgld						5	2500	2	ac		40	40	red-mag		2	2																													ac/lvl	16																																								0
-Isenhart's Horns	16	Isenhart's Armory		1					fhl	Full Helm	7	11	8	lgld	lgld						5	2500	2	dex		6	6	red-dmg		2	2																													res-all		8	8																																						0
+Isenhart's Lightbrand	13	Isenhart's Armory		1			16	16	bsd	Broad Sword	7	11	8	lgld	lgld						5	2500	2	dmg-min		10	10	swing2		40	40	att/lvl	10																																			dmg/lvl	16																																0
+Isenhart's Parry	14	Isenhart's Armory		1			16	16	gts	Gothic Shield	7	11	8	lgld	lgld						5	2500	2	ac		40	40	light-thorns		4	4																													res-fire		15	15	res-cold		15	15																																		0
+Isenhart's Case	15	Isenhart's Armory		1			16	16	brs	Breast Plate	7	11	8	lgld	lgld						5	2500	2	ac		40	40	red-mag		2	2	res-mag		25	25																									ac/lvl	16																																								0
+Isenhart's Horns	16	Isenhart's Armory		1			16	16	fhl	Full Helm	7	11	8	lgld	lgld						5	2500	2	dex		6	6	red-dmg		2	2	lifesteal		5	5																									res-all		8	8																																						0
 Vidala's Barb	17	Vidala's Rig		1					lbb	Long Battle Bow	7	19	14	blac	blac						5	2500	2	ltng-min		1	1	ltng-max		20	20																													att/lvl	16																																								0
 Vidala's Fetlock	18	Vidala's Rig		1					tbt	Light Plated Boots	7	19	14	blac	blac						5	2500	2	stam		150	150	move3		30	30																													res-all		8	8																																						0
 Vidala's Ambush	19	Vidala's Rig		1					lea	Leather Armor	7	19	14	blac	blac						5	2500	2	ac		50	50	dex		11	11																													res-fire		24	24					ac/lvl	20																																0
@@ -49,10 +49,10 @@ Berserker's Hatchet	46	Berserker's Garb		1					2ax	Double Axe	7	5	3	dred	dred			
 Death's Hand	47	Death's Disguise		1					lgl	Leather Gloves	7	8	6	lred	lred						5	2500	2	res-pois		50	50	res-pois-len		75	75																													swing3		30	30																																						0
 Death's Guard	48	Death's Disguise		1					lbl	Sash	7	8	6	lred	lred						5	2500	2	ac		20	20	nofreeze		1	1																													res-all		15	15																																						0
 Death's Touch	49	Death's Disguise		1					wsd	War Sword	7	8	6	lred	lred						5	2500	2	dmg%		25	25	lifesteal		4	4																													dmg-cold	75	25	75																																						0
-Angelic Sickle	50	Angelical Raiment		1					sbr	Sabre	7	17	12	lgry	lgry						5	2500	2	att		75	75	dmg-undead		250	250																													dmg%		75	75					swing3		30	30																														0
-Angelic Mantle	51	Angelical Raiment		1					rng	Ring Mail	7	17	12	lgry	lgry						5	2500	2	red-dmg		3	3	ac%		40	40																													ac		150	150					res-fire		50	50																														0
-Angelic Halo	52	Angelical Raiment		1					rin	Ring	3	17	12	lgry	lgry						5	2500	2	regen		6	6	hp		20	20																													att/lvl	24							mag%		50	50																														0
-Angelic Wings	53	Angelical Raiment		1					amu	Amulet	7	17	12	lgry	lgry						5	2500	2	light		3	3	dmg-to-mana		20	20																													hp		75	75					allskills		1	1																														0
+Angelic Sickle	50	Angelical Raiment		1			15	15	sbr	Sabre	7	17	12	lgry	lgry						5	2500	2	att		75	75	dmg-undead		250	250																													dmg%		75	75					swing3		30	30	dmg		6	6																										0
+Angelic Mantle	51	Angelical Raiment		1			15	15	rng	Ring Mail	7	17	12	lgry	lgry						5	2500	2	red-dmg		3	3	ac%		40	40																													ac		150	150					res-fire		50	50	dmg-undead		100	100																										0
+Angelic Halo	52	Angelical Raiment		1			15	15	rin	Ring	3	17	12	lgry	lgry						5	2500	2	regen		6	6	hp		20	20																													att/lvl	24							mag%		50	50																														0
+Angelic Wings	53	Angelical Raiment		1			15	15	amu	Amulet	7	17	12	lgry	lgry						5	2500	2	light		3	3	dmg-to-mana		20	20																													hp		75	75					allskills		1	1																														0
 Arctic Horn	54	Arctic Gear		1					swb	Short War Bow	7	3	2	lgld	lgld						5	2500	2	att%		20	20	dmg%		50	50																													att/lvl	16							dmg-cold	75	20	30																														0
 Arctic Furs	55	Arctic Gear		1					qui	Quilted Armor	7	3	2	lgld	lgld						5	2500	2	ac%		275	325	res-all		10	10																													ac/lvl	24							res-cold		15	15																														0
 Arctic Binding	56	Arctic Gear		1					vbl	Light Belt	7	3	2	lgld	lgld						5	2500	2	res-cold		40	40	ac		30	30																													mag%		40	40					res-cold		10	10																														0
